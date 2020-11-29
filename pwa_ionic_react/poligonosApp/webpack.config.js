@@ -1,60 +1,40 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin'); //installed via npm
+const webpack = require('webpack'); //to access built-in plugins
 const path = require('path');
 
 module.exports = {
-  entry: './src/index.tsx',
-  output: {
-    filename: 'main.js',
-    path: path.resolve(__dirname, 'dist')
-  }
-};
-
-module.exports = {
-  output: {
-    filename: 'my-first-webpack.bundle.js'
-  },
-  module: {
+    mode: 'production',
+    entry: './src/index.tsx',
+    output: {
+        filename: 'main.bundle.js',
+        path: path.resolve(__dirname, 'dist')
+    },
+    module: {
     rules: [
-      { test: /\.txt$/, use: 'raw-loader' }
+        { test: /\.txt$/, use: 'raw-loader' },
+        { test: /\.txt$/, use: 'raw-loader' },
+        {
+            test: /\.(png|jpe?g|gif|json|geojson)$/i,
+            use: [
+                {
+                    loader: 'file-loader',
+                },
+            ],
+        },
     ]
-  }
-};
-
-const HtmlWebpackPlugin = require('html-webpack-plugin'); //installed via npm
-const webpack = require('webpack'); //to access built-in plugins
-
-module.exports = {
-  module: {
-    rules: [
-      { test: /\.txt$/, use: 'raw-loader' }
+},
+    node: {
+        Buffer: false,
+        process: false
+    },
+    plugins: [
+        new HtmlWebpackPlugin({template: './src/index.html'})
     ]
-  },
-  plugins: [
-    new HtmlWebpackPlugin({template: './src/index.html'})
-  ]
-};
-
-module.exports = {
-  mode: 'production'
-};
-
-
-module.exports = {
-
-
-	module: {
-    rules: [
-      {
-        test: /\.(png|jpe?g|gif|json|geojson)$/i,
-        use: [
-          {
-            loader: 'file-loader',
-          },
-        ],
-      },
-    ],
-  },
-  node: {
-    Buffer: false,
-    process: false
+    ,
+  devServer: {
+	inline: false,
+    contentBase: path.join(__dirname, 'dist'),
+    compress: true,
+    port: 9000
   }
 };
