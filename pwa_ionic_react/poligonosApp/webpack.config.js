@@ -2,14 +2,29 @@
 const webpack = require('webpack'); //to access built-in plugins
 const path = require('path');
 
+const PUBLIC_DIR = 'public';
+
+const HTMLWebpackPlugin = require('html-webpack-plugin');
+
+var PROD = '0';
+
 module.exports = {
+	devServer: {
+	inline: false,
+    contentBase: path.join(__dirname, PUBLIC_DIR),
+	hot: true,
+    compress: true,
+    port: 3340
+  },
     mode: 'development',
 	devtool: "inline-source-map",
-    entry: './src/index.tsx',
+    entry: path.resolve(__dirname, 'src','index.tsx'),
     output: {
-        filename: 'main.bundle.js',
-        path: path.resolve(__dirname, 'dist')
+        filename: '[name]-[hash].js',
+        path: path.resolve(__dirname, 'src','index.tsx')
     },
+	target: 'web'
+	,
   resolve: {
     // Add `.ts` and `.tsx` as a resolvable extension.
     extensions: [".ts", ".tsx", ".js"]
@@ -24,6 +39,7 @@ module.exports = {
             use: {
                 loader: 'babel-loader',
                 options: {
+                    modules: true,
                     presets: ['@babel/preset-env'],
                     plugins: ['@babel/plugin-transform-runtime']
                 }
@@ -77,18 +93,13 @@ module.exports = {
     ]
 },
     plugins: [
-       // new HtmlWebpackPlugin({template: './src/index.html'})
+        new HTMLWebpackPlugin({template: './src/index.html'}),
+		new webpack.HotModuleReplacementPlugin()
     ]
     ,
-  devServer: {
-	inline: false,
-    contentBase: path.join(__dirname, 'dist'),
-    compress: true,
-    port: 9000
-  },
-  optimization: {
-    removeAvailableModules: false,
-    removeEmptyChunks: false,
-    splitChunks: false,
+    optimization: {
+	    removeAvailableModules: false,
+        removeEmptyChunks: false,
+        splitChunks: false,
   },
 };
