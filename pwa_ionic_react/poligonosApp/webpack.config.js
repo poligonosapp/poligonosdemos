@@ -8,6 +8,10 @@ const HTMLWebpackPlugin = require('html-webpack-plugin');
 
 var PROD = '0';
 
+// import FileBrowser from 'components/FileBrowser';
+
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+
 module.exports = {
 	devServer: {
 	inline: false,
@@ -18,35 +22,77 @@ module.exports = {
   },
     mode: 'development',
 	devtool: "inline-source-map",
-    entry: path.resolve(__dirname, 'src','index.tsx'),
+    entry: path.resolve(__dirname, 'src','index.js'),
     output: {
         filename: '[name]-[hash].js',
-        path: path.resolve(__dirname, 'src','index.tsx')
+        path: path.resolve(__dirname, 'dist')
     },
 	target: 'web'
 	,
   resolve: {
     // Add `.ts` and `.tsx` as a resolvable extension.
-    extensions: [".ts", ".tsx", ".js"]
+    extensions: [".ts", ".tsx", ".js", ".jsx"]
   },
     module: {
     rules: [
         // the 'transform-runtime' plugin tells Babel to
         // require the runtime instead of inlining it.
+		{
+        test: /\.json5$/i,
+        loader: 'json5-loader',
+        type: 'javascript/auto',
+      },
+		{
+    test: /\.png$/,
+    use: [{ loader: 'file-loader'}]
+  },
+  {
+    test: /\.html$/,
+    use: [
+      { loader: 'file-loader' },
+      { loader: 'extract-loader' },
+      { loader: 'ref-loader' },
+    ]
+  },
+		{
+        test: /\.(png|jpg|gif)$/i,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192,
+            },
+          },
+        ],
+      },
+		{
+        test: /target-file.js$/,
+        use: [
+          {
+            loader: `val-loader`,
+          },
+        ],
+      },
+		{
+        test: /\.txt$/i,
+        use: 'raw-loader',
+      },
         {
-            test: /\.m?js$/,
+            test: /\.m?js|jsx$/,
             exclude: /(node_modules|bower_components)/,
             use: {
                 loader: 'babel-loader',
                 options: {
                     modules: true,
-                    presets: ['@babel/preset-env'],
+                    presets: [
+            ['@babel/preset-env', { targets: "defaults" }]
+          ],
                     plugins: ['@babel/plugin-transform-runtime']
                 }
             }
         },
         {
-            test: /\.m?js$/,
+            test: /\.m?js|jsx$/,
             exclude: /(node_modules|bower_components)/,
             use: {
                 loader: 'babel-loader',
@@ -57,7 +103,7 @@ module.exports = {
             }
         },
         {
-            test: /\.m?js$/,
+            test: /\.m?js|jsx$/,
             exclude: /(node_modules|bower_components)/,
             use: {
                 loader: 'babel-loader',
@@ -93,8 +139,16 @@ module.exports = {
     ]
 },
     plugins: [
-        new HTMLWebpackPlugin({template: './src/index.html'}),
-		new webpack.HotModuleReplacementPlugin()
+        new HTMLWebpackPlugin(
+          {
+          
+            template: path.resolve(__dirname, PUBLIC_DIR, 'index.html')
+          
+          }
+
+          ),
+		new webpack.HotModuleReplacementPlugin(),
+    new CleanWebpackPlugin()
     ]
     ,
     optimization: {
