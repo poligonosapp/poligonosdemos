@@ -20,3 +20,7 @@ test('shapefile types upload', () => {
 test('geojson types upload', () => {
   fail(true);
 });
+
+test('should webpack loaders webkit dev tools FOUC flash of unstyled text', () => {
+  fail(true);
+});
