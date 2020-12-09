@@ -12,21 +12,17 @@ var PROD = '0';
 
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
-module.exports = ({ mode }) => {
+const R = require('ramda');
+
+const { curry } = R;
+
+// const myOtherPostcssPlugin = require("postcss-my-plugin");
+
+module.exports = ({ }) => {
 
     const pathToMainCss = require.resolve("./src/theme/variables.css");
 
-
-    if (mode === "production") {
-
-        console.log('\nproduction mode\n');
-
-    } else {
-        console.log('\ndev mode\n');
-    }
-
     return {
-        mode,
         entry: pathToMainCss,
         devServer: {
             inline: false,
@@ -35,7 +31,6 @@ module.exports = ({ mode }) => {
             compress: true,
             port: 3340
         },
-         mode: 'development',
         devtool: "inline-source-map",
         entry: path.resolve(__dirname, 'src','index.js'),
         output: {
@@ -50,6 +45,62 @@ module.exports = ({ mode }) => {
         },
         module: {
             rules: [
+                {
+                    test: /\.sss$/i,
+                    loader: "postcss-loader",
+                    options: {
+                        postcssOptions: {
+                            plugins: [
+                                "postcss-import",
+                                ["postcss-short", { prefix: "x" }],
+                                // require.resolve("my-postcss-plugin"),
+                                // myOtherPostcssPlugin({ myOption: true }),
+                                // Deprecated and will be removed in the next major release
+                                { "postcss-nested": { preserveEmpty: true } },
+                            ],
+                        },
+                    },
+                },
+                {
+                    test: /\.style.js$/,
+                    use: [
+                        "style-loader",
+                        {
+                            loader: "css-loader",
+                        },
+                        {
+                            loader: "postcss-loader",
+                            options: {
+                                postcssOptions: {
+                                    parser: "postcss-js",
+                                },
+                                execute: true,
+                            },
+                        },
+                    ],
+                },
+                {
+                    test: /\.css$/i,
+                    use: [
+                        "style-loader",
+                        "css-loader",
+                        {
+                            loader: "postcss-loader",
+                            options: {
+                                postcssOptions: {
+                                    plugins: [
+                                        [
+                                            "postcss-preset-env",
+                                            {
+                                                // Options
+                                            },
+                                        ],
+                                    ],
+                                },
+                            },
+                        },
+                    ],
+                },
                 {
                     test: pathToMainCss,
                     // loaders: loaders
@@ -150,7 +201,7 @@ module.exports = ({ mode }) => {
                     ]
                 },{
                     test: /\.css$/i,
-                    use: ["style-loader", "css-loader"],
+                    use: ["style-loader", "css-loader", "postcss-loader"],
                 },
                 { test: /\.txt$/, use: 'raw-loader' },
                 { test: /\.txt$/, use: 'raw-loader' },
