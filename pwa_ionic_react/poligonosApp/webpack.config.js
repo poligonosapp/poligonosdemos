@@ -18,7 +18,7 @@ const { curry } = R;
 
 // const myOtherPostcssPlugin = require("postcss-my-plugin");
 
-module.exports = ({ }) => {
+module.exports = () => {
 
     const pathToMainCss = require.resolve("./src/theme/variables.css");
 
@@ -34,6 +34,7 @@ module.exports = ({ }) => {
         devtool: "inline-source-map",
         entry: path.resolve(__dirname, 'src','index.js'),
         output: {
+            publicPath : '',
             filename: '[name]-[hash].js',
             path: path.resolve(__dirname, 'dist')
         },
@@ -87,6 +88,7 @@ module.exports = ({ }) => {
                         {
                             loader: "postcss-loader",
                             options: {
+                                // publicPath: '',
                                 postcssOptions: {
                                     plugins: [
                                         [

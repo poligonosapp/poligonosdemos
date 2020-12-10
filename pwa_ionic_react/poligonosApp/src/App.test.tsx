@@ -22,5 +22,9 @@ test('geojson types upload', () => {
 });
 
 test('should webpack loaders webkit dev tools FOUC flash of unstyled text', () => {
+
+});
+
+test('webpack babel loaders post css', () => {
   fail(true);
 });
