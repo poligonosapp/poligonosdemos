@@ -9,7 +9,12 @@ npm install --save @types/shapefile
 npm i @types/react
 npm i @types/react-dom
 
+npm install --save-dev @babel/types
+
 ionic serve
 
+cd src
+
+nodemon ./server.js localhost 8080
 
 
