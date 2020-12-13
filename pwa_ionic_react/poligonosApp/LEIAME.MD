@@ -17,4 +17,8 @@ cd src
 
 nodemon ./server.js localhost 8080
 
+snyk auth
+snyk test
+snyk monitor
+
 
