@@ -67,7 +67,9 @@
     "build": "webpack",
     "build:stats": "wp --mode production --json > stats.json",
     "test": "react-scripts test a --env=jsdom",
-    "serve": "webpack serve"
+    "serve": "webpack serve",
+    "prettier": "prettier",
+    "eslint": "eslint"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -114,6 +116,7 @@
     "parallel-webpack": "^2.6.0",
     "postcss": "^7.0.35",
     "postcss-loader": "^3.0.0",
+    "prettier": "2.2.1",
     "service-worker-loader": "^4.0.2",
     "style-loader": "^1.3.0",
     "ts-loader": "^8.0.11",
@@ -131,11 +134,14 @@
     }
   },
   "plugins": [
-    ["@babel/plugin-transform-modules-umd", {
-      "globals": {
-        "es6-promise": "Promise"
+    [
+      "@babel/plugin-transform-modules-umd",
+      {
+        "globals": {
+          "es6-promise": "Promise"
+        }
       }
-    }],
+    ],
     "@babel/plugin-transform-modules-systemjs",
     "@babel/plugin-transform-modules-commonjs",
     "@babel/plugin-transform-modules-amd"
