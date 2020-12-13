@@ -12,6 +12,8 @@ import 'leaflet/dist/leaflet.js';
 
 import L from 'leaflet';
 
+import CircularProgress from '@material-ui/core';
+
 // import * as dadosPoligono from '../polygon.geojson';
 
 var poligono: Polygon = {
@@ -89,6 +91,7 @@ mymap.on('click', onMapClick);
 render(){
 	return (
 		<div>
+		<CircularProgress />
 		 <div id="mapid">{mymap}</div>
 			<LeafLetHeatmapComponent/>
 		</div>

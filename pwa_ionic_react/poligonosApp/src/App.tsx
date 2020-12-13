@@ -34,8 +34,11 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 
+import CircularProgress from '@material-ui/core';
+
 const App: React.FC = () => (
   <IonApp>
+  <CircularProgress />
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>

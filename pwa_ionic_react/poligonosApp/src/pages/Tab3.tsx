@@ -3,12 +3,15 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/rea
 import ExploreContainer from '../components/ExploreContainer';
 import './Tab3.css';
 
+import CircularProgress from '@material-ui/core';
+
 const Tab3: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
           <IonTitle>Tab 3</IonTitle>
+		  <CircularProgress />
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
