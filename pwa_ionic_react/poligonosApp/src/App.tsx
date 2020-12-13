@@ -36,8 +36,16 @@ import './theme/variables.css';
 
 import CircularProgress from '@material-ui/core';
 
+import { IonProgressBar, IonContent } from '@ionic/react';
+
 const App: React.FC = () => (
   <IonApp>
+  
+  <IonContent>{/*-- Colorize Progressbar --*/}
+    <IonProgressBar color="primary" value={0.5}></IonProgressBar><br />
+    <IonProgressBar color="secondary" value={0.5}></IonProgressBar><br />
+	</IonContent>
+  
   <CircularProgress />
     <IonReactRouter>
       <IonTabs>
