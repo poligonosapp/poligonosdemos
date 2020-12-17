@@ -7,6 +7,23 @@ import App from './App';
 const makeServiceWorkerEnv = require('service-worker-mock');
 const makeFetchMock = require('service-worker-mock/fetch');
 
+// babel loader
+require("@babel/core").transform("code", {
+    plugins: ["@babel/plugin-transform-modules-amd"]
+});
+
+require("@babel/core").transform("code", {
+    plugins: ["@babel/plugin-transform-modules-commonjs"]
+});
+
+require("@babel/core").transform("code", {
+    plugins: ["@babel/plugin-transform-modules-systemjs"],
+});
+
+require("@babel/core").transform("code", {
+    plugins: ["@babel/plugin-transform-modules-umd"]
+});
+
 
 test('renders without crashing', () => {
   // const { baseElement } = render(<App/>);

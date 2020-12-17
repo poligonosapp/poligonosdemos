@@ -1,4 +1,4 @@
-import { React } from 'react';
+import React from 'react';
 import { Redirect, Route } from 'react-router-dom';
 import {
   IonApp,
@@ -34,7 +34,7 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 
-import CircularProgress from '@material-ui/core';
+import CircularProgress from '@material-ui/core/CircularProgress';
 
 import { IonProgressBar, IonContent } from '@ionic/react';
 
