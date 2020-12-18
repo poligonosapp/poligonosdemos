@@ -10,13 +10,13 @@ import 'leaflet/dist/leaflet.css';
 
 import 'leaflet/dist/leaflet.js';
 
-import L from 'leaflet';
+import L, {circle} from 'leaflet';
 
 import CircularProgress from '@material-ui/core/CircularProgress';
 
 // import * as dadosPoligono from '../polygon.geojson';
 
-var poligono: Polygon = {
+var poligonoVar: Polygon = {
   type : "Polygon",
   coordinates : [
      [ [ 0 , 0 ] , [ 3 , 6 ] , [ 6 , 1 ] , [ 0 , 0 ] ],
@@ -24,7 +24,7 @@ var poligono: Polygon = {
   ]
 }
 
- let polygon: Polygon = {
+ let polygonLet: Polygon = {
     type: "Polygon",
     coordinates: [
         [[100.0, 0.0], [101.0, 0.0], [101.0, 1.0], [100.0, 1.0], [100.0, 0.0]]
@@ -56,7 +56,7 @@ export default class MapaCalor extends React.Component{
 
 var marker = L.marker([51.5, -0.09]).addTo(mymap);
 
-var polygon = L.polygon([
+var polygonL = L.polygon([
     [51.509, -0.08],
     [51.503, -0.06],
     [51.51, -0.047]
@@ -64,7 +64,7 @@ var polygon = L.polygon([
 
 marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
 circle.bindPopup("I am a circle.");
-polygon.bindPopup("I am a polygon.");
+polygonL.bindPopup("I am a polygon.");
 
 var popup = L.popup()
     .setLatLng([51.5, -0.09])
@@ -88,6 +88,7 @@ function onMapClick(e) {
 
 mymap.on('click', onMapClick);
 
+// @ts-ignore
 render(){
 	return (
 		<div>
