@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, FormEvent } from 'react';
 import { Redirect, Route } from 'react-router-dom';
 import {
   IonApp,
@@ -44,6 +44,9 @@ const App: React.FC = () => (
 
 
   <CircularProgress />
+
+
+
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
