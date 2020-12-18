@@ -151,19 +151,11 @@ module.exports = () => {
                     use: 'raw-loader',
                 },
                 {
-                    test: /\.m?js|jsx$/,
-                    exclude: /(node_modules|bower_components)/,
-                    use: {
-                        loader: 'babel-loader',
-                        options: {
-                            modules: true,
-                            presets: [
-                                ['@babel/preset-env', { targets: "defaults" }]
-                            ],
-                            plugins: ['@babel/plugin-transform-runtime']
-                        }
-                    }
-                },
+                    test: /\.jsx?$/,
+                    loader: 'babel-loader',
+                    exclude: /node_modules/
+                }
+                ,
                 {
                     test: /\.m?js|jsx$/,
                     exclude: /(node_modules|bower_components)/,

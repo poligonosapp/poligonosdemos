@@ -3,7 +3,7 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/rea
 import ExploreContainer from '../components/ExploreContainer';
 import './Tab3.css';
 
-import CircularProgress from '@material-ui/core';
+import CircularProgress from '@material-ui/core/CircularProgress';
 
 const Tab3: React.FC = () => {
   return (
