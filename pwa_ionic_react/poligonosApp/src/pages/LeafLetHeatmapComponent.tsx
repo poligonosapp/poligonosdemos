@@ -17,6 +17,10 @@ export default class LeafLetHeatmapComponent extends React.Component{
     constructor(props:any) {
         super(props);
 
+        this.state = {
+            count: 0
+        };
+
     }
 
     render(){
@@ -25,6 +29,8 @@ export default class LeafLetHeatmapComponent extends React.Component{
             <div>
 
 <CircularProgress />
+
+
 
             </div>
         );
