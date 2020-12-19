@@ -49,7 +49,7 @@ class MapaCalor extends React.Component{
 			 purpleOptions : props.color,
              mymap : props.mymap,
             accessToken : props.accessToken,
-			pol: props.geometry
+			pol: props.pol.geometry
 		};
 	}
 

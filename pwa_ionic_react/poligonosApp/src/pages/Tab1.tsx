@@ -110,6 +110,15 @@ function ExampleWithManyStates() {
     );
 }
 
+function MyComponent() {
+    const circleRef = useRef()
+
+    useEffect(() => {
+        const radius = circleRef.current.getRadius()
+    })
+
+    return <Circle ref={cicleRef} center={[50.5, 30.5]} radius={200} />
+}
 
 
 const Tab1: React.FC = () => {
@@ -138,23 +147,28 @@ const Tab1: React.FC = () => {
                     A pretty CSS3 popup. <br /> Easily customizable.
                 </Popup>
             </Marker>
-        </MapContainer>
-
-        MapaCalor aqui
-
-        <MapaCalor
-            this.setState={0, this.state.setTipo(this.state.poligono.geometry.type),
 
 
-                this.state.coordenadas,
+            MapaCalor aqui
 
-                this.state.mymap,
+            <MapaCalor
+                this.setState={0, this.state.setTipo(this.state.poligono.geometry.type),
 
-                this.state.accessToken
+
+                    this.state.coordenadas,
+
+                    this.state.mymap,
+
+                    this.state.accessToken,
+                    this.state.pol
 
 
                 }
-        />
+            />
+
+        </MapContainer>
+
+
 
 
 
