@@ -1,6 +1,6 @@
 import {  IonInput } from '@ionic/react';
 
-import React, { Component } from 'react';
+import React, {Component, useState, FormEvent} from 'react';
 import { render } from "react-dom";
 import {TileLayer, Marker, Popup} from "react-leaflet";
 import {mockComponent} from "react-dom/test-utils";
@@ -33,8 +33,8 @@ var poligonoVar: Polygon = {
     ]
 };
 
-export default // @ts-ignore
-class MapaCalor extends React.Component implements IonInput{
+
+class MapaCalor extends React.Component{
 
     // let mymap;
 
@@ -50,6 +50,47 @@ class MapaCalor extends React.Component implements IonInput{
              mymap : props.mymap,
             accessToken : props.accessToken
 		};
+	}
+
+	let poligono;
+
+	try{
+		poligono = require('./polygon.geojson');
+	}catch(e){
+	console.log('require poligono failed');
+}
+
+	console.log("\npoligono\n");
+	console.log(poligono);
+	console.log("\npolygonL\n");
+	console.log(polygonoL);
+
+	function ExampleWithManyStates() {
+		// Declara várias variáveis de state!
+
+        const  [count, setCount] : useState(this.state.count + 1);
+		const  [tipo, setTipo]: useState(poligono.geometry.type);
+		const [coordenadas, setCoordenadas]: useState(polygono.geometry.coordinates);
+		// const [purpleOptions, setPurpleOptions]:useState('purple');
+		const [mymap, setMyMap]:useState(mymap);
+		const [accessToken, setAccessToken]:useState(accessToken);
+
+		const [age, setAge] = useState(42);
+		const [fruit, setFruit] = useState('banana');
+		const [todos, setTodos] = useState([{ text: 'Learn Hooks' }]);
+		// ...
+
+		// Declara uma nova variável de state, que chamaremos de "count"
+		const [count, setCount] = useState(0);
+
+		return (
+			<div>
+				<p>You clicked {count} times</p>
+				<button onClick={() => setCount(count + 1)}>
+					Click me
+				</button>
+			</div>
+		);
 	}
 
 

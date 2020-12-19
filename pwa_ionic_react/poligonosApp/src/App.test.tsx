@@ -26,8 +26,8 @@ require("@babel/core").transform("code", {
 
 
 test('renders without crashing', () => {
-  // const { baseElement } = render(<App/>);
-  // expect(baseElement).toBeDefined();
+   const { baseElement } = render(<App/>);
+   expect(baseElement).toBeDefined();
 });
 
 test('shapefile types upload', () => {
@@ -48,6 +48,12 @@ test('webpack babel loaders post css', () => {
 
 test('nodemom express', () => {
   // fail(true);
+});
+
+test('should useState', () => {
+    const { baseElement } = render(<App/>);
+    // expect(baseElement).toBeDefined();
+     fail(true);
 });
 
 

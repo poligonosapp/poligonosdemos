@@ -1,11 +1,17 @@
-import React, { useState, FormEvent } from 'react';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leafet';
+
+import L, {circle} from "leaflet";
+
+import React, { useState, useEffect, useReducer, useCallback, FormEvent } from 'react';
+
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonInput } from '@ionic/react';
+
 import ExploreContainer from '../components/ExploreContainer';
 import './Tab1.css';
 
 import CircularProgress from '@material-ui/core/CircularProgress';
 import MapaCalor from "./MapaCalor";
-import L, {circle} from "leaflet";
+
 // import MapaCalor from "./MapaCalor";
 
 const accessToken = 'pk.eyJ1IjoibHVpc21lbmRlczA3MCIsImEiOiJja2Y1cHp2dzcwZzV3MnpueGIwMThtZHo0In0.scLMoUkXBo03JD4ir3UGYA';
@@ -44,7 +50,7 @@ function onMapClick(e) {
 
 mymap.on('click', onMapClick);
 
-var popup = L.popup();
+let popup = L.popup();
 
 function onMapClick(e) {
     popup
@@ -55,15 +61,17 @@ function onMapClick(e) {
 
 mymap.on('click', onMapClick);
 
-var poligono = {
-    type : "Polygon",
-    coordinates : [
-        [ [ 0 , 0 ] , [ 3 , 6 ] , [ 6 , 1 ] , [ 0 , 0 ] ],
-        [ [ 2 , 2 ] , [ 3 , 3 ] , [ 4 , 2 ] , [ 2 , 2 ] ]
-    ]
-};
+let poligono = null;
 
-poligono = require('./polygon.geojson');
+try{
+    poligono = require('./polygon.geojson');
+}catch(e){
+    console.log('require poligono failed');
+}
+
+if(poligono == null){
+    console.log("\nleitura geojson falhou\n");
+}
 
 console.log("\npoligono\n");
 console.log(poligono);
@@ -73,9 +81,14 @@ console.log(polygonoL);
 function ExampleWithManyStates() {
     // Declara várias variáveis de state!
 
-    const  [tipo, setTipo]: useState(poligono.type);
-        const [coordenadas, setCoorenadas]: useState(polygono.coordinates);
-        const [purpleOptions, setPurpleOptions]:useState('purple');
+    // const  [tipo, setTipo]: useReducer(poligono.type);
+
+    const [pol, setPol] : useState(poligono.geometry);
+
+    const  [tipo, setTipo]: useState( string poligono.geometry.type );
+
+        const [coordenadas, setCoordenadas]: useState([] poligono.geometry.coordinates);
+        // const [purpleOptions, setPurpleOptions]:useState('purple');
         const [mymap, setMyMap]:useState(mymap);
         const [accessToken, setAccessToken]:useState(accessToken);
 
@@ -97,11 +110,19 @@ function ExampleWithManyStates() {
     );
 }
 
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leafet'
+
 
 const Tab1: React.FC = () => {
 
     const [ name, setName ] = useState('Max');
+
+    const  [tipo, setTipo]: useState(poligono.type);
+    const [coordenadas, setCoordenadas]: useState(poligono.coordinates);
+    // const [purpleOptions, setPurpleOptions]:useState('purple');
+    const [mymap, setMyMap]:useState(mymap);
+    const [accessToken, setAccessToken]:useState(accessToken);
+
+    // ExampleWithManyStates();
 
   return (
     <IonPage>
@@ -121,7 +142,19 @@ const Tab1: React.FC = () => {
 
         MapaCalor aqui
 
-        <MapaCalor this.setState={(e) => setTipo(e.target.value)}/>
+        <MapaCalor
+            this.setState={0, this.state.setTipo(this.state.poligono.geometry.type),
+
+
+                this.state.coordenadas,
+
+                this.state.mymap,
+
+                this.state.accessToken
+
+
+                }
+        />
 
 
 
