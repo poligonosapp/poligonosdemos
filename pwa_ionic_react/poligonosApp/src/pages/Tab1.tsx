@@ -27,9 +27,9 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     accessToken: 'your.mapbox.access.token'
 }).addTo(mymap);
 
-var marker = L.marker([51.5, -0.09]).addTo(mymap);
+let marker = L.marker([51.5, -0.09]).addTo(mymap);
 
-var polygonL = L.polygon([
+let polygonL = L.polygon([
     [51.509, -0.08],
     [51.503, -0.06],
     [51.51, -0.047]
@@ -39,18 +39,18 @@ marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
 // circle.bindPopup("I am a circle.");
 polygonL.bindPopup("I am a polygon.");
 
-var popup = L.popup()
+var popup2 = L.popup()
     .setLatLng([51.5, -0.09])
     .setContent("I am a standalone popup.")
     .openOn(mymap);
 
-function onMapClick(e) {
+function onMapClick2(e) {
     alert("You clicked the map at " + e.latlng);
 }
 
 mymap.on('click', onMapClick);
 
-let popup = L.popup();
+let popup2 = L.popup();
 
 function onMapClick(e) {
     popup
@@ -76,21 +76,21 @@ if(poligono == null){
 console.log("\npoligono\n");
 console.log(poligono);
 console.log("\npolygonL\n");
-console.log(polygonoL);
+// console.log(polygonoL);
 
 function ExampleWithManyStates() {
     // Declara várias variáveis de state!
 
     // const  [tipo, setTipo]: useReducer(poligono.type);
 
-    const [pol, setPol] : useState(poligono.geometry);
+    const [pol, setPol] : () => useState(poligono.geometry);
 
-    const  [tipo, setTipo]: useState( string poligono.geometry.type );
+    const  [tipo, setTipo]: () => useState( string poligono.geometry.type );
 
-        const [coordenadas, setCoordenadas]: useState([] poligono.geometry.coordinates);
+        const [coordenadas, setCoordenadas]: () => useState([] poligono.geometry.coordinates);
         // const [purpleOptions, setPurpleOptions]:useState('purple');
-        const [mymap, setMyMap]:useState(mymap);
-        const [accessToken, setAccessToken]:useState(accessToken);
+        const [mymap, setMyMap]: () => () => useState(mymap);
+        const [accessToken, setAccessToken]: () => useState(accessToken);
 
     const [age, setAge] = useState(42);
     const [fruit, setFruit] = useState('banana');
@@ -118,7 +118,55 @@ function MyComponent() {
     })
 
     return <Circle ref={cicleRef} center={[50.5, 30.5]} radius={200} />
-}
+}// fim
+
+function MyComponent() {
+    const map = useMapEvents({
+      click: () => {
+        map.locate()
+      },
+      locationfound: (location) => {
+        console.log('location found:', location)
+      },
+    })
+    return null
+  }
+  
+  function MyMapComponent() {
+    return (
+      <MapContainer center={[50.5, 30.5]} zoom={13}>
+        <MyComponent />
+      </MapContainer>
+    )
+  }//fim  MapEvents
+
+  function MyComponent() {
+    const map = useMapEvent('click', () => {
+      map.setCenter([50.5, 30.5])
+    })
+    return null
+  }
+  
+  function MyMapComponent() {
+    return (
+      <MapContainer center={[50.5, 30.5]} zoom={13}>
+        <MyComponent />
+      </MapContainer>
+    )
+  }// fim do MapEvent
+
+  function MyMapComponent() {
+    return (
+      <MapContainer center={[50.5, 30.5]} zoom={13}>
+        <MapConsumer>
+          {(map) => {
+            console.log('map center:', map.getCenter())
+            return null
+          }}
+        </MapConsumer>
+      </MapContainer>
+    )
+  }// fim MapConsumer
 
 
 const Tab1: React.FC = () => {
