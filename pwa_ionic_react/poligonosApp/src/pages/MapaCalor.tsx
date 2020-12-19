@@ -48,7 +48,8 @@ class MapaCalor extends React.Component{
 			 coordenadas :  props.coordenadas,
 			 purpleOptions : props.color,
              mymap : props.mymap,
-            accessToken : props.accessToken
+            accessToken : props.accessToken,
+			pol: props.geometry
 		};
 	}
 
