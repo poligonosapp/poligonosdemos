@@ -1,10 +1,8 @@
-import { Circle } from "react-leaflet";
-
 const graphql = require('babel-plugin-relay/macro');
 
-import { MapContainer, TileLayer, Marker, Popup, MapConsumer, useMapEvents } from 'react-leafet';
+import { Map, Circle, MapContainer, TileLayer, Marker, Popup, MapConsumer, useMapEvent } from "react-leafet";
 
-import L, {circle} from "leaflet";
+import L, {circle, CRS} from "leaflet";
 
 import React, { useState, useEffect, useReducer, useCallback, FormEvent, useRef } from "react";
 
@@ -14,11 +12,11 @@ import ExploreContainer from '../components/ExploreContainer';
 import './Tab1.css';
 
 import CircularProgress from '@material-ui/core/CircularProgress';
-import MapaCalor from "./MapaCalor";
+import MapaCalor, { Feature } from "./FeatureGeoJSONMapaCalor";
 
-// import MapaCalor from "./MapaCalor";
+import FeatureGeoJSONMapaCalor from "./FeatureGeoJSONMapaCalor";
 
-const accessToken = 'pk.eyJ1IjoibHVpc21lbmRlczA3MCIsImEiOiJja2Y1cHp2dzcwZzV3MnpueGIwMThtZHo0In0.scLMoUkXBo03JD4ir3UGYA';
+const {accessToken} = 'pk.eyJ1IjoibHVpc21lbmRlczA3MCIsImEiOiJja2Y1cHp2dzcwZzV3MnpueGIwMThtZHo0In0.scLMoUkXBo03JD4ir3UGYA';
 
 let mymap = L.map('mapid').setView([51.505, -0.09], 13);
 
@@ -43,7 +41,7 @@ marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
 // circle.bindPopup("I am a circle.");
 polygonL.bindPopup("I am a polygon.");
 
-var popup2 = L.popup()
+var popup22 = L.popup()
     .setLatLng([51.5, -0.09])
     .setContent("I am a standalone popup.")
     .openOn(mymap);
@@ -92,14 +90,14 @@ function ExampleWithManyStates() {
 
   console.log(poligono);
 
-    const [pol, setPol] = useState(poligono.geometry[0]);
+    // const [pol, setPol] = useState(poligono.geometry[0]);
 
-    const  [tipo, setTipo] = useState( poligono.geometry.type[0] );
+    // const  [tipo, setTipo] = useState( poligono.geometry.type[0] );
 
         // const [coordenadas [], setCoordenadas] = useState(poligono.geometry.coordinates);
         // const [purpleOptions, setPurpleOptions]:useState('purple');
-        const [mymap, setMyMap] = useState(mymap);
-        const [accessToken, setAccessToken] = useState(accessToken);
+        const [setMyMap] = useState(mymap);
+        const [setAccessToken] = useState({accessToken});
 
     const [age, setAge] = useState(42);
     const [fruit, setFruit] = useState('banana');
@@ -115,12 +113,7 @@ function ExampleWithManyStates() {
             <button onClick={() => setCount(count + 1)}>
                 Click me
             </button>
-            <button onClick={() => () => setTipo(tipo + 1)}>
-                Tipo me
-            </button>
-            <button onClick={() => () => setPol(tipo + 1)}>
-                Geometria
-            </button>
+
 
 
         </div>
@@ -128,17 +121,16 @@ function ExampleWithManyStates() {
 }
 
 function MyComponent() {
-    const circleRef = useRef()
-
+    const circleRef = useRef();
     useEffect(() => {
-        const radius = circleRef.current.getRadius()
-    })
+        const radius = circleRef.current.getRadius();
+    });
 
-    return <Circle ref={cicleRef} center={[50.5, 30.5]} radius={200} />
+    return <Circle ref={circleRef} center={[50.5, 30.5]} radius={200} />
 }// fim
 
-function MyComponent() {
-    const map = useMapEvents({
+function MyComponent2() {
+    const map = useMapEvent({
       click: () => {
         map.locate()
       },
@@ -149,7 +141,7 @@ function MyComponent() {
     return null
   }
 
-  function MyMapComponent() {
+  function MyMapComponent3() {
     return (
       <MapContainer center={[50.5, 30.5]} zoom={13}>
         <MyComponent />
@@ -157,14 +149,14 @@ function MyComponent() {
     )
   }//fim  MapEvents
 
-  function MyComponent() {
+  function MyComponent4() {
     const map = useMapEvent('click', () => {
       map.setCenter([50.5, 30.5])
     })
     return null
   }
 
-  function MyMapComponent() {
+  function MyMapComponent5() {
     return (
       <MapContainer center={[50.5, 30.5]} zoom={13}>
         <MyComponent />
@@ -172,7 +164,7 @@ function MyComponent() {
     )
   }// fim do MapEvent
 
-  function MyMapComponent() {
+  function MyMapComponent6() {
     return (
       <MapContainer center={[50.5, 30.5]} zoom={13}>
         <MapConsumer>
@@ -186,18 +178,19 @@ function MyComponent() {
   }// fim MapConsumer
 
 
-const Tab1: React.FC = () => {
+const Tab1: React.FC = (props) => {
 
-    const [ name, setName ] = useState('Max');
+    // const [ name, setName ] = useState('Max');
 
-    const  [tipo, setTipo] =  useState(poligono.type);
+    // const  [tipo, setTipo] =  useState(poligono.type);
     // const [coordenadas, setCoordenadas] = useState(poligono.coordinates);
     // const [purpleOptions, setPurpleOptions]:useState('purple');
-    const [mymap, setMyMap] = useState(mymap);
-    const [accessToken, setAccessToken] = useState(accessToken);
+    const [setMyMap] = useState({mymap});
+    const [setAccessToken] = useState({accessToken});
 
     // ExampleWithManyStates();
 
+  // @ts-ignore
   return (
     <IonPage>
       <CircularProgress />
@@ -215,6 +208,32 @@ const Tab1: React.FC = () => {
 
 
             MapaCalor aqui
+          <FeatureGeoJSONMapaCalor value={mymap}/>
+
+          CRS Simple
+
+          <Map center={[0, 0]} zoom={2}  doubleClickZoom={false} crs={CRS.Simple}>
+
+            <MyComponent/>
+            <MyComponent2/>
+            <MyMapComponent3/>
+            <MyMapComponent5/>
+            <MyMapComponent6/>
+
+          </Map>
+
+          CRS Earth
+
+          <Map center={[0, 0]} zoom={2}  doubleClickZoom={false} crs={CRS.Earth}>
+
+            <MyComponent/>
+            <MyComponent2/>
+            <MyMapComponent3/>
+            <MyMapComponent5/>
+            <MyMapComponent6/>
+
+          </Map>
+
 
 
 
@@ -224,7 +243,7 @@ const Tab1: React.FC = () => {
 
 
 
-        {/*<MapaCalor
+        {/*<FeatureGeoJSONMapaCalor
 
             this.setState(
         {
@@ -237,7 +256,7 @@ const Tab1: React.FC = () => {
         )
         />
 
-    <MapaCalor
+    <FeatureGeoJSONMapaCalor
 
         this.setState(
 {

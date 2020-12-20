@@ -6,7 +6,22 @@ import { TileLayer, Marker, Popup } from "react-leaflet";
 import { mockComponent } from "react-dom/test-utils";
 import LeafLetHeatmapComponent from "./LeafLetHeatmapComponent";
 
-import type { Feature, Polygon } from "geojson";
+import ExampleWithManyStates from "./ExampleWithManyStates";
+
+import type { Feature, Polygon, Geometry, FeatureCollection } from "geojson";
+export type {Feature, Polygon, Geometry, FeatureCollection};
+
+declare class ComponenteFeature<Feature> {
+  props: Feature
+}
+
+declare class ComponentePolygon<Polygon> {
+  props: Polygon
+}
+
+declare class ComponenteGeometry<Geometry> {
+  props: Geometry
+}
 
 import "leaflet/dist/leaflet.css";
 
@@ -15,10 +30,11 @@ import "leaflet/dist/leaflet.js";
 import L, { circle } from "leaflet";
 
 import CircularProgress from "@material-ui/core/CircularProgress";
+import Tab1 from "./Tab1";
 
 // import * as dadosPoligono from '../polygon.geojson';
 
-public class MapaCalor extends React.Component {
+public class FeatureGeoJSONMapaCalor extends React.Component implements FeatureCollection{
   componentDidMount() {
     super.componentDidMount();
     console.log('\ncomponentDidMount...\n');
@@ -94,10 +110,12 @@ public class MapaCalor extends React.Component {
 
     super(props);
 
+    this.myRef = React.createRef();
+
     this.state = {
-      count: 0,
-      tipo: props.tipo,
-      coordenadas: props.coordenadas,
+      count: 0+ props.count,
+     // tipo: props.tipo,
+     // coordenadas: props.coordenadas,
       purpleOptions: props.color,
       mymap: L.map,
       accessToken: props.accessToken,
@@ -105,60 +123,7 @@ public class MapaCalor extends React.Component {
     };
   }
 
-function ExampleWithManyStates() {
-  // Declara várias variáveis de state!
 
-  // Declara uma nova variável de state, que chamaremos de "count"
-   const [count, setCount] = useState(this.state.count + 1);
-
-  const [tipo, setTipo] = useState(poligono.geometry.type);
-  const [feature, setFeature] = useState(
-    {
-      "type": "Feature",
-      "properties": { "party": "Republican" },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [-104.05, 48.99],
-            [-97.22, 48.98],
-            [-96.58, 45.94],
-            [-104.03, 45.94],
-            [-104.05, 48.99]
-          ]
-        ]
-      }
-    }
-  );
-  // const [purpleOptions, setPurpleOptions]:useState('purple');
-  const [mymap, setMyMap] = useState(mymap);
-  const [accessToken, setAccessToken] = useState(accessToken);
-
-  const [pol, setPol] = useState(poligono.geometry[0]);
-
-  const [age, setAge] = useState(42);
-  const [fruit, setFruit] = useState("banana");
-  const [todos, setTodos] = useState([{ text: "Learn Hooks" }]);
-  // ...
-
-  // Declara uma nova variável de state, que chamaremos de "count"
-  //const [count, setCount] = useState(count + 1);
-
-  return (
-    <div>
-      <p>You clicked {count} times</p>
-      <button onClick={() => setCount(0)}>
-        Click me
-      </button>
-      <button onClick={() => setTipo(tipo + 1)}>
-        Tipo me
-      </button>
-      <button onClick={() => setPol(pol + 1)}>
-        Poligono me
-      </button>
-    </div>
-  );
-}
 
 
 // @ts-ignore
@@ -167,12 +132,17 @@ render()
   return (
     <div>
       <CircularProgress />
+
+      <ExampleWithManyStates value={this.state.mymap}/>
+
       <div id="mapid">{this.state.mymap}</div>
+
+      <div ref={this.myRef} />
 
 
       <div>
         <p>You clicked {this.state.count} times</p>
-        <button onClick={() => this.setState({ count: this.state.count + 1 })}>
+        <button onClick={() => this.setState({ count: (this.state.count + 1) })}>
           Click me
           <LeafLetHeatmapComponent />
         </button>
@@ -182,4 +152,6 @@ render()
   );
 }
 }
+
+export default FeatureGeoJSONMapaCalor;
 

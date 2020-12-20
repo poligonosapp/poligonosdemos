@@ -36,6 +36,8 @@ import "./theme/variables.css";
 
 import CircularProgress from "@material-ui/core/CircularProgress";
 
+const {accessToken} = 'pk.eyJ1IjoibHVpc21lbmRlczA3MCIsImEiOiJja2Y1cHp2dzcwZzV3MnpueGIwMThtZHo0In0.scLMoUkXBo03JD4ir3UGYA'.toString();
+
 const App: React.FC = () => (
   <IonApp>
     <CircularProgress />
@@ -43,7 +45,9 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
-          <Route path="/tab1" component={Tab1} exact={true} />
+          <Route path="/tab1" component={Tab1} exact={true} render={props => {
+            return isAuthed ? <DashboardPage {...props} /> : <LoginPage />;
+          } />
           <Route path="/tab2" component={Tab2} exact={true} />
           <Route path="/tab3" component={Tab3} />
           <Route path="/" render={() => <Redirect to="/tab1" />} exact={true} />

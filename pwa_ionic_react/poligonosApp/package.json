@@ -150,5 +150,13 @@
     "@babel/plugin-transform-modules-systemjs",
     "@babel/plugin-transform-modules-commonjs",
     "@babel/plugin-transform-modules-amd"
-  ]
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  }
 }
