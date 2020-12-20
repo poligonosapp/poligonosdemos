@@ -18,25 +18,77 @@ import CircularProgress from "@material-ui/core/CircularProgress";
 
 // import * as dadosPoligono from '../polygon.geojson';
 
-var poligonoVar: Polygon = {
-  type: "Polygon",
-  coordinates: [
-    [[0, 0], [3, 6], [6, 1], [0, 0]],
-    [[2, 2], [3, 3], [4, 2], [2, 2]]
-  ]
-};
-
-let polygonLet: Polygon = {
-  type: "Polygon",
-  coordinates: [
-    [[100.0, 0.0], [101.0, 0.0], [101.0, 1.0], [100.0, 1.0], [100.0, 0.0]]
-  ]
-};
-
-
 public class MapaCalor extends React.Component {
+  componentDidMount() {
+    super.componentDidMount();
+    console.log('\ncomponentDidMount...\n');
+  }
 
-  // let mymap;
+  shouldComponentUpdate(nextProps: Readonly<{}>, nextState: Readonly<{}>, nextContext: any): boolean {
+    return super.shouldComponentUpdate(nextProps, nextState, nextContext);
+  }
+
+  componentWillUnmount() {
+    super.componentWillUnmount();
+    console.log('\ncomponentWillUnMount...\n');
+  }
+
+  componentDidCatch(error: Error, errorInfo: React.ErrorInfo) {
+    super.componentDidCatch(error, errorInfo);
+    console.log('\ncomponentDidCatch...\n');
+  }
+
+  getSnapshotBeforeUpdate(prevProps: Readonly<{}>, prevState: Readonly<{}>): any | null {
+    return super.getSnapshotBeforeUpdate(prevProps, prevState);
+  }
+
+  componentDidUpdate(prevProps: Readonly<{}>, prevState: Readonly<{}>, snapshot?: any) {
+    super.componentDidUpdate(prevProps, prevState, snapshot);
+    console.log('\ncomponentDidUpdate...\n');
+  }
+
+  toString(): string {
+    console.log('\ntoString...\n');
+    return super.toString();
+  }
+
+  toLocaleString(): string {
+    return super.toLocaleString();
+  }
+
+  valueOf(): Object {
+    return super.valueOf();
+  }
+
+  hasOwnProperty(v: PropertyKey): boolean {
+    return super.hasOwnProperty(v);
+  }
+
+  isPrototypeOf(v: Object): boolean {
+    return super.isPrototypeOf(v);
+  }
+
+  propertyIsEnumerable(v: PropertyKey): boolean {
+    return super.propertyIsEnumerable(v);
+  }
+
+  context: any;
+
+  setState<K extends keyof S>(state: ((prevState: Readonly<S>, props: Readonly<P>) => (Pick<S, K> | S | null)) | Pick<S, K> | S | null, callback?: () => void) {
+    super.setState(state, callback);
+  }
+
+  forceUpdate(callback?: () => void) {
+    super.forceUpdate(callback);
+  }
+
+  render() {
+    return undefined;
+  }
+
+  readonly props: Readonly<P> & Readonly<{ children?: React.ReactNode }>;
+  state: Readonly<S>;
+  refs: { [p: string]: React.ReactInstance };
 
   constructor(props: any) {
 
@@ -49,32 +101,16 @@ public class MapaCalor extends React.Component {
       purpleOptions: props.color,
       mymap: props.mymap,
       accessToken: props.accessToken,
-      pol: props.pol.geometry
+      pol: require("./polygon.geojson");
     };
   }
-
-  let;
-  poligono;
-
-  try {
-  poligono = require("./polygon.geojson");
-}
-
-catch
-(e);
-{
-  console.log("require poligono failed");
-}
-
-console.log("\npoligono\n");
-console.log(poligono);
-console.log("\npolygonL\n");
-console.log(polygonoL);
 
 function ExampleWithManyStates() {
   // Declara várias variáveis de state!
 
-  const [count, setCount] = useState(this.state.count + 1);
+  // Declara uma nova variável de state, que chamaremos de "count"
+   const [count, setCount] = useState(this.state.count + 1);
+
   const [tipo, setTipo] = useState(poligono.geometry.type);
   const [coordenadas, setCoordenadas] = useState(poligono.geometry.coordinates);
   // const [purpleOptions, setPurpleOptions]:useState('purple');
@@ -89,7 +125,7 @@ function ExampleWithManyStates() {
   // ...
 
   // Declara uma nova variável de state, que chamaremos de "count"
-  const [count, setCount] = useState(count + 1);
+  //const [count, setCount] = useState(count + 1);
 
   return (
     <div>
@@ -109,7 +145,7 @@ function ExampleWithManyStates() {
 
 
 // @ts-ignore
-render();
+render()
 {
   return (
     <div>

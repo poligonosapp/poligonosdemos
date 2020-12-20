@@ -1,10 +1,12 @@
+import { Circle } from "react-leaflet";
+
 const graphql = require('babel-plugin-relay/macro');
 
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leafet';
+import { MapContainer, TileLayer, Marker, Popup, MapConsumer, useMapEvents } from 'react-leafet';
 
 import L, {circle} from "leaflet";
 
-import React, { useState, useEffect, useReducer, useCallback, FormEvent } from 'react';
+import React, { useState, useEffect, useReducer, useCallback, FormEvent, useRef } from "react";
 
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonInput } from '@ionic/react';
 
@@ -66,7 +68,7 @@ mymap.on('click', onMapClick);
 let poligono = null;
 
 try{
-    poligono = require('./polygon.geojson');
+    // poligono = require('./polygon.geojson');
     ExampleWithManyStates();
 }catch(e){
     console.log('require poligono failed');
@@ -86,11 +88,15 @@ function ExampleWithManyStates() {
 
     // const  [tipo, setTipo]: useReducer(poligono.type);
 
+  poligono = require('./polygon.geojson');
+
+  console.log(poligono);
+
     const [pol, setPol] = useState(poligono.geometry[0]);
 
     const  [tipo, setTipo] = useState( poligono.geometry.type[0] );
 
-        const [coordenadas, setCoordenadas] = useState([] poligono.geometry.coordinates);
+        // const [coordenadas [], setCoordenadas] = useState(poligono.geometry.coordinates);
         // const [purpleOptions, setPurpleOptions]:useState('purple');
         const [mymap, setMyMap] = useState(mymap);
         const [accessToken, setAccessToken] = useState(accessToken);
@@ -115,6 +121,8 @@ function ExampleWithManyStates() {
             <button onClick={() => () => setPol(tipo + 1)}>
                 Geometria
             </button>
+
+
         </div>
     );
 }
@@ -182,11 +190,11 @@ const Tab1: React.FC = () => {
 
     const [ name, setName ] = useState('Max');
 
-    const  [tipo, setTipo]: useState(poligono.type);
-    const [coordenadas, setCoordenadas]: useState(poligono.coordinates);
+    const  [tipo, setTipo] =  useState(poligono.type);
+    // const [coordenadas, setCoordenadas] = useState(poligono.coordinates);
     // const [purpleOptions, setPurpleOptions]:useState('purple');
-    const [mymap, setMyMap]:useState(mymap);
-    const [accessToken, setAccessToken]:useState(accessToken);
+    const [mymap, setMyMap] = useState(mymap);
+    const [accessToken, setAccessToken] = useState(accessToken);
 
     // ExampleWithManyStates();
 
@@ -208,20 +216,7 @@ const Tab1: React.FC = () => {
 
             MapaCalor aqui
 
-            <MapaCalor
-                this.setState={0, this.state.setTipo(this.state.poligono.geometry.type),
 
-
-                    this.state.coordenadas,
-
-                    this.state.mymap,
-
-                    this.state.accessToken,
-                    this.state.pol
-
-
-                }
-            />
 
         </MapContainer>
 

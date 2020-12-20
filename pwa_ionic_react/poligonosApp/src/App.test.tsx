@@ -39,6 +39,8 @@ require("core-js/es6/object");
 
 require("./myRelayApplication");
 
+require("./react-leafet");
+
 test("renders without crashing", () => {
   const { baseElement } = render(<App />);
   expect(baseElement).toBeDefined();
