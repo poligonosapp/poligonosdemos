@@ -74,7 +74,7 @@
     "build:stats": "wp --mode production --json > stats.json",
     "test": "react-scripts test a --env=jsdom",
     "serve": "webpack serve",
-    "prettier": "prettier",
+    "prettier": "prettier --check .",
     "eslint": "eslint"
   },
   "eslintConfig": {

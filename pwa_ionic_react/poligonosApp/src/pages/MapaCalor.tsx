@@ -99,9 +99,9 @@ public class MapaCalor extends React.Component {
       tipo: props.tipo,
       coordenadas: props.coordenadas,
       purpleOptions: props.color,
-      mymap: props.mymap,
+      mymap: L.map,
       accessToken: props.accessToken,
-      pol: require("./polygon.geojson");
+      pol: require("./polygon.geojson")
     };
   }
 
@@ -112,7 +112,24 @@ function ExampleWithManyStates() {
    const [count, setCount] = useState(this.state.count + 1);
 
   const [tipo, setTipo] = useState(poligono.geometry.type);
-  const [coordenadas, setCoordenadas] = useState(poligono.geometry.coordinates);
+  const [feature, setFeature] = useState(
+    {
+      "type": "Feature",
+      "properties": { "party": "Republican" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-104.05, 48.99],
+            [-97.22, 48.98],
+            [-96.58, 45.94],
+            [-104.03, 45.94],
+            [-104.05, 48.99]
+          ]
+        ]
+      }
+    }
+  );
   // const [purpleOptions, setPurpleOptions]:useState('purple');
   const [mymap, setMyMap] = useState(mymap);
   const [accessToken, setAccessToken] = useState(accessToken);
