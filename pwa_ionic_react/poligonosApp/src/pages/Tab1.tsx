@@ -1,3 +1,5 @@
+const graphql = require('babel-plugin-relay/macro');
+
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leafet';
 
 import L, {circle} from "leaflet";
@@ -53,7 +55,7 @@ mymap.on('click', onMapClick);
 let popup2 = L.popup();
 
 function onMapClick(e) {
-    popup
+    popup2
         .setLatLng(e.latlng)
         .setContent("You clicked the map at " + e.latlng.toString())
         .openOn(mymap);
@@ -65,6 +67,7 @@ let poligono = null;
 
 try{
     poligono = require('./polygon.geojson');
+    ExampleWithManyStates();
 }catch(e){
     console.log('require poligono failed');
 }
@@ -83,14 +86,14 @@ function ExampleWithManyStates() {
 
     // const  [tipo, setTipo]: useReducer(poligono.type);
 
-    const [pol, setPol] : () => useState(poligono.geometry);
+    const [pol, setPol] = useState(poligono.geometry[0]);
 
-    const  [tipo, setTipo]: () => useState( string poligono.geometry.type );
+    const  [tipo, setTipo] = useState( poligono.geometry.type[0] );
 
-        const [coordenadas, setCoordenadas]: () => useState([] poligono.geometry.coordinates);
+        const [coordenadas, setCoordenadas] = useState([] poligono.geometry.coordinates);
         // const [purpleOptions, setPurpleOptions]:useState('purple');
-        const [mymap, setMyMap]: () => () => useState(mymap);
-        const [accessToken, setAccessToken]: () => useState(accessToken);
+        const [mymap, setMyMap] = useState(mymap);
+        const [accessToken, setAccessToken] = useState(accessToken);
 
     const [age, setAge] = useState(42);
     const [fruit, setFruit] = useState('banana');
@@ -105,6 +108,12 @@ function ExampleWithManyStates() {
             <p>You clicked {count} times</p>
             <button onClick={() => setCount(count + 1)}>
                 Click me
+            </button>
+            <button onClick={() => () => setTipo(tipo + 1)}>
+                Tipo me
+            </button>
+            <button onClick={() => () => setPol(tipo + 1)}>
+                Geometria
             </button>
         </div>
     );
@@ -131,7 +140,7 @@ function MyComponent() {
     })
     return null
   }
-  
+
   function MyMapComponent() {
     return (
       <MapContainer center={[50.5, 30.5]} zoom={13}>
@@ -146,7 +155,7 @@ function MyComponent() {
     })
     return null
   }
-  
+
   function MyMapComponent() {
     return (
       <MapContainer center={[50.5, 30.5]} zoom={13}>

@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-  "outDir": "./dist/",
+    "outDir": "./dist/",
     "noImplicitAny": false,
     "module": "es6",
     "target": "es5",
@@ -8,11 +8,7 @@
     "allowJs": true,
     "sourceMap": true,
     "target": "es6",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -27,7 +23,5 @@
     "jsx": "react",
     "noFallthroughCasesInSwitch": true
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src", "relay.config.js"]
 }

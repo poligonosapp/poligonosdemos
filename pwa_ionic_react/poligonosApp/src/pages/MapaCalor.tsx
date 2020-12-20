@@ -1,119 +1,132 @@
-import {  IonInput } from '@ionic/react';
+import { IonInput } from "@ionic/react";
 
-import React, {Component, useState, FormEvent} from 'react';
+import React, { Component, useState, FormEvent } from "react";
 import { render } from "react-dom";
-import {TileLayer, Marker, Popup} from "react-leaflet";
-import {mockComponent} from "react-dom/test-utils";
-import LeafLetHeatmapComponent from './LeafLetHeatmapComponent';
+import { TileLayer, Marker, Popup } from "react-leaflet";
+import { mockComponent } from "react-dom/test-utils";
+import LeafLetHeatmapComponent from "./LeafLetHeatmapComponent";
 
-import type {Feature, Polygon} from 'geojson';
+import type { Feature, Polygon } from "geojson";
 
-import 'leaflet/dist/leaflet.css';
+import "leaflet/dist/leaflet.css";
 
-import 'leaflet/dist/leaflet.js';
+import "leaflet/dist/leaflet.js";
 
-import L, {circle} from 'leaflet';
+import L, { circle } from "leaflet";
 
-import CircularProgress from '@material-ui/core/CircularProgress';
+import CircularProgress from "@material-ui/core/CircularProgress";
 
 // import * as dadosPoligono from '../polygon.geojson';
 
 var poligonoVar: Polygon = {
-  type : "Polygon",
-  coordinates : [
-     [ [ 0 , 0 ] , [ 3 , 6 ] , [ 6 , 1 ] , [ 0 , 0 ] ],
-     [ [ 2 , 2 ] , [ 3 , 3 ] , [ 4 , 2 ] , [ 2 , 2 ] ]
+  type: "Polygon",
+  coordinates: [
+    [[0, 0], [3, 6], [6, 1], [0, 0]],
+    [[2, 2], [3, 3], [4, 2], [2, 2]]
   ]
-}
+};
 
- let polygonLet: Polygon = {
-    type: "Polygon",
-    coordinates: [
-        [[100.0, 0.0], [101.0, 0.0], [101.0, 1.0], [100.0, 1.0], [100.0, 0.0]]
-    ]
+let polygonLet: Polygon = {
+  type: "Polygon",
+  coordinates: [
+    [[100.0, 0.0], [101.0, 0.0], [101.0, 1.0], [100.0, 1.0], [100.0, 0.0]]
+  ]
 };
 
 
-class MapaCalor extends React.Component{
+public class MapaCalor extends React.Component {
 
-    // let mymap;
+  // let mymap;
 
-	constructor(props:any){
+  constructor(props: any) {
 
-		super(props);
+    super(props);
 
-		this.state = {
-			count: 0,
-			 tipo : props.tipo,
-			 coordenadas :  props.coordenadas,
-			 purpleOptions : props.color,
-             mymap : props.mymap,
-            accessToken : props.accessToken,
-			pol: props.pol.geometry
-		};
-	}
+    this.state = {
+      count: 0,
+      tipo: props.tipo,
+      coordenadas: props.coordenadas,
+      purpleOptions: props.color,
+      mymap: props.mymap,
+      accessToken: props.accessToken,
+      pol: props.pol.geometry
+    };
+  }
 
-	let poligono;
+  let;
+  poligono;
 
-	try{
-		poligono = require('./polygon.geojson');
-	}catch(e){
-	console.log('require poligono failed');
+  try {
+  poligono = require("./polygon.geojson");
 }
 
-	console.log("\npoligono\n");
-	console.log(poligono);
-	console.log("\npolygonL\n");
-	console.log(polygonoL);
+catch
+(e);
+{
+  console.log("require poligono failed");
+}
 
-	function ExampleWithManyStates() {
-		// Declara várias variáveis de state!
+console.log("\npoligono\n");
+console.log(poligono);
+console.log("\npolygonL\n");
+console.log(polygonoL);
 
-        const  [count, setCount] : useState(this.state.count + 1);
-		const  [tipo, setTipo]: useState(poligono.geometry.type);
-		const [coordenadas, setCoordenadas]: useState(polygono.geometry.coordinates);
-		// const [purpleOptions, setPurpleOptions]:useState('purple');
-		const [mymap, setMyMap]:useState(mymap);
-		const [accessToken, setAccessToken]:useState(accessToken);
+function ExampleWithManyStates() {
+  // Declara várias variáveis de state!
 
-		const [age, setAge] = useState(42);
-		const [fruit, setFruit] = useState('banana');
-		const [todos, setTodos] = useState([{ text: 'Learn Hooks' }]);
-		// ...
+  const [count, setCount] = useState(this.state.count + 1);
+  const [tipo, setTipo] = useState(poligono.geometry.type);
+  const [coordenadas, setCoordenadas] = useState(poligono.geometry.coordinates);
+  // const [purpleOptions, setPurpleOptions]:useState('purple');
+  const [mymap, setMyMap] = useState(mymap);
+  const [accessToken, setAccessToken] = useState(accessToken);
 
-		// Declara uma nova variável de state, que chamaremos de "count"
-		const [count, setCount] = useState(0);
+  const [pol, setPol] = useState(poligono.geometry[0]);
 
-		return (
-			<div>
-				<p>You clicked {count} times</p>
-				<button onClick={() => setCount(count + 1)}>
-					Click me
-				</button>
-			</div>
-		);
-	}
+  const [age, setAge] = useState(42);
+  const [fruit, setFruit] = useState("banana");
+  const [todos, setTodos] = useState([{ text: "Learn Hooks" }]);
+  // ...
+
+  // Declara uma nova variável de state, que chamaremos de "count"
+  const [count, setCount] = useState(count + 1);
+
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(0)}>
+        Click me
+      </button>
+      <button onClick={() => setTipo(tipo + 1)}>
+        Tipo me
+      </button>
+      <button onClick={() => setPol(pol + 1)}>
+        Poligono me
+      </button>
+    </div>
+  );
+}
 
 
 // @ts-ignore
-render(){
-	return (
-		<div>
-		<CircularProgress />
-		 <div id="mapid">{this.state.mymap}</div>
+render();
+{
+  return (
+    <div>
+      <CircularProgress />
+      <div id="mapid">{this.state.mymap}</div>
 
 
+      <div>
+        <p>You clicked {this.state.count} times</p>
+        <button onClick={() => this.setState({ count: this.state.count + 1 })}>
+          Click me
+          <LeafLetHeatmapComponent />
+        </button>
+      </div>
 
-			<div>
-				<p>You clicked {this.state.count} times</p>
-				<button onClick={() => this.setState({ count: this.state.count + 1 })}>
-					Click me
-					<LeafLetHeatmapComponent />
-				</button>
-			</div>
-
-		</div>
-	);
+    </div>
+  );
 }
 }
 
