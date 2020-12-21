@@ -4,14 +4,15 @@ import LoginPage from "../pages/LoginPage";
 import { Route } from "react-router-dom";
 import React from "react";
 
-function Tab1Component(props){
+function Tab1Component(_props){
   <Route
     path="/tab1"
     component={Tab1}
     exact={true}
     render={props => {
     // const isAuthed = true;
-    return props.isAuthed ? <DashboardPage {...props} /> : <LoginPage />;}
+    return _props.isAuthed ? <DashboardPage {...props} /> : <LoginPage />;
+  }
     }
   />
 };

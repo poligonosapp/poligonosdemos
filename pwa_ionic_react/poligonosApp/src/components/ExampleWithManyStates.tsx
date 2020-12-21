@@ -2,6 +2,8 @@ import React, { useState, useCallback } from "react";
 
 import L, {circle} from "leaflet";
 
+let mymap = L.map('mapid').setView([51.505, -0.09], 13);
+
 const ExampleWithManyStates = (props) => {
 
   // Declara várias variáveis de state!
@@ -31,7 +33,11 @@ const ExampleWithManyStates = (props) => {
     }
   );
   // const [purpleOptions, setPurpleOptions]:useState('purple');
-  const [setMyMap] = useState({props.mymap});
+
+  const [setMyMap] = useState(
+    {mymap}
+    );
+
   const [setAccessToken] = useState({props.accessToken});
 
   // const [pol, setPol] = useState(poligono.geometry[0]);
