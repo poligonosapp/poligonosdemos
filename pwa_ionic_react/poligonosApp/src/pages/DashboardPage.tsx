@@ -23,7 +23,7 @@ import {UsersDetailPage} from "./UsersDetailPage";
 
 export {UsersListPage, UsersDetailPage};
 
-const DashboardPage: React.FC = () => {
+let DashboardPage: React.FC = () => {
   return (
     <IonRouterOutlet>
       <Route exact path="/dashboard" component={UsersListPage} />

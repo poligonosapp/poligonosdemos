@@ -26,7 +26,7 @@ import FeatureGeoJSONMapaCalor from "./FeatureGeoJSONMapaCalor";
 
 // const {accessToken} = 'pk.eyJ1IjoibHVpc21lbmRlczA3MCIsImEiOiJja2Y1cHp2dzcwZzV3MnpueGIwMThtZHo0In0.scLMoUkXBo03JD4ir3UGYA';
 
-import {accessToken} from './accessToken';
+const {accessToken} = require('./accessToken');
 
 let mymap = L.map('mapid').setView([51.505, -0.09], 13);
 

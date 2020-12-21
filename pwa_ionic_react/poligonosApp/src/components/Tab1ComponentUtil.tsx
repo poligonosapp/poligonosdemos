@@ -4,7 +4,7 @@ import LoginPage from "../pages/LoginPage";
 import { Route } from "react-router-dom";
 import React from "react";
 
-function Tab1Component(_props){
+function Tab1ComponentUtil(_props){
   <Route
     path="/tab1"
     component={Tab1}
@@ -17,4 +17,4 @@ function Tab1Component(_props){
   />
 };
 
-export default Tab1Component;
+export default Tab1ComponentUtil;

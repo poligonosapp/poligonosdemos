@@ -48,6 +48,8 @@ require("./geojson");//api
 
 require("./ExampleWithManyStates");
 
+require('./accessToken');
+
 test("renders without crashing", () => {
   const { baseElement } = render(<App />);
   expect(baseElement).toBeDefined();
