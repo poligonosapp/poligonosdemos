@@ -2,6 +2,8 @@ import React, { useState, useCallback } from "react";
 
 import L, {circle} from "leaflet";
 
+import {accessToken} from './accessToken';
+
 let mymap = L.map('mapid').setView([51.505, -0.09], 13);
 
 const ExampleWithManyStates = (props) => {
@@ -38,7 +40,7 @@ const ExampleWithManyStates = (props) => {
     {mymap}
     );
 
-  const [setAccessToken] = useState({props.accessToken});
+  const [setAccessToken] = useState({accessToken});
 
   // const [pol, setPol] = useState(poligono.geometry[0]);
 

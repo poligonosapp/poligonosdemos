@@ -40,7 +40,10 @@ import LoginPage from "./pages/LoginPage";
 
 import {Tab1Component} from "./components/Tab1Component";
 
-const {accessToken} = 'pk.eyJ1IjoibHVpc21lbmRlczA3MCIsImEiOiJja2Y1cHp2dzcwZzV3MnpueGIwMThtZHo0In0.scLMoUkXBo03JD4ir3UGYA'.toString();
+// const {accessToken} = 'pk.eyJ1IjoibHVpc21lbmRlczA3MCIsImEiOiJja2Y1cHp2dzcwZzV3MnpueGIwMThtZHo0In0.scLMoUkXBo03JD4ir3UGYA'.toString();
+
+import {accessToken} from './accessToken';
+
 // const isAuthed = true;
 const App: React.FC = () => (
   <IonApp>

@@ -18,8 +18,10 @@ import {
 } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
 
-import UsersListPage from "./UsersListPage";
-import UsersDetailPage from "./UsersDetailPage";
+import {UsersListPage} from "./UsersListPage";
+import {UsersDetailPage} from "./UsersDetailPage";
+
+export {UsersListPage, UsersDetailPage};
 
 const DashboardPage: React.FC = () => {
   return (
