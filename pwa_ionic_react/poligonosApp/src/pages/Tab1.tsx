@@ -1,3 +1,11 @@
+import HookUseMap from "../components/HookUseMap";
+
+import HookUseMapEvent from "../components/HookUseMapEvent";
+
+import HookUseMapEvents from "../components/HookUseMapEvents";
+
+import ExampleWithManyStates from "../components/ExampleWithManyStates";
+
 const graphql = require('babel-plugin-relay/macro');
 
 import { Map, Circle, MapContainer, TileLayer, Marker, Popup, MapConsumer, useMapEvent } from "react-leafet";
@@ -67,9 +75,13 @@ let poligono = null;
 
 try{
     // poligono = require('./polygon.geojson');
-    ExampleWithManyStates();
+
+  // ExampleWithManyStates(value={ this.props.mymap:{mymap},this.props.accessToken:{accessToken} } );
+
 }catch(e){
+
     console.log('require poligono failed');
+
 }
 
 if(poligono == null){
@@ -130,11 +142,9 @@ const Tab1: React.FC = (props) => {
 
           <Map center={[0, 0]} zoom={2}  doubleClickZoom={false} crs={CRS.Earth}>
 
-            <MyComponent/>
-            <MyComponent2/>
-            <MyMapComponent3/>
-            <MyMapComponent5/>
-            <MyMapComponent6/>
+            <HookUseMap />
+            <HookUseMapEvent />
+            <HookUseMapEvents />
 
           </Map>
 

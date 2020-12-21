@@ -48,7 +48,7 @@ const App: React.FC = () => (
       <IonTabs>
         <IonRouterOutlet>
 
-          <Tab1Component this.props={isAuthed: true}></Tab1Component>
+          <Tab1Component value={this.props.isAuthed: true} />
 
           <Route path="/tab2" component={Tab2} exact={true} />
           <Route path="/tab3" component={Tab3} />
