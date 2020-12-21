@@ -2,9 +2,9 @@ import React from "react";
 import { render, fireEvent } from "@testing-library/react";
 import App from "./App";
 import Tab1 from "./pages/Tab1";
-import ExampleWithManyStates from "./pages/ExampleWithManyStates";
+import ExampleWithManyStates from "./components/ExampleWithManyStates";
 import FeatureGeoJSONMapaCalor from "./pages/FeatureGeoJSONMapaCalor";
-const {accessToken} = 'pk.eyJ1IjoibHVpc21lbmRlczA3MCIsImEiOiJja2Y1cHp2dzcwZzV3MnpueGIwMThtZHo0In0.scLMoUkXBo03JD4ir3UGYA'.toString();
+// const {accessToken} = 'pk.eyJ1IjoibHVpc21lbmRlczA3MCIsImEiOiJja2Y1cHp2dzcwZzV3MnpueGIwMThtZHo0In0.scLMoUkXBo03JD4ir3UGYA'.toString();
 // const store = mockStore(initialState);
 
 const makeServiceWorkerEnv = require("service-worker-mock");
@@ -83,20 +83,8 @@ test("should render props relay", () => {
   fail(true);
 });
 
-test("should Tab1", () => {
-  const { baseElement } = render(<Tab1 />);
-  // expect(baseElement).toBeDefined();
-  fail(true);
-});
 
-test("should FeatureGeoJSONMapaCalor", () => {
-  const { baseElement } = render(<FeatureGeoJSONMapaCalor />);
-  // expect(baseElement).toBeDefined();
-  fail(true);
-});
 
-test("should ExampleWithManyStates", () => {
-  const { baseElement } = render(<ExampleWithManyStates />);
-  // expect(baseElement).toBeDefined();
-  fail(true);
-});
+
+
+

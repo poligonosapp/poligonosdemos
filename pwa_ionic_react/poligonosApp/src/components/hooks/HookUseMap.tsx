@@ -1,9 +1,9 @@
-import { Map, Circle, MapContainer, TileLayer, Marker, Popup, MapConsumer, useMapEvent } from "react-leafet";
+import { Map, Circle, MapContainer, TileLayer, Marker, Popup, MapConsumer, useMapEvent, useMap } from "react-leafet";
 import FeatureGeoJSONMapaCalor from "../../pages/FeatureGeoJSONMapaCalor";
 
 function MyComponent() {
-  const map = useMap()
-  console.log('map center:', map.getCenter())
+  const map = useMap();
+  console.log('map center:', map.getCenter());
   return null
 }
 
@@ -15,4 +15,4 @@ function MyMapComponent() {
   )
 }
 
-default export HookUseMap;
+export default HookUseMap;

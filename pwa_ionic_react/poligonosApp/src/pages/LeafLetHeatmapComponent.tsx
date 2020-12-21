@@ -10,6 +10,7 @@ import fetch from "node-fetch";
 import "leaflet/dist/leaflet.css";
 
 import CircularProgress from "@material-ui/core/CircularProgress";
+import DashboardPage from "./DashboardPage";
 
 export default class LeafLetHeatmapComponent extends React.Component {
   constructor(props: any) {
@@ -29,3 +30,5 @@ export default class LeafLetHeatmapComponent extends React.Component {
     );
   }
 }
+
+export default LeafLetHeatmapComponent;

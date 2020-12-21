@@ -16,4 +16,4 @@ function MyMapComponent() {
   )
 }
 
-default export HookUseMapEvent;
+export default HookUseMapEvent;

@@ -81,101 +81,7 @@ console.log(poligono);
 console.log("\npolygonL\n");
 // console.log(polygonoL);
 
-function ExampleWithManyStates() {
-    // Declara várias variáveis de state!
 
-    // const  [tipo, setTipo]: useReducer(poligono.type);
-
-  poligono = require('./polygon.geojson');
-
-  console.log(poligono);
-
-    // const [pol, setPol] = useState(poligono.geometry[0]);
-
-    // const  [tipo, setTipo] = useState( poligono.geometry.type[0] );
-
-        // const [coordenadas [], setCoordenadas] = useState(poligono.geometry.coordinates);
-        // const [purpleOptions, setPurpleOptions]:useState('purple');
-        const [setMyMap] = useState(mymap);
-        const [setAccessToken] = useState({accessToken});
-
-    const [age, setAge] = useState(42);
-    const [fruit, setFruit] = useState('banana');
-    const [todos, setTodos] = useState([{ text: 'Learn Hooks' }]);
-    // ...
-
-    // Declara uma nova variável de state, que chamaremos de "count"
-    const [count, setCount] = useState(0);
-
-    return (
-        <div>
-            <p>You clicked {count} times</p>
-            <button onClick={() => setCount(count + 1)}>
-                Click me
-            </button>
-
-
-
-        </div>
-    );
-}
-
-function MyComponent() {
-    const circleRef = useRef();
-    useEffect(() => {
-        const radius = circleRef.current.getRadius();
-    });
-
-    return <Circle ref={circleRef} center={[50.5, 30.5]} radius={200} />
-}// fim
-
-function MyComponent2() {
-    const map = useMapEvent({
-      click: () => {
-        map.locate()
-      },
-      locationfound: (location) => {
-        console.log('location found:', location)
-      },
-    })
-    return null
-  }
-
-  function MyMapComponent3() {
-    return (
-      <MapContainer center={[50.5, 30.5]} zoom={13}>
-        <MyComponent />
-      </MapContainer>
-    )
-  }//fim  MapEvents
-
-  function MyComponent4() {
-    const map = useMapEvent('click', () => {
-      map.setCenter([50.5, 30.5])
-    })
-    return null
-  }
-
-  function MyMapComponent5() {
-    return (
-      <MapContainer center={[50.5, 30.5]} zoom={13}>
-        <MyComponent />
-      </MapContainer>
-    )
-  }// fim do MapEvent
-
-  function MyMapComponent6() {
-    return (
-      <MapContainer center={[50.5, 30.5]} zoom={13}>
-        <MapConsumer>
-          {(map) => {
-            console.log('map center:', map.getCenter())
-            return null
-          }}
-        </MapConsumer>
-      </MapContainer>
-    )
-  }// fim MapConsumer
 
 
 const Tab1: React.FC = (props) => {
@@ -214,11 +120,9 @@ const Tab1: React.FC = (props) => {
 
           <Map center={[0, 0]} zoom={2}  doubleClickZoom={false} crs={CRS.Simple}>
 
-            <MyComponent/>
-            <MyComponent2/>
-            <MyMapComponent3/>
-            <MyMapComponent5/>
-            <MyMapComponent6/>
+            <HookUseMap />
+            <HookUseMapEvent />
+            <HookUseMapEvents />
 
           </Map>
 

@@ -25,7 +25,9 @@ const DashboardPage: React.FC = () => {
   return (
     <IonRouterOutlet>
       <Route exact path="/dashboard" component={UsersListPage} />
-  <Route path="/dashboard/users/:id" component={UserDetailPage} />
+  <Route path="/dashboard/users/:id" component={UsersDetailPage} />
   </IonRouterOutlet>
 );
 };
+
+export default DashboardPage;

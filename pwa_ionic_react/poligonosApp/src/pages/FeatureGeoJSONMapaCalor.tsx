@@ -6,7 +6,7 @@ import { TileLayer, Marker, Popup } from "react-leaflet";
 import { mockComponent } from "react-dom/test-utils";
 import LeafLetHeatmapComponent from "./LeafLetHeatmapComponent";
 
-import ExampleWithManyStates from "./ExampleWithManyStates";
+import ExampleWithManyStates from "../components/ExampleWithManyStates";
 
 import type { Feature, Polygon, Geometry, FeatureCollection } from "geojson";
 export type {Feature, Polygon, Geometry, FeatureCollection};
