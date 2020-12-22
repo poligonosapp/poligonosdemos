@@ -39,3 +39,5 @@ const UsersListPage: React.FC = () => {
     </IonPage>
   );
 };
+
+export default UsersListPage;

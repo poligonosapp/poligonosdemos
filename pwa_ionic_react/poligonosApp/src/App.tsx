@@ -38,11 +38,13 @@ import CircularProgress from "@material-ui/core/CircularProgress";
 import DashboardPage from "./pages/DashboardPage";
 import LoginPage from "./pages/LoginPage";
 
-import {Tab1Component} from "./components/Tab1Component";
+// import {Tab1ComponentUtil} from "./components/Tab1ComponentUtil";
 
 // const {accessToken} = 'pk.eyJ1IjoibHVpc21lbmRlczA3MCIsImEiOiJja2Y1cHp2dzcwZzV3MnpueGIwMThtZHo0In0.scLMoUkXBo03JD4ir3UGYA'.toString();
 
-import {accessToken} from './accessToken';
+const {accessToken} = require('./accessToken');
+
+
 
 // const isAuthed = true;
 const App: React.FC = () => (
@@ -53,7 +55,18 @@ const App: React.FC = () => (
       <IonTabs>
         <IonRouterOutlet>
 
-          <Tab1Component value={this.props.isAuthed : true} />
+
+
+          <Route
+            path="/tab1"
+            component={Tab1}
+            exact={true}
+            render={props => {
+              const isAuthed = true;
+              return isAuthed ? <DashboardPage {...props} /> : <LoginPage />;
+            }
+            }
+          />
 
           <Route path="/tab2" component={Tab2} exact={true} />
           <Route path="/tab3" component={Tab3} />

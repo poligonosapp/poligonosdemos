@@ -2,7 +2,7 @@ import React, { useState, useCallback } from "react";
 
 import L, {circle} from "leaflet";
 
-import {accessToken} from './accessToken';
+const {accessToken} = require('./accessToken');
 
 let mymap = L.map('mapid').setView([51.505, -0.09], 13);
 

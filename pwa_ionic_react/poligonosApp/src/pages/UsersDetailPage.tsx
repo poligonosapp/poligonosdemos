@@ -17,6 +17,7 @@ import {
   IonItem
 } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
+import UsersListPage from "./UsersListPage";
 
 interface UserDetailPageProps extends RouteComponentProps<{
   id: string;
@@ -36,3 +37,5 @@ const UserDetailPage: React.FC<UserDetailPageProps> = ({match}) => {
     </IonPage>
   );
 };
+
+export default UsersDetailPage;

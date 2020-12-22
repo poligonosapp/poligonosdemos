@@ -1,3 +1,5 @@
+const {Map} = require('react-leafet');
+
 import { Map, Circle, MapContainer, TileLayer, Marker, Popup, MapConsumer, useMapEvent } from "react-leafet";
 import FeatureGeoJSONMapaCalor from "../../pages/FeatureGeoJSONMapaCalor";
 
@@ -14,6 +16,11 @@ function MyMapComponent() {
       <FeatureGeoJSONMapaCalor />
     </MapContainer>
   )
+}
+
+function HookUseMapEvent(){
+  MyComponent();
+  MyMapComponent();
 }
 
 export default HookUseMapEvent;
