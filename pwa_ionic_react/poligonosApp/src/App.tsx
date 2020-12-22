@@ -1,4 +1,4 @@
-import {graphql, QueryRenderer} from 'react-relay';
+// import {graphql, QueryRenderer} from 'react-relay';
 
 import React, { useState, FormEvent } from "react";
 import { Redirect, Route } from "react-router-dom";
@@ -37,7 +37,7 @@ import "@ionic/react/css/display.css";
 import "./theme/variables.css";
 
 import CircularProgress from "@material-ui/core/CircularProgress";
-import DashboardPage from "./pages/DashboardPage";
+// import DashboardPage from "./pages/DashboardPage";
 // import LoginPage from "./pages/LoginPage";
 
 // import {Tab1ComponentUtil} from "./components/Tab1ComponentUtil";
@@ -59,20 +59,7 @@ const App : React.FC = () => (
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
-
-
-
-          <Route
-            path="/tab1"
-            component={Tab1}
-            exact={true}
-            render={props => {
-              const isAuthed = true;
-              return isAuthed ? <DashboardPage {...props} /> : false;
-            }
-            }
-          />
-
+          <Route path="/tab1" component={Tab1} exact={true} />
           <Route path="/tab2" component={Tab2} exact={true} />
           <Route path="/tab3" component={Tab3} />
           <Route path="/" render={() => <Redirect to="/tab1" />} exact={true} />

@@ -1,15 +1,9 @@
-// import {HookUseMap} from "../components/hooks/HookUseMap";
-
-import HookUseMapEvent from "../components/hooks/HookUseMapEvent";
-import HookUseMapEvents from "../components/hooks/HookUseMapEvents";
-
-import {MyComponent, MyMapComponent} from "../components/hooks/HookUseMapEvents";
-
-import ExampleWithManyStates from "../components/ExampleWithManyStates";
+// import ExampleWithManyStates from "../components/ExampleWithManyStates";
 
 const graphql = require('babel-plugin-relay/macro');
 // import {graphql, QueryRenderer} from 'react-relay';
 
+// @ts-ignore
 import { Map, MapContainer, TileLayer, Marker, Popup} from "react-leaflet";
 
 import L, {circle, CRS} from "leaflet";
@@ -22,12 +16,12 @@ import ExploreContainer from '../components/ExploreContainer';
 import './Tab1.css';
 
 import CircularProgress from '@material-ui/core/CircularProgress';
-import MapaCalor, { Feature } from "./FeatureGeoJSONMapaCalor";
+// import MapaCalor, { Feature } from "./FeatureGeoJSONMapaCalor";
 
-import FeatureGeoJSONMapaCalor from "./FeatureGeoJSONMapaCalor";
+// import FeatureGeoJSONMapaCalor from "./FeatureGeoJSONMapaCalor";
 // import { accessToken } from "./accessToken";
 
-const {accessToken} = 'ionicAcessTokenDezembro2020';
+let {accessToken} = 'sk.eyJ1IjoibHVpc21lbmRlczA3MCIsImEiOiJja2owaXNwenQzNW5lMzBscmp1YTNyYjJjIn0.58Rc1G6XH1wX0bOB-kUNPQ';
 
 const {accessTokenConst} = require('./accessToken');
 
@@ -137,19 +131,12 @@ const Tab1: React.FC = (props) => {
 
           <Map center={[0, 0]} zoom={2}  doubleClickZoom={false} crs={CRS.Simple}>
 
-
-            <HookUseMapEvent />
-            <HookUseMapEvents />
-
           </Map>
 
           CRS Earth
 
           <Map center={[0, 0]} zoom={2}  doubleClickZoom={false} crs={CRS.Earth}>
 
-
-            <HookUseMapEvent />
-            <HookUseMapEvents />
 
           </Map>
 

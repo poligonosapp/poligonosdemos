@@ -3,7 +3,7 @@ import { render, fireEvent } from "@testing-library/react";
 import App from "./App";
 import Tab1 from "./pages/Tab1";
 import ExampleWithManyStates from "./components/ExampleWithManyStates";
-import FeatureGeoJSONMapaCalor from "./pages/FeatureGeoJSONMapaCalor";
+// import FeatureGeoJSONMapaCalor from "./pages/FeatureGeoJSONMapaCalor";
 // const {accessToken} = 'pk.eyJ1IjoibHVpc21lbmRlczA3MCIsImEiOiJja2Y1cHp2dzcwZzV3MnpueGIwMThtZHo0In0.scLMoUkXBo03JD4ir3UGYA'.toString();
 // const store = mockStore(initialState);
 
@@ -51,7 +51,7 @@ require("./ExampleWithManyStates");
 require('./accessToken');
 
 const graphql = require('babel-plugin-relay/macro');
-import {graphql, QueryRenderer} from 'react-relay';
+// import {graphql, QueryRenderer} from 'react-relay';
 
 test("renders without crashing", () => {
   const { baseElement } = render(<App />);
