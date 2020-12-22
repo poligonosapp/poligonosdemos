@@ -38,7 +38,7 @@ import "./theme/variables.css";
 
 import CircularProgress from "@material-ui/core/CircularProgress";
 import DashboardPage from "./pages/DashboardPage";
-import LoginPage from "./pages/LoginPage";
+// import LoginPage from "./pages/LoginPage";
 
 // import {Tab1ComponentUtil} from "./components/Tab1ComponentUtil";
 

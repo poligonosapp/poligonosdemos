@@ -10,7 +10,7 @@ import ExampleWithManyStates from "../components/ExampleWithManyStates";
 const graphql = require('babel-plugin-relay/macro');
 // import {graphql, QueryRenderer} from 'react-relay';
 
-import { Map, Circle, MapContainer, TileLayer, Marker, Popup, MapConsumer, useMapEvent } from "react-leafet";
+import { Map, MapContainer, TileLayer, Marker, Popup} from "react-leaflet";
 
 import L, {circle, CRS} from "leaflet";
 
@@ -39,7 +39,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     id: 'mapbox/streets-v11',
     tileSize: 512,
     zoomOffset: -1,
-    accessToken: {'ionicAcessTokenDezembro2020'}
+    accessToken: 'sk.eyJ1IjoibHVpc21lbmRlczA3MCIsImEiOiJja2owaXNwenQzNW5lMzBscmp1YTNyYjJjIn0.58Rc1G6XH1wX0bOB-kUNPQ'
 }).addTo(mymap);
 
 let marker = L.marker([51.5, -0.09]).addTo(mymap);

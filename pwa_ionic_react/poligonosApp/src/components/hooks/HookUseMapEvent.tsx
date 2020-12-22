@@ -1,8 +1,8 @@
 import React from "react";
 
-const {Map} = require('react-leafet');
+// const {Map} = require('react-leaflet');
 
-import { Map, Circle, MapContainer, TileLayer, Marker, Popup, MapConsumer, useMapEvent } from "react-leafet";
+import { MapContainer, useMapEvent } from "react-leaflet";
 import FeatureGeoJSONMapaCalor from "../../pages/FeatureGeoJSONMapaCalor";
 
 export function MyComponent() {
