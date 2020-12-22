@@ -38,4 +38,4 @@ const UserDetailPage: React.FC<UserDetailPageProps> = ({match}) => {
   );
 };
 
-export default UsersDetailPage;
+export default UserDetailPage;

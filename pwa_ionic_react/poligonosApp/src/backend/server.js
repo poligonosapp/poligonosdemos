@@ -12,8 +12,8 @@ app.listen(80, function () {
   console.log("CORS-enabled web server listening on port 80");
 });
 
-express = require("express");
-app = express();
+// express = require("express");
+// app = express();
 
 app.get("/", function (req, res) {
   res.send("Hello World");

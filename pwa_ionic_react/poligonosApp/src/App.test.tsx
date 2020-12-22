@@ -50,6 +50,9 @@ require("./ExampleWithManyStates");
 
 require('./accessToken');
 
+const graphql = require('babel-plugin-relay/macro');
+import {graphql, QueryRenderer} from 'react-relay';
+
 test("renders without crashing", () => {
   const { baseElement } = render(<App />);
   expect(baseElement).toBeDefined();
@@ -85,6 +88,20 @@ test("should render props relay", () => {
   fail(true);
 });
 
+test("should accept stripe payments", () => {
+  const { baseElement } = render(<App />);
+  // expect(baseElement).toBeDefined();
+  fail(true);
+});
+
+test("should query graphQl api", () => {
+  const { baseElement } = render(<App />);
+
+
+
+  // expect(baseElement).toBeDefined();
+  fail(true);
+});
 
 
 

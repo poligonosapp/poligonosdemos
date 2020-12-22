@@ -41,6 +41,7 @@ module.exports = () => {
     resolve: {
       // Add `.ts` and `.tsx` as a resolvable extension.
       extensions: [".ts", ".tsx", ".js", ".jsx"],
+      fallback: { "path": require.resolve("path-browserify") }
     },
     module: {
       rules: [

@@ -1,3 +1,5 @@
+import {graphql, QueryRenderer} from 'react-relay';
+
 import React, { useState, FormEvent } from "react";
 import { Redirect, Route } from "react-router-dom";
 import {
@@ -47,7 +49,10 @@ const {accessToken} = require('./accessToken');
 
 
 // const isAuthed = true;
-const App: React.FC = () => (
+const App : React.FC = () => (
+
+  // console.log("\n const App ... \n");
+
   <IonApp>
     <CircularProgress />
 
@@ -63,7 +68,7 @@ const App: React.FC = () => (
             exact={true}
             render={props => {
               const isAuthed = true;
-              return isAuthed ? <DashboardPage {...props} /> : <LoginPage />;
+              return isAuthed ? <DashboardPage {...props} /> : false;
             }
             }
           />

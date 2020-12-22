@@ -1,12 +1,14 @@
-import HookUseMap from "../components/HookUseMap";
+// import {HookUseMap} from "../components/hooks/HookUseMap";
 
-import HookUseMapEvent from "../components/HookUseMapEvent";
+import HookUseMapEvent from "../components/hooks/HookUseMapEvent";
+import HookUseMapEvents from "../components/hooks/HookUseMapEvents";
 
-import HookUseMapEvents from "../components/HookUseMapEvents";
+import {MyComponent, MyMapComponent} from "../components/hooks/HookUseMapEvents";
 
 import ExampleWithManyStates from "../components/ExampleWithManyStates";
 
 const graphql = require('babel-plugin-relay/macro');
+// import {graphql, QueryRenderer} from 'react-relay';
 
 import { Map, Circle, MapContainer, TileLayer, Marker, Popup, MapConsumer, useMapEvent } from "react-leafet";
 
@@ -23,10 +25,11 @@ import CircularProgress from '@material-ui/core/CircularProgress';
 import MapaCalor, { Feature } from "./FeatureGeoJSONMapaCalor";
 
 import FeatureGeoJSONMapaCalor from "./FeatureGeoJSONMapaCalor";
+// import { accessToken } from "./accessToken";
 
-const {accessToken} = 'pk.eyJ1IjoibHVpc21lbmRlczA3MCIsImEiOiJja2Y1cHp2dzcwZzV3MnpueGIwMThtZHo0In0.scLMoUkXBo03JD4ir3UGYA';
+const {accessToken} = 'ionicAcessTokenDezembro2020';
 
-// const {accessToken} = require('./accessToken');
+const {accessTokenConst} = require('./accessToken');
 
 let mymap = L.map('mapid').setView([51.505, -0.09], 13);
 
@@ -36,7 +39,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     id: 'mapbox/streets-v11',
     tileSize: 512,
     zoomOffset: -1,
-    accessToken: {accessToken}
+    accessToken: {'ionicAcessTokenDezembro2020'}
 }).addTo(mymap);
 
 let marker = L.marker([51.5, -0.09]).addTo(mymap);
@@ -128,13 +131,13 @@ const Tab1: React.FC = (props) => {
 
 
             MapaCalor aqui
-          <FeatureGeoJSONMapaCalor value={mymap}/>
+
 
           CRS Simple
 
           <Map center={[0, 0]} zoom={2}  doubleClickZoom={false} crs={CRS.Simple}>
 
-            <HookUseMap />
+
             <HookUseMapEvent />
             <HookUseMapEvents />
 
@@ -144,7 +147,7 @@ const Tab1: React.FC = (props) => {
 
           <Map center={[0, 0]} zoom={2}  doubleClickZoom={false} crs={CRS.Earth}>
 
-            <HookUseMap />
+
             <HookUseMapEvent />
             <HookUseMapEvents />
 

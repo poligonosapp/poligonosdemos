@@ -15,14 +15,18 @@ import {
   IonContent,
   IonList,
   IonItem,
-  Link,
   IonButton
 } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
+import { MyMapComponent } from "./hooks/HookUseMapEvent";
+import { Link } from '@material-ui/core';
 
-function RouterHelperComponent(props){
-  return <div>
-    <Link to="/dashboard/users/1">User 1</Link>
+//export type Link;
+
+const RouterHelperComponent: React.FC = (props) => (
+
+  <Link to="/dashboard/users/1">
+    User 1
 
     <IonButton
       onClick={e => {
@@ -31,7 +35,11 @@ function RouterHelperComponent(props){
       }}>
       Go to User 1
     </IonButton>
-    </div>;
-}
+
+  </Link>
+
+
+
+);
 
 export default RouterHelperComponent;
