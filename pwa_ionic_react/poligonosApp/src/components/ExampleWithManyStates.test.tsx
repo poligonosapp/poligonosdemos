@@ -1,5 +1,5 @@
 import { render } from "@testing-library/react";
-import ExampleWithManyStates from "./components/ExampleWithManyStates";
+import ExampleWithManyStates from "./ExampleWithManyStates";
 import React from "react";
 
 test("should render props ExampleWithManyStates", () => {

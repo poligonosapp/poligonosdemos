@@ -36,21 +36,9 @@ import "@ionic/react/css/display.css";
 /* Theme variables */
 import "./theme/variables.css";
 
-import CircularProgress from "@material-ui/core/CircularProgress";
-// import DashboardPage from "./pages/DashboardPage";
-// import LoginPage from "./pages/LoginPage";
-
-// import {Tab1ComponentUtil} from "./components/Tab1ComponentUtil";
-
-// const {accessToken} = 'pk.eyJ1IjoibHVpc21lbmRlczA3MCIsImEiOiJja2Y1cHp2dzcwZzV3MnpueGIwMThtZHo0In0.scLMoUkXBo03JD4ir3UGYA'.toString();
-
-const {accessToken} = require('./accessToken');
-
-const App : React.FC = () => (
-
+const App : React.FC = () => {
+  return(
   <IonApp>
-    <CircularProgress />
-
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
@@ -76,6 +64,7 @@ const App : React.FC = () => (
       </IonTabs>
     </IonReactRouter>
   </IonApp>
-);
+  )
+};
 
 export default App;
