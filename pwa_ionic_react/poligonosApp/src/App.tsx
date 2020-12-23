@@ -46,12 +46,7 @@ import CircularProgress from "@material-ui/core/CircularProgress";
 
 const {accessToken} = require('./accessToken');
 
-
-
-// const isAuthed = true;
 const App : React.FC = () => (
-
-  // console.log("\n const App ... \n");
 
   <IonApp>
     <CircularProgress />

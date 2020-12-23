@@ -1,5 +1,7 @@
 // import ExampleWithManyStates from "../components/ExampleWithManyStates";
 
+import { accessToken } from "./accessToken";
+
 const graphql = require('babel-plugin-relay/macro');
 // import {graphql, QueryRenderer} from 'react-relay';
 
@@ -21,9 +23,9 @@ import CircularProgress from '@material-ui/core/CircularProgress';
 // import FeatureGeoJSONMapaCalor from "./FeatureGeoJSONMapaCalor";
 // import { accessToken } from "./accessToken";
 
-let {accessToken} = 'sk.eyJ1IjoibHVpc21lbmRlczA3MCIsImEiOiJja2owaXNwenQzNW5lMzBscmp1YTNyYjJjIn0.58Rc1G6XH1wX0bOB-kUNPQ';
+// const {accessToken} = 'sk.eyJ1IjoibHVpc21lbmRlczA3MCIsImEiOiJja2owaXNwenQzNW5lMzBscmp1YTNyYjJjIn0.58Rc1G6XH1wX0bOB-kUNPQ';
 
-const {accessTokenConst} = require('./accessToken');
+ const {accessTokenConst} = require('./accessToken');
 
 let mymap = L.map('mapid').setView([51.505, -0.09], 13);
 
