@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 
 import fun from './backend/server';//tenta ligar o servidor
 
-import { BrowserRouter } from "react-router-dom";
+// import { BrowserRouter } from "react-router-dom";
 
 import * as serviceWorker from "./serviceWorker";
 

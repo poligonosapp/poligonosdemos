@@ -1,3 +1,5 @@
+docker build -t poligonosApp .
+
 npm install -g source-map-explorer
 
 source-map-explorer /dist/bundle.js /path/to/bundle.js.map
