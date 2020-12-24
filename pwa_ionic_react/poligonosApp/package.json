@@ -49,12 +49,12 @@
     "node-fetch": "^2.6.1",
     "qs": "^6.2.1",
     "ramda": "^0.26.1",
-    "react": "^17.0.0",
+    "react": "^16.8.0",
     "react-dom": "^17.0.0",
     "react-leaflet": "^2.8.0",
     "react-router": "^5.1.2",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "^4.0.0",
+    "react-scripts": ">=4.0.0",
     "ref-loader": "^1.0.3",
     "relay-compiler": "^10.1.2",
     "relay-config": "^10.1.2",
@@ -65,7 +65,8 @@
     "tapable": "^1.1.3",
     "tough-cookie": "^2.3.1",
     "tunnel-agent": "^0.4.3",
-    "typescript": "3.8.3"
+    "typescript": "3.8.3",
+    "web-vitals": "^1.0.1"
   },
   "scripts": {
     "dev": "webpack serve --hot --mode development",
@@ -125,13 +126,14 @@
     "service-worker-loader": "^4.0.2",
     "style-loader": "^1.3.0",
     "ts-loader": "^8.0.11",
-    "webpack": "^5.9.0",
+    "webpack": "^5.11.0",
     "webpack-cli": "^4.2.0",
     "webpack-dev-server": "^3.11.0"
-  },"peerDependencies":{
-  "react":">=16.9.0",
-  "react-test-renderer":">=16.9.0"
-},
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-test-renderer": ">=16.9.0"
+  },
   "description": "An Ionic project",
   "types": "index",
   "typesVersions": {

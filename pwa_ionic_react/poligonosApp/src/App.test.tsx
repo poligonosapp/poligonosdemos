@@ -1,8 +1,8 @@
 import React from "react";
-import { render, fireEvent } from "@testing-library/react";
+import { render } from "@testing-library/react";
 import App from "./App";
 import Tab1 from "./pages/Tab1";
-import ExampleWithManyStates from "./components/ExampleWithManyStates";
+// import ExampleWithManyStates from "./components/ExampleWithManyStates";
 // import FeatureGeoJSONMapaCalor from "./pages/FeatureGeoJSONMapaCalor";
 // const {accessToken} = 'pk.eyJ1IjoibHVpc21lbmRlczA3MCIsImEiOiJja2Y1cHp2dzcwZzV3MnpueGIwMThtZHo0In0.scLMoUkXBo03JD4ir3UGYA'.toString();
 // const store = mockStore(initialState);
