@@ -1,7 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+<<<<<<< Updated upstream
 import fun from './backend/server';//tenta ligar o servidor
+=======
+// import fun from './backend/Server';//tenta ligar o servidor
+>>>>>>> Stashed changes
 
 // import { BrowserRouter } from "react-router-dom";
 
@@ -26,7 +30,7 @@ require("@babel/core").transform("code", {
 
 import App from "./App";
 
- import reportWebVitals from './reportWebVitals';
+import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>

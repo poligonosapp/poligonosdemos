@@ -62,9 +62,11 @@ module.exports = () => {
           },
         },
         {
-          test: /\.style.js$/,
+          test: /\.s[ac]ss$/i,
           use: [
             "style-loader",
+            // Compiles Sass to CSS
+          "sass-loader",
             {
               loader: "css-loader",
             },
