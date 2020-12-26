@@ -50,15 +50,12 @@ require("./ExampleWithManyStates");
 
 require('./accessToken');
 
-<<<<<<< Updated upstream
-=======
 require('whatwg-fetch');
 
 require('fs');
 
 require('sass-loader');
 
->>>>>>> Stashed changes
 const graphql = require('babel-plugin-relay/macro');
 // import {graphql, QueryRenderer} from 'react-relay';
 
@@ -105,8 +102,6 @@ test("should accept stripe payments", () => {
 
 test("should query graphQl api", () => {
   const { baseElement } = render(<App />);
-
-
 
   // expect(baseElement).toBeDefined();
   fail(true);

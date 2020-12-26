@@ -1,11 +1,9 @@
 import L, {circle, CRS} from "leaflet";
 // import { accessToken } from "./accessToken";
 
+function fun(){
 
-
-declare function fun(){
-
-  let mymap:any = L.map('mapid').setView([51.505, -0.09], 13);
+  let mymap = L.map('mapid').setView([51.505, -0.09], 13);
 
   L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -16,9 +14,9 @@ declare function fun(){
     accessToken: 'sk.eyJ1IjoibHVpc21lbmRlczA3MCIsImEiOiJja2owaXNwenQzNW5lMzBscmp1YTNyYjJjIn0.58Rc1G6XH1wX0bOB-kUNPQ'
   }).addTo(mymap);
 
-  let marker:any = L.marker([51.5, -0.09]).addTo(mymap);
+  let marker = L.marker([51.5, -0.09]).addTo(mymap);
 
-  let circle:any = L.circle([51.508, -0.11], {
+  let circle = L.circle([51.508, -0.11], {
     color: 'red',
     fillColor: '#f03',
     fillOpacity: 0.5,

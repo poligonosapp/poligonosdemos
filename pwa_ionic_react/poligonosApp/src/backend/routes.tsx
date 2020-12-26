@@ -1,3 +1,4 @@
+"use strict";
 let express = require("express");
 let cors = require("cors");
 let app = express();
@@ -32,11 +33,11 @@ router.use(function timeLog(req, res, next) {
 });
 // define the home page route
 router.get('/', function(req, res) {
-  res.send('Birds home page');
+  res.send('PoligonoApp home page');
 });
 // define the about route
 router.get('/about', function(req, res) {
-  res.send('About birds');
+  res.send('About PoligonoApp');
 });
 module.exports = router;
-//export default Routes;
+export default router;

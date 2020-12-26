@@ -168,23 +168,5 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
-  },
-  "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
-<<<<<<< Updated upstream
-  }, "jest": {
-  "testEnvironment": "node",
-  "coveragePathIgnorePatterns": [
-    "/node_modules/"
-  ]
-}
-=======
-  },
-  "jest": {
-    "testEnvironment": "jsdom",
-    "coveragePathIgnorePatterns": [
-      "/node_modules/"
-    ]
   }
->>>>>>> Stashed changes
 }
