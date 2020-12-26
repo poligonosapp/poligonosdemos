@@ -1,37 +1,21 @@
-// const HtmlWebpackPlugin = require('html-webpack-plugin'); //installed via npm
 const webpack = require("webpack"); //to access built-in plugins
 const path = require("path");
-
 const PUBLIC_DIR = "public";
-
 const HTMLWebpackPlugin = require("html-webpack-plugin");
-
-var PROD = "0";
-
-// import FileBrowser from 'components/FileBrowser';
-
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-
-const R = require("ramda");
-
-const { curry } = R;
-
-// const myOtherPostcssPlugin = require("postcss-my-plugin");
 
 module.exports = () => {
   const pathToMainCss = require.resolve("./src/theme/variables.css");
-
   return {
-    entry: pathToMainCss,
     devServer: {
       inline: false,
       contentBase: path.join(__dirname, PUBLIC_DIR),
       hot: true,
       compress: true,
-      port: 3340,
+      port: 3000,
     },
     devtool: "inline-source-map",
-    entry: path.resolve(__dirname, "src", "index.js"),
+    entry: path.resolve(__dirname, "src", "index.js", pathToMainCss),
     output: {
       publicPath: "",
       filename: "[name]-[hash].js",
@@ -76,24 +60,7 @@ module.exports = () => {
           test: /\.css$/i,
           use: [
             "style-loader",
-            "css-loader",
-            {
-              loader: "postcss-loader",
-              options: {
-                // publicPat
-                // h: '',
-                postcssOptions: {
-                  plugins: [
-                    [
-                      "postcss-preset-env",
-                      {
-                        // Options
-                      },
-                    ],
-                  ],
-                },
-              },
-            },
+            "css-loader"
           ],
         },
         {
