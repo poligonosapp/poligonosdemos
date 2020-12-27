@@ -1,6 +1,8 @@
-import React from "react";
-import { render } from "@testing-library/react";
-import App from "./App";
+import { response } from "express";
+
+const React = require("react");
+const render = require("@testing-library/react");
+import App from "../App";
 // import Tab1 from "./pages/Tab1";
 // import ExampleWithManyStates from "./components/ExampleWithManyStates";
 // import FeatureGeoJSONMapaCalor from "./pages/FeatureGeoJSONMapaCalor";
@@ -44,17 +46,22 @@ require("./myRelayApplication");
 
 require("./react-leafet");
 
-require("./geojson");//api
+const geojson = require("./geojson");//api
 
 require("./ExampleWithManyStates");
 
-require('./accessToken');
+const accessToken = require('./accessToken');
 
 require('whatwg-fetch');
 
-require('fs');
+const fs = require('fs');
 
 require('sass-loader');
+
+const express = require('express');
+const logger = require('morgan');
+const app = express();
+app.use(logger('dev'));
 
 const graphql = require('babel-plugin-relay/macro');
 // import {graphql, QueryRenderer} from 'react-relay';
@@ -107,6 +114,51 @@ test("should query graphQl api", () => {
   fail(true);
 });
 
+test("should query insert moongose", () => {
+
+  const connectionTest = require('./databases/getting-started.ts');
+  const poligonoDesenhoTest = require('./models/PoligonoModels');
+
+  connectionTest.db.once('insert', function() {
+    console.log("new polygon inserted!");
+  });
+
+  const { baseElement } = render(<App />);
+  // expect(baseElement).toBeDefined();
+  fail(true);
+});
+
+test("should query read moongose", () => {
+  const { baseElement } = render(<App />);
+  // expect(baseElement).toBeDefined();
+  fail(true);
+});
+
+test("should declare newModel moongose", () => {
+  const { baseElement } = render(<App />);
+  // expect(baseElement).toBeDefined();
+  fail(true);
+});
+
+test("should declare newDesenhoSchema moongose", () => {
+  const { baseElement } = render(<App />);
+  // expect(baseElement).toBeDefined();
+  fail(true);
+});
+
+test("should send http 200 status code", () => {
+  const { baseElement } = render(<App />);
+  // expect(baseElement).toBeDefined();
+
+  const resStatus = response.status(200);
+
+  console.assert(resStatus, require('response'));
+
+  fail(true);
+});
+
+
+export {};
 
 
 

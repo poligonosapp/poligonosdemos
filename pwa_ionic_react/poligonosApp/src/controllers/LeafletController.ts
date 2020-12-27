@@ -1,7 +1,13 @@
 import L, {circle, CRS} from "leaflet";
 // import { accessToken } from "./accessToken";
 
-function fun(){
+try{
+   fun();
+}catch(e){
+  console.log('server fault');
+}
+
+export default function fun(){
 
   let mymap = L.map('mapid').setView([51.505, -0.09], 13);
 
@@ -40,7 +46,7 @@ function fun(){
 
   function onMapClick(e) {
     alert("You clicked the map at " + e.latlng);
-    let polygon = require('pages/polygon.geojson');
+    let polygon = require('src/pages/polygon.geojson');
     popup.setLatLng(polygon[0].geometry.coordinates);
   }
 
@@ -48,42 +54,15 @@ function fun(){
 
   // let popup = L.popup();
 
-  function onMapClick(e) {
+  function onMapClick2(e) {
     popup
       .setLatLng(e.latlng)
       .setContent("You clicked the map at " + e.latlng.toString())
       .openOn(mymap);
   }
 
-  mymap.on('click', onMapClick);
+  mymap.on('click', onMapClick2);
 
-  let express = require("express");
-  let cors = require("cors");
-  let app = express();
 
-  app.use(cors());
-
-  app.get("/products/:id", function (req, res, next) {
-    res.json({ msg: "This is CORS-enabled for all origins!" });
-  });
-
-  app.listen(80, function () {
-    console.log("CORS-enabled web server listening on port 80");
-  });
-
-// express = require("express");
-// app = express();
-
-  app.get("/", function (req, res) {
-    res.send("Hello World");
-  });
-
-  app.listen(3000);
-}
-
-try{
-   fun();
-}catch(e){
-  console.log('server fault');
 }
 

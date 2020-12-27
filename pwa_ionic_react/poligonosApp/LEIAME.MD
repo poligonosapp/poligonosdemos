@@ -1,3 +1,5 @@
+ionic:build + express:start + express:devstart
+
 docker build -t poligonosApp .
 
 npm install -g source-map-explorer
@@ -17,7 +19,7 @@ ionic serve
 
 cd src
 
-nodemon ./server.js localhost 8080
+nodemon ./LeafletServer.js localhost 8080
 
 snyk auth
 snyk test

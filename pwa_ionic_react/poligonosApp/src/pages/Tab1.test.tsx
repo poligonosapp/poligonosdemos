@@ -1,4 +1,4 @@
-import { render } from "@testing-library/react";
+const { render } = require("testing-library/react");
 import Tab1 from "./Tab1";
 import React from "react";
 

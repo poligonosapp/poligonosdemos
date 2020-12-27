@@ -1,13 +1,16 @@
-import router from "./Routes";
+import router from "./mapas";
 import { response } from "express";
 
 let express = require("express");
 let cors = require("cors");
-let app = express();
+const logger = require('morgan');
+const app = express();
 
-app.route('/mapa')
+app.route('/mapas')
   .get(function(req, res) {
-    res.send('Get a random map');
+    app.use(logger('get rota mapas...'));
+    res.send('Get map');
+    res.status(200);
   })
   .post(function(req, res) {
     res.send('Add a map');

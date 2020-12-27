@@ -1,4 +1,4 @@
-import { assert } from "@hapi/hoek";
+const { assert } = require("@hapi/hoek");
 
 // const supertest = require('supertest');
 
@@ -86,3 +86,5 @@ describe('POST /user', function() {
       }, done);
   });
 });
+
+export {};

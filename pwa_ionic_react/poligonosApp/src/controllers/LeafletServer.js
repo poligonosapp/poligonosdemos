@@ -1,13 +1,28 @@
 import L, {circle, CRS} from "leaflet";
 // import { accessToken } from "./accessToken";
 
-try{
-   fun();
-}catch(e){
-  console.log('server fault');
-}
+function fun(){
 
-export default function fun(){
+  // Load HTTP module
+  const http = require("http");
+
+  const hostname = "127.0.0.1";
+  const port = 8000;
+
+// Create HTTP server
+  const server = http.createServer((req, res) => {
+
+    // Set the response HTTP header with HTTP status and Content type
+    res.writeHead(200, {'Content-Type': 'text/plain'});
+
+    // Send the response body "Hello World"
+    res.end('Hello World\n');
+  });
+
+// Prints a log once the server starts listening
+  server.listen(port, hostname, () => {
+    console.log(`Server running at http://${hostname}:${port}/`);
+  })
 
   let mymap = L.map('mapid').setView([51.505, -0.09], 13);
 
@@ -54,15 +69,42 @@ export default function fun(){
 
   // let popup = L.popup();
 
-  function onMapClick2(e) {
+  function onMapClick(e) {
     popup
       .setLatLng(e.latlng)
       .setContent("You clicked the map at " + e.latlng.toString())
       .openOn(mymap);
   }
 
-  mymap.on('click', onMapClick2);
+  mymap.on('click', onMapClick);
 
+  let express = require("express");
+  let cors = require("cors");
+  let app = express();
 
+  app.use(cors());
+
+  app.get("/products/:id", function (req, res, next) {
+    res.json({ msg: "This is CORS-enabled for all origins!" });
+  });
+
+  app.listen(80, function () {
+    console.log("CORS-enabled web server listening on port 80");
+  });
+
+// express = require("express");
+// app = express();
+
+  app.get("/", function (req, res) {
+    res.send("Hello World");
+  });
+
+  app.listen(3000);
+}
+
+try{
+   fun();
+}catch(e){
+  console.log('server fault');
 }
 

@@ -1,9 +1,30 @@
 {
   "name": "poligonosapp",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
-  "main": "index.js",
+  "main": "./public/index.html",
+  "scripts": {
+    "express:start": "node ./bin/www",
+    "express:devstart": "nodemon ./bin/www",
+    "express:serverstart": "DEBUG=poligonosApp:* npm run devstart",
+    "dev": "webpack serve --hot --mode development",
+    "ionic:start": "webpack serve --hot --mode development",
+    "build": "webpack",
+    "ionic:build": "npm run build && ionic capacitor copy --verbose",
+    "ionic:build:stats": "wp --mode production --json > stats.json",
+    "ionic:test": "jest",
+    "ionic:serve": "webpack serve",
+    "ionic:prettier": "prettier --check .",
+    "ionic:eslint": "eslint",
+    "ionic:debug": "debug"
+  },
   "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "pug": "2.0.0-beta11",
     "@babel/preset-react": "^7.12.7",
     "@capacitor/core": "2.4.3",
     "@ionic/react": "^5.0.7",
@@ -31,10 +52,8 @@
     "babel-plugin-relay": "^10.1.2",
     "cookie-session": "^1.4.0",
     "cors": "^2.8.5",
-    "debug": "^2.2.0",
     "eslint-plugin-json": "^1.4.0",
     "eslint-plugin-mocha": "^5.3.0",
-    "express": "^4.17.1",
     "extend": "^3.0.0",
     "file-type": "^16.0.1",
     "fs": "^0.0.1-security",
@@ -70,17 +89,6 @@
     "tunnel-agent": "^0.4.3",
     "typescript": "3.8.3",
     "web-vitals": "^1.0.1"
-  },
-  "scripts": {
-    "dev": "webpack serve --hot --mode development",
-    "start": "webpack serve --hot --mode development",
-    "build": "webpack",
-    "ionic:build": "npm run build && ionic capacitor copy --verbose",
-    "build:stats": "wp --mode production --json > stats.json",
-    "test": "jest",
-    "serve": "webpack serve",
-    "prettier": "prettier --check .",
-    "eslint": "eslint"
   },
   "eslintConfig": {
     "extends": "react-app"

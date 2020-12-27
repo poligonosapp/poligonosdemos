@@ -1,5 +1,3 @@
-// warehouse.ai-status-api
-
 const path = require("path");
 const StatusApi = require("warehouse.ai-status-api").App;
 
@@ -13,3 +11,6 @@ status.start((err) => {
   const port = status.servers.http.address().port;
   status.log.info("Warehouse.ai-tatus-api started on port %d", port);
 });
+
+export {};
+

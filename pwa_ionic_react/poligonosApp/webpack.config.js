@@ -4,8 +4,10 @@ const PUBLIC_DIR = "public";
 const HTMLWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
 module.exports = () => {
-  const pathToMainCss = require.resolve("./src/theme/variables.css");
+  //const pathToMainCss = require.resolve("./src/theme/ExploreContainer.css");
   return {
     devServer: {
       inline: false,
@@ -17,6 +19,7 @@ module.exports = () => {
     devtool: "inline-source-map",
     entry: path.resolve(__dirname, "src", "index.js", pathToMainCss),
     output: {
+      libraryTarget: 'system',
       publicPath: "",
       filename: "[name]-[hash].js",
       path: path.resolve(__dirname, "dist"),
@@ -29,6 +32,10 @@ module.exports = () => {
     },
     module: {
       rules: [
+        {
+          test: /\.css$/i,
+          use: [MiniCssExtractPlugin.loader, 'css-loader'],
+        },
         {
           test: /\.sss$/i,
           loader: "postcss-loader",
@@ -48,18 +55,14 @@ module.exports = () => {
         {
         test: /\.s[ac]ss$/i,
         use: [
-          // Creates `style` nodes from JS strings
-          "style-loader",
-          // Translates CSS into CommonJS
           "css-loader",
-          // Compiles Sass to CSS
           "sass-loader",
         ],
       },
         {
           test: /\.css$/i,
           use: [
-            "style-loader",
+            { loader: 'style-loader', options: { injectType: 'styleTag' } },
             "css-loader"
           ],
         },
@@ -167,6 +170,7 @@ module.exports = () => {
     },
 
     plugins: [
+      new MiniCssExtractPlugin(),
       new HTMLWebpackPlugin({
         template: path.resolve(__dirname, PUBLIC_DIR, "index.html"),
       }),
