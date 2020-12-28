@@ -7,10 +7,12 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const DashboardPlugin = require('webpack-dashboard/plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer');
 
-const main = require("./css/main.css");
+require("@types/convert-string");
+
+const mainCss = require("./css/main.css");
 
 module.exports = () => {
-  const pathToMainCss = require.resolve(main);
+  const pathToMainCss = require.resolve(mainCss);
   return {
     devServer: {
       inline: false,
@@ -62,13 +64,6 @@ module.exports = () => {
           "sass-loader",
         ],
       },
-        {
-          test: /\.css$/i,
-          use: [
-            { loader: 'style-loader', options: { injectType: 'styleTag' } },
-            "css-loader"
-          ],
-        },
         {
           test: pathToMainCss,
           // loaders: loaders
