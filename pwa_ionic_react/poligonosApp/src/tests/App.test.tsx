@@ -157,6 +157,15 @@ test("should send http 200 status code", () => {
   fail(true);
 });
 
+const realmID = "web-application-0-udfes";
+
+test("should connect realm", () => {
+  const { baseElement } = render(<App />);
+  // expect(baseElement).toBeDefined();
+
+  fail(true);
+});
+
 
 export {};
 

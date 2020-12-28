@@ -3,11 +3,14 @@ const path = require("path");
 const PUBLIC_DIR = "public";
 const HTMLWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const DashboardPlugin = require('webpack-dashboard/plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer');
+
+const main = require("./css/main.css");
 
 module.exports = () => {
-  //const pathToMainCss = require.resolve("./src/theme/ExploreContainer.css");
+  const pathToMainCss = require.resolve(main);
   return {
     devServer: {
       inline: false,
@@ -27,7 +30,7 @@ module.exports = () => {
     target: "web",
     resolve: {
       // Add `.ts` and `.tsx` as a resolvable extension.
-      extensions: [".ts", ".tsx", ".js", ".jsx"],
+      extensions: [".ts", ".tsx", ".js", ".jsx",".css",".sass",".less",".scss",".json",".html",".png",".geojson",".gif"],
       fallback: { "path": require.resolve("path-browserify") }
     },
     module: {
@@ -170,6 +173,8 @@ module.exports = () => {
     },
 
     plugins: [
+	new BundleAnalyzerPlugin(),
+	new DashboardPlugin(),
       new MiniCssExtractPlugin(),
       new HTMLWebpackPlugin({
         template: path.resolve(__dirname, PUBLIC_DIR, "index.html"),
