@@ -1,5 +1,11 @@
 {
   "dependencies": {
-    "@types/convert-string": "^0.1.1"
+    "@types/convert-string": "^0.1.1",
+    "crypto": "^1.0.1",
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
+    "net": "^1.0.2",
+    "stream": "^0.0.2",
+    "zlib": "^1.0.5"
   }
 }

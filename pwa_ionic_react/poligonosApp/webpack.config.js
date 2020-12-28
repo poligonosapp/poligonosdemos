@@ -5,14 +5,12 @@ const HTMLWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const DashboardPlugin = require('webpack-dashboard/plugin');
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer');
 
-require("@types/convert-string");
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 const mainCss = require("./css/main.css");
 
 module.exports = () => {
-  const pathToMainCss = require.resolve(mainCss);
   return {
     devServer: {
       inline: false,
@@ -22,7 +20,10 @@ module.exports = () => {
       port: 3000,
     },
     devtool: "inline-source-map",
-    entry: path.resolve(__dirname, "src", "index.js", pathToMainCss),
+    entry: {
+      app: './app.js',
+      adminApp: './adminApp.js'
+    },
     output: {
       libraryTarget: 'system',
       publicPath: "",
@@ -31,7 +32,10 @@ module.exports = () => {
     },
     target: "web",
     resolve: {
-      // Add `.ts` and `.tsx` as a resolvable extension.
+      alias: {
+        config$: './configs/app-config.js',
+        react: './vendor/react-master',
+      },
       extensions: [".ts", ".tsx", ".js", ".jsx",".css",".sass",".less",".scss",".json",".html",".png",".geojson",".gif"],
       fallback: { "path": require.resolve("path-browserify") }
     },
@@ -64,12 +68,6 @@ module.exports = () => {
           "sass-loader",
         ],
       },
-        {
-          test: pathToMainCss,
-          // loaders: loaders
-        },
-        // the 'transform-runtime' plugin tells Babel to
-        // require the runtime instead of inlining it.
         {
           test: /\.json5$/i,
           loader: "json5-loader",
