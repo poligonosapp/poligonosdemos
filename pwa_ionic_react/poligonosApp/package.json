@@ -3,7 +3,6 @@
   "version": "0.0.2",
   "private": true,
   "main": "./public/index.html",
-  "license": "SEE LICENSE IN ./LICENSE.md",
   "scripts": {
     "express:start": "node ./bin/www",
     "express:devstart": "nodemon ./bin/www",
