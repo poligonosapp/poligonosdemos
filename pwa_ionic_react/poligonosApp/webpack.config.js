@@ -12,6 +12,7 @@ const mainCss = require("./css/main.css");
 
 module.exports = () => {
   return {
+    mode: 'production',
     devServer: {
       inline: false,
       contentBase: path.join(__dirname, PUBLIC_DIR),
@@ -37,7 +38,11 @@ module.exports = () => {
         react: './vendor/react-master',
       },
       extensions: [".ts", ".tsx", ".js", ".jsx",".css",".sass",".less",".scss",".json",".html",".png",".geojson",".gif"],
-      fallback: { "path": require.resolve("path-browserify") }
+      fallback: {
+        "path": require.resolve("path-browserify"),
+        "http": require.resolve("stream-http"),
+        "crypto": require.resolve("crypto-browserify")
+      }
     },
     module: {
       rules: [
