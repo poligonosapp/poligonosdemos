@@ -1,8 +1,7 @@
-import { response } from "express";
-
+const { response } = require("express");
 const React = require("react");
 const render = require("@testing-library/react");
-import App from "../App";
+const App = require("../App");
 // import Tab1 from "./pages/Tab1";
 // import ExampleWithManyStates from "./components/ExampleWithManyStates";
 // import FeatureGeoJSONMapaCalor from "./pages/FeatureGeoJSONMapaCalor";
@@ -52,7 +51,7 @@ require("./ExampleWithManyStates");
 
 const accessToken = require('./accessToken');
 
-require('whatwg-fetch');
+import 'whatwg-fetch';
 
 const fs = require('fs');
 
