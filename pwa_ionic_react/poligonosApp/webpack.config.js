@@ -10,6 +10,13 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 
 const mainCss = require("./css/main.css");
 
+const prettier = require("prettier/standalone");
+const plugins = [require("prettier/parser-graphql")];
+prettier.format("type Query { hello: String }", {
+  parser: "graphql",
+  plugins,
+});
+
 module.exports = () => {
   return {
     mode: 'production',
