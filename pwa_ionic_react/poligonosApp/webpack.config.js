@@ -17,6 +17,8 @@ prettier.format("type Query { hello: String }", {
   plugins,
 });
 
+const fs = require('fs');
+
 module.exports = () => {
   return {
 	  module: {
@@ -38,6 +40,8 @@ module.exports = () => {
       'bower_components',
       'shared',
       '/shared/vendor/modules',
+	  'fs',
+	  'mime',
     ],
   },
     mode: 'production',

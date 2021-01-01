@@ -1,9 +1,9 @@
 {
-  "appId": "com.github.luismendes070.poligonosdemos.poligonosApp",
-  "appName": "poligonosApp",
+  "appId": "io.ionic.starter",
+  "appName": "poligono",
   "bundledWebRuntime": false,
   "npmClient": "npm",
-  "webDir": "build",
+  "webDir": "www",
   "plugins": {
     "SplashScreen": {
       "launchShowDuration": 0

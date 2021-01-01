@@ -68,6 +68,8 @@ app.use(logger('dev'));
 const graphql = require('babel-plugin-relay/macro');
 // import {graphql, QueryRenderer} from 'react-relay';
 
+// require('fs');
+
 test("renders without crashing", () => {
   const { baseElement } = render(<App />);
   expect(baseElement).toBeDefined();

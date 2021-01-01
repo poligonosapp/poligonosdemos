@@ -1,0 +1,7 @@
+{
+  "name": "poligono",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
