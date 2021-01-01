@@ -24,6 +24,7 @@
     "@capacitor/core": "2.4.3",
     "@ionic/react": "^5.0.7",
     "@ionic/react-router": "^5.0.7",
+    "@mapbox/mbtiles": "^0.12.1",
     "@material-ui/core": "^4.11.2",
     "@primer/components": "^22.0.3",
     "@testing-library/jest-dom": "^4.2.4",
@@ -142,6 +143,7 @@
     "file-loader": "^6.2.0",
     "flow-bin": "^0.140.0",
     "html-webpack-plugin": "^4.5.0",
+    "identity-obj-proxy": "^3.0.0",
     "jest": "^26.6.3",
     "json5-loader": "^4.0.1",
     "node-sass": "^5.0.0",
@@ -192,6 +194,27 @@
     }
   },
   "jest": {
-    "verbose": true
+    "verbose": true,
+    "moduleNameMapper": {
+      "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js",
+      "\\.(gif|ttf|eot|svg)$": "<rootDir>/__mocks__/fileMock.js",
+      "^react(.*)$": "<rootDir>/vendor/react-master$1",
+      "^config$": "<rootDir>/configs/app-config.js"
+    },
+    "transform": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/fileTransformer.js"
+    },
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "bower_components",
+      "shared"
+    ],
+    "modulePaths": [
+      "/shared/vendor/modules"
+    ]
   }
 }
