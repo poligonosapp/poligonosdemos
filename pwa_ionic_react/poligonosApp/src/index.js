@@ -1,6 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+if (process.env.NODE_ENV !== 'production') {
+   console.log('Looks like we are in development mode!');
+ }
+
 // import fun from './backend/server';//tenta ligar o servidor
 
 // import fun from './backend/Server';//tenta ligar o servidor
