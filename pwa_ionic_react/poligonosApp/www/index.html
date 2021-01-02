@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="text/html UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" viewport-fit="cover"/>
+    <title>Poligonos App</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
+
+	<script src="http://localhost:8097">console.log('\n devtools... \n')</script>
+    <script src="dist/main.bundle.js"></script>
+	<style lang="scss"></style>
+    <script src="https://s3.amazonaws.com/stitch-sdks/js/bundles/4.6.0/stitch.js"></script>
+	
+  </head>
+  <body>
+    <h1>Polígonos</h1>
+    <div id="app"></div>
+    <div id="root"></div>
+
+    <div id="mapid">
+      <script src="controllers/LeafletServer.js"/>
+    </div>
+
+    <script src="system.js"></script>
+    <script type="systemjs-module" src="/js/main.js"></script>
+    <script type="systemjs-module" src="import:name-of-module"></script>
+
+    <script src="https://s3.amazonaws.com/stitch-sdks/js/bundles/4.6.0/stitch.js"></script>
+    <script>
+      const client = stitch.Stitch.initializeDefaultAppClient('web-application-0-udfes');
+
+      const db = client.getServiceClient(stitch.RemoteMongoClient.factory, 'mongodb-atlas').db('<DATABASE>');
+
+      client.auth.loginWithCredential(new stitch.AnonymousCredential()).then(user =>
+        db.collection('<COLLECTION>').updateOne({owner_id: client.auth.user.id}, {$set:{number:42}}, {upsert:true})
+      ).then(() =>
+        db.collection('<COLLECTION>').find({owner_id: client.auth.user.id}, { limit: 100}).asArray()
+      ).then(docs => {
+        console.log("Found docs", docs)
+        console.log("[MongoDB Realm] Connected to Realm")
+      }).catch(err => {
+        console.error(err)
+      });
+    </script>
+
+
+
+  </body>
+</html>

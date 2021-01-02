@@ -1,8 +1,8 @@
 {
   "appId": "com.github.luismendes070.poligonosdemos.poligonosApp",
   "appName": "poligonosApp",
-  "bundledWebRuntime": false,
-  "npmClient": "npm",
+  "bundledWebRuntime": true,
+  "npmClient": "yarn",
   "webDir": "www",
   "plugins": {
     "SplashScreen": {
@@ -11,7 +11,7 @@
   },
   "cordova": {},
   "windowsAndroidStudioPath":"E:\\Program Files\\Android\\canary\\android-studio\\bin\\studio64.exe",
-  "hideLogs": true,
+  "hideLogs": false,
   "server": {
     "url": "http://192.168.1.33:8100",
     "hostname": "app",
