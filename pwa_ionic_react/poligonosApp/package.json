@@ -7,6 +7,7 @@
     "express:start": "node ./bin/www",
     "express:devstart": "nodemon ./bin/www",
     "express:serverstart": "DEBUG=poligonosApp:* npm run devstart",
+    "start:dev":"./node_modules/.bin/webpack-dev-server",
     "dev": "webpack-dashboard -- webpack -w serve --hot --mode development",
     "build": "webpack -w --config webpack.prod.js",
     "ionic:build": "webpack -w --config webpack.prod.js",
