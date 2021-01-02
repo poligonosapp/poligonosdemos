@@ -1,15 +1,13 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { render, ReactDOM} from "react-dom";
+
+const $ = require("jquery");
+console.log("webpack jquery ionic react ...");
+$("#target").html("Polígono");
 
 if (process.env.NODE_ENV !== 'production') {
    console.log('Looks like we are in development mode!');
  }
-
-// import fun from './backend/server';//tenta ligar o servidor
-
-// import fun from './backend/Server';//tenta ligar o servidor
-
-// import { BrowserRouter } from "react-router-dom";
 
 import * as serviceWorker from "./serviceWorker";
 

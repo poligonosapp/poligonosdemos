@@ -1,3 +1,7 @@
+ionic serve 
+ionic cap build android
+ionic cap build ios
+
 ionic:build + express:start + express:devstart
 
 docker build -t poligonosApp .
