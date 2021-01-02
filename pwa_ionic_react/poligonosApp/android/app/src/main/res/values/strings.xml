@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">poligonosApp</string>
+    <string name="title_activity_main">poligonosApp</string>
+    <string name="package_name">com.github.luismendes070.poligonosdemos.poligonosApp</string>
+    <string name="custom_url_scheme">com.github.luismendes070.poligonosdemos.poligonosApp</string>
+</resources>

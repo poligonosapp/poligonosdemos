@@ -17,7 +17,7 @@ prettier.format("type Query { hello: String }", {
   plugins,
 });
 
-const fs = require('fs');
+// const fs = require('fs');
 
 module.exports = () => {
   return {
