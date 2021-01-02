@@ -3,18 +3,17 @@
   "version": "0.0.2",
   "private": true,
   "main": "./src/index.js",
-  "scripts": {
+  "script's": {
     "express:start": "node ./bin/www",
     "express:devstart": "nodemon ./bin/www",
     "express:serverstart": "DEBUG=poligonosApp:* npm run devstart",
     "dev": "webpack-dashboard -- webpack serve --hot --mode development",
-    "ionic:start": "webpack serve --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "ionic:build": "webpack --config webpack.prod.js",
     "ionic:build:stats": "wp --mode production --json > stats.json",
     "test": "jest",
-    "ionic:serve": "webpack serve",
-    "ionic:prettier": "prettier --check .",
+    "start": "webpack serve --open --config webpack.dev.js",
+    "prettier": "prettier --check .",
     "ionic:eslint": "eslint",
     "ionic:debug": "debug",
     "ionic:jest:troubleshooting": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand"
