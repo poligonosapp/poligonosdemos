@@ -1,9 +1,8 @@
 // import {graphql, QueryRenderer} from 'react-relay';
 
-import "./style.scss";
+import "./theme/style.scss";
 
 import React, { useState, FormEvent } from "react";
-import { render, ReactDOM} from "react-dom";
 import { Redirect, Route } from "react-router-dom";
 import {
   IonApp,

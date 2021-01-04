@@ -10,3 +10,5 @@ function sendToAnalytics(metric) {
 getCLS(sendToAnalytics);
 getFID(sendToAnalytics);
 getLCP(sendToAnalytics);
+
+export default reportWebVitals;
