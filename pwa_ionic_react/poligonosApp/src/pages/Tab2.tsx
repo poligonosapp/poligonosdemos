@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  IonSpinner,
   IonContent,
   IonHeader,
   IonPage,
@@ -9,7 +10,7 @@ import {
 import ExploreContainer from "../components/ExploreContainer";
 import "./Tab2.css";
 
-import CircularProgress from "@material-ui/core/CircularProgress";
+
 
 const Tab2: React.FC = () => {
   return (
@@ -17,10 +18,11 @@ const Tab2: React.FC = () => {
       <IonHeader>
         <IonToolbar>
           <IonTitle>Tab 2</IonTitle>
-          <CircularProgress />
+          
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
+      <IonSpinner />
         <IonHeader collapse="condense">
           <IonToolbar>
             <IonTitle size="large">Tab 2</IonTitle>

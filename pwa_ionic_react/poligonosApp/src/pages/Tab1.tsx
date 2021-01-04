@@ -6,9 +6,10 @@ import L, {circle, CRS} from "leaflet";
 
 import React, { FC, useState, useEffect, useReducer, useCallback, FormEvent, useRef } from "react";
 
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonInput } from '@ionic/react';
+import { IonSpinner, IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonInput } from '@ionic/react';
 
 import ExploreContainer from '../components/ExploreContainer';
+
 import './Tab1.css';
 
 const Tab1: React.FC = () => {
@@ -24,6 +25,7 @@ const Tab1: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
+      <IonSpinner />
         <IonHeader collapse="condense">
           <IonToolbar>
             <IonTitle size="large">Tab 1</IonTitle>

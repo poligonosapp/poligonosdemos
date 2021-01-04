@@ -1,5 +1,5 @@
 import React from "react";
-import "./theme/ExploreContainer.css";
+// import "./theme/ExploreContainer.css";
 
 import './style.css';
 
