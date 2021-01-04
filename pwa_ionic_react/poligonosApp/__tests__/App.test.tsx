@@ -162,10 +162,22 @@ test("should send http 200 status code", () => {
 });
 
 const realmID = "web-application-0-udfes";
+const atlasConnect = "mongodb+srv://fail:<password>@cluster0.neyhi.gcp.mongodb.net/<dbname>?retryWrites=true&w=majority";
 
 test("should connect realm", () => {
   const { baseElement } = render(<App />);
   // expect(baseElement).toBeDefined();
+  
+  
+const MongoClient = require('mongodb').MongoClient;
+const uri = "mongodb+srv://fail:<password>@cluster0.neyhi.gcp.mongodb.net/<dbname>?retryWrites=true&w=majority";
+const client = new MongoClient(uri, { useNewUrlParser: true });
+client.connect(err => {
+  const collection = client.db("test").collection("devices");
+  // perform actions on the collection object
+  client.close();
+});
+
 
   fail(true);
 });
