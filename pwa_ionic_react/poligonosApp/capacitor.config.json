@@ -1,39 +1,38 @@
 {
-  "appId": "com.github.luismendes070.poligonosdemos.poligonosApp",
-  "appName": "poligonosApp",
-  "bundledWebRuntime": true,
-  "npmClient": "yarn",
-  "webDir": "www",
-  "plugins": {
-    "SplashScreen": {
-      "launchShowDuration": 0
+    "appId": "com.github.luismendes070.poligonosdemos.poligonosApp",
+    "appName": "poligonosApp",
+    "bundledWebRuntime": true,
+    "npmClient": "yarn",
+    "webDir": "www",
+    "plugins": {
+        "SplashScreen": {
+            "launchShowDuration": 0
+        }
+    },
+    "cordova": {},
+    "windowsAndroidStudioPath": "E:\\Program Files\\Android\\canary\\android-studio\\bin\\studio64.exe",
+    "hideLogs": false,
+    "overrideUserAgent": "my custom user agent",
+    "appendUserAgent": "string to append",
+    "backgroundColor": "#ffffff",
+    "android": {
+        "overrideUserAgent": "my custom user agent for Android",
+        "appendUserAgent": "string to append for Android",
+        "backgroundColor": "#ffffff",
+        "allowMixedContent": "true",
+        "captureInput": true,
+        "webContentsDebuggingEnabled": true,
+        "hideLogs": true
+    },
+    "ios": {
+        "overrideUserAgent": "my custom user agent for iOS",
+        "appendUserAgent": "string to append for iOS",
+        "backgroundColor": "#ffffff",
+        "contentInset": "always",
+        "cordovaSwiftVersion": "4.2",
+        "minVersion": "11.3",
+        "cordovaLinkerFlags": ["-ObjC"],
+        "allowsLinkPreview": false,
+        "hideLogs": true
     }
-  },
-  "cordova": {},
-  "windowsAndroidStudioPath":"E:\\Program Files\\Android\\canary\\android-studio\\bin\\studio64.exe",
-  "hideLogs": false,
-  "overrideUserAgent": "my custom user agent",
-  "appendUserAgent": "string to append",
-  "backgroundColor": "#ffffff",
-  "android": {
-    "overrideUserAgent": "my custom user agent for Android",
-    "appendUserAgent": "string to append for Android",
-    "backgroundColor": "#ffffff",
-    "allowMixedContent": "true",
-    "captureInput": true,
-    "webContentsDebuggingEnabled": true,
-    "hideLogs": true
-  },
-  "ios": {
-    "overrideUserAgent": "my custom user agent for iOS",
-    "appendUserAgent": "string to append for iOS",
-    "backgroundColor": "#ffffff",
-    "contentInset": "always",
-    "cordovaSwiftVersion": "4.2",
-    "minVersion": "11.3",
-    "cordovaLinkerFlags": ["-ObjC"],
-    "allowsLinkPreview": false,
-    "hideLogs": true
-  }
 }
-

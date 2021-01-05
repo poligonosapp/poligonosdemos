@@ -1,4 +1,4 @@
 {
-  env: "production",
-  passwordStrength: "strong",
+    env: 'production',
+    passwordStrength: 'strong',
 }

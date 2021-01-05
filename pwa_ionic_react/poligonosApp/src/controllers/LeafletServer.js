@@ -1,110 +1,112 @@
-import L, {circle, CRS} from "leaflet";
+import L, { circle, CRS } from 'leaflet'
 // import { accessToken } from "./accessToken";
 
-function fun(){
+function fun() {
+    // Load HTTP module
+    const http = require('http')
 
-  // Load HTTP module
-  const http = require("http");
+    const hostname = '127.0.0.1'
+    const port = 8000
 
-  const hostname = "127.0.0.1";
-  const port = 8000;
+    // Create HTTP server
+    const server = http.createServer((req, res) => {
+        // Set the response HTTP header with HTTP status and Content type
+        res.writeHead(200, { 'Content-Type': 'text/plain' })
 
-// Create HTTP server
-  const server = http.createServer((req, res) => {
+        // Send the response body "Hello World"
+        res.end('Hello World\n')
+    })
 
-    // Set the response HTTP header with HTTP status and Content type
-    res.writeHead(200, {'Content-Type': 'text/plain'});
+    // Prints a log once the server starts listening
+    server.listen(port, hostname, () => {
+        console.log(`Server running at http://${hostname}:${port}/`)
+    })
 
-    // Send the response body "Hello World"
-    res.end('Hello World\n');
-  });
+    let mymap = L.map('mapid').setView([51.505, -0.09], 13)
 
-// Prints a log once the server starts listening
-  server.listen(port, hostname, () => {
-    console.log(`Server running at http://${hostname}:${port}/`);
-  })
+    L.tileLayer(
+        'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}',
+        {
+            attribution:
+                'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+            maxZoom: 18,
+            id: 'mapbox/streets-v11',
+            tileSize: 512,
+            zoomOffset: -1,
+            accessToken:
+                'sk.eyJ1IjoibHVpc21lbmRlczA3MCIsImEiOiJja2owaXNwenQzNW5lMzBscmp1YTNyYjJjIn0.58Rc1G6XH1wX0bOB-kUNPQ',
+        }
+    ).addTo(mymap)
 
-  let mymap = L.map('mapid').setView([51.505, -0.09], 13);
+    let marker = L.marker([51.5, -0.09]).addTo(mymap)
 
-  L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-    maxZoom: 18,
-    id: 'mapbox/streets-v11',
-    tileSize: 512,
-    zoomOffset: -1,
-    accessToken: 'sk.eyJ1IjoibHVpc21lbmRlczA3MCIsImEiOiJja2owaXNwenQzNW5lMzBscmp1YTNyYjJjIn0.58Rc1G6XH1wX0bOB-kUNPQ'
-  }).addTo(mymap);
+    let circle = L.circle([51.508, -0.11], {
+        color: 'red',
+        fillColor: '#f03',
+        fillOpacity: 0.5,
+        radius: 500,
+    }).addTo(mymap)
 
-  let marker = L.marker([51.5, -0.09]).addTo(mymap);
+    let polygon = L.polygon([
+        [51.509, -0.08],
+        [51.503, -0.06],
+        [51.51, -0.047],
+    ]).addTo(mymap)
 
-  let circle = L.circle([51.508, -0.11], {
-    color: 'red',
-    fillColor: '#f03',
-    fillOpacity: 0.5,
-    radius: 500
-  }).addTo(mymap);
+    marker.bindPopup('<b>Hello world!</b><br>I am a popup.').openPopup()
+    circle.bindPopup('I am a circle.')
+    polygon.bindPopup('I am a polygon.')
 
-  let polygon = L.polygon([
-    [51.509, -0.08],
-    [51.503, -0.06],
-    [51.51, -0.047]
-  ]).addTo(mymap);
+    let popup = L.popup()
+        .setLatLng([51.5, -0.09])
+        .setContent('I am a standalone popup.')
+        .openOn(mymap)
 
-  marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
-  circle.bindPopup("I am a circle.");
-  polygon.bindPopup("I am a polygon.");
+    function onMapClick(e) {
+        alert('You clicked the map at ' + e.latlng)
+        let polygon = require('pages/polygon.geojson')
+        popup.setLatLng(polygon[0].geometry.coordinates)
+    }
 
-  let popup = L.popup()
-    .setLatLng([51.5, -0.09])
-    .setContent("I am a standalone popup.")
-    .openOn(mymap);
+    mymap.on('click', onMapClick)
 
-  function onMapClick(e) {
-    alert("You clicked the map at " + e.latlng);
-    let polygon = require('pages/polygon.geojson');
-    popup.setLatLng(polygon[0].geometry.coordinates);
-  }
+    // let popup = L.popup();
 
-  mymap.on('click', onMapClick);
+    function onMapClick(e) {
+        popup
+            .setLatLng(e.latlng)
+            .setContent('You clicked the map at ' + e.latlng.toString())
+            .openOn(mymap)
+    }
 
-  // let popup = L.popup();
+    mymap.on('click', onMapClick)
 
-  function onMapClick(e) {
-    popup
-      .setLatLng(e.latlng)
-      .setContent("You clicked the map at " + e.latlng.toString())
-      .openOn(mymap);
-  }
+    let express = require('express')
+    let cors = require('cors')
+    let app = express()
 
-  mymap.on('click', onMapClick);
+    app.use(cors())
 
-  let express = require("express");
-  let cors = require("cors");
-  let app = express();
+    app.get('/products/:id', function (req, res, next) {
+        res.json({ msg: 'This is CORS-enabled for all origins!' })
+    })
 
-  app.use(cors());
+    app.listen(80, function () {
+        console.log('CORS-enabled web server listening on port 80')
+    })
 
-  app.get("/products/:id", function (req, res, next) {
-    res.json({ msg: "This is CORS-enabled for all origins!" });
-  });
+    // express = require("express");
+    // app = express();
 
-  app.listen(80, function () {
-    console.log("CORS-enabled web server listening on port 80");
-  });
+    app.get('/', function (req, res) {
+        res.send('Hello World')
+    })
 
-// express = require("express");
-// app = express();
-
-  app.get("/", function (req, res) {
-    res.send("Hello World");
-  });
-
-  app.listen(3000);
+    app.listen(3000)
 }
 
-try{
-   fun();
-}catch(e){
-  console.log('server fault');
+try {
+    fun()
+} catch (e) {
+    console.log('server fault')
 }
-

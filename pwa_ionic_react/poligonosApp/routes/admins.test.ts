@@ -1,90 +1,93 @@
-const { assert } = require("@hapi/hoek");
+const { assert } = require('@hapi/hoek')
 
 // const supertest = require('supertest');
 
-const request = require('supertest');
-const express = require('express');
+const request = require('supertest')
+const express = require('express')
 
-const app = express();
+const app = express()
 
-app.get(admins, function(req, res) {
-  res.status(200).json({ name: 'john' });
-});
+app.get(admins, function (req, res) {
+    res.status(200).json({ name: 'john' })
+})
 
 request(app)
-  .get('/admin')
-  .expect('Content-Type', /json/)
-  .expect('Content-Length', '15')
-  .expect(200)
-  .end(function(err, res) {
-    if (err) throw err;
-  });
+    .get('/admin')
+    .expect('Content-Type', /json/)
+    .expect('Content-Length', '15')
+    .expect(200)
+    .end(function (err, res) {
+        if (err) throw err
+    })
 
+describe('GET /admin', function () {
+    it('responds with json', function (done) {
+        request(app)
+            .get('/admin')
+            .set('Accept', 'application/json')
+            .expect('Content-Type', /json/)
+            .expect(200, done)
+    })
+})
 
-describe('GET /admin', function() {
-  it('responds with json', function(done) {
-    request(app)
-      .get('/admin')
-      .set('Accept', 'application/json')
-      .expect('Content-Type', /json/)
-      .expect(200, done);
-  });
-});
+describe('GET /admin', function () {
+    it('responds with json', function (done) {
+        request(app)
+            .get('/admin')
+            .auth('username', 'password')
+            .set('Accept', 'application/json')
+            .expect('Content-Type', /json/)
+            .expect(200, done)
+    })
+})
 
-describe('GET /admin', function() {
-  it('responds with json', function(done) {
-    request(app)
-      .get('/admin')
-      .auth('username', 'password')
-      .set('Accept', 'application/json')
-      .expect('Content-Type', /json/)
-      .expect(200, done);
-  });
-});
+describe('POST /admins', function () {
+    it('responds with json', function (done) {
+        request(app)
+            .post('/admins')
+            .send({ name: 'john' })
+            .set('Accept', 'application/json')
+            .expect('Content-Type', /json/)
+            .expect(200)
+            .end(function (err, res) {
+                if (err) return done(err)
+                done()
+            })
+    })
+})
 
-describe('POST /admins', function() {
-  it('responds with json', function(done) {
-    request(app)
-      .post('/admins')
-      .send({name: 'john'})
-      .set('Accept', 'application/json')
-      .expect('Content-Type', /json/)
-      .expect(200)
-      .end(function(err, res) {
-        if (err) return done(err);
-        done();
-      });
-  });
-});
+describe('GET /admins', function () {
+    it('responds with json', function () {
+        return request(app)
+            .get('/admins')
+            .set('Accept', 'application/json')
+            .expect('Content-Type', /json/)
+            .expect(200)
+            .then((response) => {
+                assert(response.body.email, 'foo@bar.com')
+            })
+    })
+})
 
-describe('GET /admins', function() {
-  it('responds with json', function() {
-    return request(app)
-      .get('/admins')
-      .set('Accept', 'application/json')
-      .expect('Content-Type', /json/)
-      .expect(200)
-      .then(response => {
-        assert(response.body.email, 'foo@bar.com')
-      })
-  });
-});
+describe('POST /admin', function () {
+    it('user.name should be an case-insensitive match for "john"', function (done) {
+        request(app)
+            .post('/admin')
+            .send('name=john') // x-www-form-urlencoded upload
+            .set('Accept', 'application/json')
+            .expect(function (res) {
+                res.body.id = 'some fixed id'
+                res.body.name = res.body.name.toLowerCase()
+            })
+            .expect(
+                200,
+                {
+                    id: 'some fixed id',
+                    name: 'john',
+                },
+                done
+            )
+    })
+})
 
-describe('POST /admin', function() {
-  it('user.name should be an case-insensitive match for "john"', function(done) {
-    request(app)
-      .post('/admin')
-      .send('name=john') // x-www-form-urlencoded upload
-      .set('Accept', 'application/json')
-      .expect(function(res) {
-        res.body.id = 'some fixed id';
-        res.body.name = res.body.name.toLowerCase();
-      })
-      .expect(200, {
-        id: 'some fixed id',
-        name: 'john'
-      }, done);
-  });
-});
-
-export {};
+export {}

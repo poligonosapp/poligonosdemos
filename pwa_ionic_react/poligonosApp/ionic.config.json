@@ -1,8 +1,8 @@
 {
-  "name": "poligonosApp",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "react",
-  "id": "b3417d72"
+    "name": "poligonosApp",
+    "integrations": {
+        "capacitor": {}
+    },
+    "type": "react",
+    "id": "b3417d72"
 }

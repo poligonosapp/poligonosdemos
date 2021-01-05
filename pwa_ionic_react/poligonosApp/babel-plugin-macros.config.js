@@ -1,8 +1,8 @@
 // babel-plugin-macros.config.js
 module.exports = {
-  // ...
-  // Other macros config
-  relay: {
-    compat: true,
-  },
-};
+    // ...
+    // Other macros config
+    relay: {
+        compat: true,
+    },
+}

@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@ionic/cli": "^6.12.3",
     "@types/convert-string": "^0.1.1",
     "crypto": "^1.0.1",
     "fs": "^0.0.1-security",

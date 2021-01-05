@@ -1,8 +1,8 @@
-import { response } from "express";
+import { response } from 'express'
 
-let express = require("express");
-let cors = require("cors");
-let app = express();
+let express = require('express')
+let cors = require('cors')
+let app = express()
 
-module.exports = response.render;
-export default response.render;
+module.exports = response.render
+export default response.render
