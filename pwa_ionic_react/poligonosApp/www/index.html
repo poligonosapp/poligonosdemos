@@ -18,6 +18,16 @@
   <body>
 
 
+    <!-- Append the `?module` param to load the module version of `web-vitals` -->
+<script type="module">
+  import {getCLS, getFID, getLCP} from 'https://unpkg.com/web-vitals?module';
+
+  getCLS(console.log);
+  getFID(console.log);
+  getLCP(console.log);
+</script>
+
+
 
   <script src="index_bundle.js"></script>
 

@@ -22,6 +22,8 @@ prettier.format("type Query { hello: String }", {
   plugins,
 });
 
+const WorkboxPlugin = require('workbox-webpack-plugin');
+
 module.exports = () => {
   return {
     module: {
@@ -96,6 +98,17 @@ module.exports = () => {
     module: {
       rules: [
         {
+          test: /\.md$/,
+          loader: 'babel!react-markdown'
+        },
+        {
+          test: /\.tsx?$/,
+          exclude: /node_modules/,
+          use: {
+              loader: "awesome-typescript-loader"
+          }
+      },
+        {
           test: /\.sss$/i,
           loader: "postcss-loader",
           options: {
@@ -158,23 +171,13 @@ module.exports = () => {
           exclude: /node_modules/,
         },
         {
-          test: /\.m?js|jsx$/,
+          test: /\.js$|jsx/,
           exclude: /(node_modules|bower_components)/,
           use: {
             loader: "babel-loader",
             options: {
               presets: ["@babel/preset-env"],
               plugins: ["@babel/plugin-proposal-object-rest-spread"],
-            },
-          },
-        },
-        {
-          test: /\.m?js|jsx$/,
-          exclude: /(node_modules|bower_components)/,
-          use: {
-            loader: "babel-loader",
-            options: {
-              presets: ["@babel/preset-env"],
             },
           },
         },
@@ -217,12 +220,19 @@ module.exports = () => {
     },
 
     plugins: [
+     new WorkboxPlugin.GenerateSW({
+       // these options encourage the ServiceWorkers to get in there fast
+       // and not allow any straggling "old" SWs to hang around
+       clientsClaim: true,
+       skipWaiting: true,
+     }),
       new UglifyJsPlugin(),
       new BundleAnalyzerPlugin(),
       new DashboardPlugin(),
       new MiniCssExtractPlugin(),
       new HTMLWebpackPlugin({
         template: path.resolve(__dirname, PUBLIC_DIR, "index.html"),
+        title: 'Progressive Web Application',
       }),
       new webpack.HotModuleReplacementPlugin(),
       new CleanWebpackPlugin(),
