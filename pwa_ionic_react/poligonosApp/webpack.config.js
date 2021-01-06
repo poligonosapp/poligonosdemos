@@ -30,8 +30,10 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserJSPlugin = require('terser-webpack-plugin');
 // const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const WebpackManifestPlugin = require('webpack-manifest-plugin');
-
-
+//modern javascript google developers
+const OptimizePlugin = require('optimize-plugin');
+const BabelEsmPlugin = require('babel-esm-plugin');
+const ModernNpmPlugin = require('webpack-plugin-modern-npm');
 
 module.exports = () => {
     return {
@@ -76,8 +78,12 @@ module.exports = () => {
             publicPath: '',
             filename: '[name]-[hash].js',
             path: path.resolve(__dirname, 'dist'),
+            module: true,
         },
-        target: 'web',
+        experiments: {
+    outputModule: true,
+  },
+        target: ['web','es2017'],
         resolve: {
             alias: {
                 config$: './configs/app-config.js',
@@ -175,12 +181,7 @@ module.exports = () => {
                     use: 'raw-loader',
                 },
                 {
-                    test: /\.jsx?$/,
-                    loader: 'babel-loader',
-                    exclude: /node_modules/,
-                },
-                {
-                    test: /\.js$|jsx/,
+                    test: /\.js$|jsx$/,
                     exclude: /(node_modules|bower_components)/,
                     use: {
                         loader: 'babel-loader',
@@ -231,6 +232,9 @@ module.exports = () => {
         },
 
         plugins: [
+            new ModernNpmPlugin(),
+            new BabelEsmPlugin(),
+            new OptimizePlugin(),
             new WebpackManifestPlugin(),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
