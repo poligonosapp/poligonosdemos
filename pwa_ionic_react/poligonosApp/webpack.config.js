@@ -24,6 +24,13 @@ prettier.format('type Query { hello: String }', {
 
 const WorkboxPlugin = require('workbox-webpack-plugin')
 
+// const path = require('path');
+// const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const TerserJSPlugin = require('terser-webpack-plugin');
+// const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const WebpackManifestPlugin = require('webpack-manifest-plugin');
+
 module.exports = () => {
     return {
         module: {
@@ -222,6 +229,12 @@ module.exports = () => {
         },
 
         plugins: [
+            new WebpackManifestPlugin(),
+    new CleanWebpackPlugin(),
+    new MiniCssExtractPlugin({
+      filename: "[name]-[contenthash].css"
+    }),
+            new WebpackManifestPlugin(options),
             new WorkboxPlugin.GenerateSW({
                 // these options encourage the ServiceWorkers to get in there fast
                 // and not allow any straggling "old" SWs to hang around
@@ -231,16 +244,16 @@ module.exports = () => {
             new UglifyJsPlugin(),
             new BundleAnalyzerPlugin(),
             new DashboardPlugin(),
-            new MiniCssExtractPlugin(),
             new HTMLWebpackPlugin({
                 template: path.resolve(__dirname, PUBLIC_DIR, 'index.html'),
                 title: 'Progressive Web Application',
             }),
             new webpack.HotModuleReplacementPlugin(),
-            new CleanWebpackPlugin(),
+            
         ],
         optimization: {
-            minimizer: [new UglifyJsPlugin()],
+            minimize: true,
+            minimizer: [ new TerserPlugin(), new UglifyJsPlugin(), new OptimizeCSSAssetsPlugin({})],
             splitChunks: {
                 chunks: 'all',
             },
