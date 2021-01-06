@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@hapi/hoek": "^9.1.1",
     "@ionic/cli": "^6.12.3",
     "@types/convert-string": "^0.1.1",
     "crypto": "^1.0.1",
@@ -7,6 +8,7 @@
     "http": "^0.0.1-security",
     "net": "^1.0.2",
     "stream": "^0.0.2",
+    "web-vitals": "0.2.4",
     "webpack-stream": "^6.1.1",
     "zlib": "^1.0.5"
   }

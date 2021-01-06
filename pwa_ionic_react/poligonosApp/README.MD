@@ -1,3 +1,5 @@
+yarn test
+
 ionic:build + express:start + express:devstart
 
 docker build -t poligonosApp .

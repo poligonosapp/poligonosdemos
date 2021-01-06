@@ -31,6 +31,8 @@ const TerserJSPlugin = require('terser-webpack-plugin');
 // const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const WebpackManifestPlugin = require('webpack-manifest-plugin');
 
+
+
 module.exports = () => {
     return {
         module: {
