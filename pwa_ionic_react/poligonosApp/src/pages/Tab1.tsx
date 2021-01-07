@@ -1,4 +1,4 @@
-import { accessToken } from './accessToken'
+import { accessToken } from '../utils/accessToken'
 
 import { TileLayer, Marker, Popup } from 'react-leaflet'
 

@@ -40,6 +40,10 @@ const ModernNpmPlugin = require('webpack-plugin-modern-npm');
 
 module.exports = () => {
     return {
+        node: {
+            Buffer: false,
+            process: false
+          },
         module: {
             loaders: [
                 { exclude: ['node_modules'], loader: 'babel', test: /\.jsx?$/ },
