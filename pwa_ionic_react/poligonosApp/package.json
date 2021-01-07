@@ -7,8 +7,8 @@
     "main": "./src/index.js",
     "scripts": {
         "serve": "npx ionic serve login",
-        "login": "nodemon src/server.js node src/server.js yarn start",
-        "start": "http-server dist webpack serve --open --config webpack.dev.js",
+        "auth": "nodemon src/server.js node src/server.js yarn start",
+        "start": "webpack serve --open --config webpack.dev.js",
         "express:start": "node ./bin/www",
         "express:devstart": "nodemon ./bin/www",
         "express:serverstart": "DEBUG=poligonosApp:* npm run devstart",
@@ -26,6 +26,7 @@
     },
     "dependencies": {
         "@babel/preset-react": "^7.12.7",
+        "@capacitor/android": "^2.4.5",
         "@capacitor/core": "^2.4.5",
         "@capacitor/ios": "2.4.5",
         "@ionic/pwa-elements": "^3.0.2",

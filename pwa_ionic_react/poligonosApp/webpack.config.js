@@ -1,4 +1,4 @@
-const webpack = require('webpack@4.0.0')
+const webpack = require('webpack')
 const path = require('path')
 const PUBLIC_DIR = 'public'
 
@@ -246,6 +246,16 @@ module.exports = () => {
             new WebpackManifestPlugin(),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
+        attributes: {
+            id: 'target',
+            'data-target': 'example',
+          },
+        insert: function (linkTag) {
+            var reference = document.querySelector('#some-element');
+            if (reference) {
+              reference.parentNode.insertBefore(linkTag, reference);
+            }
+          },
       filename: "[name]-[contenthash].css"
     }),
             new WebpackManifestPlugin(options),
