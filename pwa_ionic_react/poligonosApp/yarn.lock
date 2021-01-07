@@ -1192,6 +1192,11 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
+"@capacitor/android@^2.4.5":
+  version "2.4.5"
+  resolved "https://registry.yarnpkg.com/@capacitor/android/-/android-2.4.5.tgz#7ceefd0857eb2f789225bfb88f7467bfa3409125"
+  integrity sha512-LwnOPc1/luS3RqCiKx9l5qQtxQfFu4YW2r4U8Ko1Lr91i9Ibix1ChWqnvsBlcrdeNdhmMrW2v53mn22oT4F6oA==
+
 "@capacitor/cli@^2.4.5":
   version "2.4.5"
   resolved "https://registry.yarnpkg.com/@capacitor/cli/-/cli-2.4.5.tgz#614cc3cd0773377db3bb8ac49eafb2e6a621361d"

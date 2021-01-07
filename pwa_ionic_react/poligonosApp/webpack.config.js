@@ -26,14 +26,14 @@ const WorkboxPlugin = require('workbox-webpack-plugin')
 
 // const path = require('path');
 // const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const TerserJSPlugin = require('terser-webpack-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
+const TerserJSPlugin = require('terser-webpack-plugin')
 // const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const WebpackManifestPlugin = require('webpack-manifest-plugin');
+const WebpackManifestPlugin = require('webpack-manifest-plugin')
 //modern javascript google developers
-const OptimizePlugin = require('optimize-plugin');
-const BabelEsmPlugin = require('babel-esm-plugin');
-const ModernNpmPlugin = require('webpack-plugin-modern-npm');
+const OptimizePlugin = require('optimize-plugin')
+const BabelEsmPlugin = require('babel-esm-plugin')
+const ModernNpmPlugin = require('webpack-plugin-modern-npm')
 
 //server.js
 //const webpackDevMiddleware = require('webpack-dev-middleware');
@@ -42,8 +42,8 @@ module.exports = () => {
     return {
         node: {
             Buffer: false,
-            process: false
-          },
+            process: false,
+        },
         module: {
             loaders: [
                 { exclude: ['node_modules'], loader: 'babel', test: /\.jsx?$/ },
@@ -89,9 +89,9 @@ module.exports = () => {
             publicPath: '/',
         },
         experiments: {
-    outputModule: true,
-  },
-        target: ['web','es2017'],
+            outputModule: true,
+        },
+        target: ['web', 'es2017'],
         resolve: {
             alias: {
                 config$: './configs/app-config.js',
@@ -244,20 +244,20 @@ module.exports = () => {
             new BabelEsmPlugin(),
             new OptimizePlugin(),
             new WebpackManifestPlugin(),
-    new CleanWebpackPlugin(),
-    new MiniCssExtractPlugin({
-        attributes: {
-            id: 'target',
-            'data-target': 'example',
-          },
-        insert: function (linkTag) {
-            var reference = document.querySelector('#some-element');
-            if (reference) {
-              reference.parentNode.insertBefore(linkTag, reference);
-            }
-          },
-      filename: "[name]-[contenthash].css"
-    }),
+            new CleanWebpackPlugin(),
+            new MiniCssExtractPlugin({
+                attributes: {
+                    id: 'target',
+                    'data-target': 'example',
+                },
+                insert: function (linkTag) {
+                    var reference = document.querySelector('#some-element')
+                    if (reference) {
+                        reference.parentNode.insertBefore(linkTag, reference)
+                    }
+                },
+                filename: '[name]-[contenthash].css',
+            }),
             new WebpackManifestPlugin(options),
             new WorkboxPlugin.GenerateSW({
                 // these options encourage the ServiceWorkers to get in there fast
@@ -273,11 +273,14 @@ module.exports = () => {
                 title: 'Progressive Web Application',
             }),
             new webpack.HotModuleReplacementPlugin(),
-            
         ],
         optimization: {
             minimize: true,
-            minimizer: [ new TerserPlugin(), new UglifyJsPlugin(), new OptimizeCSSAssetsPlugin({})],
+            minimizer: [
+                new TerserPlugin(),
+                new UglifyJsPlugin(),
+                new OptimizeCSSAssetsPlugin({}),
+            ],
             splitChunks: {
                 chunks: 'all',
             },
