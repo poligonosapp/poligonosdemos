@@ -1,4 +1,4 @@
-const webpack = require('webpack')
+const webpack = require('webpack@4.0.0')
 const path = require('path')
 const PUBLIC_DIR = 'public'
 
@@ -34,6 +34,9 @@ const WebpackManifestPlugin = require('webpack-manifest-plugin');
 const OptimizePlugin = require('optimize-plugin');
 const BabelEsmPlugin = require('babel-esm-plugin');
 const ModernNpmPlugin = require('webpack-plugin-modern-npm');
+
+//server.js
+//const webpackDevMiddleware = require('webpack-dev-middleware');
 
 module.exports = () => {
     return {
@@ -79,6 +82,7 @@ module.exports = () => {
             filename: '[name]-[hash].js',
             path: path.resolve(__dirname, 'dist'),
             module: true,
+            publicPath: '/',
         },
         experiments: {
     outputModule: true,

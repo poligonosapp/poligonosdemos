@@ -1,4 +1,7 @@
-ionic serve 
+yarn test
+npx ionic serve 
+yarn build
+
 ionic cap build android
 ionic cap build ios
 

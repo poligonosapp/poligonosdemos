@@ -1,4 +1,6 @@
+npx ionic serve
 yarn test
+yarn build
 
 ionic:build + express:start + express:devstart
 

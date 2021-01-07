@@ -4,11 +4,15 @@ const { assert } = require('@hapi/hoek')
 
 const request = require('supertest')
 const express = require('express')
+let cors = require('cors')
 
 const app = express()
 
-app.get(admins, function (req, res) {
-    res.status(200).json({ name: 'john' })
+app.use(cors())
+app.use(logger('dev'))
+
+app.get('/admins', function (req, res) {
+    res.status(200).json({ name: 'fail' })
 })
 
 request(app)
