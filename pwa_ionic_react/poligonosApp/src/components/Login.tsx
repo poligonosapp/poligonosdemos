@@ -1,6 +1,6 @@
 import {Input, Button, React} from 'react';
 
-const login = require('./routes/login');
+// const login = require('./routes/login');
 
 function Login(props){
     return <div>
