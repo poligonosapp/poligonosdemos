@@ -1,5 +1,5 @@
 import { React } from 'react';
-import { render, ReactDOM } from 'react-dom'
+import { render } from 'react-dom'
 
 // const login = require('./routes/login');
 

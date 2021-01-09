@@ -1,8 +1,8 @@
 {
     "name": "poligonosapp",
-    "version": "0.0.2",
+    "version": "1.0.1",
     "private": true,
-    "license": "",
+    "license": "Apache 2.0",
     "exports": "./src/index.js",
     "main": "./src/index.js",
     "scripts": {
@@ -18,7 +18,7 @@
         "build": "webpack -w --config webpack.prod.js",
         "ionic:build": "webpack -w --config webpack.prod.js",
         "ionic:build:stats": "wp --mode production --json > stats.json",
-        "test": "jest",
+        "test": "jest yarn run cypress yarn run puppeteer",
         "prettier": "prettier --check .",
         "ionic:eslint": "eslint",
         "ionic:debug": "debug",
@@ -73,6 +73,7 @@
         "eslint-plugin-json": "^1.4.0",
         "eslint-plugin-mocha": "^5.3.0",
         "express": "~4.16.1",
+        "express-session": "^1.17.1",
         "extend": "^3.0.0",
         "file-type": "^16.0.1",
         "firebase-tools": "^9.1.0",

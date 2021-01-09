@@ -1,0 +1,11 @@
+{
+  "name": "poligonosApp",
+  "app_id": "b3417d72",
+  "type": "ionic-react",
+  "proxies": [
+    {
+      "path": "/v1",
+      "proxyUrl": "https://poligonosapp-5vuvqhbui.vercel.app"
+    }
+  ]
+}
