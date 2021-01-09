@@ -1,10 +1,13 @@
-const { render } = require('testing-library/react')
-import Tab1 from './Tab1'
-import React from 'react'
+import React from 'react';
+import render from '@testing-library/react';
+// import Tab1 from '../Tab1';
 
-test('should Tab1', () => {
-    const { baseElement } = render(<Tab1 />)
-    expect(baseElement).toBeDefined()
-    fail(true)
-})
-export {}
+it('should Tab1', async () => {
+
+    // const baseElement = render(<Tab1 />, );
+
+    // expect(baseElement).toBeDefined()
+
+     fail(true)
+});
+

@@ -1,4 +1,4 @@
-import { response } from 'express';
+// import { response } from 'express';
 
 const React = require('react')
 const render = require('@testing-library/react')
@@ -69,6 +69,15 @@ const graphql = require('babel-plugin-relay/macro')
 // import {graphql, QueryRenderer} from 'react-relay';
 
 // require('fs');
+
+test('should jquery ajax ionic react webpack get status code 200 OK', () => {
+
+    // const { baseElement } = require('./routes/login');
+    // expect(baseElement.options['url']).toBeDefined(200)
+
+    fail(true)
+
+})
 
 test('renders without crashing', () => {
     const { baseElement } = render(<App />)
@@ -153,9 +162,9 @@ test('should send http 200 status code', () => {
     const { baseElement } = render(<App />)
     // expect(baseElement).toBeDefined();
 
-    const resStatus = response.status(200)
+    // const resStatus = response.status(200)
 
-    console.assert(resStatus, require('response'))
+    // console.assert(resStatus, require('response'))
 
     fail(true)
 })

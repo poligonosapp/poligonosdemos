@@ -1,17 +1,22 @@
-import {Input, Button, React} from 'react';
+import { React } from 'react';
+import { render, ReactDOM } from 'react-dom'
 
 // const login = require('./routes/login');
 
-function Login(props){
-    return <div>
-        
-        Login
+function Login(){
 
+    function handleClick(e) {
+        e.preventDefault();
+        console.log('O link foi clicado.');
+      }
+
+    return
+         <div>
         <p>Usuário</p>
         <p>Senha</p>
-        <Button type="password"></Button>
-
+        <button onClick={handleClick}>LOGIN</button>
     </div>;
+    
 }
 
 export default Login;

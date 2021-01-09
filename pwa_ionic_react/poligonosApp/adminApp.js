@@ -1,5 +1,7 @@
 let createError = require('http-errors')
 let express = require('express')
+//cors
+let cors = require('cors')
 let path = require('path')
 let cookieParser = require('cookie-parser')
 let logger = require('morgan')
@@ -8,6 +10,9 @@ let indexRouter = require('./routes/index')
 let usersRouter = require('./routes/users')
 
 let adminApp = express()
+
+app.use(cors())
+app.use(logger('dev'))
 
 // view engine setup
 adminApp.set('views', path.join(__dirname, 'views'))
@@ -20,7 +25,7 @@ adminApp.use(cookieParser())
 adminApp.use(express.static(path.join(__dirname, 'public')))
 
 adminApp.use('/', indexRouter)
-adminApp.use('/users', usersRouter)
+adminApp.use('/admins', usersRouter)
 
 // catch 404 and forward to error handler
 adminApp.use(function (req, res, next) {

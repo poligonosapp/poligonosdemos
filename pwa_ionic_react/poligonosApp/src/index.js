@@ -1,7 +1,16 @@
 import React from 'react'
 import { render, ReactDOM } from 'react-dom'
+// import $ from "jquery";
+import $ from "expose-loader?exposes[]=$&exposes[]=jQuery!jquery";
+// Adds the `jquery` to the global object under the names `$` and `jQuery`
+import { concat } from "expose-loader?exposes=_.concat!lodash/concat";
 
-const $ = require('jquery')
+import {
+    map,
+    reduce,
+  } from "expose-loader?exposes[]=_.map|map&exposes[]=_.reduce|reduce!underscore";
+
+// const $ = require('jquery')
 console.log('webpack jquery ionic react ...')
 $('#target').html('Polígono')
 

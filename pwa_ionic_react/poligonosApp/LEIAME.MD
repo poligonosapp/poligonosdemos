@@ -1,4 +1,7 @@
+yarn serve
+
 yarn test
+
 npx ionic serve 
 yarn build
 
