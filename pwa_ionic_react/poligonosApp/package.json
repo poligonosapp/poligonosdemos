@@ -155,7 +155,7 @@
         ]
     },
     "keywords": [],
-    "author": "machadoluismendes, fabio",
+    "author": "Luis Mendes <machadoluismendes@gmail.com>, Fabio Rodrigues <https://www.facebook.com/kefaro>",
     "devDependencies": {
         "@babel/cli": "^7.12.10",
         "@babel/core": "^7.12.10",

@@ -4,6 +4,8 @@ import { TileLayer, Marker, Popup } from 'react-leaflet'
 
 import L, { circle, CRS } from 'leaflet'
 
+// import './src/components/Login';
+
 import React, {
     FC,
     useState,
@@ -27,8 +29,57 @@ import {
 import ExploreContainer from '../components/ExploreContainer'
 
 import './Tab1.css'
+// import Login from "../components/Login";
+import { Route } from "react-router-dom";
+
+import _ from "underscore";
 
 const Tab1: React.FC = () => {
+
+    const jwtToken = require('jsonwebtoken');
+
+    let request = require('request');
+
+    const pageInsightsUrl = process.env.pageInsightUrl;
+    const endpoint = process.env.enpoint;
+
+    'use strict'
+    const $ = require('jquery');
+
+
+    let options = {
+        'method': 'GET',
+        'url': [endpoint, pageInsightsUrl],
+        'headers': {
+        }
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+// Assign handlers immediately after making the request,
+// and remember the jqxhr object for this request
+    let jqxhr = $.ajax( options['url'], function() {
+        alert( "success" );
+    })
+      .done(function() {
+          alert( "second success" );
+      })
+      .fail(function() {
+          alert( "error" );
+      })
+      .always(function() {
+          alert( "finished" );
+      });
+
+// Perform other work here ...
+
+// Set another completion function for the request above
+    jqxhr.always(function() {
+        alert( "second finished" );
+    });
+
     // const [setMyMap] = useState({mymap});
     // const [setAccessToken] = useState({accessToken});
 
@@ -46,6 +97,11 @@ const Tab1: React.FC = () => {
                         <IonTitle size="large">Tab 1</IonTitle>
                     </IonToolbar>
                 </IonHeader>
+
+                Carregando...
+
+
+
                 <ExploreContainer name="Mapa" />
             </IonContent>
         </IonPage>
