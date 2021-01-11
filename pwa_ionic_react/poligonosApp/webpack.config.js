@@ -27,9 +27,12 @@ const WorkboxPlugin = require('workbox-webpack-plugin')
 // const path = require('path');
 // const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
-const TerserJSPlugin = require('terser-webpack-plugin')
+
+const TerserPlugin = require('terser-webpack-plugin')
+
 // const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const WebpackManifestPlugin = require('webpack-manifest-plugin')
+const options = {  }
 //modern javascript google developers
 const OptimizePlugin = require('optimize-plugin')
 const BabelEsmPlugin = require('babel-esm-plugin')
@@ -37,6 +40,10 @@ const ModernNpmPlugin = require('webpack-plugin-modern-npm')
 
 //server.js
 //const webpackDevMiddleware = require('webpack-dev-middleware');
+
+const argv = require('webpack-nano/argv');
+
+const { source } = argv;
 
 module.exports = () => {
     return {
@@ -77,8 +84,8 @@ module.exports = () => {
         },
         devtool: 'inline-source-map',
         entry: {
-            app: './app.js',
-            adminApp: './adminApp.js',
+            app: ['./app.js'],
+            admin: ['./adminApp.js'],
         },
         output: {
             libraryTarget: 'system',
@@ -266,13 +273,7 @@ module.exports = () => {
                 },
                 {
                     test: /\.css$/i,
-                    use: [
-                        { loader: 'style-loader' },
-                        { loader: 'css-loader' },
-                        { loader: 'postcss-loader' },
-                        MiniCssExtractPlugin.loader,
-                        css - loader,
-                    ],
+                    use: [MiniCssExtractPlugin.loader, "style-loader", "css-loader", "postcss-loader"],
                 },
                 { test: /\.txt$/, use: 'raw-loader' },
                 {
@@ -296,7 +297,6 @@ module.exports = () => {
             new ModernNpmPlugin(),
             new BabelEsmPlugin(),
             new OptimizePlugin(),
-            new WebpackManifestPlugin(),
             new CleanWebpackPlugin(),
             new MiniCssExtractPlugin({
                 attributes: {
@@ -311,7 +311,6 @@ module.exports = () => {
                 },
                 filename: '[name]-[contenthash].css',
             }),
-            new WebpackManifestPlugin(options),
             new WorkboxPlugin.GenerateSW({
                 // these options encourage the ServiceWorkers to get in there fast
                 // and not allow any straggling "old" SWs to hang around
@@ -330,9 +329,9 @@ module.exports = () => {
         optimization: {
             minimize: true,
             minimizer: [
-                new TerserPlugin(),
-                new UglifyJsPlugin(),
-                new OptimizeCSSAssetsPlugin({}),
+                // new UglifyJsPlugin(),
+                // new OptimizeCSSAssetsPlugin({}),
+                new TerserPlugin()
             ],
             splitChunks: {
                 chunks: 'all',
