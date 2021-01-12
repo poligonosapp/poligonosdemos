@@ -2,7 +2,7 @@
 
 import './theme/style.scss'
 
-import React, { useState, FormEvent } from 'react'
+import React, { useState, FormEvent, useCallback } from "react";
 import { Redirect, Route } from 'react-router-dom'
 import {
     IonApp,
@@ -38,13 +38,12 @@ import '@ionic/react/css/display.css'
 
 
 const App: React.FC = () => {
+
     return (
         <IonApp>
             <IonReactRouter>
                 <IonTabs>
                     <IonRouterOutlet>
-
-
 
 
                         <Route path="/tab1" component={Tab1} exact={true} />

@@ -32,7 +32,7 @@ const UserDetailPage: React.FC<UserDetailPageProps> = ({ match }) => {
                     <IonTitle>User Detail</IonTitle>
                 </IonToolbar>
             </IonHeader>
-            <IonContent>User {match.params.id}</IonContent>
+            <IonContent>Admin {match.params.id}</IonContent>
         </IonPage>
     )
 }

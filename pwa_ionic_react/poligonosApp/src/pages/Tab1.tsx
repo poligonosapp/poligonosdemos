@@ -26,13 +26,14 @@ import {
     IonInput,
 } from '@ionic/react'
 
-import ExploreContainer from '../components/ExploreContainer'
+// import ExploreContainer from '../components/ExploreContainer'
 
 import './Tab1.css'
 // import Login from "../components/Login";
 import { Route } from "react-router-dom";
 
 import _ from "underscore";
+// import usePoligono from "../usePoligono";
 
 const Tab1: React.FC = () => {
 
@@ -49,7 +50,7 @@ const Tab1: React.FC = () => {
 
     let options = {
         'method': 'GET',
-        'url': [endpoint, pageInsightsUrl],
+        'url': endpoint,
         'headers': {
         }
     };
@@ -83,6 +84,9 @@ const Tab1: React.FC = () => {
     // const [setMyMap] = useState({mymap});
     // const [setAccessToken] = useState({accessToken});
 
+console.log('Carregando Lista de polígonos...');
+
+    // @ts-ignore
     return (
         <IonPage>
             <IonHeader>
@@ -98,11 +102,9 @@ const Tab1: React.FC = () => {
                     </IonToolbar>
                 </IonHeader>
 
-                Carregando...
 
 
 
-                <ExploreContainer name="Mapa" />
             </IonContent>
         </IonPage>
     )

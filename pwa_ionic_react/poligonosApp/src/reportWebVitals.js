@@ -1,5 +1,5 @@
-// import {getCLS, getFID, getLCP} from 'web-vitals';
-import { getLCP, getFID, getCLS } from 'web-vitals/base'
+ import {getCLS, getFID, getLCP} from 'web-vitals';
+// import { getLCP, getFID, getCLS } from 'web-vitals/base'
 
 export default function sendToAnalytics(metric) {
     const body = JSON.stringify(metric)
@@ -12,4 +12,4 @@ getCLS(sendToAnalytics)
 getFID(sendToAnalytics)
 getLCP(sendToAnalytics)
 
-// export default reportWebVitals;
+// export default {};

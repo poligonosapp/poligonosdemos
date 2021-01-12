@@ -12,13 +12,6 @@
     "cordova": {},
     "windowsAndroidStudioPath": "E:\\Program Files\\Android\\canary\\android-studio\\bin\\studio64.exe",
     "hideLogs": false,
-    "server": {
-        "url": "http://192.168.1.33:8100",
-        "hostname": "app",
-        "iosScheme": "ionic",
-        "androidScheme": "http",
-        "allowNavigation": ["example.org", "*.example.org", "192.0.2.1"]
-    },
     "overrideUserAgent": "my custom user agent",
     "appendUserAgent": "string to append",
     "backgroundColor": "#ffffff",

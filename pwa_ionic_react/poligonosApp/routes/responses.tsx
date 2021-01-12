@@ -8,8 +8,8 @@ const app = express()
 
 app.route('/poligonos')
     .get(function (req, res) {
-        app.use(logger('get rota mapas...'))
-        res.send('Get map')
+        app.use(logger('get rota poligonos...'))
+        res.send('Get polygon')
         res.status(200)
     })
 

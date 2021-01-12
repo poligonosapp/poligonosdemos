@@ -45,6 +45,12 @@ const argv = require('webpack-nano/argv');
 
 const { source } = argv;
 
+const rollupPluginReplace = require('rollup-plugin-replace')({
+    'process.env.NODE_ENV': JSON.stringify('production')
+  });
+  const rollupPluginCommonjs = require('rollup-plugin-commonjs')();
+   const rollupPluginTerser = require('rollup-plugin-terser')();
+
 module.exports = () => {
     return {
         module: {
@@ -283,8 +289,10 @@ module.exports = () => {
             path: __dirname + '/dist',
             filename: 'index_bundle.js',
         },
-
         plugins: [
+            new rollupPluginReplace(),
+            new rollupPluginCommonjs(),
+            new rollupPluginTerser(),
             new webpack.ProvidePlugin({ 
                 $: 'jquery', 
                 jQuery: 'jquery',
@@ -329,7 +337,7 @@ module.exports = () => {
                 // new OptimizeCSSAssetsPlugin({}),
                 new TerserPlugin({
                     terserOptions: {
-                      myCustomOption: true,
+                      myCustomOption: false,
                     },
                     // Can be async
                     minify: (file, sourceMap, minimizerOptions) => {

@@ -1,5 +1,5 @@
 import React from 'react'
-import { render, ReactDOM } from 'react-dom'
+import { render } from 'react-dom'
 // import $ from "jquery";
 import $ from "expose-loader?exposes[]=$&exposes[]=jQuery!jquery";
 // Adds the `jquery` to the global object under the names `$` and `jQuery`
@@ -21,21 +21,21 @@ if (process.env.NODE_ENV !== 'production') {
 import * as serviceWorker from './serviceWorker'
 
 // babel loader
-require('@babel/core').transform('code', {
-    plugins: ['@babel/plugin-transform-modules-amd'],
-})
+// require('@babel/core').transform('code', {
+ //   plugins: ['@babel/plugin-transform-modules-amd'],
+// })
 
-require('@babel/core').transform('code', {
-    plugins: ['@babel/plugin-transform-modules-commonjs'],
-})
+// require('@babel/core').transform('code', {
+//    plugins: ['@babel/plugin-transform-modules-commonjs'],
+// })
 
-require('@babel/core').transform('code', {
-    plugins: ['@babel/plugin-transform-modules-systemjs'],
-})
+// require('@babel/core').transform('code', {
+//    plugins: ['@babel/plugin-transform-modules-systemjs'],
+// })
 
-require('@babel/core').transform('code', {
-    plugins: ['@babel/plugin-transform-modules-umd'],
-})
+// require('@babel/core').transform('code', {
+//    plugins: ['@babel/plugin-transform-modules-umd'],
+// })
 
 import App from './App'
 
@@ -43,7 +43,7 @@ import { defineCustomElements } from '@ionic/pwa-elements/loader'
 
 import reportWebVitals from './reportWebVitals'
 
-ReactDOM.render(<App />, document.getElementById('root'))
+render(<App />, document.getElementById('root'))
 
 defineCustomElements(window)
 
