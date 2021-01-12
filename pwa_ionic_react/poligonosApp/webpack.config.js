@@ -331,7 +331,26 @@ module.exports = () => {
             minimizer: [
                 // new UglifyJsPlugin(),
                 // new OptimizeCSSAssetsPlugin({}),
-                new TerserPlugin()
+                new TerserPlugin({
+                    terserOptions: {
+                      myCustomOption: true,
+                    },
+                    // Can be async
+                    minify: (file, sourceMap, minimizerOptions) => {
+                      // The `minimizerOptions` option contains option from the `terserOptions` option
+                      // You can use `minimizerOptions.myCustomOption`
+                      const extractedComments = [];
+            
+                      // Custom logic for extract comments
+            
+                      const { map, code } = require("uglify-module") // Or require('./path/to/uglify-module')
+                        .minify(file, {
+                          /* Your options for minification */
+                        });
+            
+                      return { map, code, extractedComments };
+                    },
+                  }),//npx wp
             ],
             splitChunks: {
                 chunks: 'all',

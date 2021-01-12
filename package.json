@@ -2,9 +2,8 @@
   "version": "1.0.1",
   "author": "Fabio Rodrigues <https://www.facebook.com/kefaro>, Luis Mendes <machadoluismendes@gmail.com>",
   "dependencies": {
-    "serve": " serve cd ./pwa_ionic_react/poligonosApp and yarn serve",
-    "build": " serve cd ./pwa_ionic_react/poligonosApp and yarn build",
-    "test": "cd ./pwa_ionic_react/poligonosApp and yarn test",
+    "serve": " serve cd ./pwa_ionic_react/poligonosApp yarn serve",
+    "build": " build cd ./pwa_ionic_react/poligonosApp yarn build",
     "babel": "babel",
     "@hapi/hoek": "^9.1.1",
     "@ionic/cli": "^6.12.3",
