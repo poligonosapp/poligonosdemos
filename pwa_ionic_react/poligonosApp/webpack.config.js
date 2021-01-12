@@ -4,7 +4,7 @@ const PUBLIC_DIR = 'public'
 
 const HTMLWebpackPlugin = require('html-webpack-plugin')
 
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+// const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
@@ -47,10 +47,6 @@ const { source } = argv;
 
 module.exports = () => {
     return {
-        node: {
-            Buffer: false,
-            process: false,
-        },
         module: {
             loaders: [
                 { exclude: ['node_modules'], loader: 'babel', test: /\.jsx?$/ },
@@ -317,7 +313,7 @@ module.exports = () => {
                 clientsClaim: true,
                 skipWaiting: true,
             }),
-            new UglifyJsPlugin(),
+            // new UglifyJsPlugin(),
             new BundleAnalyzerPlugin(),
             new DashboardPlugin(),
             new HTMLWebpackPlugin({
@@ -329,7 +325,7 @@ module.exports = () => {
         optimization: {
             minimize: true,
             minimizer: [
-                // new UglifyJsPlugin(),
+                 // new UglifyJsPlugin(),
                 // new OptimizeCSSAssetsPlugin({}),
                 new TerserPlugin({
                     terserOptions: {
@@ -341,14 +337,9 @@ module.exports = () => {
                       // You can use `minimizerOptions.myCustomOption`
                       const extractedComments = [];
             
-                      // Custom logic for extract comments
+                      
             
-                      const { map, code } = require("uglify-module") // Or require('./path/to/uglify-module')
-                        .minify(file, {
-                          /* Your options for minification */
-                        });
-            
-                      return { map, code, extractedComments };
+                      return { extractedComments };
                     },
                   }),//npx wp
             ],
