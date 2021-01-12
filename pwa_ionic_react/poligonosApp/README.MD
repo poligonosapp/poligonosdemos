@@ -1,6 +1,6 @@
-yarn react-scripts start
+yarn run react-scripts start
 
-yarn react-scripts build
+yarn run react-scripts build
 
 yarn serve
 
