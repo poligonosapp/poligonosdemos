@@ -1,5 +1,5 @@
 {
-  "name": "geojson_jackson_rn_demo",
+  "name": "@scope/geojson_jackson_rn_demo",
   "version": "0.0.1",
   "private": true,
   "scripts": {

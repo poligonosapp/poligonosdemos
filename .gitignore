@@ -1,2 +1,10 @@
+# Yarn
+.yarn/*
+!.yarn/cache
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+
 /ionicReact/poligonosApp/nbproject/private/
 node_modules

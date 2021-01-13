@@ -2,13 +2,11 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Leaflet" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/nextjs_poligonos/poligono" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/ng/poligono" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/ng1/angular-seed" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/ng1/angular-seed/poligono" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/poligono-java-spring-leaflet/poligono-web" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/poligonos_python/pythonProject/geoserver" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/pwa_ionic_react/poligonosApp" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/pwa_ionic_react/tutorialPhotoGalleryReact" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/spring-amqp-samples" vcs="Git" />
