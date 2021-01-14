@@ -42,25 +42,40 @@ import App from './App'
 import { defineCustomElements } from '@ionic/pwa-elements/loader'
 
 import reportWebVitals from './reportWebVitals'
+// import UsingWorkbox from './UsingWorkbox'
 
-render(<App />, document.getElementById('root'))
+// frontend failed to initialize
+try{
+    render(<App />, document.getElementById('root'))
 
-defineCustomElements(window)
+    defineCustomElements(window)
 
-serviceWorker.register()
+    serviceWorker.register()
 
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-        navigator.serviceWorker
-            .register('/service-worker.js')
-            .then((registration) => {
-                console.log('SW registered: ', registration)
-            })
-            .catch((registrationError) => {
-                console.log('SW registration failed: ', registrationError)
-            })
-    })
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker
+                .register('/service-worker.js')
+                .then((registration) => {
+                    console.log('SW registered: ', registration)
+                })
+                .catch((registrationError) => {
+                    console.log('SW registration failed: ', registrationError)
+                })
+        })
+    }
+    
+    reportWebVitals()
+	
+	reportWebVitals(console.log)
+    
+}catch(e){
+    alert('Erro de inicialização');
+
+
+    
+}finally{
+    
 }
 
-reportWebVitals()
-reportWebVitals(console.log)
+

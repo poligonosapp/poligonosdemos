@@ -68,6 +68,7 @@ module.exports = () => {
             },
             extensions: ['', 'js', 'jsx'],
             modules: [
+                '/node_modules/sqlite3/lib/binding/',
                 'node_modules',
                 'bower_components',
                 'shared',

@@ -2,6 +2,7 @@
 
 const React = require('react')
 const render = require('@testing-library/react')
+import TestRenderer from 'react-test-renderer'; // ES6
 import App from '../src/App'
 // import Tab1 from "./pages/Tab1";
 // import ExampleWithManyStates from "./components/ExampleWithManyStates";
@@ -69,6 +70,37 @@ const graphql = require('babel-plugin-relay/macro')
 // import {graphql, QueryRenderer} from 'react-relay';
 
 // require('fs');
+
+function Link(props) {
+    return <a href={props.page}>{props.children}</a>;
+  }
+  
+  const testRenderer = TestRenderer.create(
+    <Link page="https://www.localhost:3000/">PoligonosApp</Link>
+  );
+  
+  console.log(testRenderer.toJSON());
+
+function MyComponent() {
+    return (
+      <div>
+        <SubComponent foo="bar" />
+        <p className="my">Hello</p>
+      </div>
+    )
+  }
+  
+  function SubComponent() {
+    return (
+      <p className="sub">Sub</p>
+    );
+  }
+  
+  const testRenderer = TestRenderer.create(<MyComponent />);
+  const testInstance = testRenderer.root;
+  
+  expect(testInstance.findByType(SubComponent).props.foo).toBe('bar');
+  expect(testInstance.findByProps({className: "sub"}).children).toEqual(['Sub']);
 
 test('should jquery ajax ionic react webpack get status code 200 OK', () => {
 

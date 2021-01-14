@@ -3,7 +3,7 @@
 import './theme/style.scss'
 
 import React, { useState, FormEvent, useCallback } from "react";
-import { Redirect, Route } from 'react-router-dom'
+import { Router, Redirect, Route } from 'react-router-dom'
 import {
     IonApp,
     IonIcon,
@@ -35,20 +35,34 @@ import '@ionic/react/css/text-transformation.css'
 import '@ionic/react/css/flex-utils.css'
 import '@ionic/react/css/display.css'
 
-
+import { useAuth0 } from "@auth0/auth0-react";
 
 const App: React.FC = () => {
+
+    const { isLoading, error } = useAuth0();
+
+  if (error) {
+    return <div>Oops... {error.message}</div>;
+  }
+
+  if (isLoading) {
+    return <Loading />;
+  }
 
     return (
         <IonApp>
             <IonReactRouter>
                 <IonTabs>
-                    <IonRouterOutlet>
+                    <IonRouterOutlet >
 
-
+                        <Router history={history}>
                         <Route path="/tab1" component={Tab1} exact={true} />
                         <Route path="/tab2" component={Tab2} exact={true} />
                         <Route path="/tab3" component={Tab3} />
+                        </Router>
+
+
+                        
 
                     </IonRouterOutlet>
                     <IonTabBar slot="bottom">

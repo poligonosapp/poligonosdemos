@@ -3,6 +3,10 @@ let cors = require('cors')
 const webpack = require('webpack');
 const webpackDevMiddleware = require('webpack-dev-middleware');
 
+const jwt = require("express-jwt");
+const jwksRsa = require("jwks-rsa");
+const authConfig = require("./src/auth_config.json");
+
 const app = express();
 app.use(cors);
 const config = require('./webpack.config.js');

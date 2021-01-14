@@ -5,6 +5,8 @@
         <title>Ionic App</title>
 
         <base href="/" />
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
         <meta name="color-scheme" content="light dark" />
         <meta
@@ -17,6 +19,7 @@
         <script src="//cdnjs.cloudflare.com/ajax/libs/ramda/0.25.0/ramda.min.js"></script>
 
         <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+        <link rel="manifest" href="/manifest.webmanifest">
 
         <link
             rel="shortcut icon"
@@ -36,8 +39,7 @@
     </head>
 
     <body>
-        <div id="app"></div>
         <div id="root"></div>
-        <script src="dist/main.bundle.js"></script>
+        <script type="module" src="dist/main.bundle.js"></script>
     </body>
 </html>
