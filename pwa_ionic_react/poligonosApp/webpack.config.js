@@ -316,18 +316,18 @@ module.exports = () => {
                 },
                 filename: '[name]-[contenthash].css',
             }),
-            new WorkboxPlugin.GenerateSW({
-                // these options encourage the ServiceWorkers to get in there fast
-                // and not allow any straggling "old" SWs to hang around
-                clientsClaim: true,
-                skipWaiting: true,
-            }),
             // new UglifyJsPlugin(),
             new BundleAnalyzerPlugin(),
             new DashboardPlugin(),
             new HTMLWebpackPlugin({
                 template: path.resolve(__dirname, PUBLIC_DIR, 'index.html'),
                 title: 'Progressive Web Application',
+            }),
+            new WorkboxPlugin.GenerateSW({
+                // these options encourage the ServiceWorkers to get in there fast
+                // and not allow any straggling "old" SWs to hang around
+                clientsClaim: true,
+                skipWaiting: true,
             }),
             new webpack.HotModuleReplacementPlugin(),
         ],

@@ -1,5 +1,8 @@
 yarn serve
 
+yarn run react-scripts start
+yarn run react-scripts build
+
 yarn test
 
 npx ionic serve 

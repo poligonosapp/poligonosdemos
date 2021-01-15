@@ -46,7 +46,7 @@ const App: React.FC = () => {
   }
 
   if (isLoading) {
-    return <Loading />;
+    return <div>Loading... </div>;
   }
 
     return (
@@ -55,11 +55,11 @@ const App: React.FC = () => {
                 <IonTabs>
                     <IonRouterOutlet >
 
-                        <Router history={history}>
+                        
                         <Route path="/tab1" component={Tab1} exact={true} />
                         <Route path="/tab2" component={Tab2} exact={true} />
                         <Route path="/tab3" component={Tab3} />
-                        </Router>
+                        
 
 
                         
