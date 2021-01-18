@@ -2,10 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61dbe0c3-bf95-4ccc-8863-7ff346b8cf3a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CHANGELOG.MD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.prettierignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.prettierrc.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/poligono-java-spring-leaflet/poligono-web/META-INF/application.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/poligono-java-spring-leaflet/poligono-web/web/WEB-INF/web.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/poligono-java-spring-leaflet/poligono-web/web/resources/poligono.geojson" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poligono_jakarta/poligonodemo/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poligono_jakarta/poligonodemo/service-a/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poligono_jakarta/poligonodemo/service-a/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poligono_jakarta/poligonodemo/service-a/src/main/java/com/github/luismendes070/poligonodemos/poligonodemo/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poligono_jakarta/poligonodemo/service-a/src/main/java/com/github/luismendes070/poligonodemos/poligonodemo/PoligonodemoRestApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poligono_jakarta/poligonodemo/service-a/src/main/java/com/github/luismendes070/poligonodemos/poligonodemo/client/ClientController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poligono_jakarta/poligonodemo/service-a/src/main/java/com/github/luismendes070/poligonodemos/poligonodemo/client/Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poligono_jakarta/poligonodemo/service-a/src/main/java/com/github/luismendes070/poligonodemos/poligonodemo/config/ConfigTestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poligono_jakarta/poligonodemo/service-a/src/main/java/com/github/luismendes070/poligonodemos/poligonodemo/health/ServiceLiveHealthCheck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poligono_jakarta/poligonodemo/service-a/src/main/java/com/github/luismendes070/poligonodemos/poligonodemo/health/ServiceReadyHealthCheck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poligono_jakarta/poligonodemo/service-a/src/main/java/com/github/luismendes070/poligonodemos/poligonodemo/metric/MetricController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poligono_jakarta/poligonodemo/service-a/src/main/java/com/github/luismendes070/poligonodemos/poligonodemo/openapi/Booking.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poligono_jakarta/poligonodemo/service-a/src/main/java/com/github/luismendes070/poligonodemos/poligonodemo/openapi/BookingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poligono_jakarta/poligonodemo/service-a/src/main/java/com/github/luismendes070/poligonodemos/poligonodemo/openapi/Destination.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poligono_jakarta/poligonodemo/service-a/src/main/java/com/github/luismendes070/poligonodemos/poligonodemo/resilient/ResilienceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poligono_jakarta/poligonodemo/service-a/src/main/java/com/github/luismendes070/poligonodemos/poligonodemo/secure/MPJWTToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poligono_jakarta/poligonodemo/service-a/src/main/java/com/github/luismendes070/poligonodemos/poligonodemo/secure/TestSecureController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poligono_jakarta/poligonodemo/service-a/src/main/resources/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poligono_jakarta/poligonodemo/service-a/src/main/resources/META-INF/microprofile-config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poligono_jakarta/poligonodemo/service-a/src/main/resources/privateKey.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poligono_jakarta/poligonodemo/service-a/src/main/webapp/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poligono_jakarta/poligonodemo/service-a/src/main/webapp/WEB-INF/beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poligono_jakarta/poligonodemo/service-a/src/main/webapp/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poligono_jakarta/poligonodemo/service-b/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poligono_jakarta/poligonodemo/service-b/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poligono_jakarta/poligonodemo/service-b/src/main/java/com/github/luismendes070/poligonodemos/poligonodemo/PoligonodemoRestApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poligono_jakarta/poligonodemo/service-b/src/main/java/com/github/luismendes070/poligonodemos/poligonodemo/client/ServiceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poligono_jakarta/poligonodemo/service-b/src/main/java/com/github/luismendes070/poligonodemos/poligonodemo/secure/ProtectedController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poligono_jakarta/poligonodemo/service-b/src/main/resources/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poligono_jakarta/poligonodemo/service-b/src/main/resources/payara-mp-jwt.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poligono_jakarta/poligonodemo/service-b/src/main/resources/publicKey.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poligono_jakarta/poligonodemo/service-b/src/main/webapp/WEB-INF/beans.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/pwa_ionic_react/poligonosApp/.babelrc.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/pwa_ionic_react/poligonosApp/.eslintcache" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/pwa_ionic_react/poligonosApp/.eslintrc.js" afterDir="false" />
@@ -186,14 +219,13 @@
       <change afterPath="$PROJECT_DIR$/spring-amqp-samples/helloworld/.project" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/spring-amqp-samples/log4j2/.project" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/spring-amqp-samples/stocks/.project" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/docker-nginx/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/docker-nginx/backend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/docker-nginx/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/docker-nginx/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/docker-nginx/frontend/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/docker-nginx/frontend/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nextjs_poligonos/poligono" beforeDir="false" afterPath="$PROJECT_DIR$/nextjs_poligonos/poligono" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nextjs_poligonos/poligono/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/nextjs_poligonos/poligono/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nextjs_poligonos/poligono/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/nextjs_poligonos/poligono/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ng/poligono" beforeDir="false" afterPath="$PROJECT_DIR$/ng/poligono" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ng/poligono/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/ng/poligono/angular.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ng/poligono/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/ng/poligono/package-lock.json" afterDir="false" />
@@ -201,79 +233,9 @@
       <change beforePath="$PROJECT_DIR$/ng/poligono/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ng/poligono/src/app/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ng/poligono/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ng/poligono/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ng/poligono/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/ng/poligono/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng1/angular-seed" beforeDir="false" afterPath="$PROJECT_DIR$/ng1/angular-seed" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng1/angular-seed/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ng1/angular-seed/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ng1/angular-seed/poligono/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/ng1/angular-seed/poligono/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/json5" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/json5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/json5.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/json5.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.yarn-integrity" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.yarn-integrity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/acorn/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/acorn/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/acorn/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/acorn/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/acorn/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/acorn/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/acorn/bin/acorn" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/acorn/bin/acorn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/acorn/dist/acorn.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/acorn/dist/acorn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/acorn/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/acorn/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/anymatch/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/anymatch/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/anymatch/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/anymatch/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/find-up/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/find-up/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/find-up/license" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/find-up/license" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/find-up/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/find-up/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/find-up/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/find-up/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/has-flag/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/has-flag/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/has-flag/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/has-flag/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/has-flag/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/has-flag/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/locate-path/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/locate-path/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/locate-path/license" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/locate-path/license" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/locate-path/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/locate-path/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/locate-path/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/locate-path/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/p-limit/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/p-limit/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/p-limit/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/p-limit/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/p-limit/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/p-limit/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/p-locate/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/p-locate/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/p-locate/license" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/p-locate/license" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/p-locate/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/p-locate/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/p-locate/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/p-locate/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/p-try/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/p-try/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/p-try/license" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/p-try/license" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/p-try/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/p-try/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/p-try/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/p-try/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/path-exists/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/path-exists/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/path-exists/license" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/path-exists/license" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/path-exists/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/path-exists/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/path-exists/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/path-exists/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/punycode/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/punycode/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/punycode/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/punycode/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/punycode/punycode.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/punycode/punycode.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/source-map/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/source-map/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/source-map/dist/source-map.debug.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/source-map/dist/source-map.debug.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/source-map/dist/source-map.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/source-map/dist/source-map.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/source-map/dist/source-map.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/source-map/dist/source-map.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/source-map/dist/source-map.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/source-map/dist/source-map.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/source-map/lib/source-map-consumer.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/source-map/lib/source-map-consumer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/source-map/lib/source-map-generator.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/source-map/lib/source-map-generator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/source-map/lib/source-node.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/source-map/lib/source-node.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/source-map/lib/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/source-map/lib/util.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/source-map/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/source-map/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/supports-color/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/supports-color/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/supports-color/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/supports-color/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/supports-color/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/supports-color/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uri-js/node_modules/punycode/LICENSE-MIT.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uri-js/node_modules/punycode/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uri-js/node_modules/punycode/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uri-js/node_modules/punycode/punycode.es6.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uri-js/node_modules/punycode/punycode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/watchpack-chokidar2/node_modules/anymatch/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/watchpack-chokidar2/node_modules/anymatch/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/watchpack-chokidar2/node_modules/anymatch/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/watchpack-chokidar2/node_modules/anymatch/node_modules/normalize-path/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/watchpack-chokidar2/node_modules/anymatch/node_modules/normalize-path/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/watchpack-chokidar2/node_modules/anymatch/node_modules/normalize-path/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/watchpack-chokidar2/node_modules/anymatch/node_modules/normalize-path/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/watchpack-chokidar2/node_modules/anymatch/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/webpack/node_modules/.bin/acorn" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/webpack/node_modules/.bin/acorn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/webpack/node_modules/.bin/acorn.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/webpack/node_modules/.bin/acorn.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/y18n/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/y18n/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/y18n/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/y18n/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/y18n/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/y18n/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/y18n/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/y18n/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/poligono-java-spring-leaflet/poligono-web" beforeDir="false" afterPath="$PROJECT_DIR$/poligono-java-spring-leaflet/poligono-web" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/poligono-java-spring-leaflet/poligono-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/poligono-java-spring-leaflet/poligono-web/pom.xml" afterDir="false" />
@@ -285,7 +247,7 @@
       <change beforePath="$PROJECT_DIR$/pwa_ionic_react/poligonosApp/src/theme/ExploreContainer.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pwa_ionic_react/poligonosApp/src/useCounter.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pwa_ionic_react/poligonosApp/useCounter.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pwa_ionic_react/poligonosApp/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pwa_ionic_react/poligonosApp/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pwa_ionic_react/poligonosApp/yarn.lock" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pwa_ionic_react/tutorialPhotoGalleryReact/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/pwa_ionic_react/tutorialPhotoGalleryReact/android/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pwa_ionic_react/tutorialPhotoGalleryReact/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/pwa_ionic_react/tutorialPhotoGalleryReact/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pwa_ionic_react/tutorialPhotoGalleryReact/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/pwa_ionic_react/tutorialPhotoGalleryReact/package.json" afterDir="false" />
@@ -296,8 +258,12 @@
       <change beforePath="$PROJECT_DIR$/pwa_ionic_react/tutorialPhotoGalleryReact/src/pages/LeafLetHeatmapComponent.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pwa_ionic_react/tutorialPhotoGalleryReact/src/pages/Tab1.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pwa_ionic_react/tutorialPhotoGalleryReact/src/pages/Tab1.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-amqp-samples" beforeDir="false" afterPath="$PROJECT_DIR$/spring-amqp-samples" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-amqp-samples/log4j2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-amqp-samples/log4j2/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-amqp-samples/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-amqp-samples/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-amqp-samples/spring-rabbit-confirms-returns/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-amqp-samples/spring-rabbit-confirms-returns/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-amqp-samples/spring-rabbit-global-errorhandler/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-amqp-samples/spring-rabbit-global-errorhandler/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-amqp-samples/spring-rabbit-json/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-amqp-samples/spring-rabbit-json/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-amqp-samples/stocks/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-amqp-samples/stocks/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -326,6 +292,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -340,13 +307,19 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="prettier.import.notification.dismissed" value="true" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Users\luism\poligonosdemos" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="NodeJSConfigurationType" application-parameters="build" nameIsGenerated="true" node-parameters="serve" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -361,6 +334,8 @@
       <workItem from="1610766388540" duration="718000" />
       <workItem from="1610802644609" duration="801000" />
       <workItem from="1610929941285" duration="641000" />
+      <workItem from="1610987880544" duration="3160000" />
+      <workItem from="1610996849284" duration="3026000" />
     </task>
     <servers />
   </component>
@@ -371,6 +346,7 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.env" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$/Leaflet" />
       <path value="$PROJECT_DIR$/poligonos_python/pythonProject/geoserver" />
