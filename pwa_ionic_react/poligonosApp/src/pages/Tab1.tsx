@@ -35,7 +35,14 @@ import { Route } from "react-router-dom";
 import _ from "underscore";
 // import usePoligono from "../usePoligono";
 
+
+
 const Tab1: React.FC = () => {
+
+    //db
+let [allData, setAllData] = useState(require('./src/databases/stitch.js'));
+//leaflet
+let [mymap, setMyMap] = useState(require('./src/controller/LeafletServer.js'));
 
     const jwtToken = require('jsonwebtoken');
 

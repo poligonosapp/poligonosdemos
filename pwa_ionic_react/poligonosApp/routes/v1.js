@@ -10,3 +10,14 @@ app.get('/v1', function (req, res) {
 app.get('/v1', function (req, res) {
     res.send('GET request to the homepage')
   })
+
+  app.listen('/tab1', function (req, res) {
+    res.send(require('./pages/Tab1'))
+  })
+  app.listen('/tab2', function (req, res) {
+    res.send(require('./pages/Tab2'))
+  })
+
+  app.listen('/tab3', function (req, res) {
+    res.send(require('./pages/Tab3'))
+  })

@@ -60,6 +60,8 @@ import { defineCustomElements } from '@ionic/pwa-elements/loader'
 import reportWebVitals from './reportWebVitals'
 // import UsingWorkbox from './UsingWorkbox'
 
+
+
 // frontend failed to initialize
 try{
     render(<App />, document.getElementById('root'))

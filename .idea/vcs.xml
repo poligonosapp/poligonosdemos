@@ -2,6 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/docker-nginx" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/nextjs_poligonos/poligono" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/ng/poligono" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/ng1/angular-seed" vcs="Git" />

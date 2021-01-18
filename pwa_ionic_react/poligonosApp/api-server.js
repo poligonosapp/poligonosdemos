@@ -6,6 +6,8 @@ const jwt = require("express-jwt");
 const jwksRsa = require("jwks-rsa");
 const authConfig = require("./src/auth_config.json");
 
+let bodyParser = require('body-parser')
+
 const app = express();
 
 const port = process.env.API_PORT || 3001;

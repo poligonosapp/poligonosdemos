@@ -1,3 +1,8 @@
+let server = require('./server.js')
+let routes = require('./routes.js')
+let connect = require('./connect.js');
+let allData = require('./find_all_data.js');
+
 
 
             const client = stitch.Stitch.initializeDefaultAppClient(
@@ -35,4 +40,6 @@
                 .catch((err) => {
                     console.error(err)
                 })
+
+                export default {};
         
