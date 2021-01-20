@@ -3,7 +3,12 @@
         "react-app",
         "@babel/preset-env",
         "@babel/react",
-        "@babel/preset-flow"
+        "@babel/preset-flow",
+        [
+            "@babel/preset-react", {
+                "runtime": "automatic"
+              }
+        ]
     ],
     "plugins": [
         "@babel/plugin-proposal-object-rest-spread",
@@ -15,6 +20,8 @@
         "@babel/plugin-transform-modules-umd",
         "@babel/plugin-transform-flow-strip-types",
         "@babel/plugin-transform-react-jsx-compat",
-        "relay"
+        "relay",
+        "@babel/plugin-transform-react-jsx-compat",
+        "@babel/plugin-transform-react-inline-elements"
     ]
 }

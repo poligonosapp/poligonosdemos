@@ -14,8 +14,13 @@ if ('serviceWorker' in navigator) {
     })
 }
 
-import React from 'react'
-import { render } from 'react-dom'
+// import React from 'react'
+// import { render } from 'react-dom'
+let React = require('react');
+let ReactDOM = require('react-dom');
+
+let App = require('./App');
+
 // import $ from "jquery";
 import $ from "expose-loader?exposes[]=$&exposes[]=jQuery!jquery";
 // Adds the `jquery` to the global object under the names `$` and `jQuery`
@@ -53,7 +58,7 @@ if (process.env.NODE_ENV !== 'production') {
 //    plugins: ['@babel/plugin-transform-modules-umd'],
 // })
 
-import App from './App'
+
 
 import { defineCustomElements } from '@ionic/pwa-elements/loader'
 
@@ -64,11 +69,13 @@ import reportWebVitals from './reportWebVitals'
 
 // frontend failed to initialize
 try{
-    render(<App />, document.getElementById('root'))
+    // const {element} = {<App/>};
+const rootNode = document.getElementById('root');
+ReactDOM.render( <App /> , rootNode );
 
-    defineCustomElements(window)
+    defineCustomElements(window);
 
-    serviceWorker.register()
+    serviceWorker.register();
 
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
