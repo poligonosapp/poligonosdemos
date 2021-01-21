@@ -33,4 +33,5 @@ describe("The ExternalApi component", () => {
       await screen.findByText(/This is the API result/)
     ).toBeInTheDocument();
   });
+
 });

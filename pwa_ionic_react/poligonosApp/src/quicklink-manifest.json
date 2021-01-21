@@ -1,0 +1,22 @@
+{
+  '/poligonos': [
+    {
+      type: 'style',
+      
+    },
+    {
+      type: 'script',
+      
+    },
+  ],
+  '/admin': [
+    {
+      type: 'style',
+      
+    },
+    {
+      type: 'script',
+      
+    },
+  ],
+  }

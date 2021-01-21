@@ -112,7 +112,7 @@ test('should jquery ajax ionic react webpack get status code 200 OK', () => {
 })
 
 test('renders without crashing', () => {
-    const { baseElement } = render(<App />)
+    // const { baseElement } = render(<App />)
     expect(baseElement).toBeDefined()
 })
 
@@ -135,25 +135,25 @@ test('nodemom express', () => {
 })
 
 test('should useState', () => {
-    const { baseElement } = render(<App />)
+    // const { baseElement } = render(<App />)
     // expect(baseElement).toBeDefined();
     fail(true)
 })
 
 test('should render props relay', () => {
-    const { baseElement } = render(<App />)
+    // const { baseElement } = render(<App />)
     // expect(baseElement).toBeDefined();
     fail(true)
 })
 
 test('should accept stripe payments', () => {
-    const { baseElement } = render(<App />)
+    // const { baseElement } = render(<App />)
     // expect(baseElement).toBeDefined();
     fail(true)
 })
 
 test('should query graphQl api', () => {
-    const { baseElement } = render(<App />)
+    // const { baseElement } = render(<App />)
 
     // expect(baseElement).toBeDefined();
     fail(true)
@@ -167,31 +167,31 @@ test('should query insert moongose', () => {
         console.log('new polygon inserted!')
     })
 
-    const { baseElement } = render(<App />)
+    // const { baseElement } = render(<App />)
     // expect(baseElement).toBeDefined();
     fail(true)
 })
 
 test('should query read moongose', () => {
-    const { baseElement } = render(<App />)
+    // const { baseElement } = render(<App />)
     // expect(baseElement).toBeDefined();
     fail(true)
 })
 
 test('should declare newModel moongose', () => {
-    const { baseElement } = render(<App />)
+    // const { baseElement } = render(<App />)
     // expect(baseElement).toBeDefined();
     fail(true)
 })
 
 test('should declare newDesenhoSchema moongose', () => {
-    const { baseElement } = render(<App />)
+    // const { baseElement } = render(<App />)
     // expect(baseElement).toBeDefined();
     fail(true)
 })
 
 test('should send http 200 status code', () => {
-    const { baseElement } = render(<App />)
+    // const { baseElement } = render(<App />)
     // expect(baseElement).toBeDefined();
 
     // const resStatus = response.status(200)
@@ -206,7 +206,7 @@ const atlasConnect =
     'mongodb+srv://fail:<password>@cluster0.neyhi.gcp.mongodb.net/<dbname>?retryWrites=true&w=majority'
 
 test('should connect realm', () => {
-    const { baseElement } = render(<App />)
+    // const { baseElement } = render(<App />)
     // expect(baseElement).toBeDefined();
 
     const MongoClient = require('mongodb').MongoClient

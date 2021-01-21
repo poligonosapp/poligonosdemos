@@ -1,4 +1,4 @@
 module.exports = {
-    jwtSecret: 'long-live-the-ionic-academy',
+    jwtSecret: 'rMEab9aKNai5ODMagvuf9WA5fmKPAyVk',
     db: 'mongodb://localhost/ionic-jwt'
 };

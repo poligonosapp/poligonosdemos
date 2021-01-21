@@ -251,6 +251,14 @@ module.exports = () => {
                     exclude: /(node_modules|bower_components)/,
                     use: {
                         loader: 'babel-loader',
+						,
+    include: [
+        path.join(__dirname, 'src')
+    ],
+    query: {
+        plugins: ['react-relay'],
+        presets: ['react', 'es2015']
+    },
                         options: {
                             presets: ['@babel/preset-env'],
                             plugins: [

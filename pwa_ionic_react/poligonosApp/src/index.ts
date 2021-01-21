@@ -18,7 +18,7 @@ if ('serviceWorker' in navigator) {
 // import { render } from 'react-dom'
 let React = require('react');
 let ReactDOM = require('react-dom');
-
+import Tab1 from './pages/Tab1'
 let App = require('./App');
 
 // import $ from "jquery";
@@ -65,17 +65,21 @@ import { defineCustomElements } from '@ionic/pwa-elements/loader'
 import reportWebVitals from './reportWebVitals'
 // import UsingWorkbox from './UsingWorkbox'
 
-
+// es6
+// import { BrowserRouter } from 'react-router-dom';
+// using CommonJS modules
+const BrowserRouter = require("react-router-dom").BrowserRouter;
 
 // frontend failed to initialize
 try{
     // const {element} = {<App/>};
 const rootNode = document.getElementById('root');
-ReactDOM.render( <App /> , rootNode );
+
+ReactDOM.render( <BrowserRouter><App /></BrowserRouter> , rootNode );
 
     defineCustomElements(window);
 
-    serviceWorker.register();
+    serviceWorker.unregister();
 
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {

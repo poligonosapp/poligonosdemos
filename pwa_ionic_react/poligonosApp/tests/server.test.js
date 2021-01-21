@@ -20,7 +20,9 @@ describe('Test the addLike method', () => {
     afterAll((done) => {
         mongoDB.disconnect(done);
     });
-}
+});
+
+let mongoose = require('mongoose');
 
 module.exports = {
   mongoose,

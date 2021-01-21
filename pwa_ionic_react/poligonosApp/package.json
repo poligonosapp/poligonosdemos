@@ -1,11 +1,31 @@
 {
     "name": "@poligonosdemos/poligonosapp",
-    "version": "1.1.0",
+    "version": "1.1.2",
     "private": true,
-    "license": "Apache-License 2.0",
+    "license": "Apache License 2.0",
     "type": "module",
     "exports": "./src/index.js",
     "main": "./src/index.js",
+	"root": "dist/",
+	"canonical_host": "www.example.com",
+	"canonical_host": "${HOST}",
+	"encoding": "US-ASCII",
+	"clean_urls": true,
+	"logging": {
+    "access": false,
+    "error": "warn"
+  },"routes": {
+    "/*.html": "index.html",
+    "/route/**": "bar/baz.html",
+	"/assets/*": "/assets/",
+    "/**": "index.html",
+	"redirects": {
+    "/old/gone/": {
+      "url": "/",
+      "status": 302
+    }
+  },
+  },
     "scripts": {
         "serve": "npx ionic serve yarn run react-scripts start auth start watch",
         "watch": "watch",
@@ -32,7 +52,10 @@
     },
     "dependencies": {
         "@auth0/auth0-react": "^1.2.0",
+        "@babel/plugin-proposal-object-rest-spread": "^7.12.1",
+        "@babel/plugin-transform-modules-commonjs": "^7.12.1",
         "@babel/preset-react": "^7.12.7",
+        "@babel/runtime": "^7.12.5",
         "@bubblewrap/cli": "^1.8.2",
         "@capacitor/android": "^2.4.5",
         "@capacitor/core": "^2.4.5",
@@ -121,6 +144,7 @@
         "pug": "2.0.0-beta11",
         "puppeteer-core": "^5.5.0",
         "qs": "^6.9.4",
+        "quicklink": "^2.0.0",
         "ramda": "^0.26.1",
         "react": "^16.8.0",
         "react-dom": "^17.0.0",
@@ -128,7 +152,7 @@
         "react-markdown-reader": "^1.2.0",
         "react-redux": "^7.2.2",
         "react-router": "^5.1.2",
-        "react-router-dom": "^5.1.2",
+        "react-router-dom": "^5.2.0",
         "react-test-renderer": "^17.0.1",
         "ref-loader": "^1.0.3",
         "relay-compiler": "^10.1.2",
@@ -140,6 +164,7 @@
         "source-map-explorer": "^2.5.1",
         "stream-http": "^2.8.3",
         "stringstream": "^0.0.5",
+        "styled-components": "^5.2.1",
         "systemjs": "^6.8.3",
         "tapable": "^2.2.0",
         "terser-webpack-plugin": "^5.1.1",
@@ -269,5 +294,6 @@
     },
     "lint-staged": {
         "**/*": "prettier --write --ignore-unknown"
-    }
+    },
+    "react-relay-schema": "./data/schema.json"
 }
