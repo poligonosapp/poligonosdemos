@@ -26,3 +26,16 @@ pwa manifest
 pwa service workers
 webpack-merge
 
+##VERSION 1.1.3##
+
+##CHANGES
+
+
+
+#FEATURES
+
+
+#KNOWN BUGS
+
+
+
