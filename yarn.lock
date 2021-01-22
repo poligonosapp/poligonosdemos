@@ -4088,6 +4088,35 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@poligonosdemos/meupoligono@workspace:pwa_ionic_react/meuPoligono":
+  version: 0.0.0-use.local
+  resolution: "@poligonosdemos/meupoligono@workspace:pwa_ionic_react/meuPoligono"
+  dependencies:
+    "@capacitor/android": ^2.4.5
+    "@capacitor/cli": 2.4.5
+    "@capacitor/core": 2.4.5
+    "@ionic/react": ^5.0.7
+    "@ionic/react-router": ^5.0.7
+    "@testing-library/jest-dom": ^4.2.4
+    "@testing-library/react": ^9.4.0
+    "@testing-library/user-event": ^8.0.3
+    "@types/jest": ^24.0.25
+    "@types/node": ^12.12.24
+    "@types/react": ^16.9.17
+    "@types/react-dom": ^16.9.4
+    "@types/react-router": ^5.1.4
+    "@types/react-router-dom": ^5.1.3
+    ionicons: ^5.0.0
+    react: ^16.13.0
+    react-dom: ^16.13.0
+    react-router: ^5.1.2
+    react-router-dom: ^5.1.2
+    react-scripts: 3.4.0
+    typescript: 3.8.3
+    webpack-cli: ^4.3.1
+  languageName: unknown
+  linkType: soft
+
 "@poligonosdemos/poligonosapp@workspace:pwa_ionic_react/poligonosApp":
   version: 0.0.0-use.local
   resolution: "@poligonosdemos/poligonosapp@workspace:pwa_ionic_react/poligonosApp"
@@ -4291,6 +4320,48 @@ __metadata:
 "@poligonosdemos/server@workspace:app/server":
   version: 0.0.0-use.local
   resolution: "@poligonosdemos/server@workspace:app/server"
+  languageName: unknown
+  linkType: soft
+
+"@poligonosdemos/tutorialPhotoGalleryReact@workspace:pwa_ionic_react/tutorialPhotoGalleryReact":
+  version: 0.0.0-use.local
+  resolution: "@poligonosdemos/tutorialPhotoGalleryReact@workspace:pwa_ionic_react/tutorialPhotoGalleryReact"
+  dependencies:
+    "@capacitor/android": ^2.0.1
+    "@capacitor/cli": ^2.0.1
+    "@capacitor/core": ^2.0.1
+    "@capacitor/ios": ^2.0.1
+    "@ionic/pwa-elements": ^1.5.2
+    "@ionic/react": ^5.0.7
+    "@ionic/react-hooks": 0.0.6
+    "@ionic/react-router": ^5.0.7
+    "@testing-library/jest-dom": ^5.5.0
+    "@testing-library/react": ^10.0.2
+    "@testing-library/user-event": ^10.0.1
+    "@types/jest": ^25.2.1
+    "@types/leaflet": ^1.5.19
+    "@types/node": ^13.11.1
+    "@types/react": ^16.9.34
+    "@types/react-dom": ^16.9.6
+    "@types/react-router": ^5.1.5
+    "@types/react-router-dom": ^5.1.4
+    enzyme: ^3.11.0
+    file-type: ^16.0.1
+    ionicons: ^5.0.1
+    leaflet: ^1.7.1
+    leaflet-heatmap: ^1.0.0
+    mapbox-gl: ^1.13.0
+    prettier: ^2.2.0
+    react: ^16.13.1
+    react-dom: ^16.13.1
+    react-leaflet: ^3.0.2
+    react-router: ^5.1.2
+    react-router-dom: ^5.1.2
+    react-scripts: 3.4.1
+    typescript: ^3.8.3
+    window-fetch: 0.0.13
+  peerDependencies:
+    react: ^16.8.6
   languageName: unknown
   linkType: soft
 
@@ -5580,6 +5651,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/component-emitter@npm:^1.2.10":
+  version: 1.2.10
+  resolution: "@types/component-emitter@npm:1.2.10"
+  checksum: 868a9a00697df0ce74da77b8fc2c40f1a3ac6f294a828fdc8d9ae3ba62f9a541b472f147d1837dc7dd9d9c1333aa277f9d29c12e4746e6d779e6ce94c4c2f7ac
+  languageName: node
+  linkType: hard
+
+"@types/concurrently@npm:^5.2.1":
+  version: 5.2.1
+  resolution: "@types/concurrently@npm:5.2.1"
+  dependencies:
+    "@types/node": "*"
+  checksum: 85e96ec5fe7c6ce789297d3fe70573177a2fe331798e06d7b6c87b4c006473b4195daa3ad7da98a99f9ba93cc1a7d21b5fa830688aaed3a864efd3ab6ac7434c
+  languageName: node
+  linkType: hard
+
 "@types/connect@npm:*":
   version: 3.4.34
   resolution: "@types/connect@npm:3.4.34"
@@ -5596,7 +5683,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/cors@npm:^2.8.9":
+"@types/cookie@npm:^0.4.0":
+  version: 0.4.0
+  resolution: "@types/cookie@npm:0.4.0"
+  checksum: be9ef4172b97878fe38874c47d25bddcc58886fa4e621b3336bf2e08983763b5391a0d0b4ace34372adc3bd44da05ea9bcf885b0f5b5ab56bc72e0baba5e6346
+  languageName: node
+  linkType: hard
+
+"@types/cors@npm:^2.8.8, @types/cors@npm:^2.8.9":
   version: 2.8.9
   resolution: "@types/cors@npm:2.8.9"
   checksum: 903e863c91928209c66a26fdd82ccd0327ed5cded60f19683a155b1b0281e0ad38ecf61dd9f6c23fb9a03ab684e6c2d5690e13473f96d813b8a474dc23dd6c89
@@ -6065,7 +6159,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^14.14.22":
+"@types/node@npm:^14.14.10, @types/node@npm:^14.14.22":
   version: 14.14.22
   resolution: "@types/node@npm:14.14.22"
   checksum: e46e32685b4d0261779c13c10ba3ff220cfa714b5c12f8f571fd52cc309546bdbc8ffc86cbad20559ad88e7b17e66fc51c98b067d8c3766597092c05df157b9b
@@ -6172,7 +6266,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-router-dom@npm:^5.1.3, @types/react-router-dom@npm:^5.1.4":
+"@types/react-router-dom@npm:^5.1.3, @types/react-router-dom@npm:^5.1.4, @types/react-router-dom@npm:^5.1.7":
   version: 5.1.7
   resolution: "@types/react-router-dom@npm:5.1.7"
   dependencies:
@@ -8748,6 +8842,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"babel-plugin-react-relay@npm:^0.10.0":
+  version: 0.10.0
+  resolution: "babel-plugin-react-relay@npm:0.10.0"
+  dependencies:
+    babel-relay-plugin: ^0.10.0
+    deasync: ^0.1.7
+    graphql-config-parser: ^1.2.0
+  checksum: 2f083cba3d92b18704d3338bc20eef77e5a7741c20daad76080462bf26ec7507ed8af9e4d7f8fe916e4d3d3d618dec2521dd4c9f632e410e0f308a6e8a45f3c3
+  languageName: node
+  linkType: hard
+
 "babel-plugin-relay@npm:^10.1.2":
   version: 10.1.2
   resolution: "babel-plugin-relay@npm:10.1.2"
@@ -9333,6 +9438,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"babel-relay-plugin@npm:^0.10.0":
+  version: 0.10.0
+  resolution: "babel-relay-plugin@npm:0.10.0"
+  dependencies:
+    graphql: 0.8.2
+  checksum: 163c768c91f798eab33443de0bdcdae5dc11623cf07fd8f2ee8c27cb5f784af65f5479cc499e37767d199431762c1df13ae6bf4e7b74e9c54609dc919a685fdb
+  languageName: node
+  linkType: hard
+
 "babel-runtime@npm:^6.18.0, babel-runtime@npm:^6.22.0, babel-runtime@npm:^6.26.0":
   version: 6.26.0
   resolution: "babel-runtime@npm:6.26.0"
@@ -9426,7 +9540,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"backo2@npm:1.0.2":
+"backo2@npm:1.0.2, backo2@npm:~1.0.2":
   version: 1.0.2
   resolution: "backo2@npm:1.0.2"
   checksum: 72f19a0fd2b573f5504adf1f2e74e7658eec000e7732ebd5f622b6b1d520187277a5e8310787906455d02fcf915f35c5c48e54c997bed1a60b95355db8f2ccab
@@ -9454,7 +9568,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"base64id@npm:2.0.0":
+"base64id@npm:2.0.0, base64id@npm:~2.0.0":
   version: 2.0.0
   resolution: "base64id@npm:2.0.0"
   checksum: 91517053496f8f6ef5c4f0dc8ea8cda43fe0ff9e268e0309f67da438fb680fc7df8bfba10e5d363d63f33e74babda0ac53d2e821e6d158a840d4091df1c16099
@@ -11437,6 +11551,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"commander@npm:^7.0.0":
+  version: 7.0.0
+  resolution: "commander@npm:7.0.0"
+  checksum: 46e60cb1e1ccc3e8d4bac5672d4be08cb60d0a0c22d0c352ba9f9713a11996e79a67216ace4dc32a04ee621c86c9a327f0c35126e4aaf3ede3004f78a009cb19
+  languageName: node
+  linkType: hard
+
 "commander@npm:~2.1.0":
   version: 2.1.0
   resolution: "commander@npm:2.1.0"
@@ -11636,6 +11757,25 @@ __metadata:
     readable-stream: ^3.0.2
     typedarray: ^0.0.6
   checksum: 286f55bb6a41f290248b0c4b1fa84f08b1d7f248634bf5907b1b946e28b537b8f95bd6100f10394e9d870fcec9ed50d4636dfc68c0b7e820b06c7f84814edb43
+  languageName: node
+  linkType: hard
+
+"concurrently@npm:^5.3.0":
+  version: 5.3.0
+  resolution: "concurrently@npm:5.3.0"
+  dependencies:
+    chalk: ^2.4.2
+    date-fns: ^2.0.1
+    lodash: ^4.17.15
+    read-pkg: ^4.0.1
+    rxjs: ^6.5.2
+    spawn-command: ^0.0.2-1
+    supports-color: ^6.1.0
+    tree-kill: ^1.2.2
+    yargs: ^13.3.0
+  bin:
+    concurrently: bin/concurrently.js
+  checksum: c46bb460ea0fdf1a15232d84b6122e1ec56655043c154d2be70375ab6eafe04a9224d0da35af5bf190e09d85343bda7a670a886cc67e678fabc4996e9f41650f
   languageName: node
   linkType: hard
 
@@ -11911,7 +12051,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cors@npm:^2.8.5":
+"cors@npm:^2.8.5, cors@npm:~2.8.5":
   version: 2.8.5
   resolution: "cors@npm:2.8.5"
   dependencies:
@@ -12753,10 +12893,27 @@ __metadata:
   languageName: node
   linkType: hard
 
+"date-fns@npm:^2.0.1":
+  version: 2.16.1
+  resolution: "date-fns@npm:2.16.1"
+  checksum: fbe5d9aa1dc4c92c7cf9c0b31e58f532ac9fe059f85fc622641b1ac9c673150329620ea6bf941a8ba10e8e677aa0b6ccdc04ce001f81e70fd49acd1760edcba0
+  languageName: node
+  linkType: hard
+
 "dateformat@npm:^2.0.0":
   version: 2.2.0
   resolution: "dateformat@npm:2.2.0"
   checksum: 8715d47401cc7ed3c16dcfd7f9d7fdb2d514c4f74976030b31679d1ef1f3c97f8da4abb4328ec390a0fa093ffe27a4d20f1267b55128ddcac862466fa9416f1f
+  languageName: node
+  linkType: hard
+
+"deasync@npm:^0.1.7":
+  version: 0.1.21
+  resolution: "deasync@npm:0.1.21"
+  dependencies:
+    bindings: ^1.5.0
+    node-addon-api: ^1.7.1
+  checksum: 122dca8ed34459a2e0232cbbd4fcb273d00146b772517d2161afef0c08142df45b9793bafa48c02d946486125ca52c2b8f4fab9c15130528afc8273e1ef34c36
   languageName: node
   linkType: hard
 
@@ -12808,7 +12965,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"debug@npm:^4.0.1, debug@npm:^4.2.0":
+"debug@npm:^4.0.1, debug@npm:^4.2.0, debug@npm:~4.3.1":
   version: 4.3.2
   resolution: "debug@npm:4.3.2"
   dependencies:
@@ -13888,7 +14045,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"encoding@npm:^0.1.12":
+"encoding@npm:^0.1.11, encoding@npm:^0.1.12":
   version: 0.1.13
   resolution: "encoding@npm:0.1.13"
   dependencies:
@@ -13932,6 +14089,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"engine.io-client@npm:~4.1.0":
+  version: 4.1.0
+  resolution: "engine.io-client@npm:4.1.0"
+  dependencies:
+    base64-arraybuffer: 0.1.4
+    component-emitter: ~1.3.0
+    debug: ~4.3.1
+    engine.io-parser: ~4.0.1
+    has-cors: 1.1.0
+    parseqs: 0.0.6
+    parseuri: 0.0.6
+    ws: ~7.4.2
+    xmlhttprequest-ssl: ~1.5.4
+    yeast: 0.1.2
+  checksum: 16cecaf5f4a019c4d51de36d1588527df5313287281781ae1a3d87a7949050a5832cfe8409f33c8fac98007699d202cab614f773592785d668ffdc0cc33c3dda
+  languageName: node
+  linkType: hard
+
 "engine.io-parser@npm:~2.2.0":
   version: 2.2.1
   resolution: "engine.io-parser@npm:2.2.1"
@@ -13942,6 +14117,15 @@ __metadata:
     blob: 0.0.5
     has-binary2: ~1.0.2
   checksum: 486b996a7ed43a1e47bdc8d787c470632b28693e16d0f1f9134840a3f93483e1819b644b3971b3302370f115c8bb345cc2e821f61e22cfb38d0ab9a469593d78
+  languageName: node
+  linkType: hard
+
+"engine.io-parser@npm:~4.0.0, engine.io-parser@npm:~4.0.1":
+  version: 4.0.2
+  resolution: "engine.io-parser@npm:4.0.2"
+  dependencies:
+    base64-arraybuffer: 0.1.4
+  checksum: fe5543911fb9451501c062fe6f0965ffd80064036daba4b7dda2190038436fd00875a049194381edd936dc27eaa0e52dca7f4113b0116d962ebd7cfe67247fc1
   languageName: node
   linkType: hard
 
@@ -13956,6 +14140,21 @@ __metadata:
     engine.io-parser: ~2.2.0
     ws: ~7.4.2
   checksum: 4a2251452542b9669f014d4edeff602c95b68c21635b85510b19810f93788a87787bf0ff2686f260107ad133eda14c40ab9e9eb10bd796906865d3cd94f1d992
+  languageName: node
+  linkType: hard
+
+"engine.io@npm:~4.1.0":
+  version: 4.1.0
+  resolution: "engine.io@npm:4.1.0"
+  dependencies:
+    accepts: ~1.3.4
+    base64id: 2.0.0
+    cookie: ~0.4.1
+    cors: ~2.8.5
+    debug: ~4.3.1
+    engine.io-parser: ~4.0.0
+    ws: ~7.4.2
+  checksum: 015a5faf751d7729983eb257a73ebeca66e095d8fde780f3a2054302b7d79af2d8a58ea3ab6e7cc5808cf2b8c14d357e2826bc35777aa9d472ef84b2d7f29180
   languageName: node
   linkType: hard
 
@@ -15801,7 +16000,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"filesize@npm:6.1.0":
+"filesize@npm:6.1.0, filesize@npm:^6.1.0":
   version: 6.1.0
   resolution: "filesize@npm:6.1.0"
   checksum: 5c0c4be4861bacdfcb701f1162aad6d6fe3724cbb69fcb9f55b3adfbb43d83d776790446a3d10da1cecf3616fc91b5d73ee3ab174ff1e141c983418cb83f9c9c
@@ -17108,6 +17307,35 @@ fsevents@~2.1.2:
   dependencies:
     lodash: ^4.17.15
   checksum: 86e4433af9cf450c414d8cc58481ac8b96321fc25ecbbf08d27f0694a5e3a72a5c7a973795683b5ed5bbced75af1b0706c2b6e964f44f27b9078b229b652abee
+  languageName: node
+  linkType: hard
+
+"graphql-config-parser@npm:^1.2.0":
+  version: 1.2.1
+  resolution: "graphql-config-parser@npm:1.2.1"
+  dependencies:
+    graphql: 0.7.1 - 1.0.0
+    node-fetch: ^1.6.3
+    valid-url: ^1.0.9
+  checksum: 65ae804aee2e33428e82abdb3e1af8b78da230ce214397094b694a50abc2df24ee57ea96ee25f4d969ec33ef75e5204b4d8fd299585aff24fe87f00807e77656
+  languageName: node
+  linkType: hard
+
+"graphql@npm:0.7.1 - 1.0.0":
+  version: 0.13.2
+  resolution: "graphql@npm:0.13.2"
+  dependencies:
+    iterall: ^1.2.1
+  checksum: 99a3d0e92f6bcf4d55473c46440928255dabc4c5fd4bcf1fbb2501e9d77b6ebc2fc845212c6807c05e5d4d8bc8038c7f59248bd5dd91f71ece48ceb2967068bd
+  languageName: node
+  linkType: hard
+
+"graphql@npm:0.8.2":
+  version: 0.8.2
+  resolution: "graphql@npm:0.8.2"
+  dependencies:
+    iterall: 1.0.2
+  checksum: 1767fb81e28ece3a383ba7daddc1fc8bb67e0ddf27facf309f66ff73a0fd75f1895beecce8fae0499314bf663726f49b72284c6212ed2dbb179d1956357d9374
   languageName: node
   linkType: hard
 
@@ -18507,7 +18735,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"inspectpack@npm:^4.2.1":
+"inspectpack@npm:^4.2.1, inspectpack@npm:^4.6.1":
   version: 4.6.1
   resolution: "inspectpack@npm:4.6.1"
   dependencies:
@@ -19278,7 +19506,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"is-stream@npm:^1.1.0":
+"is-stream@npm:^1.0.1, is-stream@npm:^1.1.0":
   version: 1.1.0
   resolution: "is-stream@npm:1.1.0"
   checksum: 39843ee9ff68ebda05237199f18831eb6e0e28db7799ee9ddaac5573b0681f18b4dc427afdb7b7ad906db545e4648999c42a1810b277acc8451593ff59da00fa
@@ -19567,6 +19795,20 @@ fsevents@~2.1.2:
     html-escaper: ^2.0.0
     istanbul-lib-report: ^3.0.0
   checksum: d4ed416e13fe0fc709566439086660ddab58dce9d6a655053c5315715aac8225bc7e9fcae553c2c3d8cc66cd4b59498a50b92d543a4820c5be0e5ee30178cdf0
+  languageName: node
+  linkType: hard
+
+"iterall@npm:1.0.2":
+  version: 1.0.2
+  resolution: "iterall@npm:1.0.2"
+  checksum: 449f22d87216be5fe50ab01b0269efbacfc5fde2f023626c4cdc98ddc7ec06510d3609efbdf3c3b77d6e0ccb0ea9871e34f504ccdb6d62d60f901153fc1f8a7e
+  languageName: node
+  linkType: hard
+
+"iterall@npm:^1.2.1":
+  version: 1.3.0
+  resolution: "iterall@npm:1.3.0"
+  checksum: 25ae2d07cf97fc35d43fa7af814839689416b83d3ade0fec97a62c58b7b9fad5ff89dd0ede99f2d67cae2697ffa6987f0ab10876f40ae6466e802609a05b1006
   languageName: node
   linkType: hard
 
@@ -21613,7 +21855,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"leaflet@npm:*, leaflet@npm:^1.6.0":
+"leaflet@npm:*, leaflet@npm:^1.6.0, leaflet@npm:^1.7.1":
   version: 1.7.1
   resolution: "leaflet@npm:1.7.1"
   checksum: 7a841174dc3c8e135a2ba9a81cdd8145ef4c00e516eb558281ea47b20499f94ddab58a76a72ee15104e0dce88a07ae91fe933cfab75b569c5ed0770497aa7d99
@@ -23210,35 +23452,6 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"meuPoligono@workspace:pwa_ionic_react/meuPoligono":
-  version: 0.0.0-use.local
-  resolution: "meuPoligono@workspace:pwa_ionic_react/meuPoligono"
-  dependencies:
-    "@capacitor/android": ^2.4.5
-    "@capacitor/cli": 2.4.5
-    "@capacitor/core": 2.4.5
-    "@ionic/react": ^5.0.7
-    "@ionic/react-router": ^5.0.7
-    "@testing-library/jest-dom": ^4.2.4
-    "@testing-library/react": ^9.4.0
-    "@testing-library/user-event": ^8.0.3
-    "@types/jest": ^24.0.25
-    "@types/node": ^12.12.24
-    "@types/react": ^16.9.17
-    "@types/react-dom": ^16.9.4
-    "@types/react-router": ^5.1.4
-    "@types/react-router-dom": ^5.1.3
-    ionicons: ^5.0.0
-    react: ^16.13.0
-    react-dom: ^16.13.0
-    react-router: ^5.1.2
-    react-router-dom: ^5.1.2
-    react-scripts: 3.4.0
-    typescript: 3.8.3
-    webpack-cli: ^4.3.1
-  languageName: unknown
-  linkType: soft
-
 "microevent.ts@npm:~0.1.1":
   version: 0.1.1
   resolution: "microevent.ts@npm:0.1.1"
@@ -24257,6 +24470,15 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"node-addon-api@npm:^1.7.1":
+  version: 1.7.2
+  resolution: "node-addon-api@npm:1.7.2"
+  dependencies:
+    node-gyp: latest
+  checksum: 6796f58946713c647bccdfdb6ceb42dccb980170e9ce3ca3a65cca659a417d79210999fd297963656371c616c7b75b74bbdefae36257ae84c28927fb7ae037d4
+  languageName: node
+  linkType: hard
+
 "node-emoji@npm:^1.4.1":
   version: 1.10.0
   resolution: "node-emoji@npm:1.10.0"
@@ -24279,6 +24501,16 @@ fsevents@~2.1.2:
   version: 2.6.1
   resolution: "node-fetch@npm:2.6.1"
   checksum: cbb171635e538162b977eac5dfe7a1e07a9a02e991924377a6435502291e2f823d306b95aabc455caebf4a118ccf836868462bc70ccc3095af02bb9da61fda37
+  languageName: node
+  linkType: hard
+
+"node-fetch@npm:^1.6.3":
+  version: 1.7.3
+  resolution: "node-fetch@npm:1.7.3"
+  dependencies:
+    encoding: ^0.1.11
+    is-stream: ^1.0.1
+  checksum: d04afb2e328ffb974a5ac4800fe5714d7419243d72f089a6a2383d3b93368c61ae88954a4866c476c0d7f95d7af414c1b9a885e051971061efe4054d526e23ed
   languageName: node
   linkType: hard
 
@@ -26287,47 +26519,6 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"poligonos@workspace:pwa_ionic_react/tutorialPhotoGalleryReact":
-  version: 0.0.0-use.local
-  resolution: "poligonos@workspace:pwa_ionic_react/tutorialPhotoGalleryReact"
-  dependencies:
-    "@capacitor/android": ^2.0.1
-    "@capacitor/cli": ^2.0.1
-    "@capacitor/core": ^2.0.1
-    "@capacitor/ios": ^2.0.1
-    "@ionic/pwa-elements": ^1.5.2
-    "@ionic/react": ^5.0.7
-    "@ionic/react-hooks": 0.0.6
-    "@ionic/react-router": ^5.0.7
-    "@testing-library/jest-dom": ^5.5.0
-    "@testing-library/react": ^10.0.2
-    "@testing-library/user-event": ^10.0.1
-    "@types/jest": ^25.2.1
-    "@types/leaflet": ^1.5.19
-    "@types/node": ^13.11.1
-    "@types/react": ^16.9.34
-    "@types/react-dom": ^16.9.6
-    "@types/react-router": ^5.1.5
-    "@types/react-router-dom": ^5.1.4
-    enzyme: ^3.11.0
-    file-type: ^16.0.1
-    ionicons: ^5.0.1
-    leaflet-heatmap: ^1.0.0
-    mapbox-gl: ^1.13.0
-    prettier: ^2.2.0
-    react: ^16.13.1
-    react-dom: ^16.13.1
-    react-leaflet: ^3.0.2
-    react-router: ^5.1.2
-    react-router-dom: ^5.1.2
-    react-scripts: 3.4.1
-    typescript: ^3.8.3
-    window-fetch: 0.0.13
-  peerDependencies:
-    react: ^16.8.6
-  languageName: unknown
-  linkType: soft
-
 "poligonosdemos@workspace:.":
   version: 0.0.0-use.local
   resolution: "poligonosdemos@workspace:."
@@ -26338,10 +26529,14 @@ fsevents@~2.1.2:
     "@jest/types": ^26.6.2
     "@shelf/jest-mongodb": ^1.2.3
     "@snyk/dep-graph": ^1.23.0
+    "@types/concurrently": ^5.2.1
     "@types/convert-string": ^0.1.1
     "@types/node": ^14.14.22
+    "@types/react-router-dom": ^5.1.7
     babel: babel
+    babel-plugin-react-relay: ^0.10.0
     body-parser: ^1.19.0
+    concurrently: ^5.3.0
     cryptiles: ^4.1.3
     crypto: ^1.0.1
     expandjs: ^1.2.2
@@ -26352,11 +26547,14 @@ fsevents@~2.1.2:
     micromatch: ^4.0.2
     net: ^1.0.2
     openapi-to-postmanv2: ^2.0.0
+    react: 17
+    react-router-dom: ^5.2.0
     react-scripts: ^4.0.1
     remove: ^0.1.5
     stream: ^0.0.2
     ts-node: ^9.1.1
     web-vitals: 0.2.4
+    webpack-dashboard: ^3.3.0
     webpack-route-manifest: ^1.1.0
     webpack-stream: 4.0.0
     zlib: ^1.0.5
@@ -28930,6 +29128,17 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"read-pkg@npm:^4.0.1":
+  version: 4.0.1
+  resolution: "read-pkg@npm:4.0.1"
+  dependencies:
+    normalize-package-data: ^2.3.2
+    parse-json: ^4.0.0
+    pify: ^3.0.0
+  checksum: cc1ed67240e0f8c51e11ab3dbe17041ceae75427925babf816812e437d0adfbe2c8449142a41feaed81a5c2572a986e27be2fa093dab8b3f2eb29951ca24f8d2
+  languageName: node
+  linkType: hard
+
 "read-pkg@npm:^5.2.0":
   version: 5.2.0
   resolution: "read-pkg@npm:5.2.0"
@@ -30225,7 +30434,7 @@ resolve@1.18.1:
   languageName: node
   linkType: hard
 
-"rxjs@npm:^6.3.3, rxjs@npm:^6.4.0, rxjs@npm:^6.5.3, rxjs@npm:^6.6.0":
+"rxjs@npm:^6.3.3, rxjs@npm:^6.4.0, rxjs@npm:^6.5.2, rxjs@npm:^6.5.3, rxjs@npm:^6.6.0":
   version: 6.6.3
   resolution: "rxjs@npm:6.6.3"
   dependencies:
@@ -31483,6 +31692,13 @@ resolve@1.18.1:
   languageName: node
   linkType: hard
 
+"socket.io-adapter@npm:~2.1.0":
+  version: 2.1.0
+  resolution: "socket.io-adapter@npm:2.1.0"
+  checksum: 20ce6610fef40e510c03649ca3cd5f7c7d78a9776145f8b7c0a361e1cec398a05f0958e19c79a8dd719aa867391d03cd65ce99f590e20acaad029c667686bb9c
+  languageName: node
+  linkType: hard
+
 "socket.io-client@npm:2.4.0, socket.io-client@npm:^2.1.1":
   version: 2.4.0
   resolution: "socket.io-client@npm:2.4.0"
@@ -31499,6 +31715,21 @@ resolve@1.18.1:
     socket.io-parser: ~3.3.0
     to-array: 0.1.4
   checksum: 75a8f9b69a0a47c41c9cff80fe5bfff02b7f75eefd4fdbe2f6b74ca0f0f408d3eccd734f5d8cc8c180859bb75b24fdb9f97110c36ac4015a0f4d2b41c891e99f
+  languageName: node
+  linkType: hard
+
+"socket.io-client@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "socket.io-client@npm:3.1.0"
+  dependencies:
+    "@types/component-emitter": ^1.2.10
+    backo2: ~1.0.2
+    component-emitter: ~1.3.0
+    debug: ~4.3.1
+    engine.io-client: ~4.1.0
+    parseuri: 0.0.6
+    socket.io-parser: ~4.0.4
+  checksum: 943cfd1b656d6c81cc0879eccfbf0b1f399a50cf55657e2f6d9075b80075c3ccc1544d92d3a2ac5639a73e6a804e75bdb414d0781137987861c0cda91dea8b63
   languageName: node
   linkType: hard
 
@@ -31524,6 +31755,17 @@ resolve@1.18.1:
   languageName: node
   linkType: hard
 
+"socket.io-parser@npm:~4.0.3, socket.io-parser@npm:~4.0.4":
+  version: 4.0.4
+  resolution: "socket.io-parser@npm:4.0.4"
+  dependencies:
+    "@types/component-emitter": ^1.2.10
+    component-emitter: ~1.3.0
+    debug: ~4.3.1
+  checksum: ee2ffffa30e11ecebe690291ed91e5f949bf4ab9446ad6659b84488dd4f5908514867970539d32e1d94d4a5596e0d191f2e0ad92f707324cc4753ceb328aea2a
+  languageName: node
+  linkType: hard
+
 "socket.io@npm:^2.1.1":
   version: 2.4.1
   resolution: "socket.io@npm:2.4.1"
@@ -31535,6 +31777,23 @@ resolve@1.18.1:
     socket.io-client: 2.4.0
     socket.io-parser: ~3.4.0
   checksum: c78ea71ecef149b53ec7297b853aadf0438ae7a32df81b46e9789ae156638fb6da9303a5fcb029685b0a230a3255529d492cfb575a6332f79baa13d6bd0777ca
+  languageName: node
+  linkType: hard
+
+"socket.io@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "socket.io@npm:3.1.0"
+  dependencies:
+    "@types/cookie": ^0.4.0
+    "@types/cors": ^2.8.8
+    "@types/node": ^14.14.10
+    accepts: ~1.3.4
+    base64id: ~2.0.0
+    debug: ~4.3.1
+    engine.io: ~4.1.0
+    socket.io-adapter: ~2.1.0
+    socket.io-parser: ~4.0.3
+  checksum: 2591a2b07863468a56efd4b55dab02bda4bee80b55c26c9bbedd624918a1d6ccd0f5d2cc3ff960024350e237c74e80bf452db795151c483be84731c5ba5b6607
   languageName: node
   linkType: hard
 
@@ -31815,6 +32074,13 @@ resolve@1.18.1:
   dependencies:
     memory-pager: ^1.0.2
   checksum: 3d7ea483df832df45c1a9b4905b2e2ffb9107b6b43db664ffaf03371000f9ec0db664c8d94600443e344c91be36c52a299ba627f2d15c7f2bcd2c2b7ded6f3b0
+  languageName: node
+  linkType: hard
+
+"spawn-command@npm:^0.0.2-1":
+  version: 0.0.2
+  resolution: "spawn-command@npm:0.0.2"
+  checksum: 961fb1551f2d5848509ec661f639c515e582034b010724fcaad6949148e21c50226e30889dd710a70dce25c4ba43437665aad621fc37c0f8a75fa9ec3e46a69f
   languageName: node
   linkType: hard
 
@@ -35006,6 +35272,28 @@ resolve@1.18.1:
   bin:
     webpack-dashboard: bin/webpack-dashboard.js
   checksum: 4d8ecef1f54ac30c090135b5e3770a694170734a793767d0542217c830b49eb9ea5cbf1f937dead4fd57e17c34db474d66b151749a4e7e7e1b48e11916fb4b2c
+  languageName: node
+  linkType: hard
+
+"webpack-dashboard@npm:^3.3.0":
+  version: 3.3.0
+  resolution: "webpack-dashboard@npm:3.3.0"
+  dependencies:
+    chalk: ^4.1.0
+    commander: ^7.0.0
+    cross-spawn: ^7.0.3
+    filesize: ^6.1.0
+    handlebars: ^4.1.2
+    inspectpack: ^4.6.1
+    most: ^1.7.3
+    neo-blessed: ^0.2.0
+    socket.io: ^3.1.0
+    socket.io-client: ^3.1.0
+  peerDependencies:
+    webpack: "*"
+  bin:
+    webpack-dashboard: bin/webpack-dashboard.js
+  checksum: d499f261c92eb4ad282efc96229ce5260ddddcff7dbcfa7b7a65a183f02e250be94231cd34387d942d5d370bc1cc7c6f36e162d240782d1187e9b7fcf0c711a0
   languageName: node
   linkType: hard
 

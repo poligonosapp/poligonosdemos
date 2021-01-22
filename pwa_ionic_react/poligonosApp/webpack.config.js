@@ -251,7 +251,6 @@ module.exports = () => {
                     exclude: /(node_modules|bower_components)/,
                     use: {
                         loader: 'babel-loader',
-						,
     include: [
         path.join(__dirname, 'src')
     ],

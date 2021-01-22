@@ -5,13 +5,14 @@
         "@babel/react",
         "@babel/preset-flow",
         [
-            "@babel/preset-react", {
+            "@babel/preset-react",
+            {
                 "runtime": "automatic"
-              }
+            }
         ]
     ],
     "plugins": [
-	"react-relay",
+        "react-relay",
         "@babel/plugin-proposal-object-rest-spread",
         "@babel/transform-runtime",
         "@babel/plugin-transform-react-jsx",

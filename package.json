@@ -3,10 +3,6 @@
   "version": "1.1.1",
   "type": "module",
   "private": true,
-  "packages": [
-    "pwa_ionic_react\\poligonosApp",
-    "app"
-  ],
   "projects": [
     "poligonosapp",
     "app",
@@ -19,13 +15,12 @@
   "license": "Apache License 2.0",
   "author": "Fabio Rodrigues <https://www.facebook.com/kefaro>, Luis Mendes <machadoluismendes@gmail.com>",
   "scripts": {
-    "heroku:build": "yarn workspaces foreach run build",
-    "heroku:start": "yarn workspaces server start",
+    "build": "yarn workspaces foreach run build",
     "serve": "npx ionic serve yarn run react-scripts start auth start watch",
     "yarn:workspace:serve": " yarn workspace poligonosdemos/poligonosapp serve",
     "watch": "watch",
     "auth": "nodemon src/server.js node src/server.js yarn start",
-    "start": "yarn workspaces server start http-server dist webpack serve --open --config webpack.config.js",
+    "start": "yarn workspaces poligonosapp server start http-server dist webpack serve --open --config webpack.config.js",
     "start_inspect": "node --inspect-brk .bin/www",
     "express:start": "node ./bin/www",
     "express:devstart": "nodemon ./bin/www",
@@ -47,15 +42,18 @@
     "ionic:jest:troubleshooting": "node stopOnEntry ./node_modules/jest/bin/jest.js --runInBand"
   },
   "dependencies": {
-  "babel-plugin-react-relay":"*",
     "@hapi/hoek": "^9.1.1",
     "@ionic/cli": "^6.12.3",
     "@ionic/cli-plugin-proxy": "^1.5.8",
     "@jest/types": "^26.6.2",
     "@snyk/dep-graph": "^1.23.0",
+    "@types/concurrently": "^5.2.1",
     "@types/convert-string": "^0.1.1",
+    "@types/react-router-dom": "^5.1.7",
     "babel": "babel",
+    "babel-plugin-react-relay": "^0.10.0",
     "body-parser": "^1.19.0",
+    "concurrently": "^5.3.0",
     "cryptiles": "^4.1.3",
     "crypto": "^1.0.1",
     "expandjs": "^1.2.2",
@@ -65,11 +63,14 @@
     "micromatch": "^4.0.2",
     "net": "^1.0.2",
     "openapi-to-postmanv2": "^2.0.0",
+    "react": "17",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.1",
     "remove": "^0.1.5",
     "stream": "^0.0.2",
     "ts-node": "^9.1.1",
     "web-vitals": "0.2.4",
+    "webpack-dashboard": "^3.3.0",
     "webpack-stream": "4.0.0",
     "zlib": "^1.0.5"
   },
@@ -91,7 +92,8 @@
     "poligonosapp/*",
     "poligono/*",
     "ronin-ui/*",
-    "z-app-name/*"
+    "z-app-name/*",
+    "tutorialPhotoGalleryReact/*"
   ],
   "resolutions": {
     "styled-components": "^5",

@@ -14,10 +14,10 @@ if ('serviceWorker' in navigator) {
     })
 }
 
-// import React from 'react'
-// import { render } from 'react-dom'
-let React = require('react');
-let ReactDOM = require('react-dom');
+ import React from 'react'
+ import { render } from 'react-dom'
+// let React = require('react');
+// let ReactDOM = require('react-dom');
 import Tab1 from './pages/Tab1'
 let App = require('./App');
 
@@ -79,7 +79,7 @@ ReactDOM.render( <BrowserRouter><App /></BrowserRouter> , rootNode );
 
     defineCustomElements(window);
 
-    serviceWorker.unregister();
+    ServiceWorker.unregister();
 
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
@@ -107,6 +107,6 @@ ReactDOM.render( <BrowserRouter><App /></BrowserRouter> , rootNode );
     
 }
 
-module.export = {}
+module.exports = {}
 
 
