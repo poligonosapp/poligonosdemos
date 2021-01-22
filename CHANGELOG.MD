@@ -11,6 +11,11 @@ webpack-merge
 
 ##VERSION 1.1.2##
 
+##CHANGES
+cd pwa_ionic_react
+yarn start
+
+
 #FEATURES
 geometric polygon geojson leaflet mobile app
 
