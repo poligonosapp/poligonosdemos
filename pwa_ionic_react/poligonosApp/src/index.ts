@@ -1,3 +1,8 @@
+import App from './App';
+import Tab1 from './pages/Tab1'
+ 
+ // const window.$ = window.$;
+
 import _ from 'lodash';
 import printMe from './print.js';
 
@@ -16,10 +21,14 @@ if ('serviceWorker' in navigator) {
 
  import React from 'react'
  import { render } from 'react-dom'
+ import './index.css'
+ import './src/theme/style.css' 
+ import './src/theme/variables.css' 
+ 
 // let React = require('react');
 // let ReactDOM = require('react-dom');
-import Tab1 from './pages/Tab1'
-let App = require('./App');
+
+
 
 // import $ from "jquery";
 import $ from "expose-loader?exposes[]=$&exposes[]=jQuery!jquery";
@@ -68,14 +77,13 @@ import reportWebVitals from './reportWebVitals'
 // es6
 // import { BrowserRouter } from 'react-router-dom';
 // using CommonJS modules
-const BrowserRouter = require("react-router-dom").BrowserRouter;
+// const BrowserRouter = require("react-router-dom").BrowserRouter;
 
 // frontend failed to initialize
 try{
-    // const {element} = {<App/>};
-const rootNode = document.getElementById('root');
-
-ReactDOM.render( <BrowserRouter><App /></BrowserRouter> , rootNode );
+    
+    "use strict"
+    ReactDOM.render(<App/>, document.getElementById('root'));
 
     defineCustomElements(window);
 
@@ -104,7 +112,7 @@ ReactDOM.render( <BrowserRouter><App /></BrowserRouter> , rootNode );
 
     
 }finally{
-    
+    alert('finally');
 }
 
 module.exports = {}

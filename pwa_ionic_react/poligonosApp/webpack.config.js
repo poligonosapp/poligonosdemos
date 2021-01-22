@@ -51,6 +51,8 @@ const rollupPluginReplace = require('rollup-plugin-replace')({
   const rollupPluginCommonjs = require('rollup-plugin-commonjs')();
    const rollupPluginTerser = require('rollup-plugin-terser')();
 
+   const RouteManifest = require('webpack-route-manifest');
+
 module.exports = () => {
     return {
         module: {
@@ -298,6 +300,15 @@ module.exports = () => {
             filename: 'index_bundle.js',
         },
         plugins: [
+            new RouteManifest({
+                routes(str) {
+                  // Assume all entries are '../../../pages/Home' format
+                  let out = str.replace('../../../pages', '').toLowerCase();
+                  if (out === '/article') return '/blog/:title';
+                  if (out === '/home') return '/';
+                  return out;
+                }
+              }),
             new rollupPluginReplace(),
             new rollupPluginCommonjs(),
             new rollupPluginTerser(),

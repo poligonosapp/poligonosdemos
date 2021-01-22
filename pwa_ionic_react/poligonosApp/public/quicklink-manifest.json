@@ -2,21 +2,21 @@
   '/poligonos': [
     {
       type: 'style',
-      
+      href: '/stylesheets/style.css'
     },
     {
       type: 'script',
-      
+      href: '/javascripts/offline.js',
     },
   ],
   '/admin': [
     {
       type: 'style',
-      
+      href: '/stylesheets/style.css',
     },
     {
       type: 'script',
-      
+      href: '/javascripts/offline.js',
     },
   ],
-  }
+}

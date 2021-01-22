@@ -2,8 +2,8 @@
 
 import './theme/style.scss'
 
-let React = require('react');
-let ReactDOM = require('react-dom');
+ import React from 'react';
+ import ReactDOM from 'react-dom';
 
 import { useState, FormEvent, useCallback } from "react";
 import { Router, Redirect, Route } from 'react-router-dom'
@@ -42,26 +42,29 @@ import { useAuth0 } from "@auth0/auth0-react";
 
 import {Suspense, withQuickLink} from 'quicklink/dist/react/hoc.js';
 
+import { listen, prefetch } from "quicklink";
+
 const options = {
     origins: []
   };
 
     const App = () => (
-        <div>
+        
 
-      return (
+      
+        
           <IonApp>
               <IonReactRouter>
                   <IonTabs>
                       <IonRouterOutlet >
-                      <main>
+                      
                           <Suspense fallback={<div>Loading…</div>}>
                           <Route path="/tab1" exact component={Tab1} exact={true}/>
                           <Route path="/tab2" component={Tab2} exact={true} />
                           <Route path="/tab3" component={Tab3} />
                           </Suspense>
   
-                          </main>
+                        
                           
   
                       </IonRouterOutlet>
@@ -82,11 +85,10 @@ const options = {
                   </IonTabs>
               </IonReactRouter>
           </IonApp>
-      )
-  ;
+      
 
-  </div>
-  );
+  
+    );
 
  // const App: React.FC = () => {}
 

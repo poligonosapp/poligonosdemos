@@ -11,7 +11,10 @@
     "canonical_host": "www.poligonosapp.herokuapp.com",
     "encoding": "US-ASCII",
     "clean_urls": true,
+    "proxy": "http://localhost:4000",
     "scripts": {
+        "test:debug": "react-scripts --inspect-brk test --runInBand --no-cache",
+        "flow": "flow",
         "serve": "npx ionic serve yarn run react-scripts start auth start watch",
         "watch": "watch",
         "auth": "nodemon src/server.js node src/server.js yarn start",

@@ -1,3 +1,27 @@
+import React from 'react';
+import Loadable from 'react-loadable';
+import { Route } from 'react-router-dom';
+
+// Route-Split Components
+const loading = () => <div>Loading...</div>;
+const load = loader => Loadable({ loader, loading });
+
+// Our Lazy-loaded Page Components
+const App = load(() => import('./pages/App'));
+const Tab1 = load(() => import('./pages/Tab1'));
+const Tab2 = load(() => import('./pages/Tab2'));
+const Tab3 = load(() => import('./pages/Tab3'));
+
+// ...
+
+// Assigning Routes to Components
+<div>
+<Route path="/" exact component={ App } />
+<Route path="/poligonos" exact component={ Tab1 } />
+<Route path="/admin/:username" component={ Tab2 } />
+<Route path="/poligono" exact component={ Tab3 } />
+</div>
+
 let createError = require('http-errors')
 let express = require('express')
 //cors
