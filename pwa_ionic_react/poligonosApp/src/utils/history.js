@@ -1,2 +1,2 @@
-import { createBrowserHistory } from 'history';
+import { createBrowserHistory, createLocation } from 'history';
 export default createBrowserHistory();

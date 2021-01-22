@@ -5,6 +5,8 @@
         "@babel/preset-typescript"
     ],
     "plugins": [
+        "relay",
+        "react-relay",
         "@babel/plugin-proposal-object-rest-spread",
         "@babel/transform-runtime",
         "@babel/plugin-transform-react-jsx",

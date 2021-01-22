@@ -29,7 +29,8 @@ webpack-merge
 ##VERSION 1.1.3##
 
 ##CHANGES
-
+graphql studio
+@type/history
 
 
 #FEATURES

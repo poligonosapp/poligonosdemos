@@ -50,7 +50,7 @@ export default function fun() {
 
     function onMapClick(e) {
         alert('You clicked the map at ' + e.latlng)
-        let polygon = require('src/pages/polygon.geojson')
+        let polygon = require('./src/polygon.geojson')
         popup.setLatLng(polygon[0].geometry.coordinates)
     }
 

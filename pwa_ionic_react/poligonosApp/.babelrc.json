@@ -12,6 +12,8 @@
         ]
     ],
     "plugins": [
+        "@babel/babel-plugin-react-relay",
+        "relay",
         "react-relay",
         "@babel/plugin-proposal-object-rest-spread",
         "@babel/transform-runtime",

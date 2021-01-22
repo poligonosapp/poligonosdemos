@@ -14,13 +14,13 @@ let allData = require('./find_all_data.js');
                     stitch.RemoteMongoClient.factory,
                     'mongodb-atlas'
                 )
-                .db('<DATABASE>')
+                .db('shapefiles')
 
             client.auth
                 .loginWithCredential(new stitch.AnonymousCredential())
                 .then((user) =>
                     db
-                        .collection('<COLLECTION>')
+                        .collection('fail')
                         .updateOne(
                             { owner_id: client.auth.user.id },
                             { $set: { number: 42 } },
@@ -29,7 +29,7 @@ let allData = require('./find_all_data.js');
                 )
                 .then(() =>
                     db
-                        .collection('<COLLECTION>')
+                        .collection('fail')
                         .find({ owner_id: client.auth.user.id }, { limit: 100 })
                         .asArray()
                 )
@@ -39,7 +39,7 @@ let allData = require('./find_all_data.js');
                 })
                 .catch((err) => {
                     console.error(err)
-                })
+                });
 
-                export default {};
+                module.exports = {};
         
