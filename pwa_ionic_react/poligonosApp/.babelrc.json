@@ -4,14 +4,14 @@
         "@babel/preset-env",
         "@babel/react",
         "@babel/preset-flow",
-        [
-            "@babel/preset-react",
-            {
+        ["@babel/preset-react", {
                 "runtime": "automatic"
-            }
-        ]
+            }]
     ],
     "plugins": [
+        ["@babel/plugin-transform-react-jsx", {
+            "runtime": "automatic"
+          }],
         "@babel/babel-plugin-react-relay",
         "relay",
         "react-relay",
