@@ -284,5 +284,8 @@
     "lint-staged": {
         "**/*": "prettier --write --ignore-unknown"
     },
-    "react-relay-schema": "./data/schema.json"
+    "react-relay-schema": "./data/schema.json",
+    "reactSnap": {
+  "inlineCss": true
+}
 }
