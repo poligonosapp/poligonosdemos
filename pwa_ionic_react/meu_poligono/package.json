@@ -1,6 +1,6 @@
 {
   "name": "@poligonosdemos/meu_poligono",
-  "version": "1.1.2",
+  "version": "1.1.4",
   "private": true,
   "dependencies": {
     "@capacitor/android": "^2.4.5",
