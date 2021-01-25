@@ -13,5 +13,5 @@
         "npmClientArgs": ["--no-package-lock"]
       }
     },
-    "packages": ["packages/*","pwa_ionic_react/*","app/*"]
+    "packages": ["packages/*","pwa_ionic_react/poligonosapp/*","app/*","my-app/*","nextjs_poligonos"]
   }

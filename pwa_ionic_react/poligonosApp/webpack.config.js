@@ -53,8 +53,18 @@ const rollupPluginReplace = require('rollup-plugin-replace')({
 
    const RouteManifest = require('webpack-route-manifest');
 
+let nodeExternals = require('webpack-node-externals');
+
 module.exports = () => {
     return {
+        target: 'node',
+        externals: [
+            nodeExternals(
+                nodeExternals({
+        allowlist: ['jquery', 'react',  'webpack/hot/dev-server', /^lodash/]
+    })
+            )
+        ],
         module: {
             loaders: [
                 { exclude: ['node_modules'], loader: 'babel', test: /\.jsx?$/ },
@@ -133,53 +143,53 @@ module.exports = () => {
         module: {
             rules: [
                 {
-                    test: require.resolve("underscore"),
-                    loader: "expose-loader",
+                    test: require.resolve('underscore'),
+                    loader: 'expose-loader',
                     options: {
-                      exposes: [
-                        "_.map map",
-                        {
-                          globalName: "_.filter",
-                          moduleLocalName: "filter",
-                        },
-                        {
-                          globalName: ["_", "find"],
-                          moduleLocalName: "myNameForFind",
-                        },
-                      ],
+                        exposes: [
+                            '_.map map',
+                            {
+                                globalName: '_.filter',
+                                moduleLocalName: 'filter',
+                            },
+                            {
+                                globalName: ['_', 'find'],
+                                moduleLocalName: 'myNameForFind',
+                            },
+                        ],
                     },
-                  },
+                },
                 {
-                    test: require.resolve("jquery"),
-                    loader: "expose-loader",
+                    test: require.resolve('jquery'),
+                    loader: 'expose-loader',
                     options: {
-                      exposes: "jquery",
+                        exposes: 'jquery',
                     },
-                  },
+                },
                 {
-                    test: require.resolve("jquery"),
-                    loader: "expose-loader",
+                    test: require.resolve('jquery'),
+                    loader: 'expose-loader',
                     options: {
-                      exposes: ["$", "jQuery"],
+                        exposes: ['$', 'jQuery'],
                     },
-                  },
-                  {
-                    test: require.resolve("underscore"),
-                    loader: "expose-loader",
+                },
+                {
+                    test: require.resolve('underscore'),
+                    loader: 'expose-loader',
                     options: {
-                      exposes: [
-                        "_.map|map",
-                        {
-                          globalName: "_.reduce",
-                          moduleLocalName: "reduce",
-                        },
-                        {
-                          globalName: ["_", "filter"],
-                          moduleLocalName: "filter",
-                        },
-                      ],
+                        exposes: [
+                            '_.map|map',
+                            {
+                                globalName: '_.reduce',
+                                moduleLocalName: 'reduce',
+                            },
+                            {
+                                globalName: ['_', 'filter'],
+                                moduleLocalName: 'filter',
+                            },
+                        ],
                     },
-                  },
+                },
                 {
                     test: /\.md$/,
                     loader: 'babel!react-markdown',
@@ -253,13 +263,11 @@ module.exports = () => {
                     exclude: /(node_modules|bower_components)/,
                     use: {
                         loader: 'babel-loader',
-    include: [
-        path.join(__dirname, 'src')
-    ],
-    query: {
-        plugins: ['react-relay'],
-        presets: ['react', 'es2015']
-    },
+                        include: [path.join(__dirname, 'src')],
+                        query: {
+                            plugins: ['react-relay'],
+                            presets: ['react', 'es2015'],
+                        },
                         options: {
                             presets: ['@babel/preset-env'],
                             plugins: [
@@ -285,7 +293,12 @@ module.exports = () => {
                 },
                 {
                     test: /\.css$/i,
-                    use: [MiniCssExtractPlugin.loader, "style-loader", "css-loader", "postcss-loader"],
+                    use: [
+                        MiniCssExtractPlugin.loader,
+                        'style-loader',
+                        'css-loader',
+                        'postcss-loader',
+                    ],
                 },
                 { test: /\.txt$/, use: 'raw-loader' },
                 {
@@ -302,20 +315,20 @@ module.exports = () => {
         plugins: [
             new RouteManifest({
                 routes(str) {
-                  // Assume all entries are '../../../pages/Home' format
-                  let out = str.replace('../../../pages', '').toLowerCase();
-                  if (out === '/article') return '/blog/:title';
-                  if (out === '/home') return '/';
-                  return out;
-                }
-              }),
+                    // Assume all entries are '../../../pages/Home' format
+                    let out = str.replace('../../../pages', '').toLowerCase()
+                    if (out === '/article') return '/blog/:title'
+                    if (out === '/home') return '/'
+                    return out
+                },
+            }),
             new rollupPluginReplace(),
             new rollupPluginCommonjs(),
             new rollupPluginTerser(),
-            new webpack.ProvidePlugin({ 
-                $: 'jquery', 
+            new webpack.ProvidePlugin({
+                $: 'jquery',
                 jQuery: 'jquery',
-                'window.jQuery': 'jquery'
+                'window.jQuery': 'jquery',
             }),
             new ModernNpmPlugin(),
             new BabelEsmPlugin(),
@@ -352,23 +365,21 @@ module.exports = () => {
         optimization: {
             minimize: true,
             minimizer: [
-                 // new UglifyJsPlugin(),
+                // new UglifyJsPlugin(),
                 // new OptimizeCSSAssetsPlugin({}),
                 new TerserPlugin({
                     terserOptions: {
-                      myCustomOption: false,
+                        myCustomOption: false,
                     },
                     // Can be async
                     minify: (file, sourceMap, minimizerOptions) => {
-                      // The `minimizerOptions` option contains option from the `terserOptions` option
-                      // You can use `minimizerOptions.myCustomOption`
-                      const extractedComments = [];
-            
-                      
-            
-                      return { extractedComments };
+                        // The `minimizerOptions` option contains option from the `terserOptions` option
+                        // You can use `minimizerOptions.myCustomOption`
+                        const extractedComments = []
+
+                        return { extractedComments }
                     },
-                  }),//npx wp
+                }), //npx wp
             ],
             splitChunks: {
                 chunks: 'all',
