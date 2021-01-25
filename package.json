@@ -19,8 +19,8 @@
   "license": "Apache License 2.0",
   "author": "Fabio Rodrigues <https://www.facebook.com/kefaro>, Luis Mendes <machadoluismendes@gmail.com>",
   "scripts": {
-    "start": "yarn workspace @poligonosdemos/poligonosapp start",
-    "build": "yarn workspaces foreach run build",
+    "start": "npx lerna run start --scope=@poligonosdemos/poligonosapp yarn workspace @poligonosdemos/poligonosapp start",
+    "build": "npx lerna run build --scope=@poligonosdemos/poligonosapp yarn workspaces foreach run build",
     "serve": "npx ionic serve yarn run react-scripts start auth start watch",
     "yarn:workspace:serve": " yarn workspace @poligonosdemos/poligonosapp serve",
     "watch": "watch",
