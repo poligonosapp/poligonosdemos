@@ -1,5 +1,6 @@
 {
     "version": "1.1.5",
+    "useWorkspaces": true, 
 	"name":"poligonosdemos",
     "npmClient": "yarn",
     "command": {

@@ -40,7 +40,7 @@
     "test:band": "jest --runInBand",
     "cypress": "cypress open",
     "puppeteer": "puppeteer",
-    "prettier": "prettier --check .",
+    "prettier": "npx lerna run prettier --check .",
     "ionic:eslint": "eslint",
     "ionic:debug": "debug",
     "ionic:jest:troubleshooting": "node stopOnEntry ./node_modules/jest/bin/jest.js --runInBand"
@@ -58,7 +58,9 @@
     "@ionic/pwa-elements": "^3.0.2",
     "@ionic/react": "^5.5.2",
     "@jest/types": "^26.6.2",
+    "@lerna/import": "^3.22.0",
     "@lerna/init": "^3.21.0",
+    "@lerna/run": "^3.21.0",
     "@snyk/dep-graph": "^1.23.0",
     "@types/concurrently": "^5.2.1",
     "@types/convert-string": "^0.1.1",
@@ -118,10 +120,10 @@
     "node": ">= 12.18.0 <15"
   },
   "workspaces": [
-  "poligonosapp/*",
-  "ycppoligono/*",
-  "nextjs_poligonos/poligono",
-  "empty-project",
+    "poligonosapp/*",
+    "ycppoligono/*",
+    "nextjs_poligonos/poligono",
+    "empty-project",
     "pwa_ionic_react/poligonosapp/*",
     "packages/*",
     "poligonosdemos/*",
