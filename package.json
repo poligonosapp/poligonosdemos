@@ -1,6 +1,6 @@
 {
   "name": "poligonosdemos",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "type": "module",
   "private": true,
   "projects": [
@@ -36,7 +36,7 @@
     "react-scripts:build": "react-scripts build && workbox generateSW ./config.js",
     "ionic:build": "webpack -w --config webpack.prod.js",
     "ionic:build:stats": "wp --mode production --json > stats.json",
-    "test": "react-scripts test --env=node",
+    "test": "ava react-scripts test --env=node",
     "test:band": "jest --runInBand",
     "cypress": "cypress open",
     "puppeteer": "puppeteer",
@@ -119,6 +119,7 @@
   },
   "workspaces": [
   "poligonosapp/*",
+  "ycppoligono/*",
   "nextjs_poligonos/poligono",
   "empty-project",
     "pwa_ionic_react/poligonosapp/*",
