@@ -3894,9 +3894,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@poligonosdemos/poligono@workspace:nextjs_poligonos/poligono":
+"@poligonosdemos/nextjs_poligonos_poligono@workspace:nextjs_poligonos/poligono":
   version: 0.0.0-use.local
-  resolution: "@poligonosdemos/poligono@workspace:nextjs_poligonos/poligono"
+  resolution: "@poligonosdemos/nextjs_poligonos_poligono@workspace:nextjs_poligonos/poligono"
   dependencies:
     next: 10.0.3
     react: 17.0.1
