@@ -1,6 +1,6 @@
 {
   "name": "poligonosdemos",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "type": "module",
   "private": true,
   "projects": [
@@ -36,7 +36,7 @@
     "react-scripts:build": "react-scripts build && workbox generateSW ./config.js",
     "ionic:build": "webpack -w --config webpack.prod.js",
     "ionic:build:stats": "wp --mode production --json > stats.json",
-    "test": "ava react-scripts test --env=node",
+    "test": "npx run ava react-scripts test --env=node",
     "test:band": "jest --runInBand",
     "cypress": "cypress open",
     "puppeteer": "puppeteer",
@@ -123,7 +123,6 @@
     "poligonosapp/*",
     "ycppoligono/*",
     "nextjs_poligonos/poligono",
-    "empty-project",
     "pwa_ionic_react/poligonosapp/*",
     "packages/*",
     "poligonosdemos/*",
@@ -138,7 +137,8 @@
     "poligonos/*",
     "ronin-ui/*",
     "z-app-name/*",
-    "tutorial_photo_gallery_react/*"
+    "tutorial_photo_gallery_react/*",
+    "empty-project/*"
   ],
   "resolutions": {
     "styled-components": "^5",
@@ -150,7 +150,8 @@
     "history": "^5.0.0",
     "ycppoligono": "*",
     "nextjs_poligonos/nextjs_poligonos_poligono": "*",
-    "ui-next-js-heroku":"*",
+    "ui-next-js-heroku": "*",
+    "empty-project": "*",
     "jquery": "*",
     "babel": "*",
     "react": "17",
