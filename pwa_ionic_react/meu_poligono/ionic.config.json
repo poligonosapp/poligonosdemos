@@ -1,7 +1,0 @@
-{
-  "name": "meuPoligono",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "react"
-}
