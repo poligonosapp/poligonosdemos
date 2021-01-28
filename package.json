@@ -40,7 +40,7 @@
     "test:band": "jest --runInBand",
     "cypress": "cypress open",
     "puppeteer": "puppeteer",
-    "prettier": "npx lerna run prettier --check .",
+    "prettier": "prettier --check .",
     "ionic:eslint": "eslint",
     "ionic:debug": "debug",
     "ionic:jest:troubleshooting": "node stopOnEntry ./node_modules/jest/bin/jest.js --runInBand"
@@ -120,12 +120,10 @@
     "node": ">= 12.18.0 <15"
   },
   "workspaces": [
-    "poligonosapp/*",
+  "pwa_ionic_react_poligonosapp/*",
     "ycppoligono/*",
     "nextjs_poligonos/poligono",
-    "pwa_ionic_react/poligonosapp/*",
     "packages/*",
-    "poligonosdemos/*",
     "app/*",
     "njs/ui/*",
     "my-app/*",
@@ -137,10 +135,10 @@
     "poligonos/*",
     "ronin-ui/*",
     "z-app-name/*",
-    "tutorial_photo_gallery_react/*",
-    "empty-project/*"
+    "tutorial_photo_gallery_react/*"
   ],
   "resolutions": {
+  "pwa_ionic_react/poligonosapp": "*",
     "styled-components": "^5",
     "d2/left-pad": "1.1.1",
     "gulp": "*",
@@ -151,7 +149,6 @@
     "ycppoligono": "*",
     "nextjs_poligonos/nextjs_poligonos_poligono": "*",
     "ui-next-js-heroku": "*",
-    "empty-project": "*",
     "jquery": "*",
     "babel": "*",
     "react": "17",

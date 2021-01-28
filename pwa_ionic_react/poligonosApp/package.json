@@ -1,6 +1,6 @@
 {
-  "name": "@poligonosdemos/poligonosapp",
-  "version": "1.1.5",
+  "name": "@poligonosdemos/pwa_ionic_react_poligonosapp",
+  "version": "1.1.6",
   "private": true,
   "license": "Apache License 2.0",
   "type": "module",
@@ -12,6 +12,12 @@
   "encoding": "US-ASCII",
   "clean_urls": true,
   "proxy": "http://localhost:4000",
+  "workspaces": [
+    "pwa_ionic_react/*",
+    "poligonosapp/*"
+  ],"resolutions": {
+  "pwa_ionic_react/poligonosapp": "*"
+},
   "scripts": {
     "postbuild": "react-snap",
     "test:debug": "react-scripts --inspect-brk test --runInBand --no-cache",
@@ -197,6 +203,7 @@
   "keywords": [],
   "author": "Luis Mendes <machadoluismendes@gmail.com>, Fabio Rodrigues <https://www.facebook.com/kefaro>",
   "devDependencies": {
+    "@testing-library/dom":"7.9.4",
     "@babel/cli": "^7.12.10",
     "@babel/core": "^7.12.10",
     "@babel/plugin-transform-flow-strip-types": "^7.12.1",
