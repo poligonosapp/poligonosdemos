@@ -115,10 +115,10 @@
     "webpack-route-manifest": "^1.2.0"
   },
   "engines": {
-    "node": ">= 12.18.0 <15"
+    "node": "14.x"
   },
   "workspaces": [
-  "pwa_ionic_react_poligonosapp/*",
+    "pwa_ionic_react_poligonosapp/*",
     "ycppoligono/*",
     "nextjs_poligonos/poligono",
     "packages/*",
@@ -132,7 +132,7 @@
     "z-app-name/*"
   ],
   "resolutions": {
-  "pwa_ionic_react_poligonosapp": "*",
+    "pwa_ionic_react_poligonosapp": "*",
     "styled-components": "^5",
     "d2/left-pad": "1.1.1",
     "gulp": "*",
