@@ -125,6 +125,7 @@
     "@poligonosdemos/ycppoligono/*",
     "@poligonosdemos/nextjs_poligonos/poligono",
     "@poligonosdemos/packages/*",
+    "@poligonosdemos/packages/progressive-web-app/*",
     "@poligonosdemos/app/*",
     "@poligonosdemos/njs/ui/*",
     "@poligonosdemos/server/*",
