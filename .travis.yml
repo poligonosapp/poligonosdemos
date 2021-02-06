@@ -5,5 +5,5 @@ cache
   directories
     - node_modules
 script
-  - npm run build
-  - npm test
+  - npx lerna run build
+  - npx lerna run test

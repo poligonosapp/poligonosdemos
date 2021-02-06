@@ -1,6 +1,6 @@
 {
   "name": "poligonosdemos",
-  "version": "1.1.8",
+  "version": "1.2.0",
   "type": "module",
   "private": true,
   "projects": [
@@ -136,7 +136,7 @@
     "@poligonosdemos/z-app-name/*"
   ],
   "resolutions": {
-    "pwa_ionic_react_poligonosapp": "*",
+    "@poligonosdemos/pwa_ionic_react_poligonosapp": "1.2.0",
     "styled-components": "^5",
     "d2/left-pad": "1.1.1",
     "gulp": "*",

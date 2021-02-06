@@ -1,1 +1,1 @@
-web: node ./pwa_ionic_react/poligonosApp/src/index.js
+web: node ./pwa_ionic_react_poligonosapp/src/index.js
