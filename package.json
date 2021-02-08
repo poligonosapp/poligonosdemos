@@ -1,6 +1,6 @@
 {
   "name": "poligonosdemos",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "type": "module",
   "private": true,
   "projects": [
@@ -104,6 +104,7 @@
     "ts-node": "^9.1.1",
     "vscode-apollo-relay": "^1.5.1",
     "web-vitals": "0.2.4",
+    "webpack-cli": "4.2.0",
     "webpack-dashboard": "^3.3.0",
     "webpack-stream": "4.0.0",
     "workbox-expiration": "^6.0.2",
@@ -117,6 +118,7 @@
     "jest": "^26.6.3",
     "quicklink": "^2.0.0",
     "react-snap": "^1.23.0",
+    "webpack": "4.41.0",
     "webpack-route-manifest": "^1.2.0"
   },
   "engines": {
@@ -170,6 +172,8 @@
     "url-loader": "2.1.0",
     "webpack": "4.41.0",
     "webpack-manifest-plugin": "2.1.1",
-    "workbox-webpack-plugin": "4.3.1"
+    "workbox-webpack-plugin": "4.3.1",
+    "react":"17.0.1",
+    "react-dom": "^17.0.1"
   }
 }
