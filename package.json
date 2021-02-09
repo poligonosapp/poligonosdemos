@@ -1,6 +1,6 @@
 {
   "name": "poligonosdemos",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "type": "module",
   "private": true,
   "projects": [
@@ -26,7 +26,7 @@
     "start_inspect": "node --inspect-brk .bin/www",
     "express:start": "node ./bin/www",
     "express:devstart": "nodemon ./bin/www",
-    "express:serverstart": "DEBUG=poligonosApp:* npx run devstart",
+    "express:serverstart": "DEBUG=@poligonosdemos/pwa_ionic_react_poligonosapp:* npx run devstart",
     "start:dev": "./node_modules/.bin/webpack serve",
     "dev": "webpack-dashboard -- webpack -w serve --hot --mode development",
     "server": "node server.js",
@@ -34,7 +34,7 @@
     "react-scripts:build": "react-scripts build && workbox generateSW ./config.js",
     "ionic:build": "webpack -w --config webpack.prod.js",
     "ionic:build:stats": "wp --mode production --json > stats.json",
-    "test": "npx run ava react-scripts test --env=node",
+    "test": "npx lerna run build --scope=@poligonosdemos/pwa_ionic_react_poligonosapp react-scripts test --env=node",
     "test:band": "jest --runInBand",
     "cypress": "cypress open",
     "puppeteer": "puppeteer",

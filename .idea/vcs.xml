@@ -10,6 +10,7 @@
     <mapping directory="$PROJECT_DIR$/poligono-java-spring-leaflet/poligono-web" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/pwa_ionic_react/poligonosapp" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/pwa_ionic_react/tutorial_photo_gallery_react" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pwa_ionic_react_poligonosapp" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/spring-amqp-samples" vcs="Git" />
   </component>
 </project>

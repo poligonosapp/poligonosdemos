@@ -1,5 +1,5 @@
 {
-    "version": "1.2.1",
+    "version": "1.2.2",
     "useWorkspaces": true, 
 	"name":"poligonosdemos",
     "npmClient": "yarn",
@@ -14,5 +14,5 @@
         "npmClientArgs": ["--no-package-lock"]
       }
     },
-    "packages": ["pwa_ionic_react_poligonosapp/*","packages/*","app/*","nextjs_poligonos"]
+    "packages": ["pwa_ionic_react_poligonosapp/*","pwa_ionic_react_poligonosapp/tests/*","packages/*","app/*","nextjs_poligonos"]
   }
