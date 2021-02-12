@@ -1,5 +1,5 @@
 {
-    "version": "1.2.3",
+    "version": "1.2.4",
     "useWorkspaces": true, 
 	"name":"poligonosdemos",
     "npmClient": "yarn",
@@ -14,5 +14,25 @@
         "npmClientArgs": ["--no-package-lock"]
       }
     },
-    "packages": ["pwa_ionic_react_poligonosapp/*","pwa_ionic_react_poligonosapp/tests/*","packages/*","app/*","nextjs_poligonos"]
-  }
+    "packages": ["pwa_ionic_react_poligonosapp/*","pwa_ionic_react_poligonosapp/tests/*","packages/*","app/*","nextjs_poligonos"],
+  "workspaces": [
+    "@poligonosdemos/pwa_ionic_react_poligonosapp/*",
+    "@poligonosdemos/ycppoligono/*",
+    "@poligonosdemos/nextjs_poligonos/poligono",
+    "@poligonosdemos/packages/*",
+    "@poligonosdemos/packages/progressive-web-app/*",
+    "@poligonosdemos/app/*",
+    "@poligonosdemos/njs/ui/*",
+    "@poligonosdemos/server/*",
+    "@poligonosdemos/ui/*",
+    "@poligonosdemos/ycppoligono/*",
+    "@poligonosdemos/poligonos/*",
+    "@poligonosdemos/ronin-ui/*",
+    "@poligonosdemos/z-app-name/*",
+    "@poligonosdemos/progressive-web-app/*",
+    "@poligonosdemos/ui-next-js-heroku/*",
+    "@poligonosdemos/poligonosapp/*",
+    "@poligonosdemos/poligono_angular_cli_one/*",
+    "@poligonosdemos/angular_cli_one_poligono/*"
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "name": "poligonosdemos",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "type": "module",
   "private": true,
   "projects": [
@@ -30,7 +30,7 @@
     "start:dev": "./node_modules/.bin/webpack serve",
     "dev": "webpack-dashboard -- webpack -w serve --hot --mode development",
     "server": "node server.js",
-    "yarn:workspace:build": "yarn workspace poligonosdemos/poligonosapp build",
+    "yarn:workspace:build": "yarn workspace @poligonosdemos/poligonosapp build",
     "react-scripts:build": "react-scripts build && workbox generateSW ./config.js",
     "ionic:build": "webpack -w --config webpack.prod.js",
     "ionic:build:stats": "wp --mode production --json > stats.json",
