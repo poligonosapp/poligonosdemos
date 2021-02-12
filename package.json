@@ -1,6 +1,6 @@
 {
   "name": "poligonosdemos",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "type": "module",
   "private": true,
   "projects": [
@@ -123,7 +123,9 @@
     "webpack-route-manifest": "^1.2.0"
   },
   "engines": {
-    "node": "14.x"
+    "node": "14.x",
+    "npm": "7.x",
+    "yarn": "2.x"
   },
   "workspaces": [
     "@poligonosdemos/pwa_ionic_react_poligonosapp/*",
@@ -138,7 +140,12 @@
     "@poligonosdemos/ycppoligono/*",
     "@poligonosdemos/poligonos/*",
     "@poligonosdemos/ronin-ui/*",
-    "@poligonosdemos/z-app-name/*"
+    "@poligonosdemos/z-app-name/*",
+    "@poligonosdemos/progressive-web-app/*",
+    "@poligonosdemos/ui-next-js-heroku/*",
+    "@poligonosdemos/poligonosapp/*",
+    "@poligonosdemos/poligono_angular_cli_one/*",
+    "@poligonosdemos/angular_cli_one_poligono/*"
   ],
   "resolutions": {
     "@poligonosdemos/pwa_ionic_react_poligonosapp": "*",
@@ -146,7 +153,7 @@
     "d2/left-pad": "1.1.1",
     "gulp": "*",
     "gulp-cli": "*",
-    "poligonosapp": "*",
+    "@poligonosdemos/nx-poligonosapp": "*",
     "history": "^5.0.0",
     "ycppoligono": "*",
     "nextjs_poligonos/nextjs_poligonos_poligono": "*",
@@ -159,7 +166,12 @@
     "react-scripts": "^4.0.1",
     "webpack": "4.41.0",
     "grunt": "*",
-    "typescript": ">= 2.7"
+    "typescript": ">= 2.7",
+    "@poligonosdemos/progressive-web-app":"*",
+    "@poligonosdemos/ui-next-js-heroku":"*",
+    "@poligonosdemos/poligonosapp":"*",
+    "@poligonosdemos/poligono_angular_cli_one":"*",
+    "@poligonosdemos/angular_cli_one_poligono":"*"
   },
   "peerDependencies": {
     "evp_bytestokey": "*",
