@@ -68,7 +68,7 @@
     "@yarnpkg/plugin-dlx": "^2.1.4",
     "apollo-server": "^2.19.2",
     "apollo-server-express": "^2.19.2",
-    "babel": "babel",
+    "babel": "^6",
     "babel-plugin-react-relay": "^0.10.0",
     "body-parser": "^1.19.0",
     "concurrently": "^5.3.0",
@@ -141,7 +141,7 @@
     "@poligonosdemos/z-app-name/*"
   ],
   "resolutions": {
-    "@poligonosdemos/pwa_ionic_react_poligonosapp": "1.2.0",
+    "@poligonosdemos/pwa_ionic_react_poligonosapp": "*",
     "styled-components": "^5",
     "d2/left-pad": "1.1.1",
     "gulp": "*",
