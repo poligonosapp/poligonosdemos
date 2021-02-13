@@ -167,11 +167,11 @@
     "webpack": "4.41.0",
     "grunt": "*",
     "typescript": ">= 2.7",
-    "@poligonosdemos/progressive-web-app":"*",
-    "@poligonosdemos/ui-next-js-heroku":"*",
-    "@poligonosdemos/poligonosapp":"*",
-    "@poligonosdemos/poligono_angular_cli_one":"*",
-    "@poligonosdemos/angular_cli_one_poligono":"*"
+    "@poligonosdemos/progressive-web-app": "*",
+    "@poligonosdemos/ui-next-js-heroku": "*",
+    "@poligonosdemos/poligonosapp": "*",
+    "@poligonosdemos/poligono_angular_cli_one": "*",
+    "@poligonosdemos/angular_cli_one_poligono": "*"
   },
   "peerDependencies": {
     "evp_bytestokey": "*",
