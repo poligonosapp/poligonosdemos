@@ -1,6 +1,6 @@
 {
   "name": "poligonosdemos",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "type": "module",
   "private": true,
   "projects": [
@@ -12,7 +12,8 @@
     "@poligonosdemos/server",
     "@poligonosdemos/docker-nginx",
     "@poligonosdemos/frontend",
-    "@poligonosdemos/backend"
+    "@poligonosdemos/backend",
+    "@poligonosdemos/geojson_jackson_rn_demo"
   ],
   "license": "Apache License 2.0",
   "author": "Fabio Rodrigues <https://www.facebook.com/kefaro>, Luis Mendes <machadoluismendes@gmail.com>",
@@ -145,7 +146,8 @@
     "@poligonosdemos/ui-next-js-heroku/*",
     "@poligonosdemos/poligonosapp/*",
     "@poligonosdemos/poligono_angular_cli_one/*",
-    "@poligonosdemos/angular_cli_one_poligono/*"
+    "@poligonosdemos/angular_cli_one_poligono/*",
+    "@poligonosdemos/geojson_jackson_rn_demo/*"
   ],
   "resolutions": {
     "@poligonosdemos/pwa_ionic_react_poligonosapp": "*",
@@ -171,7 +173,8 @@
     "@poligonosdemos/ui-next-js-heroku": "*",
     "@poligonosdemos/poligonosapp": "*",
     "@poligonosdemos/poligono_angular_cli_one": "*",
-    "@poligonosdemos/angular_cli_one_poligono": "*"
+    "@poligonosdemos/angular_cli_one_poligono": "*",
+    "@poligonosdemos/geojson_jackson_rn_demo": "*"
   },
   "peerDependencies": {
     "evp_bytestokey": "*",
