@@ -1,6 +1,6 @@
 {
   "name": "@poligonosdemos/geojson_jackson_rn_demo",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "private": true,
   "scripts": {
     "android": "react-native run-android",
@@ -10,6 +10,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "expo": "^40.0.1",
     "react": "16.13.1",
     "react-native": "0.63.3"
   },

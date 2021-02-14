@@ -1,6 +1,6 @@
 {
   "name": "poligonosdemos",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "type": "module",
   "private": true,
   "projects": [
@@ -18,10 +18,8 @@
   "license": "Apache License 2.0",
   "author": "Fabio Rodrigues <https://www.facebook.com/kefaro>, Luis Mendes <machadoluismendes@gmail.com>",
   "scripts": {
-    "start": "npx lerna run start --scope=@poligonosdemos/pwa_ionic_react_poligonosapp yarn workspace @poligonosdemos/pwa_ionic_react_poligonosapp start",
-    "build": "npx lerna run build --scope=@poligonosdemos/pwa_ionic_react_poligonosapp yarn workspaces foreach run build",
-    "serve": "npx ionic serve yarn run react-scripts start auth start watch",
-    "yarn:workspace:serve": " yarn workspace @poligonosdemos/pwa_ionic_react_poligonosapp serve",
+    "start": "npx lerna run start",
+    "build": "npx lerna run build",
     "watch": "watch",
     "auth": "nodemon src/server.js node src/server.js yarn start",
     "start_inspect": "node --inspect-brk .bin/www",
@@ -147,7 +145,7 @@
     "@poligonosdemos/poligonosapp/*",
     "@poligonosdemos/poligono_angular_cli_one/*",
     "@poligonosdemos/angular_cli_one_poligono/*",
-    "@poligonosdemos/geojson_jackson_rn_demo/*"
+    "@poligonosdemos/rn/geojson_jackson_rn_demo/*"
   ],
   "resolutions": {
     "@poligonosdemos/pwa_ionic_react_poligonosapp": "*",
