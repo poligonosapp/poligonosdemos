@@ -1,6 +1,6 @@
 {
   "name": "@poligonosdemos/poligonos",
-  "version": "0.1.0",
+  "version": "1.2.5",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
@@ -34,7 +34,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },"jest": {
-  "setupFilesAfterEnv": ["<rootDir>src/setupTests.js"]
-}
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>src/setupTests.js"
+    ]
+  },
+  "devDependencies": {
+    "jest-expo": "^40.0.2",
+    "react-test-renderer": "^17.0.1"
+  }
 }
