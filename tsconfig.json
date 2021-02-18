@@ -1,0 +1,47 @@
+{
+  "extends": "./tsconfig.build.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@nighttrax/*": [
+        "packages/*/src"
+      ]
+    },
+    "jsx": "react",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "types": [],
+    "module": "commonjs",
+    "noImplicitAny": false,
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
+    "outDir": "./dist/",
+    "target": "es6",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": [
+    "src",
+    "relay.config.js"
+  ],
+  "exclude": [
+    "dist",
+    "node_modules"
+  ]
+}
