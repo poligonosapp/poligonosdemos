@@ -1,11 +1,18 @@
 {
     "version": "0.2.0",
     "configurations": [
+        
         {
             "type": "android-webview",
             "request": "attach",
             "name": "Attach to Android WebView",
-            "webRoot": "${workspaceFolder}/www",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "type": "android-webview",
+            "request": "attach",
+            "name": "Attach to Android WebView",
+            "webRoot": "${workspaceFolder}/pwa_ionic_react/www",
             "sourceMaps": true,
             "sourceMapPathOverrides": {
                 "webpack:/*": "${workspaceFolder}/*"

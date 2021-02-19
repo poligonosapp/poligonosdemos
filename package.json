@@ -1,6 +1,6 @@
 {
   "name": "poligonosdemos",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "type": "module",
   "private": true,
   "projects": [
@@ -156,7 +156,7 @@
   ],
   "resolutions": {
     "pwa_ionic_react_poligonosapp": "*",
-  "react":"^16.11.0 || ^17 || >=16.8.0 || ^16.11.0 || react@16.14.0 || 17.0.1 || 16.14.0 || ^16.11.0 || ^17",
+  "react":"^16.11.0 || ^17 || >=16.8.0 || ^16.11.0 || 16.14.0 || 17.0.1 || 16.14.0 || ^16.11.0 || ^17",
    "react-dom": "^17.0.1",
    "@types/react-dom": "^16.9.10",
    "@types/react": "^16.9.17",
