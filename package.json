@@ -1,6 +1,6 @@
 {
   "name": "poligonosdemos",
-  "version": "1.2.7",
+  "version": "1.2.8",
   "type": "module",
   "private": true,
   "projects": [
@@ -13,7 +13,8 @@
     "@poligonosdemos/docker-nginx",
     "@poligonosdemos/frontend",
     "@poligonosdemos/backend",
-    "@poligonosdemos/geojson_jackson_rn_demo"
+    "@poligonosdemos/geojson_jackson_rn_demo",
+    "@poligonosdemos/nx-poligonosapp"
   ],
   "license": "Apache License 2.0",
   "author": "Fabio Rodrigues <https://www.facebook.com/kefaro>, Luis Mendes <machadoluismendes@gmail.com>",
@@ -33,7 +34,7 @@
     "react-scripts:build": "react-scripts build && workbox generateSW ./config.js",
     "ionic:build": "webpack -w --config webpack.prod.js",
     "ionic:build:stats": "wp --mode production --json > stats.json",
-    "test": "npx lerna run build --scope=@poligonosdemos/pwa_ionic_react_poligonosapp npm test",
+    "test": "npm test",
     "test:band": "jest --runInBand",
     "cypress": "cypress open",
     "puppeteer": "puppeteer",
@@ -114,7 +115,7 @@
   },
   "devDependencies": {
     "ionic": "^5.4.16",
-    "react":"^16.11.0 || ^17 || >=16.8.0 || react@^16.11.0 || react@16.14.0 || 17.0.1 || 16.14.0 || ^16.11.0 || ^17",
+    "react":" ^16.8.0 || ^16.11.0 || 16.14.0 || ^17  || 17.0.1",
    "react-dom": "^17.0.1",
    "@types/react-dom": "^16.9.10",
    "@types/react": "^16.9.17",
@@ -150,11 +151,12 @@
     "@poligonosdemos/poligonosapp/*",
     "@poligonosdemos/poligono_angular_cli_one/*",
     "@poligonosdemos/angular_cli_one_poligono/*",
-    "@poligonosdemos/rn/geojson_jackson_rn_demo/*"
+    "@poligonosdemos/rn/geojson_jackson_rn_demo/*",
+    "@poligonosdemos/nx-poligonosapp/*"
   ],
   "resolutions": {
     "pwa_ionic_react_poligonosapp": "*",
-  "react":"^16.11.0 || ^17 || >=16.8.0 || react@^16.11.0 || react@16.14.0 || 17.0.1 || 16.14.0 || ^16.11.0 || ^17",
+  "react":"^16.11.0 || ^17 || >=16.8.0 || ^16.11.0 || react@16.14.0 || 17.0.1 || 16.14.0 || ^16.11.0 || ^17",
    "react-dom": "^17.0.1",
    "@types/react-dom": "^16.9.10",
    "@types/react": "^16.9.17",
