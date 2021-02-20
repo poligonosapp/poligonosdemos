@@ -1,6 +1,6 @@
 {
   "name": "poligonosdemos",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "type": "module",
   "private": true,
   "projects": [
@@ -30,18 +30,15 @@
     "start:dev": "./node_modules/.bin/webpack serve",
     "dev": "webpack-dashboard -- webpack -w serve --hot --mode development",
     "server": "node server.js",
-    "yarn:workspace:build": "yarn workspace @poligonosdemos/poligonosapp build",
-    "react-scripts:build": "react-scripts build && workbox generateSW ./config.js",
-    "ionic:build": "webpack -w --config webpack.prod.js",
-    "ionic:build:stats": "wp --mode production --json > stats.json",
     "test": "npm test",
     "test:band": "jest --runInBand",
     "cypress": "cypress open",
     "puppeteer": "puppeteer",
     "prettier": "prettier --check .",
-    "ionic:eslint": "eslint",
-    "ionic:debug": "debug",
-    "ionic:jest:troubleshooting": "node stopOnEntry ./node_modules/jest/bin/jest.js --runInBand"
+    "eslint": "eslint",
+    "debug": "debug",
+    "troubleshooting": "node stopOnEntry ./node_modules/jest/bin/jest.js --runInBand",
+    "postbuild": "react-snap"
   },
   "dependencies": {
     "@auth0/auth0-spa-js": "^1.13.6",
