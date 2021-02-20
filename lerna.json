@@ -1,6 +1,14 @@
 {
-    "version": "1.3.3",
+    "version": "1.3.4",
     "useWorkspaces": true,
+    "private": true,
+    "dependencies": {
+        "react":"17.0.1"
+    },
+    "devDependencies": {
+        "lerna": "^2.2.0",
+        "quicklink":"^2.0.0" 
+    },
     "name": "poligonosdemos",
     "npmClient": "yarn",
     "command": {
@@ -9,18 +17,24 @@
             "registry": "https://npm.pkg.github.com"
         },
         "bootstrap": {
-            "npmClientArgs": ["--no-package-lock"]
+            "npmClientArgs": [
+                "--production",
+                "--no-optional",
+                "--no-package-lock"
+            ]
         }
     },
     "packages": [
         "pwa_ionic_react_poligonosapp",
         "pwa_ionic_react_poligonosapp/tests",
-        "packages",
+        "packages/nx-poligonosapp",
+        "packages/progressive-web-app",
         "app",
         "nextjs_poligonos"
     ],
     "workspaces": [
-        "@poligonosdemos/pwa_ionic_react_poligonosapp",
+        "@poligonosdemos/package.json",
+        "@poligonosdemos/pwa_ionic_react_poligonosapp/package.json",
         "@poligonosdemos/ycppoligono",
         "@poligonosdemos/nextjs_poligonos/poligono",
         "@poligonosdemos/packages/*",
