@@ -1,0 +1,16 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "affected:build",
+			"path": "packages/nx-poligonosapp/",
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"label": "npm: affected:build - packages/nx-poligonosapp",
+			"detail": "nx affected:build"
+		}
+	]
+}
