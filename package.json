@@ -1,6 +1,6 @@
 {
   "name": "poligonosdemos",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "type": "module",
   "private": true,
   "projects": [
@@ -14,7 +14,8 @@
     "@poligonosdemos/frontend",
     "@poligonosdemos/backend",
     "@poligonosdemos/geojson_jackson_rn_demo",
-    "@poligonosdemos/nx-poligonosapp"
+    "@poligonosdemos/nx-poligonosapp",
+    "@poligonosdemos/nextjs_poligonos_poligono"
   ],
   "license": "Apache License 2.0",
   "author": "Fabio Rodrigues <https://www.facebook.com/kefaro>, Luis Mendes <machadoluismendes@gmail.com>",

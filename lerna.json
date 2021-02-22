@@ -1,5 +1,5 @@
 {
-    "version": "1.4.0",
+    "version": "1.4.1",
     "useWorkspaces": true,
     "private": true,
     "dependencies": {
@@ -31,7 +31,8 @@
         "packages/nx-poligonosapp",
         "packages/progressive-web-app",
         "app",
-        "nextjs_poligonos"
+        "nextjs_poligonos",
+        "nextjs_poligonos_poligono"
     ],
     "workspaces": [
         "@poligonosdemos/package.json",
@@ -52,6 +53,7 @@
         "@poligonosdemos/ui-next-js-heroku/*",
         "@poligonosdemos/poligonosapp/*",
         "@poligonosdemos/poligono_angular_cli_one/*",
-        "@poligonosdemos/angular_cli_one_poligono/*"
+        "@poligonosdemos/angular_cli_one_poligono/*",
+        "@poligonosdemos/nextjs_poligonos_poligono/*"
     ]
 }
