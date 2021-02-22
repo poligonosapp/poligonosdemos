@@ -1,14 +1,15 @@
 {
-    "version": "1.4.1",
+    "version": "1.4.2",
     "useWorkspaces": true,
     "private": true,
     "dependencies": {
-        "react":"17.0.1"
+        "react": "17.0.1"
     },
     "devDependencies": {
         "lerna": "^2.2.0",
         "react": "^16.8.0 || ^16.11.0 || ^17.0.1",
-        "quicklink":"^2.0.0 || ^2.1.0" 
+        "quicklink": "^2.0.0 || ^2.1.0",
+        "yarn": "2.x"
     },
     "name": "poligonosdemos",
     "npmClient": "yarn",
@@ -25,6 +26,20 @@
             ]
         }
     },
+    "projects": [
+        "@poligonosdemos/pwa_ionic_react_poligonosapp",
+        "@poligonosdemos/app",
+        "@poligonosdemos/packages",
+        "@poligonosdemos/poligonos",
+        "@poligonosdemos/ui",
+        "@poligonosdemos/server",
+        "@poligonosdemos/docker-nginx",
+        "@poligonosdemos/frontend",
+        "@poligonosdemos/backend",
+        "@poligonosdemos/geojson_jackson_rn_demo",
+        "@poligonosdemos/nx-poligonosapp",
+        "@poligonosdemos/nextjs_poligonos_poligono"
+    ],
     "packages": [
         "pwa_ionic_react_poligonosapp",
         "pwa_ionic_react_poligonosapp/tests",
