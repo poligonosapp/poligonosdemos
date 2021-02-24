@@ -1,7 +1,12 @@
 {
-    "version": "1.4.6",
+    "version": "1.4.7",
     "useWorkspaces": true,
     "private": true,
+    "license": "Apache License 2.0",
+    "type": "module",
+    "types": "index",
+    "exports": "./index.js",
+    "main": "./index.js",
     "dependencies": {
         "react": "17.0.1"
     },
@@ -50,6 +55,7 @@
         "nextjs_poligonos_poligono"
     ],
     "workspaces": [
+        "@poligonosdemos/poligonosapp-ionic",
         "@poligonosdemos/package.json",
         "@poligonosdemos/pwa_ionic_react_poligonosapp/package.json",
         "@poligonosdemos/ycppoligono",

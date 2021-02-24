@@ -1,8 +1,19 @@
 {
   "name": "poligonosdemos",
-  "version": "1.4.6",
-  "type": "module",
+  "version": "1.4.7",
   "private": true,
+  "homepage": "https://www.poligonosapp.herokuapp.com",
+  "nodemonConfig": {
+    "ignore": [
+      "test/*",
+      "docs/*"
+    ],
+    "delay": "2500"
+  },
+  "type": "module",
+  "types": "index",
+  "exports": "./index.js",
+  "main": "./index.js",
   "projects": [
     "@poligonosdemos/pwa_ionic_react_poligonosapp",
     "@poligonosdemos/app",
@@ -84,7 +95,6 @@
     "history": "^5.0.0",
     "http": "^0.0.1-security",
     "http-proxy-middleware": "^1.0.6",
-    "ionic": "^5.4.16",
     "leaflet": "^1.7.1",
     "lerna": "^3.22.1",
     "lodash": "^4.17.20",
@@ -114,10 +124,10 @@
   },
   "devDependencies": {
     "@shelf/jest-mongodb": "^1.2.3",
+    "@tsconfig/node14": "^1.0.0",
     "@types/node": "^14.14.22",
     "@types/react": "^16.9.17",
     "@types/react-dom": "^16.9.10",
-    "ionic": "^5.4.16",
     "jest": "^26.6.3",
     "quicklink": "^2.0.0 || ^2.1.0",
     "react": " ^16.8.0 || ^16.11.0 || 16.14.0 || ^17  || 17.0.1",
@@ -132,6 +142,7 @@
     "yarn": "1.19.1"
   },
   "workspaces": [
+    "@poligonosdemos/poligonosapp-ionic",
     "@poligonosdemos/pwa_ionic_react_poligonosapp/*",
     "@poligonosdemos/ycppoligono/*",
     "@poligonosdemos/nextjs_poligonos/poligono",
@@ -182,10 +193,11 @@
     "@poligonosdemos/progressive-web-app": "*"
   },
   "peerDependencies": {
+    "@react": "16.8.6",
     "evp_bytestokey": "*",
     "fork-ts-checker-webpack-plugin": "3.1.1",
     "optimize-css-assets-webpack-plugin": "5.0.3",
-    "react": "^16.11.0 || ^17 || ^17.0.1",
+    "react": ">=16.8.6 || ^16.11.0 || ^17 || ^17.0.1",
     "react-dom": "^17.0.1",
     "snyk-php-plugin": "*",
     "snyk-python-plugin": "*",

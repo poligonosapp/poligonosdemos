@@ -1,15 +1,21 @@
 {
+    "extends": "@tsconfig/node14/tsconfig.json",
     "compilerOptions": {
+        "lib": ["es2020"],
+        "module": "commonjs",
+        "target": "es2020",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
         "noEmitOnError": true,
         "baseUrl": ".",
         "paths": {
             "@nighttrax/*": ["packages/*/src"]
         },
         "jsx": "react",
-        "esModuleInterop": true,
-        "skipLibCheck": true,
         "types": [],
-        "module": "commonjs",
+
         "noImplicitAny": false,
         "removeComments": false,
         "preserveConstEnums": true,
@@ -17,17 +23,15 @@
         "moduleResolution": "node",
         "typeRoots": ["./node_modules/@types"],
         "outDir": "./dist/",
-        "target": "es6",
-        "lib": ["dom", "dom.iterable", "esnext"],
         "allowJs": true,
         "allowSyntheticDefaultImports": true,
-        "strict": true,
-        "forceConsistentCasingInFileNames": true,
         "resolveJsonModule": true,
         "isolatedModules": true,
         "noEmit": true,
         "noFallthroughCasesInSwitch": true
     },
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "display": "Recommended",
     "include": ["src", "relay.config.js"],
     "exclude": ["dist", "node_modules"]
 }
