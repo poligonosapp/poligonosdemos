@@ -1,6 +1,6 @@
 {
   "name": "poligonosdemos",
-  "version": "1.4.7",
+  "version": "1.4.8",
   "private": true,
   "homepage": "https://www.poligonosapp.herokuapp.com",
   "nodemonConfig": {
@@ -165,6 +165,7 @@
     "@poligonosdemos/rn/geojson_jackson_rn_demo/*"
   ],
   "resolutions": {
+    "workbox-build": "<6.1.1",
     "react": "^16.11.0 || ^17 || >=16.8.0 || ^16.11.0 || 16.14.0 || 17.0.1 || 16.14.0 || ^16.11.0 || ^17",
     "react-dom": "^17.0.1",
     "@types/react-dom": "^16.9.10",
