@@ -1,6 +1,6 @@
 {
   "name": "poligonosdemos",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "private": true,
   "homepage": "https://www.poligonosapp.herokuapp.com",
   "nodemonConfig": {
@@ -15,9 +15,10 @@
   "exports": "./index.js",
   "main": "./index.js",
   "projects": [
-    "@poligonosdemos/pwa_ionic_react_poligonosapp",
+    "@poligonosdemos/packages/pwa_ionic_react_poligonosapp",
     "@poligonosdemos/app",
     "@poligonosdemos/packages",
+    "@poligonosdemos/packages/PoligonosApp",
     "@poligonosdemos/poligonos",
     "@poligonosdemos/ui",
     "@poligonosdemos/server",
@@ -142,10 +143,10 @@
     "yarn": "1.19.1"
   },
   "workspaces": [
-    "rn/PoligonosApp",
+    "packages/PoligonosApp",
     "@poligonosdemos/poligonosapp-ionic",
-    "@poligonosdemos/pwa_ionic_react_poligonosapp/*",
-    "@poligonosdemos/ycppoligono/*",
+    "@poligonosdemos/packages/pwa_ionic_react_poligonosapp/*",
+    "@poligonosdemos/yarn-create-poligono/ycppoligono/*",
     "@poligonosdemos/nextjs_poligonos/poligono",
     "@poligonosdemos/packages/*",
     "@poligonosdemos/nx-poligonosapp/*",

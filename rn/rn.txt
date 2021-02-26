@@ -1,3 +1,0 @@
-docker pull reactnativecommunity/react-native-android:latest
-
-docker pull angular/ngcontainer:latest

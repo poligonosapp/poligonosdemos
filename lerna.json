@@ -1,5 +1,5 @@
 {
-    "version": "1.5.0",
+    "version": "1.5.1",
     "useWorkspaces": true,
     "private": true,
     "license": "Apache License 2.0",
@@ -46,13 +46,28 @@
         "@poligonosdemos/nextjs_poligonos_poligono"
     ],
     "packages": [
-        "pwa_ionic_react_poligonosapp",
-        "pwa_ionic_react_poligonosapp/tests",
-        "packages/nx-poligonosapp",
-        "packages/progressive-web-app",
-        "app",
-        "nextjs_poligonos",
-        "nextjs_poligonos_poligono"
+        "packages/PoligonosApp",
+        "@poligonosdemos/poligonosapp-ionic",
+        "@poligonosdemos/pwa_ionic_react_poligonosapp/*",
+        "@poligonosdemos/ycppoligono/*",
+        "@poligonosdemos/nextjs_poligonos/poligono",
+        "@poligonosdemos/packages/*",
+        "@poligonosdemos/nx-poligonosapp/*",
+        "@poligonosdemos/progressive-web-app/*",
+        "@poligonosdemos/app/*",
+        "@poligonosdemos/njs/ui/*",
+        "@poligonosdemos/server/*",
+        "@poligonosdemos/ui/*",
+        "@poligonosdemos/ycppoligono/*",
+        "@poligonosdemos/poligonos/*",
+        "@poligonosdemos/ronin-ui/*",
+        "@poligonosdemos/z-app-name/*",
+        "@poligonosdemos/progressive-web-app/*",
+        "@poligonosdemos/ui-next-js-heroku/*",
+        "@poligonosdemos/poligonosapp/*",
+        "@poligonosdemos/poligono_angular_cli_one/*",
+        "@poligonosdemos/angular_cli_one_poligono/*",
+        "@poligonosdemos/rn/geojson_jackson_rn_demo/*"
     ],
     "workspaces": [
         "rn/PoligonosApp",

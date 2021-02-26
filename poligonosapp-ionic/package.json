@@ -1,7 +1,7 @@
 {
   "name": "@poligonosdemos/poligonosapp-ionic",
-  "version": "1.4.7",
-  "private": true,
+  "version": "1.5.1",
+  "public": true,
   "dependencies": {
     "@capacitor/android": "^2.0.1",
     "@capacitor/core": "^2.0.1",

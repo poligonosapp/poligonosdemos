@@ -1,0 +1,12 @@
+type Query getselect($polygon:Polygon) {
+  polygon(poligono : $polygon) {
+    type
+    coordinates
+    crs {
+      type
+      properties {
+         
+      }
+    }
+  }
+}

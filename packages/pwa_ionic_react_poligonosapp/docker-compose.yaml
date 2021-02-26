@@ -1,0 +1,25 @@
+---
+version: "2.1"
+services:
+  openssh-server:
+    image: ghcr.io/linuxserver/openssh-server
+    container_name: openssh-server
+    hostname: openssh-server #optional
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/London
+      - PUBLIC_KEY=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCfA8cGAXbxUUyrBmrTjZLopLe+4qSpMuxO0ZJUE/Qksuy4yESrhnIuod7uCucH+PmdxLUvk5h77vLRIJi5oHQgJ4G2OtLCv74aJHP6PFGyE5+sq0tw7sM7iSpCzdk9ivUdY2kkw/IzIlcY7IaLrHiXgAN1cZftLkFnAZX+ILpyVwnMh3gwCRCkgc3fk5D6/BMMSg41n3lEyI3K1+A+egEnF89MfYx2lPwyQSDKw1yCbsdU6HNVuBfSv28i55GIcxaC+qOl6f6SOSE1TgwUV1vWM2gkrHiMLneM0Xg7pfElg3AlVw479NWb23jm1hX9jgIHN5KI5Wwn1hl+uksQG8866fTuWViUfJOPGX8PbmnYyaEbrUx8oCXAvs4v9nlhdeN9a9ldjPE1LLFzsEriWRg9S94zxOjWPL7p4MmZR6yT3yNa3YzoXF3gWMIlL6noulAjEx7kL+EAPLHWXeR0AkE5oEspS3Kah7Yw4o4MKdTmEwUXKZpqv5ia1Ka+ugx3ol0= luism@DESKTOP-UJOT6VH
+  #optional
+      - PUBLIC_KEY_FILE=/path/to/file #optional
+      - PUBLIC_KEY_DIR=/path/to/directory/containing/_only_/pubkeys #optional
+      - SUDO_ACCESS=false #optional
+      - PASSWORD_ACCESS=false #optional
+      - USER_PASSWORD=password #optional
+      - USER_PASSWORD_FILE=/path/to/file #optional
+      - USER_NAME=linuxserver.io #optional
+    volumes:
+      - /path/to/appdata/config:/config
+    ports:
+      - 2222:2222
+    restart: unless-stopped

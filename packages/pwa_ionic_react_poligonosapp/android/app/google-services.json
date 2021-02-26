@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "70134423424",
+    "project_id": "poligonosapp",
+    "storage_bucket": "poligonosapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:70134423424:android:4228d9c2cd58400c0beb65",
+        "android_client_info": {
+          "package_name": "com.github.luismendes070.poligonosdemos.poligonosapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "70134423424-uu5tk43hm8j9p1o6a5d7ipvn82r15hhf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9oCP_EZ-j452xLUNM7MEjs3B23BL84yc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "70134423424-uu5tk43hm8j9p1o6a5d7ipvn82r15hhf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:70134423424:android:db4f149cf4ce5e5d0beb65",
+        "android_client_info": {
+          "package_name": "com.github.luismendes070.poligonosdemos.poligonosapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "70134423424-uu5tk43hm8j9p1o6a5d7ipvn82r15hhf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9oCP_EZ-j452xLUNM7MEjs3B23BL84yc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "70134423424-uu5tk43hm8j9p1o6a5d7ipvn82r15hhf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
