@@ -1,6 +1,6 @@
 # poligonosdemos
 
-
+docker-compose up -d reverse-proxy
 
 ## BUILD 
 CNTRL SHIFT B
