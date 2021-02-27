@@ -1,7 +1,8 @@
+const axios = require('axios').default;
+
 // import React from 'react'
 import router from './poligonos'
 // import { response } from 'express'
-
 
 let cors = require('cors')
 const logger = require('morgan');

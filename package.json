@@ -24,7 +24,6 @@
     "@poligonosdemos/docker-nginx",
     "@poligonosdemos/frontend",
     "@poligonosdemos/backend",
-    "@poligonosdemos/geojson_jackson_rn_demo",
     "@poligonosdemos/nx-poligonosapp",
     "@poligonosdemos/nextjs_poligonos_poligono"
   ],
@@ -95,6 +94,7 @@
     "history": "^5.0.0",
     "http": "^0.0.1-security",
     "http-proxy-middleware": "^1.0.6",
+    "joi": "^17.4.0",
     "leaflet": "^1.7.1",
     "lerna": "^3.22.1",
     "lodash": "^4.17.20",
@@ -106,6 +106,7 @@
     "quicklink": "^2.1.0",
     "react": "^16.11.0",
     "react-dom": "^17.0.1",
+    "react-native": "^0.63.4",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.1",
     "remove": "^0.1.5",
@@ -128,11 +129,13 @@
     "@types/node": "^14.14.22",
     "@types/react": "^16.9.17",
     "@types/react-dom": "^16.9.10",
+    "@types/react-native": "^0.63.50",
     "jest": "^26.6.3",
     "quicklink": "^2.0.0 || ^2.1.0",
     "react": " ^16.8.0 || ^16.11.0 || 16.14.0 || ^17  || 17.0.1",
     "react-dom": "^17.0.1",
     "react-snap": "^1.23.0",
+    "typescript": "^4.0.7",
     "webpack": "4.41.0",
     "webpack-route-manifest": "^1.2.0"
   },
@@ -145,8 +148,8 @@
     "packages/PoligonosApp",
     "packages/poligonosapp-ionic",
     "packages/pwa_ionic_react_poligonosapp",
-    "packages/yarn-create-poligono/ycppoligono/*",
-    "@poligonosdemos/nextjs_poligonos/poligono",
+    "packages/yarn-create-poligono/ycppoligono",
+    "nextjs_poligonos/poligono",
     "@poligonosdemos/packages/*",
     "@poligonosdemos/nx-poligonosapp/*",
     "@poligonosdemos/progressive-web-app/*",
@@ -162,8 +165,7 @@
     "@poligonosdemos/ui-next-js-heroku/*",
     "@poligonosdemos/poligonosapp/*",
     "@poligonosdemos/poligono_angular_cli_one/*",
-    "@poligonosdemos/angular_cli_one_poligono/*",
-    "@poligonosdemos/rn/geojson_jackson_rn_demo/*"
+    "@poligonosdemos/angular_cli_one_poligono/*"
   ],
   "resolutions": {
     "workbox-build": "<6.1.1",
@@ -190,7 +192,6 @@
     "@poligonosdemos/poligonosapp": "*",
     "@poligonosdemos/poligono_angular_cli_one": "*",
     "@poligonosdemos/angular_cli_one_poligono": "*",
-    "@poligonosdemos/geojson_jackson_rn_demo": "*",
     "@poligonosdemos/nx-poligonosapp": "*",
     "@poligonosdemos/progressive-web-app": "*"
   },

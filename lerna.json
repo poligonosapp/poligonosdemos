@@ -70,10 +70,10 @@
         "@poligonosdemos/rn/geojson_jackson_rn_demo/*"
     ],
     "workspaces": [
+        "packages/pwa_ionic_react_poligonosapp",
         "packages/PoligonosApp",
-        "@poligonosdemos/poligonosapp-ionic",
-        "@poligonosdemos/package.json",
-        "@poligonosdemos/pwa_ionic_react_poligonosapp/package.json",
+        "poligonosapp-ionic",
+        "./package.json",
         "@poligonosdemos/ycppoligono",
         "@poligonosdemos/nextjs_poligonos/poligono",
         "@poligonosdemos/packages/*",

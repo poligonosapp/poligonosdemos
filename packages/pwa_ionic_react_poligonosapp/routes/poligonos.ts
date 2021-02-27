@@ -1,4 +1,5 @@
 'use strict'
+const axios = require('axios').default;
 let express = require('express')
 let cors = require('cors')
 let app = express()
