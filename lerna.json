@@ -41,14 +41,13 @@
         "@poligonosdemos/docker-nginx",
         "@poligonosdemos/frontend",
         "@poligonosdemos/backend",
-        "@poligonosdemos/geojson_jackson_rn_demo",
         "@poligonosdemos/nx-poligonosapp",
         "@poligonosdemos/nextjs_poligonos_poligono"
     ],
     "packages": [
         "packages/PoligonosApp",
-        "@poligonosdemos/poligonosapp-ionic",
-        "@poligonosdemos/pwa_ionic_react_poligonosapp/*",
+        "poligonosapp-ionic",
+        "packages/pwa_ionic_react_poligonosapp",
         "@poligonosdemos/ycppoligono/*",
         "@poligonosdemos/nextjs_poligonos/poligono",
         "@poligonosdemos/packages/*",
@@ -66,14 +65,12 @@
         "@poligonosdemos/ui-next-js-heroku/*",
         "@poligonosdemos/poligonosapp/*",
         "@poligonosdemos/poligono_angular_cli_one/*",
-        "@poligonosdemos/angular_cli_one_poligono/*",
-        "@poligonosdemos/rn/geojson_jackson_rn_demo/*"
+        "@poligonosdemos/angular_cli_one_poligono/*"
     ],
     "workspaces": [
         "packages/pwa_ionic_react_poligonosapp",
         "packages/PoligonosApp",
         "poligonosapp-ionic",
-        "./package.json",
         "@poligonosdemos/ycppoligono",
         "@poligonosdemos/nextjs_poligonos/poligono",
         "@poligonosdemos/packages/*",

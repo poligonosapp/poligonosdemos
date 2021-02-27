@@ -1,5 +1,5 @@
 # poligonosdemos
-
+heroku local web 
 docker-compose up -d reverse-proxy
 
 ## BUILD 

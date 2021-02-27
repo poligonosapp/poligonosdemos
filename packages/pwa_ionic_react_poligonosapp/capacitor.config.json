@@ -10,7 +10,7 @@
         }
     },
     "cordova": {},
-    "windowsAndroidStudioPath": "E:\\Program Files\\Android\\canary\\android-studio\\bin\\studio64.exe",
+    "windowsAndroidStudioPath": "C:\\Program Files\\Android\\Android Studio\\bin\\studio64.exe",
     "hideLogs": false,
     "overrideUserAgent": "my custom user agent",
     "appendUserAgent": "string to append",

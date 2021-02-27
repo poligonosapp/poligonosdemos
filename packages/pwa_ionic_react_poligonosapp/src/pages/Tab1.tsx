@@ -35,16 +35,16 @@ import { Route } from "react-router-dom";
 import _ from "underscore";
 // import usePoligono from "../usePoligono";
 
-import response from './routes/response'
-
-
+const axiosResponse = require('./routes/response')
 
 const Tab1: React.FC = () => {
 
     //db
 let [allData, setAllData] = useState(require('./src/databases/stitch.js'));
 //leaflet
-let [mymap, setMyMap] = useState(require('./src/controller/LeafletServer.js'));
+    let [mymap, setMyMap] = useState(require('./src/controller/LeafletServer.js'));
+    
+    setMyMap(axiosResponse);
 
     const jwtToken = require('jsonwebtoken');
 
@@ -69,7 +69,8 @@ let [mymap, setMyMap] = useState(require('./src/controller/LeafletServer.js'));
                     </IonToolbar>
                 </IonHeader>
 
-<response />
+                {allData}
+                {mymap}
 
 
             </IonContent>

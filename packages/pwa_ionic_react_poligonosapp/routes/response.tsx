@@ -11,13 +11,21 @@ let express = require('express')
 const app = express();
 
 app.route('/poligonos')
-    .get(function (req, res) {
+    .get(async function (req, res) {
         app.use(logger('get route poligonos...'))
         res.send('Get polygon')
         res.status(200)
+
+        try {
+            const axiosResponse = await axios("https://www.poligonosapp.herokuapp.com/api/v1/poligonos");
+            return axiosResponse;
+        }
+        catch (e) {
+            alert('request failed');
+        }
     })
 
-response.set(router.set(app));
+// response.set(router.set(app));
 
 // module.exports = response
-export default response;
+// export default response;

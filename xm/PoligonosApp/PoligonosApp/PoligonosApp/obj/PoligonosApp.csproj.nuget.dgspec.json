@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Users\\luism\\poligonosdemos\\xm\\PoligonosApp\\PoligonosApp\\PoligonosApp\\PoligonosApp.csproj": {}
+    "C:\\Users\\luism\\poligonosdemos\\xm\\PoligonosApp\\PoligonosApp\\PoligonosApp\\PoligonosApp.csproj": {}
   },
   "projects": {
-    "E:\\Users\\luism\\poligonosdemos\\xm\\PoligonosApp\\PoligonosApp\\PoligonosApp\\PoligonosApp.csproj": {
+    "C:\\Users\\luism\\poligonosdemos\\xm\\PoligonosApp\\PoligonosApp\\PoligonosApp\\PoligonosApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Users\\luism\\poligonosdemos\\xm\\PoligonosApp\\PoligonosApp\\PoligonosApp\\PoligonosApp.csproj",
+        "projectUniqueName": "C:\\Users\\luism\\poligonosdemos\\xm\\PoligonosApp\\PoligonosApp\\PoligonosApp\\PoligonosApp.csproj",
         "projectName": "PoligonosApp",
-        "projectPath": "E:\\Users\\luism\\poligonosdemos\\xm\\PoligonosApp\\PoligonosApp\\PoligonosApp\\PoligonosApp.csproj",
+        "projectPath": "C:\\Users\\luism\\poligonosdemos\\xm\\PoligonosApp\\PoligonosApp\\PoligonosApp\\PoligonosApp.csproj",
         "packagesPath": "C:\\Users\\luism\\.nuget\\packages\\",
-        "outputPath": "E:\\Users\\luism\\poligonosdemos\\xm\\PoligonosApp\\PoligonosApp\\PoligonosApp\\obj\\",
+        "outputPath": "C:\\Users\\luism\\poligonosdemos\\xm\\PoligonosApp\\PoligonosApp\\PoligonosApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -69,7 +69,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }

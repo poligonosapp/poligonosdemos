@@ -1939,11 +1939,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Users\\luism\\poligonosdemos\\xm\\PoligonosApp\\PoligonosApp\\PoligonosApp.Android\\PoligonosApp.Android.csproj",
+      "projectUniqueName": "C:\\Users\\luism\\poligonosdemos\\xm\\PoligonosApp\\PoligonosApp\\PoligonosApp.Android\\PoligonosApp.Android.csproj",
       "projectName": "PoligonosApp.Android",
-      "projectPath": "E:\\Users\\luism\\poligonosdemos\\xm\\PoligonosApp\\PoligonosApp\\PoligonosApp.Android\\PoligonosApp.Android.csproj",
+      "projectPath": "C:\\Users\\luism\\poligonosdemos\\xm\\PoligonosApp\\PoligonosApp\\PoligonosApp.Android\\PoligonosApp.Android.csproj",
       "packagesPath": "C:\\Users\\luism\\.nuget\\packages\\",
-      "outputPath": "E:\\Users\\luism\\poligonosdemos\\xm\\PoligonosApp\\PoligonosApp\\PoligonosApp.Android\\obj\\",
+      "outputPath": "C:\\Users\\luism\\poligonosdemos\\xm\\PoligonosApp\\PoligonosApp\\PoligonosApp.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1964,8 +1964,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "E:\\Users\\luism\\poligonosdemos\\xm\\PoligonosApp\\PoligonosApp\\PoligonosApp\\PoligonosApp.csproj": {
-              "projectPath": "E:\\Users\\luism\\poligonosdemos\\xm\\PoligonosApp\\PoligonosApp\\PoligonosApp\\PoligonosApp.csproj"
+            "C:\\Users\\luism\\poligonosdemos\\xm\\PoligonosApp\\PoligonosApp\\PoligonosApp\\PoligonosApp.csproj": {
+              "projectPath": "C:\\Users\\luism\\poligonosdemos\\xm\\PoligonosApp\\PoligonosApp\\PoligonosApp\\PoligonosApp.csproj"
             }
           }
         }
