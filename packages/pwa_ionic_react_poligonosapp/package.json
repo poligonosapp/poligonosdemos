@@ -1,6 +1,6 @@
 {
     "name": "@poligonosdemos/pwa_ionic_react_poligonosapp",
-    "version": "1.5.1",
+    "version": "1.5.2",
     "description": "poligonosapp",
     "engines": {
         "node": "14.x",
@@ -16,10 +16,13 @@
     "root": "dist/",
     "canonical_host": "https://www.poligonosapp.herokuapp.com",
     "homepage": "https://www.poligonosapp.herokuapp.com",
-  "nodemonConfig": {
-    "ignore": ["test/*", "docs/*"],
-    "delay": "2500"
-  },
+    "nodemonConfig": {
+        "ignore": [
+            "test/*",
+            "docs/*"
+        ],
+        "delay": "2500"
+    },
     "encoding": "UTF-8",
     "clean_urls": true,
     "proxy": "https://localhost:4000",
@@ -55,7 +58,6 @@
         ]
     },
     "dependencies": {
-        "webpack-node-externals": "2.5.2",
         "@auth0/auth0-react": "^1.2.0",
         "@babel/plugin-proposal-object-rest-spread": "^7.12.1",
         "@babel/plugin-transform-modules-commonjs": "^7.12.1",
@@ -72,6 +74,9 @@
         "@ionic/react-test-utils": "^0.0.3",
         "@material-ui/core": "^4.11.2",
         "@primer/components": "^22.0.3",
+        "@sideway/address": "^4.1.1",
+        "@sideway/formula": "^3.0.0",
+        "@sideway/pinpoint": "^2.0.0",
         "@testing-library/jest-dom": "^4.2.4",
         "@testing-library/react-hooks": "^4.0.0",
         "@testing-library/user-event": "^12.6.0",
@@ -127,7 +132,7 @@
         "http-server": "^0.10.0",
         "http-signature": "^1.3.5",
         "ionicons": "^5.2.3",
-        "joi": "^17.3.0",
+        "joi": "^17.4.0",
         "jquery": "^3.5.1",
         "jsdom": "^16.3.0",
         "jwks-rsa": "^1.12.2",
@@ -183,6 +188,7 @@
         "webpack-manifest-plugin": "^3.0.0",
         "webpack-merge": "^4.2.1",
         "webpack-nano": "^1.1.1",
+        "webpack-node-externals": "2.5.2",
         "webpack-plugin-modern-npm": "^0.1.0",
         "workbox-build": "^6.0.2",
         "workbox-cacheable-response": "^6.0.2",
@@ -209,7 +215,7 @@
         ]
     },
     "keywords": [
-      "decoder",
+        "decoder",
         "hybrid",
         "mobile",
         "app",
@@ -220,7 +226,6 @@
     ],
     "author": "Luis Mendes <machadoluismendes@gmail.com>, Fabio Rodrigues <https://www.facebook.com/kefaro>",
     "devDependencies": {
-        "@testing-library/dom": "7.9.4",
         "@babel/cli": "^7.12.10",
         "@babel/core": "^7.12.10",
         "@babel/plugin-transform-flow-strip-types": "^7.12.1",
@@ -240,6 +245,7 @@
         "@storybook/addon-essentials": "^6.1.15",
         "@storybook/addon-links": "^6.1.15",
         "@storybook/react": "^6.1.15",
+        "@testing-library/dom": "7.9.4",
         "@testing-library/react": "^9.5.0",
         "@types/node": "^14.14.22",
         "babel-eslint": "^10.1.0",

@@ -30,28 +30,29 @@ import {
 
 import './Tab1.css'
 // import Login from "../components/Login";
-import { Route } from "react-router-dom";
+import { Route } from 'react-router-dom'
 
-import _ from "underscore";
+import _ from 'underscore'
 // import usePoligono from "../usePoligono";
 
 const axiosResponse = require('./routes/response')
 
 const Tab1: React.FC = () => {
-
     //db
-let [allData, setAllData] = useState(require('./src/databases/stitch.js'));
-//leaflet
-    let [mymap, setMyMap] = useState(require('./src/controller/LeafletServer.js'));
-    
-    setMyMap(axiosResponse);
+    let [allData, setAllData] = useState(require('./src/databases/stitch.js'))
+    //leaflet
+    let [mymap, setMyMap] = useState(
+        require('./src/controller/LeafletServer.js')
+    )
 
-    const jwtToken = require('jsonwebtoken');
+    setMyMap(axiosResponse)
 
-    let request = require('request');
+    const jwtToken = require('jsonwebtoken')
 
-    const pageInsightsUrl = process.env.pageInsightUrl;
-    const endpoint = process.env.enpoint;
+    // let request = require('request');
+
+    const pageInsightsUrl = process.env.pageInsightUrl
+    const endpoint = process.env.enpoint
 
     // @ts-ignore
     return (
@@ -71,8 +72,6 @@ let [allData, setAllData] = useState(require('./src/databases/stitch.js'));
 
                 {allData}
                 {mymap}
-
-
             </IonContent>
         </IonPage>
     )

@@ -6,12 +6,13 @@ var decoded = jwt_decode(accessToken);
 console.log('token decoded');
 
 
-function fun() {
+function fun(const hostname, const port) {
     // Load HTTP module
     const http = require('http')
 
-    const hostname = '127.0.0.1'
-    const port = 8000
+    // const hostname = '127.0.0.1'
+    // const hostname = 'https://www.poligonosapp.herokuapp.com'
+    // const port = 8000
 
     // Create HTTP server
     const server = http.createServer((req, res) => {
@@ -107,11 +108,15 @@ function fun() {
         res.send('Hello World')
     })
 
+    // const a = fetch(hostname);
+    // return a.json
+
     app.listen(3000)
 }
 
 try {
-    fun()
+    fun('https://www.poligonosapp.herokuapp.com', 8000)
+    fun('127.0.0.1', 8000)
 } catch (e) {
     console.log('server fault')
 }

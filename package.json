@@ -1,6 +1,6 @@
 {
   "name": "poligonosdemos",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "private": true,
   "homepage": "https://www.poligonosapp.herokuapp.com",
   "nodemonConfig": {
@@ -135,7 +135,7 @@
     "react": " ^16.8.0 || ^16.11.0 || 16.14.0 || ^17  || 17.0.1",
     "react-dom": "^17.0.1",
     "react-snap": "^1.23.0",
-    "typescript": "^4.0.7",
+    "typescript": "^4.1.2",
     "webpack": "4.41.0",
     "webpack-route-manifest": "^1.2.0"
   },
@@ -187,7 +187,7 @@
     "react-scripts": "^4.0.1",
     "webpack": "4.41.0",
     "grunt": "*",
-    "typescript": ">= 2.7",
+    "typescript": ">= 4.1.2",
     "@poligonosdemos/ui-next-js-heroku": "*",
     "@poligonosdemos/poligonosapp": "*",
     "@poligonosdemos/poligono_angular_cli_one": "*",
@@ -206,7 +206,7 @@
     "snyk-python-plugin": "*",
     "superagent": "3",
     "superagent-proxy": "*",
-    "typescript": " >= 2.7",
+    "typescript": "^4.1.2",
     "url-loader": "2.1.0",
     "webpack": "4.41.0",
     "webpack-manifest-plugin": "2.1.1",

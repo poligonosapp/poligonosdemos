@@ -1,5 +1,5 @@
 {
-    "version": "1.5.1",
+    "version": "1.5.2",
     "useWorkspaces": true,
     "private": true,
     "license": "Apache License 2.0",
@@ -8,13 +8,15 @@
     "exports": "./index.js",
     "main": "./index.js",
     "dependencies": {
-        "react": "17.0.1"
+        "react": "17.0.1",
+        "typescript": "^4.1.2"
     },
     "devDependencies": {
         "lerna": "^2.2.0",
         "react": "^16.8.0 || ^16.11.0 || ^17.0.1",
         "quicklink": "^2.0.0 || ^2.1.0",
-        "yarn": "2.x"
+        "yarn": "2.x",
+        "typescript": "^4.1.2"
     },
     "name": "poligonosdemos",
     "npmClient": "yarn",

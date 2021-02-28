@@ -32,6 +32,6 @@
     },
     "$schema": "https://json.schemastore.org/tsconfig",
     "display": "Recommended",
-    "include": ["src", "relay.config.js"],
+    "include": ["./packages/pwa_ionic_react_poligonosapp/src/**/*.ts", "relay.config.js"],
     "exclude": ["dist", "node_modules"]
 }
