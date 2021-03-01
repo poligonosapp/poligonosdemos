@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
 import {Profile} from '/pages/Profile.tsx'
@@ -37,6 +36,7 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import './index.css';
 
 // let admin = require('firebase-admin');
 import * as admin from 'firebase-admin';
@@ -46,7 +46,7 @@ admin.initializeApp({
   databaseURL: 'https://poligonosapp-default-rtdb.firebaseio.com/'
 });
 
-var refreshToken; // Get refresh token from OAuth2 flow
+let refreshToken = "process.env.FIREBASE_REFRESH_TOKEN"; // Get refresh token from OAuth2 flow
 
 admin.initializeApp({
   credential: admin.credential.refreshToken(refreshToken),
@@ -55,16 +55,18 @@ admin.initializeApp({
 
 // Initialize the default app
 // var admin = require('firebase-admin');
-var app = admin.initializeApp();
+let app = admin.initializeApp();
+
+const defaultConfig = "process.env.DEFAULT_CONFIG";
 
 // Initialize the default app
-var defaultApp = admin.initializeApp(defaultAppConfig);
+let defaultApp = admin.initializeApp(defaultAppConfig);
 
 console.log(defaultApp.name);  // '[DEFAULT]'
 
 // Retrieve services via the defaultApp variable...
-var defaultAuth = defaultApp.auth();
-var defaultDatabase = defaultApp.database();
+let defaultAuth = defaultApp.auth();
+let defaultDatabase = defaultApp.database();
 
 // ... or use the equivalent shorthand notation
 defaultAuth = admin.auth();
@@ -74,23 +76,23 @@ defaultDatabase = admin.database();
 admin.initializeApp(defaultAppConfig);
 
 // Initialize another app with a different config
-var otherApp = admin.initializeApp(otherAppConfig, 'other');
+let otherApp = admin.initializeApp(otherAppConfig, 'other');
 
 console.log(admin.app().name);  // '[DEFAULT]'
 console.log(otherApp.name);     // 'other'
 
 // Use the shorthand notation to retrieve the default app's services
-var defaultAuth = admin.auth();
-var defaultDatabase = admin.database();
+let defaultAuth = admin.auth();
+let defaultDatabase = admin.database();
 
 // Use the otherApp variable to retrieve the other app's services
-var otherAuth = otherApp.auth();
-var otherDatabase = otherApp.database();
+let otherAuth = otherApp.auth();
+let otherDatabase = otherApp.database();
 
 
 // var admin = require("firebase-admin");
 
-var serviceAccount = require("google-services.json");
+let serviceAccount = require("google-services.json");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
@@ -98,7 +100,7 @@ admin.initializeApp({
 });
 
 //JQuery
-var settings = {
+let settings = {
   "async": true,
   "crossDomain": true,
   "url": "https://luismendes070.auth0.com/oauth/token",
@@ -106,21 +108,23 @@ var settings = {
   "headers": {
     "content-type": "application/json"
   },
-  "data": "{\"client_id\":\"O3ps6EDWQKoqJcTugLb9pvChzjwJMDC7\",\"client_secret\":\"UdqlSJ_EaYQY1_B_yYrutqTatUrO8Mt6hkaqiZVmgzN1yxt7LIFhA62BklSrrJmG\",\"audience\":\"https://poligonosapp.herokuapp.com/\",\"grant_type\":\"client_credentials\"}"
-}
+  "data": "{\"client_id\":\"process.env.CLIENT_ID\",\"client_secret\":\"process.env.CLIENT_SECRET\",\"audience\":\"https://poligonosapp.herokuapp.com/\",\"grant_type\":\"client_credentials\"}"
+};
 
 $.ajax(settings).done(function (response) {
   console.log(response);
 });
 
 //Node
-var request = require("request");
+let request = require("request");
 
-var options = { method: 'POST',
+let options = {
+  method: 'POST',
   url: 'https://luismendes070.auth0.com/oauth/token',
   headers: { 'content-type': 'application/json' },
-  body: '{"client_id":"O3ps6EDWQKoqJcTugLb9pvChzjwJMDC7",
-  "client_secret":"UdqlSJ_EaYQY1_B_yYrutqTatUrO8Mt6hkaqiZVmgzN1yxt7LIFhA62BklSrrJmG","audience":"https://poligonosapp.herokuapp.com/","grant_type":"client_credentials"}' };
+  body:
+    '{"client_id":"process.env.CLIENT_ID","client_secret":"process.env.CLIENT_SECRET","audience": "https://poligonosapp.herokuapp.com/","grant_type": "client_credentials"}'
+};
 
 request(options, function (error, response, body) {
   if (error) throw new Error(error);
@@ -140,21 +144,17 @@ const {
 
 const App: React.FC = () => (
 
-  
-
-
-
   if (isLoading) {
     return <div>Loading...</div>;
   }
   if (error) {
     return <div>Oops... {error.message}</div>;
-  }
+}
 
-  if (isAuthenticated) {
+if (isAuthenticated) {
     return (
-      <div>
-<IonSpinner />
+      
+
       <IonApp>
     <IonReactRouter>
       <IonTabs>
@@ -168,6 +168,13 @@ const App: React.FC = () => (
           <IonTabButton tab="tab1" href="/tab1">
             <IonIcon icon={triangle} />
             <IonLabel>Tab 1</IonLabel>
+            <IonSpinner />
+            Hello {user.name}{' '}
+        <button onClick={() => logout({ returnTo: window.location.origin })}>
+          Log out
+        </button>
+
+<Profile/>
           </IonTabButton>
           <IonTabButton tab="tab2" href="/tab2">
             <IonIcon icon={ellipse} />
@@ -181,16 +188,6 @@ const App: React.FC = () => (
       </IonTabs>
     </IonReactRouter>
   </IonApp>
-
-
-        Hello {user.name}{' '}
-        <button onClick={() => logout({ returnTo: window.location.origin })}>
-          Log out
-        </button>
-
-<Profile/>
-
-      </div>
     );
   } else {
     return <button onClick={loginWithRedirect}>Log in</button>;

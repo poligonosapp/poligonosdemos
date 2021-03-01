@@ -1,10 +1,10 @@
-let server = require('./server.js')
-let routes = require('./routes.js')
-let connect = require('./connect.js')
-let allData = require('./find_all_data.js')
+let server = require('./server.js');
+let routes = require('./routes.js');
+let connect = require('./connect.js');
+let allData = require('./find_all_data.js');
 
 const client = stitch.Stitch.initializeDefaultAppClient(
-    'web-application-0-udfes'
+    'process.env.REALM_WEB_ID'
 )
 
 const db = client

@@ -1,5 +1,6 @@
-import L, { circle, CRS } from 'leaflet'
-import { accessToken } from "./accessToken";
+import L, { circle, CRS } from 'leaflet';
+
+const accessToken  = "process.env.LEAFLET_ACCESS_TOKEN";
 
 var decoded = jwt_decode(accessToken);
 
@@ -39,8 +40,7 @@ function fun(const hostname, const port) {
             id: 'mapbox/streets-v11',
             tileSize: 512,
             zoomOffset: -1,
-            accessToken:
-                'sk.eyJ1IjoibHVpc21lbmRlczA3MCIsImEiOiJja2owaXNwenQzNW5lMzBscmp1YTNyYjJjIn0.58Rc1G6XH1wX0bOB-kUNPQ',
+            accessToken: 'process.env.LEAFLET_ACCESS_TOKEN',
         }
     ).addTo(mymap)
 

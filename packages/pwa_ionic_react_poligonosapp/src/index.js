@@ -15,8 +15,8 @@ if (rootElement.hasChildNodes()) {
 
   ReactDOM.render(
     <Auth0Provider
-      domain="luismendes070.auth0.com"
-      clientId="rMEab9aKNai5ODMagvuf9WA5fmKPAyVk"
+      domain="process.env.REACT_APP_AUTH0_DOMAIN"
+      clientId="process.env.REACT_APP_AUTH0_CLIENT_ID"
       redirectUri={window.location.origin}
     >
       <App />

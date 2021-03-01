@@ -1,9 +1,9 @@
 import './css/main.css';
-import { accessToken } from '../utils/accessToken'
+import { accessToken } from '../utils/accessToken';
 
-import { TileLayer, Marker, Popup } from 'react-leaflet'
+import { TileLayer, Marker, Popup } from 'react-leaflet';
 
-import L, { circle, CRS } from 'leaflet'
+import L, { circle, CRS } from 'leaflet';
 
 // import './src/components/Login';
 
@@ -44,16 +44,16 @@ const Tab1: React.FC = () => {
     //leaflet
     let [mymap, setMyMap] = useState(
         require('./src/controller/LeafletFrontend.js')
-    )
+    );
 
-    setMyMap(axiosResponse)
+    setMyMap(axiosResponse);
 
-    const jwtToken = require('jsonwebtoken')
+    const jwtToken = require('jsonwebtoken');
 
     // let request = require('request');
 
-    const pageInsightsUrl = process.env.pageInsightUrl
-    const endpoint = process.env.enpoint
+    const pageInsightsUrl = process.env.pageInsightUrl;
+    const endpoint = process.env.enpoint;
 
     // @ts-ignore
     return (
