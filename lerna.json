@@ -1,5 +1,5 @@
 {
-    "version": "1.5.2",
+    "version": "1.5.4",
     "useWorkspaces": true,
     "private": true,
     "license": "Apache License 2.0",
@@ -34,7 +34,6 @@
         }
     },
     "projects": [
-        "@poligonosdemos/pwa_ionic_react_poligonosapp",
         "@poligonosdemos/app",
         "@poligonosdemos/packages",
         "@poligonosdemos/poligonos",
@@ -49,7 +48,6 @@
     "packages": [
         "packages/PoligonosApp",
         "poligonosapp-ionic",
-        "packages/pwa_ionic_react_poligonosapp",
         "@poligonosdemos/ycppoligono/*",
         "@poligonosdemos/nextjs_poligonos/poligono",
         "@poligonosdemos/packages/*",
@@ -70,8 +68,6 @@
         "@poligonosdemos/angular_cli_one_poligono/*"
     ],
     "workspaces": [
-        "packages/pwa_ionic_react_poligonosapp",
-        "packages/PoligonosApp",
         "poligonosapp-ionic",
         "@poligonosdemos/ycppoligono",
         "@poligonosdemos/nextjs_poligonos/poligono",
@@ -87,7 +83,6 @@
         "@poligonosdemos/z-app-name/*",
         "@poligonosdemos/progressive-web-app/*",
         "@poligonosdemos/ui-next-js-heroku/*",
-        "@poligonosdemos/poligonosapp/*",
         "@poligonosdemos/poligono_angular_cli_one/*",
         "@poligonosdemos/angular_cli_one_poligono/*",
         "@poligonosdemos/nextjs_poligonos_poligono/*"

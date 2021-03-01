@@ -119,7 +119,8 @@ var request = require("request");
 var options = { method: 'POST',
   url: 'https://luismendes070.auth0.com/oauth/token',
   headers: { 'content-type': 'application/json' },
-  body: '{"client_id":"O3ps6EDWQKoqJcTugLb9pvChzjwJMDC7","client_secret":"UdqlSJ_EaYQY1_B_yYrutqTatUrO8Mt6hkaqiZVmgzN1yxt7LIFhA62BklSrrJmG","audience":"https://poligonosapp.herokuapp.com/","grant_type":"client_credentials"}' };
+  body: '{"client_id":"O3ps6EDWQKoqJcTugLb9pvChzjwJMDC7",
+  "client_secret":"UdqlSJ_EaYQY1_B_yYrutqTatUrO8Mt6hkaqiZVmgzN1yxt7LIFhA62BklSrrJmG","audience":"https://poligonosapp.herokuapp.com/","grant_type":"client_credentials"}' };
 
 request(options, function (error, response, body) {
   if (error) throw new Error(error);
@@ -127,12 +128,6 @@ request(options, function (error, response, body) {
   console.log(body);
 });
 
-
-
-
-const App: React.FC = () => (
-
-  <IonSpinner />
 
 const {
     isLoading,
@@ -142,6 +137,12 @@ const {
     loginWithRedirect,
     logout,
   } = useAuth0();
+
+const App: React.FC = () => (
+
+  
+
+
 
   if (isLoading) {
     return <div>Loading...</div>;
@@ -153,7 +154,7 @@ const {
   if (isAuthenticated) {
     return (
       <div>
-
+<IonSpinner />
       <IonApp>
     <IonReactRouter>
       <IonTabs>

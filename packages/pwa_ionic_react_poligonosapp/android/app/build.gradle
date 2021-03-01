@@ -7,7 +7,7 @@ android {
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1.5
-        versionName "1.5.1"
+        versionName "1.5.2"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -30,6 +30,10 @@ android {
 
 repositories {
     // flatDir{dirs '../capacitor-cordova-android-plugins/src/main/libs', 'libs'}
+    mavenCentral()
+    google()
+    // jcenter()
+    mavenLocal()
 }
 
 dependencies {

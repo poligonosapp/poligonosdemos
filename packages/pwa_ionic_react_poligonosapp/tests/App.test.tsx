@@ -229,7 +229,7 @@ test('should connect realm', () => {
 
     const MongoClient = require('mongodb').MongoClient
     const uri =
-        'mongodb+srv://fail:<password>@cluster0.neyhi.gcp.mongodb.net/<dbname>?retryWrites=true&w=majority'
+        'mongodb+srv://fail:PASSWORD@cluster0.neyhi.gcp.mongodb.net/DBNAME?retryWrites=true&w=majority'
     const client = new MongoClient(uri, { useNewUrlParser: true })
     client.connect((err) => {
         const collection = client.db('test').collection('devices')
