@@ -1,4 +1,6 @@
+npm run-script serve 
 
+npm run-script build
 
 npx ionic capacitor run android -l --external 
 

@@ -1,5 +1,7 @@
-import './css/main.css';
-import { accessToken } from '../utils/accessToken';
+// import '././css/main.css';
+// import { accessToken } from '../utils/accessToken';
+
+const accessToken = require('process.env.LEAFLET_ACCESS_TOKEN');
 
 import { TileLayer, Marker, Popup } from 'react-leaflet';
 
@@ -36,11 +38,11 @@ import { Route } from 'react-router-dom'
 import _ from 'underscore';
 // import usePoligono from "../usePoligono";
 
-const axiosResponse = require('./routes/response')
+let axiosResponse = require('./routes/response');
 
 const Tab1: React.FC = () => {
     //db
-    let [allData, setAllData] = useState(require('./src/databases/stitch.js'))
+    let [allData, setAllData] = useState(require('./src/databases/stitch.js'));
     //leaflet
     let [mymap, setMyMap] = useState(
         require('./src/controller/LeafletFrontend.js')

@@ -82,8 +82,8 @@ console.log(admin.app().name);  // '[DEFAULT]'
 console.log(otherApp.name);     // 'other'
 
 // Use the shorthand notation to retrieve the default app's services
-let defaultAuth = admin.auth();
-let defaultDatabase = admin.database();
+defaultAuth = admin.auth();
+defaultDatabase = admin.database();
 
 // Use the otherApp variable to retrieve the other app's services
 let otherAuth = otherApp.auth();
@@ -132,8 +132,11 @@ request(options, function (error, response, body) {
   console.log(body);
 });
 
+// const App: React.FC = () => (
+function App() {
 
-const {
+
+  const {
     isLoading,
     isAuthenticated,
     error,
@@ -142,16 +145,19 @@ const {
     logout,
   } = useAuth0();
 
-const App: React.FC = () => (
+// isAuthenticated = false;
+// isLoading = true;
 
-  if (isLoading) {
+if (isLoading) {
     return <div>Loading...</div>;
   }
   if (error) {
     return <div>Oops... {error.message}</div>;
 }
+  
 
 if (isAuthenticated) {
+
     return (
       
 
@@ -194,6 +200,7 @@ if (isAuthenticated) {
   }
 
   
-);
+// );
+};
 
 export default App;

@@ -4,6 +4,7 @@
     "bundledWebRuntime": true,
     "npmClient": "yarn",
     "webDir": "www",
+    "compress":true,
     "plugins": {
         "SplashScreen": {
             "launchShowDuration": 0

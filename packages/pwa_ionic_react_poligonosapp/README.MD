@@ -1,3 +1,7 @@
+npm run-script serve 
+
+npm run-script build
+
 npx ionic serve --address 0.0.0.0
 
 yarn run react-scripts start
