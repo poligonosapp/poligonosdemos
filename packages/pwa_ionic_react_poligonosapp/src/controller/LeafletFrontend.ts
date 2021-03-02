@@ -1,15 +1,19 @@
+// let LeafletFrontend;
+
 import L, { circle, CRS } from 'leaflet';
 
-const accessToken  = "process.env.LEAFLET_ACCESS_TOKEN";
+const accessToken = "process.env.LEAFLET_ACCESS_TOKEN";
+
+import jwt_decode from "jwt_decode";
 
 var decoded = jwt_decode(accessToken);
 
 console.log('token decoded');
 
 
-function fun(const hostname, const port) {
+export default function LeafletFrontend(hostname:string, port:number) {
     // Load HTTP module
-    const http = require('http')
+    const http = require('http');
 
     // const hostname = '127.0.0.1'
     // const hostname = 'https://www.poligonosapp.herokuapp.com'
@@ -22,14 +26,14 @@ function fun(const hostname, const port) {
 
         // Send the response body "Hello World"
         res.end('Hello World LeafletServer request\n')
-    })
+    });
 
     // Prints a log once the server starts listening
     server.listen(port, hostname, () => {
         console.log(`Server running at http://${hostname}:${port}/`)
-    })
+    });
 
-    let mymap = L.map('mapid').setView([51.505, -0.09], 13)
+    let mymap = L.map('mapid').setView([51.505, -0.09], 13);
 
     L.tileLayer(
         'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}',
@@ -42,81 +46,81 @@ function fun(const hostname, const port) {
             zoomOffset: -1,
             accessToken: 'process.env.LEAFLET_ACCESS_TOKEN',
         }
-    ).addTo(mymap)
+    ).addTo(mymap);
 
-    let marker = L.marker([51.5, -0.09]).addTo(mymap)
+    let marker = L.marker([51.5, -0.09]).addTo(mymap);
 
     let circle = L.circle([51.508, -0.11], {
         color: 'red',
         fillColor: '#f03',
         fillOpacity: 0.5,
         radius: 500,
-    }).addTo(mymap)
+    }).addTo(mymap);
 
     let polygon = L.polygon([
         [51.509, -0.08],
         [51.503, -0.06],
         [51.51, -0.047],
-    ]).addTo(mymap)
+    ]).addTo(mymap);
 
-    marker.bindPopup('<b>Hello world!</b><br>I am a popup.').openPopup()
-    circle.bindPopup('I am a circle.')
-    polygon.bindPopup('I am a polygon.')
+    marker.bindPopup('<b>Hello world!</b><br>I am a popup.').openPopup();
+    circle.bindPopup('I am a circle.');
+    polygon.bindPopup('I am a polygon.');
 
     let popup = L.popup()
         .setLatLng([51.5, -0.09])
         .setContent('I am a standalone popup.')
-        .openOn(mymap)
+        .openOn(mymap);
 
     function onMapClick(e) {
-        alert('You clicked the map at ' + e.latlng)
-        let polygon = require('./src/polygon.geojson')
-        popup.setLatLng(polygon[0].geometry.coordinates)
+        alert('You clicked the map at ' + e.latlng);
+        let polygon = require('./src/polygon.geojson');
+        popup.setLatLng(polygon[0].geometry.coordinates);
+        popup.setLatLng(e.latlng).setContent('You clicked the map at ' + e.latlng.toString()).openOn(mymap);
     }
 
-    mymap.on('click', onMapClick)
+    mymap.on('click', onMapClick);
 
     // let popup = L.popup();
 
-    function onMapClick(e) {
-        popup
-            .setLatLng(e.latlng)
-            .setContent('You clicked the map at ' + e.latlng.toString())
-            .openOn(mymap)
-    }
+    mymap.on('click', onMapClick);
 
-    mymap.on('click', onMapClick)
+    let express = require('express');
+    let cors = require('cors');
+    let app = express();
 
-    let express = require('express')
-    let cors = require('cors')
-    let app = express()
+    app.use(cors());
 
-    app.use(cors())
-
-    app.get('/products/:id', function (req, res, next) {
-        res.json({ msg: 'This is CORS-enabled for all origins!' })
+    app.get('/poligonos/:id', function (req, res, next) {
+        res.json({ msg: 'This is CORS-enabled for all origins!' });
     })
 
     app.listen(80, function () {
-        console.log('CORS-enabled web server listening on port 80')
+        console.log('CORS-enabled web server listening on port 80');
     })
 
     // express = require("express");
     // app = express();
 
     app.get('/', function (req, res) {
-        res.send('Hello World')
+        res.send('Hello World');
     })
 
     // const a = fetch(hostname);
     // return a.json
 
-    app.listen(3000)
+    app.listen(3000);
+
+    return mymap;
 }
 
 try {
-    fun('https://www.poligonosapp.herokuapp.com', 8000)
-    fun('127.0.0.1', 8000)
+    LeafletFrontend('https://www.poligonosapp.herokuapp.com', 8000);
+    LeafletFrontend('127.0.0.1', 8000);
 } catch (e) {
-    console.log('server fault')
+    console.log('server fault');
 }
+
+
+// module.exports = {};
+// default module export LeafletFrontend;

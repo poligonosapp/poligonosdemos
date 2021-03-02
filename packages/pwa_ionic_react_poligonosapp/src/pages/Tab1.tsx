@@ -38,14 +38,14 @@ import { Route } from 'react-router-dom'
 import _ from 'underscore';
 // import usePoligono from "../usePoligono";
 
-let axiosResponse = require('./routes/response');
+let axiosResponse = require('./response');
 
 const Tab1: React.FC = () => {
     //db
     let [allData, setAllData] = useState(require('./src/databases/stitch.js'));
     //leaflet
     let [mymap, setMyMap] = useState(
-        require('./src/controller/LeafletFrontend.js')
+        require('./controller/LeafletFrontend.ts')
     );
 
     setMyMap(axiosResponse);
