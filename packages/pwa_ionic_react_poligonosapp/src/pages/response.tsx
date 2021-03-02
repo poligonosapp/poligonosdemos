@@ -19,7 +19,7 @@ app.route('/poligonos')
         res.status(200)
 
         try {
-            axiosResponse = await axios("https://www.poligonosapp.herokuapp.com/api/v1/poligonos");
+            axiosResponse = await axios("process.env.endpoint");
             return axiosResponse;
         }
         catch (e) {

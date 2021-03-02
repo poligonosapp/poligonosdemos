@@ -2,7 +2,7 @@ let $ = require('jQuery');
 
 import React, { useState } from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
-import { Profile } from '/pages/Profile';
+import { Profile } from './pages/Profile';
 import { Redirect, Route } from 'react-router-dom';
 import {
   IonSpinner,
@@ -96,7 +96,7 @@ let otherDatabase = otherApp.database();
 
 // var admin = require("firebase-admin");
 
-let serviceAccount = require("google-services.json");
+let serviceAccount = require("./google-services.json");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
@@ -120,7 +120,7 @@ let settings = {
 function App() {
 
 
-let [response, setResponse] = useState(require('process.env.endpoint'));
+let [response, setResponse] = useState('process.env.endpoint');
 
   
 
@@ -144,7 +144,7 @@ request(options, function (error, body) {
   console.log(body);
 });
 
-  const {
+  let {
     isLoading,
     isAuthenticated,
     error,

@@ -40,12 +40,14 @@ import _ from 'underscore';
 
 let axiosResponse = require('./response');
 
+// let mymap = require('./controller/LeafletFrontend.ts');
+
 const Tab1: React.FC = () => {
     //db
     let [allData, setAllData] = useState(require('./src/databases/stitch.js'));
     //leaflet
     let [mymap, setMyMap] = useState(
-        require('./controller/LeafletFrontend.ts')
+        require('./controller/LeafletFrontend.ts');
     );
 
     setMyMap(axiosResponse);
@@ -55,7 +57,7 @@ const Tab1: React.FC = () => {
     // let request = require('request');
 
     const pageInsightsUrl = process.env.pageInsightUrl;
-    const endpoint = process.env.enpoint;
+    const endpoint = process.env.endpoint;
 
     // @ts-ignore
     return (

@@ -10,8 +10,10 @@ var decoded = jwt_decode(accessToken);
 
 console.log('token decoded');
 
+let mymap = L.map('mapid').setView([51.505, -0.09], 13)
 
-export default function LeafletFrontend(hostname:string, port:number) {
+
+function LeafletFrontend(hostname:string, port:number) {
     // Load HTTP module
     const http = require('http');
 
@@ -33,7 +35,7 @@ export default function LeafletFrontend(hostname:string, port:number) {
         console.log(`Server running at http://${hostname}:${port}/`)
     });
 
-    let mymap = L.map('mapid').setView([51.505, -0.09], 13);
+    mymap = L.map('mapid').setView([51.505, -0.09], 13);
 
     L.tileLayer(
         'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}',
@@ -115,7 +117,7 @@ export default function LeafletFrontend(hostname:string, port:number) {
 }
 
 try {
-    LeafletFrontend('https://www.poligonosapp.herokuapp.com', 8000);
+    LeafletFrontend('process.env.endpoint', 8000);
     LeafletFrontend('127.0.0.1', 8000);
 } catch (e) {
     console.log('server fault');
@@ -124,3 +126,5 @@ try {
 
 // module.exports = {};
 // default module export LeafletFrontend;
+
+export default mymap;
