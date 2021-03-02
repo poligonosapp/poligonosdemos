@@ -1,6 +1,6 @@
 {
   "name": "poligonosdemos",
-  "version": "1.5.7",
+  "version": "1.5.8",
   "private": true,
   "homepage": "https://www.poligonosapp.herokuapp.com",
   "nodemonConfig": {
@@ -62,11 +62,13 @@
     "@ionic/cli-plugin-proxy": "^1.5.8",
     "@ionic/pwa-elements": "^3.0.2",
     "@ionic/react": "^5.5.4",
+    "@ionic/react-router": "^5.5.5",
     "@jest/types": "^26.6.2",
     "@lerna/import": "^3.22.0",
     "@lerna/init": "^3.21.0",
     "@lerna/run": "^3.21.0",
     "@snyk/dep-graph": "^1.23.0",
+    "@testing-library/dom": "^7.29.6",
     "@types/concurrently": "^5.2.1",
     "@types/convert-string": "^0.1.1",
     "@types/history": "^4.7.8",
@@ -137,7 +139,8 @@
     "react-snap": "^1.23.0",
     "typescript": "^4.1.2",
     "webpack": "4.41.0",
-    "webpack-route-manifest": "^1.2.0"
+    "webpack-route-manifest": "^1.2.0",
+    "workbox-build": "^6.1.1"
   },
   "engines": {
     "node": "14.x",

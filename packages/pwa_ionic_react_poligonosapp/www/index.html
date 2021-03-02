@@ -53,6 +53,16 @@
     <body>
         <h1 id="target">Polígonos App</h1>
 
+        <script type="module">
+// Check that service workers are supported
+if ('serviceWorker' in navigator) {
+  // Use the window load event to keep the page load performant
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/service-worker.js');
+  });
+}
+</script>
+
         <!-- Include quicklink from dist -->
         <script type="module" src="dist/quicklink.umd.js"></script>
         <!-- Initialize (you can do this whenever you want) -->

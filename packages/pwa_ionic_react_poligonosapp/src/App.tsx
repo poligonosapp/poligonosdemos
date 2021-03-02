@@ -1,6 +1,8 @@
-import React from 'react';
+let $ = require('jQuery');
+
+import React, { useState } from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
-import {Profile} from '/pages/Profile.tsx'
+import { Profile } from '/pages/Profile';
 import { Redirect, Route } from 'react-router-dom';
 import {
   IonSpinner,
@@ -10,7 +12,8 @@ import {
   IonRouterOutlet,
   IonTabBar,
   IonTabButton,
-  IonTabs
+  IonTabs,
+  IonButton
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import { ellipse, square, triangle } from 'ionicons/icons';
@@ -57,7 +60,8 @@ admin.initializeApp({
 // var admin = require('firebase-admin');
 let app = admin.initializeApp();
 
-const defaultConfig = "process.env.DEFAULT_CONFIG";
+const defaultAppConfig = "process.env.DEFAULT_CONFIG";
+const otherAppConfig = "process.env.DEFAULT_CONFIG";
 
 // Initialize the default app
 let defaultApp = admin.initializeApp(defaultAppConfig);
@@ -111,10 +115,18 @@ let settings = {
   "data": "{\"client_id\":\"process.env.CLIENT_ID\",\"client_secret\":\"process.env.CLIENT_SECRET\",\"audience\":\"https://poligonosapp.herokuapp.com/\",\"grant_type\":\"client_credentials\"}"
 };
 
+
+// const App: React.FC = () => (
+function App() {
+
+
+let [response, setResponse] = useState(require('process.env.endpoint'));
+
+  
+
 $.ajax(settings).done(function (response) {
   console.log(response);
 });
-
 //Node
 let request = require("request");
 
@@ -126,15 +138,11 @@ let options = {
     '{"client_id":"process.env.CLIENT_ID","client_secret":"process.env.CLIENT_SECRET","audience": "https://poligonosapp.herokuapp.com/","grant_type": "client_credentials"}'
 };
 
-request(options, function (error, response, body) {
+request(options, function (error, body) {
   if (error) throw new Error(error);
 
   console.log(body);
 });
-
-// const App: React.FC = () => (
-function App() {
-
 
   const {
     isLoading,
@@ -176,11 +184,12 @@ if (isAuthenticated) {
             <IonLabel>Tab 1</IonLabel>
             <IonSpinner />
             Hello {user.name}{' '}
-        <button onClick={() => logout({ returnTo: window.location.origin })}>
+        <IonButton onClick={() => logout({ returnTo: window.location.origin })}>
           Log out
-        </button>
+        </IonButton>
 
-<Profile/>
+                <Profile props={user}/>
+                
           </IonTabButton>
           <IonTabButton tab="tab2" href="/tab2">
             <IonIcon icon={ellipse} />
@@ -196,7 +205,7 @@ if (isAuthenticated) {
   </IonApp>
     );
   } else {
-    return <button onClick={loginWithRedirect}>Log in</button>;
+    return <IonButton onClick={() => loginWithRedirect}>Log in</IonButton>;
   }
 
   

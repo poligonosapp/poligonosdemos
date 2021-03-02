@@ -1,6 +1,6 @@
 {
     "name": "@poligonosdemos/pwa_ionic_react_poligonosapp",
-    "version": "1.5.7",
+    "version": "1.5.8",
     "description": "poligonosapp",
     "engines": {
         "node": "14.x",
@@ -85,7 +85,6 @@
         "@types/express": "^4.17.9",
         "@types/geojson": "^7946.0.7",
         "@types/jest": "^26.0.19",
-        "@types/leaflet": "^1.5.21",
         "@types/leaflet-draw": "^1.0.3",
         "@types/mongoose": "^5.10.3",
         "@types/node-fetch": "^2.5.7",
@@ -247,6 +246,7 @@
         "@storybook/react": "^6.1.15",
         "@testing-library/dom": "7.9.4",
         "@testing-library/react": "^9.5.0",
+        "@types/leaflet": "^1.5.23",
         "@types/node": "^14.14.22",
         "babel-eslint": "^10.1.0",
         "babel-jest": "^26.6.3",
