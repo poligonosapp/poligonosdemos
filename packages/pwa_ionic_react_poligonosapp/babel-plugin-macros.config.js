@@ -1,4 +1,4 @@
-// babel-plugin-macros.config.js
+// babel-plugin-macros.config.ts
 module.exports = {
     // ...
     // Other macros config

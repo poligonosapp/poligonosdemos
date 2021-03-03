@@ -1,3 +1,5 @@
+npm install realm-graphql-client --save
+
 npm run-script serve 
 
 npm run-script build

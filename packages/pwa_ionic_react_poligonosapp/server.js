@@ -3,7 +3,7 @@ let cors = require('cors')
 const webpack = require('webpack');
 const webpackDevMiddleware = require('webpack-dev-middleware');
 
-const jwtSecret = require('./config/config.js');
+const jwtSecret = require('./config/config.ts');
 
 const jwt = require("express-jwt");
 import jwt_decode from 'jwt-decode';
@@ -48,7 +48,7 @@ const compiler = webpack(config);
 app.use(cors())
 app.use(logger('dev'))
 
-// Tell express to use the webpack-dev-middleware and use the webpack.config.js
+// Tell express to use the webpack-dev-middleware and use the webpack.config.ts
 // configuration file as a base.
 app.use(
   webpackDevMiddleware(compiler, {

@@ -75,7 +75,7 @@ module.exports = () => {
         },
         resolve: {
             alias: {
-                config$: './configs/app-config.js',
+                config$: './configs/app-config.ts',
                 react: './vendor/react-master',
             },
             extensions: ['', 'js', 'jsx'],
@@ -116,7 +116,7 @@ module.exports = () => {
         target: ['web', 'es2017'],
         resolve: {
             alias: {
-                config$: './configs/app-config.js',
+                config$: './configs/app-config.ts',
                 react: './vendor/react-master',
             },
             extensions: [

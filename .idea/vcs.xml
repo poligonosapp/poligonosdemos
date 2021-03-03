@@ -2,6 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ecsworkshop" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/packages/pwa_ionic_react_poligonosapp/mongodb-kubernetes-operator" vcs="Git" />
   </component>
 </project>

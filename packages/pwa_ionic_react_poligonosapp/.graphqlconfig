@@ -10,7 +10,7 @@
         },
         "introspect": true
       },
-      "Default GraphQL Endpoint": {
+      "GET ID GraphQL Endpoint": {
         "url": "https://poligonosapp.herokuapp.com/api/v1/poligono:id",
         "headers": {
           "user-agent": "JS GraphQL"

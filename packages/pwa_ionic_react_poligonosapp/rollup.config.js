@@ -1,4 +1,4 @@
-// rollup.config.js
+// rollup.config.ts
 import {getBabelOutputPlugin} from '@rollup/plugin-babel';
 
 export default {

@@ -26,11 +26,14 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx",
+    "jsx": "react",
     "noFallthroughCasesInSwitch": true
   },
   "include": [
     "src",
-    "relay.config.js"
+    "relay.config.js",
+    "poligono.graphql",
+    "poligono-geojson-graphql.ts",
+    "polygon.geojson"
   ]
 }

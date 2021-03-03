@@ -61,7 +61,7 @@ admin.initializeApp({
 let app = admin.initializeApp();
 
 const defaultAppConfig = "process.env.DEFAULT_CONFIG";
-const otherAppConfig = "process.env.DEFAULT_CONFIG";
+const otherAppConfig = "process.env.OTHER_APP_CONFIG";
 
 // Initialize the default app
 let defaultApp = admin.initializeApp(defaultAppConfig);
