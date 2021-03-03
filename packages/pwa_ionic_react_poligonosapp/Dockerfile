@@ -9,11 +9,11 @@ WORKDIR /app
 
 COPY package.json .
 
-RUN yarn install
+RUN npm install
 
 COPY . .
 
-RUN yarn build
+RUN npm build
 
 # ---------------
 
@@ -27,7 +27,7 @@ WORKDIR /app
 
 COPY --from=build /app/package.json .
 
-RUN yarn install --production
+RUN npm install --production
 
 COPY --from=build /app/build ./build
 COPY --from=build /app/src/auth_config.json ./src/auth_config.json
@@ -56,7 +56,7 @@ RUN npm i
 # Bundle app source
 COPY . .
 EXPOSE 8080
-CMD ["yarn","start"]
+CMD ["npm","start"]
 
 
 

@@ -1,9 +1,9 @@
 // import '././css/main.css';
 // import { accessToken } from '../utils/accessToken';
 
-const accessToken = require('process.env.LEAFLET_ACCESS_TOKEN');
+// const accessToken = 'process.env.LEAFLET_ACCESS_TOKEN';
 
-import { TileLayer, Marker, Popup } from 'react-leaflet';
+// import { TileLayer, Marker, Popup } from 'react-leaflet';
 
 import L, { circle, CRS } from 'leaflet';
 
@@ -33,31 +33,34 @@ import {
 
 import './Tab1.css'
 // import Login from "../components/Login";
-import { Route } from 'react-router-dom'
+// import { Route } from 'react-router-dom'
 
-import _ from 'underscore';
+// import _ from 'underscore';
 // import usePoligono from "../usePoligono";
 
 let axiosResponse = require('./response');
 
 // let mymap = require('./controller/LeafletFrontend.ts');
+let mymap = L.map('mapid').setView([51.505, -0.09], 13);
+//let f = require('./controller/LeafletFrontend.ts');
 
 const Tab1: React.FC = () => {
     //db
-    let [allData, setAllData] = useState(require('./src/databases/stitch.js'));
+    let [allData, setAllData] = useState(require('./src/databases/atlas/stitch.js'));
+
+    console.log(allData);
+    
     //leaflet
-    let [mymap, setMyMap] = useState(
-        require('./controller/LeafletFrontend.ts');
-    );
+     let [mymap, setMyMap] = useState(require('./controller/LeafletFrontend.ts').fun(mymap));
 
-    setMyMap(axiosResponse);
+     setMyMap(axiosResponse);
 
-    const jwtToken = require('jsonwebtoken');
+    // const jwtToken = require('jsonwebtoken');
 
     // let request = require('request');
 
-    const pageInsightsUrl = process.env.pageInsightUrl;
-    const endpoint = process.env.endpoint;
+    // const pageInsightsUrl = process.env.pageInsightUrl;
+    // const endpoint = process.env.endpoint;
 
     // @ts-ignore
     return (
@@ -74,12 +77,10 @@ const Tab1: React.FC = () => {
                         <IonTitle size="large">Tab 1</IonTitle>
                     </IonToolbar>
                 </IonHeader>
-
-                {allData}
                 {mymap}
             </IonContent>
         </IonPage>
-    )
+    );
 }
 
-export default Tab1
+export default Tab1;

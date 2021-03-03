@@ -31,3 +31,6 @@ try{
 }catch(e){
     alert('Erro de inicialização');
 }
+
+module.exports = {};
+

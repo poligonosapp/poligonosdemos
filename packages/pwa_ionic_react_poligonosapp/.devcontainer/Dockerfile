@@ -43,7 +43,7 @@ ENV SERVER_PORT=3000
 ENV API_PORT=3001
 ENV NODE_ENV production
 
-CMD ["yarn", "prod"]
+CMD ["npm", "prod"]
 
 
 FROM node:14-alpine
@@ -58,7 +58,7 @@ RUN npm i
 # Bundle app source
 COPY . .
 EXPOSE 8080
-CMD ["yarn","start"]
+CMD ["npm","start"]
 
 
 

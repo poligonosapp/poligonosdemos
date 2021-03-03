@@ -21,7 +21,11 @@ import com.google.android.gms.ads.initialization.OnInitializationCompleteListene
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
+import android.util.Log;
+
 public class MainActivity extends BridgeActivity {
+
+  private static final String TAG = MyActivity.class.getSimpleName();
 
   private AdView mAdView;
 
@@ -35,6 +39,15 @@ public class MainActivity extends BridgeActivity {
   @Override
   public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
+
+    if (savedInstanceState != null) {
+      Log.d(TAG, "onCreate() Restoring previous state");
+      /* restore state */
+    } else {
+      Log.d(TAG, "onCreate() No saved state available");
+      /* initialize app */
+    }
+
 //ionic capacitor admob community
     this.init(savedInstanceState, new ArrayList<Class<? extends Plugin>>() {{
 

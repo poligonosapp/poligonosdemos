@@ -65,5 +65,8 @@ export default function fun() {
             .openOn(mymap)
     }
 
-    mymap.on('click', onMapClick2)
+    mymap.on('click', onMapClick2);
+
+
+    return mymap;
 }

@@ -1,6 +1,6 @@
 {
   "name": "poligonosdemos",
-  "version": "1.5.9",
+  "version": "1.6.1",
   "private": true,
   "homepage": "https://www.poligonosapp.herokuapp.com",
   "nodemonConfig": {
@@ -68,7 +68,7 @@
     "@lerna/init": "^3.21.0",
     "@lerna/run": "^3.21.0",
     "@snyk/dep-graph": "^1.23.0",
-    "@testing-library/dom": "^7.29.6",
+    "@testing-library/dom": "7.29.6",
     "@types/concurrently": "^5.2.1",
     "@types/convert-string": "^0.1.1",
     "@types/history": "^4.7.8",
@@ -96,6 +96,7 @@
     "http": "^0.0.1-security",
     "http-proxy-middleware": "^1.0.6",
     "joi": "^17.4.0",
+    "jsmin": "^1.0.1",
     "jwt-decode": "^3.1.2",
     "leaflet": "^1.7.1",
     "lerna": "^3.22.1",

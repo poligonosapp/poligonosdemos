@@ -1,7 +1,10 @@
 ext {
+    cucumberVersion 4.8.3
+    rootProject.ext.compileSdkVersion = 29
     minSdkVersion = 21
-    compileSdkVersion = 29
-    targetSdkVersion = 29
+    compileSdkVersion = 28
+    targetSdkVersion = 28
+    supportLibVersion = "28.0.0"
     androidxAppCompatVersion = '1.2.0'
     androidxCoreVersion =  '1.2.0'
     androidxMaterialVersion =  '1.1.0-rc02'

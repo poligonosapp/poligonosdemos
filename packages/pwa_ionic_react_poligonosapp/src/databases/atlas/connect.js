@@ -5,7 +5,7 @@ const { MongoClient } = require('mongodb')
 
 
 const atlasConnect =
-    'mongodb+srv://fail:c0nKakckwLdYTwCE@cluster0.neyhi.gcp.mongodb.net/<dbname>?retryWrites=true&w=majority'
+    'mongodb+srv://fail:process.env.PASSWORD@cluster0.neyhi.gcp.mongodb.net/Shapefiles?retryWrites=true&w=majority'
 
 const client = new MongoClient(atlasConnect);
 

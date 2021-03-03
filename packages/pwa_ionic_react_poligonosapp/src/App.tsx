@@ -2,7 +2,7 @@ let $ = require('jQuery');
 
 import React, { useState } from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
-import { Profile } from './pages/Profile';
+// import { Profile } from './pages/Profile';
 import { Redirect, Route } from 'react-router-dom';
 import {
   IonSpinner,
@@ -188,7 +188,7 @@ if (isAuthenticated) {
           Log out
         </IonButton>
 
-                <Profile props={user}/>
+                
                 
           </IonTabButton>
           <IonTabButton tab="tab2" href="/tab2">

@@ -15,7 +15,7 @@ ENV PORT 80
 EXPOSE 80
 
 # Launch application
-CMD ["yarn","start"]
+CMD ["npm","start"]
 
 FROM node:14-alpine
 
@@ -23,4 +23,4 @@ WORKDIR /usr/src/app
 ADD . /usr/src/app
 RUN yarn i
 EXPOSE 8080
-CMD ["yarn","start"]
+CMD ["npm","start"]
