@@ -4,13 +4,11 @@ const { MongoClient } = require('mongodb')
 // const url = "mongodb+srv://<username>:<password>@clustername.mongodb.net/test?retryWrites=true&w=majority&useNewUrlParser=true&useUnifiedTopology=true";
 
 
-const atlasConnect =
-    'mongodb+srv://fail:process.env.PASSWORD@cluster0.neyhi.gcp.mongodb.net/Shapefiles?retryWrites=true&w=majority'
+const atlasConnect = 'process.env.CONNECT';
 
 const client = new MongoClient(atlasConnect);
 
-let grapqhlRealmEndpoint =
-    'https://realm.mongodb.com/api/client/v2.0/app/realm-mobile-application-0-kqjzm/graphql';
+let grapqhlRealmEndpoint = 'process.env.GRAPHQL_ENDPOINT';
 
 async function run() {
     try {

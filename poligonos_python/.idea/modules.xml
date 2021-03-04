@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/graphql-in-the-python-world/.idea/graphql-in-the-python-world.iml" filepath="$PROJECT_DIR$/graphql-in-the-python-world/.idea/graphql-in-the-python-world.iml" />
+      <module fileurl="file://$PROJECT_DIR$/poligonosAppPythonProject/.idea/poligonosAppPythonProject.iml" filepath="$PROJECT_DIR$/poligonosAppPythonProject/.idea/poligonosAppPythonProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/poligonos_python.iml" filepath="$PROJECT_DIR$/.idea/poligonos_python.iml" />
+    </modules>
+  </component>
+</project>

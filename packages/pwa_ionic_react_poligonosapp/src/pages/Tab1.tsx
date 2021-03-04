@@ -9,6 +9,8 @@ import L, { circle, CRS } from 'leaflet';
 
 // import './src/components/Login';
 
+import SetupStoryBook from './stories/SetupStoryBook';
+
 import React, {
     FC,
     useState,
@@ -49,11 +51,17 @@ const Tab1: React.FC = () => {
     let [allData, setAllData] = useState(require('./src/databases/atlas/stitch.js'));
 
     console.log(allData);
-    
-    //leaflet
-     let [mymap, setMyMap] = useState(require('./controller/LeafletFrontend.ts').fun(mymap));
 
-     setMyMap(axiosResponse);
+    const [state, setState] = useState(() => {
+
+        const initialState = require('./controller/LeafletFrontend.ts').fun(mymap);
+
+        return initialState;
+
+    });
+
+    //storybook
+    <SetupStoryBook props={setState(axiosResponse)}/>
 
     // const jwtToken = require('jsonwebtoken');
 
