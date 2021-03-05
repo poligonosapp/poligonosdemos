@@ -31,7 +31,7 @@
   },
   "include": [
     "src",
-    "relay.config.js",
+    "relay.config",
     "poligono.graphql",
     "poligono-geojson-graphql.ts",
     "polygon.geojson"

@@ -6,8 +6,8 @@ app.get('/', (request, response) => {
   response.sendFile(path.resolve('index.html'));
 });
 
-app.get('/sw.js', (request, response) => {
-  response.sendFile(path.resolve('sw.js'));
+app.get('/sw.ts', (request, response) => {
+  response.sendFile(path.resolve('sw.ts'));
 });
 
 app.use(express.static('public'));

@@ -1,44 +1,44 @@
-const webpack = require('webpack')
-const path = require('path')
-const PUBLIC_DIR = 'public'
+const webpack = require('webpack');
+const path = require('path');
+const PUBLIC_DIR = 'public';
 
-const HTMLWebpackPlugin = require('html-webpack-plugin')
+const HTMLWebpackPlugin = require('html-webpack-plugin');
 
 // const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const DashboardPlugin = require('webpack-dashboard/plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const DashboardPlugin = require('webpack-dashboard/plugin');
 
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
     .BundleAnalyzerPlugin
 
-const mainCss = require('./css/main.css')
+const mainCss = require('./css/main.css');
 
-const prettier = require('prettier/standalone')
-const plugins = [require('prettier/parser-graphql')]
+const prettier = require('prettier/standalone');
+const plugins = [require('prettier/parser-graphql')];
 prettier.format('type Query { hello: String }', {
     parser: 'graphql',
     plugins,
-})
+});
 
-const WorkboxPlugin = require('workbox-webpack-plugin')
+const WorkboxPlugin = require('workbox-webpack-plugin');
 
 // const path = require('path');
 // const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
-const TerserPlugin = require('terser-webpack-plugin')
+const TerserPlugin = require('terser-webpack-plugin');
 
 // const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const WebpackManifestPlugin = require('webpack-manifest-plugin')
-const options = {  }
+const WebpackManifestPlugin = require('webpack-manifest-plugin');
+const options = {  };
 //modern javascript google developers
-const OptimizePlugin = require('optimize-plugin')
-const BabelEsmPlugin = require('babel-esm-plugin')
-const ModernNpmPlugin = require('webpack-plugin-modern-npm')
+const OptimizePlugin = require('optimize-plugin');
+const BabelEsmPlugin = require('babel-esm-plugin');
+const ModernNpmPlugin = require('webpack-plugin-modern-npm');
 
-//server.js
+//server.ts
 //const webpackDevMiddleware = require('webpack-dev-middleware');
 
 const argv = require('webpack-nano/argv');

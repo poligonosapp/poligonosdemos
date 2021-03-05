@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cde970d7-a669-44f7-acd4-f5c427e10b39" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ecsworkshop" beforeDir="false" afterPath="$PROJECT_DIR$/../../ecsworkshop" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lerna.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../lerna.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PoligonosApp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../PoligonosApp/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/LeafletFrontend.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/LeafletFrontend.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Tab1.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Tab1.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +76,8 @@
       <workItem from="1614786951070" duration="8206000" />
       <workItem from="1614847703459" duration="3376000" />
       <workItem from="1614854024486" duration="1115000" />
+      <workItem from="1614907899334" duration="580000" />
+      <workItem from="1614936007627" duration="326000" />
     </task>
     <servers />
   </component>

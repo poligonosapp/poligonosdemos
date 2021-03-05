@@ -4,7 +4,7 @@ const path = require('path');
 
  module.exports = {
    entry: {
-     app: './src/index.js',
+     app: './src/index.tsx',
    },
    plugins: [
      // new CleanWebpackPlugin(['dist/*']) for < v2 versions of CleanWebpackPlugin
@@ -14,7 +14,7 @@ const path = require('path');
      }),
    ],
    output: {
-     filename: '[name].bundle.js',
+     filename: '[name].bundle.ts',
      path: path.resolve(__dirname, 'dist'),
    },
  };

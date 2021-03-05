@@ -1,4 +1,4 @@
-const { MongoClient } = require('mongodb')
+const { MongoClient } = require('mongodb');
 
 // Replace the following with your Atlas connection string
 // const url = "mongodb+srv://<username>:<password>@clustername.mongodb.net/test?retryWrites=true&w=majority&useNewUrlParser=true&useUnifiedTopology=true";
@@ -12,13 +12,13 @@ let grapqhlRealmEndpoint = 'process.env.GRAPHQL_ENDPOINT';
 
 async function run() {
     try {
-        await client.connect()
-        console.log('Connected correctly to Atlas server')
+        await client.connect();
+        console.log('Connected correctly to Atlas server');
     } catch (err) {
-        console.log(err.stack)
+        console.log(err.stack);
     } finally {
-        await client.close()
+        await client.close();
     }
 }
 
-run().catch(console.dir)
+run().catch(console.dir);

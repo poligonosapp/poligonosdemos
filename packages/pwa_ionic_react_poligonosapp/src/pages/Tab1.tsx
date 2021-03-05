@@ -48,7 +48,7 @@ let mymap = L.map('mapid').setView([51.505, -0.09], 13);
 
 const Tab1: React.FC = () => {
     //db
-    let [allData, setAllData] = useState(require('./src/databases/atlas/stitch.js'));
+    let [allData, setAllData] = useState(require('./src/databases/atlas/stitch.ts'));
 
     console.log(allData);
 

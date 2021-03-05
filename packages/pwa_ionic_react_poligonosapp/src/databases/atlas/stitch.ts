@@ -1,7 +1,7 @@
-let server = require('./server.js');
-let routes = require('./routes.js');
-let connect = require('./connect.js');
-let allData = require('./find_all_data.js');
+let server = require('./server.ts');
+let routes = require('./routes/index.tsx');
+let connect = require('./connect.ts');
+let allData = require('./find_all_data.ts');
 
 const client = stitch.Stitch.initializeDefaultAppClient(
     'process.env.REALM_WEB_ID'
@@ -36,4 +36,4 @@ client.auth
         return;
     });
 
-module.exports = {}
+module.exports = {};

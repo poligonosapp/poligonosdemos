@@ -42,7 +42,7 @@ const authConfig = require("./src/auth_config.json");
 
 const app = express();
 app.use(cors);
-const config = require('./webpack.config.js');
+const config = require('./webpack.config.ts');
 const compiler = webpack(config);
 
 app.use(cors())

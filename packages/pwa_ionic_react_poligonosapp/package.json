@@ -1,6 +1,6 @@
 {
     "name": "@poligonosdemos/pwa_ionic_react_poligonosapp",
-    "version": "1.6.5",
+    "version": "1.6.6",
     "description": "poligonosapp",
     "engines": {
         "node": "14.x",
@@ -31,8 +31,8 @@
         "flow": "flow",
         "serve": "npx ionic serve yarn run react-scripts start auth start watch",
         "watch": "watch",
-        "auth": "nodemon src/server.js node src/server.js npm start",
-        "start": "expo start npx http-server dist npx run webpack serve --config webpack.config.js",
+        "auth": "nodemon src/server.ts node src/server.ts npm start",
+        "start": "start http-server dist webpack serve --config webpack.config.ts",
         "start_inspect": "node stopOnEntry .bin/www",
         "express:start": "node ./bin/www",
         "express:devstart": "nodemon ./bin/www",

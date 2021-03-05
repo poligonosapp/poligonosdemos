@@ -3,5 +3,5 @@ module.exports = {
   "globPatterns": [
     "**/*.{js,html}"
   ],
-  "swDest": "dist/sw.js"
+  "swDest": "dist/sw.ts"
 };

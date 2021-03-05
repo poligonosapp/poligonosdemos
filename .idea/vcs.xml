@@ -4,5 +4,6 @@
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/ecsworkshop" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/packages/pwa_ionic_react_poligonosapp/mongodb-kubernetes-operator" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/poligonos_python/graphql-in-the-python-world" vcs="Git" />
   </component>
 </project>

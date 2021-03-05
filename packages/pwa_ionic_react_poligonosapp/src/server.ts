@@ -1,12 +1,12 @@
-var express     = require('express');
-var bodyParser  = require('body-parser');
-var passport	= require('passport');
-var mongoose    = require('mongoose');
-var config      = require('./config/config');
-var port        = process.env.PORT || 5000; 
-var cors        = require('cors');
+let express     = require('express');
+let bodyParser  = require('body-parser');
+let passport	= require('passport');
+let mongoose    = require('mongoose');
+let config      = require('./config/config');
+let port        = process.env.PORT || 5000;
+let cors        = require('cors');
  
-var app = express();
+let app = express();
 app.use(cors());
  
 // get our request parameters
@@ -15,7 +15,7 @@ app.use(bodyParser.json());
  
 // Use the passport package in our application
 app.use(passport.initialize());
-var passportMiddleware = require('./middleware/passport');
+let passportMiddleware = require('./middleware/passport');
 passport.use(passportMiddleware);
  
 // Demo Route (GET http://localhost:5000)
@@ -23,7 +23,7 @@ app.get('/', function(req, res) {
   return res.send('Hello! The API is at http://localhost:' + port + '/api');
 });
  
-var routes = require('./routes');
+let routes = require('./routes');
 app.use('/api', routes);
  
 mongoose.connect(config.db, { useNewUrlParser: true , useCreateIndex: true});
@@ -41,4 +41,4 @@ connection.on('error', (err) => {
  
 // Start the server
 app.listen(port);
-console.log('There will be dragons: http://localhost:' + port)
+console.log('There will be dragons: http://localhost:' + port);

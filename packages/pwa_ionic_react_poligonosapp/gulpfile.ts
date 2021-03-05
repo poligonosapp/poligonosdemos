@@ -6,7 +6,7 @@ gulp.task('service-worker', () => {
     return workboxBuild.generateSW({
         globDirectory: 'build',
         globPatterns: ['**/*.{html,json,js,css}'],
-        swDest: 'build/sw.js',
+        swDest: 'build/sw.ts',
     })
 })
 
