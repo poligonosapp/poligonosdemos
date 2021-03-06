@@ -3,16 +3,14 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-console.log('\n webpack exists to read src index js \n');
+console.log('\n webpack exists to read src index js \n')
 
 import _ from 'lodash';
 import printMe from './print.js';
 
-const $ = require('jquery');
-
 
 try{
-    render(<App />, document.getElementById('root'));
+    render(<App />, document.getElementById('root'))
 	
 	serviceWorker.unregister()
 	
@@ -21,17 +19,18 @@ try{
         navigator.serviceWorker
             .register('/service-worker.js')
             .then((registration) => {
-                console.log('SW registered: ', registration);
+                console.log('SW registered: ', registration)
             })
             .catch((registrationError) => {
-                console.log('SW registration failed: ', registrationError);
+                console.log('SW registration failed: ', registrationError)
             })
     })
 }
 	
 	
 }catch(e){
-    $.alert('Erro de inicialização');
+    alert('Erro de inicialização');
 }
 
 module.exports = {};
+

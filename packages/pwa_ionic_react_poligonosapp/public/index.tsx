@@ -3,14 +3,17 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-console.log('\n webpack exists to read src index js \n')
+console.log('\n firebase gtag dynamic token typescript \n');
 
 import _ from 'lodash';
-import printMe from './print.js';
+
+let printMe = require('./print.ts');
+
+printMe();
 
 
 try{
-    render(<App />, document.getElementById('root'))
+    render(<App />, document.getElementById('root'));
 	
 	serviceWorker.unregister()
 	

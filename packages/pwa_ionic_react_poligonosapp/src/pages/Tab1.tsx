@@ -9,7 +9,7 @@ import L, { circle, CRS } from 'leaflet';
 
 // import './src/components/Login';
 
-import SetupStoryBook from './stories/SetupStoryBook';
+let YourComponent  = require('./src/stories/SetupStoryBook.ts');
 
 import React, {
     FC,
@@ -54,14 +54,14 @@ const Tab1: React.FC = () => {
 
     const [state, setState] = useState(() => {
 
-        const initialState = require('./controller/LeafletFrontend.ts').fun(mymap);
+        const initialState = require('./src/controller/LeafletFrontend.ts').fun(mymap);
 
         return initialState;
 
     });
 
     //storybook
-    <SetupStoryBook props={setState(axiosResponse)}/>
+    
 
     // const jwtToken = require('jsonwebtoken');
 
@@ -85,7 +85,11 @@ const Tab1: React.FC = () => {
                         <IonTitle size="large">Tab 1</IonTitle>
                     </IonToolbar>
                 </IonHeader>
+
+                <YourComponent props={setState(axiosResponse)} />
+                
                 {mymap}
+                
             </IonContent>
         </IonPage>
     );

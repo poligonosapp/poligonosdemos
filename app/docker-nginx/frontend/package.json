@@ -1,6 +1,6 @@
 {
   "name": "@poligonosdemos/ronin-ui",
-  "version": "1.1.5",
+  "version": "1.6.8",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^7.29.4",
@@ -16,10 +16,9 @@
   },
   "proxy": "http://localhost:8080",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "start",
+    "build": "build",
+    "test": "test"
   },
   "eslintConfig": {
     "extends": "react-app"

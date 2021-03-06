@@ -99,7 +99,7 @@ module.exports = () => {
         },
         devtool: 'inline-source-map',
         entry: {
-            app: ['./app.js'],
+            app: ['./app.ts'],
             admin: ['./adminApp.js'],
         },
         output: {
@@ -307,7 +307,7 @@ module.exports = () => {
                 },
             ],
         },
-        entry: './src/index.js',
+        entry: './src/index.ts',
         output: {
             path: __dirname + '/dist',
             filename: 'index_bundle.js',

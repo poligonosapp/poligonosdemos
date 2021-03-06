@@ -1,8 +1,8 @@
 {
   "name": "@poligonosdemos/z-app-name",
-  "version": "1.1.5",
+  "version": "1.6.8",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.ts"
   },
   "dependencies": {
     "ronin-mocks": "^0.1.6",

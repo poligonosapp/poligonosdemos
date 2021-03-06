@@ -1,12 +1,12 @@
 {
-    "version": "1.6.6",
+    "version": "1.6.7",
     "useWorkspaces": true,
     "private": true,
     "license": "Apache License 2.0",
     "type": "module",
     "types": "index",
-    "exports": "./index.js",
-    "main": "./index.js",
+    "exports": "./index.tsx",
+    "main": "./index.tsx",
     "dependencies": {
         "react": "17.0.1",
         "typescript": "^4.1.2"

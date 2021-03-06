@@ -11,6 +11,8 @@ import React, {Component} from 'react';
 
 let decoded = jwt_decode(accessToken);
 
+let mymapAux = require('./frontend');
+
 console.log('token decoded');
 
 // let mymap = L.map('mapid').setView([51.505, -0.09], 13);
@@ -20,7 +22,7 @@ class LeafletFrontend extends Component{
         super(props);
 
         this.state = {
-            mymap = props.mymap;
+            mymap = mymapAux('process.env.HOST','process.env.PORT',props.mymap);
         }
 
     }

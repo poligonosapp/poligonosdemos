@@ -1,4 +1,4 @@
-let $ = require('jQuery');
+let $ = require('jquery');
 
 import React, { useState } from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
@@ -49,7 +49,19 @@ admin.initializeApp({
   databaseURL: 'https://poligonosapp-default-rtdb.firebaseio.com/'
 });
 
-let refreshToken = "process.env.FIREBASE_REFRESH_TOKEN"; // Get refresh token from OAuth2 flow
+private let refreshToken;
+
+firebase.auth().currentUser.getIdToken(/* forceRefresh */ true).then(function (idToken) {
+  // Send token to your backend via HTTPS
+  // ...
+
+refreshToken = admin.initializeApp();// new token 
+
+}).catch(function(error) {
+  // Handle error
+});
+
+// "process.env.FIREBASE_REFRESH_TOKEN"=refreshToken; // Get refresh token from OAuth2 flow
 
 admin.initializeApp({
   credential: admin.credential.refreshToken(refreshToken),

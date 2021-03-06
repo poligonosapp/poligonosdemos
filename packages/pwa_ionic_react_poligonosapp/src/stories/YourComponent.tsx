@@ -16,7 +16,6 @@ import {
     IonButton
 } from '@ionic/react';
 
-import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Alert, AlertTitle } from '@material-ui/lab';
 
@@ -28,7 +27,7 @@ class YourComponent extends Component{
         this.state = {
 
             try{
-                mymap :  require('./controller/LeafletFrontend.ts').fun( (typeof L.Map)props.mymap );
+                mymap :  require('./controller/LeafletFrontend.ts').fun( (typeof L.Map) this.props.mymap );
             }catch(e){
 
         }
