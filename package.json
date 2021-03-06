@@ -1,6 +1,6 @@
 {
   "name": "poligonosdemos",
-  "version": "1.6.7",
+  "version": "1.6.8",
   "private": true,
   "homepage": "https://www.poligonosapp.herokuapp.com",
   "nodemonConfig": {
@@ -131,6 +131,7 @@
   "devDependencies": {
     "@shelf/jest-mongodb": "^1.2.3",
     "@tsconfig/node14": "^1.0.0",
+    "@types/jest": "^26.0.20",
     "@types/node": "^14.14.22",
     "@types/react": "^16.9.17",
     "@types/react-dom": "^16.9.10",

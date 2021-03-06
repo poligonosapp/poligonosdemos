@@ -14,7 +14,7 @@ const $ = require('jquery');
 try{
     render(<App />, document.getElementById('root'));
 	
-	serviceWorker.unregister()
+	serviceWorker.unregister();
 	
 	if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {

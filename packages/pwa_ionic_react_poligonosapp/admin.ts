@@ -1,8 +1,8 @@
-let createError = require('http-errors')
-let express = require('express')
-//cors
-let cors = require('cors')
-let path = require('path')
+let createError = require('http-errors');
+let express = require('express');
+//cors;
+let cors = require('cors');
+let path = require('path');
 let cookieParser = require('cookie-parser');
 let logger = require('morgan');
 
@@ -11,8 +11,10 @@ let adminRouter = require('./routes/admin.ts');
 
 let adminApp = express();
 
-app.use(cors());
-app.use(logger('dev'));
+let server = require('http').Server(adminApp);
+
+adminApp.use(cors());
+adminApp.use(logger('dev'));
 
 // view engine setup
 adminApp.set('views', path.join(__dirname, 'views'));
@@ -22,7 +24,9 @@ adminApp.use(logger('dev'));
 adminApp.use(express.json());
 adminApp.use(express.urlencoded({ extended: false }));
 adminApp.use(cookieParser());
-adminApp.use(express.static(path.join(__dirname, 'public')));
+adminApp.use(express.static(path.join(__dirname, 'public')));//docker dashboard webpack ^4 webpack ^5
+
+adminApp.get('/', (req, res) => res.sendFile(path.join(__dirname, 'index.html')));
 
 adminApp.use('/', indexRouter);
 adminApp.use('/admin', adminRouter);
@@ -43,4 +47,4 @@ adminApp.use(function (err, req, res, next) {
     res.render('error')
 })
 
-module.exports = adminApp
+module.exports = adminApp;

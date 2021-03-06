@@ -44,7 +44,7 @@ describe('GET /poligono', function () {
 describe('GET /poligonos', function () {
     it('responds with json', function () {
         return request(app)
-            .get('/poligonos')
+            .get('process.env.enpoint'.concat('/api/v1/poligonos'))
             .set('Accept', 'application/json')
             .expect('Content-Type', /geojson/)
             .expect(200)
