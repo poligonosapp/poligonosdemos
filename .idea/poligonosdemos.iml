@@ -6,5 +6,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="pwa_ionic_react_poligonosapp" />
+    <orderEntry type="module" module-name="PoligonosApp" />
   </component>
 </module>

@@ -11,6 +11,7 @@ app.use(logger('dev'))
 
 app.get('/poligonos/:id', async function (req, res, next) {
     res.json({ msg: 'This is CORS-enabled for all origins!' });
+    res.status(200)
 })
 
 app.listen(80, function () {
@@ -41,6 +42,7 @@ let axiosResponse = require('./response');
 // define the about route
 router.get('/poligonos', function (req, res) {
     res.send('./polygon.geojson');
+    res.status(200)
 });
 
 // define the about route

@@ -1,5 +1,5 @@
 import { GeoJSON,Polygon, MapContainer, TileLayer } from 'react-leaflet';
-import mapFetchFunction from './oneGeoJSON';
+import { mapFetchFunction } from './oneGeoJSON';
 // import '././css/main.css';
 // import { accessToken } from '../utils/accessToken';
 

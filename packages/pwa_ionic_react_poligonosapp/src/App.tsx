@@ -1,4 +1,4 @@
-import mapFetchFunction from './mapFetchFunction';
+import { mapFetchFunction } from './pages/oneGeoJSON';
 
 
 // import GeoJSON from 'leaflet';//response
@@ -48,6 +48,7 @@ import './index.css';
 
 // let admin = require('firebase-admin');
 import * as admin from 'firebase-admin';
+import * as url from "url";
 
 admin.initializeApp({
   credential: admin.credential.applicationDefault(),
@@ -78,8 +79,8 @@ admin.initializeApp({
 // var admin = require('firebase-admin');
 let app = admin.initializeApp();
 
-const defaultAppConfig = "process.env.DEFAULT_CONFIG";
-const otherAppConfig = "process.env.OTHER_APP_CONFIG";
+const defaultAppConfig = "process.env.DEFAULT_CONFIG" | null ;
+const otherAppConfig = "process.env.OTHER_APP_CONFIG" | null;
 
 // Initialize the default app
 let defaultApp = admin.initializeApp(defaultAppConfig);
@@ -100,8 +101,8 @@ admin.initializeApp(defaultAppConfig);
 // Initialize another app with a different config
 let otherApp = admin.initializeApp(otherAppConfig, 'other');
 
-console.log(admin.app().name);  // '[DEFAULT]'
-console.log(otherApp.name);     // 'other'
+// console.log(admin.app().name);  // '[DEFAULT]'
+// console.log(otherApp.name);     // 'other'
 
 // Use the shorthand notation to retrieve the default app's services
 defaultAuth = admin.auth();
@@ -130,7 +131,7 @@ let settings = await {
   "headers": {
     "content-type": "application/json"
   },
-  "data": "{\"client_id\":\"process.env.CLIENT_ID\",\"client_secret\":\"process.env.CLIENT_SECRET\",\"audience\":\"https://poligonosapp.herokuapp.com/\",\"grant_type\":\"client_credentials\"}"
+  "data": require('./data.json')
 };
 
 
@@ -144,19 +145,19 @@ let [response, setResponse] = useState(null);
 
  // const [state, setState] = mapFetchFunction(mymap);
 
- await $.ajax(settings).done( (response: JSON) => {
-     setResponse(response);
-     console.log(response);
-   });
+ // await $.ajax(settings).done( (response: JSON) => {
+    // setResponse(response);
+    // console.log(response);
+  // });
 //Node
 let request = require("request");
 
-let options = await {
+let options = {
   method: 'POST',
   url: 'https://luismendes070.auth0.com/oauth/token',
   headers: { 'content-type': 'application/json' },
   body:
-    '{"client_id":"process.env.CLIENT_ID","client_secret":"process.env.CLIENT_SECRET","audience": "https://poligonosapp.herokuapp.com/","grant_type": "client_credentials"}'
+    '{"client_id":"process.env.CLIENT_ID","client_secret":"process.env.CLIENT_SECRET","audience": "process.env.AUDIENCE","grant_type": "client_credentials"}'
 };
 
 request(options, function (error, body) {

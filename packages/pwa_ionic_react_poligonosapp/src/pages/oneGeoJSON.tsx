@@ -1,8 +1,9 @@
 import L from 'leaflet';
 import { useState } from 'react';
+//import { mymap } from "./Tab1";
 // import { mymap } from './Tab1';
 
-export function mapFetchFunction(): [any, any] {
+default export function mapFetchFunction(mymap:L.Map): [any, any] {
     return useState(async () => {
 
         L.tileLayer('process.env.ATRIBUTION', {
@@ -37,3 +38,5 @@ export function mapFetchFunction(): [any, any] {
 
     });
 }
+
+module.exports = {};

@@ -1,3 +1,20 @@
+import React from 'react';
+import renderer from 'react-test-renderer';
+import App from '../src/App';
+// import App from './App';
+
+it('jest expo works', () => {
+  expect(1).toBe(1);
+});
+
+describe('jest expo <App />', () => {
+  it('has 1 child', () => {
+    const tree = renderer.create(<App />).toJSON();
+    expect(tree.children.length).toBe(1);
+    fail(true);
+  });
+});
+
 // import { response } from 'express';
 
 const React = require('react');
@@ -5,7 +22,7 @@ const render = require('@testing-library/react');
 import TestRenderer from 'react-test-renderer'; // ES6
 // const TestRenderer = require('react-test-renders'); // ES5 com npm reactjs docs
 
-import App from '../src/App'
+
 // import Tab1 from "./pages/Tab1";
 // import ExampleWithManyStates from "./components/ExampleWithManyStates";
 // import FeatureGeoJSONMapaCalor from "./pages/FeatureGeoJSONMapaCalor";
@@ -132,7 +149,7 @@ test('should fetch get status code 200 OK', () => {
 })
 
 test('renders without crashing', () => {
-    const { baseElement } = render(<App />);
+    // const { baseElement } = render(<App />);
     // L.Layer
     expect(baseElement).toBeDefined();
 })
@@ -248,6 +265,7 @@ test('ionic serve TypeError: Cannot read property tap of undefined', () => {
     require('tap');
     require('iconv');
     require('url');
+    require('jest-expo');
 
     fail(true);
 });

@@ -61,18 +61,7 @@ describe('POST /admins', function () {
     })
 })
 
-describe('GET /admins', function () {
-    it('responds with json', function () {
-        return request(app)
-            .get('/admins')
-            .set('Accept', 'application/json')
-            .expect('Content-Type', /json/)
-            .expect(200)
-            .then((response) => {
-                assert(response.body.email, 'foo@bar.com')
-            })
-    })
-})
+
 
 describe('POST /admin', function () {
     it('user.name should be an case-insensitive match for "fail"', function (done) {
