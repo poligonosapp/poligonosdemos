@@ -37,7 +37,7 @@ import {
 
 import './Tab1.css'
 import { functionExpression } from '@babel/types';
-import { mapFetchFunction } from './oneGeoJSON';
+// import { mapFetchFunction } from './oneGeoJSON';
 // import Login from "../components/Login";
 // import { Route } from 'react-router-dom'
 
@@ -91,7 +91,7 @@ const Tab1: React.FC = () => {
                 
                 <MapContainer atribution="process.env.ATRIBUTION" URL="process.env.URL">
                     <Polygon positions={position} atribution="process.env.ATRIBUTION" URL="process.env.URL">
-                        <GeoJSON atribution="process.env.ATRIBUTION" data={{this.state.mymap}}/>
+                        <GeoJSON atribution="process.env.ATRIBUTION" data={this.state.mymap}/>
                     </Polygon>
                 </MapContainer>
                 

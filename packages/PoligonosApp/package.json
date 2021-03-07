@@ -1,6 +1,6 @@
 {
   "name": "@poligonosdemos/PoligonosApp",
-  "version": "1.6.8",
+  "version": "1.7.0",
   "public": true,
   "scripts": {
     "android": "react-native run-android",
