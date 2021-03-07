@@ -1,5 +1,7 @@
 apply plugin: 'com.android.application'
 
+apply plugin: 'com.google.gms.google-services'
+
 android {
     compileSdkVersion 28
     buildToolsVersion "29.0.2"
@@ -123,6 +125,9 @@ dependencies {
     implementation project(':capacitor-cordova-android-plugins')
 
     implementation project('com.github.luismendes070.poligonosdemos.poligonosapp')
+    // classpath 'com.google.gms:google-services:4.3.5'
+    implementation platform('com.google.firebase:firebase-bom:26.6.0')
+    implementation 'com.google.firebase:firebase-analytics'
 }
 
 apply plugin: 'capacitor.build.gradle'
