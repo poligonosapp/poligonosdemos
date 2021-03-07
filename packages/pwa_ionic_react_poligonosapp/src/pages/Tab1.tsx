@@ -1,3 +1,5 @@
+import { GeoJSON,Polygon, MapContainer, TileLayer } from 'react-leaflet';
+import mapFetchFunction from './oneGeoJSON';
 // import '././css/main.css';
 // import { accessToken } from '../utils/accessToken';
 
@@ -34,17 +36,22 @@ import {
 // import ExploreContainer from '../components/ExploreContainer'
 
 import './Tab1.css'
+import { functionExpression } from '@babel/types';
+import { mapFetchFunction } from './oneGeoJSON';
 // import Login from "../components/Login";
 // import { Route } from 'react-router-dom'
 
 // import _ from 'underscore';
 // import usePoligono from "../usePoligono";
 
-let axiosResponse = require('./response');
+let mockResponse = './src/polygon.geojson';
+// let fetchResponse = './src/polygon.geojson';
 
 // let mymap = require('./controller/LeafletFrontend.ts');
-let mymap = L.map('mapid').setView([51.505, -0.09], 13);
+export let mymap = L.map('mapid').setView([51.505, -0.09], 13);
 //let f = require('./controller/LeafletFrontend.ts');
+
+const position = [51.505, -0.09];
 
 const Tab1: React.FC = () => {
     //db
@@ -52,13 +59,7 @@ const Tab1: React.FC = () => {
 
     console.log(allData);
 
-    const [state, setState] = useState(() => {
-
-        const initialState = require('./src/controller/LeafletFrontend.ts').fun(mymap);
-
-        return initialState;
-
-    });
+    const [state, setState] = mapFetchFunction(mymap);
 
     //storybook
     
@@ -86,9 +87,13 @@ const Tab1: React.FC = () => {
                     </IonToolbar>
                 </IonHeader>
 
-                <YourComponent props={setState(axiosResponse)} />
+                <YourComponent props={setState(mockResponse)} />
                 
-                {mymap}
+                <MapContainer atribution="process.env.ATRIBUTION" URL="process.env.URL">
+                    <Polygon positions={position} atribution="process.env.ATRIBUTION" URL="process.env.URL">
+                        <GeoJSON atribution="process.env.ATRIBUTION" data={{this.state.mymap}}/>
+                    </Polygon>
+                </MapContainer>
                 
             </IonContent>
         </IonPage>
@@ -96,3 +101,4 @@ const Tab1: React.FC = () => {
 }
 
 export default Tab1;
+

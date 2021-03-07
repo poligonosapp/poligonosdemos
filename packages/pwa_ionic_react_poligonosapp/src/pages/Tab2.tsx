@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import {
     IonSpinner,
     IonContent,
@@ -6,9 +6,9 @@ import {
     IonPage,
     IonTitle,
     IonToolbar,
-} from '@ionic/react'
+} from '@ionic/react';
 // import ExploreContainer from '../components/ExploreContainer'
-import './Tab2.css'
+import './Tab2.css';
 
 const Tab2: React.FC = () => {
     return (
@@ -31,4 +31,4 @@ const Tab2: React.FC = () => {
     )
 }
 
-export default Tab2
+export default Tab2;

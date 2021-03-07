@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-console.log('\n webpack exists to read src index js \n');
+console.log('\n public routes admin \n');
 
 import _ from 'lodash';
 import printMe from './print.js';
@@ -31,7 +31,7 @@ try{
 	
 	
 }catch(e){
-    $.alert('Erro de inicialização');
+    await $.alert('Erro de inicialização');
 }
 
 module.exports = {};

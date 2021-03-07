@@ -49,24 +49,24 @@ require('./react-leafet')
 
 const geojson = require('./geojson') //api
 
-require('./ExampleWithManyStates')
+require('./ExampleWithManyStates');
 
-const accessToken = require('./accessToken')
+const accessToken = require('./accessToken');
 
-require('whatwg-fetch')
+require('whatwg-fetch');
 
-const fs = require('fs')
+const fs = require('fs');
 
-require('sass-loader')
+require('sass-loader');
 
-require('@types/convert-string')
+require('@types/convert-string');
 
-const express = require('express')
-const logger = require('morgan')
-const app = express()
-app.use(logger('dev'))
+const express = require('express');
+const logger = require('morgan');
+const app = express();
+app.use(logger('dev'));
 
-const graphql = require('babel-plugin-relay/macro')
+const graphql = require('babel-plugin-relay/macro');
 // import {graphql, QueryRenderer} from 'react-relay';
 
 // require('fs');
@@ -216,12 +216,12 @@ test('should send http 200 status code', () => {
 
     // console.assert(resStatus, require('response'))
 
-    fail(true)
+    fail(true);
 })
 
 const realmID = 'web-application-0-udfes'
 const atlasConnect =
-    'mongodb+srv://fail:<password>@cluster0.neyhi.gcp.mongodb.net/<dbname>?retryWrites=true&w=majority'
+    'mongodb+srv://fail:process.env.PASSWORD@cluster0.neyhi.gcp.mongodb.net/process.env.DB_NAME?retryWrites=true&w=majority'
 
 test('should connect realm', () => {
     // const { baseElement } = render(<App />)
@@ -237,7 +237,14 @@ test('should connect realm', () => {
         client.close()
     })
 
-    fail(true)
-})
+    fail(true);
+});
+
+test('ionic serve TypeError: Cannot read property tap of undefined', () => {
+
+    
+
+    fail(true);
+});
 
 export {}

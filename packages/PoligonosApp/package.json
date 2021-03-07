@@ -11,10 +11,11 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "expo-firebase-analytics": "^3.0.0",
+    "expo-firebase-analytics": "~2.6.0",
+    "fastify": "^3.13.0",
     "react": "16.13.1",
     "react-native": "0.63.4",
-    "react-native-webview": "^11.2.3"
+    "react-native-webview": "11.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",

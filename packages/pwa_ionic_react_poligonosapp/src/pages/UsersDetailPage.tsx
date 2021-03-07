@@ -1,5 +1,5 @@
-import React, { useState, FormEvent } from 'react'
-import { Redirect, Route, RouteComponentProps } from 'react-router-dom'
+import React, { useState, FormEvent } from 'react';
+import { Redirect, Route, RouteComponentProps } from 'react-router-dom';
 import {
     IonApp,
     IonIcon,
@@ -15,9 +15,9 @@ import {
     IonContent,
     IonList,
     IonItem,
-} from '@ionic/react'
-import { IonReactRouter } from '@ionic/react-router'
-import UsersListPage from './UsersListPage'
+} from '@ionic/react';
+import { IonReactRouter } from '@ionic/react-router';
+import UsersListPage from './UsersListPage';
 
 interface UserDetailPageProps
     extends RouteComponentProps<{
@@ -37,4 +37,4 @@ const UserDetailPage: React.FC<UserDetailPageProps> = ({ match }) => {
     )
 }
 
-export default UserDetailPage
+export default UserDetailPage;

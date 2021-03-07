@@ -1,3 +1,4 @@
+import jwt_decode from 'jwt_decode';
 import L from 'leaflet';
 
 let mymap = require('./LeafletFrontend');
@@ -23,8 +24,8 @@ export default function LeafletFrontend(hostname: string, port: number, mymap: L
     mymap = L.map('mapid').setView([51.505, -0.09], 13);
 
 
-    import jwt_decode from 'jwt_decode';
-    let decoded = jwt_decode(accessToken);
+    
+    let decoded = jwt_decode('process.env.LEAFLET_TOKEN');
 
     L.tileLayer(
         'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}',
@@ -34,7 +35,7 @@ export default function LeafletFrontend(hostname: string, port: number, mymap: L
             id: 'mapbox/streets-v11',
             tileSize: 512,
             zoomOffset: -1,
-            accessToken: decode,
+            accessToken: decoded,
         }
     ).addTo(mymap);
 

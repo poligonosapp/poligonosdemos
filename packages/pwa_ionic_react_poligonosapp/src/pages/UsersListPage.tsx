@@ -1,5 +1,5 @@
-import React, { useState, FormEvent } from 'react'
-import { Redirect, Route } from 'react-router-dom'
+import React, { useState, FormEvent } from 'react';
+import { Redirect, Route } from 'react-router-dom';
 import {
     IonApp,
     IonIcon,
@@ -15,8 +15,8 @@ import {
     IonContent,
     IonList,
     IonItem,
-} from '@ionic/react'
-import { IonReactRouter } from '@ionic/react-router'
+} from '@ionic/react';
+import { IonReactRouter } from '@ionic/react-router';
 
 const UsersListPage: React.FC = () => {
     return (
@@ -40,4 +40,4 @@ const UsersListPage: React.FC = () => {
     )
 }
 
-export default UsersListPage
+export default UsersListPage;

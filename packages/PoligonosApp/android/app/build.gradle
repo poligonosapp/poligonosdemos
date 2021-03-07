@@ -122,18 +122,26 @@ def enableHermes = project.ext.react.get("enableHermes", false);
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion "30.0.3"
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding true
+    }
+
     defaultConfig {
-        applicationId "com.poligonosapp"
+        applicationId "com.github.luismendes070.poligonosdemos.rn.poligonosapp"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 1.5
-        versionName "1.5.1"
+        versionCode 1.6
+        versionName "1.6.8"
     }
     splits {
         abi {
@@ -150,6 +158,11 @@ android {
             keyAlias 'androiddebugkey'
             keyPassword 'android'
         }
+    }
+    ndkVersion '22.0.7026061'
+    dependenciesInfo {
+        includeInApk true
+        includeInBundle true
     }
     buildTypes {
         debug {
@@ -183,7 +196,7 @@ android {
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     //noinspection GradleDynamicVersion
-    implementation 'com.facebook.react:react-native:0.20.1'  // From node_modules
+    implementation 'com.facebook.react:react-native:0.63.4'  // From node_modules
 
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
 

@@ -1,3 +1,8 @@
+import mapFetchFunction from './mapFetchFunction';
+
+
+// import GeoJSON from 'leaflet';//response
+
 let $ = require('jquery');
 
 import React, { useState } from 'react';
@@ -49,9 +54,10 @@ admin.initializeApp({
   databaseURL: 'https://poligonosapp-default-rtdb.firebaseio.com/'
 });
 
-private let refreshToken;
+let refreshToken;
+let idToken = "process.env.REACT_APP_AUTH0_CLIENT_ID";
 
-firebase.auth().currentUser.getIdToken(/* forceRefresh */ true).then(function (idToken) {
+firebase.auth().currentUser.getIdToken(true).then(function (idToken) {
   // Send token to your backend via HTTPS
   // ...
 
@@ -116,7 +122,7 @@ admin.initializeApp({
 });
 
 //JQuery
-let settings = {
+let settings = await {
   "async": true,
   "crossDomain": true,
   "url": "https://luismendes070.auth0.com/oauth/token",
@@ -132,17 +138,20 @@ let settings = {
 function App() {
 
 
-let [response, setResponse] = useState('process.env.endpoint');
+let [response, setResponse] = useState(null);
 
-  
+  // await fetch('process.env.endpoint');
 
-$.ajax(settings).done(function (response) {
-  console.log(response);
-});
+ // const [state, setState] = mapFetchFunction(mymap);
+
+ await $.ajax(settings).done( (response: JSON) => {
+     setResponse(response);
+     console.log(response);
+   });
 //Node
 let request = require("request");
 
-let options = {
+let options = await {
   method: 'POST',
   url: 'https://luismendes070.auth0.com/oauth/token',
   headers: { 'content-type': 'application/json' },
@@ -195,7 +204,11 @@ if (isAuthenticated) {
             <IonIcon icon={triangle} />
             <IonLabel>Tab 1</IonLabel>
             <IonSpinner />
-            Hello {user.name}{' '}
+
+           
+            
+            Hello {user.name} 
+
         <IonButton onClick={() => logout({ returnTo: window.location.origin })}>
           Log out
         </IonButton>
