@@ -12,3 +12,9 @@ import renderer from 'react-test-renderer';
 it('renders correctly', () => {
   renderer.create(<App />);
 });
+
+it('should expo react native', () => {
+  const expo = require('expo');
+  // renderer.create(<App />);
+  fail('true')
+});

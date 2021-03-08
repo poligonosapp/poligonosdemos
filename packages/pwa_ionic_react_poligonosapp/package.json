@@ -1,6 +1,6 @@
 {
     "name": "@poligonosdemos/pwa_ionic_react_poligonosapp",
-    "version": "1.7.2",
+    "version": "1.7.3",
     "description": "poligonosapp",
     "engines": {
         "node": "14.x",
@@ -65,7 +65,6 @@
         "@babel/runtime": "^7.12.5",
         "@bubblewrap/cli": "^1.10.0",
         "@capacitor/android": "^2.4.5",
-        "@capacitor/cli": "^2.4.6",
         "@capacitor/core": "^2.4.5",
         "@capacitor/ios": "2.4.5",
         "@firebase/app": "^0.6.15",
@@ -243,7 +242,7 @@
         "@babel/preset-flow": "^7.12.1",
         "@babel/preset-typescript": "^7.12.7",
         "@babel/types": "^7.12.7",
-        "@capacitor/cli": "^2.4.5",
+        "@capacitor/cli": "^2.4.7",
         "@rollup/plugin-babel": "^5.2.2",
         "@storybook/addon-actions": "^6.1.15",
         "@storybook/addon-essentials": "^6.1.15",
@@ -274,7 +273,7 @@
         "prettier": "^2.2.1",
         "quicklink": "^2.0.0 || ^2.1.0",
         "react": "^16.11.0 || ^17 || ^17.0.1",
-        "react-scripts": "4.0.1",
+        "react-scripts": "^4.0.1",
         "rollup-plugin-commonjs": "^10.1.0",
         "rollup-plugin-replace": "^2.2.0",
         "rollup-plugin-terser": "^7.0.2",

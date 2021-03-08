@@ -1,4 +1,4 @@
-import { GeoJSON,Polygon, MapContainer, TileLayer } from 'react-leaflet';
+import { GeoJSON,Polygon, MapContainer , TileLayer } from 'react-leaflet';
 import { mapFetchFunction } from './oneGeoJSON';
 // import '././css/main.css';
 // import { accessToken } from '../utils/accessToken';
@@ -54,12 +54,11 @@ export let mymap = L.map('mapid').setView([51.505, -0.09], 13);
 const position = [51.505, -0.09];
 
 const Tab1: React.FC = () => {
-    //db
+    
+    // fast mock
+    const [state, setState] = useState(mapFetchFunction(mymap));
+    // db
     let [allData, setAllData] = useState(require('./src/databases/atlas/stitch.ts'));
-
-    console.log(allData);
-
-    const [state, setState] = mapFetchFunction(mymap);
 
     //storybook
     
@@ -92,6 +91,14 @@ const Tab1: React.FC = () => {
                 <MapContainer atribution="process.env.ATRIBUTION" URL="process.env.URL">
                     <Polygon positions={position} atribution="process.env.ATRIBUTION" URL="process.env.URL">
                         <GeoJSON atribution="process.env.ATRIBUTION" data={this.state.mymap}/>
+                    </Polygon>
+                </MapContainer>
+
+                Loading...
+
+                <MapContainer atribution="process.env.ATRIBUTION" URL="process.env.URL">
+                    <Polygon positions={position} atribution="process.env.ATRIBUTION" URL="process.env.URL">
+                        <GeoJSON atribution="process.env.ATRIBUTION" data={this.state.allData}/>
                     </Polygon>
                 </MapContainer>
                 

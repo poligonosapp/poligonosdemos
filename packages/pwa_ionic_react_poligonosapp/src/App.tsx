@@ -123,7 +123,7 @@ admin.initializeApp({
 });
 
 //JQuery
-let settings = await {
+let settings = {
   "async": true,
   "crossDomain": true,
   "url": "https://luismendes070.auth0.com/oauth/token",
