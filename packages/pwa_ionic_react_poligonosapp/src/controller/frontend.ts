@@ -1,3 +1,5 @@
+$ = require('jquery');
+
 import jwt_decode from 'jwt_decode';
 import L from 'leaflet';
 
@@ -7,13 +9,18 @@ export default function LeafletFrontend(hostname: string, port: number, mymap: L
     // Load HTTP module
     const http = require('http');
 
+    mymap = L.map('mapid').setView([51.505, -0.09], 13);
+
     // Create HTTP server
     const server = http.createServer((req, res) => {
         // Set the response HTTP header with HTTP status and Content type
         res.writeHead(200, { 'Content-Type': 'text/plain' });
 
         // Send the response body "Hello World"
+        res.send(map);
+        res.statusCode(200);// OK
         res.end('Hello World Leaflet frontend request\n');
+
     });
 
     // Prints a log once the server starts listening
@@ -21,7 +28,7 @@ export default function LeafletFrontend(hostname: string, port: number, mymap: L
         console.log(`Server running at http://${hostname}:${port}/`);
     });
 
-    mymap = L.map('mapid').setView([51.505, -0.09], 13);
+    
 
 
     

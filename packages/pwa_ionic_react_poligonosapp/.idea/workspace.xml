@@ -2,13 +2,62 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cde970d7-a669-44f7-acd4-f5c427e10b39" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ecsworkshop" beforeDir="false" afterPath="$PROJECT_DIR$/../../ecsworkshop" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../lerna.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../lerna.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PoligonosApp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../PoligonosApp/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.expo/packager-info.json" beforeDir="false" afterPath="$PROJECT_DIR$/.expo/packager-info.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/android/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/adminApp-07887a1f55e674689291.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/adminApp-b1e150743c82a891d561.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app-07887a1f55e674689291.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app-b1e150743c82a891d561.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/javascripts/offline.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main-9910533b41bbfa16294b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main-e7cc79655896d00874ce.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/polyfill.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/sw.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/workbox-7aec394b.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/print.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UsingWorkbox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backend/CookieSession.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/LeafletController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/LeafletController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/LeafletFrontend.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/LeafletFrontend.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/async-geojson.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/frontend.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/frontend.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/databases/atlas/connect.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/databases/atlas/find-all-data.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/databases/atlas/insert-data.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/databases/atlas/list-data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/databases/atlas/stitch.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/databases/atlas/stitch.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Tab1.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Tab1.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/oneGeoJSON.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/oneGeoJSON.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setupTests.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/setupTests.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/SetupStoryBook.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/SetupStoryBook.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/YourComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/YourComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/automocking.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/history.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/test-utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/App.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tests/App.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ExternalApi.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ava/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/cypress/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/server.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/time.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yarn_create_project/poligono/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../yarn_create_project/poligono/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +127,7 @@
       <workItem from="1614854024486" duration="1115000" />
       <workItem from="1614907899334" duration="580000" />
       <workItem from="1614936007627" duration="326000" />
+      <workItem from="1615294392713" duration="577000" />
     </task>
     <servers />
   </component>

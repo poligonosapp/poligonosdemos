@@ -1,6 +1,6 @@
 {
   "name": "@poligonosdemos/ycppoligono",
-  "version": "1.7.3",
+  "version": "1.7.4",
   "public": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",

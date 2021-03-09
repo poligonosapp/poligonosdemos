@@ -3,6 +3,63 @@ import renderer from 'react-test-renderer';
 import App from '../src/App';
 // import App from './App';
 
+import { MockedProvider } from "@apollo/client/testing";
+
+import {YourComponent, FirstStory} from './stories/SetupStoryBook.tsx';
+
+test('should delete storybook', () => {
+    fail(true);
+});
+
+test('should storybook FirsStory', () => {
+    //    const { baseElement } = render(<SetupStoryBook />);
+    const { baseElement } = render(<FirstStory />);
+    expect(baseElement).toBeDefined();
+    fail(true);
+});
+
+test('should storybook', () => {
+    //    const { baseElement } = render(<SetupStoryBook />);
+    const { baseElement } = render(<YourComponent />);
+
+    expect(baseElement).toBeDefined();
+    fail(true);
+});
+
+const mocks = [
+    {
+        request: {
+            query: GET_POLYGON,
+            variables: { index: 0 }
+        },
+        result: {
+            data: {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [-109, 41],
+                        [-102, 41],
+                        [-102, 37],
+                        [-109, 37],
+                        [-109, 41]
+                    ]
+                ]
+            }
+
+        
+      
+        }
+    },
+    {
+        request: {
+            query: GET_DOG,
+            variables: { index: 1 }
+        },
+        error: new Error("Something went wrong");
+    }
+];
+
+
 it('jest expo works', () => {
   expect(1).toBe(1);
 });
@@ -197,7 +254,7 @@ test('should query graphQl api', () => {
     fail(true)
 })
 
-test('should query insert moongose', () => {
+test('should query insert moongoose', () => {
     const connectionTest = require('./databases/getting-started.ts');
     const poligonoDesenhoTest = require('./models/PoligonoModels');
 
@@ -210,19 +267,19 @@ test('should query insert moongose', () => {
     fail(true)
 })
 
-test('should query read moongose', () => {
+test('should query read moongoose', () => {
     // const { baseElement } = render(<App />)
     // expect(baseElement).toBeDefined();
     fail(true)
 })
 
-test('should declare newModel moongose', () => {
+test('should declare newModel moongoose', () => {
     // const { baseElement } = render(<App />)
     // expect(baseElement).toBeDefined();
     fail(true)
 })
 
-test('should declare newDesenhoSchema moongose', () => {
+test('should declare newDesenhoSchema moongoose', () => {
     // const { baseElement } = render(<App />)
     // expect(baseElement).toBeDefined();
     fail(true)

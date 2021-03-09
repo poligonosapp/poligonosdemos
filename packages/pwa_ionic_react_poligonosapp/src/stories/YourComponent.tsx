@@ -1,4 +1,6 @@
-import React, {Component} from 'react';
+import { GeoJSON, Polygon, TileLayer } from 'react-leaflet';
+
+import React, { Component } from 'react';
 
 import render from 'react-dom';
 
@@ -19,6 +21,14 @@ import {
 import { makeStyles } from '@material-ui/core/styles';
 import { Alert, AlertTitle } from '@material-ui/lab';
 
+let $ = require('jquery');
+
+ const position = [51.505, -0.09];
+
+// import MapContainer from 'react-leaflet';
+
+
+
 class YourComponent extends Component{
 
     constructor(props:L.Map) {
@@ -27,8 +37,10 @@ class YourComponent extends Component{
         this.state = {
 
             try{
-                mymap :  require('./controller/LeafletFrontend.ts').fun( (typeof L.Map) this.props.mymap );
+                allData :  require('./controller/LeafletFrontend.ts').fun( (typeof L.Map) this.props.mymap );
             }catch(e){
+
+                $.alert('realm connection failed');
 
         }
 
@@ -36,12 +48,20 @@ class YourComponent extends Component{
 
     }
 
+   
+
     render() {
-        return <IonLabel>YourComponent
+        return <IonLabel>
+            
+            
 
             try{
 
-                {this.state.mymap}
+                
+                    <Polygon position={position} atribution="process.env.ATRIBUTION" URL="process.env.URL">
+                        <GeoJSON atribution="process.env.ATRIBUTION" data={this.state.allData}/>
+                    </Polygon>
+                
 
             }catch(e){
 
@@ -61,3 +81,5 @@ class YourComponent extends Component{
 
 
 }
+
+// default export YourComponent;

@@ -4,12 +4,12 @@ import L, { circle, CRS } from 'leaflet';
 
 const accessToken = "process.env.LEAFLET_ACCESS_TOKEN";
 
-import jwt_decode from "jwt_decode";
+
 import LeafletFrontend from './frontend';
 
 import React, {Component} from 'react';
-
-let decoded = jwt_decode(accessToken);
+// import jwt_decode from "jwt_decode";
+// let decoded = jwt_decode(accessToken);
 
 let mymapAux = require('./frontend');
 
@@ -22,25 +22,32 @@ class LeafletFrontend extends Component{
         super(props);
 
         this.state = {
-            mymap = mymapAux('process.env.HOST','process.env.PORT',props.mymap);
+            mymap = mymapAux('process.env.HOST','process.env.PORT',props.mymap)
         }
 
     }
 }
 
 
-function fun(L.Map: mymap) {
+function fun(mymap:L.Map) {
     
-try {
-    this.state.mymap = (typeof L.Map)LeafletFrontend('process.env.endpoint', 8000, mymap);
+    try {
     
-    return mymap;
+        this.state.mymap = new LeafletFrontend('process.env.endpoint', 8100, mymap);
+        
+        mymap = this.state.map;
+    
+    // return mymap;
     
 } catch (e) {
     console.log('server fault');
-    return;
 }
 
-}
+    return mymap;
 
-export default mymap;
+};
+
+
+// return <fun props={this.state.mymap}/>;
+
+export default LeafletFrontend;

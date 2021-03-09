@@ -1,6 +1,6 @@
 {
     "name": "@poligonosdemos/pwa_ionic_react_poligonosapp",
-    "version": "1.7.3",
+    "version": "1.7.4",
     "description": "poligonosapp",
     "engines": {
         "node": "14.x",
@@ -25,7 +25,7 @@
     },
     "encoding": "UTF-8",
     "clean_urls": true,
-    "proxy": "https://localhost:4000",
+    "proxy": "https://www.localhost:4000",
     "scripts": {
         "test:debug": "react-scripts --inspect-brk test --runInBand --no-cache",
         "flow": "flow",
@@ -58,6 +58,7 @@
         ]
     },
     "dependencies": {
+        "@apollo/react-ssr": "^4.0.0",
         "@auth0/auth0-react": "^1.2.0",
         "@babel/plugin-proposal-object-rest-spread": "^7.12.1",
         "@babel/plugin-transform-modules-commonjs": "^7.12.1",
@@ -166,6 +167,8 @@
         "react-router": "^5.1.2",
         "react-router-dom": "^5.2.0",
         "react-test-renderer": "^17.0.1",
+        "realm": "^10.2.0",
+        "realm-web": "^1.2.1",
         "ref-loader": "^1.0.3",
         "relay-compiler": "^10.1.2",
         "relay-config": "^10.1.2",
@@ -273,7 +276,7 @@
         "prettier": "^2.2.1",
         "quicklink": "^2.0.0 || ^2.1.0",
         "react": "^16.11.0 || ^17 || ^17.0.1",
-        "react-scripts": "^4.0.1",
+        "react-scripts": "^4.0.3",
         "rollup-plugin-commonjs": "^10.1.0",
         "rollup-plugin-replace": "^2.2.0",
         "rollup-plugin-terser": "^7.0.2",

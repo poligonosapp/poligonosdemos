@@ -57,38 +57,18 @@ let nodeExternals = require('webpack-node-externals');
 
 module.exports = () => {
     return {
-        target: 'node',
         externals: [
             nodeExternals(
                 nodeExternals({
-        allowlist: ['jquery', 'react',  'webpack/hot/dev-server', /^lodash/]
-    })
-            )
+                    allowlist: [
+                        'jquery',
+                        'react',
+                        'webpack/hot/dev-server',
+                        /^lodash/,
+                    ],
+                })
+            ),
         ],
-        module: {
-            loaders: [
-                { exclude: ['node_modules'], loader: 'babel', test: /\.jsx?$/ },
-                { loader: 'style-loader!css-loader', test: /\.css$/ },
-                { loader: 'url-loader', test: /\.gif$/ },
-                { loader: 'file-loader', test: /\.(ttf|eot|svg)$/ },
-            ],
-        },
-        resolve: {
-            alias: {
-                config$: './configs/app-config.ts',
-                react: './vendor/react-master',
-            },
-            extensions: ['', 'js', 'jsx'],
-            modules: [
-                '/node_modules/sqlite3/lib/binding/',
-                'node_modules',
-                'bower_components',
-                'shared',
-                '/shared/vendor/modules',
-                'fs',
-                'mime',
-            ],
-        },
         mode: 'production',
         devServer: {
             inline: false,
@@ -100,20 +80,20 @@ module.exports = () => {
         devtool: 'inline-source-map',
         entry: {
             app: ['./app.ts'],
-            admin: ['./adminApp.js'],
+            admin: ['./adminApp.ts'],
+            index: ['./src/index.tsx'],
         },
         output: {
             libraryTarget: 'system',
-            publicPath: '',
-            filename: '[name]-[hash].js',
-            path: path.resolve(__dirname, 'dist'),
+            filename: '[name]-[hash].ts',
+            path: path.resolve(__dirname, '/dist'),
             module: true,
-            publicPath: '/',
+            publicPath: '/api/v1/poligonos',
         },
         experiments: {
             outputModule: true,
         },
-        target: ['web', 'es2017'],
+        target: ['web', 'es2017', 'node'],
         resolve: {
             alias: {
                 config$: './configs/app-config.ts',
@@ -139,8 +119,23 @@ module.exports = () => {
                 http: require.resolve('stream-http'),
                 crypto: require.resolve('crypto-browserify'),
             },
+            modules: [
+                '/node_modules/sqlite3/lib/binding/',
+                'node_modules',
+                'bower_components',
+                'shared',
+                '/shared/vendor/modules',
+                'fs',
+                'mime',
+            ],
         },
         module: {
+            loaders: [
+                { exclude: ['node_modules'], loader: 'babel', test: /\.jsx?$/ },
+                { loader: 'style-loader!css-loader', test: /\.css$/ },
+                { loader: 'url-loader', test: /\.gif$/ },
+                { loader: 'file-loader', test: /\.(ttf|eot|svg)$/ },
+            ],
             rules: [
                 {
                     test: require.resolve('underscore'),
@@ -307,11 +302,6 @@ module.exports = () => {
                 },
             ],
         },
-        entry: './src/index.ts',
-        output: {
-            path: __dirname + '/dist',
-            filename: 'index_bundle.js',
-        },
         plugins: [
             new RouteManifest({
                 routes(str) {
@@ -388,4 +378,6 @@ module.exports = () => {
             removeEmptyChunks: false,
         },
     }
-}
+};
+
+

@@ -1,8 +1,8 @@
 //Require Mongoose
-let mongoose = require('mongoose')
+let mongoose = require('mongoose');
 
 //Define a schema
-let Schema = mongoose.Schema
+let Schema = mongoose.Schema;
 
 const PoligonoDesenho = new mongoose.Schema({
     type: {
@@ -21,4 +21,4 @@ const CidadeDesenho = new mongoose.Schema({
     location: PoligonoDesenho,
 })
 
-export default PoligonoDesenho
+export default PoligonoDesenho;

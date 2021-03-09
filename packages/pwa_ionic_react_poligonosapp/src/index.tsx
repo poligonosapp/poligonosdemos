@@ -1,3 +1,28 @@
+import { ApolloClient, InMemoryCache } from '@apollo/client';
+
+const client = new ApolloClient({
+  uri: 'GRAPHQL_REALM_ENDPOINT',
+  cache: new InMemoryCache()
+});
+
+import { gql } from '@apollo/client';
+
+// const client = ...
+
+client
+  .query({
+    query: gql`
+      query GetRates {
+        rates(currency: "USD") {
+          currency
+        }
+      }
+    `
+  })
+  .then(result => console.log(result));
+
+
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';

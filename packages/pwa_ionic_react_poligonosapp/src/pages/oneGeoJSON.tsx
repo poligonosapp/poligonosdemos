@@ -3,7 +3,7 @@ import { useState } from 'react';
 //import { mymap } from "./Tab1";
 // import { mymap } from './Tab1';
 
-default export function mapFetchFunction(mymap:L.Map): [any, any] {
+export function oneGeoJSON(mymap:L.Map): [any, any] {
     return useState(async () => {
 
         L.tileLayer('process.env.ATRIBUTION', {
@@ -39,4 +39,4 @@ default export function mapFetchFunction(mymap:L.Map): [any, any] {
     });
 }
 
-module.exports = {};
+module.exports = oneGeoJSON;
