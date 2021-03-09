@@ -11,17 +11,14 @@ export default {
     title: 'YourComponent',
     component: YourComponent,
 };
-import L from 'leaflet';
-const mymap = (typeof L.Map)'./polygon.geojson';
 
 //👇 We create a “template” of how args map to rendering
-const Template: Story<ComponentProps<typeof YourComponent>> = (args) =>
-  <YourComponent { mymap } />;
+const Template: Story<ComponentProps<typeof YourComponent>> = (args) => <YourComponent {...args} />;
 
 export const FirstStory = Template.bind({});
 FirstStory.args = {
     /*👇 The args you need here will depend on your component */
-    mymap: (typeof L.Map)'./polygon.geojson';
+    primary: true,
+  label: 'Primary',
 };
 
- module.exports = {};

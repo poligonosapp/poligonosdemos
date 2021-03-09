@@ -5,7 +5,9 @@ import App from '../src/App';
 
 import { MockedProvider } from "@apollo/client/testing";
 
-import {YourComponent, FirstStory} from './stories/SetupStoryBook.tsx';
+ import {YourComponent, FirstStory} from './src/stories/SetupStoryBook';
+
+import results from '../.jest-test-result.json';
 
 test('should delete storybook', () => {
     fail(true);
@@ -13,6 +15,7 @@ test('should delete storybook', () => {
 
 test('should storybook FirsStory', () => {
     //    const { baseElement } = render(<SetupStoryBook />);
+    
     const { baseElement } = render(<FirstStory />);
     expect(baseElement).toBeDefined();
     fail(true);

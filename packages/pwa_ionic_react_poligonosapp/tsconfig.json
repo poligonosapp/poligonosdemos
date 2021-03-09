@@ -11,6 +11,7 @@
     ],
     "baseUrl": "src",
     "outDir": "./dist/",
+    "rootDirs": ["./src", "./src/stories"],
     "target": "es6",
     "lib": [
       "dom",
@@ -31,6 +32,9 @@
   },
   "include": [
     "src",
+    "routes",
+    "views",
+    "www",
     "relay.config",
     "poligono.graphql",
     "poligono-geojson-graphql.ts",

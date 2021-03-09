@@ -8,6 +8,7 @@
 
 
 # testing
+.jest-test-result.json
 /coverage
 
 # production

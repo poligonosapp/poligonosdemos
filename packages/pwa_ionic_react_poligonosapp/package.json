@@ -1,6 +1,6 @@
 {
     "name": "@poligonosdemos/pwa_ionic_react_poligonosapp",
-    "version": "1.7.4",
+    "version": "1.7.5",
     "description": "poligonosapp",
     "engines": {
         "node": "14.x",
@@ -41,6 +41,7 @@
         "dev": "webpack-dashboard -- webpack -w serve --hot --mode development",
         "server": "node server.ts",
         "build": "build",
+        "test:generate-output":"jest --json --outputFile=.jest-test-result.json || true",
         "test": "jest",
         "cypress": "cypress open",
         "puppeteer": "puppeteer",

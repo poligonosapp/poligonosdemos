@@ -1,12 +1,8 @@
-import { YourComponent, FirstStory } from './stories/SetupStoryBook.tsx';
+import { YourComponent, FirstStory } from './stories/SetupStoryBook.stories';
 
 import { ApolloProvider } from '@apollo/client';
 
-//👇 This default export determines where your story goes in the story list
-export {
-    title: 'MapContainer',
-    component: MapContainer,
-};
+
 
 import { GeoJSON, Polygon, TileLayer } from 'react-leaflet';
 
@@ -113,22 +109,26 @@ const Tab1: React.FC = () => {
 
                 <YourComponent props={setState(mockResponse)} />
                 
-                <MapContainer atribution="process.env.ATRIBUTION" URL="process.env.URL">
+                <FirstStory>
+                    <MapContainer atribution="process.env.ATRIBUTION" URL="process.env.URL">
                     <Polygon positions={position} atribution="process.env.ATRIBUTION" URL="process.env.URL">
                         <GeoJSON atribution="process.env.ATRIBUTION" data={this.state.mymap}/>
                     </Polygon>
                 </MapContainer>
+                </FirstStory>
 
-                Loading...
+                
 
                 <ApolloProvider client={client}>
       <div>
         <h2> Polígonos App 🚀</h2>
-        <MapContainer atribution="process.env.ATRIBUTION" URL="process.env.URL">
+                        <YourComponent>
+                            <MapContainer atribution="process.env.ATRIBUTION" URL="process.env.URL">
                     <Polygon positions={position} atribution="process.env.ATRIBUTION" URL="process.env.URL">
                         <GeoJSON atribution="process.env.ATRIBUTION" data={this.state.allData}/>
                     </Polygon>
                 </MapContainer>
+        </YourComponent>
       </div>
     </ApolloProvider>
 
