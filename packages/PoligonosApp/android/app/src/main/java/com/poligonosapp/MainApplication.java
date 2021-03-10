@@ -43,6 +43,12 @@ public class MainApplication extends Application implements ReactApplication {
   @Override
   public void onCreate() {
     super.onCreate();
+
+// ...
+    // Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713
+    MobileAds.initialize(this, "YOUR_ADMOB_APP_ID");
+
+
     SoLoader.init(this, /* native exopackage */ false);
     initializeFlipper(this, getReactNativeHost().getReactInstanceManager());
   }

@@ -28,6 +28,9 @@ repositories {
 }
 
 dependencies {
+    
+    implementation 'com.google.firebase:firebase-ads:18.0.0'
+
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation "androidx.appcompat:appcompat:$androidxAppCompatVersion"
     implementation project(':capacitor-android')

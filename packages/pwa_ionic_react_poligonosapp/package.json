@@ -1,6 +1,6 @@
 {
     "name": "@poligonosdemos/pwa_ionic_react_poligonosapp",
-    "version": "1.7.5",
+    "version": "1.7.6",
     "description": "poligonosapp",
     "engines": {
         "node": "14.x",
@@ -25,8 +25,9 @@
     },
     "encoding": "UTF-8",
     "clean_urls": true,
-    "proxy": "https://www.localhost:4000",
+    "proxy": "https://www.poligonosapp.herokuapp.com:8080",
     "scripts": {
+        "postinstall": "jetifier",
         "test:debug": "react-scripts --inspect-brk test --runInBand --no-cache",
         "flow": "flow",
         "serve": "npx ionic serve yarn run react-scripts start auth start watch",
@@ -41,7 +42,7 @@
         "dev": "webpack-dashboard -- webpack -w serve --hot --mode development",
         "server": "node server.ts",
         "build": "build",
-        "test:generate-output":"jest --json --outputFile=.jest-test-result.json || true",
+        "test:generate-output": "jest --json --outputFile=.jest-test-result.json || true",
         "test": "jest",
         "cypress": "cypress open",
         "puppeteer": "puppeteer",
@@ -170,6 +171,7 @@
         "react-test-renderer": "^17.0.1",
         "realm": "^10.2.0",
         "realm-web": "^1.2.1",
+        "redux": "^4.0.5",
         "ref-loader": "^1.0.3",
         "relay-compiler": "^10.1.2",
         "relay-config": "^10.1.2",
@@ -250,6 +252,7 @@
         "@rollup/plugin-babel": "^5.2.2",
         "@storybook/addon-actions": "^6.1.15",
         "@storybook/addon-essentials": "^6.1.15",
+        "@storybook/addon-jest": "^6.1.21",
         "@storybook/addon-links": "^6.1.15",
         "@storybook/react": "^6.1.15",
         "@testing-library/dom": "^7.29.6",

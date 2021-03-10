@@ -1,3 +1,5 @@
+require('./server.ts');
+require('./routes.ts');
 import { ApolloClient, InMemoryCache } from '@apollo/client';
 
 const client = new ApolloClient({

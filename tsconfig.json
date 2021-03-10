@@ -3,6 +3,7 @@
     "compilerOptions": {
         "lib": ["es2020"],
         "module": "commonjs",
+        "noImplicitAny": true,
         "target": "es2020",
         "strict": true,
         "esModuleInterop": true,
@@ -15,8 +16,6 @@
         },
         "jsx": "react",
         "types": [],
-
-        "noImplicitAny": false,
         "removeComments": false,
         "preserveConstEnums": true,
         "sourceMap": true,

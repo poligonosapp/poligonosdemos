@@ -11,7 +11,7 @@
     ],
     "baseUrl": "src",
     "outDir": "./dist/",
-    "rootDirs": ["./src", "./src/stories"],
+    "rootDirs": ["./src"],
     "target": "es6",
     "lib": [
       "dom",

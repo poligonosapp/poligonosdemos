@@ -1,12 +1,12 @@
-import { YourComponent, FirstStory } from './stories/SetupStoryBook.stories';
+import { ReactReduxContext } from 'react-redux';
+
+// require('./MyComponent');
+
+// import { YourComponent, FirstStory } from './stories/SetupStoryBook.stories';
 
 import { ApolloProvider } from '@apollo/client';
 
-
-
-import { GeoJSON, Polygon, TileLayer } from 'react-leaflet';
-
-
+import { GeoJSON, Polygon, TileLayer, Pane } from 'react-leaflet';
 
 // let mymapAux = require('./frontend');
 // import { mapFetchFunction } from './oneGeoJSON';
@@ -30,7 +30,6 @@ import React, {
     useState,
     useEffect,
     useReducer,
-    useCallback,
     FormEvent,
     useRef,
 } from 'react'
@@ -72,6 +71,7 @@ try {
   mapData = require('./src/databases/realmweb/realmweb.ts');
 } catch (e) {
     $.alert('database connection failed');
+    // $.button('OK');
 }
 
 const Tab1: React.FC = () => {
@@ -93,6 +93,13 @@ const Tab1: React.FC = () => {
 
     // @ts-ignore
     return (
+
+        <ReactReduxContext.Consumer>
+            {
+                ({ store }) => {
+
+
+
         <IonPage>
             <IonHeader>
                 <IonToolbar>
@@ -107,35 +114,60 @@ const Tab1: React.FC = () => {
                     </IonToolbar>
                 </IonHeader>
 
-                <YourComponent props={setState(mockResponse)} />
                 
-                <FirstStory>
-                    <MapContainer atribution="process.env.ATRIBUTION" URL="process.env.URL">
+
+                        
+
+                <Pane name="custom" style={{ zIndex: 100 }}>
+
+                    <Polygon positions={position} atribution="process.env.ATRIBUTION" URL="process.env.URL">
+                        <GeoJSON atribution="process.env.ATRIBUTION" data={setState(mockResponse)}/>
+                    </Polygon>
+
+                    </Pane>
+  
+<Pane name="custom" style={{ zIndex: 100 }}>
+                    
                     <Polygon positions={position} atribution="process.env.ATRIBUTION" URL="process.env.URL">
                         <GeoJSON atribution="process.env.ATRIBUTION" data={this.state.mymap}/>
                     </Polygon>
-                </MapContainer>
-                </FirstStory>
+                
+
+
+                </Pane>
+
+
+                
+                
 
                 
 
                 <ApolloProvider client={client}>
       <div>
         <h2> Polígonos App 🚀</h2>
-                        <YourComponent>
-                            <MapContainer atribution="process.env.ATRIBUTION" URL="process.env.URL">
+                        <Pane name="custom" style={{ zIndex: 100 }}>
+                            
                     <Polygon positions={position} atribution="process.env.ATRIBUTION" URL="process.env.URL">
                         <GeoJSON atribution="process.env.ATRIBUTION" data={this.state.allData}/>
                     </Polygon>
-                </MapContainer>
-        </YourComponent>
-      </div>
+                
+                </Pane>
+</div>
     </ApolloProvider>
+
+       
+                    
+      
 
                 
                 
             </IonContent>
         </IonPage>
+
+                }
+            }
+</ReactReduxContext.Consumer>
+
     );
 }
 

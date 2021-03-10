@@ -1,13 +1,24 @@
+import { ReactReduxContext } from 'react-redux';
+
 import React from 'react';
 import renderer from 'react-test-renderer';
 import App from '../src/App';
+import Tab1 from '../src/pages/Tab1';
 // import App from './App';
 
 import { MockedProvider } from "@apollo/client/testing";
 
- import {YourComponent, FirstStory} from './src/stories/SetupStoryBook';
+ // import {YourComponent, FirstStory} from './src/stories/SetupStoryBook';
 
 import results from '../.jest-test-result.json';
+
+test('should use redux to ts2305 react-leaflet no providers', () => {
+    require('react-redux');
+    //    const { baseElement } = render(<SetupStoryBook />);
+     const { baseElement } = render(<Tab1 />);
+     expect(baseElement).toBeDefined();
+    fail(true);
+});
 
 test('should delete storybook', () => {
     fail(true);

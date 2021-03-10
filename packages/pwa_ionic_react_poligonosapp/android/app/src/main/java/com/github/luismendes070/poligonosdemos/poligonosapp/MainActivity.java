@@ -43,6 +43,11 @@ public class MainActivity extends BridgeActivity {
     if (savedInstanceState != null) {
       Log.d(TAG, "onCreate() Restoring previous state");
       /* restore state */
+
+      // ...
+    // Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713
+    MobileAds.initialize(this, "YOUR_ADMOB_APP_ID");
+
     } else {
       Log.d(TAG, "onCreate() No saved state available");
       /* initialize app */
