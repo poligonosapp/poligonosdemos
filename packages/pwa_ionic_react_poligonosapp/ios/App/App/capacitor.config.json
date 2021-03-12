@@ -1,16 +1,17 @@
 {
-    "appId": "com.github.luismendes070.poligonosdemos.poligonosApp",
-    "appName": "poligonosApp",
+    "appId": "com.github.luismendes070.poligonosdemos.poligonosapp",
+    "appName": "poligonosapp",
     "bundledWebRuntime": true,
     "npmClient": "yarn",
     "webDir": "www",
+    "compress":true,
     "plugins": {
         "SplashScreen": {
             "launchShowDuration": 0
         }
     },
     "cordova": {},
-    "windowsAndroidStudioPath": "E:\\Program Files\\Android\\canary\\android-studio\\bin\\studio64.exe",
+    "windowsAndroidStudioPath": "C:\\Program Files\\Android\\Android Studio1\\bin\\studio64.exe",
     "hideLogs": false,
     "overrideUserAgent": "my custom user agent",
     "appendUserAgent": "string to append",

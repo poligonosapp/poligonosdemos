@@ -3,17 +3,17 @@ const { runtime } = require('@babel/runtime')
 
 // const supertest = require('supertest');
 
-const request = require('supertest')
-const express = require('express')
-let cors = require('cors')
+const request = require('supertest');
+const express = require('express');
+let cors = require('cors');
 
-const app = express()
+const app = express();
 
-app.use(cors())
+app.use(cors());
 //app.use(logger('dev'))
 
 app.get('/admins', function (req, res) {
-    res.status(200).json({ name: 'fail' })
+    res.status(200).json({ name: 'fail' });
 })
 
 request(app)
@@ -23,7 +23,7 @@ request(app)
     .expect(200)
     .end(function (err, res) {
         if (err) throw err
-    })
+    });
 
 describe('GET /admin', function () {
     it('responds with json', function (done) {
@@ -32,8 +32,8 @@ describe('GET /admin', function () {
             .set('Accept', 'application/json')
             .expect('Content-Type', /json/)
             .expect(200, done)
-    })
-})
+    });
+});
 
 describe('GET /admin', function () {
     it('responds with json', function (done) {

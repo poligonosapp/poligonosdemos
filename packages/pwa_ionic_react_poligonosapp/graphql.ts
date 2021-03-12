@@ -2,4 +2,4 @@
 
   const query = loader('./poligono.graphql');
 
-  const query2 = loader('./poligono-geojson.graphql.ts');
+  const query2 = loader('./poligono-geojson.graphql.ts');// mock

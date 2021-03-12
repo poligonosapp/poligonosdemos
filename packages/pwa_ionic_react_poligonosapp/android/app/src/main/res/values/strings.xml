@@ -5,6 +5,8 @@
     <string name="package_name">com.github.luismendes070.poligonosdemos.poligonosApp</string>
     <string name="custom_url_scheme">com.github.luismendes070.poligonosdemos.poligonosApp</string>
     <string name="banner1">ca-app-pub-7548987622333028/1548587447</string>
+    <string name="abertura1">ca-app-pub-7548987622333028~4374366227</string>
+    <string name="abertura2">ca-app-pub-7548987622333028/7575244639</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="admob_app_id">ca-app-pub-7548987622333028/1548587447</string>

@@ -1,6 +1,6 @@
 {
   "name": "poligonosdemos",
-  "version": "1.7.6",
+  "version": "1.7.7",
   "private": true,
   "homepage": "https://www.poligonosapp.herokuapp.com",
   "nodemonConfig": {
@@ -25,7 +25,7 @@
     "@poligonosdemos/nx-poligonosapp",
     "@poligonosdemos/nextjs_poligonos_poligono"
   ],
-  "license": "Apache License 2.0",
+  "license": "Apache-2.0",
   "author": "Fabio Rodrigues <https://www.facebook.com/kefaro>, Luis Mendes <machadoluismendes@gmail.com>",
   "scripts": {
     "start": "npx lerna run start",
@@ -112,6 +112,7 @@
     "node-sass": "^5.0.0",
     "openapi-to-postmanv2": "^2.0.0",
     "quicklink": "^2.1.0",
+    "react-ga": "^3.3.0",
     "react-leaflet": "^3.1.0",
     "react-native": "^0.63.4",
     "react-router-dom": "^5.2.0",

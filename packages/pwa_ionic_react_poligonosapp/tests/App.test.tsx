@@ -12,6 +12,17 @@ import { MockedProvider } from "@apollo/client/testing";
 
 import results from '../.jest-test-result.json';
 
+  import { loader } from 'graphql.macro';
+
+  const query = loader('./poligono.graphql');
+
+  const query2 = loader('./poligono-geojson.graphql.ts');// mock
+
+test('should include javascript but not json', () => {
+    let theregex = "./packages/pwa_ionic_react_poligonosapp/src/**/*.j[%s]";
+    fail(true);
+});
+
 test('should use redux to ts2305 react-leaflet no providers', () => {
     require('react-redux');
     //    const { baseElement } = render(<SetupStoryBook />);
@@ -43,7 +54,7 @@ test('should storybook', () => {
 const mocks = [
     {
         request: {
-            query: GET_POLYGON,
+            query: query,
             variables: { index: 0 }
         },
         result: {
@@ -66,7 +77,7 @@ const mocks = [
     },
     {
         request: {
-            query: GET_DOG,
+            query: query2,
             variables: { index: 1 }
         },
         error: new Error("Something went wrong");

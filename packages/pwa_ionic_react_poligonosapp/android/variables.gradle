@@ -1,6 +1,6 @@
 ext {
-    cucumberVersion = 4.8.3
-    rootProject.ext.compileSdkVersion = 29
+    // cucumberVersion = 4
+    rootProject.ext.compileSdkVersion = 30
     minSdkVersion = 21
     compileSdkVersion = 29
     targetSdkVersion = 29

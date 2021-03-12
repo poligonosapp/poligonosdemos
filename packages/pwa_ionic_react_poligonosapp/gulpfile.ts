@@ -1,17 +1,17 @@
 
-const gulp = require('gulp')
-const workboxBuild = require('workbox-build')
+const gulp = require('gulp');
+const workboxBuild = require('workbox-build');
 
 gulp.task('service-worker', () => {
     return workboxBuild.generateSW({
         globDirectory: 'build',
         globPatterns: ['**/*.{html,json,js,css}'],
         swDest: 'build/sw.ts',
-    })
-})
+    });
+});
 
 // const gulp = require('gulp')
-const webpack = require('webpack-stream')
+const webpack = require('webpack-stream');
 gulp.task('default', function () {
     return gulp
         .src('src/entry.js')
@@ -20,5 +20,5 @@ gulp.task('default', function () {
                 // Any configuration options...
             })
         )
-        .pipe(gulp.dest('dist/'))
+        .pipe(gulp.dest('dist/'));
 });

@@ -22,4 +22,4 @@ export default new GraphQLSchema({
             },
         }),
     }),
-})
+});

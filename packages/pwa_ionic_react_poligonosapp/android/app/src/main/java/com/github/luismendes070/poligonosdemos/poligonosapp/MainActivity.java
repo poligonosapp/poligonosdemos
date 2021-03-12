@@ -32,7 +32,7 @@ public class MainActivity extends BridgeActivity {
   private FirebaseOptions defaultOptions;
   private FirebaseOptions otherAppConfig;
 
-  private String adMobBanner1 = "ca-app-pub-7548987622333028/1548587447";
+  private String adMobBanner1;
 
 
 
@@ -46,7 +46,7 @@ public class MainActivity extends BridgeActivity {
 
       // ...
     // Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713
-    MobileAds.initialize(this, "YOUR_ADMOB_APP_ID");
+    MobileAds.initialize(this, R.string.abertura1);
 
     } else {
       Log.d(TAG, "onCreate() No saved state available");

@@ -1,7 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">photo-gallery-capacitor-react</string>
-    <string name="title_activity_main">photo-gallery-capacitor-react</string>
-    <string name="package_name">io.ionic.starter</string>
+    <string name="app_name">poligonosapp-capacitor-react</string>
+    <string name="title_activity_main">poligonosapp-capacitor-react</string>
+    <string name="package_name">com.luismendes070.poligonosdemos.poligonosapp</string>
+    <string name="banner1">ca-app-pub-7548987622333028/1548587447</string>
+    <string name="abertura1">ca-app-pub-7548987622333028~4374366227</string>
+    <string name="abertura2">ca-app-pub-7548987622333028/7575244639</string>
     <string name="custom_url_scheme">io.ionic.starter</string>
 </resources>

@@ -1,6 +1,6 @@
 {
     "name": "@poligonosdemos/pwa_ionic_react_poligonosapp",
-    "version": "1.7.6",
+    "version": "1.7.7",
     "description": "poligonosapp",
     "engines": {
         "node": "14.x",
@@ -71,6 +71,7 @@
         "@capacitor/core": "^2.4.5",
         "@capacitor/ios": "2.4.5",
         "@firebase/app": "^0.6.15",
+        "@ionic-native/core": "^5.31.1",
         "@ionic/pwa-elements": "^3.0.2",
         "@ionic/react": "^5.0.7",
         "@ionic/react-router": "^5.0.7",
@@ -87,6 +88,7 @@
         "@types/css-tree": "^1.0.4",
         "@types/express": "^4.17.9",
         "@types/geojson": "^7946.0.7",
+        "@types/google.analytics": "0.0.41",
         "@types/jest": "^26.0.19",
         "@types/leaflet-draw": "^1.0.3",
         "@types/mongoose": "^5.10.3",
@@ -103,6 +105,7 @@
         "@types/tough-cookie": "^4.0.0",
         "@types/webpack-manifest-plugin": "^3.0.1",
         "@types/webpack-merge": "^4.1.5",
+        "autotrack": "^2.4.1",
         "awesome-typescript-loader": "^5.2.1",
         "babel-esm-plugin": "^0.9.0",
         "babel-loader": "^8.1.0",
