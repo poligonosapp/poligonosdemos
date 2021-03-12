@@ -18,6 +18,10 @@ import results from '../.jest-test-result.json';
 
   const query2 = loader('./poligono-geojson.graphql.ts');// mock
 
+  test('should gtagjs firebase analytics', () => {
+    fail(true);
+});
+
 test('should include javascript but not json', () => {
     let theregex = "./packages/pwa_ionic_react_poligonosapp/src/**/*.j[%s]";
     fail(true);

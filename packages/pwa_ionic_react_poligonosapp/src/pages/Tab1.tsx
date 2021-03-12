@@ -25,6 +25,16 @@ import L, { circle, CRS } from 'leaflet';
 // let YourComponent  = require('./stories/SetupStoryBook.tsx');
 // let SetupStoryBook  = require('./stories/SetupStoryBook.tsx');
 
+interface Props {
+// any other props that come into the component, you don't have to explicitly define children.
+}
+
+const Button: React.FC<Props> = ({ children, ...props }) => {
+  return (
+      <Button {...props}>{children}</Button>
+  );
+};
+
 import React, {
     FC,
     useState,

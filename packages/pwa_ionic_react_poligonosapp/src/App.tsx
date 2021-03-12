@@ -1,10 +1,40 @@
+import L from 'leaflet';
+
+// require('firebase');
+let firebase = require('firebase');
+// import firebase from 'firebase';
+let admin = require('firebase-admin');
+// import * as admin from 'firebase-admin';// es 2015
+
 import { ApolloProvider } from '@apollo/client';
 
 // import SetupStoryBook from './stories/SetupStoryBook';
 
 import { mapFetchFunction } from './pages/oneGeoJSON';
 
+import { PoligonoDesenho } from './models/poligono';
 
+interface Props {
+// any other props that come into the component, you don't have to explicitly define children.
+  pd: PoligonoDesenho;
+}
+
+const Button: React.FC<Props> = ({ children, ...props }) => {
+
+  let map = L.map('mapid').setView([51.505, -0.09], 13);
+
+  // map.setView(pd);
+
+  return (
+    
+      <Button {...props}>      
+      {children}
+      <oneGeoJSON {...props}>
+        {map}
+      </oneGeoJSON>
+      </Button> 
+  );
+};
 // import GeoJSON from 'leaflet';//response
 
 let $ = require('jquery');
@@ -51,8 +81,8 @@ import './theme/variables.css';
 import './index.css';
 
 // let admin = require('firebase-admin');
-import * as admin from 'firebase-admin';
-import * as url from "url";
+// import * as admin from 'firebase-admin';
+// import * as url from "url";
 
 admin.initializeApp({
   credential: admin.credential.applicationDefault(),
@@ -60,7 +90,7 @@ admin.initializeApp({
 });
 
 let refreshToken;
-let idToken = "process.env.REACT_APP_AUTH0_CLIENT_ID";
+let idToken = process.env.REACT_APP_AUTH0_CLIENT_ID;
 
 firebase.auth().currentUser.getIdToken(true).then(function (idToken) {
   // Send token to your backend via HTTPS
