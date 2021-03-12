@@ -83,8 +83,8 @@ admin.initializeApp({
 // var admin = require('firebase-admin');
 let app = admin.initializeApp();
 
-const defaultAppConfig = "process.env.DEFAULT_CONFIG" | null ;
-const otherAppConfig = "process.env.OTHER_APP_CONFIG" | null;
+const defaultAppConfig = process.env.DEFAULT_CONFIG | null ;
+const otherAppConfig = process.env.OTHER_APP_CONFIG | null;
 
 // Initialize the default app
 let defaultApp = admin.initializeApp(defaultAppConfig);

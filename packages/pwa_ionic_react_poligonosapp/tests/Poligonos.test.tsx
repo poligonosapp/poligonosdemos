@@ -1,14 +1,14 @@
-const { assert } = require('@hapi/hoek')
+const { assert } = require('@hapi/hoek');
 
 // const supertest = require('supertest');
 
-const request = require('supertest')
-const express = require('express')
+const request = require('supertest');
+const express = require('express');
 
 const app = express()
 
 app.get('/poligono', function (req, res) {
-    res.status(200).json({ name: 'john' })
+    res.status(200).json({ name: 'fail' });
 })
 
 request(app)
@@ -26,7 +26,7 @@ describe('GET /poligono', function () {
             .get('/poligono')
             .set('Accept', 'application/json')
             .expect('Content-Type', /geojson/)
-            .expect(200, done)
+            .expect(200, done);
     })
 })
 
@@ -37,12 +37,12 @@ describe('GET /poligono', function () {
             .auth('username', 'password')
             .set('Accept', 'application/json')
             .expect('Content-Type', /geojson/)
-            .expect(200, done)
+            .expect(200, done);
     })
 })
 
-describe('GET /poligonos', function () {
-    it('responds with json', function () {
+describe('GET /api/v1/poligonos', function () {
+    it('should respond with geojson', function () {
         return request(app)
             .get('process.env.enpoint'.concat('/api/v1/poligonos'))
             .set('Accept', 'application/json')
