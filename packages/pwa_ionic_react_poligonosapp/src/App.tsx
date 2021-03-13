@@ -1,3 +1,4 @@
+import React, { useState, useMemo, memo } from 'react';
 import L from 'leaflet';
 
 // require('firebase');
@@ -39,7 +40,7 @@ const Button: React.FC<Props> = ({ children, ...props }) => {
 
 let $ = require('jquery');
 
-import React, { useState } from 'react';
+
 import { useAuth0 } from '@auth0/auth0-react';
 // import { Profile } from './pages/Profile';
 import { Redirect, Route } from 'react-router-dom';
@@ -272,4 +273,4 @@ if (isAuthenticated) {
 // );
 };
 
-export default App;
+export default memo(App);

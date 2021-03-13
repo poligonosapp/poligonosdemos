@@ -18,6 +18,10 @@ import results from '../.jest-test-result.json';
 
   const query2 = loader('./poligono-geojson.graphql.ts');// mock
 
+test('should oneGeoJSON JSX.IntrinsicElements typescript 7026', () => {
+    fail(true);
+});
+
   test('should gtagjs firebase analytics', () => {
     fail(true);
 });

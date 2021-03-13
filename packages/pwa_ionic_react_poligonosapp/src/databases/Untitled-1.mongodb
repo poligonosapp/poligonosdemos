@@ -27,6 +27,9 @@ db.test.insertOne(
 }
 );
 
+db.ShapeFiles.findAll();
+db.fail.findAll();
+
 db.mapas.insertOne(
   {
   "type": "Polygon",
