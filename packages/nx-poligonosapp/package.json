@@ -1,6 +1,6 @@
 {
   "name": "@poligonosdemos/nx-poligonosapp",
-  "version": "1.6.6",
+  "version": "1.8.1",
   "license": "MIT",
   "scripts": {
     "nx": "npm",

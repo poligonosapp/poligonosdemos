@@ -1,6 +1,6 @@
 {
   "name": "poligonosdemos",
-  "version": "1.8.0",
+  "version": "1.8.1",
   "private": true,
   "homepage": "https://www.poligonosapp.herokuapp.com",
   "nodemonConfig": {
@@ -114,7 +114,7 @@
     "quicklink": "^2.1.0",
     "react-ga": "^3.3.0",
     "react-leaflet": "^3.1.0",
-    "react-native": "^0.63.4",
+    "react-native-web": "^0.15.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.1",
     "remove": "^0.1.5",
@@ -146,6 +146,7 @@
     "quicklink": "^2.0.0 || ^2.1.0",
     "react": "^16.14.0",
     "react-dom": "^17.0.1",
+    "react-native": "^0.64.0",
     "react-snap": "^1.23.0",
     "typescript": "^4.1.2",
     "webpack": "4.41.0",

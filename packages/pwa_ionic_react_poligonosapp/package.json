@@ -1,6 +1,6 @@
 {
     "name": "@poligonosdemos/pwa_ionic_react_poligonosapp",
-    "version": "1.8.0",
+    "version": "1.8.1",
     "description": "poligonosapp",
     "engines": {
         "node": "14.x",

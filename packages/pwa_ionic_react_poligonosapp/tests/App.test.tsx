@@ -10,13 +10,42 @@ import { MockedProvider } from "@apollo/client/testing";
 
  // import {YourComponent, FirstStory} from './src/stories/SetupStoryBook';
 
-import results from '../.jest-test-result.json';
+// import results from '../.jest-test-result.json';
 
   import { loader } from 'graphql.macro';
 
   const query = loader('./poligono.graphql');
 
   const query2 = loader('./poligono-geojson.graphql.ts');// mock
+
+  test(' should react suspense experimental redux http response', () => {
+      const dataFetchReducer = (state, action) => {
+  switch (action.type) {
+    case 'FETCH_INIT':
+      return {
+        ...state,
+        isLoading: true,
+        isError: false
+      };
+    case 'FETCH_SUCCESS':
+      return {
+        ...state,
+        isLoading: false,
+        isError: false,
+        data: action.payload,
+      };
+    case 'FETCH_FAILURE':
+      return {
+        ...state,
+        isLoading: false,
+        isError: true,
+      };
+    default:
+      throw new Error();
+  }
+};
+fail(true);
+  });
 
 test('should oneGeoJSON JSX.IntrinsicElements typescript 7026', () => {
     fail(true);
@@ -43,19 +72,19 @@ test('should delete storybook', () => {
     fail(true);
 });
 
-test('should storybook FirsStory', () => {
+test('should not storybook FirstStory', () => {
     //    const { baseElement } = render(<SetupStoryBook />);
     
-    const { baseElement } = render(<FirstStory />);
-    expect(baseElement).toBeDefined();
+    // const { baseElement } = render(<FirstStory />);
+    // expect(baseElement).toBeDefined();
     fail(true);
 });
 
-test('should storybook', () => {
+test('should not storybook', () => {
     //    const { baseElement } = render(<SetupStoryBook />);
-    const { baseElement } = render(<YourComponent />);
+    // const { baseElement } = render(<YourComponent />);
 
-    expect(baseElement).toBeDefined();
+    // expect(baseElement).toBeDefined();
     fail(true);
 });
 
@@ -97,17 +126,17 @@ it('jest expo works', () => {
   expect(1).toBe(1);
 });
 
-describe('jest expo <App />', () => {
+describe('should not jest expo <App /> typescript 2339', () => {
   it('has 1 child', () => {
-    const tree = renderer.create(<App />).toJSON();
-    expect(tree.children.length).toBe(1);
+    // const tree = renderer.create(<App />).toJSON();
+    // expect(tree.children.length).toBe(1);//typescript 2339
     fail(true);
   });
 });
 
 // import { response } from 'express';
 
-const React = require('react');
+//const React = require('react');
 const render = require('@testing-library/react');
 import TestRenderer from 'react-test-renderer'; // ES6
 // const TestRenderer = require('react-test-renders'); // ES5 com npm reactjs docs
@@ -241,7 +270,8 @@ test('should fetch get status code 200 OK', () => {
 test('renders without crashing', () => {
     // const { baseElement } = render(<App />);
     // L.Layer
-    expect(baseElement).toBeDefined();
+    //expect(baseElement).toBeDefined();
+    fail(true);
 })
 
 test('shapefile types upload', () => {

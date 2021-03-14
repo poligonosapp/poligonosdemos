@@ -13,6 +13,9 @@ describe("Test the root path", () => {
 });
 
 describe('Test the addLike method', () => {
+
+let mongoDB = require('mongodb');
+
     beforeAll(() => {
         mongoDB.connect();
     });
@@ -28,7 +31,7 @@ module.exports = {
   mongoose,
   connect: () => {
     mongoose.Promise = Promise;
-    mongoose.connect(config.database[process.env.NODE_ENV]);
+    mongoose.connect(process.env.CONNECT);
   },
   disconnect: done => {
     mongoose.disconnect(done);
