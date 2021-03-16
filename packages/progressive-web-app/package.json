@@ -2,7 +2,7 @@
   "name": "@poligonosdemos/progressive-web-app",
   "version": "1.8.1",
   "scripts": {
-    "dev": "next dev",
+    "dev": "dev",
     "build": "build",
     "start": "start"
   },

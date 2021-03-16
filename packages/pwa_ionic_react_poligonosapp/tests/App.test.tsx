@@ -18,6 +18,9 @@ import { MockedProvider } from "@apollo/client/testing";
 
   const query2 = loader('./poligono-geojson.graphql.ts');// mock
 
+  
+
+
   test(' should react suspense experimental redux http response', () => {
       const dataFetchReducer = (state, action) => {
   switch (action.type) {

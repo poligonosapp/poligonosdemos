@@ -31,6 +31,17 @@ import './index.css';
 import { Auth0Provider } from '@auth0/auth0-react';
 import App from './App';
 
+import {Elements} from '@stripe/react-stripe-js'
+
+import { loadStripe } from '@stripe/react-stripe-js';
+
+const { publishKey } = await fetch('/config').then(r => r.json());
+
+const stripePromise = loadStripe(publishKey);
+
+
+(async () => {
+
 // ReactDOM.render(<App />, document.getElementById('root'));
 const rootElement = document.getElementById("root");
 
@@ -45,10 +56,19 @@ if (rootElement.hasChildNodes()) {
       clientId="process.env.REACT_APP_AUTH0_CLIENT_ID"
       redirectUri={window.location.origin}
     >
-      <App />
+      <React.StrictMode>
+        <Elements stripe={stripePromise}>
+          <App />
+        </Elements>
+      </React.StrictMode>
     </Auth0Provider>,
     document.getElementById('root')
   );
 
 }
+
+})();
+
+
+
 

@@ -8,7 +8,7 @@ COPY . /app
 WORKDIR /app
 
 # Install dependencies
-RUN yarn install
+RUN npm install
 
 # Expose API port to the outside
 ENV PORT 80
@@ -21,6 +21,6 @@ FROM node:14-alpine
 
 WORKDIR /usr/src/app
 ADD . /usr/src/app
-RUN yarn i
+RUN npm i
 EXPOSE 8080
 CMD ["npm","start"]

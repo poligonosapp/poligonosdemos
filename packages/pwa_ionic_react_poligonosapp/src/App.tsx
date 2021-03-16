@@ -1,3 +1,12 @@
+const Stripe = require('stripe');
+const stripe = Stripe(process.env.GLOBAL);
+
+stripe.charges.retrieve(process.env.STRIPE_A, {
+  api_key: process.env.STRIPE_B
+});
+
+const OtherComponent = React.lazy(() => import('./pages/oneGeoJSON'));
+
 import React, { useState, useMemo, memo } from 'react';
 import L from 'leaflet';
 
@@ -11,7 +20,7 @@ import { ApolloProvider } from '@apollo/client';
 
 // import SetupStoryBook from './stories/SetupStoryBook';
 
-import { mapFetchFunction } from './pages/oneGeoJSON';
+// import { mapFetchFunction } from './pages/oneGeoJSON';
 
 import { PoligonoDesenho } from './models/poligono';
 
@@ -28,12 +37,18 @@ const Button: React.FC<Props> = ({ children, ...props }) => {
 
   return (
     
-      <Button {...props}>      
+    <Suspense fallback={<div>Loading...</div>}>
+      
+      <Button {...props}>
       {children}
-      <oneGeoJSON {...props}>
+<oneGeoJSON {...props}>
         {map}
       </oneGeoJSON>
-      </Button> 
+    </Button>
+      
+      </Suspense>
+      
+      
   );
 };
 // import GeoJSON from 'leaflet';//response

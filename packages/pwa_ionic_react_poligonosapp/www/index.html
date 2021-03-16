@@ -63,6 +63,17 @@
 
         <h1 id="adminApp">Admin App</h1>
 
+        <!-- Stripe.js -->
+<script src="https://js.stripe.com/v3/"></script>
+
+<!-- React Stripe.js development build -->
+<script src="https://unpkg.com/@stripe/react-stripe-js@latest/dist/react-stripe.umd.js"></script>
+
+<!-- When you are ready to deploy your site to production, remove the
+     above development script, and include the following production build. -->
+<script src="https://unpkg.com/@stripe/react-stripe-js@latest/dist/react-stripe.umd.min.js"></script>
+
+
         <script>
 (function(w,d,s,g,js,fs){
   g=w.gapi||(w.gapi={});g.analytics={q:[],ready:function(f){this.q.push(f);}};
