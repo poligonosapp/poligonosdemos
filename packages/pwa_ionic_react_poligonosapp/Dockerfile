@@ -1,9 +1,12 @@
-FROM node:14-alpine as build
+FROM node:14-slim as build
 
 RUN apk update && apk upgrade && \
   apk add --no-cache bash git openssh yarn
 
 RUN mkdir /app
+
+# check every 30s to ensure this service returns HTTP 200
+HEALTHCHECK --interval=30s CMD node healthcheck.js
 
 WORKDIR /app
 
@@ -22,6 +25,9 @@ FROM node:14-alpine
 RUN mkdir -p /app/build
 
 RUN apk update && apk upgrade && apk add yarn git
+
+# check every 30s to ensure this service returns HTTP 200
+HEALTHCHECK --interval=30s CMD node healthcheck.js
 
 WORKDIR /app
 
@@ -47,6 +53,9 @@ CMD ["yarn", "prod"]
 
 
 FROM node:14-alpine
+
+# check every 30s to ensure this service returns HTTP 200
+HEALTHCHECK --interval=30s CMD node healthcheck.js
 
 WORKDIR /usr/src/app
 ADD . /usr/src/app

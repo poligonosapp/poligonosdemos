@@ -2,7 +2,7 @@
 
 module.exports = function(app) {
   app.use(
-    '/api',
+    '/api/v1/poligonos',
     createProxyMiddleware({
       target: 'http://localhost:5000',
       changeOrigin: true,

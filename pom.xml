@@ -75,4 +75,10 @@
     </profile>
   </profiles>
 
+  <repositories>
+    <repository>
+      <url>https://github.com/poligonosapp/poligonosdemos</url>
+    </repository>
+  </repositories>
+
 </project>

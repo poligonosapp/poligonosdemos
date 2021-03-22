@@ -1,3 +1,5 @@
+require('./pages/oneGeoJSON');
+import ButtonProps from './pages/ButtonProps';
 const Stripe = require('stripe');
 const stripe = Stripe(process.env.GLOBAL);
 
@@ -5,13 +7,27 @@ stripe.charges.retrieve(process.env.STRIPE_A, {
   api_key: process.env.STRIPE_B
 });
 
-const OtherComponent = React.lazy(() => import('./pages/oneGeoJSON'));
+// const OtherComponent = React.lazy(() => import('./pages/oneGeoJSON'));
 
-import React, { useState, useMemo, memo } from 'react';
+import React, { useState, useMemo, memo, Suspense } from 'react';
 import L from 'leaflet';
 
 // require('firebase');
-let firebase = require('firebase');
+
+// Firebase App (the core Firebase SDK) is always required and must be listed first
+// import firebase from "firebase/app";
+// If you are using v7 or any earlier version of the JS SDK, you should import firebase using namespace import
+// import * as firebase from "firebase/app"
+
+// If you enabled Analytics in your project, add the Firebase SDK for Analytics
+// import "firebase/analytics";
+
+// Add the Firebase products that you want to use
+// import "firebase/auth";
+
+// require('firebase/auth');
+
+// let firebase = require('firebase');
 // import firebase from 'firebase';
 let admin = require('firebase-admin');
 // import * as admin from 'firebase-admin';// es 2015
@@ -22,38 +38,10 @@ import { ApolloProvider } from '@apollo/client';
 
 // import { mapFetchFunction } from './pages/oneGeoJSON';
 
-import { PoligonoDesenho } from './models/poligono';
 
-interface Props {
-// any other props that come into the component, you don't have to explicitly define children.
-  pd: PoligonoDesenho;
-}
-
-const Button: React.FC<Props> = ({ children, ...props }) => {
-
-  let map = L.map('mapid').setView([51.505, -0.09], 13);
-
-  // map.setView(pd);
-
-  return (
-    
-    <Suspense fallback={<div>Loading...</div>}>
-      
-      <Button {...props}>
-      {children}
-<oneGeoJSON {...props}>
-        {map}
-      </oneGeoJSON>
-    </Button>
-      
-      </Suspense>
-      
-      
-  );
-};
 // import GeoJSON from 'leaflet';//response
 
-let $ = require('jquery');
+let $ = require('jquery')( window );
 
 
 import { useAuth0 } from '@auth0/auth0-react';
@@ -108,29 +96,23 @@ admin.initializeApp({
 let refreshToken;
 let idToken = process.env.REACT_APP_AUTH0_CLIENT_ID;
 
-firebase.auth().currentUser.getIdToken(true).then(function (idToken) {
-  // Send token to your backend via HTTPS
-  // ...
+// idToken = admin.initializeApp();
 
-refreshToken = admin.initializeApp();// new token 
 
-}).catch(function(error) {
-  // Handle error
-});
 
 // "process.env.FIREBASE_REFRESH_TOKEN"=refreshToken; // Get refresh token from OAuth2 flow
 
 admin.initializeApp({
   credential: admin.credential.refreshToken(refreshToken),
-  databaseURL: 'https://poligonosapp-default-rtdb.firebaseio.com/'
+  databaseURL: process.env.FIREBASE_DATABASE_URL
 });
 
 // Initialize the default app
 // var admin = require('firebase-admin');
 let app = admin.initializeApp();
 
-const defaultAppConfig = process.env.DEFAULT_CONFIG | null ;
-const otherAppConfig = process.env.OTHER_APP_CONFIG | null;
+const defaultAppConfig = process.env.DEFAULT_CONFIG;
+const otherAppConfig = process.env.OTHER_APP_CONFIG;
 
 // Initialize the default app
 let defaultApp = admin.initializeApp(defaultAppConfig);
@@ -169,7 +151,7 @@ let serviceAccount = require("./google-services.json");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: "https://poligonosapp-default-rtdb.firebaseio.com"
+  databaseURL: process.env.FIREBASE_DATABASE_URL
 });
 
 //JQuery
@@ -210,7 +192,7 @@ let options = {
     '{"client_id":"process.env.CLIENT_ID","client_secret":"process.env.CLIENT_SECRET","audience": "process.env.AUDIENCE","grant_type": "client_credentials"}'
 };
 
-request(options, function (error, body) {
+request(options, function (error: string | undefined, body: any) {
   if (error) throw new Error(error);
 
   console.log(body);
@@ -260,6 +242,8 @@ if (isAuthenticated) {
             
             Hello {user.name}
 
+                
+
         <IonButton onClick={() => logout({ returnTo: window.location.origin })}>
           Log out
         </IonButton>
@@ -289,3 +273,7 @@ if (isAuthenticated) {
 };
 
 export default memo(App);
+function nodemon(error: any) {
+  throw new Error('Function not implemented.');
+}
+

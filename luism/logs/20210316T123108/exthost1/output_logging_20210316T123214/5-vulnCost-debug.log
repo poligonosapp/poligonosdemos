@@ -1,0 +1,382 @@
+userid found: undefined
+created userid: 6b6132b0-4fc6-40fd-8a6c-5dfcf286de1f
+🔓 Using anonymous API
+sending stats action:[FIRST_STARTUP], comment:[authed: false]
+query @auth0/auth0-react@1.3.0
+query @auth0/auth0-spa-js@1.13.6
+query @babel/core@7.13.10
+query @babel/plugin-transform-react-jsx@7.12.17
+query @babel/preset-react@7.12.13
+query @capacitor/cli@2.4.7
+query @capacitor/core@2.4.7
+query @hapi/hoek@9.1.1
+query @ionic/cli@6.13.1
+query @ionic/cli-plugin-proxy@1.5.8
+query @ionic/pwa-elements@3.0.2
+query @ionic/react@5.6.0
+query @ionic/react-router@5.6.0
+query @jest/types@26.6.2
+query @lerna/import@3.22.0
+query @lerna/init@3.21.0
+query @lerna/run@3.21.0
+query @material-ui/core@4.11.3
+query @material-ui/lab@4.0.0-alpha.57
+query @react-native-community/eslint-config@2.0.0
+query @snyk/dep-graph@1.27.1
+query @testing-library/dom@7.29.6
+query @types/concurrently@5.2.1
+query @types/convert-string@0.1.1
+query @types/history@4.7.8
+query @types/react-router-dom@5.1.7
+query @types/react-select@4.0.13
+query @yarnpkg/plugin-dlx@2.1.4
+query apollo-server@2.21.1
+query apollo-server-express@2.21.1
+query babel-plugin-react-relay@0.10.0
+query body-parser@1.19.0
+query concurrently@5.3.0
+query cryptiles@4.1.3
+query expandjs@1.2.2
+query expo@40.0.1
+query expo-cli@4.3.0
+query expose-loader@1.0.3
+query fastify@3.14.0
+query firebase-admin@9.5.0
+query flow-bin@0.143.1
+query graphql@15.5.0
+query graphql-geojson@1.0.0
+query graphql.macro@1.4.2
+query history@5.0.0
+query http-proxy-middleware@1.0.6
+query jest-expo@40.0.2
+query joi@17.4.0
+query jsmin@1.0.1
+query jwt-decode@3.1.2
+query leaflet@1.7.1
+query lerna@3.22.1
+query lodash@4.17.21
+query micromatch@4.0.2
+query mongodb-realm-cli@1.3.1
+query node-sass@5.0.0
+query openapi-to-postmanv2@2.4.0
+query quicklink@2.1.0
+query react-ga@3.3.0
+query react-leaflet@3.1.0
+query react-native-web@0.15.0
+query react-router-dom@5.2.0
+query react-scripts@4.0.3
+query remove@0.1.5
+query snyk@1.485.0
+query tap@14.11.0
+query ts-node@9.1.1
+query vscode-apollo-relay@1.5.1
+query web-vitals@0.2.4
+query webpack-cli@4.2.0
+query webpack-dashboard@3.3.1
+query webpack-stream@4.0.0
+query workbox-expiration@6.1.1
+query workbox-routing@6.1.1
+query workbox-strategies@6.1.1
+response: 200 on message undefined - undefined
+testing @auth0/auth0-react@1.3.0
+sending stats action:[TEST], comment:[@auth0/auth0-react@1.3.0 - authed: false]
+testing @auth0/auth0-spa-js@1.13.6
+testing @babel/core@7.13.10
+testing @babel/plugin-transform-react-jsx@7.12.17
+testing @babel/preset-react@7.12.13
+testing @capacitor/cli@2.4.7
+testing @capacitor/core@2.4.7
+testing @hapi/hoek@9.1.1
+testing @ionic/cli@6.13.1
+testing @ionic/cli-plugin-proxy@1.5.8
+testing @ionic/pwa-elements@3.0.2
+testing @ionic/react@5.6.0
+testing @ionic/react-router@5.6.0
+testing @jest/types@26.6.2
+testing @lerna/import@3.22.0
+testing @lerna/init@3.21.0
+testing @lerna/run@3.21.0
+testing @material-ui/core@4.11.3
+testing @material-ui/lab@4.0.0-alpha.57
+testing @react-native-community/eslint-config@2.0.0
+testing @snyk/dep-graph@1.27.1
+testing @testing-library/dom@7.29.6
+testing @types/concurrently@5.2.1
+testing @types/convert-string@0.1.1
+testing @types/history@4.7.8
+testing @types/react-router-dom@5.1.7
+testing @types/react-select@4.0.13
+testing @yarnpkg/plugin-dlx@2.1.4
+testing apollo-server@2.21.1
+testing apollo-server-express@2.21.1
+testing babel-plugin-react-relay@0.10.0
+testing body-parser@1.19.0
+testing concurrently@5.3.0
+testing cryptiles@4.1.3
+testing expandjs@1.2.2
+testing expo@40.0.1
+testing expo-cli@4.3.0
+testing expose-loader@1.0.3
+error: Error: Request failed with status code 429 on message undefined - undefined
+testing fastify@3.14.0
+testing firebase-admin@9.5.0
+testing flow-bin@0.143.1
+testing graphql@15.5.0
+testing graphql-geojson@1.0.0
+testing graphql.macro@1.4.2
+testing history@5.0.0
+testing http-proxy-middleware@1.0.6
+testing jest-expo@40.0.2
+testing joi@17.4.0
+testing jsmin@1.0.1
+testing jwt-decode@3.1.2
+testing leaflet@1.7.1
+testing lerna@3.22.1
+testing lodash@4.17.21
+testing micromatch@4.0.2
+testing mongodb-realm-cli@1.3.1
+testing node-sass@5.0.0
+testing openapi-to-postmanv2@2.4.0
+testing quicklink@2.1.0
+testing react-ga@3.3.0
+testing react-leaflet@3.1.0
+testing react-native-web@0.15.0
+testing react-router-dom@5.2.0
+testing react-scripts@4.0.3
+testing remove@0.1.5
+testing snyk@1.485.0
+testing tap@14.11.0
+testing ts-node@9.1.1
+testing vscode-apollo-relay@1.5.1
+testing web-vitals@0.2.4
+testing webpack-cli@4.2.0
+testing webpack-dashboard@3.3.1
+testing webpack-stream@4.0.0
+testing workbox-expiration@6.1.1
+testing workbox-routing@6.1.1
+testing workbox-strategies@6.1.1
+vuln test complete for @babel/plugin-transform-react-jsx@7.12.17
+getDecorationMessage - has object? true, has prop? true, for @babel/plugin-transform-react-jsx
+vuln test complete for @capacitor/cli@2.4.7
+getDecorationMessage - has object? true, has prop? true, for @capacitor/cli
+vuln test complete for @capacitor/core@2.4.7
+getDecorationMessage - has object? true, has prop? true, for @capacitor/core
+vuln test complete for @auth0/auth0-spa-js@1.13.6
+getDecorationMessage - has object? true, has prop? true, for @auth0/auth0-spa-js
+vuln test complete for @babel/core@7.13.10
+getDecorationMessage - has object? true, has prop? true, for @babel/core
+vuln test complete for @hapi/hoek@9.1.1
+getDecorationMessage - has object? true, has prop? true, for @hapi/hoek
+vuln test complete for @ionic/cli@6.13.1
+getDecorationMessage - has object? true, has prop? true, for @ionic/cli
+vuln test complete for @ionic/cli-plugin-proxy@1.5.8
+getDecorationMessage - has object? true, has prop? true, for @ionic/cli-plugin-proxy
+vuln test complete for @ionic/pwa-elements@3.0.2
+getDecorationMessage - has object? true, has prop? true, for @ionic/pwa-elements
+vuln test complete for @ionic/react@5.6.0
+getDecorationMessage - has object? true, has prop? true, for @ionic/react
+vuln test complete for @auth0/auth0-react@1.3.0
+getDecorationMessage - has object? true, has prop? true, for @auth0/auth0-react
+vuln test complete for @testing-library/dom@7.29.6
+getDecorationMessage - has object? true, has prop? true, for @testing-library/dom
+vuln test complete for @babel/preset-react@7.12.13
+getDecorationMessage - has object? true, has prop? true, for @babel/preset-react
+vuln test complete for @snyk/dep-graph@1.27.1
+getDecorationMessage - has object? true, has prop? true, for @snyk/dep-graph
+vuln test complete for @types/convert-string@0.1.1
+getDecorationMessage - has object? true, has prop? true, for @types/convert-string
+vuln test complete for @types/react-router-dom@5.1.7
+getDecorationMessage - has object? true, has prop? true, for @types/react-router-dom
+vuln test complete for @types/react-select@4.0.13
+getDecorationMessage - has object? true, has prop? true, for @types/react-select
+vuln test complete for @yarnpkg/plugin-dlx@2.1.4
+getDecorationMessage - has object? true, has prop? true, for @yarnpkg/plugin-dlx
+vuln test complete for apollo-server@2.21.1
+getDecorationMessage - has object? true, has prop? true, for apollo-server
+vuln test complete for @types/concurrently@5.2.1
+getDecorationMessage - has object? true, has prop? true, for @types/concurrently
+vuln test complete for cryptiles@4.1.3
+getDecorationMessage - has object? true, has prop? true, for cryptiles
+vuln test complete for apollo-server-express@2.21.1
+getDecorationMessage - has object? true, has prop? true, for apollo-server-express
+vuln test complete for expo@40.0.1
+getDecorationMessage - has object? true, has prop? true, for expo
+vuln test complete for expandjs@1.2.2
+getDecorationMessage - has object? true, has prop? true, for expandjs
+vuln test complete for @types/history@4.7.8
+getDecorationMessage - has object? true, has prop? true, for @types/history
+vuln test complete for expo-cli@4.3.0
+getDecorationMessage - has object? true, has prop? true, for expo-cli
+vuln test complete for fastify@3.14.0
+getDecorationMessage - has object? true, has prop? true, for fastify
+vuln test complete for flow-bin@0.143.1
+getDecorationMessage - has object? true, has prop? true, for flow-bin
+vuln test complete for graphql@15.5.0
+getDecorationMessage - has object? true, has prop? true, for graphql
+vuln test complete for firebase-admin@9.5.0
+getDecorationMessage - has object? true, has prop? true, for firebase-admin
+vuln test complete for graphql-geojson@1.0.0
+getDecorationMessage - has object? true, has prop? true, for graphql-geojson
+vuln test complete for lerna@3.22.1
+getDecorationMessage - has object? true, has prop? true, for lerna
+vuln test complete for expose-loader@1.0.3
+getDecorationMessage - has object? true, has prop? true, for expose-loader
+vuln test complete for http-proxy-middleware@1.0.6
+getDecorationMessage - has object? true, has prop? true, for http-proxy-middleware
+vuln test complete for jest-expo@40.0.2
+getDecorationMessage - has object? true, has prop? true, for jest-expo
+vuln test complete for jsmin@1.0.1
+getDecorationMessage - has object? true, has prop? true, for jsmin
+vuln test complete for micromatch@4.0.2
+getDecorationMessage - has object? true, has prop? true, for micromatch
+vuln test complete for jwt-decode@3.1.2
+getDecorationMessage - has object? true, has prop? true, for jwt-decode
+vuln test complete for react-leaflet@3.1.0
+getDecorationMessage - has object? true, has prop? true, for react-leaflet
+vuln test complete for openapi-to-postmanv2@2.4.0
+getDecorationMessage - has object? true, has prop? true, for openapi-to-postmanv2
+vuln test complete for body-parser@1.19.0
+getDecorationMessage - has object? true, has prop? true, for body-parser
+vuln test complete for lodash@4.17.21
+getDecorationMessage - has object? true, has prop? true, for lodash
+vuln test complete for @react-native-community/eslint-config@2.0.0
+getDecorationMessage - has object? true, has prop? true, for @react-native-community/eslint-config
+vuln test complete for babel-plugin-react-relay@0.10.0
+getDecorationMessage - has object? true, has prop? true, for babel-plugin-react-relay
+vuln test complete for node-sass@5.0.0
+getDecorationMessage - has object? true, has prop? true, for node-sass
+vuln test complete for graphql.macro@1.4.2
+getDecorationMessage - has object? true, has prop? true, for graphql.macro
+vuln test complete for mongodb-realm-cli@1.3.1
+getDecorationMessage - has object? true, has prop? true, for mongodb-realm-cli
+vuln test complete for workbox-routing@6.1.1
+getDecorationMessage - has object? true, has prop? true, for workbox-routing
+vuln test complete for workbox-expiration@6.1.1
+getDecorationMessage - has object? true, has prop? true, for workbox-expiration
+vuln test complete for webpack-stream@4.0.0
+getDecorationMessage - has object? true, has prop? true, for webpack-stream
+vuln test complete for joi@17.4.0
+getDecorationMessage - has object? true, has prop? true, for joi
+vuln test complete for webpack-cli@4.2.0
+getDecorationMessage - has object? true, has prop? true, for webpack-cli
+vuln test complete for vscode-apollo-relay@1.5.1
+getDecorationMessage - has object? true, has prop? true, for vscode-apollo-relay
+vuln test complete for snyk@1.485.0
+getDecorationMessage - has object? true, has prop? true, for snyk
+vuln test complete for web-vitals@0.2.4
+getDecorationMessage - has object? true, has prop? true, for web-vitals
+vuln test complete for remove@0.1.5
+getDecorationMessage - has object? true, has prop? true, for remove
+vuln test complete for tap@14.11.0
+getDecorationMessage - has object? true, has prop? true, for tap
+vuln test complete for workbox-strategies@6.1.1
+getDecorationMessage - has object? true, has prop? true, for workbox-strategies
+vuln test complete for quicklink@2.1.0
+getDecorationMessage - has object? true, has prop? true, for quicklink
+vuln test complete for react-ga@3.3.0
+getDecorationMessage - has object? true, has prop? true, for react-ga
+vuln test complete for react-router-dom@5.2.0
+getDecorationMessage - has object? true, has prop? true, for react-router-dom
+vuln test complete for react-native-web@0.15.0
+getDecorationMessage - has object? true, has prop? true, for react-native-web
+vuln test complete for react-scripts@4.0.3
+getDecorationMessage - has object? true, has prop? true, for react-scripts
+vuln test complete for ts-node@9.1.1
+getDecorationMessage - has object? true, has prop? true, for ts-node
+vuln test complete for history@5.0.0
+getDecorationMessage - has object? true, has prop? true, for history
+vuln test complete for @jest/types@26.6.2
+getDecorationMessage - has object? true, has prop? true, for @jest/types
+vuln test complete for @ionic/react-router@5.6.0
+getDecorationMessage - has object? true, has prop? true, for @ionic/react-router
+vuln test complete for @lerna/import@3.22.0
+getDecorationMessage - has object? true, has prop? true, for @lerna/import
+vuln test complete for @lerna/init@3.21.0
+getDecorationMessage - has object? true, has prop? true, for @lerna/init
+vuln test complete for @lerna/run@3.21.0
+getDecorationMessage - has object? true, has prop? true, for @lerna/run
+vuln test complete for @material-ui/core@4.11.3
+getDecorationMessage - has object? true, has prop? true, for @material-ui/core
+vuln test complete for @material-ui/lab@4.0.0-alpha.57
+getDecorationMessage - has object? true, has prop? true, for @material-ui/lab
+vuln test complete for leaflet@1.7.1
+getDecorationMessage - has object? true, has prop? true, for leaflet
+vuln test complete for concurrently@5.3.0
+getDecorationMessage - has object? true, has prop? true, for concurrently
+vuln test complete for webpack-dashboard@3.3.1
+getDecorationMessage - has object? true, has prop? true, for webpack-dashboard
+getDecorationMessage - has object? true, has prop? true, for @auth0/auth0-react
+getDecorationMessage - has object? true, has prop? true, for @auth0/auth0-spa-js
+getDecorationMessage - has object? true, has prop? true, for @babel/core
+getDecorationMessage - has object? true, has prop? true, for @babel/plugin-transform-react-jsx
+getDecorationMessage - has object? true, has prop? true, for @babel/preset-react
+getDecorationMessage - has object? true, has prop? true, for @capacitor/cli
+getDecorationMessage - has object? true, has prop? true, for @capacitor/core
+getDecorationMessage - has object? true, has prop? true, for @hapi/hoek
+getDecorationMessage - has object? true, has prop? true, for @ionic/cli
+getDecorationMessage - has object? true, has prop? true, for @ionic/cli-plugin-proxy
+getDecorationMessage - has object? true, has prop? true, for @ionic/pwa-elements
+getDecorationMessage - has object? true, has prop? true, for @ionic/react
+getDecorationMessage - has object? true, has prop? true, for @ionic/react-router
+getDecorationMessage - has object? true, has prop? true, for @jest/types
+getDecorationMessage - has object? true, has prop? true, for @lerna/import
+getDecorationMessage - has object? true, has prop? true, for @lerna/init
+getDecorationMessage - has object? true, has prop? true, for @lerna/run
+getDecorationMessage - has object? true, has prop? true, for @material-ui/core
+getDecorationMessage - has object? true, has prop? true, for @material-ui/lab
+getDecorationMessage - has object? true, has prop? true, for @react-native-community/eslint-config
+getDecorationMessage - has object? true, has prop? true, for @snyk/dep-graph
+getDecorationMessage - has object? true, has prop? true, for @testing-library/dom
+getDecorationMessage - has object? true, has prop? true, for @types/concurrently
+getDecorationMessage - has object? true, has prop? true, for @types/convert-string
+getDecorationMessage - has object? true, has prop? true, for @types/history
+getDecorationMessage - has object? true, has prop? true, for @types/react-router-dom
+getDecorationMessage - has object? true, has prop? true, for @types/react-select
+getDecorationMessage - has object? true, has prop? true, for @yarnpkg/plugin-dlx
+getDecorationMessage - has object? true, has prop? true, for apollo-server
+getDecorationMessage - has object? true, has prop? true, for apollo-server-express
+getDecorationMessage - has object? true, has prop? true, for babel-plugin-react-relay
+getDecorationMessage - has object? true, has prop? true, for body-parser
+getDecorationMessage - has object? true, has prop? true, for concurrently
+getDecorationMessage - has object? true, has prop? true, for cryptiles
+getDecorationMessage - has object? true, has prop? true, for expandjs
+getDecorationMessage - has object? true, has prop? true, for expo
+getDecorationMessage - has object? true, has prop? true, for expo-cli
+getDecorationMessage - has object? true, has prop? true, for expose-loader
+getDecorationMessage - has object? true, has prop? true, for fastify
+getDecorationMessage - has object? true, has prop? true, for firebase-admin
+getDecorationMessage - has object? true, has prop? true, for flow-bin
+getDecorationMessage - has object? true, has prop? true, for graphql
+getDecorationMessage - has object? true, has prop? true, for graphql-geojson
+getDecorationMessage - has object? true, has prop? true, for graphql.macro
+getDecorationMessage - has object? true, has prop? true, for history
+getDecorationMessage - has object? true, has prop? true, for http-proxy-middleware
+getDecorationMessage - has object? true, has prop? true, for jest-expo
+getDecorationMessage - has object? true, has prop? true, for joi
+getDecorationMessage - has object? true, has prop? true, for jsmin
+getDecorationMessage - has object? true, has prop? true, for jwt-decode
+getDecorationMessage - has object? true, has prop? true, for leaflet
+getDecorationMessage - has object? true, has prop? true, for lerna
+getDecorationMessage - has object? true, has prop? true, for lodash
+getDecorationMessage - has object? true, has prop? true, for micromatch
+getDecorationMessage - has object? true, has prop? true, for mongodb-realm-cli
+getDecorationMessage - has object? true, has prop? true, for node-sass
+getDecorationMessage - has object? true, has prop? true, for openapi-to-postmanv2
+getDecorationMessage - has object? true, has prop? true, for quicklink
+getDecorationMessage - has object? true, has prop? true, for react-ga
+getDecorationMessage - has object? true, has prop? true, for react-leaflet
+getDecorationMessage - has object? true, has prop? true, for react-native-web
+getDecorationMessage - has object? true, has prop? true, for react-router-dom
+getDecorationMessage - has object? true, has prop? true, for react-scripts
+getDecorationMessage - has object? true, has prop? true, for remove
+getDecorationMessage - has object? true, has prop? true, for snyk
+getDecorationMessage - has object? true, has prop? true, for tap
+getDecorationMessage - has object? true, has prop? true, for ts-node
+getDecorationMessage - has object? true, has prop? true, for vscode-apollo-relay
+getDecorationMessage - has object? true, has prop? true, for web-vitals
+getDecorationMessage - has object? true, has prop? true, for webpack-cli
+getDecorationMessage - has object? true, has prop? true, for webpack-dashboard
+getDecorationMessage - has object? true, has prop? true, for webpack-stream
+getDecorationMessage - has object? true, has prop? true, for workbox-expiration
+getDecorationMessage - has object? true, has prop? true, for workbox-routing
+getDecorationMessage - has object? true, has prop? true, for workbox-strategies

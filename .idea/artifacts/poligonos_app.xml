@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="ear" name="poligonos-app">
+    <output-path>$PROJECT_DIR$/out/artifacts/poligonos_app</output-path>
+    <root id="archive" name="poligonos-app.ear" />
+  </artifact>
+</component>

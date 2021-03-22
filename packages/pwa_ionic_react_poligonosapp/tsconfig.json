@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "module": "es2020",
+    "module": "esnext",
     "noImplicitAny": true,
     "removeComments": true,
     "preserveConstEnums": true,
@@ -11,12 +11,15 @@
     ],
     "baseUrl": "src",
     "outDir": "./dist/",
-    "rootDirs": ["./src"],
+    "rootDirs": [
+      "./src"
+    ],
     "target": "es6",
     "lib": [
       "dom",
       "dom.iterable",
-      "esnext"
+      "esnext",
+      "ESNext.Symbol"
     ],
     "allowJs": true,
     "skipLibCheck": true,

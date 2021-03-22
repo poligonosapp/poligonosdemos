@@ -1,5 +1,5 @@
 {
-    "version": "1.8.1",
+    "version": "1.8.2",
     "useWorkspaces": true,
     "private": true,
     "license": "Apache License 2.0",
@@ -69,6 +69,7 @@
     ],
     "workspaces": [
         "poligonosapp-ionic",
+        "@poligonosdemos/packages/pwa_ionic_react_poligonosapp/src/index.tsx",
         "@poligonosdemos/ycppoligono",
         "@poligonosdemos/nextjs_poligonos/poligono",
         "@poligonosdemos/packages/*",

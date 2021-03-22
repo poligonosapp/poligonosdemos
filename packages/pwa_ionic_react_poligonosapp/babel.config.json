@@ -5,6 +5,8 @@
         "@babel/preset-typescript"
     ],
     "plugins": [
+        "graphql-tag",
+        "import-graphql",
         "@babel/plugin-proposal-object-rest-spread",
         "@babel/transform-runtime",
         "@babel/plugin-transform-react-jsx",
@@ -13,6 +15,7 @@
         "@babel/plugin-transform-modules-systemjs",
         "@babel/plugin-transform-modules-umd",
         "@babel/plugin-transform-flow-strip-types",
-        "@babel/plugin-transform-react-jsx-compat"
+        "@babel/plugin-transform-react-jsx-compat",
+        "react-relay"
     ]
 }

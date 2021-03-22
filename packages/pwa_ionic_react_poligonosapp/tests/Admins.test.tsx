@@ -1,5 +1,7 @@
 const { assert } = require('@hapi/hoek');
-const { runtime } = require('@babel/runtime')
+const { runtime } = require('@babel/runtime');
+
+
 
 // const supertest = require('supertest');
 
@@ -35,10 +37,13 @@ describe('GET /admin', function () {
     });
 });
 
-describe('GET /admin', function () {
+describe('should create token to GET /admins', function () {
+
+  let adminUser = require('./controller/AdminController');
+
     it('responds with json', function (done) {
         request(app)
-            .get('/admin')
+            .get('/admins')
             .auth('username', 'password')
             .set('Accept', 'application/json')
             .expect('Content-Type', /json/)

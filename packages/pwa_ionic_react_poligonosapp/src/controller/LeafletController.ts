@@ -48,24 +48,7 @@ export default function fun() {
         .setContent('I am a standalone popup.')
         .openOn(mymap)
 
-    function onMapClick(e) {
-        alert('You clicked the map at ' + e.latlng)
-        let polygon = require('./src/polygon.geojson')
-        popup.setLatLng(polygon[0].geometry.coordinates)
-    }
-
-    mymap.on('click', onMapClick)
-
-    // let popup = L.popup();
-
-    function onMapClick2(e) {
-        popup
-            .setLatLng(e.latlng)
-            .setContent('You clicked the map at ' + e.latlng.toString())
-            .openOn(mymap)
-    }
-
-    mymap.on('click', onMapClick2);
+    
 
 
     return mymap;

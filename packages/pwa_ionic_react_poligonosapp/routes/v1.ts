@@ -1,5 +1,6 @@
-var express = require('express');
-var app = express();
+//let auto rename
+let express = require('express');
+let app = express();
 
 let admin = require('./admins');
 let poligonos = require('./poligonos');

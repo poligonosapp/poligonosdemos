@@ -5,12 +5,12 @@ apply plugin: 'com.android.application'
 apply plugin: 'com.google.gms.google-services'
 
 android {
-    compileSdkVersion 28
-    buildToolsVersion "29.0.3"
+    compileSdkVersion ${compileSdkVersion}
+    buildToolsVersion ${buildTypes}
     defaultConfig {
         applicationId "com.github.luismendes070.poligonosdemos.poligonosapp"
-        minSdkVersion 15
-        targetSdkVersion 28
+        minSdkVersion ${minSdkVersion}
+        targetSdkVersion ${targetSdkVersion}
         versionCode 1.7
         versionName "1.7.6"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -60,48 +60,39 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    buildToolsVersion '29.0.3'
+
     ndkVersion '22.0.7026061'
     dependenciesInfo {
         includeInApk true
         includeInBundle true
     }
-}
 
-repositories {
-    // flatDir{dirs '../capacitor-cordova-android-plugins/src/main/libs', 'libs'}
-    mavenCentral()
-    google()
-    jcenter()
-    mavenLocal()
-}
+    /**
+     * The productFlavors block is where you can configure multiple product flavors.
+     * This allows you to create different versions of your app that can
+     * override the defaultConfig block with their own settings. Product flavors
+     * are optional, and the build system does not create them by default.
+     *
+     * This example creates a free and paid product flavor. Each product flavor
+     * then specifies its own application ID, so that they can exist on the Google
+     * Play Store, or an Android device, simultaneously.
+     *
+     * If you declare product flavors, you must also declare flavor dimensions
+     * and assign each flavor to a flavor dimension.
+     */
 
-/**
- * The productFlavors block is where you can configure multiple product flavors.
- * This allows you to create different versions of your app that can
- * override the defaultConfig block with their own settings. Product flavors
- * are optional, and the build system does not create them by default.
- *
- * This example creates a free and paid product flavor. Each product flavor
- * then specifies its own application ID, so that they can exist on the Google
- * Play Store, or an Android device, simultaneously.
- *
- * If you declare product flavors, you must also declare flavor dimensions
- * and assign each flavor to a flavor dimension.
- */
+    flavorDimensions "tier"
+    productFlavors {
+        free {
+            dimension "tier"
+            applicationId 'com.github.luismendes.poligonosdemos.poligonosapp.free'
+        }
 
-flavorDimensions "tier"
-productFlavors {
-    free {
-        dimension "tier"
-        applicationId 'com.github.luismendes.poligonosdemos.poligonosapp.free'
+        paid {
+            dimension "tier"
+            applicationId 'com.github.luismendes.poligonosdemos.poligonosapp.paid'
+        }
     }
-
-    paid {
-        dimension "tier"
-        applicationId 'com.github.luismendes.poligonosdemos.poligonosapp.paid'
-    }
-}
 
 /**
  * The splits block is where you can configure different APK builds that
@@ -110,17 +101,27 @@ productFlavors {
  * different versionCode.
  */
 
-splits {
-    // Settings to build multiple APKs based on screen density.
-    density {
+    splits {
+        // Settings to build multiple APKs based on screen density.
+        density {
 
-        // Enable or disable building multiple APKs.
-        enable false
+            // Enable or disable building multiple APKs.
+            enable false
 
-        // Exclude these densities when building multiple APKs.
-        exclude "ldpi", "tvdpi", "xxxhdpi", "400dpi", "560dpi"
+            // Exclude these densities when building multiple APKs.
+            exclude "ldpi", "tvdpi", "xxxhdpi", "400dpi", "560dpi"
+        }
     }
-}
+
+    repositories {
+        // flatDir{dirs '../capacitor-cordova-android-plugins/src/main/libs', 'libs'}
+        mavenCentral()
+        google()
+        jcenter()
+        mavenLocal()
+    }
+
+
 
 
 /**
@@ -133,63 +134,70 @@ splits {
 
 
 
-dependencies {
+    dependencies {
 
-    implementation 'com.auth0:auth0:1.27.0'
+        def billing_version = "3.0.0"
 
-    implementation 'androidx.core:core-ktx:1.3.2'
-    implementation 'androidx.appcompat:appcompat:1.2.0'
-    implementation 'com.google.android.material:material:1.3.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
-    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.4'
-    implementation 'androidx.navigation:navigation-ui-ktx:2.3.4'
-    testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
-    compileSdkVersion 'androidx.test.espresso:espresso-core:3.3.0'
+        implementation "com.android.billingclient:billing:$billing_version"
 
-    implementation localGroovy()
+        implementation 'com.auth0:auth0:1.27.0'
 
-    implementation 'org.codehaus.groovy:groovy-all:3.0.7'
+        implementation 'androidx.core:core-ktx:1.3.2'
+        implementation 'androidx.appcompat:appcompat:1.2.0'
+        implementation 'com.google.android.material:material:1.3.0'
+        implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+        implementation 'androidx.navigation:navigation-fragment-ktx:2.3.4'
+        implementation 'androidx.navigation:navigation-ui-ktx:2.3.4'
+        testImplementation 'junit:junit:4.13.2'
+        androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+        compileSdkVersion 'androidx.test.espresso:espresso-core:3.3.0'
 
-    implementation 'com.google.firebase:firebase-ads:19.7.0'
+        implementation localGroovy()
 
-    implementation 'androidx.exifinterface:exifinterface:1.3.2'
+        implementation 'org.codehaus.groovy:groovy-all:3.0.7'
 
-    implementation 'com.google.android.gms:play-services-location:18.0.0'
+        implementation 'com.google.firebase:firebase-ads:19.7.0'
 
-    // androidTestImplementation "io.cucumber:cucumber-android:${cucumberVersion}"
+        implementation 'androidx.exifinterface:exifinterface:1.3.2'
 
-    implementation project(":lib")
-    implementation 'com.android.support:appcompat-v7:28.0.0'
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation "com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}"
-    implementation fileTree(include: ['*.jar'], dir: 'libs')
-    //implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation project(':capacitor-android')
-    implementation 'androidx.appcompat:appcompat:1.2.0'
-    implementation 'com.google.android.gms:play-services-ads:19.7.0'
-    implementation "androidx.appcompat:appcompat:1.2.0"
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    testImplementation "junit:junit:4.13.2"
-    compileSdkVersion 'com.google.firebase:firebase-admin:7.1.1'
-    androidTestImplementation "androidx.test.ext:junit:1.1.2"
-    androidTestImplementation "androidx.test.espresso:espresso-core:3.3.0"
-    implementation project(':capacitor-cordova-android-plugins')
+        implementation 'com.google.android.gms:play-services-location:18.0.0'
 
-    implementation project('com.github.luismendes070.poligonosdemos.poligonosapp')
-    // classpath 'com.google.gms:google-services:4.3.5'
-    implementation platform('com.google.firebase:firebase-bom:26.6.0')
-    implementation 'com.google.firebase:firebase-analytics'
-}
+        // androidTestImplementation "io.cucumber:cucumber-android:${cucumberVersion}"
 
-apply plugin: 'capacitor.build.gradle'
+        implementation project(":lib")
+        implementation 'com.android.support:appcompat-v7:28.0.0'
+        implementation fileTree(dir: 'libs', include: ['*.jar'])
+        implementation "com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}"
+        implementation fileTree(include: ['*.jar'], dir: 'libs')
+        //implementation fileTree(dir: 'libs', include: ['*.jar'])
+        implementation project(':capacitor-android')
+        implementation 'androidx.appcompat:appcompat:1.2.0'
+        implementation 'com.google.android.gms:play-services-ads:19.7.0'
+        implementation "androidx.appcompat:appcompat:1.2.0"
+        implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+        testImplementation "junit:junit:4.13.2"
+        compileSdkVersion 'com.google.firebase:firebase-admin:7.1.1'
+        androidTestImplementation "androidx.test.ext:junit:1.1.2"
+        androidTestImplementation "androidx.test.espresso:espresso-core:3.3.0"
+        implementation project(':capacitor-cordova-android-plugins')
 
-try {
-    def servicesJSON = file('google-services.json')
-    if (servicesJSON.text) {
-        apply plugin: 'com.google.gms.google-services'
-        apply plugin: 'capacitor.build.gradle'
+        implementation project('com.github.luismendes070.poligonosdemos.poligonosapp')
+        // classpath 'com.google.gms:google-services:4.3.5'
+        implementation platform('com.google.firebase:firebase-bom:26.6.0')
+        implementation 'com.google.firebase:firebase-analytics'
     }
-} catch (Exception e) {
-    logger.warn("google-services.json not found, google-services plugin not applied. Push Notifications won't work")
-}
+
+    apply plugin: 'capacitor.build.gradle'
+
+    try {
+        def servicesJSON = file('google-services.json')
+        if (servicesJSON.text) {
+            apply plugin: 'com.google.gms.google-services'
+            apply plugin: 'capacitor.build.gradle'
+        }
+    } catch (Exception e) {
+        logger.warn("google-services.json not found, google-services plugin not applied. Push Notifications won't work")
+    }
+
+}//android
+

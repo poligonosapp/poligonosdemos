@@ -1,6 +1,10 @@
 "java.configuration.runtimes": [
   {
     "name": "JavaSE-1.8",
-    "path": "/path/to/jdk-8",
+    "path": "/usr/lib/jvm/java-1.8.0-openjdk-amd64",
+  },
+  {
+    "name": "JavaSE-11",
+    "path": "/home/luism/.jdks/adopt-openjdk-11.0.10",
   }
 ]

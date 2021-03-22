@@ -1,12 +1,4 @@
-type Query poligonos($polygon:Polygon) {
-  polygon(poligono : $polygon) {
+type Query (Polygon) {
     type
     coordinates
-    crs {
-      type
-      properties {
-         
-      }
-    }
-  }
 }

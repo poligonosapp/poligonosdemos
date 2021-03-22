@@ -329,7 +329,7 @@ module.exports = () => {
                     'data-target': 'example',
                 },
                 insert: function (linkTag) {
-                    var reference = document.querySelector('#some-element')
+                    let reference = document.querySelector('#some-element')
                     if (reference) {
                         reference.parentNode.insertBefore(linkTag, reference)
                     }

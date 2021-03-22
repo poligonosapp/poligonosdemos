@@ -1,5 +1,10 @@
-require('./server.ts');
-require('./routes.ts');
+import 'core-js/es/map';
+import 'core-js/es/set';
+import 'raf/polyfill';
+// import Toggle from './controller/EventHandlerController';
+
+// require('./server.ts');
+// require('./routes.ts');
 import { ApolloClient, InMemoryCache } from '@apollo/client';
 
 const client = new ApolloClient({
@@ -9,32 +14,49 @@ const client = new ApolloClient({
 
 import { gql } from '@apollo/client';
 
-// const client = ...
-
-client
-  .query({
-    query: gql`
-      query GetRates {
-        rates(currency: "USD") {
-          currency
-        }
-      }
-    `
-  })
-  .then(result => console.log(result));
-
-
-
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+// import from './controller/frontend';
+import L, { map } from "leaflet";
+let mymap: L.Map | L.LayerGroup<any>;
+mymap = L.map('mapid').setView([51.505, -0.09], 13);
+
+try {
+  let $ = require('jquery')( window );
+
+await $(document).ready( await
+        function () {
+            // $("#root").css("color", "blue");
+            $("#root").html(
+                L.tileLayer(
+        'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}',
+        {
+            attribution:
+                'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+            maxZoom: 18,
+            id: 'mapbox/streets-v11',
+            tileSize: 512,
+            zoomOffset: -1,
+            accessToken: process.env.LEAFLET_TOKEN,
+        }
+    ).addTo(mymap)
+            );
+        }
+    );
+} catch (e) {
+  
+}
+
 import './index.css';
 import { Auth0Provider } from '@auth0/auth0-react';
-import App from './App';
+//import App from './App';
 
 import {Elements} from '@stripe/react-stripe-js'
 
 import { loadStripe } from '@stripe/react-stripe-js';
-
+// await module esnext system
+// await target es2017
 const { publishKey } = await fetch('/config').then(r => r.json());
 
 const stripePromise = loadStripe(publishKey);
@@ -44,8 +66,9 @@ const stripePromise = loadStripe(publishKey);
 
 // ReactDOM.render(<App />, document.getElementById('root'));
 const rootElement = document.getElementById("root");
-
+const App = require('./App');
 if (rootElement.hasChildNodes()) {
+
   ReactDOM.hydrate(App, rootElement);
 } else {
   // ReactDOM.render(App, rootElement);

@@ -1,6 +1,6 @@
 {
   "name": "@poligonosdemos/PoligonosApp",
-  "version": "1.8.1",
+  "version": "1.8.2",
   "public": true,
   "scripts": {
     "android": "react-native run-android",
@@ -11,6 +11,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "expo": "^40.0.1",
     "expo-firebase-analytics": "~2.6.0",
     "fastify": "^3.13.0",
     "react": "16.13.1",

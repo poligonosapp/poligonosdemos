@@ -12,6 +12,8 @@
 
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.css"/>
+
         <link rel="manifest" href="/static/manifest.json" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -56,7 +58,18 @@
         ></script>
     </head>
 
-    <body>
+    <body class=".main">
+        <div id="root" class=".main">
+            
+            <ion-form action="./src/index.tsx">
+            <ion-upload></ion-upload>
+        <ion-button>Decode geometry from your local storage</ion-button>
+        <ion-share-button>Share your shapefile</ion-share-button>
+        </ion-form>
+
+            <script type="module" src="./src/index.tsx" />
+            
+        </div>
         <h1 id="target">Polígonos App</h1>
 
          
@@ -166,17 +179,7 @@ if ('serviceWorker' in navigator) {
             })
         </script>
 
-        <div id="root">
-            
-            <ion-form action="./src/index.tsx">
-            <ion-upload></ion-upload>
-        <ion-button>Decode geometry from your local storage</ion-button>
-        <ion-share-button>Share your shapefile</ion-share-button>
-        </ion-form>
-
-            <script type="module" src="./src/index.tsx" />
-            
-        </div>
+        
 
         <script
             type="module"

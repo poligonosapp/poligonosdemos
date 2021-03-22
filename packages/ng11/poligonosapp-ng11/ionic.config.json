@@ -1,0 +1,7 @@
+{
+  "name": "poligonosapp-ng11",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

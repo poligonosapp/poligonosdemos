@@ -4,6 +4,7 @@
     "bundledWebRuntime": true,
     "npmClient": "npm",
     "webDir": "build",
+    "linuxAndroidStudioPath": "/home/luism/Downloads/android-studio/bin/studio.sh",
     "compress":true,
     "plugins": {
         "SplashScreen": {

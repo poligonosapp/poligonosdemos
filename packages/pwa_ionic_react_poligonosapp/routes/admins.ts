@@ -1,7 +1,12 @@
-var express = require('express');
-var app = express();
+//
+// import { logger } from "@firebase/app/dist/packages/app/src/logger";
+import path from "node:path";
+
+let express = require('express');
+let app = express();
 let cors = require('cors');
-var router = express.Router();
+let logger = require('morgan');
+let router = express.Router();
 
 app.use(cors());
 app.use(logger('dev'));

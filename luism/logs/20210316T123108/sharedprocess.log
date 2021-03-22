@@ -1,0 +1,67 @@
+[2021-03-16 12:31:27.558] [sharedprocess] [info] Installing extension: snyk-security.vscode-vuln-cost
+[2021-03-16 12:31:50.124] [sharedprocess] [info] Downloaded extension: snyk-security.vscode-vuln-cost undefined
+[2021-03-16 12:31:52.153] [sharedprocess] [info] Starting to clean up unused language packs.
+[2021-03-16 12:31:55.016] [sharedprocess] [info] Extracted extension to /root/.vscode/extensions/.snyk-security.vscode-vuln-cost-1.4.0: snyk-security.vscode-vuln-cost
+[2021-03-16 12:31:55.016] [sharedprocess] [info] Renamed to /root/.vscode/extensions/snyk-security.vscode-vuln-cost-1.4.0
+[2021-03-16 12:31:55.018] [sharedprocess] [info] Installation completed. snyk-security.vscode-vuln-cost
+[2021-03-16 12:31:55.145] [sharedprocess] [info] Extensions installed successfully: snyk-security.vscode-vuln-cost
+[2021-03-16 12:35:43.295] [sharedprocess] [info] Installing extension: ms-python.python
+[2021-03-16 12:35:46.683] [sharedprocess] [info] Installing extension: ms-dotnettools.csharp
+[2021-03-16 12:35:48.856] [sharedprocess] [info] Downloaded extension: ms-dotnettools.csharp undefined
+[2021-03-16 12:35:48.954] [sharedprocess] [info] Extracted extension to /root/.vscode/extensions/.ms-dotnettools.csharp-1.23.9: ms-dotnettools.csharp
+[2021-03-16 12:35:48.954] [sharedprocess] [info] Renamed to /root/.vscode/extensions/ms-dotnettools.csharp-1.23.9
+[2021-03-16 12:35:48.964] [sharedprocess] [info] Installation completed. ms-dotnettools.csharp
+[2021-03-16 12:35:49.051] [sharedprocess] [info] Extensions installed successfully: ms-dotnettools.csharp
+[2021-03-16 12:35:49.104] [sharedprocess] [info] Installing extension: ms-azuretools.vscode-docker
+[2021-03-16 12:35:49.834] [sharedprocess] [info] Installing extension: vscjava.vscode-java-debug
+[2021-03-16 12:35:51.825] [sharedprocess] [info] Installing extension: ms-vscode.cpptools
+[2021-03-16 12:35:57.008] [sharedprocess] [info] Installing extension: msjsdiag.debugger-for-chrome
+[2021-03-16 12:35:59.177] [sharedprocess] [info] Installing extension: golang.go
+[2021-03-16 12:36:11.296] [sharedprocess] [info] Downloaded extension: golang.go undefined
+[2021-03-16 12:36:11.502] [sharedprocess] [info] Extracted extension to /root/.vscode/extensions/.golang.go-0.23.2: golang.go
+[2021-03-16 12:36:11.502] [sharedprocess] [info] Renamed to /root/.vscode/extensions/golang.go-0.23.2
+[2021-03-16 12:36:11.509] [sharedprocess] [info] Installation completed. golang.go
+[2021-03-16 12:36:11.616] [sharedprocess] [info] Extensions installed successfully: golang.go
+[2021-03-16 12:36:14.143] [sharedprocess] [info] Downloaded extension: ms-azuretools.vscode-docker undefined
+[2021-03-16 12:36:14.709] [sharedprocess] [info] Extracted extension to /root/.vscode/extensions/.ms-azuretools.vscode-docker-1.11.0: ms-azuretools.vscode-docker
+[2021-03-16 12:36:14.710] [sharedprocess] [info] Renamed to /root/.vscode/extensions/ms-azuretools.vscode-docker-1.11.0
+[2021-03-16 12:36:14.716] [sharedprocess] [info] Installation completed. ms-azuretools.vscode-docker
+[2021-03-16 12:36:14.939] [sharedprocess] [info] Installing extension: msjsdiag.vscode-react-native
+[2021-03-16 12:36:14.984] [sharedprocess] [info] Extensions installed successfully: ms-azuretools.vscode-docker
+[2021-03-16 12:36:14.991] [sharedprocess] [info] Downloaded extension: msjsdiag.debugger-for-chrome undefined
+[2021-03-16 12:36:16.225] [sharedprocess] [info] Extracted extension to /root/.vscode/extensions/.msjsdiag.debugger-for-chrome-4.12.12: msjsdiag.debugger-for-chrome
+[2021-03-16 12:36:16.225] [sharedprocess] [info] Renamed to /root/.vscode/extensions/msjsdiag.debugger-for-chrome-4.12.12
+[2021-03-16 12:36:16.231] [sharedprocess] [info] Installation completed. msjsdiag.debugger-for-chrome
+[2021-03-16 12:36:16.336] [sharedprocess] [info] Extensions installed successfully: msjsdiag.debugger-for-chrome
+[2021-03-16 12:36:20.990] [sharedprocess] [info] Installing extension: ms-vscode.powershell
+[2021-03-16 12:36:22.130] [sharedprocess] [info] Downloaded extension: vscjava.vscode-java-debug undefined
+[2021-03-16 12:36:22.267] [sharedprocess] [info] Extracted extension to /root/.vscode/extensions/.vscjava.vscode-java-debug-0.32.0: vscjava.vscode-java-debug
+[2021-03-16 12:36:22.268] [sharedprocess] [info] Renamed to /root/.vscode/extensions/vscjava.vscode-java-debug-0.32.0
+[2021-03-16 12:36:22.271] [sharedprocess] [info] Installation completed. vscjava.vscode-java-debug
+[2021-03-16 12:36:22.386] [sharedprocess] [info] Extensions installed successfully: vscjava.vscode-java-debug
+[2021-03-16 12:36:33.001] [sharedprocess] [info] Downloaded extension: msjsdiag.vscode-react-native undefined
+[2021-03-16 12:36:33.186] [sharedprocess] [info] Extracted extension to /root/.vscode/extensions/.msjsdiag.vscode-react-native-1.4.1: msjsdiag.vscode-react-native
+[2021-03-16 12:36:33.186] [sharedprocess] [info] Renamed to /root/.vscode/extensions/msjsdiag.vscode-react-native-1.4.1
+[2021-03-16 12:36:33.189] [sharedprocess] [info] Installation completed. msjsdiag.vscode-react-native
+[2021-03-16 12:36:33.368] [sharedprocess] [info] Extensions installed successfully: msjsdiag.vscode-react-native
+[2021-03-16 12:36:40.501] [sharedprocess] [info] Downloaded extension: ms-vscode.cpptools undefined
+[2021-03-16 12:36:41.196] [sharedprocess] [info] Extracted extension to /root/.vscode/extensions/.ms-vscode.cpptools-1.2.2: ms-vscode.cpptools
+[2021-03-16 12:36:41.197] [sharedprocess] [info] Renamed to /root/.vscode/extensions/ms-vscode.cpptools-1.2.2
+[2021-03-16 12:36:41.203] [sharedprocess] [info] Installation completed. ms-vscode.cpptools
+[2021-03-16 12:36:41.288] [sharedprocess] [info] Extensions installed successfully: ms-vscode.cpptools
+[2021-03-16 12:37:49.879] [sharedprocess] [info] Downloaded extension: ms-python.python undefined
+[2021-03-16 12:37:52.846] [sharedprocess] [info] Extracted extension to /root/.vscode/extensions/.ms-python.python-2021.2.636928669: ms-python.python
+[2021-03-16 12:37:52.846] [sharedprocess] [info] Renamed to /root/.vscode/extensions/ms-python.python-2021.2.636928669
+[2021-03-16 12:37:52.853] [sharedprocess] [info] Installation completed. ms-python.python
+[2021-03-16 12:37:54.435] [sharedprocess] [info] Installing extension: ms-toolsai.jupyter
+[2021-03-16 12:40:24.235] [sharedprocess] [info] Downloaded extension: ms-vscode.powershell undefined
+[2021-03-16 12:40:28.004] [sharedprocess] [info] Extracted extension to /root/.vscode/extensions/.ms-vscode.powershell-2021.2.2: ms-vscode.powershell
+[2021-03-16 12:40:28.005] [sharedprocess] [info] Renamed to /root/.vscode/extensions/ms-vscode.powershell-2021.2.2
+[2021-03-16 12:40:28.009] [sharedprocess] [info] Installation completed. ms-vscode.powershell
+[2021-03-16 12:40:28.172] [sharedprocess] [info] Extensions installed successfully: ms-vscode.powershell
+[2021-03-16 12:41:46.548] [sharedprocess] [info] Downloaded extension: ms-toolsai.jupyter undefined
+[2021-03-16 12:41:47.934] [sharedprocess] [info] Extracted extension to /root/.vscode/extensions/.ms-toolsai.jupyter-2021.3.619093157: ms-toolsai.jupyter
+[2021-03-16 12:41:47.934] [sharedprocess] [info] Renamed to /root/.vscode/extensions/ms-toolsai.jupyter-2021.3.619093157
+[2021-03-16 12:41:47.943] [sharedprocess] [info] Installation completed. ms-toolsai.jupyter
+[2021-03-16 12:41:48.002] [sharedprocess] [info] Extensions installed successfully: ms-toolsai.jupyter
+[2021-03-16 12:41:48.005] [sharedprocess] [info] Extensions installed successfully: ms-python.python

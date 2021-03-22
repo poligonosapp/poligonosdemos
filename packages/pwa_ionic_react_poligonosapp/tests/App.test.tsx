@@ -1,6 +1,10 @@
-import { ReactReduxContext } from 'react-redux';
+import DrawComponent from './DrawComponent';
 
-import React from 'react';
+// import { ReactReduxContext } from 'react-redux';
+
+require('react-redux');
+
+import React, {Component, useState } from 'react';
 import renderer from 'react-test-renderer';
 import App from '../src/App';
 import Tab1 from '../src/pages/Tab1';
@@ -18,11 +22,55 @@ import { MockedProvider } from "@apollo/client/testing";
 
   const query2 = loader('./poligono-geojson.graphql.ts');// mock
 
-  
+import L.Draw.Polygon from "react-leaflet-draw";
 
+  it('should react-leaflet-draw', () => {
+   //const div = document.createElement('div');
+   //ReactDOM.render(<DrawComponent />, div);
+   //ReactDOM.unmountComponentAtNode(div);
+    require(node);
+   require(yarn);
+   const poligonoDraw = new L.Draw.Polygon();
+   poligonoDraw().initialize();
+   poligonoDraw().addHooks();
+   fail(true);
+});
+
+it('should @types/leaflet-draw', () => {
+   const div = document.createElement('div');
+   ReactDOM.render(<DrawComponent />, div);
+   ReactDOM.unmountComponentAtNode(div);
+});
+
+it('should jest preset string not array', () => {
+  // const div = document.createElement('div');
+  // ReactDOM.render(<App />, div);
+  // ReactDOM.unmountComponentAtNode(div);
+});
+
+it('should controller/frontend.ts typescript 7006', () => {
+  // const div = document.createElement('div');
+  // ReactDOM.render(<App />, div);
+  // ReactDOM.unmountComponentAtNode(div);
+});
+
+
+it('should See https://nodejs.org/api/errors.html#errors_common_system_errors ' +
+  'for more information (ENOTFOUND).', () => {
+  // const div = document.createElement('div');
+  // ReactDOM.render(<App />, div);
+  // ReactDOM.unmountComponentAtNode(div);
+  fail(true);
+});
+  
+it('should ionic testing renders without crashing', () => {
+  const div = document.createElement('div');
+  ReactDOM.render(<App />, div);
+  ReactDOM.unmountComponentAtNode(div);
+});
 
   test(' should react suspense experimental redux http response', () => {
-      const dataFetchReducer = (state, action) => {
+      const dataFetchReducer = (state:Component , action:Component ) => {
   switch (action.type) {
     case 'FETCH_INIT':
       return {
@@ -120,7 +168,7 @@ const mocks = [
             query: query2,
             variables: { index: 1 }
         },
-        error: new Error("Something went wrong");
+        error: new Error("Something went wrong")
     }
 ];
 
@@ -142,6 +190,7 @@ describe('should not jest expo <App /> typescript 2339', () => {
 //const React = require('react');
 const render = require('@testing-library/react');
 import TestRenderer from 'react-test-renderer'; // ES6
+import ReactDOM from 'react-dom';
 // const TestRenderer = require('react-test-renders'); // ES5 com npm reactjs docs
 
 
@@ -249,7 +298,7 @@ function MyComponent() {
     )
   }
   
-  function SubComponent(foo) {
+  function SubComponent(foo:string) {
     return (
         <p className="sub">Sub {foo}</p>
     );
@@ -339,13 +388,13 @@ test('should query read moongoose', () => {
     fail(true)
 })
 
-test('should declare newModel moongoose', () => {
+test('should declare newModel mongoose', () => {
     // const { baseElement } = render(<App />)
     // expect(baseElement).toBeDefined();
     fail(true)
 })
 
-test('should declare newDesenhoSchema moongoose', () => {
+test('should declare newDesenhoSchema mongoose', () => {
     // const { baseElement } = render(<App />)
     // expect(baseElement).toBeDefined();
     fail(true)
@@ -362,17 +411,16 @@ test('should send http 200 status code', () => {
     fail(true);
 })
 
-const realmID = 'web-application-0-udfes'
-const atlasConnect =
-    'mongodb+srv://fail:process.env.PASSWORD@cluster0.neyhi.gcp.mongodb.net/process.env.DB_NAME?retryWrites=true&w=majority'
+const realmID = process.env.REALM_WEB_ID;
+const atlasConnect = process.env.CONNECT;
 
 test('should connect realm', () => {
     // const { baseElement } = render(<App />)
     // expect(baseElement).toBeDefined();
 
     const MongoClient = require('mongodb').MongoClient
-    const uri =
-        'mongodb+srv://fail:process.env.PASSWORD@cluster0.neyhi.gcp.mongodb.net/process.env.DB_NAME?retryWrites=true&w=majority'
+    const uri = process.env.CONNECT;
+
     const client = new MongoClient(uri, { useNewUrlParser: true })
     client.connect((err) => {
         const collection = client.db('test').collection('devices')

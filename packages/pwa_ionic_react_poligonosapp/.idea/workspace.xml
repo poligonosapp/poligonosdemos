@@ -1,11 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cde970d7-a669-44f7-acd4-f5c427e10b39" name="Default Changelist" comment="">
+    <list default="true" id="cde970d7-a669-44f7-acd4-f5c427e10b39" name="Default Changelist" comment="webpack setup&#10;grapqhl config setup&#10;enzyme setup&#10;babel plugin react relay setup &#10;firebase auth setup">
+      <change afterPath="$PROJECT_DIR$/src/theme/stripe.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.github/workflows/superlinter.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/poligonosdemos.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/poligonosdemos.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../../Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java.configuration.runtimes" beforeDir="false" afterPath="$PROJECT_DIR$/../../java.configuration.runtimes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../jest.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../jest.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lerna.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../lerna.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../packages-microsoft-prod.deb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PoligonosApp/__tests__/App-test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PoligonosApp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../PoligonosApp/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nx-poligonosapp/jest.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nx-poligonosapp/jest.preset.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nx-poligonosapp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../nx-poligonosapp/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../progressive-web-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../progressive-web-app/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.babelrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.babelrc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.graphql.ts" beforeDir="false" afterPath="$PROJECT_DIR$/.graphql.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.graphqlconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/variables.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/variables.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apollo.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apollo.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/babel.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/babel.config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.ts" beforeDir="false" afterPath="$PROJECT_DIR$/build.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/example.ts" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/example.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firebase.json" beforeDir="false" afterPath="$PROJECT_DIR$/firebase.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poligono.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/poligono.graphql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/admins.ts" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admins.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/v1.ts" beforeDir="false" afterPath="$PROJECT_DIR$/routes/v1.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/analytics/gtag.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/LeafletFrontend.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/LeafletFrontend.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/admin-controller.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/frontend.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/frontend.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/databases/mongoose-client.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/databases/mongoose-client.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/databases/realmweb/realweb.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/databases/realmweb/realweb.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/poligono.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/poligono.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/PaymentForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/PaymentForm.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Tab1.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Tab1.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/oneGeoJSON.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/oneGeoJSON.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sw.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/updateServer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Admins.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Admins.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/App.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tests/App.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ava/test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ava/test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/server.test.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yarn_create_project/poligono/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../yarn_create_project/poligono/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../poligono_rails/meupoligono/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../poligono_rails/meupoligono/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../poligonos-app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../poligonos-app/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../poligonosapp-ionic/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../poligonosapp-ionic/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../poligonosapp-ionic/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../poligonosapp-ionic/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workbox-config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../workbox-config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +83,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -52,17 +120,77 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\luism\poligonosdemos\packages\pwa_ionic_react_poligonosapp\node_modules\prettier" />
-    <property name="ts.external.directory.path" value="C:\Users\luism\poligonosdemos\packages\pwa_ionic_react_poligonosapp\node_modules\typescript\lib" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Jest.should create token to GET /admins">
+    <configuration name="should create token to GET /admins" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/tests/Admins.test.tsx" />
+      <test-names>
+        <test-name value="should create token to GET /admins" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="e2e" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="e2e" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="prettier" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="prettier" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.should create token to GET /admins" />
+        <item itemvalue="npm.prettier" />
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.e2e" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -78,6 +206,11 @@
       <workItem from="1614907899334" duration="580000" />
       <workItem from="1614936007627" duration="326000" />
       <workItem from="1615294392713" duration="577000" />
+      <workItem from="1616029300301" duration="309000" />
+      <workItem from="1616184524713" duration="6498000" />
+      <workItem from="1616191510852" duration="6543000" />
+      <workItem from="1616198670351" duration="491000" />
+      <workItem from="1616211480270" duration="83000" />
     </task>
     <servers />
   </component>
@@ -104,5 +237,23 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/mongodb-kubernetes-operator" />
+    </ignored-roots>
+    <MESSAGE value="webpack setup&#10;grapqhl config setup&#10;enzyme setup&#10;babel plugin react relay setup &#10;firebase auth setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="webpack setup&#10;grapqhl config setup&#10;enzyme setup&#10;babel plugin react relay setup &#10;firebase auth setup" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/controller/AdminController.ts</url>
+          <line>1</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

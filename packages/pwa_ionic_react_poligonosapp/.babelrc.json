@@ -24,7 +24,6 @@
         "@babel/plugin-transform-modules-umd",
         "@babel/plugin-transform-flow-strip-types",
         "@babel/plugin-transform-react-jsx-compat",
-        "relay",
         "@babel/plugin-transform-react-jsx-compat",
         "@babel/plugin-transform-react-inline-elements"
     ]

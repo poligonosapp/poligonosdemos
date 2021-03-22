@@ -1,6 +1,6 @@
 {
   "name": "poligonosdemos",
-  "version": "1.8.1",
+  "version": "1.8.2",
   "private": true,
   "homepage": "https://www.poligonosapp.herokuapp.com",
   "nodemonConfig": {
@@ -29,6 +29,7 @@
   "author": "Fabio Rodrigues <https://www.facebook.com/kefaro>, Luis Mendes <machadoluismendes@gmail.com>",
   "scripts": {
     "start": "npx lerna run start",
+    "start:dev": "webpack-dev-server",
     "build": "npx lerna run build",
     "watch": "watch",
     "auth": "nodemon src/server.ts node src/server.ts start",
@@ -36,7 +37,6 @@
     "express:start": "node ./bin/www",
     "express:devstart": "nodemon ./bin/www",
     "express:serverstart": "DEBUG=@poligonosdemos/pwa_ionic_react_poligonosapp:* npx run devstart",
-    "start:dev": "./node_modules/.bin/webpack serve",
     "dev": "webpack-dashboard -- webpack -w serve --hot --mode development",
     "server": "node server.ts",
     "test": "test",
@@ -57,12 +57,16 @@
     "@babel/preset-react": "^7.12.10",
     "@capacitor/cli": "^2.4.6",
     "@capacitor/core": "^2.4.6",
+    "@firebase/app": "^0.6.17",
+    "@firebase/auth": "^0.16.4",
     "@hapi/hoek": "^9.1.1",
     "@ionic/cli": "^6.12.3",
     "@ionic/cli-plugin-proxy": "^1.5.8",
     "@ionic/pwa-elements": "^3.0.2",
     "@ionic/react": "^5.5.4",
+    "@ionic/react-hooks": "0.0.8",
     "@ionic/react-router": "^5.5.5",
+    "@ionic/react-test-utils": "0.0.3",
     "@jest/types": "^26.6.2",
     "@lerna/import": "^3.22.0",
     "@lerna/init": "^3.21.0",
@@ -89,7 +93,7 @@
     "crypto": "^1.0.1",
     "expandjs": "^1.2.2",
     "expo": "^40.0.1",
-    "expo-cli": "^4.1.6",
+    "expo-cli": "^4.3.1",
     "expose-loader": "^1.0.3",
     "fastify": "^3.13.0",
     "firebase-admin": "^9.4.2",
@@ -109,6 +113,8 @@
     "lerna": "^3.22.1",
     "lodash": "^4.17.20",
     "micromatch": "^4.0.2",
+    "mobx": "^6.1.8",
+    "mobx-react": "^7.1.0",
     "mongodb-realm-cli": "^1.2.0",
     "net": "^1.0.2",
     "node-sass": "^5.0.0",
@@ -128,15 +134,16 @@
     "url": "^0.11.0",
     "vscode-apollo-relay": "^1.5.1",
     "web-vitals": "0.2.4",
-    "webpack-cli": "4.2.0",
     "webpack-dashboard": "^3.3.0",
-    "webpack-stream": "4.0.0",
+    "webpack-stream": "^6.1.2",
     "workbox-expiration": "^6.0.2",
     "workbox-routing": "^6.0.2",
     "workbox-strategies": "^6.0.2",
+    "yarn": "^1.22.5",
     "zlib": "^1.0.5"
   },
   "devDependencies": {
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
     "@shelf/jest-mongodb": "^1.2.3",
     "@tsconfig/node14": "^1.0.0",
     "@types/jest": "^26.0.20",
@@ -146,13 +153,16 @@
     "@types/react-dom": "^16.9.10",
     "@types/react-native": "^0.63.50",
     "jest": "^26.6.3",
+    "jest-puppeteer": "^4.4.0",
     "quicklink": "^2.0.0 || ^2.1.0",
     "react": "^16.14.0",
     "react-dom": "^17.0.1",
     "react-native": "^0.64.0",
     "react-snap": "^1.23.0",
     "typescript": "^4.1.2",
-    "webpack": "4.41.0",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.2",
     "webpack-route-manifest": "^1.2.0",
     "workbox-build": "^6.1.1"
   },
@@ -204,6 +214,7 @@
     "webpack": "4.41.0",
     "grunt": "*",
     "typescript": ">= 4.1.2",
+    "@poligonosdemos/pwa_ionic_react_poligonosapp/":"*",
     "@poligonosdemos/ui-next-js-heroku": "*",
     "@poligonosdemos/poligonosapp": "*",
     "@poligonosdemos/poligono_angular_cli_one": "*",
@@ -212,12 +223,14 @@
     "@poligonosdemos/progressive-web-app": "*"
   },
   "peerDependencies": {
+    "graphql": "^13",
     "@react": "16.8.6",
     "evp_bytestokey": "*",
     "fork-ts-checker-webpack-plugin": "3.1.1",
     "optimize-css-assets-webpack-plugin": "5.0.3",
-    "react": ">=16.8.6 || ^16.11.0 || ^17 || ^17.0.1",
+    "react": "react^16.3.0 || >=16.8.6 || ^16.11.0 || ^17 || ^17.0.1",
     "react-dom": "^17.0.1",
+    "react-leaflet":"^2.8.0",
     "snyk-php-plugin": "*",
     "snyk-python-plugin": "*",
     "superagent": "3",
@@ -227,5 +240,19 @@
     "webpack": "4.41.0",
     "webpack-manifest-plugin": "2.1.1",
     "workbox-webpack-plugin": "4.3.1"
+  },
+  "repository": {
+    "url": "https://github.com/poligonosapp/poligonosdemos",
+    "type": "git"
+  },
+  "jest": {
+    "projects": [".", "./packages/*","./poligonos-ionic",{
+      "displayName": "poligonosdemos test"
+    },
+      {
+        "displayName": "lint",
+        "runner": "jest-runner-eslint",
+        "testMatch": ["./**/*.test.tsx"]
+      }]
   }
 }

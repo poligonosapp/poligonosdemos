@@ -1,3 +1,5 @@
+npx webpack --performance-hints warning
+
 npm install realm-graphql-client --save
 
 npm run-script serve 

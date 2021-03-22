@@ -1,6 +1,6 @@
 {
     "name": "@poligonosdemos/pwa_ionic_react_poligonosapp",
-    "version": "1.8.1",
+    "version": "1.8.2",
     "description": "poligonosapp",
     "engines": {
         "node": "14.x",
@@ -33,17 +33,18 @@
         "serve": "npx ionic serve yarn run react-scripts start auth start watch",
         "watch": "watch",
         "auth": "nodemon src/server.ts node src/server.ts npm start",
-        "start": "start http-server dist webpack serve --config webpack.config.ts",
+        "start": "start",
+        "start:dev": "webpack-dev-server",
         "start_inspect": "node stopOnEntry .bin/www",
         "express:start": "node ./bin/www",
         "express:devstart": "nodemon ./bin/www",
         "express:serverstart": "DEBUG=@poligonosdemos/pwa_ionic_react_poligonosapp:* npm run devstart",
-        "start:dev": "./node_modules/.bin/webpack serve",
         "dev": "webpack-dashboard -- webpack -w serve --hot --mode development",
         "server": "node server.ts",
         "build": "build",
         "test:generate-output": "jest --json --outputFile=.jest-test-result.json || true",
         "test": "jest",
+        "e2e": "npm run test e2e/supertest/server.test.tsx",
         "cypress": "cypress open",
         "puppeteer": "puppeteer",
         "prettier": "prettier --check .",
@@ -54,9 +55,9 @@
         "build-storybook": "build-storybook"
     },
     "jest": {
-        "preset": "jest-expo",
-        "transformIgnorePatterns": [
-            "node_modules/(?!(jest-)?react-native|react-clone-referenced-element|@react-native-community|expo(nent)?|@expo(nent)?/.*|react-navigation|@react-navigation/.*|@unimodules/.*|unimodules|sentry-expo|native-base|@sentry/.*)"
+        "preset": "jest-puppeteer",
+        "projects": [
+            {"displayName":"@poligonosdemos/pwa_ionic_react_poligonosapp test"}
         ]
     },
     "dependencies": {
@@ -143,7 +144,7 @@
         "jwks-rsa": "^1.12.2",
         "jwt-decode": "^3.1.2",
         "leaflet": "^1.6.0",
-        "lighthouse": "^7.0.0",
+        "lighthouse": "^7.3.0",
         "location": "0.0.1",
         "lodash": "^4.17.20",
         "marked": "^0.3.6",
@@ -167,6 +168,7 @@
         "react": "^16.11.0",
         "react-dom": "^17.0.0",
         "react-leaflet": "^2.8.0",
+        "react-leaflet-draw": "^0.19.0",
         "react-markdown-reader": "^1.2.0",
         "react-redux": "^7.2.2",
         "react-router": "^5.1.2",
@@ -264,6 +266,7 @@
         "@types/node": "^14.14.22",
         "babel-eslint": "^10.1.0",
         "babel-jest": "^26.6.3",
+        "babel-plugin-react-relay": "^0.10.0",
         "clean-webpack-plugin": "^3.0.0",
         "css-loader": "^5.0.1",
         "envify": "^4.1.0",
@@ -272,6 +275,7 @@
         "extract-loader": "^5.1.0",
         "file-loader": "^6.2.0",
         "flow-bin": "^0.140.0",
+        "graphql-geojson": "^1.0.0",
         "html-webpack-plugin": "^4.5.1",
         "identity-obj-proxy": "^3.0.0",
         "jest": "^26.6.3",
@@ -296,9 +300,9 @@
         "terser-brunch": "^4.0.0",
         "ts-loader": "^8.0.12",
         "uglifyify": "^5.0.2",
-        "webpack": "^4.0.0",
+        "webpack": "^4.46.0",
         "webpack-bundle-analyzer": "^4.3.0",
-        "webpack-cli": "^4.2.0",
+        "webpack-cli": "^4.5.0",
         "webpack-dashboard": "^3.2.1",
         "webpack-dev-server": "^3.11.0"
     },
@@ -311,9 +315,10 @@
         "jest": "^24.9.0",
         "@ionic/core": ">5.5.2",
         "@rollup/plugin-babel": ">=2.0.0",
-        "graphql": "13",
-        "react": "^16.11.0 || ^17 || ^17.0.1",
+        "graphql": "^13",
+        "react": "react^16.3.0  || >=16.8.6 || ^16.11.0 || ^17 || ^17.0.1",
         "react-dom": "^17.0.1",
+        "react-leaflet":"^2.8.0",
         "react-test-renderer": ">=16.9.0"
     },
     "typesVersions": {

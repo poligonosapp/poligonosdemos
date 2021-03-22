@@ -1,4 +1,7 @@
 const express = require('express');
+
+let app = express();
+
 let cors = require('cors')
 const webpack = require('webpack');
 const webpackDevMiddleware = require('webpack-dev-middleware');
@@ -40,7 +43,7 @@ console.log(decodedHeader);
 const jwksRsa = require("jwks-rsa");
 const authConfig = require("./src/auth_config.json");
 
-const app = express();
+app = express();
 app.use(cors);
 const config = require('./webpack.config.ts');
 const compiler = webpack(config);

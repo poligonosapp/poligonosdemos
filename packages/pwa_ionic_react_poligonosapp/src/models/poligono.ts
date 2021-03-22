@@ -4,6 +4,12 @@ let mongoose = require('mongoose');
 //Define a schema
 let Schema = mongoose.Schema;
 
+
+//interface Props {
+// any other props that come into the component, you don't have to explicitly define children.
+  // pd: PoligonoDesenho;
+// }
+
 const PoligonoDesenho = new mongoose.Schema({
     type: {
         type: String,
