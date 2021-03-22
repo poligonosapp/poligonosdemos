@@ -1,7 +1,7 @@
 require('./pages/oneGeoJSON');
 import ButtonProps from './pages/ButtonProps';
 const Stripe = require('stripe');
-const stripe = Stripe(process.env.GLOBAL);
+const stripe = Stripe(process.env.STRIPE_GLOBAL);
 
 stripe.charges.retrieve(process.env.STRIPE_A, {
   api_key: process.env.STRIPE_B

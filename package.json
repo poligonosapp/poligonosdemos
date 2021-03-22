@@ -1,6 +1,6 @@
 {
   "name": "poligonosdemos",
-  "version": "1.8.2",
+  "version": "1.8.3",
   "private": true,
   "homepage": "https://www.poligonosapp.herokuapp.com",
   "nodemonConfig": {
@@ -191,6 +191,7 @@
     "@poligonosdemos/ui-next-js-heroku/*",
     "@poligonosdemos/poligonosapp/*",
     "@poligonosdemos/poligono_angular_cli_one/*",
+    "@poligonosdemos/poligonosapp-ng11",
     "@poligonosdemos/angular_cli_one_poligono/*"
   ],
   "resolutions": {

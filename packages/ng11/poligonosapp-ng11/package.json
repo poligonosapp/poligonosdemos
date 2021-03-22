@@ -1,6 +1,6 @@
 {
-  "name": "poligonosapp-ng11",
-  "version": "0.0.1",
+  "name": "@poligonosdemos/poligonosapp-ng11",
+  "version": "1.8.3",
   "author": "Ionic Framework",
   "homepage": "https://ionicframework.com/",
   "scripts": {

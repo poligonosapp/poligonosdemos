@@ -19,13 +19,14 @@ import ReactDOM from 'react-dom';
 
 // import from './controller/frontend';
 import L, { map } from "leaflet";
-let mymap: L.Map | L.LayerGroup<any>;
-mymap = L.map('mapid').setView([51.505, -0.09], 13);
+
+let mymap = L.map('#root').setView([51.505, -0.09], 13);
 
 try {
   let $ = require('jquery')( window );
 
-await $(document).ready( await
+ $(document).ready( 
+  
         function () {
             // $("#root").css("color", "blue");
             $("#root").html(
@@ -57,9 +58,9 @@ import {Elements} from '@stripe/react-stripe-js'
 import { loadStripe } from '@stripe/react-stripe-js';
 // await module esnext system
 // await target es2017
-const { publishKey } = await fetch('/config').then(r => r.json());
+// const { publishKey } = fetch('./config/config').then(r => r.json());
 
-const stripePromise = loadStripe(publishKey);
+const stripePromise = loadStripe(process.env.STRIPE_GLOBAL);
 
 
 (async () => {
