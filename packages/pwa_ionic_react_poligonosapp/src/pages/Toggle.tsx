@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import L, { circle, CRS } from 'leaflet';
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
@@ -11,27 +13,25 @@ import {
   IonToolbar,
   IonInput,
 } from '@ionic/react';
+import PoligonoDesenho from 'models/poligono';
 
 // import PoligonoDesenho from './models/poligono';// backend
 
 /// <reference path="react.d.ts" />
  interface Props{
-  isToggleOn: boolean;
+   isToggleOn: boolean;
   mymap: L.Map;
- // poligono: PoligonoDesenho;
+  poligono: typeof PoligonoDesenho;
 
 }
 
 // return (oldObj as any).someProperty;
 
-class Toggle extends React.Component<Props, {}> {
+class Toggle extends React.Component<Props,
+  { isToggleOn: Boolean, mymap: L.Map, poligono: typeof PoligonoDesenho }> {
 
   handleClick() {
-    this.setState(state => ({
-      isToggleOn: !state.isToggleOn,
-      mymap: !state.mymap
-      // poligono: !state.poligono
-    }));
+
   }
 
   render() {
@@ -40,7 +40,11 @@ class Toggle extends React.Component<Props, {}> {
       <IonPage>
         <IonHeader>
           <IonToolbar><IonTitle>POLÍGONO</IonTitle></IonToolbar>
-          <IonContent><button onClick={this.handleClick}>
+          <IonContent>
+
+{this.props.poligono}
+
+            <button onClick={this.handleClick}>
             {this.state.isToggleOn ? 'ON' : 'OFF'}
           </button></IonContent>
         </IonHeader>
@@ -49,9 +53,13 @@ class Toggle extends React.Component<Props, {}> {
   }
 }
 
+Toggle.propTypes = {
+  poligono: typeof PoligonoDesenho
+};
+
 // @ts-ignore
 ReactDOM.render(
-  <Toggle isToggleOn=this.state.isToggleOn mymap=this.state.mymap/>,
+  <Toggle isToggleOn={this.state.isToggleOn} mymap={this.state.mymap}/>,
   document.getElementById('root')
 );
 

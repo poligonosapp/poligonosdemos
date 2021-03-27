@@ -41,6 +41,6 @@
     "relay.config",
     "polygon.graphql",
     "poligono-geojson-graphql.ts",
-    "polygon.geojson"
+    "polygons.geojson"
   ]
 }

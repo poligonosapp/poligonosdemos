@@ -9,10 +9,12 @@
             }]
     ],
     "plugins": [
+        "import-graphql",
+        "babel-plugin-graphql-tag",
+        "@babel/plugin-transform-typescript",
         ["@babel/plugin-transform-react-jsx", {
             "runtime": "automatic"
-          }],
-        "@babel/plugin-transform-typescript",
+        }],
         "@babel/babel-plugin-react-relay",
         "relay",
         "react-relay",
@@ -27,5 +29,6 @@
         "@babel/plugin-transform-react-jsx-compat",
         "@babel/plugin-transform-react-jsx-compat",
         "@babel/plugin-transform-react-inline-elements"
+
     ]
 }

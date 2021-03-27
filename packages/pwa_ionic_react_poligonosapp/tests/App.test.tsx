@@ -1,3 +1,7 @@
+const semver = require('semver');
+
+server.valid('1.8.4');
+
 export let mymap = L.map('mapid').setView([51.505, -0.09], 13);//mock
 
 import Toggle from '../src/controller/Toggle';
@@ -29,7 +33,23 @@ const query2 = loader('./poligono-geojson.graphql.ts');// mock
 import PropTypes from 'prop-types'; // ES6
 // var PropTypes = require('prop-types'); // ES5 with npm
 // import {Polygon} from 'leaflet-draw'; // eslint-disable-line
-import {L.Draw.Polygon} from "react-leaflet-draw";
+// import {L.Draw.Polygon} from "react-leaflet-draw";
+
+/**polygon.graphql[error] polygon.graphql: SyntaxError: Syntax Error: Unexpected Name "const". (1:1)
+[error] > 1 | const POLYGONS = gql 'getAllPolygons() {
+[error]     | ^
+[error]   2 |     polygons: {
+[error]   3 |         type Feature
+[error]   4 |     geometry{
+ */
+it('should not gql', () => {
+
+// geojson gql response
+
+    fail(true);
+ }
+    
+);
 
 // [react-scripts] Module not found: Can't resolve './controller/Toggle'
 // in '/home/luism/poligonosdemos/packages/pwa_ionic_react_poligonosapp/src/pages'

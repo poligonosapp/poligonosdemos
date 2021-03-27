@@ -1,6 +1,8 @@
 import ErrorBoundary from "./pages/ErrorBoundary";
 
-require('./pages/oneGeoJSON');
+require('./polygons.geojson');
+
+require('./pages/PoligonoComponentPage');
 import ButtonProps from './pages/ButtonProps';
 const Stripe = require('stripe');
 const stripe = Stripe(process.env.STRIPE_GLOBAL);

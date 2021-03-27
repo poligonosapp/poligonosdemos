@@ -1,6 +1,5 @@
 [
     {
-    
     "type":"Feature",
     "geometry":{
         "type": "Polygon",
@@ -14,10 +13,8 @@
         ]
     ]
     }
-}
-,
+},
 {
-    
     "type":"Feature",
     "geometry":{
         "type": "Polygon",
@@ -32,5 +29,4 @@
     ]
     }
 }
-
 ]

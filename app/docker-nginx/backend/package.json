@@ -1,6 +1,6 @@
 {
   "name": "@poligonosdemos/z-app-name",
-  "version": "1.6.8",
+  "version": "1.8.4",
   "scripts": {
     "start": "node server.ts"
   },

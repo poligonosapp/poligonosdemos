@@ -1,3 +1,7 @@
+const semver = require('semver');
+
+server.valid('1.8.4');
+
 let mongoose    = require('mongoose');
 let express = require('express');
 let app = express();

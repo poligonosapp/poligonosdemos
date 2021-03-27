@@ -1,7 +1,7 @@
 {
   "short_name": "poligonosapp",
   "name": "Poligonos App",
-  "description": "",
+  "description": "geometric render geojson file format open data",
   "icons": [
     {
       "src": "/images/icons-192.png",
@@ -15,24 +15,8 @@
     }
   ],
   "start_url": "/?source=pwa",
-  "background_color": "#3367D6",
+  "background_color": "#33d6ad",
   "display": "standalone",
   "scope": "/",
-  "theme_color": "#3367D6",
-  "shortcuts": [
-    {
-      "name": "How's weather today?",
-      "short_name": "Today",
-      "description": "View weather information for today",
-      "url": "/today?source=pwa",
-      "icons": [{ "src": "/images/today.png", "sizes": "192x192" }]
-    },
-    {
-      "name": "How's weather tomorrow?",
-      "short_name": "Tomorrow",
-      "description": "View weather information for tomorrow",
-      "url": "/tomorrow?source=pwa",
-      "icons": [{ "src": "/images/tomorrow.png", "sizes": "192x192" }]
-    }
-  ]
+  "theme_color": "#3367D6"
 }

@@ -1,5 +1,6 @@
 //__tests__/automocking.test.js
 import utils from '../utils';
+require('babel-plugin-import-graphql');
 require('babel-plugin-graphql-tag');
 require('module:graphql-tag');
 

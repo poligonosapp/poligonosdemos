@@ -6,5 +6,9 @@
   {
     "name": "JavaSE-11",
     "path": "/home/luism/.jdks/adopt-openjdk-11.0.10",
+  },
+  {
+    "name": "JavaSE-11",
+    "path": "/home/luism/Downloads/jdk-11.0.10+9"
   }
 ]

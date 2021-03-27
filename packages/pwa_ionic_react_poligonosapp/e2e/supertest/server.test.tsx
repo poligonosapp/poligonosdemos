@@ -1,3 +1,4 @@
+require('babel-plugin-import-graphql');
 const request = require("supertest");
 const app = require("../../src/app");
 

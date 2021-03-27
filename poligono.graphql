@@ -1,12 +1,9 @@
 type Query poligonos($polygon:Polygon) {
   polygon(poligono : $polygon) {
-    type
-    coordinates
-    crs {
-      type
-      properties {
-         
-      }
+    type Feature
+    geometry {
+      type Polygon
+      coordinates
     }
   }
 }

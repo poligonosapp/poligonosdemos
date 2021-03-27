@@ -6,10 +6,12 @@ import { StyleSheet, Text, View } from 'react-native';
 
 const data = require('./polygon.geojson');
 
+let position = [51.505, -0.09];
+
 function Poligono(){
     return(
 
-        const position = [51.505, -0.09];
+        
         
 render(
     <MapContainer center={position} zoom={13} scrollWheelZoom={false}>

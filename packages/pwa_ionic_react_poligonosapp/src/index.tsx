@@ -1,3 +1,40 @@
+import { v4 as uuidv4 } from 'uuid';
+uuidv4(); // ⇨ '9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d'
+// ... or using CommonJS syntax:
+
+// const { v4: uuidv4 } = require('uuid');
+// uuidv4(); // ⇨ '1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed'
+
+let $ = require('jquery')(window);
+
+const semver = require('semver');
+
+semver.valid('1.8.4');
+
+import React from 'react';
+import ReactDOM, { render } from 'react-dom';
+import EditControlExample from './pages/edit-control';
+
+import { GeoJSON, Polygon, TileLayer, Pane, Popup, Marker } from "react-leaflet";
+
+let geojson = require('./polygons.geojson');
+
+const example = (
+  <div>
+    <h1>React-Leaflet-Draw example</h1>
+    <EditControlExample onChange={onChange(geojson)} />
+  </div>
+);
+
+function onChange(geojson: typeof GeoJSON) {
+  // geojson = JSON.parse(geojson);
+  // console.log('geojson changed', geojson);
+  $.alert('data processing finished');
+  return geojson;
+}
+
+render(example, document.getElementById('app'));
+
 import 'core-js/es/map';
 import 'core-js/es/set';
 import 'raf/polyfill';
@@ -13,9 +50,6 @@ const client = new ApolloClient({
 });
 
 import { gql } from '@apollo/client';
-
-import React from 'react';
-import ReactDOM from 'react-dom';
 
 // import from './controller/frontend';
 import L, { map } from "leaflet";

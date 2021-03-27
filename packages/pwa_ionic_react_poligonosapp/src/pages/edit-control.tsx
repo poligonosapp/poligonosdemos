@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { MapContainer, TileLayer, Circle, FeatureGroup } from 'react-leaflet';
 import L from 'leaflet';
-import { EditControl } from '../src';
+import { EditControl } from 'react-leaflet-draw';
 
 // work around broken icons when using webpack, see https://github.com/PaulLeCam/react-leaflet/issues/255
 
@@ -22,7 +22,7 @@ let polyline;
 export default class EditControlExample extends Component {
   // see http://leaflet.github.io/Leaflet.draw/docs/leaflet-draw-latest.html#l-draw-event for leaflet-draw events doc
 
-  _onEdited = (e) => {
+  _onEdited = (e: { layers: { eachLayer: (arg0: (layer: typeof TileLayer) => void) => void; }; }) => {
     let numEdited = 0;
     e.layers.eachLayer((layer) => {
       numEdited += 1;
@@ -32,7 +32,7 @@ export default class EditControlExample extends Component {
     this._onChange();
   };
 
-  _onCreated = (e) => {
+  _onCreated = (e: { layerType: string; layer: typeof TileLayer; }) => {
     let type = e.layerType;
     let layer = e.layer;
     if (type === 'marker') {
@@ -46,7 +46,7 @@ export default class EditControlExample extends Component {
     this._onChange();
   };
 
-  _onDeleted = (e) => {
+  _onDeleted = (e: { layers: { eachLayer: (arg0: (layer: typeof TileLayer) => void) => void; }; }) => {
     let numDeleted = 0;
     e.layers.eachLayer((layer) => {
       numDeleted += 1;
@@ -56,23 +56,23 @@ export default class EditControlExample extends Component {
     this._onChange();
   };
 
-  _onMounted = (drawControl) => {
+  _onMounted = (drawControl: any) => {
     console.log('_onMounted', drawControl);
   };
 
-  _onEditStart = (e) => {
+  _onEditStart = (e: any) => {
     console.log('_onEditStart', e);
   };
 
-  _onEditStop = (e) => {
+  _onEditStop = (e: any) => {
     console.log('_onEditStop', e);
   };
 
-  _onDeleteStart = (e) => {
+  _onDeleteStart = (e: any) => {
     console.log('_onDeleteStart', e);
   };
 
-  _onDeleteStop = (e) => {
+  _onDeleteStop = (e: any) => {
     console.log('_onDeleteStop', e);
   };
 
@@ -109,10 +109,10 @@ export default class EditControlExample extends Component {
 
   _editableFG = null;
 
-  _onFeatureGroupReady = (reactFGref) => {
+  _onFeatureGroupReady = (reactFGref: L.FeatureGroup<any> | null) => {
     // populate the leaflet FeatureGroup with the geoJson layers
 
-    let leafletGeoJSON = new L.GeoJSON(getGeoJson());
+    let leafletGeoJSON = new L.GeoJSON(require('./polygons.geojson'));
     let leafletFG = reactFGref;
 
     leafletGeoJSON.eachLayer((layer) => {

@@ -1,10 +1,10 @@
 import { response } from 'express'
 
-const cookieSession = require('cookie-session')
-const express = require('express')
-const logger = require('morgan')
-const app = express()
-app.use(logger('CookieSession...'))
+const cookieSession = require('cookie-session');
+const express = require('express');
+const logger = require('morgan');
+const app = express();
+app.use(logger('CookieSession...'));
 app.use(
     cookieSession({
         name: 'session',
@@ -17,5 +17,5 @@ app.use(
     })
 )
 
-module.exports = cookieSession
-export default cookieSession
+module.exports = cookieSession;
+export default cookieSession;

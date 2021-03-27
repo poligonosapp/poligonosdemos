@@ -20,7 +20,7 @@ const Button: React.FC<Props> = ({ children, ...props }) => {
 
 import { GeoJSON, Polygon, TileLayer, Pane, Popup, Marker } from "react-leaflet";
 
-export function PoligonoComponentPage(mymap:L.Map): [any, any] {
+export function PoligonoComponentPage(mymap:L.Map): [L.Map, L.Map] {
     return useState(async () => {
 
         // let myLayer = L.geoJSON().addTo(mymap);

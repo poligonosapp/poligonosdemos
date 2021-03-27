@@ -1,6 +1,14 @@
+# Bubblewrap pwa builder jdk sdk
+bubblewrap init --manifest=https://my-twa.com/manifest.json
+
+bubblewrap build
+
+bubblewrap install
+
 npx webpack --performance-hints warning
 
 npm install realm-graphql-client --save
+# ionic 
 
 npm run-script serve 
 

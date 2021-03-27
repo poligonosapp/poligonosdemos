@@ -18,7 +18,7 @@ let $ = require('jquery')(window);
 import { ReactReduxContext } from 'react-redux';
 
 // import Toggle from './controller/Toggle';
-const Toggle = React.lazy(() => import('../src/controller/Toggle'));
+const Toggle = React.lazy(() => import('./Toggle'));
 
 //const Toggle = require('./controller/Toggle');
 
@@ -156,7 +156,7 @@ const Tab1: React.FC = () => {
 
         <ReactReduxContext.Consumer>
             {
-                ({ store }) => {
+                ({ store: [] }) => {
 
 
 
@@ -187,8 +187,9 @@ const Tab1: React.FC = () => {
                 
 
                 
-
-                <LayerControlDemo />
+                <ErrorBoundary>
+                    <LayerControlDemo />
+                </ErrorBoundary>
 
                 <DrawComponent/>
 
@@ -244,9 +245,22 @@ const Tab1: React.FC = () => {
         <h2> Polígonos App 🚀</h2>
                         <Pane name="custom" style={{ zIndex: 100 }}>
                             
-                    <Polygon positions={position} atribution="process.env.ATRIBUTION" URL="process.env.URL">
-                        <GeoJSON atribution="process.env.ATRIBUTION" data={this.state.allData}/>
+                            <Polygon positions={position} atribution={process.env.ATRIBUTION} URL={process.env.URL}>
+                        <GeoJSON atribution={process.env.ATRIBUTION} data={this.state.allData}/>
                     </Polygon>
+                
+                </Pane>
+                    </div>
+                    <div>
+        <h2> Polígonos App 🚀</h2>
+                        <Pane name="custom" style={{ zIndex: 100 }}>
+                            
+                            
+                                <GeoJSON atribution={process.env.ATRIBUTION} data={this.state.allData}>
+                                    <Polygon positions={position} atribution={process.env.ATRIBUTION} URL={process.env.URL}>
+                                </Polygon>
+                        </GeoJSON>
+                    
                 
                 </Pane>
 </div>

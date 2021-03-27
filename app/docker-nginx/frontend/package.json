@@ -1,6 +1,6 @@
 {
   "name": "@poligonosdemos/ronin-ui",
-  "version": "1.6.8",
+  "version": "1.8.4",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^7.29.4",

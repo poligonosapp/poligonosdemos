@@ -6,9 +6,14 @@ import { StyleSheet, Text, View } from 'react-native';
 
 const data = require('./polygon.geojson');
 
+const divStyle = {
+  color: 'blue'
+};
+
 function Poligono(){
-    return(
-        <MapContainer className=".main" styles={color:"blue"} zoom={13}>
+    return (
+        <div style={divStyle}>
+        <MapContainer className=".main" zoom={13}>
 
             <TileLayer
       attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
@@ -17,9 +22,17 @@ function Poligono(){
             
         </TyleLayer>
 
-        <GeoJSON attribution="&copy; credits due..." data={this.data} />
+        <GeoJSON  attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+      url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" data={this.data} />
 
         </MapContainer>
+
+        <Map  attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+      url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png">
+            {this.data}
+        </Map>
+
+        </div>
 
         
 

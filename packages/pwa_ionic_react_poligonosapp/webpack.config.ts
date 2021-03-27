@@ -364,9 +364,9 @@ module.exports = () => {
                     minify: (file, sourceMap, minimizerOptions) => {
                         // The `minimizerOptions` option contains option from the `terserOptions` option
                         // You can use `minimizerOptions.myCustomOption`
-                        const extractedComments = []
+                        const extractedComments = [];
 
-                        return { extractedComments }
+                        return { extractedComments };
                     },
                 }), //npx wp
             ],

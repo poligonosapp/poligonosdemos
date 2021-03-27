@@ -1,3 +1,4 @@
+require('babel-plugin-import-graphql');
 require('babel-plugin-graphql-tag');
 require('module:graphql-tag');
 require('graphql-tag');

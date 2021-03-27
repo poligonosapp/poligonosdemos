@@ -1,7 +1,13 @@
 //Require Mongoose
 import L from "leaflet";
 
-let mongoose = require('mongoose');
+// let mongoose = require('mongoose');
+
+// try {
+  //  Object.freeze(mongoose) //https://snyk.io/vuln/SNYK-JS-MONGOOSE-1086688
+// } catch (e) {
+    
+// }
 
 //Define a schema
 // let Schema = mongoose.Schema;

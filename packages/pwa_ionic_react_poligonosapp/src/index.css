@@ -10,3 +10,15 @@
 .sr-only {
   display: none;
 }
+
+h1, h2, p {
+  text-align: center;
+}
+.leaflet-container {
+  height: 400px;
+  width: 80%;
+  margin: 0 auto;
+}
+.sr-only {
+  display: none;
+}
