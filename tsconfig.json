@@ -33,7 +33,7 @@
     "display": "Recommended",
     "include": ["./packages/pwa_ionic_react_poligonosapp/src/**/*.ts",
         "relay.config.js",
-        "poligono.graphql",
+        "polygon.graphql",
         "poligono-geojson-graphql.ts",
         "polygon.geojson",
         "./shared_analytics/*.ts"

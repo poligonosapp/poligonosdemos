@@ -1,10 +1,12 @@
+//TODO LOCALSTORAGE REACTJS
+
 let express = require('express');
 let app = express();
 let router = express.Router();
 
 let admin = require('./admins');
 let poligonos = require('./poligonos');
-let response = require('./response');
+// let response = require('routes/response.tsx');//route
 
 let helmet = require('helmet');
 app.use(helmet());

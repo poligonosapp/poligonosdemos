@@ -4,11 +4,11 @@ const { MongoClient } = require('mongodb');
 // const url = "mongodb+srv://<username>:<password>@clustername.mongodb.net/test?retryWrites=true&w=majority&useNewUrlParser=true&useUnifiedTopology=true";
 
 
-const atlasConnect = 'process.env.CONNECT';
+const atlasConnect = process.env.CONNECT;
 
 const client = new MongoClient(atlasConnect);
 
-let grapqhlRealmEndpoint = 'process.env.GRAPHQL_ENDPOINT';
+let grapqhlRealmEndpoint = process.env.GRAPHQL_ENDPOINT;
 
 async function run() {
     try {

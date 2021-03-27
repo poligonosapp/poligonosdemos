@@ -1,6 +1,6 @@
 {
   "name": "poligonosdemos",
-  "version": "1.8.3",
+  "version": "1.8.4",
   "private": true,
   "homepage": "https://www.poligonosapp.herokuapp.com",
   "nodemonConfig": {
@@ -121,7 +121,7 @@
     "openapi-to-postmanv2": "^2.0.0",
     "quicklink": "^2.1.0",
     "react-ga": "^3.3.0",
-    "react-leaflet": "^3.1.0",
+    "react-leaflet": "^2.8.0",
     "react-native-web": "^0.15.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.1",
@@ -152,6 +152,7 @@
     "@types/react": "^16.9.17",
     "@types/react-dom": "^16.9.10",
     "@types/react-native": "^0.63.50",
+    "highlight.js": "^10.7.1",
     "jest": "^26.6.3",
     "jest-puppeteer": "^4.4.0",
     "quicklink": "^2.0.0 || ^2.1.0",
@@ -195,6 +196,7 @@
     "@poligonosdemos/angular_cli_one_poligono/*"
   ],
   "resolutions": {
+    "module:graphql-tag": "2.11.0",
     "workbox-build": "<6.1.1",
     "react": "^16.11.0 || ^17 || >=16.8.0 || ^16.11.0 || 16.14.0 || 17.0.1 || 16.14.0 || ^16.11.0 || ^17",
     "react-dom": "^17.0.1",
@@ -215,7 +217,7 @@
     "webpack": "4.41.0",
     "grunt": "*",
     "typescript": ">= 4.1.2",
-    "@poligonosdemos/pwa_ionic_react_poligonosapp/":"*",
+    "@poligonosdemos/pwa_ionic_react_poligonosapp/": "*",
     "@poligonosdemos/ui-next-js-heroku": "*",
     "@poligonosdemos/poligonosapp": "*",
     "@poligonosdemos/poligono_angular_cli_one": "*",
@@ -224,14 +226,13 @@
     "@poligonosdemos/progressive-web-app": "*"
   },
   "peerDependencies": {
-    "graphql": "^13",
-    "@react": "16.8.6",
     "evp_bytestokey": "*",
     "fork-ts-checker-webpack-plugin": "3.1.1",
+    "graphql": "^13",
     "optimize-css-assets-webpack-plugin": "5.0.3",
-    "react": "react^16.3.0 || >=16.8.6 || ^16.11.0 || ^17 || ^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-leaflet":"^2.8.0",
+    "react": "^16.3.0 || >=16.8.6 || ^16.11.0 || ^17 || ^17.0.1",
+    "react-dom": "16.0.0 || ^17.0.1",
+    "react-leaflet": "^2.8.0",
     "snyk-php-plugin": "*",
     "snyk-python-plugin": "*",
     "superagent": "3",
@@ -247,13 +248,19 @@
     "type": "git"
   },
   "jest": {
-    "projects": [".", "./packages/*","./poligonos-ionic",{
-      "displayName": "poligonosdemos test"
-    },
+    "projects": [
+      "./packages/*",
+      "./poligonos-ionic",
+      {
+        "displayName": "poligonosdemos test"
+      },
       {
         "displayName": "lint",
         "runner": "jest-runner-eslint",
-        "testMatch": ["./**/*.test.tsx"]
-      }]
+        "testMatch": [
+          "./**/*.test.tsx"
+        ]
+      }
+    ]
   }
 }

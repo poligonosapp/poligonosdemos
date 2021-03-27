@@ -13,7 +13,7 @@ const app = express();
 let axiosResponse;
 
 app.route('/poligonos')
-    .get(async function (req, res) {
+    .get(async function (req: any, res: { send: (arg0: string) => void; status: (arg0: number) => void; }) {
         app.use(logger('get route poligonos...'));
         res.send('Get polygon');
         res.status(200);

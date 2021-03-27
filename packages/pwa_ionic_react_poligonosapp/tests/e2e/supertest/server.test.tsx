@@ -1,3 +1,5 @@
+require('babel-plugin-graphql-tag');
+
 const request = require("supertest");
 const app = require("../../src/app");
 

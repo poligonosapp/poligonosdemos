@@ -1,3 +1,5 @@
+import ErrorBoundary from "./pages/ErrorBoundary";
+
 require('./pages/oneGeoJSON');
 import ButtonProps from './pages/ButtonProps';
 const Stripe = require('stripe');
@@ -227,7 +229,11 @@ if (isAuthenticated) {
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
-          <Route path="/tab1" component={Tab1} exact={true} />
+
+          <ErrorBoundary>
+            <Route path="/tab1" component={Tab1} exact={true} />
+          </ErrorBoundary>
+
           <Route path="/tab2" component={Tab2} exact={true} />
           <Route path="/tab3" component={Tab3} />
           <Route path="/" render={() => <Redirect to="/tab1" />} exact={true} />

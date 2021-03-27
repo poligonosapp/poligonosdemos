@@ -8,6 +8,7 @@ let allData = require('./find_all_data.ts');
 import * as Realm from "realm-web";
 
 const REALM_APP_ID = process.env.REALM_WEB_ID; // e.g. myapp-abcde
+// @ts-ignore
 const app: Realm.App = new Realm.App({ id: REALM_APP_ID });
 
 let mymap;

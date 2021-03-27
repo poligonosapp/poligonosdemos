@@ -12,6 +12,7 @@
         ["@babel/plugin-transform-react-jsx", {
             "runtime": "automatic"
           }],
+        "@babel/plugin-transform-typescript",
         "@babel/babel-plugin-react-relay",
         "relay",
         "react-relay",

@@ -1,5 +1,5 @@
 {
-    "version": "1.8.3",
+    "version": "1.8.4",
     "useWorkspaces": true,
     "private": true,
     "license": "Apache License 2.0",
@@ -46,8 +46,10 @@
         "@poligonosdemos/nextjs_poligonos_poligono"
     ],
     "packages": [
-        "packages/PoligonosApp",
-        "poligonosapp-ionic",
+        "@poligonosdemos/packages/pwa_ionic_react_poligonosapp/src/index.tsx",
+        "@poligonosdemos/poligonosapp-ng11",
+        "@poligonosdemos/PoligonosApp",
+        "@poligonosdemos/poligonosapp-ionic",
         "@poligonosdemos/ycppoligono/*",
         "@poligonosdemos/nextjs_poligonos/poligono",
         "@poligonosdemos/packages/*",
@@ -61,7 +63,6 @@
         "@poligonosdemos/poligonos/*",
         "@poligonosdemos/ronin-ui/*",
         "@poligonosdemos/z-app-name/*",
-        "@poligonosdemos/progressive-web-app/*",
         "@poligonosdemos/ui-next-js-heroku/*",
         "@poligonosdemos/poligonosapp/*",
         "@poligonosdemos/poligono_angular_cli_one/*",

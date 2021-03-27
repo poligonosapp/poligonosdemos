@@ -1,7 +1,8 @@
+// @ts-ignore
 let express     = require('express');
 let bodyParser  = require('body-parser');
 let passport	= require('passport');
-let mongoose    = require('mongoose');
+// let mongoose    = require('mongoose');
 let config      = require('./config/config');
 let port        = process.env.PORT || 5000;
 let cors        = require('cors');

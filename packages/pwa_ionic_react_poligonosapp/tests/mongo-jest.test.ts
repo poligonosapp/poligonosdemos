@@ -5,10 +5,10 @@ describe('insert', () => {
     let db;
 
     beforeAll(async () => {
-        connection = await MongoClient.connect(global.__MONGO_URI__, {
+        connection = await MongoClient.connect(process.env.CONNECT, {
             useNewUrlParser: true,
         });
-        db = await connection.db(global.__MONGO_DB_NAME__);
+        db = await connection.db(process.env.DB_NAME);
     });
 
     afterAll(async () => {

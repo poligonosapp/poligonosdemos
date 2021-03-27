@@ -1,4 +1,20 @@
-import { GeoJSON, Polygon, TileLayer, Pane, Popup, Marker } from "react-leaflet";
+// @ts-ignore
+// @ts-ignore
+import {
+  GeoJSON,
+  Polygon,
+  TileLayer,
+  Pane,
+  Popup,
+  Marker,
+  Rectangle,
+  // @ts-ignore
+  MapContainer,
+  LayersControl,
+  Circle, FeatureGroup, LayerGroup
+} from "react-leaflet";
+import { render } from "react-dom";
+import React from "react";
 
 const center = [51.505, -0.09]
 const rectangle = [

@@ -1,3 +1,4 @@
+require('babel-plugin-graphql-tag');
 import React from "react";
 import { ExternalApiComponent } from "../views/external-api";
 import { fireEvent, render, screen, waitFor } from "@testing-library/react";

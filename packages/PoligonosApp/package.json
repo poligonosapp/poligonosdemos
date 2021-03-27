@@ -1,6 +1,6 @@
 {
   "name": "@poligonosdemos/PoligonosApp",
-  "version": "1.8.3",
+  "version": "1.8.4",
   "public": true,
   "scripts": {
     "android": "react-native run-android",
@@ -11,7 +11,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "expo": "^40.0.1",
+    "expo": "^1.0.0",
     "expo-firebase-analytics": "~2.6.0",
     "fastify": "^3.13.0",
     "react": "16.13.1",
@@ -27,7 +27,8 @@
     "hermes-engine": "^0.7.2",
     "jest": "^25.1.0",
     "metro-react-native-babel-preset": "^0.59.0",
-    "react-native": "^0.64.0",
+    "react-native": "^0.62.0",
+    "react-scripts": "^4.0.3",
     "react-test-renderer": "16.13.1"
   },
   "jest": {

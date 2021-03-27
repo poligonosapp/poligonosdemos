@@ -1,3 +1,6 @@
+require('babel-plugin-graphql-tag');
+require('module:graphql-tag');
+require('graphql-tag');
 const { assert } = require('@hapi/hoek');
 
 // const supertest = require('supertest');

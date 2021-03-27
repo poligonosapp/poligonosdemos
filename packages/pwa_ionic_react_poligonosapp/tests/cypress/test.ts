@@ -1,3 +1,11 @@
+require('babel-plugin-graphql-tag');
+require('module:graphql-tag');
+require('graphql-tag');
+// require('babel-plugin-graphql-tag');
+// require('module:graphql-tag');
+
+const cy = require('cypress');
+
 it('list poligonos', () => {
     cy.visit('http://localhost:3000')
     cy.get('.poligonos')

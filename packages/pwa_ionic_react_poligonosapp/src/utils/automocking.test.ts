@@ -1,5 +1,7 @@
 //__tests__/automocking.test.js
 import utils from '../utils';
+require('babel-plugin-graphql-tag');
+require('module:graphql-tag');
 
 test('if utils mocked automatically', () => {
   // Public methods of `utils` are now mock functions

@@ -1,9 +1,8 @@
 {
   "name": "@poligonosdemos/nx-poligonosapp",
-  "version": "1.8.3",
+  "version": "1.8.4",
   "license": "MIT",
   "scripts": {
-    "postinstall": "node index.ts --exec install",
     "nx": "npm",
     "start": "start",
     "build": "build",
@@ -33,7 +32,7 @@
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-router-dom": "5.2.0",
-    "realm-graphql-client": "^1.4.0",
+    "realm-graphql-client": "^1.2.0",
     "tslib": "^2.0.0"
   },
   "devDependencies": {
@@ -46,7 +45,7 @@
     "@nrwl/eslint-plugin-nx": "11.2.10",
     "@nrwl/jest": "11.2.10",
     "@nrwl/linter": "11.2.10",
-    "@nrwl/react": "^11.2.10",
+    "@nrwl/react": "^11.5.2",
     "@nrwl/tao": "11.2.10",
     "@nrwl/web": "11.2.10",
     "@nrwl/workspace": "11.2.10",

@@ -1,4 +1,8 @@
-import DrawComponent from './DrawComponent';
+export let mymap = L.map('mapid').setView([51.505, -0.09], 13);//mock
+
+import Toggle from '../src/controller/Toggle';
+
+import DrawComponent from '../src/pages/DrawComponent';
 
 // import { ReactReduxContext } from 'react-redux';
 
@@ -8,7 +12,7 @@ import React, {Component, useState } from 'react';
 import renderer from 'react-test-renderer';
 import App from '../src/App';
 import Tab1 from '../src/pages/Tab1';
-// import App from './App';
+// import App from '../App';
 
 import { MockedProvider } from "@apollo/client/testing";
 
@@ -18,18 +22,36 @@ import { MockedProvider } from "@apollo/client/testing";
 
   import { loader } from 'graphql.macro';
 
-  const query = loader('./poligono.graphql');
+  const query = loader('./polygon.graphql');
 
-  const query2 = loader('./poligono-geojson.graphql.ts');// mock
+const query2 = loader('./poligono-geojson.graphql.ts');// mock
 
-import L.Draw.Polygon from "react-leaflet-draw";
+import PropTypes from 'prop-types'; // ES6
+// var PropTypes = require('prop-types'); // ES5 with npm
+// import {Polygon} from 'leaflet-draw'; // eslint-disable-line
+import {L.Draw.Polygon} from "react-leaflet-draw";
+
+// [react-scripts] Module not found: Can't resolve './controller/Toggle'
+// in '/home/luism/poligonosdemos/packages/pwa_ionic_react_poligonosapp/src/pages'
+//[react-scripts] Proxy error: Could not proxy request /src/index.tsx 
+// from localhost: 8100 to https://www.poligonosapp.herokuapp.com:8080.
+  
+it('should listen touch Toggle with multiple proxy request addresses ETIMEDOUT', () => {
+  const div = document.createElement('div');
+  // @ts-ignore
+  ReactDOM.render(<Toggle  isToggleOn={true} mymap={mymap}/>, div);
+  ReactDOM.unmountComponentAtNode(div);
+  fail(true);
+});
+
+
 
   it('should react-leaflet-draw', () => {
    //const div = document.createElement('div');
    //ReactDOM.render(<DrawComponent />, div);
    //ReactDOM.unmountComponentAtNode(div);
-    require(node);
-   require(yarn);
+    require('nodejs');
+   require('yarn');
    const poligonoDraw = new L.Draw.Polygon();
    poligonoDraw().initialize();
    poligonoDraw().addHooks();
@@ -62,7 +84,7 @@ it('should See https://nodejs.org/api/errors.html#errors_common_system_errors ' 
   // ReactDOM.unmountComponentAtNode(div);
   fail(true);
 });
-  
+// should use Tab1 redux to ts2305 react-leaflet no providers
 it('should ionic testing renders without crashing', () => {
   const div = document.createElement('div');
   ReactDOM.render(<App />, div);
@@ -71,29 +93,29 @@ it('should ionic testing renders without crashing', () => {
 
   test(' should react suspense experimental redux http response', () => {
       const dataFetchReducer = (state:Component , action:Component ) => {
-  switch (action.type) {
-    case 'FETCH_INIT':
-      return {
-        ...state,
-        isLoading: true,
-        isError: false
-      };
-    case 'FETCH_SUCCESS':
-      return {
-        ...state,
-        isLoading: false,
-        isError: false,
-        data: action.payload,
-      };
-    case 'FETCH_FAILURE':
-      return {
-        ...state,
-        isLoading: false,
-        isError: true,
-      };
-    default:
-      throw new Error();
-  }
+  // switch (action.type) {
+        //     case 'FETCH_INIT':
+        //       return {
+        //         ...state,
+        //         isLoading: true,
+        //         isError: false
+        //       };
+        //     case 'FETCH_SUCCESS':
+        //       return {
+        //         ...state,
+        //         isLoading: false,
+        //         isError: false,
+        //         data: action.payload,
+        //       };
+        //     case 'FETCH_FAILURE':
+        //       return {
+        //         ...state,
+        //         isLoading: false,
+        //         isError: true,
+        //       };
+        //     default:
+        //       throw new Error();
+        //   }
 };
 fail(true);
   });
@@ -111,13 +133,7 @@ test('should include javascript but not json', () => {
     fail(true);
 });
 
-test('should use redux to ts2305 react-leaflet no providers', () => {
-    require('react-redux');
-    //    const { baseElement } = render(<SetupStoryBook />);
-     const { baseElement } = render(<Tab1 />);
-     expect(baseElement).toBeDefined();
-    fail(true);
-});
+
 
 test('should delete storybook', () => {
     fail(true);

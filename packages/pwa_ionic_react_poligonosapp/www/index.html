@@ -56,10 +56,17 @@
             integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="
             crossorigin="anonymous"
         ></script>
+
+<link rel="stylesheet" href="./css/main.css"></link>
+        
     </head>
 
     <body class=".main">
         <div id="root" class=".main">
+
+          <div id="mapid">
+            <script type="module" src="./src/index.tsx" />
+          </div>
             
             <ion-form action="./src/index.tsx">
             <ion-upload></ion-upload>
@@ -187,11 +194,9 @@ if ('serviceWorker' in navigator) {
         ></script>
         <script type="module" src="./dist/main.bundle.ts"></script>
 
-        <div id="mapid">
-            <script type="module" src="./src/index.tsx" />
-        </div>
 
-        <p lang="en">Version 1.4.x</p>
+
+        <p lang="en">Version 1.x.x</p>
 
         <script type="module" src="system.js"></script>
         <script type="module" type="systemjs-module" src="/js/main.js"></script>

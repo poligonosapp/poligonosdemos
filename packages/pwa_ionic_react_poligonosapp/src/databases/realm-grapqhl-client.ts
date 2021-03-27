@@ -1,4 +1,6 @@
-const credentials = Credentials.usernamePassword('process.env.USER', 'process.env.PASSWORD');
+import { Credentials } from "realm-web";
+
+const credentials = Credentials.usernamePassword(process.env.USER, process.env.PASSWORD);
 const user = await User.authenticate(credentials, 'http://my-ros-instance:9080');
 
 const config = await GraphQLConfig.create({

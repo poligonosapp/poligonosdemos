@@ -33,9 +33,9 @@ const Button: React.FC<Props> = ({ children, ...props }) => {
       <Button {...props}>
         {children}
         
-<Toggle props={this.state.isToggleOn, this.state.mymap} />
+<Toggle this.state.isToggleOn=true this.state.mymap />
                 
-                <Toggle props={this.state.isToggleOn, this.state.allData}/>
+                <Toggle this.state.isToggleOn=true  this.state.allData />
 
     </Button>
       

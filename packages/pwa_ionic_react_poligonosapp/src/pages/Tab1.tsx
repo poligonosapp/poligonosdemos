@@ -1,3 +1,31 @@
+import React, {
+    FC,
+    useState,
+    useEffect,
+    useReducer,
+    FormEvent,
+    useRef,
+} from 'react';
+
+// const SomeComponent = React.lazy(() => import('./SomeComponent'));
+
+
+
+
+
+let $ = require('jquery')(window);
+
+import { ReactReduxContext } from 'react-redux';
+
+// import Toggle from './controller/Toggle';
+const Toggle = React.lazy(() => import('../src/controller/Toggle'));
+
+//const Toggle = require('./controller/Toggle');
+
+import ErrorBoundary from './ErrorBoundary';
+
+// import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 
 // import Toggle from './controller/EventHandlerController';
 import LayerControlDemo from './LayerControlDemo';
@@ -7,8 +35,6 @@ import 'leaflet/dist/leaflet.css';
 // import DrawComponent from './DrawComponent';
 
 const DrawComponent = require('./DrawComponent');
-
-import { ReactReduxContext } from 'react-redux';
 
 // require('react-redux');
 
@@ -47,14 +73,7 @@ const Button: React.FC<Props> = ({ children, ...props }) => {
   );
 };
 
-import React, {
-    FC,
-    useState,
-    useEffect,
-    useReducer,
-    FormEvent,
-    useRef,
-} from 'react';
+
 
 import {
     IonSpinner,
@@ -64,7 +83,7 @@ import {
     IonTitle,
     IonToolbar,
     IonInput,
-} from '@ionic/react'
+} from '@ionic/react';
 
 // import ExploreContainer from '../components/ExploreContainer'
 
@@ -127,6 +146,11 @@ const Tab1: React.FC = () => {
     // const pageInsightsUrl = process.env.pageInsightUrl;
     // const endpoint = process.env.endpoint;
 
+    ReactDOM.render(
+        <Toggle isToggleOn="this.state.isToggleOn" mymap="this.state.mymap" />,
+        document.getElementById('root')
+    );
+
     // @ts-ignore
     return (
 
@@ -150,10 +174,15 @@ const Tab1: React.FC = () => {
                     </IonToolbar>
                 </IonHeader>
 
+                
 
-                <ButtonProps props={this.state.isToggleOn, this.state.mymap}>
+                
+<ErrorBoundary>
+    <Toggle isToggleOn= "this.state.isToggleOn" mymap = "this.state.mymap"/>
+                <Toggle isToggleOn= "this.state.isToggleOn" allData = "this.state.allData"/>
+</ErrorBoundary>
 
-                </ButtonProps>
+                
 
                 
 

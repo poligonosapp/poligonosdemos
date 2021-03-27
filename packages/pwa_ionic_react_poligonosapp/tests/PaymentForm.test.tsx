@@ -1,3 +1,6 @@
+require('babel-plugin-graphql-tag');
+require('module:graphql-tag');
+require('graphql-tag');
 test('should stripe auth and connect', () => {
 
     const Stripe = require('stripe');

@@ -39,7 +39,7 @@
     "views",
     "www",
     "relay.config",
-    "poligono.graphql",
+    "polygon.graphql",
     "poligono-geojson-graphql.ts",
     "polygon.geojson"
   ]

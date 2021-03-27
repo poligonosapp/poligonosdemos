@@ -12,7 +12,7 @@ app.use(cors());
 app.use(logger('dev'));
 
 /* GET admins listing. */
-router.get('/admins', function (req, res, next) {
+router.get('/admins', function (req: any, res: { send: (arg0: string) => void; sendFile: (arg0: string) => void; }, next: any) {
     res.send('loading admins ...');
     res.sendFile(path.join(__dirname, './public', 'index.html'));
 })
