@@ -5,6 +5,12 @@ import { render, fireEvent, waitFor, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import Fetch from '../fetch';
 
+import http from "k6/http";
+
+export default function() {
+    let response = http.get("https://www.poligonosapp.herokuapp.com/v1/poligonos");
+};
+
 const server = setupServer(
     rest.get('/greeting', (req, res, ctx) => {
         return res(ctx.json({ greeting: 'hello there' }));

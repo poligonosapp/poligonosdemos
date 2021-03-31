@@ -1,3 +1,15 @@
+let React = require('react');
+let ReactDOMServer = require('react-dom/server');
+
+class MyComponent extends React.Component {
+  render() {
+    return <div>Hello World</div>;
+  }
+}
+
+ReactDOMServer.renderToString(<MyComponent />);
+
+
 const express = require('express');
 
 let app = express();

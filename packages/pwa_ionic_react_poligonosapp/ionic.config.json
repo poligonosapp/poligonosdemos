@@ -4,5 +4,9 @@
     "capacitor": {}
   },
   "type": "react",
-  "id": "b3417d72"
+  "id": "b3417d72",
+  "hooks": {
+    "build:before:cjs" :"./scripts/build-before.cjs",
+    "build:before:js" :"./scripts/build-before.js"
+  }
 }

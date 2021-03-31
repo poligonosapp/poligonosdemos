@@ -1,3 +1,14 @@
+
+
+import ErrorBoundary from './pages/ErrorBoundary';
+
+import { defineCustomElements } from '@ionic/pwa-elements/loader';
+
+// Call the element loader after the platform has been bootstrapped
+defineCustomElements(window);
+
+let csurf = require('csurf');
+
 import { v4 as uuidv4 } from 'uuid';
 uuidv4(); // ⇨ '9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d'
 // ... or using CommonJS syntax:
@@ -7,13 +18,14 @@ uuidv4(); // ⇨ '9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d'
 
 let $ = require('jquery')(window);
 
-const semver = require('semver');
+import semver from 'semver';
+import uuid from 'uuid';
 
 semver.valid('1.8.4');
 
 import React from 'react';
 import ReactDOM, { render } from 'react-dom';
-import EditControlExample from './pages/edit-control';
+// import EditControlExample from './pages/edit-control';
 
 import { GeoJSON, Polygon, TileLayer, Pane, Popup, Marker } from "react-leaflet";
 
@@ -22,7 +34,10 @@ let geojson = require('./polygons.geojson');
 const example = (
   <div>
     <h1>React-Leaflet-Draw example</h1>
-    <EditControlExample onChange={onChange(geojson)} />
+    <ErrorBoundary>
+      // <EditControlExample onChange={onChange(geojson)} />
+</ErrorBoundary>
+    
   </div>
 );
 

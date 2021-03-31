@@ -1,9 +1,5 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
-
-
-
-
-    buildscript {
+buildscript {
 
         ext {
             // The following are only a few examples of the types of properties you can define.

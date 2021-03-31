@@ -1,6 +1,8 @@
 import PoligonoDesenho from './poligono';
 
-interface IProps{
+import L, { circle, polygon , CRS } from 'leaflet';
+
+export interface IProps{
 // @ts-ignore
-  mymap: PoligonoDesenho
+  polygonData: polygon;
 }

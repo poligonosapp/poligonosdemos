@@ -1,5 +1,9 @@
-// @ts-ignore
-// @ts-ignore
+import L, { circle, CRS, Map as LeafletMap } from 'leaflet';
+
+import { LeafletProvider as MapContainer, Polygon as LeafletPolygon }  from '@react-leaflet/core';
+
+import { EditControl, MapControl } from 'react-leaflet-draw';
+
 import {
   GeoJSON,
   Polygon,
@@ -8,8 +12,6 @@ import {
   Popup,
   Marker,
   Rectangle,
-  // @ts-ignore
-  MapContainer,
   LayersControl,
   Circle, FeatureGroup, LayerGroup
 } from "react-leaflet";
@@ -26,18 +28,45 @@ import {
   IonInput,
 } from '@ionic/react';
 
-const center = [51.505, -0.09]
+const center = [51.505, -0.09];
+
+const position = [51.505, -0.09];
+
 const rectangle = [
   [51.49, -0.08],
   [51.5, -0.06],
-]
+];
+
+// initialize the map on the "map" div with a given center and zoom
+let map = L.map('map', {
+    center: [51.505, -0.09],
+    zoom: 13
+});
+
+//ReactDOM.render(<LayerControlForm>{map}</LayerControlForm>,
+//  document.getElementById('root'));
+
+const map2 = function MyComponent() {
+  const map = useMapEvent('click', () => {
+    map.setCenter([50.5, 30.5]);
+  })
+  return map;
+}
+
+// let MapContainer = useMapContainer();
+// let MapConsumer = useMapConsumer();
 
 const LayerControlForm = () => {
 
   return (
     <IonPage>
 
-      <MapContainer center={center} zoom={13} scrollWheelZoom={false}>
+      <MapContainer attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+        url="https://tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png" center={center} zoom={13} scrollWheelZoom={false}>
+        
+        {map2}
+        
+        {map}
         <LayersControl position="topright">
           <LayersControl.BaseLayer checked name="OpenStreetMap.Mapnik">
             <TileLayer
@@ -52,7 +81,8 @@ const LayerControlForm = () => {
             />
           </LayersControl.BaseLayer>
           <LayersControl.Overlay name="Marker with popup">
-            <Marker position={center}>
+            <Marker position={position}>
+              {map}
               <Popup>
                 A pretty CSS3 popup. <br /> Easily customizable.
           </Popup>
@@ -92,4 +122,10 @@ const LayerControlForm = () => {
     </IonPage>
   )
 }
-export default LayerControlDemo;
+
+
+
+
+export default LayerControlForm;
+
+

@@ -1,6 +1,6 @@
 {
   "name": "poligonosdemos",
-  "version": "1.8.4",
+  "version": "1.8.5",
   "private": true,
   "homepage": "https://www.poligonosapp.herokuapp.com",
   "nodemonConfig": {
@@ -99,8 +99,9 @@
     "firebase-admin": "^9.4.2",
     "flow-bin": "^0.143.0",
     "fs": "^0.0.1-security",
-    "graphql": "15.0.0",
+    "graphql": "^15.0.0",
     "graphql-geojson": "^1.0.0",
+    "graphql-request": "^3.4.0",
     "graphql.macro": "^1.4.2",
     "history": "^5.0.0",
     "http": "^0.0.1-security",
@@ -126,6 +127,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.1",
     "remove": "^0.1.5",
+    "semver": "^6.3.0",
     "snyk": "^1.446.0",
     "stream": "^0.0.2",
     "stripe": "^8.138.0",
@@ -139,7 +141,7 @@
     "workbox-expiration": "^6.0.2",
     "workbox-routing": "^6.0.2",
     "workbox-strategies": "^6.0.2",
-    "yarn": "^1.22.5",
+    "yarn": "^1.0.0",
     "zlib": "^1.0.5"
   },
   "devDependencies": {
@@ -196,6 +198,7 @@
     "@poligonosdemos/angular_cli_one_poligono/*"
   ],
   "resolutions": {
+    "marked": "^0.4.0 || ^0.5.0 || ^0.6.0 || ^0.7.0",
     "module:graphql-tag": "2.11.0",
     "workbox-build": "<6.1.1",
     "react": "^16.11.0 || ^17 || >=16.8.0 || ^16.11.0 || 16.14.0 || 17.0.1 || 16.14.0 || ^16.11.0 || ^17",
@@ -228,7 +231,7 @@
   "peerDependencies": {
     "evp_bytestokey": "*",
     "fork-ts-checker-webpack-plugin": "3.1.1",
-    "graphql": "15.0.0",
+    "graphql": "^15.0.0",
     "optimize-css-assets-webpack-plugin": "5.0.3",
     "react": "^17.0.2",
     "react-dom": "16.0.0 || ^17.0.1",

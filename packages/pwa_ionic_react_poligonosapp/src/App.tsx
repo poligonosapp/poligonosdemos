@@ -3,7 +3,7 @@ import ErrorBoundary from "./pages/ErrorBoundary";
 require('./polygons.geojson');
 
 require('./pages/PoligonoComponentPage');
-import ButtonProps from './pages/ButtonProps';
+// import ButtonProps from './pages/ButtonProps';
 const Stripe = require('stripe');
 const stripe = Stripe(process.env.STRIPE_GLOBAL);
 
@@ -281,7 +281,4 @@ if (isAuthenticated) {
 };
 
 export default memo(App);
-function nodemon(error: any) {
-  throw new Error('Function not implemented.');
-}
 

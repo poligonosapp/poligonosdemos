@@ -1,3 +1,5 @@
+import ErrorBoundary from './ErrorBoundary';
+
 import PropTypes from 'prop-types';
 
 import L, { circle, CRS } from 'leaflet';
@@ -29,9 +31,21 @@ import PoligonoDesenho from 'models/poligono';
 
 class Toggle extends React.Component<Props,
   { isToggleOn: Boolean, mymap: L.Map, poligono: typeof PoligonoDesenho }> {
+  
+  constructor(props) {
+    
+    super(props);
 
-  handleClick() {
+    this.state = { isToggleOn: true };
 
+    // Aqui utilizamos o `bind` para que o `this` funcione dentro da nossa callback
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick = () => {
+ this.setState(state => ({
+      isToggleOn: !state.isToggleOn
+    }));
   }
 
   render() {
@@ -59,7 +73,9 @@ Toggle.propTypes = {
 
 // @ts-ignore
 ReactDOM.render(
-  <Toggle isToggleOn={this.state.isToggleOn} mymap={this.state.mymap}/>,
+  <Toggle onClick={this.handleClick} >
+                {this.state.isToggleOn ? 'ON' : 'OFF'}
+            </Toggle>,
   document.getElementById('root')
 );
 

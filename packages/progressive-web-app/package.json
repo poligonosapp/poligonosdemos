@@ -2,9 +2,9 @@
   "name": "@poligonosdemos/progressive-web-app",
   "version": "1.8.4",
   "scripts": {
-    "dev": "dev",
-    "build": "build",
-    "start": "start"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
     "next": "latest",

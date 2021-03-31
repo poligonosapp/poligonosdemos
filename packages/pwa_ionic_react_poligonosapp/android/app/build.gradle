@@ -1,18 +1,16 @@
-
-
 apply plugin: 'com.android.application'
 
 apply plugin: 'com.google.gms.google-services'
 
 android {
-    compileSdkVersion ${compileSdkVersion}
-    buildToolsVersion ${buildTypes}
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    // buildToolsVersion ${buildTypes}
     defaultConfig {
         applicationId "com.github.luismendes070.poligonosdemos.poligonosapp"
         minSdkVersion ${minSdkVersion}
         targetSdkVersion ${targetSdkVersion}
-        versionCode 1.7
-        versionName "1.7.6"
+        versionCode 1.8
+        versionName "1.8.5"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -57,11 +55,11 @@ android {
 
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
     }
 
-    ndkVersion '22.0.7026061'
+    ndkVersion '16.1.4479499'
     dependenciesInfo {
         includeInApk true
         includeInBundle true
@@ -112,13 +110,14 @@ android {
             exclude "ldpi", "tvdpi", "xxxhdpi", "400dpi", "560dpi"
         }
     }
-
+    allprojects {
     repositories {
         // flatDir{dirs '../capacitor-cordova-android-plugins/src/main/libs', 'libs'}
         mavenCentral()
         google()
         jcenter()
         mavenLocal()
+    }
     }
 
 

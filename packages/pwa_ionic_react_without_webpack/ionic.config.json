@@ -1,0 +1,7 @@
+{
+  "name": "pwa_ionic_react_without_webpack",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

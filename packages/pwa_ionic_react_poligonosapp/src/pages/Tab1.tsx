@@ -1,3 +1,5 @@
+// import 'Tab1.css';
+
 import React, {
     FC,
     useState,
@@ -9,7 +11,7 @@ import React, {
 
 // const SomeComponent = React.lazy(() => import('./SomeComponent'));
 
-
+import { PolygonExample } from './PolygonExample';
 
 
 
@@ -28,7 +30,7 @@ import ErrorBoundary from './ErrorBoundary';
 import ReactDOM from 'react-dom';
 
 // import Toggle from './controller/EventHandlerController';
-import LayerControlDemo from './LayerControlDemo';
+import LayerControlForm from './LayerControlDemo';
 
 import 'leaflet/dist/leaflet.css';
 // import 'leaflet-draw/dist/leaflet.draw.css';
@@ -83,12 +85,14 @@ import {
     IonTitle,
     IonToolbar,
     IonInput,
+    IonButton,
 } from '@ionic/react';
 
 // import ExploreContainer from '../components/ExploreContainer'
 
 import './Tab1.css';
 import { functionExpression } from '@babel/types';
+import ReactControlExample from './ReactControlExample';
 // import { mapFetchFunction } from './oneGeoJSON';
 // import Login from "../components/Login";
 // import { Route } from 'react-router-dom'
@@ -128,7 +132,9 @@ $.alert('mock failed');
 
 
 const Tab1: React.FC = () => {
-    
+
+    const position = [51.505, -0.09];
+
     // fast mock
     const [state, setState] = useState(mymap);
     // db
@@ -137,22 +143,12 @@ const Tab1: React.FC = () => {
     let [isToggleOn, setToggleOn] = useState(true);
 
     //storybook
-    
-
     // const jwtToken = require('jsonwebtoken');
-
     // let request = require('request');
-
     // const pageInsightsUrl = process.env.pageInsightUrl;
     // const endpoint = process.env.endpoint;
 
-    ReactDOM.render(
-        <Toggle isToggleOn="this.state.isToggleOn" mymap="this.state.mymap" />,
-        document.getElementById('root')
-    );
-
-    // @ts-ignore
-    return (
+return (
 
         <ReactReduxContext.Consumer>
             {
@@ -175,12 +171,23 @@ const Tab1: React.FC = () => {
                 </IonHeader>
 
                 
-
-                
 <ErrorBoundary>
-    <Toggle isToggleOn= "this.state.isToggleOn" mymap = "this.state.mymap"/>
-                <Toggle isToggleOn= "this.state.isToggleOn" allData = "this.state.allData"/>
-</ErrorBoundary>
+            
+                    <IonButton onClick={() => setToggleOn(true)} >
+                        {Toggle}
+            </IonButton>
+            
+                    <IonButton onClick={() => setAllData(mymap)} >
+                        {Toggle}
+            </IonButton>
+            
+                    <IonButton onClick={() => setAllData(mapData)} >
+                        {Toggle}
+            </IonButton>
+
+            </ErrorBoundary >
+                
+                
 
                 
 
@@ -188,7 +195,25 @@ const Tab1: React.FC = () => {
 
                 
                 <ErrorBoundary>
-                    <LayerControlDemo />
+                    <Pane style={{ xIndex: 180 }}>
+                    <PolygonExample/>    
+                    </Pane>
+                </ErrorBoundary>
+                <ErrorBoundary>
+                    <Pane style={{ yIndex: 180 }}>
+                    <PolygonExample/>    
+                    </Pane>
+
+</ErrorBoundary>
+                <ErrorBoundary>
+
+                    <Pane style={{ zIndex: 180 }}>
+                    <PolygonExample/>    
+                    </Pane>
+
+                    </ErrorBoundary>
+                <ErrorBoundary>
+                    <PolygonExample/>
                 </ErrorBoundary>
 
                 <DrawComponent/>
@@ -277,10 +302,20 @@ const Tab1: React.FC = () => {
 
                 }
             }
-</ReactReduxContext.Consumer>
+        </ReactReduxContext.Consumer>
+        // ReactDOM.render(<LayerControlForm>{map}</LayerControlForm>,
+        //,
+  //document.getElementById('root')
 
     );
-}
+
+}//fim Tab1 function
+
+<ErrorBoundary>
+    ReactDOM.render(<Tab1 />,,document.getElementById('root'));
+    </ErrorBoundary>
+
+
 
 export default Tab1;
 
