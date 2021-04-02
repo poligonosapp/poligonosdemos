@@ -8,6 +8,7 @@ import React, {
     useReducer,
     FormEvent,
     useRef,
+    Component
 } from 'react';
 
 // const SomeComponent = React.lazy(() => import('./SomeComponent'));
@@ -94,6 +95,8 @@ import {
 import './Tab1.css';
 import { functionExpression } from '@babel/types';
 import ReactControlExample from './ReactControlExample';
+import { isElementOfType } from 'react-dom/test-utils';
+import { getElement } from 'ionicons/dist/types/stencil-public-runtime';
 // import { mapFetchFunction } from './oneGeoJSON';
 // import Login from "../components/Login";
 // import { Route } from 'react-router-dom'
@@ -130,24 +133,22 @@ let data = require('./polygons.geojson');
 
 //let f = require('./controller/tokenLeaflet.ts');
 
-function buildMap(lat,lon)  {
-    document.getElementById('weathermap').innerHTML = "<div id='map' style='width: 100%; height: 100%;'></div>";
-    var osmUrl = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-                    osmAttribution = 'Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors,' +
-                        ' <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
-    osmLayer = new L.TileLayer(osmUrl, {maxZoom: 18, attribution: osmAttribution});
-    var map = new L.Map('map');
-    map.setView(new L.LatLng(lat,lon), 9 );
-    map.addLayer(osmLayer);
-    var validatorsLayer = new OsmJs.Weather.LeafletLayer({lang: 'en'});
-    map.addLayer(validatorsLayer);
-}
+
+
+// let isLoading = true;
 
 
 const position = [51.505, -0.09];
 
 // export let mapData  = L.map('mapid').setView([51.505, -0.09], 13);//mock
-let mymap = L.map('mapid').setView([51.505, -0.09], 13);//mock
+// let mymap = L.map('mapid').setView([51.505, -0.09], 13);//mock
+
+
+let mymap = [
+  [51.515, -0.09],
+  [51.52, -0.1],
+  [51.52, -0.12],
+]
  // let mymap = L.map('map', {
 //    center: [51.505, -0.09],
 //  zoom: 13,
@@ -157,62 +158,20 @@ let mymap = L.map('mapid').setView([51.505, -0.09], 13);//mock
 //  ]
 // });
 
-mymap.off();
-mymap.remove();
+//mymap.off();
+// mymap.remove();
 
- let mapData = L.map('map', {
-    center: [51.505, -0.09],
-  zoom: 13,
-  layers: [
-    L.tileLayer('https://www.mapbox.com/about/maps/', {id: 'MapID', tileSize: 512, zoomOffset: -1, attribution: mapboxAttribution}),
-    L.tileLayer('https://www.mapbox.com/about/maps/', {id: 'MapID', tileSize: 512, zoomOffset: -1, attribution: mapboxAttribution})
-  ]
- });
-
-mapData.off();
-mapData.remove();
-
-if (mapData != null) {
-    
-
-try {
-  mapData = require('./src/databases/realmweb/realmweb.ts');
-} catch (e) {
-    $.alert('database connection failed');
-    // $.button('OK');
-}
-
-} else {
-    // mapData = mymap;
-
-$.alert('mock failed');
-
-}
+let mapData = [
+  [51.515, -0.09],
+  [51.52, -0.1],
+  [51.52, -0.12],
+]
 
 
 
-const Tab1: React.FC = () => {
-
-    // let element = <div></div> || document.getElementById('map').innerHTML = "<div id='map' style='width: 100%; height: 100%;'></div>";
-
-    const position = [51.505, -0.09];
-
-    // fast mock
-    const [state, setState] = useState(mymap);
-    // db
-    let [allData, setAllData] = useState(mapData);
-
-    let [isToggleOn, setToggleOn] = useState(true);
-
-    //storybook
-    // const jwtToken = require('jsonwebtoken');
-    // let request = require('request');
-    // const pageInsightsUrl = process.env.pageInsightUrl;
-    // const endpoint = process.env.endpoint;
-
-return (
-
-        <ReactReduxContext.Consumer>
+function GetElement() {
+    return (
+<ReactReduxContext.Consumer>
             {
                 ({ store: [] }) => {
 
@@ -235,19 +194,24 @@ return (
                 
 <ErrorBoundary>
 
+                    <Polygon pathOptions={{ color: 'purple' }} positions={
+                         [
+  [
+    [51.51, -0.12],
+    [51.51, -0.13],
+    [51.53, -0.13],
+  ],
+  [
+    [51.51, -0.05],
+    [51.51, -0.07],
+    [51.53, -0.07],
+  ],
+]
+                    } />
+
                     
             
-                    <IonButton onClick={() => setToggleOn(true)} >
-                        {Toggle}
-            </IonButton>
-            
-                    <IonButton onClick={() => setAllData(mymap)} >
-                        {Toggle}
-            </IonButton>
-            
-                    <IonButton onClick={() => setAllData(mapData)} >
-                        {Toggle}
-            </IonButton>
+                    
 
             </ErrorBoundary >
                 
@@ -273,9 +237,7 @@ return (
                     </Marker>
 
                     <Marker position={position}>
-                        <Polygon positions={position} atribution="process.env.ATRIBUTION" URL="process.env.URL">
-                            <GeoJSON atribution="process.env.ATRIBUTION" data={setState(mockResponse)}/>
-                        </Polygon>
+                        
                         <Popup>
                             Polygon 1
                         </Popup>
@@ -288,7 +250,7 @@ return (
 
     <Marker position={position}>
         <Polygon positions={position} atribution="process.env.ATRIBUTION" URL="process.env.URL">
-            <GeoJSON atribution="process.env.ATRIBUTION" data={this.state.mymap}/>
+            <GeoJSON atribution="process.env.ATRIBUTION" data={mymap}/>
         </Polygon>
         <Popup>
             A pretty CSS3 popup. <br /> Easily customizable.
@@ -323,9 +285,7 @@ return (
                         <Pane name="custom" style={{ zIndex: 100 }}>
                             
                             
-                            <GeoJSON atribution={process.env.ATRIBUTION} data={
-                                this.state.allData
-                            }>
+                            <GeoJSON atribution={process.env.ATRIBUTION} data={this.state.allData}>
                                     <Polygon positions={position} atribution={process.env.ATRIBUTION} URL={process.env.URL}>
                                 </Polygon>
                         </GeoJSON>
@@ -347,9 +307,50 @@ return (
                 }
             }
         </ReactReduxContext.Consumer>
-        // ReactDOM.render(<LayerControlForm>{map}</LayerControlForm>,
-        //,
-  //document.getElementById('root')
+    );
+}
+
+let element = <ul>
+    {
+        this.state.isLoading
+            ? <div>Loading polygons...</div>
+            : getElement()
+    }
+</ul>;
+
+
+
+class Tab1 extends React.Component {
+
+   
+    constructor(props: { isLoading:Boolean }) {
+    super(props);
+    // this.handleLoginClick = this.handleLoginClick.bind(this);
+    // this.handleLogoutClick = this.handleLogoutClick.bind(this);
+        this.state = { isLoading: true };
+       //  this.myRef = React.createRef();
+  }
+
+    
+
+    // let [isLoading] = useState(true);
+
+    // let element = getElement();
+
+    // isLoading = true;
+
+    //storybook
+    // const jwtToken = require('jsonwebtoken');
+    // let request = require('request');
+    // const pageInsightsUrl = process.env.pageInsightUrl;
+    // const endpoint = process.env.endpoint;
+// let isLoading = { this.state.isLoading };
+    
+return (
+
+    
+
+    element
 
     );
 
@@ -368,12 +369,10 @@ return (
 // );
 
 <ErrorBoundary>
-    ReactDOM.render(<Tab1 />,document.getElementById('root'));
+    ReactDOM.render(<Tab1/>, document.getElementById('root'));
     </ErrorBoundary>
 
-
-
-
-
 export default Tab1;
+
+
 

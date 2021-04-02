@@ -1,6 +1,6 @@
 {
     "name": "@poligonosdemos/pwa_ionic_react_poligonosapp",
-    "version": "1.8.4",
+    "version": "1.8.5",
     "description": "poligonosapp",
     "engines": {
         "node": "14.x",
@@ -63,6 +63,10 @@
         ]
     },
     "dependencies": {
+        "@stencil/core": "^0.12.0-8",
+"@stencil/dev-server": "latest",
+"@stencil/sass": "0.1.0",
+"@stencil/utils": "latest",
         "@apollo/react-ssr": "^4.0.0",
         "@auth0/auth0-react": "^1.2.0",
         "@babel/plugin-proposal-object-rest-spread": "^7.12.1",
