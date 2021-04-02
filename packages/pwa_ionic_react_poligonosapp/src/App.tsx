@@ -2,12 +2,13 @@ import ErrorBoundary from "./pages/ErrorBoundary";
 
 require('./polygons.geojson');
 
-require('./pages/PoligonoComponentPage');
+// require('./pages/PoligonoComponentPage');
 // import ButtonProps from './pages/ButtonProps';
 const Stripe = require('stripe');
 const stripe = Stripe(process.env.STRIPE_GLOBAL);
 
-stripe.charges.retrieve(process.env.STRIPE_A, {
+// eslint-disable-next-line
+let stringID = stripe.charges.retrieve(process.env.STRIPE_A, {
   api_key: process.env.STRIPE_B
 });
 

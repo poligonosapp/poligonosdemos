@@ -1,7 +1,8 @@
+import { tsConstructorType } from '@babel/types';
 import L from 'leaflet';
 // import { useState } from 'react';
 import * as React from 'react';//const Button
-import { useState } from 'react';
+import { Component, useState } from 'react';
 
 // import { Button } from 'react-native-web';import { Button } from 'react-native';
 
@@ -20,15 +21,30 @@ const Button: React.FC<Props> = ({ children, ...props }) => {
 
 import { GeoJSON, Polygon, TileLayer, Pane, Popup, Marker } from "react-leaflet";
 
-export function PoligonoComponentPage(mymap:L.Map): [L.Map, L.Map] {
-    return useState(async () => {
+class PoligonoComponentPage extends React.Component{
+
+// eslint-disable-next-line
+    constructor(props: {mymap: L.Map}){
+        super(props);
+
+        this.state = {
+
+            mymap: mymap(this.props.mymap)
+
+        };
+        
+}
+
+    render() {
+        
+return useState(async (): Promise<[L.Map, L.Map]> => {
 
         // let myLayer = L.geoJSON().addTo(mymap);
         // myLayer.addData(mymap.['type'] === 'Polygon');
 
        L.tileLayer(process.env.ATRIBUTION.toString(), {
             maxZoom: 18
-        }).addTo(mymap);
+        }).addTo(mymap(mymap));
 
         
 
@@ -47,7 +63,7 @@ export function PoligonoComponentPage(mymap:L.Map): [L.Map, L.Map] {
                             return { color: 'green' };
                         }
                     }
-                ).addTo(mymap);
+                ).addTo(mymap(mymap));
 
 
             }
@@ -59,6 +75,13 @@ export function PoligonoComponentPage(mymap:L.Map): [L.Map, L.Map] {
         return initialState;
 
     });
+
+    } // end render
+} // end class
+
+export default PoligonoComponentPage;
+
+function mymap(mymap: L.Map):L.Map {
+    return mymap;
 }
 
-module.exports = PoligonoComponentPage;
