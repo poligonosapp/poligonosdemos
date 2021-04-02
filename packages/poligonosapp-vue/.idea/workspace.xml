@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="844865f8-90e9-46ff-bc85-440da93786ad" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/poligonosapp-vue.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poligonosapp-vue-native/ .eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poligonosapp-vue-native/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poligonosapp-vue-native/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poligonosapp-vue-native/components/GeoJSONDemo.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poligonosapp-vue-native/components/PolygonDemo.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poligonosapp-vue-native/entry-client.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poligonosapp-vue-native/entry-server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poligonosapp-vue-native/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poligonosapp-vue-native/index.template.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poligonosapp-vue-native/metro.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poligonosapp-vue-native/router.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poligonosapp-vue-native/screens/HomeScreeen.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poligonosapp-vue-native/vueTransformerPlugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pwa_ionic_react_poligonosapp/.graphqlconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pwa_ionic_react_poligonosapp/build/app.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pwa_ionic_react_poligonosapp/geojson.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pwa_ionic_react_poligonosapp/netlify.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pwa_ionic_react_poligonosapp/src/app.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pwa_ionic_react_poligonosapp/src/pages/MapPlaceholder.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../poligonosapp-ionic/.gitgnore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java.configuration.runtimes" beforeDir="false" afterPath="$PROJECT_DIR$/../../java.configuration.runtimes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lerna-debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../lerna-debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PoligonosApp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../PoligonosApp/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poligonosapp-vue-native/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/poligonosapp-vue-native/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/poligonosapp-vue-native/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poligonosapp-vue-native/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/poligonosapp-vue-native/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/poligonosapp-vue-native/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poligonosapp-vue-native/poligono.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pwa_ionic_react_poligonosapp/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../pwa_ionic_react_poligonosapp/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pwa_ionic_react_poligonosapp/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../pwa_ionic_react_poligonosapp/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pwa_ionic_react_poligonosapp/android/app/src/main/java/com/github/luismendes070/poligonosdemos/poligonosapp/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../pwa_ionic_react_poligonosapp/android/app/src/main/java/com/github/luismendes070/poligonosdemos/poligonosapp/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pwa_ionic_react_poligonosapp/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/../pwa_ionic_react_poligonosapp/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pwa_ionic_react_poligonosapp/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../pwa_ionic_react_poligonosapp/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pwa_ionic_react_poligonosapp/src/pages/PolygonExample.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../pwa_ionic_react_poligonosapp/src/pages/PolygonExample.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pwa_ionic_react_poligonosapp/src/pages/Tab1.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../pwa_ionic_react_poligonosapp/src/pages/Tab1.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pwa_ionic_react_poligonosapp/src/pages/Tab3.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../pwa_ionic_react_poligonosapp/src/pages/Tab3.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pwa_ionic_react_poligonosapp/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/../pwa_ionic_react_poligonosapp/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pwa_ionic_react_poligonosapp/www/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../pwa_ionic_react_poligonosapp/www/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tsconfig.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../tsconfig.build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../tsconfig.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1qZHpmkdvEdw6HalcqODg75dGdd" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PoligonosApp/package.json" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/../PoligonosApp/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="844865f8-90e9-46ff-bc85-440da93786ad" name="Default Changelist" comment="" />
+      <created>1617280376719</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617280376719</updated>
+      <workItem from="1617280378194" duration="656000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

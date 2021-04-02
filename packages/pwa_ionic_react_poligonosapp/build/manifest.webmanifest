@@ -1,0 +1,22 @@
+{
+  "short_name": "poligonosapp",
+  "name": "Poligonos App",
+  "description": "geometric render geojson file format open data",
+  "icons": [
+    {
+      "src": "/images/icons-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/icons-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/?source=pwa",
+  "background_color": "#33d6ad",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#3367D6"
+}

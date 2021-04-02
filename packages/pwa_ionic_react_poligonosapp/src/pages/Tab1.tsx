@@ -1,3 +1,4 @@
+// import { MapPlaceholder } from './MapPlaceholder';
 // import 'Tab1.css';
 
 import React, {
@@ -11,7 +12,7 @@ import React, {
 
 // const SomeComponent = React.lazy(() => import('./SomeComponent'));
 
-import { PolygonExample } from './PolygonExample';
+// import { PolygonExample } from './PolygonExample';
 
 
 
@@ -50,7 +51,7 @@ import { GeoJSON, Polygon, TileLayer, Pane, Popup, Marker } from "react-leaflet"
 
 // let mymapAux = require('./frontend');
 // import { mapFetchFunction } from './oneGeoJSON';
-// import '././css/main.css';
+// import './css/main.css';
 // import { accessToken } from '../utils/accessToken';
 
 // const accessToken = 'process.env.LEAFLET_ACCESS_TOKEN';
@@ -99,18 +100,77 @@ import ReactControlExample from './ReactControlExample';
 
 // import _ from 'underscore';
 // import usePoligono from "../usePoligono";
+// import MapPlaceholder from './MapPlaceholder';
 
-let mockResponse = './src/polygon.geojson';
+let mockResponse = './polygons.geojson';
 // let fetchResponse = './src/polygon.geojson';
 
 // let mymap = require('./controller/tokenLeaflet.ts');
-export let mymap = L.map('mapid').setView([51.505, -0.09], 13);//mock
+// export let mymap = L.map('mapid').setView([51.505, -0.09], 13);//mock
+
+// const mapboxUrl = process.env.LEAFLET_ACCESS_TOKEN;
+const mapboxUrl = 'https://www.mapbox.com/about/maps/';
+
+// initialize the map on the "map" div with a given center and zoom
+// let map: L.Map;
+
+
+  
+  
+
+const mapboxAttribution = '© <a href="https://www.mapbox.com/about/maps/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> <strong><a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a></strong>';// This assumes your map is the variable 'map'
+// let credits = L.control.attribution().addTo(map);
+// credits.addAttribution('© <a href="https://www.mapbox.com/about/maps/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> <strong><a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a></strong>');;
+
+let grayscale = L.tileLayer(mapboxUrl, {id: 'MapID', tileSize: 512, zoomOffset: -1, attribution: mapboxAttribution}),
+    streets   = L.tileLayer(mapboxUrl, {id: 'MapID', tileSize: 512, zoomOffset: -1, attribution: mapboxAttribution});
+
+let data = require('./polygons.geojson');
+
+
 //let f = require('./controller/tokenLeaflet.ts');
+
+function buildMap(lat,lon)  {
+    document.getElementById('weathermap').innerHTML = "<div id='map' style='width: 100%; height: 100%;'></div>";
+    var osmUrl = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                    osmAttribution = 'Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors,' +
+                        ' <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+    osmLayer = new L.TileLayer(osmUrl, {maxZoom: 18, attribution: osmAttribution});
+    var map = new L.Map('map');
+    map.setView(new L.LatLng(lat,lon), 9 );
+    map.addLayer(osmLayer);
+    var validatorsLayer = new OsmJs.Weather.LeafletLayer({lang: 'en'});
+    map.addLayer(validatorsLayer);
+}
 
 
 const position = [51.505, -0.09];
 
-let mapData  = L.map('mapid').setView([51.505, -0.09], 13);//mock
+// export let mapData  = L.map('mapid').setView([51.505, -0.09], 13);//mock
+let mymap = L.map('mapid').setView([51.505, -0.09], 13);//mock
+ // let mymap = L.map('map', {
+//    center: [51.505, -0.09],
+//  zoom: 13,
+//  layers: [
+//    L.tileLayer('https://www.mapbox.com/about/maps/', {id: 'MapID', tileSize: 512, zoomOffset: -1, attribution: mapboxAttribution}),
+//    L.tileLayer('https://www.mapbox.com/about/maps/', {id: 'MapID', tileSize: 512, zoomOffset: -1, attribution: mapboxAttribution})
+//  ]
+// });
+
+mymap.off();
+mymap.remove();
+
+ let mapData = L.map('map', {
+    center: [51.505, -0.09],
+  zoom: 13,
+  layers: [
+    L.tileLayer('https://www.mapbox.com/about/maps/', {id: 'MapID', tileSize: 512, zoomOffset: -1, attribution: mapboxAttribution}),
+    L.tileLayer('https://www.mapbox.com/about/maps/', {id: 'MapID', tileSize: 512, zoomOffset: -1, attribution: mapboxAttribution})
+  ]
+ });
+
+mapData.off();
+mapData.remove();
 
 if (mapData != null) {
     
@@ -132,6 +192,8 @@ $.alert('mock failed');
 
 
 const Tab1: React.FC = () => {
+
+    // let element = <div></div> || document.getElementById('map').innerHTML = "<div id='map' style='width: 100%; height: 100%;'></div>";
 
     const position = [51.505, -0.09];
 
@@ -172,6 +234,8 @@ return (
 
                 
 <ErrorBoundary>
+
+                    
             
                     <IonButton onClick={() => setToggleOn(true)} >
                         {Toggle}
@@ -193,29 +257,7 @@ return (
 
                 
 
-                
-                <ErrorBoundary>
-                    <Pane style={{ xIndex: 180 }}>
-                    <PolygonExample/>    
-                    </Pane>
-                </ErrorBoundary>
-                <ErrorBoundary>
-                    <Pane style={{ yIndex: 180 }}>
-                    <PolygonExample/>    
-                    </Pane>
-
-</ErrorBoundary>
-                <ErrorBoundary>
-
-                    <Pane style={{ zIndex: 180 }}>
-                    <PolygonExample/>    
-                    </Pane>
-
-                    </ErrorBoundary>
-                <ErrorBoundary>
-                    <PolygonExample/>
-                </ErrorBoundary>
-
+            
                 <DrawComponent/>
 
                 
@@ -281,7 +323,9 @@ return (
                         <Pane name="custom" style={{ zIndex: 100 }}>
                             
                             
-                                <GeoJSON atribution={process.env.ATRIBUTION} data={this.state.allData}>
+                            <GeoJSON atribution={process.env.ATRIBUTION} data={
+                                this.state.allData
+                            }>
                                     <Polygon positions={position} atribution={process.env.ATRIBUTION} URL={process.env.URL}>
                                 </Polygon>
                         </GeoJSON>
@@ -311,9 +355,23 @@ return (
 
 }//fim Tab1 function
 
+// ReactDOM.render(
+  // <MapPlaceholder />,
+  // document.getElementById('root')
+// );
+
+// const center = [51.505, -0.09];
+
+// ReactDOM.render(
+ // <PolygonExample center={center} />,
+ // document.getElementById('map')
+// );
+
 <ErrorBoundary>
-    ReactDOM.render(<Tab1 />,,document.getElementById('root'));
+    ReactDOM.render(<Tab1 />,document.getElementById('root'));
     </ErrorBoundary>
+
+
 
 
 

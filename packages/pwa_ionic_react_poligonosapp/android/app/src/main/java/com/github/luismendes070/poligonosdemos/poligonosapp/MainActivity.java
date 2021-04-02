@@ -170,6 +170,11 @@ public class MainActivity extends BridgeActivity {
       // Ex: add(TotallyAwesomePlugin.class);
     }});
 
+    //Google Play Billing
+    //https://developer.chrome.com/docs/android/trusted-web-activity/receive-payments-play-billing/
+
+    
+
 
 
   }

@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/packages/PoligonosApp/.idea/PoligonosApp.iml" filepath="$PROJECT_DIR$/packages/PoligonosApp/.idea/PoligonosApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/poligonos-app/demo/demo.iml" filepath="$PROJECT_DIR$/poligonos-app/demo/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/poligonosapp-vue/.idea/poligonosapp-vue.iml" filepath="$PROJECT_DIR$/packages/poligonosapp-vue/.idea/poligonosapp-vue.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/poligonosdemos.iml" filepath="$PROJECT_DIR$/.idea/poligonosdemos.iml" />
       <module fileurl="file://$PROJECT_DIR$/packages/pwa_ionic_react_poligonosapp/.idea/pwa_ionic_react_poligonosapp.iml" filepath="$PROJECT_DIR$/packages/pwa_ionic_react_poligonosapp/.idea/pwa_ionic_react_poligonosapp.iml" />
     </modules>

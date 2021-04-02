@@ -172,7 +172,7 @@ let settings = {
 
 
 // const App: React.FC = () => (
-function App() {
+function App(): JSX.Element | { App: React.FC<{}>; } {
 
 
 let [response, setResponse] = useState(null);
@@ -213,21 +213,9 @@ request(options, function (error: string | undefined, body: any) {
 
 // isAuthenticated = false;
 // isLoading = true;
-
-if (isLoading) {
-    return <div>Loading...</div>;
-  }
-  if (error) {
-    return <div>Oops... {error.message}</div>;
-}
   
-
-if (isAuthenticated) {
-
-    return (
-      
-
-      <IonApp>
+  const App: React.FC = () => (
+    <IonApp>
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
@@ -271,6 +259,21 @@ if (isAuthenticated) {
       </IonTabs>
     </IonReactRouter>
   </IonApp>
+  );
+  
+
+if (isLoading) {
+    return <div>Loading...</div>;
+  }
+  if (error) {
+    return <div>Oops... {error.message}</div>;
+}
+  
+
+if (isAuthenticated) {
+
+    return (
+      {App}
     );
   } else {
     return <IonButton onClick={() => loginWithRedirect}>Log in</IonButton>;
@@ -280,5 +283,5 @@ if (isAuthenticated) {
 // );
 };
 
-export default memo(App);
+export default memo({ App });
 

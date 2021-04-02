@@ -14,7 +14,7 @@ const app: Realm.App = new Realm.App({ id: REALM_APP_ID });
 let mymap;
 
 try{
-  mymap = require('./tokenLeaflet');
+  mymap = require('./controller/tokenLeaflet');
 }catch (e) {
   $.alert('database is not authorized');
 }

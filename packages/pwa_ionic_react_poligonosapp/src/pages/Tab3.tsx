@@ -30,4 +30,4 @@ const Tab3: React.FC = () => {
     )
 }
 
-export default Tab3
+export default Tab3;

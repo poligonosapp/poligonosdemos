@@ -1,4 +1,9 @@
 {
   "name": "PoligonosApp",
-  "displayName": "PoligonosApp"
+  "displayName": "PoligonosApp",
+  "stack":"",
+  "expo": {
+    "name": "Poligonos App",
+    "slug": "poligonos-app"
+  }
 }

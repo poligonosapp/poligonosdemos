@@ -3,12 +3,12 @@
   "version": "1.8.5",
   "public": true,
   "scripts": {
-    "android": "react-native run-android",
-    "ios": "react-native run-ios",
     "start": "start",
     "build": "build",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios"
   },
   "dependencies": {
     "expo": "^1.0.0",

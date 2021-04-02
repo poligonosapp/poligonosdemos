@@ -21,8 +21,8 @@ console.log('token decoded');
 // @ts-ignore
 import IProps from '/models/IProps';
 
-class getLeafletMapClick extends Component implements IProps{
-    constructor(props, number: number, mymap: Map<any, any>){
+export class getLeafletMapClick extends Component implements IProps{
+    constructor(props, number: number, mymap: L.Map){
         super(props);
 
         this.state = {
