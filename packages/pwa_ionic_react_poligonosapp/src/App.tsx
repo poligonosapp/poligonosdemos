@@ -8,9 +8,9 @@ const Stripe = require('stripe');
 const stripe = Stripe(process.env.STRIPE_GLOBAL);
 
 // eslint-disable-next-line
-let stringID = stripe.charges.retrieve(process.env.STRIPE_A, {
-  api_key: process.env.STRIPE_B
-});
+// let stringID = stripe.charges.retrieve(process.env.STRIPE_A, {
+  // api_key: process.env.STRIPE_B
+// });
 
 // const OtherComponent = React.lazy(() => import('./pages/oneGeoJSON'));
 
@@ -34,7 +34,7 @@ import L from 'leaflet';
 
 // let firebase = require('firebase');
 // import firebase from 'firebase';
-let admin = require('firebase-admin');
+// let admin = require('firebase-admin'); //backend
 // import * as admin from 'firebase-admin';// es 2015
 
 import { ApolloProvider } from '@apollo/client';
@@ -93,12 +93,9 @@ import './index.css';
 // import * as admin from 'firebase-admin';
 // import * as url from "url";
 
-admin.initializeApp({
-  credential: admin.credential.applicationDefault(),
-  databaseURL: 'https://poligonosapp-default-rtdb.firebaseio.com/'
-});
 
-let refreshToken;
+
+let refreshToken = process.env.REACT_APP_AUTH0_CLIENT_ID;
 let idToken = process.env.REACT_APP_AUTH0_CLIENT_ID;
 
 // idToken = admin.initializeApp();
@@ -107,57 +104,14 @@ let idToken = process.env.REACT_APP_AUTH0_CLIENT_ID;
 
 // "process.env.FIREBASE_REFRESH_TOKEN"=refreshToken; // Get refresh token from OAuth2 flow
 
-admin.initializeApp({
-  credential: admin.credential.refreshToken(refreshToken),
-  databaseURL: process.env.FIREBASE_DATABASE_URL
-});
 
-// Initialize the default app
-// var admin = require('firebase-admin');
-let app = admin.initializeApp();
 
-const defaultAppConfig = process.env.DEFAULT_CONFIG;
-const otherAppConfig = process.env.OTHER_APP_CONFIG;
 
-// Initialize the default app
-let defaultApp = admin.initializeApp(defaultAppConfig);
-
-console.log(defaultApp.name);  // '[DEFAULT]'
-
-// Retrieve services via the defaultApp variable...
-let defaultAuth = defaultApp.auth();
-let defaultDatabase = defaultApp.database();
-
-// ... or use the equivalent shorthand notation
-defaultAuth = admin.auth();
-defaultDatabase = admin.database();
-
-// Initialize the default app
-admin.initializeApp(defaultAppConfig);
-
-// Initialize another app with a different config
-let otherApp = admin.initializeApp(otherAppConfig, 'other');
-
-// console.log(admin.app().name);  // '[DEFAULT]'
-// console.log(otherApp.name);     // 'other'
-
-// Use the shorthand notation to retrieve the default app's services
-defaultAuth = admin.auth();
-defaultDatabase = admin.database();
-
-// Use the otherApp variable to retrieve the other app's services
-let otherAuth = otherApp.auth();
-let otherDatabase = otherApp.database();
 
 
 // var admin = require("firebase-admin");
 
-let serviceAccount = require("./google-services.json");
 
-admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
-  databaseURL: process.env.FIREBASE_DATABASE_URL
-});
 
 //JQuery
 let settings = {

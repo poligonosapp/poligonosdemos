@@ -1,4 +1,4 @@
-
+const R = require('ramda');
 
 import ErrorBoundary from './pages/ErrorBoundary';
 
@@ -31,16 +31,6 @@ import { GeoJSON, Polygon, TileLayer, Pane, Popup, Marker } from "react-leaflet"
 
 let geojson = require('./polygons.geojson');
 
-const example = (
-  <div>
-    <h1>React-Leaflet-Draw example</h1>
-    <ErrorBoundary>
-      // <EditControlExample onChange={onChange(geojson)} />
-</ErrorBoundary>
-    
-  </div>
-);
-
 function onChange(geojson: typeof GeoJSON) {
   // geojson = JSON.parse(geojson);
   // console.log('geojson changed', geojson);
@@ -48,7 +38,7 @@ function onChange(geojson: typeof GeoJSON) {
   return geojson;
 }
 
-render(example, document.getElementById('app'));
+// render(example, document.getElementById('app'));
 
 import 'core-js/es/map';
 import 'core-js/es/set';

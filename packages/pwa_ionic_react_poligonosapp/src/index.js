@@ -1,8 +1,10 @@
+const R = require('ramda');
+
 require('core-js/es/map');
 require('core-js/es/set');
 require('raf/polyfill');
 
-require('./index.tsx');
+// require('./index.tsx');
 
 try {
     // import { ApolloClient, InMemoryCache } from '@apollo/client';
@@ -33,7 +35,7 @@ try {
     
 }
 
-import React from 'react';
+import React, {useCallback} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import { Auth0Provider } from '@auth0/auth0-react';
@@ -42,8 +44,13 @@ import App from './App';
 // ReactDOM.render(<App />, document.getElementById('root'));
 const rootElement = document.getElementById('root');
 
-if (rootElement.hasChildNodes()) {
-    ReactDOM.hydrate(App, rootElement)
+try{
+    if (rootElement.hasChildNodes()) {
+
+    for(let entry of rootElement.hasChildNodes()){
+        useCallback(ReactDOM.hydrate(App, rootElement));
+    }
+    
 } else {
     // ReactDOM.render(App, rootElement);
 
@@ -57,4 +64,7 @@ if (rootElement.hasChildNodes()) {
         </Auth0Provider>,
         document.getElementById('root')
     )
+}
+}catch(e){
+
 }
