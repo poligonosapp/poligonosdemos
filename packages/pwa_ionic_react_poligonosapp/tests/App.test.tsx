@@ -1,10 +1,20 @@
 // require('uuid/v4');
 
- // import { v4 as uuidv4 } from 'uuid';
- // uuidv4(); // ⇨ '9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d'
+// const uuid = require('uuid/v4');
+//let idv4 = uuid.v4();
+
+
+ import { v4 as uuidv4 } from 'uuid';
+ uuidv4(); // ⇨ '9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d'
 
 // const { v4: uuidv4 } = require('uuid');
-// uuidv4(); // ⇨ '1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed'
+//letidv4(); // ⇨ '1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed'
+
+import { Plugins } from '@capacitor/core';
+
+const { Device } = Plugins;
+
+
 
 const semver = require('semver');
 
@@ -12,7 +22,7 @@ semver.valid('1.8.4');
 
 export let mymap = L.map('mapid').setView([51.505, -0.09], 13);//mock
 
-import Toggle from '../src/controller/Toggle';
+
 
 import DrawComponent from '../src/pages/DrawComponent';
 
@@ -43,6 +53,31 @@ import PropTypes from 'prop-types'; // ES6
 // import {Polygon} from 'leaflet-draw'; // eslint-disable-line
 // import {L.Draw.Polygon} from "react-leaflet-draw";
 
+import { Card } from '../src/Card';
+
+it('should uuid Error [ERR_PACKAGE_PATH_NOT_EXPORTED]: Package subpath v4 is not defined by "exports"', () => {
+    
+});
+
+it('should render stripe Card Component', async () => {
+
+    
+
+    // id: uuid();
+
+
+const info = await Device.getInfo();
+console.log(info);
+
+let capacitorUuid = info['uuid'];
+
+    // uuidv4(capacitorUuid);
+
+   const div = document.createElement('div');
+   ReactDOM.render(<Card />, div);
+   ReactDOM.unmountComponentAtNode(div);
+});
+
 /**polygon.graphql[error] polygon.graphql: SyntaxError: Syntax Error: Unexpected Name "const". (1:1)
 [error] > 1 | const POLYGONS = gql 'getAllPolygons() {
 [error]     | ^
@@ -57,40 +92,15 @@ it('should not gql', () => {
     fail(true);
  }
     
-);
-
-// [react-scripts] Module not found: Can't resolve './controller/Toggle'
-// in '/home/luism/poligonosdemos/packages/pwa_ionic_react_poligonosapp/src/pages'
-//[react-scripts] Proxy error: Could not proxy request /src/index.tsx 
-// from localhost: 8100 to https://www.poligonosapp.herokuapp.com:8080.
-  
-it('should listen touch Toggle with multiple proxy request addresses ETIMEDOUT', () => {
-  const div = document.createElement('div');
-  // @ts-ignore
-  ReactDOM.render(<Toggle  isToggleOn={true} mymap={mymap}/>, div);
-  ReactDOM.unmountComponentAtNode(div);
-  fail(true);
-});
-
-
-
-  it('should react-leaflet-draw', () => {
-   //const div = document.createElement('div');
-   //ReactDOM.render(<DrawComponent />, div);
-   //ReactDOM.unmountComponentAtNode(div);
-    require('nodejs');
-   require('yarn');
-   const poligonoDraw = new L.Draw.Polygon();
-   poligonoDraw().initialize();
-   poligonoDraw().addHooks();
-   fail(true);
-});
+); 
 
 it('should @types/leaflet-draw', () => {
    const div = document.createElement('div');
    ReactDOM.render(<DrawComponent />, div);
    ReactDOM.unmountComponentAtNode(div);
 });
+
+
 
 it('should jest preset string not array', () => {
   // const div = document.createElement('div');

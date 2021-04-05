@@ -1,6 +1,6 @@
-ARG VARIANT="14-buster"
+ARG VARIANT="15-buster"
 FROM mcr.microsoft.com/vscode/devcontainers/typescript-node:0-${VARIANT}}
-FROM node:14-alpine as build
+FROM node:15-alpine as build
 
 RUN apk update && apk upgrade && \
   apk add --no-cache bash git openssh yarn
@@ -19,7 +19,7 @@ RUN yarn build
 
 # ---------------
 
-FROM node:14-alpine
+FROM node:15-alpine
 
 RUN mkdir -p /app/build
 
@@ -48,7 +48,7 @@ ENV NODE_ENV production
 CMD ["npm", "prod"]
 
 
-FROM node:14-alpine
+FROM node:15-alpine
 
 WORKDIR /usr/src/app
 ADD . /usr/src/app

@@ -1,3 +1,5 @@
+// import { CardForm } from '../src/Card'; //typescript 2307
+
 import React from 'react';
 import {
     IonSpinner,
@@ -25,6 +27,8 @@ const Tab2: React.FC = () => {
                         <IonTitle size="large">Tab 2</IonTitle>
                     </IonToolbar>
                 </IonHeader>
+
+                
 
             </IonContent>
         </IonPage>

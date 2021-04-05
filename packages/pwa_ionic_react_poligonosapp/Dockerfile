@@ -1,4 +1,4 @@
-FROM node:14-slim as build
+FROM node:15-slim as build
 
 RUN apk update && apk upgrade && \
   apk add --no-cache bash git openssh yarn
@@ -20,7 +20,7 @@ RUN npm build
 
 # ---------------
 
-FROM node:14-alpine
+FROM node:15-alpine
 
 RUN mkdir -p /app/build
 
@@ -52,7 +52,7 @@ ENV NODE_ENV production
 CMD ["yarn", "prod"]
 
 
-FROM node:14-alpine
+FROM node:15-alpine
 
 # check every 30s to ensure this service returns HTTP 200
 HEALTHCHECK --interval=30s CMD node healthcheck.js

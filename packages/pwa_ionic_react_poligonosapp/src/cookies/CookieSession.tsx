@@ -17,5 +17,5 @@ app.use(
     })
 )
 
-module.exports = cookieSession;
+// module.exports = cookieSession;
 export default cookieSession;

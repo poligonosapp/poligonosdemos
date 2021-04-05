@@ -34,7 +34,8 @@ router.use(function timeLog(req: any, res: any, next: () => void) {
 });
 // define the home page route
 router.get('/', function (req: any, res: { send: (arg0: string) => void; }) {
-    res.send('PoligonoApp home page');
+    // res.send('PoligonoApp home page');
+    res.send('<h1> Home Page</h1> <a href="/api/v1/polygons"></a>')
 });
 
 let axiosResponse = require('./response');

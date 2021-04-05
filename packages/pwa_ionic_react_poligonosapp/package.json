@@ -63,10 +63,6 @@
         ]
     },
     "dependencies": {
-        "@stencil/core": "^0.12.0-8",
-"@stencil/dev-server": "latest",
-"@stencil/sass": "0.1.0",
-"@stencil/utils": "latest",
         "@apollo/react-ssr": "^4.0.0",
         "@auth0/auth0-react": "^1.2.0",
         "@babel/plugin-proposal-object-rest-spread": "^7.12.1",
@@ -89,6 +85,10 @@
         "@sideway/address": "^4.1.1",
         "@sideway/formula": "^3.0.0",
         "@sideway/pinpoint": "^2.0.0",
+        "@stencil/core": "^0.12.0-8",
+        "@stencil/dev-server": "latest",
+        "@stencil/sass": "0.1.0",
+        "@stencil/utils": "latest",
         "@testing-library/jest-dom": "^4.2.4",
         "@testing-library/react-hooks": "^4.0.0",
         "@testing-library/user-event": "^12.6.0",
