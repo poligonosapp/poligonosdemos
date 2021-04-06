@@ -4,7 +4,7 @@ let express = require('express');
 let app = express();
 let router = express.Router();
 
-let admin = require('./admins');
+// let admin = require('./admin');
 let poligonos = require('./poligonos');
 // let response = require('routes/response.tsx');//route
 

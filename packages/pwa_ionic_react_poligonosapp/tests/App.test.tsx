@@ -4,8 +4,8 @@
 //let idv4 = uuid.v4();
 
 
- import { v4 as uuidv4 } from 'uuid';
- uuidv4(); // ⇨ '9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d'
+ // import { v4 as uuidv4 } from 'uuid';
+ // uuidv4(); // ⇨ '9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d'
 
 // const { v4: uuidv4 } = require('uuid');
 //letidv4(); // ⇨ '1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed'
@@ -14,15 +14,11 @@ import { Plugins } from '@capacitor/core';
 
 const { Device } = Plugins;
 
-
-
 const semver = require('semver');
 
 semver.valid('1.8.4');
 
-export let mymap = L.map('mapid').setView([51.505, -0.09], 13);//mock
-
-
+// export let mymap = L.map('mapid').setView([51.505, -0.09], 13);//mock
 
 import DrawComponent from '../src/pages/DrawComponent';
 
@@ -31,6 +27,13 @@ import DrawComponent from '../src/pages/DrawComponent';
 require('react-redux');
 
 import React, {Component, useState } from 'react';
+
+// import * as React from 'react';
+// import * as TestUtils from 'react-dom/test-utils';
+
+// const CheckboxWithLabel = require('../CheckboxWithLabel').default;
+
+
 import renderer from 'react-test-renderer';
 import App from '../src/App';
 import Tab1 from '../src/pages/Tab1';
@@ -53,7 +56,7 @@ import PropTypes from 'prop-types'; // ES6
 // import {Polygon} from 'leaflet-draw'; // eslint-disable-line
 // import {L.Draw.Polygon} from "react-leaflet-draw";
 
-import { Card } from '../src/Card';
+// import Card from '../src/Card';
 
 it('should uuid Error [ERR_PACKAGE_PATH_NOT_EXPORTED]: Package subpath v4 is not defined by "exports"', () => {
     
@@ -61,21 +64,8 @@ it('should uuid Error [ERR_PACKAGE_PATH_NOT_EXPORTED]: Package subpath v4 is not
 
 it('should render stripe Card Component', async () => {
 
-    
+  fail(true);
 
-    // id: uuid();
-
-
-const info = await Device.getInfo();
-console.log(info);
-
-let capacitorUuid = info['uuid'];
-
-    // uuidv4(capacitorUuid);
-
-   const div = document.createElement('div');
-   ReactDOM.render(<Card />, div);
-   ReactDOM.unmountComponentAtNode(div);
 });
 
 /**polygon.graphql[error] polygon.graphql: SyntaxError: Syntax Error: Unexpected Name "const". (1:1)
@@ -245,6 +235,7 @@ describe('should not jest expo <App /> typescript 2339', () => {
 const render = require('@testing-library/react');
 import TestRenderer from 'react-test-renderer'; // ES6
 import ReactDOM from 'react-dom';
+import { IProps } from "../src/models/IProps";
 // const TestRenderer = require('react-test-renders'); // ES5 com npm reactjs docs
 
 
@@ -315,7 +306,7 @@ const graphql = require('babel-plugin-relay/macro');
 
 // require('fs');
 
-function Link(props) {
+function Link(props:IProps) {
     return <a href={props.page}>{props.children}</a>;
   }
 

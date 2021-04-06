@@ -14,7 +14,7 @@ const stripe = Stripe(process.env.STRIPE_GLOBAL);
 
 // const OtherComponent = React.lazy(() => import('./pages/oneGeoJSON'));
 
-import React, { useState, useMemo, memo, Suspense } from 'react';
+import React, { FC, useState, useMemo, memo, Suspense } from 'react';
 import L from 'leaflet';
 
 // require('firebase');
@@ -127,10 +127,11 @@ let settings = {
 
 
 // const App: React.FC = () => (
-function App(): JSX.Element | { App: React.FC<{}>; } {
+// function App(): JSX.Element | { App: React.FC<{}>; } {
+//  const App: React.FC = () => (
 
 
-let [response, setResponse] = useState(null);
+
 
   // await fetch('process.env.endpoint');
 
@@ -140,7 +141,7 @@ let [response, setResponse] = useState(null);
     // setResponse(response);
     // console.log(response);
   // });
-//Node
+/*//Node
 let request = require("request");
 
 let options = {
@@ -155,7 +156,7 @@ request(options, function (error: string | undefined, body: any) {
   if (error) throw new Error(error);
 
   console.log(body);
-});
+});*/
 
   let {
     isLoading,
@@ -168,9 +169,26 @@ request(options, function (error: string | undefined, body: any) {
 
 // isAuthenticated = false;
 // isLoading = true;
+function App() {  
+// let App: React.FC = () => {
+
+let [response, setResponse] = useState(null);
+
+if (isLoading) {
+    return <div>Loading...</div>;
+  }
+  if (error) {
+    return <div>Oops... {error.message}</div>;
+}
   
-  const App: React.FC = () => (
-    <IonApp>
+
+if (isAuthenticated) {
+
+    return (
+     
+
+
+     <IonApp>
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
@@ -194,9 +212,12 @@ request(options, function (error: string | undefined, body: any) {
             Hello {user.name}
 
                 
+             
 
-        <IonButton onClick={() => logout({ returnTo: window.location.origin })}>
-          Log out
+                
+
+            <IonButton onClick={() => logout({ returnTo: window.location.origin })}>
+              Log out
         </IonButton>
 
                 
@@ -213,30 +234,21 @@ request(options, function (error: string | undefined, body: any) {
         </IonTabBar>
       </IonTabs>
     </IonReactRouter>
-  </IonApp>
-  );
-  
-
-if (isLoading) {
-    return <div>Loading...</div>;
-  }
-  if (error) {
-    return <div>Oops... {error.message}</div>;
-}
-  
-
-if (isAuthenticated) {
-
-    return (
-      {App}
+  </IonApp> 
     );
   } else {
     return <IonButton onClick={() => loginWithRedirect}>Log in</IonButton>;
   }
 
   
-// );
 };
+  
+
+
+
+  
+// );
+//};
 
 export default App;
 

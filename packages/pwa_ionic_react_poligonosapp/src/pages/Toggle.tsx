@@ -3,7 +3,7 @@ import ErrorBoundary from './ErrorBoundary';
 import PropTypes from 'prop-types';
 
 import L, { circle, CRS } from 'leaflet';
-import React, { Component } from 'react';
+import React, { Component, useState } from "react";
 import ReactDOM from 'react-dom';
 
 import {
@@ -20,23 +20,23 @@ import PoligonoDesenho from 'models/poligono';
 // import PoligonoDesenho from './models/poligono';// backend
 
 /// <reference path="react.d.ts" />
- interface Props{
+ //interface IProps{
+type IProps = {
    isToggleOn: boolean;
   mymap: L.Map;
   poligono: typeof PoligonoDesenho;
-
 }
+;// end type
 
 // return (oldObj as any).someProperty;
 
-class Toggle extends React.Component<Props,
-  { isToggleOn: Boolean, mymap: L.Map, poligono: typeof PoligonoDesenho }> {
+class Toggle extends React.Component {
   
-  constructor(props) {
+  constructor(props : IProps) {
     
     super(props);
 
-    this.state = { isToggleOn: true };
+    // this.state = { isToggleOn : props.isToggleOn };
 
     // Aqui utilizamos o `bind` para que o `this` funcione dentro da nossa callback
     this.handleClick = this.handleClick.bind(this);
@@ -44,11 +44,17 @@ class Toggle extends React.Component<Props,
 
   handleClick = () => {
  this.setState(state => ({
-      isToggleOn: !state.isToggleOn
+      // isToggleOn: !state.isToggleOn
     }));
   }
 
   render() {
+
+    // This must be exactly one element or it will warn.
+    const children = this.props.children;
+
+    // this.state.isToggleOn = useState(this.props.isToggleOn);
+
     // @ts-ignore
     return (
       <IonPage>
@@ -56,28 +62,22 @@ class Toggle extends React.Component<Props,
           <IonToolbar><IonTitle>POLÍGONO</IonTitle></IonToolbar>
           <IonContent>
 
-{this.props.poligono}
+            <div>
+              {children}
+            </div>
 
             <button onClick={this.handleClick}>
-            {this.state.isToggleOn ? 'ON' : 'OFF'}
-          </button></IonContent>
+
+          </button>
+
+          </IonContent>
         </IonHeader>
       </IonPage>
     );
   }
 }
 
-Toggle.propTypes = {
-  poligono: typeof PoligonoDesenho
-};
 
-// @ts-ignore
-ReactDOM.render(
-  <Toggle onClick={this.handleClick} >
-                {this.state.isToggleOn ? 'ON' : 'OFF'}
-            </Toggle>,
-  document.getElementById('root')
-);
 
 // module.exports = Toggle;
 export default Toggle;// typescript 2307

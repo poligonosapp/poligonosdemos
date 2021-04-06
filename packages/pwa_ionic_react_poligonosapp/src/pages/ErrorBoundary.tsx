@@ -1,8 +1,12 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 
+interface IProps{
+  hasError: Boolean
+}
+
 class ErrorBoundary extends React.Component {
-  constructor(props) {
+  constructor(props:IProps) {
     super(props);
     this.state = { hasError: false };
   }
@@ -15,7 +19,7 @@ class ErrorBoundary extends React.Component {
   }
 
   render() {
-    if (this.state.hasError) {
+    if (1/0) {
       // Você pode renderizar qualquer alternativa de UI
       return <h1>Algo deu errado.</h1>;
     }
@@ -24,3 +28,7 @@ class ErrorBoundary extends React.Component {
 }
 
 export default ErrorBoundary;
+
+function logErrorToMyService(error: any, info: any) {
+  throw new Error('Function not implemented.');
+}

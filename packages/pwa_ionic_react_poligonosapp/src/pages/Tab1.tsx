@@ -1,3 +1,8 @@
+// import OtherComponent from './OtherComponent';
+
+
+import { Elements } from '@stripe/react-stripe-js';
+
 // import { MapPlaceholder } from './MapPlaceholder';
 // import 'Tab1.css';
 
@@ -105,36 +110,36 @@ import { isElementOfType } from 'react-dom/test-utils';
 // import usePoligono from "../usePoligono";
 // import MapPlaceholder from './MapPlaceholder';
 
+interface IProps { // ReadOnly types deleted
+  // isLoading: Boolean | string | string[] | Boolean[] | [] | any,
+  position: [],
+  mymap: L.Map,
+  mapData: L.Map
+}
 
-
-
-
-
+const OtherComponent = React.lazy(() => import('./OtherComponent'));
 
 class Tab1 extends React.Component {
 
    
-    constructor(props: { isLoading:Boolean }) {
+  constructor(props: IProps) {
+      
     super(props);
     // this.handleLoginClick = this.handleLoginClick.bind(this);
     // this.handleLogoutClick = this.handleLogoutClick.bind(this);
+
       this.state = {
-        isLoading: true,
-        position: [51.505, -0.09],
-        mymap: [
-          [51.515, -0.09],
-          [51.52, -0.1],
-          [51.52, -0.12],
-        ],
-        mapData: [
-          [51.515, -0.09],
-          [51.52, -0.1],
-          [51.52, -0.12],
-        ]
+        // isLoading: props.isLoading,
+        position: props.position,
+        mymap: props.mymap,
+        mapData: props.mapData
       };
        
     } // end constructor
       
+  
+
+  
 // @ts-ignore
   render(){
     return (
@@ -142,118 +147,9 @@ class Tab1 extends React.Component {
     
 <div>
       <Suspense fallback={<div>Loading...</div>}>
-        
-  
-            
-          React.lazy(
-          () => 
-
-
-useCallback(
-    () => {
-      // {
-        
-<ReactReduxContext.Consumer>
-            {
-                ({ store: [] }) => {
-
-
-
-        <IonPage>
-            <IonHeader>
-                <IonToolbar>
-                    <IonTitle>Tab 1</IonTitle>
-                </IonToolbar>
-            </IonHeader>
-            <IonContent fullscreen>
-                <IonSpinner />
-                <IonHeader collapse="condense">
-                    <IonToolbar>
-                        <IonTitle size="large">Tab 1</IonTitle>
-                    </IonToolbar>
-                </IonHeader>
-
-                
-<ErrorBoundary>
-
-                    <Polygon pathOptions={{ color: 'purple' }} positions={
-                         [
-  [
-    [51.51, -0.12],
-    [51.51, -0.13],
-    [51.53, -0.13],
-  ],
-  [
-    [51.51, -0.05],
-    [51.51, -0.07],
-    [51.53, -0.07],
-  ]
-]
-                    } />
-
-                    
-            
-                    
-
-            </ErrorBoundary >
-                
-                
-
-                
-
-                
-
-            
-                <DrawComponent/>
-
-                
-
-                        
-
-                
-  
-
-
-
-                
-                
-
-                
-
-                <ApolloProvider client={client}>
-      <div>
-        <h2> Polígonos App 🚀</h2>
-                        
-                    </div>
-                    <div>
-        <h2> Polígonos App 🚀</h2>
-                        
-</div>
-    </ApolloProvider>
-
-       
-                    
-      
-
-                
-                
-            </IonContent>
-        </IonPage>
-
-                }
-            }
-        </ReactReduxContext.Consumer>
-
-       // }
-    },
-    ['react', 'react-dom', 'leaflet', 'react-leaflet']
-  )
-
-          )
-           
-
-           
+          <OtherComponent />
       </Suspense>
+        
     </div>
     
       

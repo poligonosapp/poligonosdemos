@@ -1,16 +1,33 @@
+import * as React from 'react';
+// import ReactDOM from 'react-dom';
+import ReactDOM, { render } from 'react-dom';
+import App from './App';
+// import * as serviceWorker from 'serviceworker';
+import { defineCustomElements } from '@ionic/pwa-elements/loader';
+
+defineCustomElements(window);
+
+// ReactDOM.render(<App/>, document.getElementById('root'));
+
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://bit.ly/CRA-PWA
+// serviceWorker.unregister();
+
+
 const R = require('ramda');
 
 import ErrorBoundary from './pages/ErrorBoundary';
 
-import { defineCustomElements } from '@ionic/pwa-elements/loader';
+// import { defineCustomElements } from '@ionic/pwa-elements/loader';
 
 // Call the element loader after the platform has been bootstrapped
-defineCustomElements(window);
+// defineCustomElements(window);
 
 let csurf = require('csurf');
 
-import { v4 as uuidv4 } from 'uuid';
-uuidv4(); // ⇨ '9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d'
+// import { v4 as uuidv4 } from 'uuid';
+// uuidv4(); // ⇨ '9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d'
 // ... or using CommonJS syntax:
 
 // const { v4: uuidv4 } = require('uuid');
@@ -23,8 +40,8 @@ import uuid from 'uuid';
 
 semver.valid('1.8.4');
 
-import React from 'react';
-import ReactDOM, { render } from 'react-dom';
+// import React from 'react';
+
 // import EditControlExample from './pages/edit-control';
 
 import { GeoJSON, Polygon, TileLayer, Pane, Popup, Marker } from "react-leaflet";
@@ -85,14 +102,14 @@ try {
         }
     );
 } catch (e) {
-  
+  console.log('openstreetmap.org is not responding');
 }
 
 import './index.css';
 import { Auth0Provider } from '@auth0/auth0-react';
 //import App from './App';
 
-import {Elements} from '@stripe/react-stripe-js'
+import { Elements } from '@stripe/react-stripe-js';
 
 import { loadStripe } from '@stripe/react-stripe-js';
 // await module esnext system
@@ -105,13 +122,9 @@ const stripePromise = loadStripe(process.env.STRIPE_GLOBAL);
 (async () => {
 
 // ReactDOM.render(<App />, document.getElementById('root'));
-const rootElement = document.getElementById("root");
-const App = require('./App');
-if (rootElement.hasChildNodes()) {
+  const rootElement = <div id="root"></div>; // https://pt-br.reactjs.org/docs/rendering-elements.html
+  
 
-  ReactDOM.hydrate(App, rootElement);
-} else {
-  // ReactDOM.render(App, rootElement);
 
   ReactDOM.render(
     <Auth0Provider
@@ -128,7 +141,8 @@ if (rootElement.hasChildNodes()) {
     document.getElementById('root')
   );
 
-}
+
+
 
 })();
 

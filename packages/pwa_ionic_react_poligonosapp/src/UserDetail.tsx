@@ -1,3 +1,5 @@
+import * as React from 'react';
+
 // Create a component that displays the given user's details
 const UserDetail: React.FC<{ user: Realm.User }> = ({ user }) => {
   return (

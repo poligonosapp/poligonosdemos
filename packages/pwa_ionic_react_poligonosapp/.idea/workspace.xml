@@ -2,15 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cde970d7-a669-44f7-acd4-f5c427e10b39" name="Default Changelist" comment="webpack setup&#10;grapqhl config setup&#10;enzyme setup&#10;babel plugin react relay setup &#10;firebase auth setup">
+      <change afterPath="$PROJECT_DIR$/src/databases/realmNodeSdk/ConnectBackend.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/databases/realmNodeSdk/connect.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/databases/realmNodeSdk/insert-data.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/databases/realmNodeSdk/list-data.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../poligonosapp-vue/poligonosapp-vue-native" beforeDir="false" afterPath="$PROJECT_DIR$/../poligonosapp-vue/poligonosapp-vue-native" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/build-before.cjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserDetail.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserDetail.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/databases/realm/ConnectBackend.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/databases/realm/connect.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/databases/realm/insert-data.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/databases/realm/list-data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/databases/realm/realmweb.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/databases/realmweb/realmweb.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/declaration.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/declaration.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/IProps.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/IProps.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/admin.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/DrawComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/DrawComponent.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Tab1.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Tab1.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Toggle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Toggle.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sw.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/sw.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/App.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tests/App.test.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pwa_ionic_react_without_webpack/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../pwa_ionic_react_without_webpack/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../poligono-java-spring-leaflet/webauthndemo" beforeDir="false" afterPath="$PROJECT_DIR$/../../poligono-java-spring-leaflet/webauthndemo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../poligonos-app/demo/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../poligonos-app/demo/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +81,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/.npm/_logs/2021-04-06T09_00_11_015Z-debug.log" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -77,7 +100,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RunManager" selected="npm.ionic:jest:troubleshooting">
     <configuration name="should create token to GET /admins" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -96,6 +119,16 @@
       <command value="run" />
       <scripts>
         <script value="e2e" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="ionic:jest:troubleshooting" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="ionic:jest:troubleshooting" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -123,6 +156,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.ionic:jest:troubleshooting" />
         <item itemvalue="npm.start" />
         <item itemvalue="Jest.should create token to GET /admins" />
         <item itemvalue="npm.prettier" />
@@ -150,6 +184,9 @@
       <workItem from="1616198670351" duration="491000" />
       <workItem from="1616211480270" duration="83000" />
       <workItem from="1617393380390" duration="4654000" />
+      <workItem from="1617644857004" duration="3449000" />
+      <workItem from="1617657767054" duration="607000" />
+      <workItem from="1617694500948" duration="17651000" />
     </task>
     <servers />
   </component>

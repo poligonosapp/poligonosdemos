@@ -1,3 +1,3 @@
-require('service-worker');
+const sw = require('service-worker');
 
-module.export = sw;
+module.exports = { sw };

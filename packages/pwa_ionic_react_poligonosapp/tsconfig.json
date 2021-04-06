@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "experimentalDecorators": true,
     "module": "esnext",
     "noImplicitAny": true,
     "removeComments": true,
@@ -7,6 +8,7 @@
     "sourceMap": true,
     "moduleResolution": "node",
     "typeRoots": [
+      "./src/declaration",
       "./node_modules/@types"
     ],
     "baseUrl": "src",
@@ -22,6 +24,7 @@
       "ESNext.Symbol"
     ],
     "allowJs": true,
+    "watch":true,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,

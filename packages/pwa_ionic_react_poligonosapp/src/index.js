@@ -42,13 +42,13 @@ import { Auth0Provider } from '@auth0/auth0-react';
 import App from './App';
 
 // ReactDOM.render(<App />, document.getElementById('root'));
-const rootElement = document.getElementById('root');
+const rootElement = <div id="root"></div>;// https://pt-br.reactjs.org/docs/rendering-elements.html
 
 try{
     if (rootElement.hasChildNodes()) {
 
     for(let entry of rootElement.hasChildNodes()){
-        useCallback(ReactDOM.hydrate(App, rootElement));
+        useCallback(ReactDOM.hydrate(App, document.getElementById('root')))
     }
     
 } else {
