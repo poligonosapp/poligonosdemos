@@ -1,5 +1,7 @@
 import ErrorBoundary from "./pages/ErrorBoundary";
 
+import Posts from './pages/Posts';
+
 require('./polygons.geojson');
 
 // require('./pages/PoligonoComponentPage');
@@ -49,7 +51,7 @@ import { ApolloProvider } from '@apollo/client';
 let $ = require('jquery')( window );
 
 
-import { useAuth0 } from '@auth0/auth0-react';
+// import { useAuth0 } from '@auth0/auth0-react';
 // import { Profile } from './pages/Profile';
 import { Redirect, Route } from 'react-router-dom';
 import {
@@ -158,31 +160,17 @@ request(options, function (error: string | undefined, body: any) {
   console.log(body);
 });*/
 
-  let {
-    isLoading,
-    isAuthenticated,
-    error,
-    user,
-    loginWithRedirect,
-    logout,
-  } = useAuth0();
+
 
 // isAuthenticated = false;
 // isLoading = true;
 function App() {  
 // let App: React.FC = () => {
 
-let [response, setResponse] = useState(null);
-
-if (isLoading) {
-    return <div>Loading...</div>;
-  }
-  if (error) {
-    return <div>Oops... {error.message}</div>;
-}
+// let [response, setResponse] = useState(null);
   
 
-if (isAuthenticated) {
+
 
     return (
      
@@ -192,6 +180,9 @@ if (isAuthenticated) {
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
+
+              
+              <Posts/>
 
           <ErrorBoundary>
             <Route path="/tab1" component={Tab1} exact={true} />
@@ -206,22 +197,6 @@ if (isAuthenticated) {
             <IonIcon icon={triangle} />
             <IonLabel>Tab 1</IonLabel>
             <IonSpinner />
-
-           
-            
-            Hello {user.name}
-
-                
-             
-
-                
-
-            <IonButton onClick={() => logout({ returnTo: window.location.origin })}>
-              Log out
-        </IonButton>
-
-                
-                
           </IonTabButton>
           <IonTabButton tab="tab2" href="/tab2">
             <IonIcon icon={ellipse} />
@@ -236,9 +211,7 @@ if (isAuthenticated) {
     </IonReactRouter>
   </IonApp> 
     );
-  } else {
-    return <IonButton onClick={() => loginWithRedirect}>Log in</IonButton>;
-  }
+  
 
   
 };

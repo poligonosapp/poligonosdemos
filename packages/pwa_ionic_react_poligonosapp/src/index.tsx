@@ -15,7 +15,11 @@ defineCustomElements(window);
 // serviceWorker.unregister();
 
 
-const R = require('ramda');
+// const R = require('ramda');
+import * as R from 'ramda';
+ 
+const {identity} = R
+R.map(identity, [1, 2, 3])
 
 import ErrorBoundary from './pages/ErrorBoundary';
 

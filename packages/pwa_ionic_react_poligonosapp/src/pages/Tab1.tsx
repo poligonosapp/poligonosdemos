@@ -37,7 +37,7 @@ import ErrorBoundary from './ErrorBoundary';
 import ReactDOM, { render } from 'react-dom';
 
 // import Toggle from './controller/EventHandlerController';
-import LayerControlForm from './LayerControlDemo';
+// import LayerControlForm from './LayerControlDemo';
 
 import 'leaflet/dist/leaflet.css';
 // import 'leaflet-draw/dist/leaflet.draw.css';
@@ -99,7 +99,7 @@ import {
 
 import './Tab1.css';
 import { functionExpression, react } from "@babel/types";
-import ReactControlExample from './ReactControlExample';
+// import ReactControlExample from './ReactControlExample';
 import { isElementOfType } from 'react-dom/test-utils';
 // import { getElement } from 'ionicons/dist/types/stencil-public-runtime';
 // import { mapFetchFunction } from './oneGeoJSON';

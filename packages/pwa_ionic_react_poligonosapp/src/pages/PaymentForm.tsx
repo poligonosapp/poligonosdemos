@@ -46,7 +46,7 @@ const PaymentForm = () => {
     const elements = useElements();
     const stripe = useStripe();
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = async (e:any) => {
 
         e.preventDeafult();
 

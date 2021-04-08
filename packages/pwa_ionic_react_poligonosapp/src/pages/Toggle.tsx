@@ -24,7 +24,7 @@ import PoligonoDesenho from 'models/poligono';
 type IProps = {
    isToggleOn: boolean;
   mymap: L.Map;
-  poligono: typeof PoligonoDesenho;
+  // poligono: typeof PoligonoDesenho;
 }
 ;// end type
 
