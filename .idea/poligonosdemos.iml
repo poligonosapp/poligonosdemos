@@ -9,6 +9,7 @@
         <webroots>
           <root url="file://$MODULE_DIR$/poligono-java-spring-leaflet/poligono-mobile/web" relative="/" />
         </webroots>
+        <sourceRoots />
       </configuration>
     </facet>
     <facet type="web" name="Web2">
@@ -31,6 +32,27 @@
         <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/../../poligonosdemos/assets" />
         <option name="LIBS_FOLDER_RELATIVE_PATH" value="/../../poligonosdemos/libs" />
         <option name="PROGUARD_LOGS_FOLDER_RELATIVE_PATH" value="/../../poligonosdemos/proguard_logs" />
+      </configuration>
+    </facet>
+    <facet type="web" name="Web3">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/poligono-java-spring-leaflet/webauthndemo/target/gaedemo-1.0-SNAPSHOT/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/poligono-java-spring-leaflet/webauthndemo/target/gaedemo-1.0-SNAPSHOT" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web4">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/poligono-java-spring-leaflet/webauthndemo/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/poligono-java-spring-leaflet/webauthndemo/src/main/webapp" relative="/" />
+        </webroots>
+        <sourceRoots />
       </configuration>
     </facet>
   </component>

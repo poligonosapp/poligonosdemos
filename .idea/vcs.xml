@@ -2,6 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/ionic-react-nextjs-starter" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/next.js" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/packages/poligonosapp-vue/poligonosapp-nuxtjs" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/packages/poligonosapp-vue/poligonosapp-vue-native" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/packages/tut-react-and-spring-data-rest" vcs="Git" />

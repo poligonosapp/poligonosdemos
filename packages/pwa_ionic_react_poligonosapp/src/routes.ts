@@ -3,7 +3,14 @@ let express         = require('express');
 let routes          = express.Router();
 let userController  = require('./controller/user-controller');
 // @ts-ignore
-let passport	    = require('passport');
+let passport = require('passport');
+
+const morgan = require("morgan");
+const appRoute = express();
+
+appRoute.use(express.json());
+appRoute.use(express.urlEncoded({ extended: true }));
+appRoute.use(morgan("dev"));
  
 routes.get('/', (req: any, res: { send: (arg0: string) => any; }) => {
     return res.send('Hello, this is the API!');

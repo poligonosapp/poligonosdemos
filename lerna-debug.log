@@ -6,9 +6,13 @@
 0 silly argv }
 1 notice cli v3.22.1
 2 verbose rootPath /home/luism/poligonosdemos
-3 error Error: Invalid package name "poligonosdemos/PoligonosApp": name can only contain URL-friendly characters
-3 error     at invalidPackageName (/home/luism/poligonosdemos/node_modules/npm-package-arg/npa.js:86:15)
-3 error     at Result.setName (/home/luism/poligonosdemos/node_modules/npm-package-arg/npa.js:121:11)
-3 error     at new Result (/home/luism/poligonosdemos/node_modules/npm-package-arg/npa.js:111:23)
-3 error     at Function.resolve (/home/luism/poligonosdemos/node_modules/npm-package-arg/npa.js:58:15)
-3 error     at new Package (/home/luism/poligonosdemos/node_modules/@lerna/package/index.js:36:26)
+3 error Error: EACCES: permission denied, write
+3 error     at writeSync (node:fs:744:3)
+3 error     at SyncWriteStream._write (node:internal/fs/sync_write_stream:25:3)
+3 error     at writeOrBuffer (node:internal/streams/writable:395:12)
+3 error     at SyncWriteStream.Writable.write (node:internal/streams/writable:340:10)
+3 error     at EventEmitter.log.write (/home/luism/poligonosdemos/node_modules/npmlog/log.js:271:10)
+3 error     at EventEmitter.<anonymous> (/home/luism/poligonosdemos/node_modules/npmlog/log.js:234:12)
+3 error     at Array.forEach (<anonymous>)
+3 error     at EventEmitter.log.emitLog (/home/luism/poligonosdemos/node_modules/npmlog/log.js:232:28)
+3 error     at EventEmitter.<anonymous> (/home/luism/poligonosdemos/node_modules/npmlog/log.js:160:10)
