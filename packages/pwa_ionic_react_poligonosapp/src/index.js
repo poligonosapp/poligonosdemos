@@ -1,8 +1,14 @@
-const R = require('ramda');
+import React, { useCallback } from 'react'
+import ReactDOM from 'react-dom'
+import './index.css'
+import { Auth0Provider } from '@auth0/auth0-react'
+import App from './App'
 
-require('core-js/es/map');
-require('core-js/es/set');
-require('raf/polyfill');
+// const R = require('ramda');
+
+// require('core-js/es/map');
+require('core-js/es/set')
+require('raf/polyfill')
 
 // require('./index.tsx');
 
@@ -31,40 +37,28 @@ try {
         })
         .then((result) => console.log(result))
          */
-} catch (e) {
-    
-}
-
-import React, {useCallback} from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import { Auth0Provider } from '@auth0/auth0-react';
-import App from './App';
+} catch (e) {}
 
 // ReactDOM.render(<App />, document.getElementById('root'));
-const rootElement = <div id="root"></div>;// https://pt-br.reactjs.org/docs/rendering-elements.html
+const rootElement = <div id="root"></div> // https://pt-br.reactjs.org/docs/rendering-elements.html
 
-try{
+try {
     if (rootElement.hasChildNodes()) {
+        for (let entry of rootElement.hasChildNodes()) {
+            useCallback(ReactDOM.hydrate(App, document.getElementById('root')))
+        }
+    } else {
+        // ReactDOM.render(App, rootElement);
 
-    for(let entry of rootElement.hasChildNodes()){
-        useCallback(ReactDOM.hydrate(App, document.getElementById('root')))
+        ReactDOM.render(
+            <Auth0Provider
+                domain="process.env.REACT_APP_AUTH0_DOMAIN"
+                clientId="process.env.REACT_APP_AUTH0_CLIENT_ID"
+                redirectUri={window.location.origin}
+            >
+                <App />
+            </Auth0Provider>,
+            document.getElementById('root')
+        )
     }
-    
-} else {
-    // ReactDOM.render(App, rootElement);
-
-    ReactDOM.render(
-        <Auth0Provider
-            domain="process.env.REACT_APP_AUTH0_DOMAIN"
-            clientId="process.env.REACT_APP_AUTH0_CLIENT_ID"
-            redirectUri={window.location.origin}
-        >
-            <App />
-        </Auth0Provider>,
-        document.getElementById('root')
-    )
-}
-}catch(e){
-
-}
+} catch (e) {}

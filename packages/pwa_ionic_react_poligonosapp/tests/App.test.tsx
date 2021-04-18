@@ -1,3 +1,4 @@
+// require(ramda.min);
 // require('uuid/v4');
 
 // const uuid = require('uuid/v4');
@@ -229,7 +230,7 @@ describe('should not jest expo <App /> typescript 2339', () => {
   });
 });
 
-// import { response } from 'express';
+// import { response } from 'express-RsYNxDW9';
 
 //const React = require('react');
 const render = require('@testing-library/react');
@@ -381,11 +382,11 @@ test('geojson types upload', () => {
 
 test('should webpack loaders webkit dev tools FOUC flash of unstyled text', () => {})
 
-test('webpack babel loaders post css', () => {
+test('webpack babel loaders post css-FUNnnQD3', () => {
     // fail(true);
 })
 
-test('nodemom express', () => {
+test('nodemom express-RsYNxDW9', () => {
     // fail(true);
 })
 

@@ -1,4 +1,4 @@
-import './theme/stripe.css';
+import './theme/stripe.css-FUNnnQD3';
 
 import { withRouter } from 'react-router-dom';
 

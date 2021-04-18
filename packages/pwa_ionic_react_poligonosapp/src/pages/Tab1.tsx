@@ -4,7 +4,7 @@
 import { Elements } from '@stripe/react-stripe-js';
 
 // import { MapPlaceholder } from './MapPlaceholder';
-// import 'Tab1.css';
+// import 'Tab1.css-FUNnnQD3';
 
 import React, {
   FC,
@@ -40,7 +40,7 @@ import ReactDOM, { render } from 'react-dom';
 // import LayerControlForm from './LayerControlDemo';
 
 import 'leaflet/dist/leaflet.css';
-// import 'leaflet-draw/dist/leaflet.draw.css';
+// import 'leaflet-draw/dist/leaflet.draw.css-FUNnnQD3';
 // import DrawComponent from './DrawComponent';
 
 const DrawComponent = require('./DrawComponent');
@@ -57,7 +57,7 @@ import { GeoJSON, Polygon, TileLayer, Pane, Popup, Marker } from "react-leaflet"
 
 // let mymapAux = require('./frontend');
 // import { mapFetchFunction } from './oneGeoJSON';
-// import './css/main.css';
+// import './css-FUNnnQD3/main.css-FUNnnQD3';
 // import { accessToken } from '../utils/accessToken';
 
 // const accessToken = 'process.env.LEAFLET_ACCESS_TOKEN';

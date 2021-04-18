@@ -25,16 +25,3 @@ let mongoDB = require('mongodb');
         mongoDB.disconnect(done);
     });
 });
-
-let mongoose = require('mongoose');
-
-module.exports = {
-  mongoose,
-  connect: () => {
-    mongoose.Promise = Promise;
-    mongoose.connect(process.env.CONNECT);
-  },
-  disconnect: done => {
-    mongoose.disconnect(done);
-  }
-};

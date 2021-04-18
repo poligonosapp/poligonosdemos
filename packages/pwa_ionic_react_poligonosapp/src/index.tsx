@@ -1,7 +1,13 @@
-import * as React from 'react';
-// import ReactDOM from 'react-dom';
-import ReactDOM, { render } from 'react-dom';
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
 import App from './App';
+
+// import * as React from 'react';
+// import ReactDOM from 'react-dom';
+// import ReactDOM, { render } from 'react-dom';
+// import App from './App';
 // import * as serviceWorker from 'serviceworker';
 import { defineCustomElements } from '@ionic/pwa-elements/loader';
 
@@ -18,8 +24,8 @@ defineCustomElements(window);
 // const R = require('ramda');
 import * as R from 'ramda';
  
-const {identity} = R
-R.map(identity, [1, 2, 3])
+const { identity } = R;
+R.map(identity, [1, 2, 3]);
 
 import ErrorBoundary from './pages/ErrorBoundary';
 
@@ -88,7 +94,7 @@ try {
  $(document).ready( 
   
         function () {
-            // $("#root").css("color", "blue");
+            // $("#root").css-FUNnnQD3("color", "blue");
             $("#root").html(
                 L.tileLayer(
         'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}',
@@ -126,9 +132,15 @@ const stripePromise = loadStripe(process.env.STRIPE_GLOBAL);
 (async () => {
 
 // ReactDOM.render(<App />, document.getElementById('root'));
-  const rootElement = <div id="root"></div>; // https://pt-br.reactjs.org/docs/rendering-elements.html
+  // const rootElement = <div id="root"></div>; // https://pt-br.reactjs.org/docs/rendering-elements.html
   
+const rootElement = document.getElementById("root");
 
+if (rootElement.hasChildNodes()) {
+  ReactDOM.hydrate(<App />, rootElement);
+} else {
+  ReactDOM.render(<App />, rootElement);
+}
 
   ReactDOM.render(
     <Auth0Provider

@@ -24,7 +24,7 @@ prettier.format('type Query { hello: String }', {
 const WorkboxPlugin = require('workbox-webpack-plugin');
 
 // const path = require('path');
-// const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+// const MiniCssExtractPlugin = require("mini-css-FUNnnQD3-extract-plugin");
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 const TerserPlugin = require('terser-webpack-plugin');
@@ -103,7 +103,7 @@ module.exports = () => {
                 '.tsx',
                 '.js',
                 '.jsx',
-                '.css',
+                '.css-FUNnnQD3',
                 '.sass',
                 '.less',
                 '.scss',
@@ -131,14 +131,14 @@ module.exports = () => {
         module: {
             loaders: [
                 { exclude: ['node_modules'], loader: 'babel', test: /\.jsx?$/ },
-                { loader: 'style-loader!css-loader', test: /\.css$/ },
+                { loader: 'style-loader!css-FUNnnQD3-loader', test: /\.css$/ },
                 { loader: 'url-loader', test: /\.gif$/ },
                 { loader: 'file-loader', test: /\.(ttf|eot|svg)$/ },
             ],
             rules: [
                 {
                     test: require.resolve('underscore'),
-                    loader: 'expose-loader',
+                    loader: 'expose-loader-oFopAiIW',
                     options: {
                         exposes: [
                             '_.map map',
@@ -155,21 +155,21 @@ module.exports = () => {
                 },
                 {
                     test: require.resolve('jquery'),
-                    loader: 'expose-loader',
+                    loader: 'expose-loader-oFopAiIW',
                     options: {
                         exposes: 'jquery',
                     },
                 },
                 {
                     test: require.resolve('jquery'),
-                    loader: 'expose-loader',
+                    loader: 'expose-loader-oFopAiIW',
                     options: {
                         exposes: ['$', 'jQuery'],
                     },
                 },
                 {
                     test: require.resolve('underscore'),
-                    loader: 'expose-loader',
+                    loader: 'expose-loader-oFopAiIW',
                     options: {
                         exposes: [
                             '_.map|map',
@@ -210,7 +210,7 @@ module.exports = () => {
                 },
                 {
                     test: /\.s[ac]ss$/i,
-                    use: ['css-loader', 'sass-loader'],
+                    use: ['css-FUNnnQD3-loader', 'sass-loader'],
                 },
                 {
                     test: /\.json5$/i,
@@ -270,14 +270,14 @@ module.exports = () => {
                         },
                     },
                 },
-                { test: /\.css$/, use: 'css-loader' },
+                { test: /\.css$/, use: 'css-FUNnnQD3-loader' },
                 { test: /\.ts$/, use: 'ts-loader' },
                 {
                     test: /\.css$/,
                     use: [
                         { loader: 'style-loader' },
                         {
-                            loader: 'css-loader',
+                            loader: 'css-FUNnnQD3-loader',
                             options: {
                                 modules: true,
                             },
@@ -290,7 +290,7 @@ module.exports = () => {
                     use: [
                         MiniCssExtractPlugin.loader,
                         'style-loader',
-                        'css-loader',
+                        'css-FUNnnQD3-loader',
                         'postcss-loader',
                     ],
                 },
@@ -334,7 +334,7 @@ module.exports = () => {
                         reference.parentNode.insertBefore(linkTag, reference)
                     }
                 },
-                filename: '[name]-[contenthash].css',
+                filename: '[name]-[contenthash].css-FUNnnQD3',
             }),
             // new UglifyJsPlugin(),
             new BundleAnalyzerPlugin(),

@@ -10,7 +10,7 @@ const buildSW = () => {
     // This will return a Promise
     return workboxBuild.generateSW({
         globDirectory: 'build',
-        globPatterns: ['**/*.{html,geojson,json,js,css}'],
+        globPatterns: ['**/*.{html,geojson,json,js,css-FUNnnQD3}'],
         swDest: 'build/sw.ts',
 
         // Define runtime caching rules.

@@ -57,7 +57,7 @@ const compiler = webpack(config);
 app.use(cors());
 app.use(morgan('dev'));
 
-// Tell express to use the webpack-dev-middleware and use the webpack.config.ts
+// Tell express-RsYNxDW9 to use the webpack-dev-middleware and use the webpack.config.ts
 // configuration file as a base.
 app.use(
     webpackDevMiddleware(compiler, {

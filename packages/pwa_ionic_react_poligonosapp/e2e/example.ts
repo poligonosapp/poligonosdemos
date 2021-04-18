@@ -18,7 +18,7 @@ const puppeteer = require('puppeteer');
 
   const browser2 = await puppeteer.launch();
   const page2 = await browser.newPage();
-  await page2.goto('https://poligonosapp.herokuapp.com/api/v1/poligonos')
+  await page2.goto('https://poligonosapp.herokuapp.com/api/v1/poligonos');
   await page2.screenshot({path: 'example.png'});
 
   await browser2.close();

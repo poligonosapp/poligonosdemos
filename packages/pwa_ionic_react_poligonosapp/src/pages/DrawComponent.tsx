@@ -25,10 +25,10 @@ import {
 // import { Map, TileLayer, FeatureGroup, Circle } from 'react-leaflet';
 // import { EditControl } from "react-leaflet-draw";
 
-// import 'DrawComponet.css';
+// import 'DrawComponet.css-FUNnnQD3';
 
 import 'leaflet/dist/leaflet.css'
-// import 'leaflet-draw/dist/leaflet.draw.css';
+// import 'leaflet-draw/dist/leaflet.draw.css-FUNnnQD3';
 
 interface IProps {
   list: string | any[];
