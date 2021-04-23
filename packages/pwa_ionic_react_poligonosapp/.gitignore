@@ -1,5 +1,13 @@
 # https://stackoverflow.com/questions/59564134/git-ignore-all-non-dotfiles 
 
+# yarn berry heroku
+.yarn/*
+!.yarn/cache
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+
 *
 !/**/
 !.*

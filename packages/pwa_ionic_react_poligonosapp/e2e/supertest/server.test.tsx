@@ -1,3 +1,7 @@
+const addHook = require('pirates').addHook;
+// Or if you use ES modules
+// import { addHook } from 'pirates';
+
 require('babel-plugin-import-graphql');
 const request = require("supertest");
 const app = require("../../src/app");
