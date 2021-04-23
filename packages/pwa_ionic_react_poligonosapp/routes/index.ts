@@ -1,6 +1,6 @@
 //TODO LOCALSTORAGE REACTJS
-
-let express = require('express');
+import "express";
+// let express = require('express');
 let app = express();
 let router = express.Router();
 
@@ -13,7 +13,7 @@ app.use(helmet());
 app.disable('x-powered-by');
 
 /* GET home page. */
-router.get('/', function (req, res, next) {
+router.get('/', function (req:Request, res:Response, next) {
     console.log('PoligonosApp Express+React+Ionic loading...');
     res.render('index', { title: 'PoligonosApp loading...' });
 })

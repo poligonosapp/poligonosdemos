@@ -18,6 +18,8 @@
     ],
     "target": "es2020",
     "lib": [
+      "es5",
+      "es6",
       "dom",
       "dom.iterable",
       "esnext",
@@ -28,7 +30,7 @@
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "strict": true,
+    "strict": false,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "isolatedModules": true,

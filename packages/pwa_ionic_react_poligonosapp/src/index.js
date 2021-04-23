@@ -13,6 +13,13 @@ require('raf/polyfill')
 // require('./index.tsx');
 
 try {
+
+
+document.querySelector("#root").addEventListener("click", (event) => {});
+    document.querySelector("#map").addEventListener("click", (event) => { });
+    document.querySelector('#mapid').addEventListener('click', (event) => {})
+document.querySelector("#app").addEventListener("click", (event) => {});
+
     // import { ApolloClient, InMemoryCache } from '@apollo/client';
 
     const client = new ApolloClient({

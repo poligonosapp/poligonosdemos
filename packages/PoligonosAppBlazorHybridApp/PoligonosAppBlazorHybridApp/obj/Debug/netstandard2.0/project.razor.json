@@ -1,0 +1,66 @@
+{
+  "FilePath": "/home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp.csproj",
+  "Configuration": {
+    "ConfigurationName": "Default",
+    "LanguageVersion": "3.0",
+    "Extensions": []
+  },
+  "ProjectWorkspaceState": {
+    "TagHelpers": [],
+    "CSharpLanguageVersion": 703
+  },
+  "RootNamespace": "PoligonosAppBlazorHybridApp",
+  "Documents": [
+    {
+      "FilePath": "/home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp/WebUI/Shared/MainLayout.razor",
+      "TargetPath": "WebUI\\Shared\\MainLayout.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp/WebUI/Pages/Counter.razor",
+      "TargetPath": "WebUI\\Pages\\Counter.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp/WebUI/Pages/Index.razor",
+      "TargetPath": "WebUI\\Pages\\Index.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp/WebUI/_Imports.razor",
+      "TargetPath": "WebUI\\_Imports.razor",
+      "FileKind": "componentImport"
+    },
+    {
+      "FilePath": "/home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp/WebUI/App.razor",
+      "TargetPath": "WebUI\\App.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp/WebUI/Pages/FetchData.razor",
+      "TargetPath": "WebUI\\Pages\\FetchData.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp/Main.razor",
+      "TargetPath": "Main.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp/_Imports.razor",
+      "TargetPath": "_Imports.razor",
+      "FileKind": "componentImport"
+    },
+    {
+      "FilePath": "/home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp/WebUI/Shared/NavMenu.razor",
+      "TargetPath": "WebUI\\Shared\\NavMenu.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp/WebUI/Shared/SurveyPrompt.razor",
+      "TargetPath": "WebUI\\Shared\\SurveyPrompt.razor",
+      "FileKind": "component"
+    }
+  ],
+  "SerializationFormat": "0.2"
+}

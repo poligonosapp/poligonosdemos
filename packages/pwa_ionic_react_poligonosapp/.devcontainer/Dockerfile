@@ -10,12 +10,12 @@ RUN mkdir /app
 WORKDIR /app
 
 COPY package.json .
-
-RUN yarn install
+USER root
+RUN npm install
 
 COPY . .
 
-RUN yarn build
+RUN npm build
 
 # ---------------
 

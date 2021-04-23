@@ -212,6 +212,9 @@
     <option name="context" value="docker-desktop" />
     <option name="namespace" value="default" />
   </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedIndex" value="1" />
   </component>
@@ -339,6 +342,7 @@
       <workItem from="1618426787632" duration="1462000" />
       <workItem from="1618567079211" duration="12797000" />
       <workItem from="1618671259155" duration="15004000" />
+      <workItem from="1618948735675" duration="25000" />
     </task>
     <servers />
   </component>

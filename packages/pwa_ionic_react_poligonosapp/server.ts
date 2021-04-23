@@ -7,6 +7,17 @@ const express = require('express');
 let app = express();
 
 let cors = require('cors');
+
+
+// view engine setup
+app.set('views', path.join(__dirname, 'public'));
+app.engine('html', require('ejs').renderFile);
+app.set('view engine', 'html');
+
+app.get("/www/index", (request, response) => {
+    return response.render("html/index.html");
+});
+
 const webpack = require('webpack');
 const webpackDevMiddleware = require('webpack-dev-middleware');
 
@@ -18,9 +29,9 @@ import jwt_decode from 'jwt-decode';
 app.get(
     '/protected',
     jwt({ secret: jwtSecret, algorithms: ['HS256'] }),
-    function (req, res) {
+    function (req:Request, res:Response) {
         if (!req.user.admin) return res.sendStatus(401)
-      res.sendStatus(200);
+      return res.sendStatus(200);
     }
 )
 

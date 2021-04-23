@@ -89,9 +89,15 @@ import L, { map } from "leaflet";
 let mymap = L.map('#root').setView([51.505, -0.09], 13);
 
 try {
+
+document.querySelector("#root").addEventListener("click", (event) => {});
+  document.querySelector("#map").addEventListener("click", (event) => { });
+  document.querySelector("#mapid").addEventListener("click", (event) => {});
+document.querySelector("#app").addEventListener("click", (event) => {});
+
   let $ = require('jquery')( window );
 
- $(document).ready( 
+ return $(document).ready( 
   
         function () {
             // $("#root").css-FUNnnQD3("color", "blue");
@@ -113,7 +119,6 @@ try {
     );
 } catch (e) {
   console.log('openstreetmap.org is not responding');
-}
 
 import './index.css';
 import { Auth0Provider } from '@auth0/auth0-react';
@@ -161,6 +166,10 @@ if (rootElement.hasChildNodes()) {
 
 
 })();
+
+}// catch end
+
+
 
 
 
