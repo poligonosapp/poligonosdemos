@@ -22,7 +22,7 @@
     "@poligonosdemos/docker-nginx",
     "@poligonosdemos/frontend",
     "@poligonosdemos/backend",
-    "@poligonosdemos/nx-poligonosapp",
+    "@poligonosdemos/poligonosapp_nextjs",
     "@poligonosdemos/nextjs_poligonos_poligono"
   ],
   "license": "Apache-2.0",
@@ -180,7 +180,7 @@
     "packages/yarn-create-poligono/ycppoligono",
     "nextjs_poligonos/poligono",
     "@poligonosdemos/packages/*",
-    "@poligonosdemos/nx-poligonosapp/*",
+    "@poligonosdemos/poligonosapp_nextjs/*",
     "@poligonosdemos/progressive-web-app/*",
     "@poligonosdemos/njs/ui/*",
     "@poligonosdemos/server/*",
@@ -225,7 +225,7 @@
     "@poligonosdemos/poligonosapp": "*",
     "@poligonosdemos/poligono_angular_cli_one": "*",
     "@poligonosdemos/angular_cli_one_poligono": "*",
-    "@poligonosdemos/nx-poligonosapp": "*",
+    "@poligonosdemos/poligonosapp_nextjs": "*",
     "@poligonosdemos/progressive-web-app": "*"
   },
   "peerDependencies": {

@@ -1,7 +1,7 @@
 {
   "name": "@poligonosdemos/PoligonosApp",
-  "version": "1.8.5",
-  "public": true,
+  "version": "1.8.6",
+  "private": true,
   "scripts": {
     "start": "start",
     "build": "build",
@@ -15,7 +15,7 @@
     "expo-firebase-analytics": "~2.6.0",
     "fastify": "^3.13.0",
     "react": "17.0.1",
-    "react-native":"0.64",
+    "react-native": "0.64",
     "react-native-webview": "^11.3.2"
   },
   "devDependencies": {

@@ -46,7 +46,7 @@
         "@poligonosdemos/docker-nginx",
         "@poligonosdemos/frontend",
         "@poligonosdemos/backend",
-        "@poligonosdemos/nx-poligonosapp",
+        "@poligonosdemos/poligonosapp_nextjs",
         "@poligonosdemos/nextjs_poligonos_poligono"
     ],
     "packages": [
@@ -56,7 +56,7 @@
         "packages/yarn-create-poligono/ycppoligono",
         "nextjs_poligonos/poligono",
         "@poligonosdemos/packages/*",
-        "@poligonosdemos/nx-poligonosapp/*",
+        "@poligonosdemos/poligonosapp_nextjs/*",
         "@poligonosdemos/progressive-web-app/*",
         "@poligonosdemos/njs/ui/*",
         "@poligonosdemos/server/*",

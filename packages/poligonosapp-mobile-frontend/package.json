@@ -1,6 +1,6 @@
 {
   "name": "poligonosapp-mobile-frontend",
-  "version": "0.0.1",
+  "version": "1.8.6",
   "private": true,
   "dependencies": {
     "@ionic/react": "^5.5.0",
