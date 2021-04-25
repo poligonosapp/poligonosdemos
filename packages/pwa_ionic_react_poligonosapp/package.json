@@ -10,7 +10,7 @@
     "workspaces": [
   "client"
 ],
-"private": true,
+"private": false,
     "license": "Apache License 2.0",
     "type": "module",
     "types": "index",
@@ -47,7 +47,7 @@
         "server": "node server.ts",
         "build": "build",
         "test:generate-output": "jest --json --outputFile=.jest-test-result.json || true",
-        "test": "jest",
+        "npm:test": "jest --runInBand",
         "e2e": "npm run test e2e/supertest/server.test.tsx",
         "cypress": "cypress open",
         "puppeteer": "puppeteer",

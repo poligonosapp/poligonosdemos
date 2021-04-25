@@ -50,16 +50,14 @@
         "@poligonosdemos/nextjs_poligonos_poligono"
     ],
     "packages": [
-        "@poligonosdemos/packages/pwa_ionic_react_poligonosapp/src/index.tsx",
-        "@poligonosdemos/poligonosapp-ng11",
-        "@poligonosdemos/PoligonosApp",
-        "@poligonosdemos/poligonosapp-ionic",
-        "@poligonosdemos/ycppoligono/*",
-        "@poligonosdemos/nextjs_poligonos/poligono",
+        "packages/*",
+        "app/*",
+        "packages/poligonosapp-ionic",
+        "packages/yarn-create-poligono/ycppoligono",
+        "nextjs_poligonos/poligono",
         "@poligonosdemos/packages/*",
         "@poligonosdemos/nx-poligonosapp/*",
         "@poligonosdemos/progressive-web-app/*",
-        "@poligonosdemos/app/*",
         "@poligonosdemos/njs/ui/*",
         "@poligonosdemos/server/*",
         "@poligonosdemos/ui/*",
@@ -67,9 +65,11 @@
         "@poligonosdemos/poligonos/*",
         "@poligonosdemos/ronin-ui/*",
         "@poligonosdemos/z-app-name/*",
+        "@poligonosdemos/progressive-web-app/*",
         "@poligonosdemos/ui-next-js-heroku/*",
         "@poligonosdemos/poligonosapp/*",
         "@poligonosdemos/poligono_angular_cli_one/*",
+        "@poligonosdemos/poligonosapp-ng11",
         "@poligonosdemos/angular_cli_one_poligono/*"
     ],
     "workspaces": [

@@ -1,5 +1,9 @@
 import { ApolloProvider } from '@apollo/client';
 
+let polygons = require('polygons.geojson');
+console.log('\n polygons size \n');
+console.log(polygons.size());
+
 import { GeoJSON, Polygon, TileLayer, Pane, Popup, Marker } from 'react-leaflet';
 
 import DrawComponent from './DrawComponent';
@@ -31,7 +35,9 @@ import {
     IonButton,
 } from '@ionic/react';
 
-interface IProps {}
+interface IProps {
+    
+}
 
 class OtherComponent extends React.Component {
     constructor(props: IProps) {
@@ -57,6 +63,10 @@ class OtherComponent extends React.Component {
                             </IonHeader>
 
                             <ErrorBoundary>
+                                <Polygon
+                                    pathOptions={{ color: 'purple' }}
+                                    positions={polygons}
+                                />
                                 <Polygon
                                     pathOptions={{ color: 'purple' }}
                                     positions={[
