@@ -1,3 +1,5 @@
+require('bluebird');//vscode callstack
+
 import ErrorBoundary from "./pages/ErrorBoundary";
 
 import Posts from './pages/Posts';
@@ -39,7 +41,7 @@ import L from 'leaflet';
 // let admin = require('firebase-admin'); //backend
 // import * as admin from 'firebase-admin';// es 2015
 
-import { ApolloProvider } from '@apollo/client';
+// import { ApolloProvider } from '@apollo/client';
 
 // import SetupStoryBook from './stories/SetupStoryBook';
 
@@ -164,8 +166,8 @@ request(options, function (error: string | undefined, body: any) {
 
 // isAuthenticated = false;
 // isLoading = true;
-function App() {  
-// let App: React.FC = () => {
+//function App() {  
+ let App: React.FC = () => {
 
 // let [response, setResponse] = useState(null);
   
@@ -195,16 +197,16 @@ function App() {
         <IonTabBar slot="bottom">
           <IonTabButton tab="tab1" href="/tab1">
             <IonIcon icon={triangle} />
-            <IonLabel>Tab 1</IonLabel>
+            <IonLabel position="floating">Tab 1</IonLabel>
             <IonSpinner />
           </IonTabButton>
           <IonTabButton tab="tab2" href="/tab2">
             <IonIcon icon={ellipse} />
-            <IonLabel>Tab 2</IonLabel>
+            <IonLabel position="floating">Tab 2</IonLabel>
           </IonTabButton>
           <IonTabButton tab="tab3" href="/tab3">
             <IonIcon icon={square} />
-            <IonLabel>Tab 3</IonLabel>
+            <IonLabel position="floating">Tab 3</IonLabel>
           </IonTabButton>
         </IonTabBar>
       </IonTabs>

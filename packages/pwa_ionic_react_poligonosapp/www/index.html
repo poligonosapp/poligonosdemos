@@ -12,6 +12,10 @@
 
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
+        <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+<script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
+
         <script src="https://unpkg.com/uuid@latest/dist/umd/uuidv4.min.js"></script>
 
         <link
@@ -42,7 +46,7 @@
             type="module"
             src="//cdnjs.cloudflare.com/ajax/libs/ramda/0.20.1/ramda.min.js"
         >
-    var R = require('ramda');
+    let R = require('ramda');
     </script>
 
         <script type="module" src="dist/main.bundle.ts"></script>
@@ -96,9 +100,21 @@
         ></script>
 
         <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+        <script type="module" src="./src/index.tsx" defer />
     </head>
 
     <body class=".main">
+
+<ion-app>
+    
+
+    <ion-header>
+    <ion-toolbar><ion-title>Polygons Toolbar Title</ion-title></ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+        Polygons content
+
         <div id="root" class=".main">
             <div id="mapid">
                 <script type="module" src="./src/index.tsx" />
@@ -108,9 +124,8 @@
                 <a
                     href="http://mapbox.com/about/maps"
                     class="mapbox-logo"
-                    target="_blank"
-                    >Mapbox</a
-                >
+                    target="_blank">Mapbox</a>
+
                 <div class="mapbox-attribution-container">
                     <a href="https://www.mapbox.com/about/maps/">© Mapbox | </a>
                     <a href="http://www.openstreetmap.org/copyright"
@@ -125,16 +140,29 @@
             </div>
 
             <div id="app"></div>
+
+        </ion-content>
+
+    </ion-app>
+    
+
+        
             <script type="module" src="/build/app.tsx"></script>
             <script type="module" src="/build/index.tsx"></script>
 
             <ion-form action="./src/index.tsx">
                 <ion-upload></ion-upload>
-                <ion-button>Decode geometry from your local storage</ion-button>
-                <ion-share-button>Share your shapefile</ion-share-button>
+                <ion-button id="#decode">Decode geometry from your local storage</ion-button>
+                <ion-share-button id="#share">Share your shapefile</ion-share-button>
             </ion-form>
 
             <script type="module" src="./src/index.tsx" />
+            <script type="module" src="app.js">
+
+
+
+
+                </script>
         </div>
         <h1 id="target">Polígonos App</h1>
 
@@ -144,7 +172,7 @@
             data-callback="onSubmit"
             data-action="submit"
         >
-            Submit
+            Submit CAPTCHA
         </button>
 
         <script
@@ -991,5 +1019,7 @@
                 'WyJjOWU0NTRkYTU0YTlhODk1IixbbnVsbCxudWxsLG51bGwsImh0dHBzOi8vZnVuZGluZ2Nob2ljZXNtZXNzYWdlcy5nb29nbGUuY29tL2YvQUdTS1d4VXBBcVpXZjJmSnJkQ0I5dzFGNnFUZjd5X3dxdFVLb09JRUV4alRMYmlzS1BBNk1wejhVXzdYMWRsOFk0S3ZETjJZcndsaUFOX0I3TkNhN3lzSkQ5d1x1MDAzZCJdCixbMjAsImRpdi1ncHQtYWQiLDEwMCwiWXpsbE5EVTBaR0UxTkdFNVlUZzVOUVx1MDAzZFx1MDAzZCIsW251bGwsbnVsbCxudWxsLCJodHRwczovL3d3dy5nc3RhdGljLmNvbS8wZW1uL2YvcC9jOWU0NTRkYTU0YTlhODk1LmpzP3VzcXBcdTAwM2RDQXciXQpdCiwiaHR0cHM6Ly9mdW5kaW5nY2hvaWNlc21lc3NhZ2VzLmdvb2dsZS5jb20vbC9BR1NLV3hVX0hFSVhGdkdZV2NmOXVZbEpiZ1FYWXlrMkMxbExWUDBXZTNtdHhXTW03MV9wanlRamt0V1RvVUhkQTlZSXdQZlpVbHNwWVZocEZ2TmlDTktOP2FiXHUwMDNkMSIsImh0dHBzOi8vZnVuZGluZ2Nob2ljZXNtZXNzYWdlcy5nb29nbGUuY29tL2wvQUdTS1d4VzZDS29KM1pGYlZtNm9WWEg5TmxaeEI4dWppY1d6VFFVQ1pzVS1HcjIwSEZZRWU3WEtVT244MjFDUE5xSVV1YVdCTWYwVGg0SmxESmJmUUd3Yz9hYlx1MDAzZDJcdTAwMjZzYmZcdTAwM2QxIiwiaHR0cHM6Ly9mdW5kaW5nY2hvaWNlc21lc3NhZ2VzLmdvb2dsZS5jb20vbC9BR1NLV3hWaVZCNVdyaHVRcnk5Q0VmLWpjd2tkWHJXQUJwaDRKYmRlZGRXcnF4dXJzdVVtNVZHV2gzdWxqT1MwYzd0a2NfWDRyOUZMRG5OVlZBVHRuNVJzP3NiZlx1MDAzZDIiXQo='
             )
         </script>
+        <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.js"></script>
     </body>
 </html>

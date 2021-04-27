@@ -39,6 +39,7 @@
     "noFallthroughCasesInSwitch": true
   },
   "include": [
+    "node_modules",
     "src",
     "css",
     "routes",
