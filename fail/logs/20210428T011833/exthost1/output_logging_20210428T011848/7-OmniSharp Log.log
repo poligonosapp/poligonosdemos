@@ -1,0 +1,186 @@
+Starting OmniSharp server at 4/28/2021, 1:18:51 AM
+    Target: /home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp.sln
+
+OmniSharp server started.
+    Path: /root/.vscode/extensions/ms-dotnettools.csharp-1.23.11/.omnisharp/1.37.8/run
+    PID: 67887
+
+[info]: OmniSharp.Stdio.Host
+        Starting OmniSharp on ubuntu 20.4 (x64)
+[info]: OmniSharp.Services.DotNetCliService
+        DotNetPath set to dotnet
+[info]: OmniSharp.MSBuild.Discovery.MSBuildLocator
+        Located 1 MSBuild instance(s)
+            1: StandAlone 16.9.0 - "/root/.vscode/extensions/ms-dotnettools.csharp-1.23.11/.omnisharp/1.37.8/omnisharp/.msbuild/Current/Bin"
+[info]: OmniSharp.MSBuild.Discovery.MSBuildLocator
+        MSBUILD_EXE_PATH environment variable set to '/root/.vscode/extensions/ms-dotnettools.csharp-1.23.11/.omnisharp/1.37.8/omnisharp/.msbuild/Current/Bin/MSBuild.exe'
+[info]: OmniSharp.MSBuild.Discovery.MSBuildLocator
+        Registered MSBuild instance: StandAlone 16.9.0 - "/root/.vscode/extensions/ms-dotnettools.csharp-1.23.11/.omnisharp/1.37.8/omnisharp/.msbuild/Current/Bin"
+            CscToolExe = csc.exe
+            MSBuildToolsPath = /root/.vscode/extensions/ms-dotnettools.csharp-1.23.11/.omnisharp/1.37.8/omnisharp/.msbuild/Current/Bin
+            CscToolPath = /root/.vscode/extensions/ms-dotnettools.csharp-1.23.11/.omnisharp/1.37.8/omnisharp/.msbuild/Current/Bin/Roslyn
+            BypassFrameworkInstallChecks = true
+            MSBuildExtensionsPath = /root/.vscode/extensions/ms-dotnettools.csharp-1.23.11/.omnisharp/1.37.8/omnisharp/.msbuild
+[info]: OmniSharp.WorkspaceInitializer
+        Invoking Workspace Options Provider: OmniSharp.Roslyn.CSharp.Services.CSharpFormattingWorkspaceOptionsProvider, Order: 0
+[info]: OmniSharp.WorkspaceInitializer
+        Invoking Workspace Options Provider: OmniSharp.Roslyn.CSharp.Services.Completion.CompletionOptionsProvider, Order: 0
+[info]: OmniSharp.WorkspaceInitializer
+        Invoking Workspace Options Provider: OmniSharp.Roslyn.CSharp.Services.RenameWorkspaceOptionsProvider, Order: 100
+[info]: OmniSharp.WorkspaceInitializer
+        Invoking Workspace Options Provider: OmniSharp.Roslyn.CSharp.Services.ImplementTypeWorkspaceOptionsProvider, Order: 110
+[info]: OmniSharp.WorkspaceInitializer
+        Invoking Workspace Options Provider: OmniSharp.Roslyn.CSharp.Services.BlockStructureWorkspaceOptionsProvider, Order: 140
+[info]: OmniSharp.Cake.CakeProjectSystem
+        Detecting Cake files in '/home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp'.
+[info]: OmniSharp.Cake.CakeProjectSystem
+        Could not find any Cake files
+[info]: OmniSharp.MSBuild.ProjectSystem
+        Detecting projects in '/home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp.sln'.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for '/home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for '/home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp.Android/PoligonosAppBlazorHybridApp.Android.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for '/home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp.iOS/PoligonosAppBlazorHybridApp.iOS.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for '/home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp.Windows/PoligonosAppBlazorHybridApp.Windows.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for '/home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp.macOS/PoligonosAppBlazorHybridApp.macOS.csproj'
+[info]: OmniSharp.Script.ScriptProjectSystem
+        Detecting CSX files in '/home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp'.
+[info]: OmniSharp.Script.ScriptProjectSystem
+        Could not find any CSX files
+[info]: OmniSharp.WorkspaceInitializer
+        Configuration finished.
+[info]: OmniSharp.Stdio.Host
+        Omnisharp server running using Stdio at location '/home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp' on host 67645.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Loading project: /home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp.csproj
+[info]: OmniSharp.OmniSharpWorkspace
+        Miscellaneous file: /home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp/obj/Debug/netstandard2.0/.NETStandard,Version=v2.0.AssemblyAttributes.cs added to workspace
+[info]: OmniSharp.MSBuild.ProjectManager
+        Successfully loaded project file '/home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp.csproj'.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Adding project '/home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Loading project: /home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp.Android/PoligonosAppBlazorHybridApp.Android.csproj
+[warn]: OmniSharp.MSBuild.ProjectManager
+        Failed to load project file '/home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp.Android/PoligonosAppBlazorHybridApp.Android.csproj'.
+/home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp.Android/PoligonosAppBlazorHybridApp.Android.csproj(0,0)
+Microsoft.Build.Exceptions.InvalidProjectFileException: The imported project "/root/.vscode/extensions/ms-dotnettools.csharp-1.23.11/.omnisharp/1.37.8/omnisharp/.msbuild/Xamarin/Android/Xamarin.Android.CSharp.targets" was not found. Confirm that the expression in the Import declaration "/root/.vscode/extensions/ms-dotnettools.csharp-1.23.11/.omnisharp/1.37.8/omnisharp/.msbuild/Xamarin/Android/Xamarin.Android.CSharp.targets" is correct, and that the file exists on disk.  /home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp.Android/PoligonosAppBlazorHybridApp.Android.csproj
+  at Microsoft.Build.Shared.ProjectErrorUtilities.ThrowInvalidProject (System.String errorSubCategoryResourceName, Microsoft.Build.Shared.IElementLocation elementLocation, System.String resourceName, System.Object[] args) [0x00040] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Shared.ProjectErrorUtilities.VerifyThrowInvalidProject[T1,T2] (System.Boolean condition, System.String errorSubCategoryResourceName, Microsoft.Build.Shared.IElementLocation elementLocation, System.String resourceName, T1 arg0, T2 arg1) [0x00003] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Shared.ProjectErrorUtilities.ThrowInvalidProject[T1,T2] (Microsoft.Build.Shared.IElementLocation elementLocation, System.String resourceName, T1 arg0, T2 arg1) [0x00000] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.Evaluator`4[P,I,M,D].ExpandAndLoadImportsFromUnescapedImportExpression (System.String directoryOfImportingFile, Microsoft.Build.Construction.ProjectImportElement importElement, System.String unescapedExpression, System.Boolean throwOnFileNotExistsError, System.Collections.Generic.List`1[Microsoft.Build.Construction.ProjectRootElement]& imports) [0x0068b] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.Evaluator`4[P,I,M,D].ExpandAndLoadImportsFromUnescapedImportExpressionConditioned (System.String directoryOfImportingFile, Microsoft.Build.Construction.ProjectImportElement importElement, System.Collections.Generic.List`1[Microsoft.Build.Construction.ProjectRootElement]& projects, Microsoft.Build.BackEnd.SdkResolution.SdkResult& sdkResult, System.Boolean throwOnFileNotExistsError) [0x003d2] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.Evaluator`4[P,I,M,D].ExpandAndLoadImports (System.String directoryOfImportingFile, Microsoft.Build.Construction.ProjectImportElement importElement, Microsoft.Build.BackEnd.SdkResolution.SdkResult& sdkResult) [0x00027] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.Evaluator`4[P,I,M,D].EvaluateImportElement (System.String directoryOfImportingFile, Microsoft.Build.Construction.ProjectImportElement importElement) [0x0000d] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.Evaluator`4[P,I,M,D].PerformDepthFirstPass (Microsoft.Build.Construction.ProjectRootElement currentProjectOrImport) [0x00262] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.Evaluator`4[P,I,M,D].Evaluate () [0x00139] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.Evaluator`4[P,I,M,D].Evaluate (Microsoft.Build.Evaluation.IEvaluatorData`4[P,I,M,D] data, Microsoft.Build.Construction.ProjectRootElement root, Microsoft.Build.Evaluation.ProjectLoadSettings loadSettings, System.Int32 maxNodeCount, Microsoft.Build.Collections.PropertyDictionary`1[T] environmentProperties, Microsoft.Build.BackEnd.Logging.ILoggingService loggingService, Microsoft.Build.Evaluation.IItemFactory`2[S,T] itemFactory, Microsoft.Build.Evaluation.IToolsetProvider toolsetProvider, Microsoft.Build.Evaluation.ProjectRootElementCacheBase projectRootElementCache, Microsoft.Build.Framework.BuildEventContext buildEventContext, Microsoft.Build.BackEnd.SdkResolution.ISdkResolverService sdkResolverService, System.Int32 submissionId, Microsoft.Build.Evaluation.Context.EvaluationContext evaluationContext, System.Boolean interactive) [0x00047] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.Project+ProjectImpl.Reevaluate (Microsoft.Build.BackEnd.Logging.ILoggingService loggingServiceForEvaluation, Microsoft.Build.Evaluation.ProjectLoadSettings loadSettings, Microsoft.Build.Evaluation.Context.EvaluationContext evaluationContext) [0x00063] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.Project+ProjectImpl.ReevaluateIfNecessary (Microsoft.Build.BackEnd.Logging.ILoggingService loggingServiceForEvaluation, Microsoft.Build.Evaluation.ProjectLoadSettings loadSettings, Microsoft.Build.Evaluation.Context.EvaluationContext evaluationContext) [0x00035] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.Project+ProjectImpl.ReevaluateIfNecessary (Microsoft.Build.BackEnd.Logging.ILoggingService loggingServiceForEvaluation, Microsoft.Build.Evaluation.Context.EvaluationContext evaluationContext) [0x00000] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.Project+ProjectImpl.ReevaluateIfNecessary (Microsoft.Build.Evaluation.Context.EvaluationContext evaluationContext) [0x00007] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.Project+ProjectImpl.Initialize (System.Collections.Generic.IDictionary`2[TKey,TValue] globalProperties, System.String toolsVersion, System.String subToolsetVersion, Microsoft.Build.Evaluation.ProjectLoadSettings loadSettings, Microsoft.Build.Evaluation.Context.EvaluationContext evaluationContext) [0x00127] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.Project..ctor (System.String projectFile, System.Collections.Generic.IDictionary`2[TKey,TValue] globalProperties, System.String toolsVersion, System.String subToolsetVersion, Microsoft.Build.Evaluation.ProjectCollection projectCollection, Microsoft.Build.Evaluation.ProjectLoadSettings loadSettings, Microsoft.Build.Evaluation.Context.EvaluationContext evaluationContext) [0x00073] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.Project..ctor (System.String projectFile, System.Collections.Generic.IDictionary`2[TKey,TValue] globalProperties, System.String toolsVersion, System.String subToolsetVersion, Microsoft.Build.Evaluation.ProjectCollection projectCollection, Microsoft.Build.Evaluation.ProjectLoadSettings loadSettings) [0x00000] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.Project..ctor (System.String projectFile, System.Collections.Generic.IDictionary`2[TKey,TValue] globalProperties, System.String toolsVersion, Microsoft.Build.Evaluation.ProjectCollection projectCollection, Microsoft.Build.Evaluation.ProjectLoadSettings loadSettings) [0x00000] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.Project..ctor (System.String projectFile, System.Collections.Generic.IDictionary`2[TKey,TValue] globalProperties, System.String toolsVersion, Microsoft.Build.Evaluation.ProjectCollection projectCollection) [0x00000] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.ProjectCollection.LoadProject (System.String fileName, System.Collections.Generic.IDictionary`2[TKey,TValue] globalProperties, System.String toolsVersion) [0x000f7] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.ProjectCollection.LoadProject (System.String fileName, System.String toolsVersion) [0x00000] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at OmniSharp.MSBuild.ProjectLoader.EvaluateProjectFileCore (System.String filePath, System.Collections.Generic.IReadOnlyDictionary`2[TKey,TValue] projectConfigurationsInSolution) [0x00160] in <8fe908208c34498399bee743e9537395>:0 
+  at OmniSharp.MSBuild.ProjectLoader.BuildProject (System.String filePath, System.Collections.Generic.IReadOnlyDictionary`2[TKey,TValue] configurationsInSolution) [0x0000d] in <8fe908208c34498399bee743e9537395>:0 
+  at OmniSharp.MSBuild.ProjectFile.ProjectFileInfo.Load (System.String filePath, OmniSharp.MSBuild.ProjectIdInfo projectIdInfo, OmniSharp.MSBuild.ProjectLoader loader, System.Guid sessionId, OmniSharp.Services.DotNetInfo dotNetInfo) [0x00023] in <8fe908208c34498399bee743e9537395>:0 
+  at OmniSharp.MSBuild.ProjectManager+<>c__DisplayClass31_0.<LoadProject>b__0 () [0x00000] in <8fe908208c34498399bee743e9537395>:0 
+  at (wrapper delegate-invoke) System.Func`1[System.ValueTuple`3[OmniSharp.MSBuild.ProjectFile.ProjectFileInfo,System.Collections.Immutable.ImmutableArray`1[OmniSharp.MSBuild.Logging.MSBuildDiagnostic],OmniSharp.MSBuild.Notification.ProjectLoadedEventArgs]].invoke_TResult()
+  at OmniSharp.MSBuild.ProjectManager.LoadOrReloadProject (System.String projectFilePath, System.Func`1[TResult] loader) [0x0001b] in <8fe908208c34498399bee743e9537395>:0 
+
+[info]: OmniSharp.MSBuild.ProjectManager
+        Loading project: /home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp.iOS/PoligonosAppBlazorHybridApp.iOS.csproj
+[warn]: OmniSharp.MSBuild.ProjectManager
+        Failed to load project file '/home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp.iOS/PoligonosAppBlazorHybridApp.iOS.csproj'.
+/home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp.iOS/PoligonosAppBlazorHybridApp.iOS.csproj(0,0)
+Microsoft.Build.Exceptions.InvalidProjectFileException: The imported project "/root/.vscode/extensions/ms-dotnettools.csharp-1.23.11/.omnisharp/1.37.8/omnisharp/.msbuild/Xamarin/iOS/Xamarin.iOS.CSharp.targets" was not found. Confirm that the expression in the Import declaration "/root/.vscode/extensions/ms-dotnettools.csharp-1.23.11/.omnisharp/1.37.8/omnisharp/.msbuild/Xamarin/iOS/Xamarin.iOS.CSharp.targets" is correct, and that the file exists on disk.  /home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp.iOS/PoligonosAppBlazorHybridApp.iOS.csproj
+  at Microsoft.Build.Shared.ProjectErrorUtilities.ThrowInvalidProject (System.String errorSubCategoryResourceName, Microsoft.Build.Shared.IElementLocation elementLocation, System.String resourceName, System.Object[] args) [0x00040] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Shared.ProjectErrorUtilities.VerifyThrowInvalidProject[T1,T2] (System.Boolean condition, System.String errorSubCategoryResourceName, Microsoft.Build.Shared.IElementLocation elementLocation, System.String resourceName, T1 arg0, T2 arg1) [0x00003] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Shared.ProjectErrorUtilities.ThrowInvalidProject[T1,T2] (Microsoft.Build.Shared.IElementLocation elementLocation, System.String resourceName, T1 arg0, T2 arg1) [0x00000] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.Evaluator`4[P,I,M,D].ExpandAndLoadImportsFromUnescapedImportExpression (System.String directoryOfImportingFile, Microsoft.Build.Construction.ProjectImportElement importElement, System.String unescapedExpression, System.Boolean throwOnFileNotExistsError, System.Collections.Generic.List`1[Microsoft.Build.Construction.ProjectRootElement]& imports) [0x0068b] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.Evaluator`4[P,I,M,D].ExpandAndLoadImportsFromUnescapedImportExpressionConditioned (System.String directoryOfImportingFile, Microsoft.Build.Construction.ProjectImportElement importElement, System.Collections.Generic.List`1[Microsoft.Build.Construction.ProjectRootElement]& projects, Microsoft.Build.BackEnd.SdkResolution.SdkResult& sdkResult, System.Boolean throwOnFileNotExistsError) [0x003d2] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.Evaluator`4[P,I,M,D].ExpandAndLoadImports (System.String directoryOfImportingFile, Microsoft.Build.Construction.ProjectImportElement importElement, Microsoft.Build.BackEnd.SdkResolution.SdkResult& sdkResult) [0x00027] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.Evaluator`4[P,I,M,D].EvaluateImportElement (System.String directoryOfImportingFile, Microsoft.Build.Construction.ProjectImportElement importElement) [0x0000d] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.Evaluator`4[P,I,M,D].PerformDepthFirstPass (Microsoft.Build.Construction.ProjectRootElement currentProjectOrImport) [0x00262] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.Evaluator`4[P,I,M,D].Evaluate () [0x00139] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.Evaluator`4[P,I,M,D].Evaluate (Microsoft.Build.Evaluation.IEvaluatorData`4[P,I,M,D] data, Microsoft.Build.Construction.ProjectRootElement root, Microsoft.Build.Evaluation.ProjectLoadSettings loadSettings, System.Int32 maxNodeCount, Microsoft.Build.Collections.PropertyDictionary`1[T] environmentProperties, Microsoft.Build.BackEnd.Logging.ILoggingService loggingService, Microsoft.Build.Evaluation.IItemFactory`2[S,T] itemFactory, Microsoft.Build.Evaluation.IToolsetProvider toolsetProvider, Microsoft.Build.Evaluation.ProjectRootElementCacheBase projectRootElementCache, Microsoft.Build.Framework.BuildEventContext buildEventContext, Microsoft.Build.BackEnd.SdkResolution.ISdkResolverService sdkResolverService, System.Int32 submissionId, Microsoft.Build.Evaluation.Context.EvaluationContext evaluationContext, System.Boolean interactive) [0x00047] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.Project+ProjectImpl.Reevaluate (Microsoft.Build.BackEnd.Logging.ILoggingService loggingServiceForEvaluation, Microsoft.Build.Evaluation.ProjectLoadSettings loadSettings, Microsoft.Build.Evaluation.Context.EvaluationContext evaluationContext) [0x00063] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.Project+ProjectImpl.ReevaluateIfNecessary (Microsoft.Build.BackEnd.Logging.ILoggingService loggingServiceForEvaluation, Microsoft.Build.Evaluation.ProjectLoadSettings loadSettings, Microsoft.Build.Evaluation.Context.EvaluationContext evaluationContext) [0x00035] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.Project+ProjectImpl.ReevaluateIfNecessary (Microsoft.Build.BackEnd.Logging.ILoggingService loggingServiceForEvaluation, Microsoft.Build.Evaluation.Context.EvaluationContext evaluationContext) [0x00000] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.Project+ProjectImpl.ReevaluateIfNecessary (Microsoft.Build.Evaluation.Context.EvaluationContext evaluationContext) [0x00007] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.Project+ProjectImpl.Initialize (System.Collections.Generic.IDictionary`2[TKey,TValue] globalProperties, System.String toolsVersion, System.String subToolsetVersion, Microsoft.Build.Evaluation.ProjectLoadSettings loadSettings, Microsoft.Build.Evaluation.Context.EvaluationContext evaluationContext) [0x00127] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.Project..ctor (System.String projectFile, System.Collections.Generic.IDictionary`2[TKey,TValue] globalProperties, System.String toolsVersion, System.String subToolsetVersion, Microsoft.Build.Evaluation.ProjectCollection projectCollection, Microsoft.Build.Evaluation.ProjectLoadSettings loadSettings, Microsoft.Build.Evaluation.Context.EvaluationContext evaluationContext) [0x00073] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.Project..ctor (System.String projectFile, System.Collections.Generic.IDictionary`2[TKey,TValue] globalProperties, System.String toolsVersion, System.String subToolsetVersion, Microsoft.Build.Evaluation.ProjectCollection projectCollection, Microsoft.Build.Evaluation.ProjectLoadSettings loadSettings) [0x00000] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.Project..ctor (System.String projectFile, System.Collections.Generic.IDictionary`2[TKey,TValue] globalProperties, System.String toolsVersion, Microsoft.Build.Evaluation.ProjectCollection projectCollection, Microsoft.Build.Evaluation.ProjectLoadSettings loadSettings) [0x00000] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.Project..ctor (System.String projectFile, System.Collections.Generic.IDictionary`2[TKey,TValue] globalProperties, System.String toolsVersion, Microsoft.Build.Evaluation.ProjectCollection projectCollection) [0x00000] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.ProjectCollection.LoadProject (System.String fileName, System.Collections.Generic.IDictionary`2[TKey,TValue] globalProperties, System.String toolsVersion) [0x000f7] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.ProjectCollection.LoadProject (System.String fileName, System.String toolsVersion) [0x00000] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at OmniSharp.MSBuild.ProjectLoader.EvaluateProjectFileCore (System.String filePath, System.Collections.Generic.IReadOnlyDictionary`2[TKey,TValue] projectConfigurationsInSolution) [0x00160] in <8fe908208c34498399bee743e9537395>:0 
+  at OmniSharp.MSBuild.ProjectLoader.BuildProject (System.String filePath, System.Collections.Generic.IReadOnlyDictionary`2[TKey,TValue] configurationsInSolution) [0x0000d] in <8fe908208c34498399bee743e9537395>:0 
+  at OmniSharp.MSBuild.ProjectFile.ProjectFileInfo.Load (System.String filePath, OmniSharp.MSBuild.ProjectIdInfo projectIdInfo, OmniSharp.MSBuild.ProjectLoader loader, System.Guid sessionId, OmniSharp.Services.DotNetInfo dotNetInfo) [0x00023] in <8fe908208c34498399bee743e9537395>:0 
+  at OmniSharp.MSBuild.ProjectManager+<>c__DisplayClass31_0.<LoadProject>b__0 () [0x00000] in <8fe908208c34498399bee743e9537395>:0 
+  at (wrapper delegate-invoke) System.Func`1[System.ValueTuple`3[OmniSharp.MSBuild.ProjectFile.ProjectFileInfo,System.Collections.Immutable.ImmutableArray`1[OmniSharp.MSBuild.Logging.MSBuildDiagnostic],OmniSharp.MSBuild.Notification.ProjectLoadedEventArgs]].invoke_TResult()
+  at OmniSharp.MSBuild.ProjectManager.LoadOrReloadProject (System.String projectFilePath, System.Func`1[TResult] loader) [0x0001b] in <8fe908208c34498399bee743e9537395>:0 
+
+[info]: OmniSharp.MSBuild.ProjectManager
+        Loading project: /home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp.Windows/PoligonosAppBlazorHybridApp.Windows.csproj
+[fail]: OmniSharp.MSBuild.ProjectLoader
+        Windows is required to build Windows desktop applications.
+[warn]: OmniSharp.MSBuild.ProjectManager
+        Failed to load project file '/home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp.Windows/PoligonosAppBlazorHybridApp.Windows.csproj'.
+/home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp.Windows/PoligonosAppBlazorHybridApp.Windows.csproj
+/usr/share/dotnet/sdk/5.0.202/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(63,5): Error: Windows is required to build Windows desktop applications.
+
+[info]: OmniSharp.MSBuild.ProjectManager
+        Loading project: /home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp.macOS/PoligonosAppBlazorHybridApp.macOS.csproj
+[warn]: OmniSharp.MSBuild.ProjectManager
+        Failed to load project file '/home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp.macOS/PoligonosAppBlazorHybridApp.macOS.csproj'.
+/home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp.macOS/PoligonosAppBlazorHybridApp.macOS.csproj(0,0)
+Microsoft.Build.Exceptions.InvalidProjectFileException: The imported project "/root/.vscode/extensions/ms-dotnettools.csharp-1.23.11/.omnisharp/1.37.8/omnisharp/.msbuild/Xamarin/Mac/Xamarin.Mac.CSharp.targets" was not found. Confirm that the expression in the Import declaration "/root/.vscode/extensions/ms-dotnettools.csharp-1.23.11/.omnisharp/1.37.8/omnisharp/.msbuild/Xamarin/Mac/Xamarin.Mac.CSharp.targets" is correct, and that the file exists on disk.  /home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp.macOS/PoligonosAppBlazorHybridApp.macOS.csproj
+  at Microsoft.Build.Shared.ProjectErrorUtilities.ThrowInvalidProject (System.String errorSubCategoryResourceName, Microsoft.Build.Shared.IElementLocation elementLocation, System.String resourceName, System.Object[] args) [0x00040] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Shared.ProjectErrorUtilities.VerifyThrowInvalidProject[T1,T2] (System.Boolean condition, System.String errorSubCategoryResourceName, Microsoft.Build.Shared.IElementLocation elementLocation, System.String resourceName, T1 arg0, T2 arg1) [0x00003] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Shared.ProjectErrorUtilities.ThrowInvalidProject[T1,T2] (Microsoft.Build.Shared.IElementLocation elementLocation, System.String resourceName, T1 arg0, T2 arg1) [0x00000] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.Evaluator`4[P,I,M,D].ExpandAndLoadImportsFromUnescapedImportExpression (System.String directoryOfImportingFile, Microsoft.Build.Construction.ProjectImportElement importElement, System.String unescapedExpression, System.Boolean throwOnFileNotExistsError, System.Collections.Generic.List`1[Microsoft.Build.Construction.ProjectRootElement]& imports) [0x0068b] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.Evaluator`4[P,I,M,D].ExpandAndLoadImportsFromUnescapedImportExpressionConditioned (System.String directoryOfImportingFile, Microsoft.Build.Construction.ProjectImportElement importElement, System.Collections.Generic.List`1[Microsoft.Build.Construction.ProjectRootElement]& projects, Microsoft.Build.BackEnd.SdkResolution.SdkResult& sdkResult, System.Boolean throwOnFileNotExistsError) [0x003d2] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.Evaluator`4[P,I,M,D].ExpandAndLoadImports (System.String directoryOfImportingFile, Microsoft.Build.Construction.ProjectImportElement importElement, Microsoft.Build.BackEnd.SdkResolution.SdkResult& sdkResult) [0x00027] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.Evaluator`4[P,I,M,D].EvaluateImportElement (System.String directoryOfImportingFile, Microsoft.Build.Construction.ProjectImportElement importElement) [0x0000d] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.Evaluator`4[P,I,M,D].PerformDepthFirstPass (Microsoft.Build.Construction.ProjectRootElement currentProjectOrImport) [0x00262] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.Evaluator`4[P,I,M,D].Evaluate () [0x00139] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.Evaluator`4[P,I,M,D].Evaluate (Microsoft.Build.Evaluation.IEvaluatorData`4[P,I,M,D] data, Microsoft.Build.Construction.ProjectRootElement root, Microsoft.Build.Evaluation.ProjectLoadSettings loadSettings, System.Int32 maxNodeCount, Microsoft.Build.Collections.PropertyDictionary`1[T] environmentProperties, Microsoft.Build.BackEnd.Logging.ILoggingService loggingService, Microsoft.Build.Evaluation.IItemFactory`2[S,T] itemFactory, Microsoft.Build.Evaluation.IToolsetProvider toolsetProvider, Microsoft.Build.Evaluation.ProjectRootElementCacheBase projectRootElementCache, Microsoft.Build.Framework.BuildEventContext buildEventContext, Microsoft.Build.BackEnd.SdkResolution.ISdkResolverService sdkResolverService, System.Int32 submissionId, Microsoft.Build.Evaluation.Context.EvaluationContext evaluationContext, System.Boolean interactive) [0x00047] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.Project+ProjectImpl.Reevaluate (Microsoft.Build.BackEnd.Logging.ILoggingService loggingServiceForEvaluation, Microsoft.Build.Evaluation.ProjectLoadSettings loadSettings, Microsoft.Build.Evaluation.Context.EvaluationContext evaluationContext) [0x00063] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.Project+ProjectImpl.ReevaluateIfNecessary (Microsoft.Build.BackEnd.Logging.ILoggingService loggingServiceForEvaluation, Microsoft.Build.Evaluation.ProjectLoadSettings loadSettings, Microsoft.Build.Evaluation.Context.EvaluationContext evaluationContext) [0x00035] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.Project+ProjectImpl.ReevaluateIfNecessary (Microsoft.Build.BackEnd.Logging.ILoggingService loggingServiceForEvaluation, Microsoft.Build.Evaluation.Context.EvaluationContext evaluationContext) [0x00000] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.Project+ProjectImpl.ReevaluateIfNecessary (Microsoft.Build.Evaluation.Context.EvaluationContext evaluationContext) [0x00007] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.Project+ProjectImpl.Initialize (System.Collections.Generic.IDictionary`2[TKey,TValue] globalProperties, System.String toolsVersion, System.String subToolsetVersion, Microsoft.Build.Evaluation.ProjectLoadSettings loadSettings, Microsoft.Build.Evaluation.Context.EvaluationContext evaluationContext) [0x00127] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.Project..ctor (System.String projectFile, System.Collections.Generic.IDictionary`2[TKey,TValue] globalProperties, System.String toolsVersion, System.String subToolsetVersion, Microsoft.Build.Evaluation.ProjectCollection projectCollection, Microsoft.Build.Evaluation.ProjectLoadSettings loadSettings, Microsoft.Build.Evaluation.Context.EvaluationContext evaluationContext) [0x00073] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.Project..ctor (System.String projectFile, System.Collections.Generic.IDictionary`2[TKey,TValue] globalProperties, System.String toolsVersion, System.String subToolsetVersion, Microsoft.Build.Evaluation.ProjectCollection projectCollection, Microsoft.Build.Evaluation.ProjectLoadSettings loadSettings) [0x00000] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.Project..ctor (System.String projectFile, System.Collections.Generic.IDictionary`2[TKey,TValue] globalProperties, System.String toolsVersion, Microsoft.Build.Evaluation.ProjectCollection projectCollection, Microsoft.Build.Evaluation.ProjectLoadSettings loadSettings) [0x00000] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.Project..ctor (System.String projectFile, System.Collections.Generic.IDictionary`2[TKey,TValue] globalProperties, System.String toolsVersion, Microsoft.Build.Evaluation.ProjectCollection projectCollection) [0x00000] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.ProjectCollection.LoadProject (System.String fileName, System.Collections.Generic.IDictionary`2[TKey,TValue] globalProperties, System.String toolsVersion) [0x000f7] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at Microsoft.Build.Evaluation.ProjectCollection.LoadProject (System.String fileName, System.String toolsVersion) [0x00000] in <ea47b2df30ad4051b6681ba57ba83dc9>:0 
+  at OmniSharp.MSBuild.ProjectLoader.EvaluateProjectFileCore (System.String filePath, System.Collections.Generic.IReadOnlyDictionary`2[TKey,TValue] projectConfigurationsInSolution) [0x00160] in <8fe908208c34498399bee743e9537395>:0 
+  at OmniSharp.MSBuild.ProjectLoader.BuildProject (System.String filePath, System.Collections.Generic.IReadOnlyDictionary`2[TKey,TValue] configurationsInSolution) [0x0000d] in <8fe908208c34498399bee743e9537395>:0 
+  at OmniSharp.MSBuild.ProjectFile.ProjectFileInfo.Load (System.String filePath, OmniSharp.MSBuild.ProjectIdInfo projectIdInfo, OmniSharp.MSBuild.ProjectLoader loader, System.Guid sessionId, OmniSharp.Services.DotNetInfo dotNetInfo) [0x00023] in <8fe908208c34498399bee743e9537395>:0 
+  at OmniSharp.MSBuild.ProjectManager+<>c__DisplayClass31_0.<LoadProject>b__0 () [0x00000] in <8fe908208c34498399bee743e9537395>:0 
+  at (wrapper delegate-invoke) System.Func`1[System.ValueTuple`3[OmniSharp.MSBuild.ProjectFile.ProjectFileInfo,System.Collections.Immutable.ImmutableArray`1[OmniSharp.MSBuild.Logging.MSBuildDiagnostic],OmniSharp.MSBuild.Notification.ProjectLoadedEventArgs]].invoke_TResult()
+  at OmniSharp.MSBuild.ProjectManager.LoadOrReloadProject (System.String projectFilePath, System.Func`1[TResult] loader) [0x0001b] in <8fe908208c34498399bee743e9537395>:0 
+
+[info]: OmniSharp.MSBuild.ProjectManager
+        Update project: PoligonosAppBlazorHybridApp
+[fail]: OmniSharp.MSBuild.ProjectManager
+        Attempted to update project that is not loaded: /home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp.Android/PoligonosAppBlazorHybridApp.Android.csproj
+[fail]: OmniSharp.MSBuild.ProjectManager
+        Attempted to update project that is not loaded: /home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp.iOS/PoligonosAppBlazorHybridApp.iOS.csproj
+[fail]: OmniSharp.MSBuild.ProjectManager
+        Attempted to update project that is not loaded: /home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp.Windows/PoligonosAppBlazorHybridApp.Windows.csproj
+[fail]: OmniSharp.MSBuild.ProjectManager
+        Attempted to update project that is not loaded: /home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp.macOS/PoligonosAppBlazorHybridApp.macOS.csproj

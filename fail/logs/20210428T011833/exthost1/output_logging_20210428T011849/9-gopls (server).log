@@ -1,0 +1,44 @@
+[Info  - 1:19:10 AM] 2021/04/28 01:19:10 go env for /home/luism/poligonosdemos
+(root /home/luism/poligonosdemos)
+(go version go version go1.13.8 linux/amd64)
+(valid build configuration = false)
+(build flags: [])
+GOMOD=
+GOSUMDB=sum.golang.org
+GONOPROXY=
+GONOSUMDB=
+GOPATH=/root/go
+GOPRIVATE=
+GOPROXY=https://proxy.golang.org,direct
+GOROOT=/usr/lib/go-1.13
+GOMODCACHE=
+GO111MODULE=
+GOCACHE=/root/.cache/go-build
+GOFLAGS=
+GOINSECURE=
+
+
+[Info  - 1:19:10 AM] 2021/04/28 01:19:10 go/packages.Load
+	snapshot=0
+	directory=/home/luism/poligonosdemos
+	query=[./ builtin]
+	packages=2
+
+[Info  - 1:19:11 AM] 2021/04/28 01:19:11 go/packages.Load
+	snapshot=0
+	directory=/home/luism/poligonosdemos
+	query=[./]
+	packages=1
+
+[Info  - 1:19:11 AM] 2021/04/28 01:19:11 go/packages.Load
+	snapshot=0
+	directory=/home/luism/poligonosdemos
+	query=[./]
+	packages=1
+
+[Info  - 1:19:11 AM] 2021/04/28 01:19:11 go/packages.Load
+	snapshot=0
+	directory=/home/luism/poligonosdemos
+	query=[./]
+	packages=1
+
