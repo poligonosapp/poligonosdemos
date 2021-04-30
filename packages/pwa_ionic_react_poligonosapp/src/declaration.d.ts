@@ -10,3 +10,5 @@ declare module 'promise-inflight/inflight.js';
 declare module 'archiver';
 declare module '@types/archiver';
 declare module 'parallel-webpack';
+declare module 'quicklink';
+declare module 'anymatch';
