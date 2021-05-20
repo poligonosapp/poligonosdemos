@@ -1,1 +1,1 @@
-gq localhost:3000/v1/polygons
+# gq localhost:3000/v1/polygons
