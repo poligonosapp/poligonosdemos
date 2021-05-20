@@ -1,3 +1,0 @@
-require('./server');
-
-module.exports = {};

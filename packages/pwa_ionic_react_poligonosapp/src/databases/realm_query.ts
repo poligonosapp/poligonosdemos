@@ -1,3 +1,0 @@
-// find
-// graphql
-// export geojson

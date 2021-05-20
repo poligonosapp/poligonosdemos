@@ -39,7 +39,7 @@
     "express:serverstart": "DEBUG=@poligonosdemos/pwa_ionic_react_poligonosapp:* npx run devstart",
     "dev": "webpack-dashboard -- webpack -w serve --hot --mode development",
     "server": "node server.ts",
-    "flow":"flow",
+    "flow": "flow",
     "test": "test",
     "test:band": "jest --runInBand",
     "cypress": "cypress open",
