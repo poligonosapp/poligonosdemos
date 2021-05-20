@@ -7,6 +7,8 @@ import star from './star.svg';
 
 import { Route, Link } from 'react-router-dom';
 
+import { createClient } from 'graphqurl';
+
 const gqlEndpoint = 'https://poligonosapp-nextjs.netlify.app/v1/polygons';
 
 const client = createClient({
