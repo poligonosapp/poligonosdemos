@@ -9,12 +9,29 @@ import { Route, Link } from 'react-router-dom';
 
 import { createClient } from 'graphqurl';
 
+import { MapContainer, TileLayer, Marker, Popup , Polygon , Circle , CircleMarker , Polyline } from 'react-leaflet';
+
 const gqlEndpoint = 'https://poligonosapp-nextjs.netlify.app/v1/polygons';
+
+const polygon = [
+  [51.515, -0.09],
+  [51.52, -0.1],
+  [51.52, -0.12],
+]
 
 const client = createClient({
   endpoint: gqlEndpoint
 });
 
+// let a = [];
+
+// a = client;
+
+const fillBlueOptions = { fillColor: 'blue' }
+const blackOptions = { color: 'black' }
+const limeOptions = { color: 'lime' }
+const purpleOptions = { color: 'purple' }
+const redOptions = { color: 'red' }
 
 export function App() {
   return (
@@ -25,7 +42,19 @@ export function App() {
       </header>
       <main>
         <h2>Resources &amp; Tools</h2>
-        <div>{client}</div>
+        <div>
+          <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false}>
+  <TileLayer
+    attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+  />
+  <Marker position={[51.505, -0.09]}>
+    <Popup>
+      A pretty CSS3 popup. <br /> Easily customizable.
+    </Popup>
+  </Marker>
+</MapContainer>
+        </div>
         <p>Thank you for using and showing some ♥ for Nx.</p>
         <div className="flex github-star-container">
           <a
@@ -132,6 +161,22 @@ nx affected:e2e
           <div>
             This is the generated root route.{' '}
             <Link to="/page-2">Click here for page 2.</Link>
+            <MapContainer center={center} zoom={13} scrollWheelZoom={false}>
+    <TileLayer
+      attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+      url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+    />
+    <Circle center={center} pathOptions={fillBlueOptions} radius={200} />
+    <CircleMarker center={[51.51, -0.12]} pathOptions={redOptions} radius={20}>
+      <Popup>Popup in CircleMarker</Popup>
+    </CircleMarker>
+    <Polyline pathOptions={limeOptions} positions={polyline} />
+              <Polyline pathOptions={limeOptions} positions={multiPolyline} />
+              <Polygon pathOptions={purpleOptions} positions={client[0]|polygon} />
+    <Polygon pathOptions={purpleOptions} positions={polygon} />
+    <Polygon pathOptions={purpleOptions} positions={multiPolygon} />
+    <Rectangle bounds={rectangle} pathOptions={blackOptions} />
+  </MapContainer>,
           </div>
         )}
       />
