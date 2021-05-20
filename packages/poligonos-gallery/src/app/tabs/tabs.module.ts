@@ -1,19 +1,3 @@
-import { IonicModule } from '@ionic/angular';
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-
-import { TabsPageRoutingModule } from './tabs-routing.module';
-
-import { TabsPage } from './tabs.page';
-
-@NgModule({
-  imports: [
-    IonicModule,
-    CommonModule,
-    FormsModule,
-    TabsPageRoutingModule
-  ],
-  declarations: [TabsPage]
-})
-export class TabsPageModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:24b3e4ee6b0f07341e06c1ea1da0b91f400cdc870f9bcf8a03668f7403729123
+size 476

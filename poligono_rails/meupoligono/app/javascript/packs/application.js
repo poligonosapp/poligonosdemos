@@ -1,13 +1,3 @@
-// This file is automatically compiled by Webpack, along with any other files
-// present in this directory. You're encouraged to place your actual application logic in
-// a relevant structure within app/javascript and only use these pack files to reference
-// that code so it'll be compiled.
-
-import Rails from "@rails/ujs"
-import Turbolinks from "turbolinks"
-import * as ActiveStorage from "@rails/activestorage"
-import "channels"
-
-Rails.start()
-Turbolinks.start()
-ActiveStorage.start()
+version https://git-lfs.github.com/spec/v1
+oid sha256:d76c30923dafffa56802a451e366c1471877299da00f4019638ac9acaeb42236
+size 501

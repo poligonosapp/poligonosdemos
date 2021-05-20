@@ -1,36 +1,3 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
-import './Tab1.css';
-
-//import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
-
-import { ExternalStateExample } from './ExternalStateExample';
-
-// import { ErrorBoundary } from './ErrorBoundary';
-
-function Tab1() {
-  return (
-    <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>Tab 1</IonTitle>
-        </IonToolbar>
-      </IonHeader>
-      <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Tab 1</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <ExploreContainer name="Tab 1 page" />
-
-        
-          <ExternalStateExample />
-        
-
-      </IonContent>
-    </IonPage>
-  );
-}
-
-export default Tab1;
+version https://git-lfs.github.com/spec/v1
+oid sha256:0f26e5aa3b99cb5ee941dd49ec26847f2157025bc59c04d76d4dffff860426e3
+size 913

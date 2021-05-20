@@ -1,13 +1,3 @@
-module.exports = {
-  displayName: 'poligonosapp-nx-cloud-demo',
-  preset: '../../jest.preset.js',
-  transform: {
-    '^(?!.*\\.(js|jsx|ts|tsx|css|json)$)': '@nrwl/react/plugins/jest',
-    '^.+\\.[tj]sx?$': [
-      'babel-jest',
-      { cwd: __dirname, configFile: './babel-jest.config.json' },
-    ],
-  },
-  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  coverageDirectory: '../../coverage/apps/poligonosapp-nx-cloud-demo',
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:3d9fa2cc9a86384f80cc169f92ada081c8810fd4329bcf20532246c040427be4
+size 445

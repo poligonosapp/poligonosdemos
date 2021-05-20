@@ -1,22 +1,3 @@
-import { IonicModule } from '@ionic/angular';
-import { RouterModule } from '@angular/router';
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-import { Tab3Page } from './tab3.page';
-import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
-
-import { Tab3PageRoutingModule } from './tab3-routing.module';
-
-@NgModule({
-  imports: [
-    IonicModule,
-    CommonModule,
-    FormsModule,
-    ExploreContainerComponentModule,
-    RouterModule.forChild([{ path: '', component: Tab3Page }]),
-    Tab3PageRoutingModule,
-  ],
-  declarations: [Tab3Page]
-})
-export class Tab3PageModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ce25e2656e53034bb80432062a8869bf953a67d0a25b3370f0cbc2bfb7cf43cc
+size 725

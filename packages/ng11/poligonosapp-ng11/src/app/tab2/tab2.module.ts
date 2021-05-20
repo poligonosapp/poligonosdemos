@@ -1,21 +1,3 @@
-import { IonicModule } from '@ionic/angular';
-import { RouterModule } from '@angular/router';
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-import { Tab2Page } from './tab2.page';
-import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
-
-import { Tab2PageRoutingModule } from './tab2-routing.module';
-
-@NgModule({
-  imports: [
-    IonicModule,
-    CommonModule,
-    FormsModule,
-    ExploreContainerComponentModule,
-    Tab2PageRoutingModule
-  ],
-  declarations: [Tab2Page]
-})
-export class Tab2PageModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8fbfbe596db5a21f18f20b2f02187a45f90f29bd0968fbb6c6d95555d1be1224
+size 659

@@ -1,2 +1,3 @@
-require('./packages/pwa_ionic_react_poligonosapp/src/analytics/react_ga/analytics');
-require('./packages/pwa_ionic_react_poligonosapp/src/analytics/web_dev/analytics');
+version https://git-lfs.github.com/spec/v1
+oid sha256:399f98c313e69613f692635c70afe2186b2c23247eef93d7e22a0a274c1be759
+size 169

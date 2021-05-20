@@ -1,26 +1,3 @@
-import React from 'react';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
-import './Tab3.css';
-
-const Tab3: React.FC = () => {
-  return (
-    <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>Tab 3</IonTitle>
-        </IonToolbar>
-      </IonHeader>
-      <IonContent>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Tab 3</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <ExploreContainer name="Tab 3 page" />
-      </IonContent>
-    </IonPage>
-  );
-};
-
-export default Tab3;
+version https://git-lfs.github.com/spec/v1
+oid sha256:3a127f56ce462b0bad3ecb33c51c2a24af69d145d2c20197bb17550d5a63c368
+size 687

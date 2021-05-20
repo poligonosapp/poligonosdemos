@@ -1,7 +1,3 @@
-module.exports = {
-  "globDirectory": "pwa_ionic_react_poligonosapp/dist",
-  "globPatterns": [
-    "**/*.{gradle,pro,java,xml,json,js,html,png,rawproto,properties,jar,bat,svg,tsx,css,ts,gson,dex,txt,class,ap_,flat,apk,bin,idx,MD,ico,webmanifest,log,sh,zip,md,woff,woff2,jsx,scss,mdx,enc,pub,hbs,lock,ps1,json5,pbxproj,xcworkspacedata,plist,swift,storyboard,podspec,geojson,stackdump,mongodb,PNG,pug}"
-  ],
-  "swDest": "pwa_ionic_react_poligonosapp/sw.ts"
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:6db03618d1811eea4a83c35874092d9f30468e8c78b937323c9129a40ff64e66
+size 463

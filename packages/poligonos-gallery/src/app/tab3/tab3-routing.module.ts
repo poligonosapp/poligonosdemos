@@ -1,16 +1,3 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { Tab3Page } from './tab3.page';
-
-const routes: Routes = [
-  {
-    path: '',
-    component: Tab3Page,
-  }
-];
-
-@NgModule({
-  imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
-})
-export class Tab3PageRoutingModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4ec1c37ca4db88c7f14759ecd8e9d7d2d8981e3ba9b51e0aaeec303644c45262
+size 354

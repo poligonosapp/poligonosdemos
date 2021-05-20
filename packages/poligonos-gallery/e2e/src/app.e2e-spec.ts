@@ -1,14 +1,3 @@
-import { AppPage } from './app.po';
-
-describe('new App', () => {
-  let page: AppPage;
-
-  beforeEach(() => {
-    page = new AppPage();
-  });
-
-  it('should display welcome message', () => {
-    page.navigateTo();
-    expect(page.getPageTitle()).toContain('Tab 1');
-  });
-});
+version https://git-lfs.github.com/spec/v1
+oid sha256:1df7c698f98f3b1b1b379417818870329f0954e4ccc9201fcedef295bf5aeaf7
+size 287

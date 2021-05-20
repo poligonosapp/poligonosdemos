@@ -1,23 +1,3 @@
-import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { TestBed, waitForAsync } from '@angular/core/testing';
-
-import { AppComponent } from './app.component';
-
-describe('AppComponent', () => {
-
-  beforeEach(waitForAsync(() => {
-
-    TestBed.configureTestingModule({
-      declarations: [AppComponent],
-      schemas: [CUSTOM_ELEMENTS_SCHEMA],
-    }).compileComponents();
-  }));
-
-  it('should create the app', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.debugElement.componentInstance;
-    expect(app).toBeTruthy();
-  });
-  // TODO: add more tests!
-
-});
+version https://git-lfs.github.com/spec/v1
+oid sha256:290dfe5351ffeabce9a3a6d72834c2a0dcf239d639e9c1849bd64fea29d55105
+size 632

@@ -1,22 +1,3 @@
-import React from 'react';
-import { IonBackButton, IonButtons, IonHeader, IonPage, IonToolbar, IonTitle, IonContent } from '@ionic/react';
-
-const Details: React.FC = () => {
-  return (
-    <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonButtons slot="start">
-            <IonBackButton defaultHref="/tab2" />
-          </IonButtons>
-          <IonTitle>Detail</IonTitle>
-        </IonToolbar>
-      </IonHeader>
-      <IonContent>
-        <p>Details</p>
-      </IonContent>
-    </IonPage>
-  );
-};
-
-export default Details;
+version https://git-lfs.github.com/spec/v1
+oid sha256:d6a1c9faa248a837521fac0539a1329fb0d5fc39a516394f6a1eb0e2771049bb
+size 559

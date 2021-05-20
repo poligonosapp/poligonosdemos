@@ -1,20 +1,3 @@
-/**
- * @format
- */
-
-import 'react-native';
-import React from 'react';
-import App from '../App';
-
-// Note: test renderer must be required after react-native.
-import renderer from 'react-test-renderer';
-
-it('renders correctly', () => {
-  renderer.create(<App />);
-});
-
-it('should expo react native', () => {
-  const expo = require('expo');
-  // renderer.create(<App />);
-  fail('true')
-});
+version https://git-lfs.github.com/spec/v1
+oid sha256:8800652a5fcfcf7fea3c2a16bfdff358e6d0bba7fca7e37b484b383cda680c0c
+size 408

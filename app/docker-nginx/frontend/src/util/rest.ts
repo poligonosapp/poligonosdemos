@@ -1,29 +1,3 @@
-async function get( url ) {
-
-  const response = await fetch(url);
-  const json = await response.json();
-
-  return json;
-
-}
-
-async function post( url, data ) {
-  const opts = {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify( data )
-  }
-
-  const response = await fetch(url, opts);
-  const json = await response.json();
-
-  return json;
-
-}
-
-export default {
-  get,
-  post
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:97f321abe459096c72df20d5a7237578812aa6ef513a63d0239551de03153a0e
+size 458

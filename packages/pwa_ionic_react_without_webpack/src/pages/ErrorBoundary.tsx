@@ -1,26 +1,3 @@
-import React, {Component} from 'react';
-import ReactDOM from 'react-dom';
-
-class ErrorBoundary extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { hasError: false };
-  }
-
-  componentDidCatch(error: any, info: any) {
-    // Mostra uma UI alternativa
-    this.setState({ hasError: true });
-    // Você também pode registrar o erro em um serviço de relatório de erros
-    logErrorToMyService(error, info);
-  }
-
-  render() {
-    if (this.state.hasError) {
-      // Você pode renderizar qualquer alternativa de UI
-      return <h1>Algo deu errado.</h1>;
-    }
-    return this.props.children;
-  }
-}
-
-export default ErrorBoundary;
+version https://git-lfs.github.com/spec/v1
+oid sha256:ceb345f9e9a9c0730504a44e015760ccc159da6d486072a47f08f6b0528c2527
+size 687

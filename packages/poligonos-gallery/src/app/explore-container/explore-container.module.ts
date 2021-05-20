@@ -1,14 +1,3 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-
-import { IonicModule } from '@ionic/angular';
-
-import { ExploreContainerComponent } from './explore-container.component';
-
-@NgModule({
-  imports: [ CommonModule, FormsModule, IonicModule],
-  declarations: [ExploreContainerComponent],
-  exports: [ExploreContainerComponent]
-})
-export class ExploreContainerComponentModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:202b3115a4f14d16d634db78d7fe9a682b7cfef9b62a441b7a0b78ab103db889
+size 475

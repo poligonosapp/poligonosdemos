@@ -1,16 +1,3 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { Tab2Page } from './tab2.page';
-
-const routes: Routes = [
-  {
-    path: '',
-    component: Tab2Page,
-  }
-];
-
-@NgModule({
-  imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
-})
-export class Tab2PageRoutingModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a6d8bf0a27b4c0e655591ec14b7b4f8b0f6804e068a5cb623b72cc005c8066ba
+size 354

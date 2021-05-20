@@ -1,16 +1,3 @@
-import './ExploreContainer.css';
-
-interface ContainerProps {
-  name: string;
-}
-
-const ExploreContainer: React.FC<ContainerProps> = ({ name }) => {
-  return (
-    <div className="container">
-      <strong>{name}</strong>
-      <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-    </div>
-  );
-};
-
-export default ExploreContainer;
+version https://git-lfs.github.com/spec/v1
+oid sha256:4d68629d597f575c416830d2976b3287ff9a5e30738498e3ce2cb9cad7003d7a
+size 423

@@ -1,14 +1,3 @@
-import sequence from '@start/plugin-sequence';
-import find from '@start/plugin-find';
-import read from '@start/plugin-read';
-import babel from '@start/plugin-lib-babel';
-import write from '@start/plugin-write';
-
-const babelConfig = {
-    // …
-    babelrc: false,
-    sourceMap: true,
-}
-
-export const task = () =>
-    sequence(find('src/**/*.js'), read, babel(babelConfig), write('build/'))
+version https://git-lfs.github.com/spec/v1
+oid sha256:32676267c0b54c7798488ff6ac2eb7e113b1b06051aff144396bee91c547947d
+size 406

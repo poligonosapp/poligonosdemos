@@ -1,17 +1,3 @@
-import { enableProdMode } from '@angular/core';
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-
-import { AppModule } from './app/app.module';
-import { environment } from './environments/environment';
-
-import { defineCustomElements } from '@ionic/pwa-elements/loader'
-
-// Call the element loader after the platform has been bootstrapped
-defineCustomElements(window)
-
-if (environment.production) {
-  enableProdMode();
-}
-
-platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.log(err));
+version https://git-lfs.github.com/spec/v1
+oid sha256:b6319d1223d18c2441b98a0d82e41fc0a154f5d401c9f2277de8c1ee703a540b
+size 552

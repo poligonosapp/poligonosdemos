@@ -1,36 +1,3 @@
-import React, {render} from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
-
-console.log('\n webpack exists to read src index js \n')
-
-import _ from 'lodash';
-import printMe from './print.js';
-
-
-try{
-    render(<App />, document.getElementById('root'))
-	
-	serviceWorker.unregister()
-	
-	if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-        navigator.serviceWorker
-            .register('/service-worker.js')
-            .then((registration) => {
-                console.log('SW registered: ', registration)
-            })
-            .catch((registrationError) => {
-                console.log('SW registration failed: ', registrationError)
-            })
-    })
-}
-	
-	
-}catch(e){
-    alert('Erro de inicialização');
-}
-
-module.exports = {};
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:2eb9894186e242f0344b91cc9c9dc9cad82e01370692260734597cda0270593f
+size 883

@@ -1,20 +1,3 @@
-import config from '../config';
-import rest from '../util/rest';
-
-async function searchEntities( entity ) {
-  return await rest.get( `${config.services.host}/${entity}` );
-}
-
-async function getById( entity, id ) {
-  return await rest.get( `${config.services.host}/${entity}/${id}` );
-}
-
-async function createEntity( entity, obj ) {
-  return await rest.post( `${config.services.host}/${entity}`, obj );
-}
-
-export default {
-  searchEntities,
-  getById,
-  createEntity
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:aa2f32d28d7c187bc6ce1b8b609a90d1ce7261a36894ec9ee4301a5af078ca3d
+size 486

@@ -1,7 +1,3 @@
-/**
- * Polyfill stable language features. These imports will be optimized by `@babel/preset-env`.
- *
- * See: https://github.com/zloirock/core-js#babel
- */
-import 'core-js/stable';
-import 'regenerator-runtime/runtime';
+version https://git-lfs.github.com/spec/v1
+oid sha256:3a1fbd8713ee52350474068b66e559048c7aa58888c2126c041a8b70ef22b438
+size 225

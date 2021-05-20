@@ -1,16 +1,3 @@
-/* You can add global styles to this file, and also import other style files */
-#mapid {
-  height: 180px;
-}
-
-body {
-  padding: 0;
-  margin: 0;
-}
-
-html,
-body,
-#map {
-  height: 100%;
-  width: 100vw;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0200f0e641a06d40ac332534ded10f2b814532f5c07727ad5e3b5533d3caf8e3
+size 213
