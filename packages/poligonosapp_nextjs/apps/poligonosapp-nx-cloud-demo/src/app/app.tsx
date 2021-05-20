@@ -7,6 +7,13 @@ import star from './star.svg';
 
 import { Route, Link } from 'react-router-dom';
 
+const gqlEndpoint = 'https://poligonosapp-nextjs.netlify.app/v1/polygons';
+
+const client = createClient({
+  endpoint: gqlEndpoint
+});
+
+
 export function App() {
   return (
     <div className={styles.app}>
@@ -16,6 +23,7 @@ export function App() {
       </header>
       <main>
         <h2>Resources &amp; Tools</h2>
+        <div>{client}</div>
         <p>Thank you for using and showing some ♥ for Nx.</p>
         <div className="flex github-star-container">
           <a

@@ -1,5 +1,11 @@
 import { getGreeting } from '../support/app.po';
 
+// require('isomorphic-fetch');
+
+const gqlEndpoint = 'https://poligonosapp-nextjs.netlify.app/v1/polygons';
+
+const gqlEndpointLocalhost = '//localhost:3000/v1/polygons';
+
 describe('poligonosapp-nx-cloud-demo', () => {
   beforeEach(() => cy.visit('/'));
 
@@ -11,3 +17,4 @@ describe('poligonosapp-nx-cloud-demo', () => {
     getGreeting().contains('Welcome to poligonosapp-nx-cloud-demo!');
   });
 });
+
