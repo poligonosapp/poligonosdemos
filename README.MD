@@ -9,7 +9,7 @@ CNTRL SHIFT B
 
 https://machadoluismendes.medium.com/monorepo-pwa-ionic-react-f30af01e40c7
 
-yarn 1.0.0 > 1.9.1
+
 
 
 
