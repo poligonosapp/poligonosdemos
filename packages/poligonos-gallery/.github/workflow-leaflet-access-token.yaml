@@ -17,4 +17,7 @@ jobs:
           leaflet-secret: ${{ secrets.LEAFLET_ACCESS_TOKEN }}
           realm-secret: ${{ secrets.REALM_APP_ID }}
           default-cdn-secret: ${{ secrets.DEFAULT_CDN }}
+        runs:
+          using: 'node12'
+          main: 'src/app/tab1/tab1.page.ts'
 

@@ -1,6 +1,6 @@
 {
   "name": "poligonosdemos",
-  "version": "1.8.6",
+  "version": "1.8.7",
   "private": true,
   "homepage": "https://www.poligonosapp.herokuapp.com",
   "nodemonConfig": {
