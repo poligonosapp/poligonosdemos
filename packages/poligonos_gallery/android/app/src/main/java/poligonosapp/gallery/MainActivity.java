@@ -1,4 +1,4 @@
-package io.ionic.starter;
+package poligonosapp.gallery;
 
 import android.os.Bundle;
 

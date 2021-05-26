@@ -1,5 +1,6 @@
 {
-  "name": "poligonos-gallery",
+  "name": "@poligonosdemos/poligonos_gallery",
+  "webDir":"www",
   "integrations": {
     "capacitor": {}
   },

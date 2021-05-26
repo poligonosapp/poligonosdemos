@@ -1,6 +1,6 @@
 {
   "appId": "poligonosapp.gallery",
-  "appName": "poligonos_gallery",
+  "appName": "@poligonosdemos/poligonos_gallery",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www",
