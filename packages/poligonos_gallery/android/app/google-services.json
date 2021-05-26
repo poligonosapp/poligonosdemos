@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "151397808589",
+    "project_id": "poligonos-gallery",
+    "storage_bucket": "poligonos-gallery.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:151397808589:android:981f96c32a2937225b2c84",
+        "android_client_info": {
+          "package_name": "poligonosapp.gallery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "151397808589-90tsu9ausuta8mov3lkq71db8dmg3aeh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClg1mCDLm3fhxLKqKG3r0WkZKr2fUZ62E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "151397808589-90tsu9ausuta8mov3lkq71db8dmg3aeh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

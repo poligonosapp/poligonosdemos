@@ -1,6 +1,6 @@
 {
-  "appId": "io.ionic.starter",
-  "appName": "poligonos-gallery",
+  "appId": "poligonosapp.gallery",
+  "appName": "poligonos_gallery",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www",
