@@ -5,6 +5,7 @@
     <mapping directory="$PROJECT_DIR$/packages/next.js" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/packages/poligonosapp-vue/poligonosapp-nuxtjs" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/packages/poligonosapp-vue/poligonosapp-vue-native" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/toh_pt6_gallery" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/packages/tut-react-and-spring-data-rest" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/poligono-java-spring-leaflet/webauthndemo" vcs="Git" />
   </component>
