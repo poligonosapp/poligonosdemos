@@ -32,6 +32,7 @@
         "@ionic-native/core": "^5.33.0",
         "@ionic-native/firebase": "^5.33.0",
         "@ionic/angular": "^5.5.2",
+        "@ionic/pwa-elements": "^3.0.2",
         "@octokit/webhooks": "^9.6.1",
         "@types/leaflet": "^1.7.0",
         "@types/mongodb": "^3.6.16",
@@ -42,6 +43,11 @@
         "snyk": "^1.606.0",
         "tslib": "^2.0.0",
         "zone.js": "~0.10.2"
+    },
+    "peerDependencies": {
+        "@capacitor/core":"~3.0.0",
+        "tslint":"^5.0.0 || ^6.0.0",
+        "jasmine-core":"^3.7.1"
     },
     "devDependencies": {
         "@angular-devkit/build-angular": "^0.1102.13",
