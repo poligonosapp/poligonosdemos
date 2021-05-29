@@ -14,7 +14,7 @@ jobs:
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
         env:
-          leaflet-secret: ${{ secrets.LEAFLET_ACCESS_TOKEN }}
+          leaflet-secret: ${{ secrets.TOKEN_POLIGONOSAPP_PWA_ANGULAR12 }}
           realm-secret: ${{ secrets.REALM_APP_ID }}
           default-cdn-secret: ${{ secrets.DEFAULT_CDN }}
 

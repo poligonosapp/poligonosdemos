@@ -1,6 +1,6 @@
 # PoligonosappPwaAngular12
 
-# ng serve --port 4201
+# npx ng serve --port 4201
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.1.
 

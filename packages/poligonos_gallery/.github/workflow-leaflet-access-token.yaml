@@ -14,7 +14,7 @@ jobs:
         with:
           repo-token: ${{ secrets.GH_TOKEN }}
         env:
-          leaflet-secret: ${{ secrets.LEAFLET_ACCESS_TOKEN }}
+          leaflet-secret: ${{ secrets.TOKEN_POLIGONOSAPP_GALLERY_NETLIFY }}
           realm-secret: ${{ secrets.REALM_APP_ID }}
           default-cdn-secret: ${{ secrets.DEFAULT_CDN }}
           domain-secret: ${{secrets.YOUR_DOMAIN}}

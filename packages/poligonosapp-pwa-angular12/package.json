@@ -1,6 +1,7 @@
 {
     "name": "poligonosapp-pwa-angular12",
-    "version": "0.0.0",
+    "version": "1.8.7",
+    "descriptioon":"poligonosapp leaflet pwa angular 12",
     "scripts": {
         "ng": "ng",
         "start": "ng serve",
