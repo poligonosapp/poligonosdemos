@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/labeler@v2
         with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          repo-token: ${{ secrets.GH_TOKEN }}
         env:
           leaflet-secret: ${{ secrets.LEAFLET_ACCESS_TOKEN }}
           realm-secret: ${{ secrets.REALM_APP_ID }}
