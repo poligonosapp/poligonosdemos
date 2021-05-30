@@ -12,22 +12,22 @@ namespace PoligonosAppBlazorHybridApp
     using System.Linq;
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
-#line 1 "/home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp/_Imports.razor"
+#line 1 "C:\Users\luism\poligonosdemos\packages\PoligonosAppBlazorHybridApp\PoligonosAppBlazorHybridApp\_Imports.razor"
 using Microsoft.MobileBlazorBindings;
 
 #line default
 #line hidden
-#line 2 "/home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp/_Imports.razor"
+#line 2 "C:\Users\luism\poligonosdemos\packages\PoligonosAppBlazorHybridApp\PoligonosAppBlazorHybridApp\_Imports.razor"
 using Microsoft.MobileBlazorBindings.Elements;
 
 #line default
 #line hidden
-#line 3 "/home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp/_Imports.razor"
+#line 3 "C:\Users\luism\poligonosdemos\packages\PoligonosAppBlazorHybridApp\PoligonosAppBlazorHybridApp\_Imports.razor"
 using Xamarin.Essentials;
 
 #line default
 #line hidden
-#line 4 "/home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp/_Imports.razor"
+#line 4 "C:\Users\luism\poligonosdemos\packages\PoligonosAppBlazorHybridApp\PoligonosAppBlazorHybridApp\_Imports.razor"
 using Xamarin.Forms;
 
 #line default
@@ -39,7 +39,7 @@ using Xamarin.Forms;
         {
         }
         #pragma warning restore 1998
-#line 19 "/home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp/Main.razor"
+#line 19 "C:\Users\luism\poligonosdemos\packages\PoligonosAppBlazorHybridApp\PoligonosAppBlazorHybridApp\Main.razor"
        
     protected override void OnInitialized()
     {

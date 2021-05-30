@@ -12,57 +12,57 @@ namespace PoligonosAppBlazorHybridApp.WebUI.Pages
     using System.Linq;
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
-#line 1 "/home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp/_Imports.razor"
+#line 1 "C:\Users\luism\poligonosdemos\packages\PoligonosAppBlazorHybridApp\PoligonosAppBlazorHybridApp\_Imports.razor"
 using Microsoft.MobileBlazorBindings;
 
 #line default
 #line hidden
-#line 2 "/home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp/_Imports.razor"
+#line 2 "C:\Users\luism\poligonosdemos\packages\PoligonosAppBlazorHybridApp\PoligonosAppBlazorHybridApp\_Imports.razor"
 using Microsoft.MobileBlazorBindings.Elements;
 
 #line default
 #line hidden
-#line 3 "/home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp/_Imports.razor"
+#line 3 "C:\Users\luism\poligonosdemos\packages\PoligonosAppBlazorHybridApp\PoligonosAppBlazorHybridApp\_Imports.razor"
 using Xamarin.Essentials;
 
 #line default
 #line hidden
-#line 4 "/home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp/_Imports.razor"
+#line 4 "C:\Users\luism\poligonosdemos\packages\PoligonosAppBlazorHybridApp\PoligonosAppBlazorHybridApp\_Imports.razor"
 using Xamarin.Forms;
 
 #line default
 #line hidden
-#line 1 "/home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp/WebUI/_Imports.razor"
+#line 1 "C:\Users\luism\poligonosdemos\packages\PoligonosAppBlazorHybridApp\PoligonosAppBlazorHybridApp\WebUI\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
-#line 2 "/home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp/WebUI/_Imports.razor"
+#line 2 "C:\Users\luism\poligonosdemos\packages\PoligonosAppBlazorHybridApp\PoligonosAppBlazorHybridApp\WebUI\_Imports.razor"
 using System.Net.Http.Json;
 
 #line default
 #line hidden
-#line 3 "/home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp/WebUI/_Imports.razor"
+#line 3 "C:\Users\luism\poligonosdemos\packages\PoligonosAppBlazorHybridApp\PoligonosAppBlazorHybridApp\WebUI\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
-#line 4 "/home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp/WebUI/_Imports.razor"
+#line 4 "C:\Users\luism\poligonosdemos\packages\PoligonosAppBlazorHybridApp\PoligonosAppBlazorHybridApp\WebUI\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
-#line 5 "/home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp/WebUI/_Imports.razor"
+#line 5 "C:\Users\luism\poligonosdemos\packages\PoligonosAppBlazorHybridApp\PoligonosAppBlazorHybridApp\WebUI\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
-#line 6 "/home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp/WebUI/_Imports.razor"
+#line 6 "C:\Users\luism\poligonosdemos\packages\PoligonosAppBlazorHybridApp\PoligonosAppBlazorHybridApp\WebUI\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
-#line 7 "/home/luism/poligonosdemos/packages/PoligonosAppBlazorHybridApp/PoligonosAppBlazorHybridApp/WebUI/_Imports.razor"
+#line 7 "C:\Users\luism\poligonosdemos\packages\PoligonosAppBlazorHybridApp\PoligonosAppBlazorHybridApp\WebUI\_Imports.razor"
 using PoligonosAppBlazorHybridApp.WebUI.Shared;
 
 #line default

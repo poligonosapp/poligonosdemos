@@ -9,6 +9,7 @@ flask = "*"
 "graphene-sqlalchemy" = "*"
 "flask-graphql" = "*"
 "psycopg2" = "*"
+Pygments = ">=2.7.4"
 
 
 [dev-packages]
