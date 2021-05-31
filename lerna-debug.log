@@ -1,18 +1,12 @@
 0 silly argv {
-0 silly argv   _: [ 'run' ],
-0 silly argv   lernaVersion: '4.0.0',
-0 silly argv   '$0': '../.npm-global/bin/lerna',
-0 silly argv   script: 'start'
+0 silly argv   _: [ 'create' ],
+0 silly argv   lernaVersion: '3.22.1',
+0 silly argv   '$0': '..\\AppData\\Roaming\\npm-cache\\_npx\\11528\\node_modules\\lerna\\cli.js',
+0 silly argv   name: 'monitor',
+0 silly argv   loc: 'packages/monitor'
 0 silly argv }
-1 notice cli v4.0.0
-2 verbose rootPath /home/luism/poligonosdemos
-3 error Error: EACCES: permission denied, write
-3 error     at writeSync (node:fs:744:3)
-3 error     at SyncWriteStream._write (node:internal/fs/sync_write_stream:25:3)
-3 error     at writeOrBuffer (node:internal/streams/writable:395:12)
-3 error     at SyncWriteStream.Writable.write (node:internal/streams/writable:340:10)
-3 error     at EventEmitter.log.write (/home/luism/.npm-global/lib/node_modules/lerna/node_modules/npmlog/log.js:271:10)
-3 error     at EventEmitter.<anonymous> (/home/luism/.npm-global/lib/node_modules/lerna/node_modules/npmlog/log.js:234:12)
-3 error     at Array.forEach (<anonymous>)
-3 error     at EventEmitter.log.emitLog (/home/luism/.npm-global/lib/node_modules/lerna/node_modules/npmlog/log.js:232:28)
-3 error     at EventEmitter.<anonymous> (/home/luism/.npm-global/lib/node_modules/lerna/node_modules/npmlog/log.js:160:10)
+1 notice cli v3.22.1
+2 verbose rootPath C:\Users\luism\poligonosdemos
+3 error TypeError: (this.options.dependencies || []).sort is not a function
+3 error     at CreateCommand.setDependencies (C:\Users\luism\poligonosdemos\node_modules\@lerna\create\index.js:218:62)
+3 error     at CreateCommand.initialize (C:\Users\luism\poligonosdemos\node_modules\@lerna\create\index.js:145:33)
