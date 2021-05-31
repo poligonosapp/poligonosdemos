@@ -1,0 +1,3 @@
+[submodule "packages/poligonosapp_consumer"] 
+  path =  packages/poligonosapp_consumer
+  url = https://github.com/poligonosapp/poligonosdemos/tree/main/packages
