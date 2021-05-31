@@ -1,3 +1,7 @@
 [submodule "packages/poligonosapp_consumer"] 
   path =  packages/poligonosapp_consumer
   url = https://github.com/poligonosapp/poligonosdemos/tree/main/packages
+
+[submodule "packages/pwa-play-billing"] 
+  path =  packages/pwa-play-billing
+  url = https://github.com/poligonosapp/poligonosdemos/tree/main/packages
