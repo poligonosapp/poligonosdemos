@@ -1,0 +1,18 @@
+{
+    "collection": "posts",
+    "database": "sample_training",
+    "roles": [
+        {
+            "name": "owner",
+            "apply_when": {
+                "poligonos": "%%user.id"
+            },
+            "read": true,
+            "write": true,
+            "insert": true,
+            "delete": true,
+            "search": true,
+            "additional_fields": {}
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+{
+    "enabled": true,
+    "mongo_service_name": "poligonos",
+    "database_name": "fail",
+    "collection_name": "shapefiles",
+    "user_id_field": "fail"
+}
