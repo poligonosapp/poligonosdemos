@@ -5,3 +5,7 @@
 [submodule "packages/pwa-play-billing"] 
   path =  packages/pwa-play-billing
   url = https://github.com/poligonosapp/poligonosdemos/tree/main/packages
+
+[submodule "packages/tut-react-and-spring-data-rest/"] 
+  path =  packages/tut-react-and-spring-data-rest/
+  url = https://github.com/poligonosapp/poligonosdemos/tree/main/packages
