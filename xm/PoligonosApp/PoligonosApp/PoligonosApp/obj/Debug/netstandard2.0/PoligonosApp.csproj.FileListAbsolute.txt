@@ -21,7 +21,6 @@ C:\Users\luism\poligonosdemos\xm\PoligonosApp\PoligonosApp\PoligonosApp\bin\Debu
 C:\Users\luism\poligonosdemos\xm\PoligonosApp\PoligonosApp\PoligonosApp\bin\Debug\netstandard2.0\PoligonosApp.dll
 C:\Users\luism\poligonosdemos\xm\PoligonosApp\PoligonosApp\PoligonosApp\bin\Debug\netstandard2.0\ref\PoligonosApp.dll
 C:\Users\luism\poligonosdemos\xm\PoligonosApp\PoligonosApp\PoligonosApp\bin\Debug\netstandard2.0\PoligonosApp.pdb
-C:\Users\luism\poligonosdemos\xm\PoligonosApp\PoligonosApp\PoligonosApp\obj\Debug\netstandard2.0\PoligonosApp.csprojAssemblyReference.cache
 C:\Users\luism\poligonosdemos\xm\PoligonosApp\PoligonosApp\PoligonosApp\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\luism\poligonosdemos\xm\PoligonosApp\PoligonosApp\PoligonosApp\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
 C:\Users\luism\poligonosdemos\xm\PoligonosApp\PoligonosApp\PoligonosApp\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
@@ -36,3 +35,4 @@ C:\Users\luism\poligonosdemos\xm\PoligonosApp\PoligonosApp\PoligonosApp\obj\Debu
 C:\Users\luism\poligonosdemos\xm\PoligonosApp\PoligonosApp\PoligonosApp\obj\Debug\netstandard2.0\PoligonosApp.dll
 C:\Users\luism\poligonosdemos\xm\PoligonosApp\PoligonosApp\PoligonosApp\obj\Debug\netstandard2.0\ref\PoligonosApp.dll
 C:\Users\luism\poligonosdemos\xm\PoligonosApp\PoligonosApp\PoligonosApp\obj\Debug\netstandard2.0\PoligonosApp.pdb
+C:\Users\luism\poligonosdemos\xm\PoligonosApp\PoligonosApp\PoligonosApp\obj\Debug\netstandard2.0\PoligonosApp.csproj.AssemblyReference.cache
