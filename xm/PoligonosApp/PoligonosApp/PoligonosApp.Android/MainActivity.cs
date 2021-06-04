@@ -7,8 +7,8 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 
-using Bitbucket;
-// using Octokit.GitHubClient;
+using Bitbucket.Net;
+// using Octokit.Octokit.GitHubClient;
 
 
 namespace PoligonosApp.Droid
@@ -23,11 +23,30 @@ namespace PoligonosApp.Droid
 
             base.OnCreate(savedInstanceState);
 
+            //xamarin todorest
+
+            try
+            {
+                var bitbucket = new Bitbucket.Net();
+                //YAML
+                var token = bitbucket.get('TOKEN_LEAFLET_ACCESS_TOKEN_NETLIFY');
+                //
+                
+            }
+            finally
+            {
+
+            }
+
             try
             {
                 var github = new GitHubClient(new ProductHeaderValue("MyAmazingApp"));
                 var user = await github.User.Get("half-ogre");
                 Console.WriteLine(user.Followers + " folks love the half ogre!");
+            }
+            finally
+            {
+
             }
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);

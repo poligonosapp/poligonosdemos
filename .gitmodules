@@ -1,3 +1,7 @@
+[submodule "/xm/xamarin-forms-samples/WebServices/TodoREST"]
+  path = /xm/xamarin-forms-samples/WebServices/TodoREST
+  url = https://github.com/poligonosapp/poligonosdemos/tree/main/xm/xamarin-forms-samples/WebServices/TodoREST
+
 [submodule "packages/poligonosapp_consumer"] 
   path =  packages/poligonosapp_consumer
   url = https://github.com/poligonosapp/poligonosdemos/tree/main/packages/poligonosapp_consumer
