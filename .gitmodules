@@ -1,11 +1,11 @@
 [submodule "packages/poligonosapp_consumer"] 
   path =  packages/poligonosapp_consumer
-  url = https://github.com/poligonosapp/poligonosdemos/tree/main/packages
+  url = https://github.com/poligonosapp/poligonosdemos/tree/main/packages/poligonosapp_consumer
 
 [submodule "packages/pwa-play-billing"] 
   path =  packages/pwa-play-billing
-  url = https://github.com/poligonosapp/poligonosdemos/tree/main/packages
+  url = https://github.com/poligonosapp/poligonosdemos/tree/main/packages/pwa-play-billing
 
 [submodule "packages/tut-react-and-spring-data-rest/"] 
   path =  packages/tut-react-and-spring-data-rest/
-  url = https://github.com/poligonosapp/poligonosdemos/tree/main/packages
+  url = https://github.com/poligonosapp/poligonosdemos/tree/main/packages/tut-react-and-spring-data-rest/
