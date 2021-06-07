@@ -61,6 +61,7 @@
         "@capacitor/core": "^2.4.6",
         "@firebase/app": "^0.6.17",
         "@firebase/auth": "^0.16.4",
+        "@hapi/cryptiles": "^5.1.0",
         "@hapi/hoek": "^9.1.1",
         "@ionic/cli": "^6.12.3",
         "@ionic/cli-plugin-proxy": "^1.5.8",
