@@ -24,6 +24,7 @@
         "@azure/ng-deploy": "^0.2.3",
         "@netlify-builder/deploy": "^4.0.0",
         "@octokit/types": "^6.16.2",
+        "@types/leaflet": "^1.7.1",
         "@types/web-animations-js": "^2.2.11",
         "core-js-pure": "^3.13.0",
         "http": "0.0.1-security",

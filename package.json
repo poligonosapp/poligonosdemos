@@ -125,7 +125,6 @@
         "mongodb-realm-cli": "^1.2.0",
         "net": "^1.0.2",
         "openapi-to-postmanv2": "^2.0.0",
-        "quicklink": "^2.1.0",
         "react-ga": "^3.3.0",
         "react-leaflet": "^2.8.0",
         "react-native-web": "^0.15.0",
