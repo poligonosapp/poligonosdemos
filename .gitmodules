@@ -3,6 +3,10 @@
   url = https://github.com/poligonosapp/xamarin-forms-samples.git
   url = https://github.com/poligonosapp/xamarin-forms-samples/WebServices/TodoREST
 
+  [submodule "packages/poligonosapp_angular_http"] 
+  path =  packages/poligonosapp_angular_http
+  url = https://github.com/poligonosapp/poligonosapp_angular_http
+
 [submodule "packages/poligonosapp_consumer"] 
   path =  packages/poligonosapp_consumer
   url = https://github.com/poligonosapp/poligonosapp_consumer
