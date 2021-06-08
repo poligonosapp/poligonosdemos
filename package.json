@@ -52,7 +52,7 @@
         "postbuild": "react-snap"
     },
     "dependencies": {
-        "@auth0/auth0-react": "^1.3.0",
+        "@auth0/auth0-react": "^1.5.0",
         "@auth0/auth0-spa-js": "^1.13.6",
         "@babel/core": "^7.12.10",
         "@babel/plugin-transform-react-jsx": "^7.12.12",
