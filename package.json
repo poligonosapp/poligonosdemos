@@ -28,7 +28,7 @@
     "license": "Apache-2.0",
     "author": "Fabio Rodrigues <https://www.facebook.com/kefaro>, Luis Mendes <machadoluismendes@gmail.com>",
     "scripts": {
-        "start": "npx lerna run start --scope @poligonosdemos/poligonosapp_consumer --scope @poligonosdemos/pwa-play-billing",
+        "start": "npx lerna run start --scope @poligonosdemos/poligonosapp_get_polygons --scope @poligonosdemos/poligonosapp_consumer --scope @poligonosdemos/pwa-play-billing",
         "start:dev": "webpack-dev-server",
         "bootstrap": "npx lerna run bootstrap --no-ci",
         "build": "npx lerna run build --scope @poligonosdemos/poligonosapp_consumer --scope @poligonosdemos/pwa-play-billing",
@@ -53,8 +53,8 @@
     },
     "dependencies": {
         "@auth0/auth0-react": "^1.5.0",
-        "@auth0/auth0-spa-js": "^1.13.6",
-        "@babel/core": "^7.12.10",
+        "@auth0/auth0-spa-js": "^1.15.0",
+        "@babel/core": "^7.14.3",
         "@babel/plugin-transform-react-jsx": "^7.12.12",
         "@babel/preset-react": "^7.12.10",
         "@capacitor/cli": "^2.4.6",
