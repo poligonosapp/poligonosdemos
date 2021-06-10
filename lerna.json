@@ -72,6 +72,10 @@
         "@poligonosdemos/poligonosapp-ng11",
         "@poligonosdemos/angular_cli_one_poligono/*"
     ],
+        "engines": {
+        "node":"14.17.13",
+        "npm":"6.14.13"
+    }
     "workspaces": [
         "poligonosapp-ionic",
         "@poligonosdemos/packages/pwa_ionic_react_poligonosapp/src/index.tsx",
