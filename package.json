@@ -28,7 +28,7 @@
     "license": "Apache-2.0",
     "author": "Fabio Rodrigues <https://www.facebook.com/kefaro>, Luis Mendes <machadoluismendes@gmail.com>",
     "scripts": {
-        "start": "npx lerna run start --scope @poligonosdemos/poligonosapp_get_polygons --scope @poligonosdemos/poligonosapp_consumer --scope @poligonosdemos/pwa-play-billing",
+        "start": "npx lerna run start --scope @poligonosdemos/leaflet --scope @poligonosdemos/poligonosapp_get_polygons --scope @poligonosdemos/poligonosapp_consumer --scope @poligonosdemos/pwa-play-billing",
         "start:dev": "webpack-dev-server",
         "bootstrap": "npx lerna run bootstrap --no-ci",
         "build": "npx lerna run build --scope @poligonosdemos/poligonosapp_consumer --scope @poligonosdemos/pwa-play-billing",
