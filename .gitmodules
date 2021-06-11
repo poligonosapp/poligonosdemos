@@ -1,24 +1,23 @@
 [submodule "/xm/xamarin-forms-samples/WebServices/TodoREST"]
   path = xm/xamarin-forms-samples/WebServices/TodoREST
-  url = https://github.com/poligonosapp/xamarin-forms-samples.git
-  url = https://github.com/poligonosapp/xamarin-forms-samples/WebServices/TodoREST
+  url = https://luismendes070@bitbucket.org/poligonosapp/xamarin-forms-samples/WebServices/TodoREST
 
 [submodule "packages/Leaflet"] 
   path =  packages/Leaflet 
-  url = https://github.com/poligonosapp/Leaflet
+  url = https://luismendes070@bitbucket.org/poligonosapp/Leaflet
 
 [submodule "packages/poligonosapp_angular_http"] 
   path =  packages/poligonosapp_angular_http
-  url = https://github.com/poligonosapp/poligonosapp_angular_http
+  url = https://luismendes070@bitbucket.org/poligonosapp/poligonosapp_angular_http
 
 [submodule "packages/poligonosapp_consumer"] 
   path = packages/poligonosapp_consumer
-  url = https://github.com/poligonosapp/poligonosapp_consumer
+  url = https://luismendes070@bitbucket.org/poligonosapp/poligonosapp_consumer
 
 [submodule "packages/pwa-play-billing"] 
   path =  packages/pwa-play-billing
-  url = https://github.com/poligonosapp/pwa-play-billing
+  url = https://luismendes070@bitbucket.org/poligonosapp/pwa-play-billing
 
 [submodule "packages/tut-react-and-spring-data-rest/"] 
   path = packages/tut-react-and-spring-data-rest/
-  url = https://github.com/poligonosapp/tut-react-and-spring-data-rest/
+  url = https://luismendes070@bitbucket.org/poligonosapp/tut-react-and-spring-data-rest/
