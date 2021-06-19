@@ -126,6 +126,7 @@
         "mongodb-realm-cli": "^1.2.0",
         "net": "^1.0.2",
         "openapi-to-postmanv2": "^2.0.0",
+        "poligonosapp": "^1.7.1-with-typescript-and-snyk",
         "react-ga": "^3.3.0",
         "react-leaflet": "^2.8.0",
         "react-native-web": "^0.15.0",

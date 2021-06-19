@@ -2,6 +2,14 @@
   path = xm/xamarin-forms-samples/WebServices/TodoREST
   url = https://luismendes070@bitbucket.org/poligonosapp/xamarin-forms-samples/WebServices/TodoREST
 
+[submodule "labs"]
+path = packages/labs/developer-tools/nodejs-debugging/app
+url = https://github.com/poligonosapp/labs.git
+
+[submodule "hello"] 
+  path =  packages/hello 
+  url = https://luismendes070@bitbucket.org/poligonosapp/hello.git
+
 [submodule "packages/Leaflet"] 
   path =  packages/Leaflet 
   url = https://luismendes070@bitbucket.org/poligonosapp/Leaflet
