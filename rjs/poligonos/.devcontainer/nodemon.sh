@@ -1,0 +1,1 @@
+npx nodemon --exec npm run babel-node - ./src/demo.js
