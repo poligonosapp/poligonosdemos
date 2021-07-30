@@ -1,3 +1,7 @@
+[submodule "/poligonos_rails/poligonosapp-blog"]
+  path = poligonos_rails/poligonosapp-blog
+  url = https://luismendes070@bitbucket.org/poligonosapp/poligonosapp-blog
+
 [submodule "/xm/xamarin-forms-samples/WebServices/TodoREST"]
   path = xm/xamarin-forms-samples/WebServices/TodoREST
   url = https://luismendes070@bitbucket.org/poligonosapp/xamarin-forms-samples/WebServices/TodoREST
