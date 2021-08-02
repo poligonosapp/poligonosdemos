@@ -1,6 +1,9 @@
 [submodule "/poligonos_rails/poligonosapp-blog"]
   path = poligonos_rails/poligonosapp-blog
   url = https://luismendes070@bitbucket.org/poligonosapp/poligonosapp-blog
+[submodule "/poligonos_rails/meupoligono"]
+  path = poligonos_rails/meupoligono
+  url = https://github.com/poligonosapp/meupoligono.git
 
 [submodule "/xm/xamarin-forms-samples/WebServices/TodoREST"]
   path = xm/xamarin-forms-samples/WebServices/TodoREST
@@ -24,11 +27,11 @@ url = https://github.com/poligonosapp/labs.git
 
 [submodule "packages/poligonosapp_consumer"] 
   path = packages/poligonosapp_consumer
-  url = https://luismendes070@bitbucket.org/poligonosapp/poligonosapp_consumer
+  url = https://github.com/poligonosapp/poligonosapp_consumer.git
 
 [submodule "packages/pwa-play-billing"] 
   path =  packages/pwa-play-billing
-  url = https://luismendes070@bitbucket.org/poligonosapp/pwa-play-billing
+  url = https://github.com/poligonosapp/pwa-play-billing.git
 
 [submodule "packages/tut-react-and-spring-data-rest/"] 
   path = packages/tut-react-and-spring-data-rest/
