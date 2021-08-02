@@ -36,3 +36,6 @@ url = https://github.com/poligonosapp/labs.git
 [submodule "packages/tut-react-and-spring-data-rest/"] 
   path = packages/tut-react-and-spring-data-rest/
   url = https://luismendes070@bitbucket.org/poligonosapp/tut-react-and-spring-data-rest/
+[submodule "poligonos_rails/meupoligono/poligonos_rails/meupoligono/meupoligono"]
+	path = poligonos_rails/meupoligono/poligonos_rails/meupoligono/meupoligono
+	url = https://github.com/poligonosapp/meupoligono.git
