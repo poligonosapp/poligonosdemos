@@ -19,6 +19,7 @@ jobs:
           default-cdn-secret: ${{ secrets.DEFAULT_CDN }}
           domain-secret: ${{secrets.YOUR_DOMAIN}}
           client-secret: ${{secrets.CLIENT_ID}}
+          api-secret: ${{secrets.MEUPOLIGONO_RAILS_KEY}}
         runs:
           using: 'node12'
           main: 'src/app/tab1/tab1.page.ts'
