@@ -1,9 +1,40 @@
 # https://www.infoq.com/articles/rest-introduction/
-require 'rgeo/geo_json'
+# https://guides.rubyonrails.org/active_record_postgresql.html#geometric-types
+
+require 'tzinfo'
+
+require "open-uri"
+require "json"
+require "rgeo"
+require "rgeo-geojson"
+# require 'rgeo/geo_json'
+
 
 class Resource {
     Resource(URI u);
     Response get(){
+
+        #rgeo
+        # require "open-uri"
+        # require "json"
+        # require "rgeo"
+        # require "rgeo-geojson"
+
+        my_lat, my_lng = [45, 5]
+        my_position = RGeo::Cartesian.
+          factory.
+          point(my_lng, my_lat)
+
+        geojson = URI.
+          open("https://git.io/rhone-alpes.geojson").
+          read
+        rhone_alpes = RGeo::GeoJSON.decode(geojson).geometry
+
+        if rhone_alpes.contains?(my_position)
+            puts "Let's ski ⛷"
+        end
+        # rgeo-geojson
+
         # require 'rgeo/geo_json'
 
         str1 = '{"type":"Point","coordinates":[1,2]}'

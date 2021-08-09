@@ -4,6 +4,11 @@ require "rails/all"
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
+
+# https://stackoverflow.com/questions/17350837/ruby-on-rails-add-gem-sqlite3-to-your-gemfile
+# numeric literal error
+# Using sqlite3 (1.3.13)
+
 Bundler.require(*Rails.groups)
 
 module Meupoligono
