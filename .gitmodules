@@ -1,5 +1,5 @@
-[submodule "/poligonos_rails/poligonosapp-blog"]
-  path = poligonos_rails/poligonosapp-blog
+[submodule "/packages/poligonosapp-blog"]
+  path = packages/poligonosapp-blog
   url = https://luismendes070@bitbucket.org/poligonosapp/poligonosapp-blog
 
 
