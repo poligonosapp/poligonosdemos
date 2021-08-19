@@ -1,0 +1,25 @@
+{
+    "version": 8,
+    "name": "Blank",
+    "metadata": {
+        "mapbox:autocomposite": true,
+        "mapbox:type": "template",
+        "mapbox:sdk-support": {
+            "android": "9.3.0",
+            "ios": "5.10.0",
+            "js": "2.3.0"
+        }
+    },
+    "center": [0, 0],
+    "zoom": 0,
+    "sources": {},
+    "sprite": "mapbox://sprites/poligonosapp/cksj6efff1nr017pouj6jdvd8/ck2u8j60r58fu0sgyxrigm3cu",
+    "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
+    "layers": [],
+    "created": "2021-08-19T17:06:35.575Z",
+    "modified": "2021-08-19T17:06:35.575Z",
+    "id": "cksj6efff1nr017pouj6jdvd8",
+    "owner": "poligonosapp",
+    "visibility": "private",
+    "draft": false
+}
