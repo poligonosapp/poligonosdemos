@@ -1,6 +1,11 @@
 [submodule "/poligonos_rails/poligonosapp-blog"]
   path = poligonos_rails/poligonosapp-blog
   url = https://luismendes070@bitbucket.org/poligonosapp/poligonosapp-blog
+
+[submodule "/packages/android-room-with-a-view"]
+  path = packages/android-room-with-a-view
+  url = https://github.com/poligonosapp/android-room-with-a-view.git
+
 [submodule "/poligonos_rails/meupoligono"]
   path = poligonos_rails/meupoligono
   url = https://github.com/poligonosapp/meupoligono.git
