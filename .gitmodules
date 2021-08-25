@@ -1,3 +1,7 @@
+[submodule "/packages/poligonosapp_api"]
+  path = packages/poligonosapp_api
+  url = https://github.com/poligonosapp/poligonosapp_api
+
 [submodule "/packages/django-rest-framework"]
   path = packages/django-rest-framework
   url = https://github.com/poligonosapp/django-rest-framework
