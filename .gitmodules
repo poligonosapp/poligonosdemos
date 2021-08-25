@@ -1,3 +1,7 @@
+[submodule "/packages/poligonosapp_with_django_folium"]
+  path = packages/poligonosapp_with_django_folium
+  url = https://github.com/poligonosapp/poligonosapp_with_django_folium
+
 [submodule "/packages/poligonosapp_api"]
   path = packages/poligonosapp_api
   url = https://github.com/poligonosapp/poligonosapp_api
