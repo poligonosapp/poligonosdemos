@@ -1,0 +1,2 @@
+# ~/.railsrc
+--database=MongoDB
