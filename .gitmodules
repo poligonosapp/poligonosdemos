@@ -1,6 +1,6 @@
 [submodule "/packages/mongodb-with-starlette"]
   path = packages/mongodb-with-starlette
-  url = https://github.com/poligonosapp/mongodb-with-starlette
+url=https://luismendes070@bitbucket.org/poligonosapp/mongodb-with-starlette.git
 
 [submodule "/packages/poligonosapp_with_django_folium"]
   path = packages/realm-graphql
