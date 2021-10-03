@@ -1,32 +1,3 @@
-C:\Users\luism\poligonosdemos\xm\PoligonosApp\PoligonosApp\PoligonosApp.Android\obj\Debug\90\MonoAndroid,Version=v9.0.AssemblyAttributes.cs
-C:\Users\luism\poligonosdemos\xm\PoligonosApp\PoligonosApp\PoligonosApp.Android\obj\Debug\90\build.props
-C:\Users\luism\poligonosdemos\xm\PoligonosApp\PoligonosApp\PoligonosApp.Android\obj\Debug\90\adb.props
-C:\Users\luism\poligonosdemos\xm\PoligonosApp\PoligonosApp\PoligonosApp.Android\obj\Debug\90\PoligonosApp.Android.csproj.AssemblyReference.cache
-C:\Users\luism\poligonosdemos\xm\PoligonosApp\PoligonosApp\PoligonosApp.Android\obj\Debug\90\_VerifyXamarinAndroidSupportVersions.stamp
-C:\Users\luism\poligonosdemos\xm\PoligonosApp\PoligonosApp\PoligonosApp.Android\obj\Debug\90\stamp\_BuildLibraryImportsCache.stamp
-C:\Users\luism\poligonosdemos\xm\PoligonosApp\PoligonosApp\PoligonosApp.Android\obj\Debug\90\res.flag
-C:\Users\luism\poligonosdemos\xm\PoligonosApp\PoligonosApp\PoligonosApp.Android\obj\Debug\90\lp\53\jl\files.cache
-C:\Users\luism\poligonosdemos\xm\PoligonosApp\PoligonosApp\PoligonosApp.Android\obj\Debug\90\lp\54\jl\files.cache
-C:\Users\luism\poligonosdemos\xm\PoligonosApp\PoligonosApp\PoligonosApp.Android\obj\Debug\90\lp\58\jl\files.cache
-C:\Users\luism\poligonosdemos\xm\PoligonosApp\PoligonosApp\PoligonosApp.Android\obj\Debug\90\lp\60\jl\files.cache
-C:\Users\luism\poligonosdemos\xm\PoligonosApp\PoligonosApp\PoligonosApp.Android\obj\Debug\90\lp\67\jl\files.cache
-C:\Users\luism\poligonosdemos\xm\PoligonosApp\PoligonosApp\PoligonosApp.Android\obj\Debug\90\lp\71\jl\files.cache
-C:\Users\luism\poligonosdemos\xm\PoligonosApp\PoligonosApp\PoligonosApp.Android\obj\Debug\90\lp\73\jl\files.cache
-C:\Users\luism\poligonosdemos\xm\PoligonosApp\PoligonosApp\PoligonosApp.Android\obj\Debug\90\lp\74\jl\files.cache
-C:\Users\luism\poligonosdemos\xm\PoligonosApp\PoligonosApp\PoligonosApp.Android\obj\Debug\90\lp\75\jl\files.cache
-C:\Users\luism\poligonosdemos\xm\PoligonosApp\PoligonosApp\PoligonosApp.Android\obj\Debug\90\lp\79\jl\files.cache
-C:\Users\luism\poligonosdemos\xm\PoligonosApp\PoligonosApp\PoligonosApp.Android\obj\Debug\90\lp\80\jl\files.cache
-C:\Users\luism\poligonosdemos\xm\PoligonosApp\PoligonosApp\PoligonosApp.Android\obj\Debug\90\R.txt
-C:\Users\luism\poligonosdemos\xm\PoligonosApp\PoligonosApp\PoligonosApp.Android\obj\Debug\90\R.cs.flag
-C:\Users\luism\poligonosdemos\xm\PoligonosApp\PoligonosApp\PoligonosApp.Android\obj\Debug\90\PoligonosApp.Android.csproj.CoreCompileInputs.cache
-C:\Users\luism\poligonosdemos\xm\PoligonosApp\PoligonosApp\PoligonosApp.Android\obj\Debug\90\lp\12\jl\files.cache
-C:\Users\luism\poligonosdemos\xm\PoligonosApp\PoligonosApp\PoligonosApp.Android\obj\Debug\90\lp\13\jl\files.cache
-C:\Users\luism\poligonosdemos\xm\PoligonosApp\PoligonosApp\PoligonosApp.Android\obj\Debug\90\lp\17\jl\files.cache
-C:\Users\luism\poligonosdemos\xm\PoligonosApp\PoligonosApp\PoligonosApp.Android\obj\Debug\90\lp\19\jl\files.cache
-C:\Users\luism\poligonosdemos\xm\PoligonosApp\PoligonosApp\PoligonosApp.Android\obj\Debug\90\lp\26\jl\files.cache
-C:\Users\luism\poligonosdemos\xm\PoligonosApp\PoligonosApp\PoligonosApp.Android\obj\Debug\90\lp\30\jl\files.cache
-C:\Users\luism\poligonosdemos\xm\PoligonosApp\PoligonosApp\PoligonosApp.Android\obj\Debug\90\lp\32\jl\files.cache
-C:\Users\luism\poligonosdemos\xm\PoligonosApp\PoligonosApp\PoligonosApp.Android\obj\Debug\90\lp\33\jl\files.cache
-C:\Users\luism\poligonosdemos\xm\PoligonosApp\PoligonosApp\PoligonosApp.Android\obj\Debug\90\lp\34\jl\files.cache
-C:\Users\luism\poligonosdemos\xm\PoligonosApp\PoligonosApp\PoligonosApp.Android\obj\Debug\90\lp\38\jl\files.cache
-C:\Users\luism\poligonosdemos\xm\PoligonosApp\PoligonosApp\PoligonosApp.Android\obj\Debug\90\lp\39\jl\files.cache
+version https://git-lfs.github.com/spec/v1
+oid sha256:a67d0181bcfd21e61fea75995cc482c12626301ff401308e5f7283cf4ebc3565
+size 3749

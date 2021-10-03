@@ -1,9 +1,3 @@
-style Widget_Support_CoordinatorLayout
-attr keylines
-attr layout_anchor
-attr layout_anchorGravity
-attr layout_behavior
-attr layout_dodgeInsetEdges
-attr layout_insetEdge
-attr layout_keyline
-attr statusBarBackground
+version https://git-lfs.github.com/spec/v1
+oid sha256:ce0da9e4331698c1f340772476e6b625f06caff986b08b153b2361641927f802
+size 223

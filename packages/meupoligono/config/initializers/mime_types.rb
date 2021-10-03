@@ -1,4 +1,3 @@
-# Be sure to restart your server when you modify this file.
-
-# Add new mime types for use in respond_to blocks:
-# Mime::Type.register "text/richtext", :rtf
+version https://git-lfs.github.com/spec/v1
+oid sha256:45a790a09afdb05d3012786589a720dcdcf23414b8af81dd6b60f66ff987146c
+size 160

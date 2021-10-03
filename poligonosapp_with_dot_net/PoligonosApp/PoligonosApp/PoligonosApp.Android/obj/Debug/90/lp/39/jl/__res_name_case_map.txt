@@ -1,11 +1,3 @@
-anim/EnterFromLeft.xml;anim/enterfromleft.xml
-anim/EnterFromRight.xml;anim/enterfromright.xml
-anim/ExitToLeft.xml;anim/exittoleft.xml
-anim/ExitToRight.xml;anim/exittoright.xml
-values/attrs.xml;values/attrs.xml
-values/strings.xml;values/strings.xml
-values/styles.xml;values/styles.xml
-Layout/BottomTabLayout.axml;layout/bottomtablayout.xml
-Layout/FlyoutContent.axml;layout/flyoutcontent.xml
-Layout/RootLayout.axml;layout/rootlayout.xml
-Layout/ShellContent.axml;layout/shellcontent.xml
+version https://git-lfs.github.com/spec/v1
+oid sha256:237ac54084f0550e3605c11219583266999d629a2796074567d0f1de66629966
+size 495

@@ -1,2 +1,3 @@
-# aapt2 is not (yet) keeping FQCNs defined in the appComponentFactory <application> attribute
--keep class android.support.v4.app.CoreComponentFactory
+version https://git-lfs.github.com/spec/v1
+oid sha256:ff4cec20e22daf2b01b58b9816b21da328ca6b74867b174d321b109497036333
+size 152

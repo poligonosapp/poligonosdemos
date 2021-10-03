@@ -1,9 +1,3 @@
-# Be sure to restart your server when you modify this file.
-
-# This file contains settings for ActionController::ParamsWrapper which
-# is enabled by default.
-
-# Enable parameter wrapping for JSON. You can disable this by setting :format to an empty array.
-ActiveSupport.on_load(:action_controller) do
-  wrap_parameters format: [:json]
-end
+version https://git-lfs.github.com/spec/v1
+oid sha256:60878e87e58bfdcd82d542a6b896361258f6dba155e737878b627d60c3f614fe
+size 348

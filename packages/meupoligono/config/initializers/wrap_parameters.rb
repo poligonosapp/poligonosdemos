@@ -1,14 +1,3 @@
-# Be sure to restart your server when you modify this file.
-
-# This file contains settings for ActionController::ParamsWrapper which
-# is enabled by default.
-
-# Enable parameter wrapping for JSON. You can disable this by setting :format to an empty array.
-ActiveSupport.on_load(:action_controller) do
-  wrap_parameters format: [:json]
-end
-
-# To enable root element in JSON for ActiveRecord objects.
-# ActiveSupport.on_load(:active_record) do
-#   self.include_root_in_json = true
-# end
+version https://git-lfs.github.com/spec/v1
+oid sha256:6089c2aab9bfc8ae8656ad945933d5cec644ce113285e366d162232d9bceebb4
+size 499

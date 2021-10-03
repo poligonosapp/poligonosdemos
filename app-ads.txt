@@ -1,1 +1,3 @@
-google.com, pub-7548987622333028, DIRECT, f08c47fec0942fa0
+version https://git-lfs.github.com/spec/v1
+oid sha256:5326d79e323238a05f651a898b368695543bd112efa39cf598e3b717abca33a9
+size 58

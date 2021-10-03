@@ -1,1 +1,3 @@
-folium
+version https://git-lfs.github.com/spec/v1
+oid sha256:956e0ab214479703dd0acf720bbf2e25006a40df70a1768ad2732f314c0f36f4
+size 6

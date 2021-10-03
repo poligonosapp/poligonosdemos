@@ -1,24 +1,3 @@
-# app/channels/appearance_channel.rb
-class AppearanceChannel < ApplicationCable::Channel
-  def subscribed
-    current_user.appear
-  end
-
-  def unsubscribed
-    current_user.disappear
-  end
-
-  def appear(data)
-    current_user.appear(on: data['appearing_on'])
-  end
-
-  def away
-    current_user.away
-  end
-end
-
-
-# module ApplicationCable
-  # class Channel < ActionCable::Channel::Base
-  # end
-# end
+version https://git-lfs.github.com/spec/v1
+oid sha256:28ded144733bc7a14b96070bd0e4688146034ac51e0c0cfb847adda1f7fc9b2a
+size 422

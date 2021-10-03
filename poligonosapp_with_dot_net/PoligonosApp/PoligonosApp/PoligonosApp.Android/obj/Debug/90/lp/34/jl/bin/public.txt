@@ -1,9 +1,3 @@
-attr fastScrollEnabled
-attr fastScrollHorizontalThumbDrawable
-attr fastScrollHorizontalTrackDrawable
-attr fastScrollVerticalThumbDrawable
-attr fastScrollVerticalTrackDrawable
-attr layoutManager
-attr reverseLayout
-attr spanCount
-attr stackFromEnd
+version https://git-lfs.github.com/spec/v1
+oid sha256:d1812fffb5608f403f7d4b554a6f464407d938e14faf21f1439da412825a5596
+size 255
