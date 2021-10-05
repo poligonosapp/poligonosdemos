@@ -2,11 +2,12 @@
 
 buildscript {
     ext {
-        compileSdkVersion = 30
+        compileSdkVersion = 29
         buildToolsVersion = compileSdkVersion
         minSdkVersion = 16
-        targetSdkVersion = 30
-        rootProject.ext.compileSdkVersion = 30
+        targetSdkVersion = 29
+        rootProject.ext.compileSdkVersion = 29
+        FLIPPER_VERSION = 113.0
     }
     repositories {
         google()
@@ -14,10 +15,12 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath('com.android.tools.build:gradle:7.0.0-alpha08')
+        classpath('com.android.tools.build:gradle:4.2.2')
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
-        classpath 'com.google.gms:google-services:4.3.5'
+        // gradle asc ii react native exception
+        // classpath 'com.google.gms:google-services:4.3.5'
+        classpath 'com.google.gms:google-services:4.2.0'
     }
 }
 

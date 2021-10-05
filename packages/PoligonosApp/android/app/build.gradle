@@ -125,7 +125,7 @@ def enableHermes = project.ext.react.get("enableHermes", true);
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
-    buildToolsVersion "30.0.3"
+    buildToolsVersion '29.0.2'
 
     defaultConfig {
         applicationId "com.github.luismendes070.poligonosdemos.rn.poligonosapp"
@@ -201,11 +201,11 @@ android {
 
 dependencies {
     
-    implementation 'com.google.firebase:firebase-ads:18.0.0'
+    implementation 'com.google.firebase:firebase-ads:20.4.0'
 
     implementation fileTree(dir: "libs", include: ["*.jar"])
     //noinspection GradleDynamicVersion
-    implementation 'com.facebook.react:react-native:0.63.4'  // From node_modules
+    implementation 'com.facebook.react:react-native:0.66.0'  // From node_modules
 
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
 
