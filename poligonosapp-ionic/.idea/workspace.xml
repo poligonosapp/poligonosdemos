@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8b7d4bad-f687-4893-8345-3a6a1df46c54" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../packages/poligonosapp_with_react_native/components/Poligono.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/poligonosapp_with_react_native/components/polygon.geojson" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/poligonosapp_with_react_native/declaration.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/PoligonosApp/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/PoligonosApp/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/poligonosapp-blog" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/poligonosapp-blog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/poligonosapp_api" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/poligonosapp_api" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/poligonosapp_with_django_folium" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/poligonosapp_with_django_folium" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/poligonosapp_with_react_native/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/poligonosapp_with_react_native/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/poligonosapp_with_react_native/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/poligonosapp_with_react_native/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/poligonosapp_with_react_native/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/poligonosapp_with_react_native/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/pwa-play-billing" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/pwa-play-billing" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1zBYpmjJeVKzhZDDrTAx5QxekR2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../packages/poligonosapp_consumer" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8b7d4bad-f687-4893-8345-3a6a1df46c54" name="Changes" comment="" />
+      <created>1633623140975</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1633623140975</updated>
+      <workItem from="1633623144364" duration="141000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
