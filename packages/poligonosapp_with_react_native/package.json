@@ -13,7 +13,8 @@
     "poligonosapp": "^1.7.1-with-typescript-and-snyk",
     "react": "17.0.2",
     "react-leaflet": "^3.2.1",
-    "react-native": "0.66.0"
+    "react-native": "0.66.0",
+    "react-native-paper": "^4.9.2"
   },
   "devDependencies": {
     "@babel/core": "7.15.5",
