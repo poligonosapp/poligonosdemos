@@ -1,9 +1,16 @@
 apply plugin: 'com.android.application'
 
 android {
+
+    dependenciesInfo {
+        includeInApk true
+        includeInBundle true
+    }
+    buildToolsVersion '29.0.2'
+    ndkVersion '23.0.7599858'
     compileSdkVersion rootProject.ext.compileSdkVersion
     defaultConfig {
-        applicationId "com.github.poligonosdemos.poligonosapp"
+        applicationId "com.github.poligonosapp.with.ionic"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
@@ -29,12 +36,12 @@ repositories {
 
 dependencies {
     
-    implementation 'com.google.firebase:firebase-ads:19.7.0'
+    implementation 'com.google.firebase:firebase-ads:20.4.0'
 
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation "androidx.appcompat:appcompat:$androidxAppCompatVersion"
 
-    implementation 'com.google.android.gms:play-services-ads:19.7.0'
+    implementation 'com.google.android.gms:play-services-ads:20.4.0'
 
     implementation project(':capacitor-android')
     testImplementation "junit:junit:$junitVersion"
