@@ -4,7 +4,7 @@
   "public": true,
   "dependencies": {
     "@capacitor/android": "^2.0.1",
-    "@capacitor/core": "^2.0.1",
+    "@capacitor/core": "^1.5.3",
     "@capacitor/ios": "^2.0.1",
     "@ionic/pwa-elements": "^1.5.2",
     "@ionic/react": "^5.0.7",
